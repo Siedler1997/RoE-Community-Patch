@@ -1,5 +1,5 @@
 # RoE-Campaign-Hotfix
-Dieser kleine Patch behebt ein paar Bugs in der Kampagne vom Spiel "Die Siedler - Aufstieg eines Königreichs".
+Dieser kleine Patch behebt ein paar Bugs in der Kampagne vom Spiel "Die Siedler - Aufstieg eines Königreichs - History Edition".
 
 
 ## Features
@@ -17,9 +17,17 @@ Folgende Änderungen wurden vorgenommen:
 	- Anzahl an Trupps leicht erhöht, um nützlicher zu sein
 
 
+## Installation
+Mit folgenden Schritten lässt sich der Patch installieren:
+1. Projekt über Code -> Download ZIP herunterladen
+2. Ordner in das AeK-Hauptverzeichnis entpacken
+3. Kampagne zocken
+
+
 ## ToDos
 Folgende Features sind geplant, aber noch nicht umgesetzt:
-1. Verfrühte KI-Meldungen am Anfang von Missionen
+1. Als bba gepackte Version für das "alte" AeK
+2. Verfrühte KI-Meldungen am Anfang von Missionen
 	- In zwei Mission taucht am Anfang eine Quest-Meldung auf, die für später vorgesehen ist
 	- Folgende Missionen sind davon betroffen
 		- M05: Drengir
