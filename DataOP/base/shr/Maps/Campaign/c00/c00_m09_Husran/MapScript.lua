@@ -127,7 +127,6 @@ function OnLostStoreHouse()
 end
 
 function Mission_SetupQuests()
-
     -- waterquest Special
     WaterDelivered = {
         [AlHadrPlayerID] = 0;
@@ -141,7 +140,8 @@ function Mission_SetupQuests()
     QuestTemplate:New("", 1, 1,
         { { Objective.Protect, { Logic.GetStoreHouse(1) } }},
         { { Triggers.Time, 0 }},
-        0, nil, nil, OnPlayerStoreHouseDestroyed, nil, false)
+        0, nil, nil, OnPlayerStoreHouseDestroyed, nil, false
+        )
         
 -- losing 
     QuestTemplate:New("", HusranPlayerID, 1,
@@ -185,46 +185,22 @@ function Mission_SetupQuests()
         true, 
         true
         )
-
-    --      
-    QuestTemplate:New("Quest_RegularWaterWest", AlHadrPlayerID, 1, 
-        { { Objective.Dummy } },
-        { { Triggers.Quest, amountOfHappyID, QuestResult.Success }, { Triggers.PlayerDiscovered, AlHadrPlayerID, 1 } },
-        0, 
-        { { Reward.PrestigePoints, 1000 } }, 
-        { { Reprisal.Defeat } }, 
-        OnRegularWaterQuestOver, 
-        nil, 
-        false, 
-        true)
-
-    QuestTemplate:New("Quest_RegularWaterEast", AlAssirPlayerID, 1, 
-        { { Objective.Dummy } },
-        { { Triggers.Quest, amountOfHappyID, QuestResult.Success }, { Triggers.PlayerDiscovered, AlAssirPlayerID, 1 } },
-        0, 
-        { { Reward.PrestigePoints, 1000 } }, 
-        { { Reprisal.Defeat } }, 
-        OnRegularWaterQuestOver, 
-        nil, 
-        false, 
-        true)
-        --  
-
+        
     QuestTemplate:New("Quest_RegularWaterWest", AlHadrPlayerID, AlHadrPlayerID, 
         { { Objective.Dummy } },
         { { Triggers.Quest, amountOfHappyID, QuestResult.Success }, { Triggers.PlayerDiscovered, AlHadrPlayerID, 1 } },
-        0, nil, nil, nil, nil, false)
+        0, nil, nil, OnLaunchWaterQuest, nil, false)
 
     QuestTemplate:New("Quest_RegularWaterEast", AlAssirPlayerID, AlAssirPlayerID, 
         { { Objective.Dummy } },
         { { Triggers.Quest, amountOfHappyID, QuestResult.Success }, { Triggers.PlayerDiscovered, AlAssirPlayerID, 1 } },
-        0, nil, nil, nil, nil, false)
+        0, nil, nil, OnLaunchWaterQuest, nil, false)
 
 --- mission lost conditions
     -- those are not exactly the quests. lurk moar.
     QuestTemplate:New("Quest_RegularWaterWest", AlHadrPlayerID, 1,
         { { Objective.Custom, Custom_DiplomacyStateAlHadr } },
-        { { Triggers.Time, 0 } },
+        { { Triggers.Quest, amountOfHappyID, QuestResult.Success }, { Triggers.PlayerDiscovered, AlHadrPlayerID, 1 } },
         0, 
         { { Reward.PrestigePoints, 1000 } }, 
         { { Reprisal.Defeat } }, 
@@ -237,7 +213,7 @@ function Mission_SetupQuests()
 
     QuestTemplate:New("Quest_RegularWaterEast", AlAssirPlayerID, 1,
         { { Objective.Custom, Custom_DiplomacyStateAlAssir } },
-        { { Triggers.Time, 0 } },
+        { { Triggers.Quest, amountOfHappyID, QuestResult.Success }, { Triggers.PlayerDiscovered, AlAssirPlayerID, 1 } },
         0, 
         { { Reward.PrestigePoints, 1000 } },
         { { Reprisal.Defeat } }, 
@@ -253,8 +229,6 @@ function Mission_SetupQuests()
         { { Objective.Dummy } },
         { { Triggers.Custom, Trigger_RegularWaterWest3 } },
         0, nil, nil, OnStartLionKillQuest, nil, false)
-
-    --Quests[amountOfHappyID]:Success()
 end
 
 
