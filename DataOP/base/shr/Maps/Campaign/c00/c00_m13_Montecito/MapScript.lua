@@ -73,7 +73,7 @@ function Mission_InitPlayers()
     AddResourcesToPlayer(Goods.G_Stone,150, RedPrincePlayerID)
     AddResourcesToPlayer(Goods.G_Wood, 150, RedPrincePlayerID)
 	
-	GameCallback_CreateKnightByTypeOrIndex(Entities.U_KnightSabatta, RedPrincePlayerID)
+	GameCallback_CreateKnightByTypeOrIndex(Entities.U_NPC_Castellan_SE, RedPrincePlayerID)
 
     ----------------------------------------------------------------------------------------------------------------------
     -- Scout the villages

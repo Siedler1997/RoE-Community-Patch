@@ -117,6 +117,9 @@ end
 function OnHusranDiscovered()
     SendVoiceMessage(HusranPlayerID, "HiddenQuest_FirstContactWithHusran")
     TriggerHusranAttacks()
+
+
+    Quests[amountOfHappyID]:Success()
 end
 
 function OnLostStoreHouse()
@@ -183,16 +186,39 @@ function Mission_SetupQuests()
         true
         )
 
+    --      
+    QuestTemplate:New("Quest_RegularWaterWest", AlHadrPlayerID, 1, 
+        { { Objective.Dummy } },
+        { { Triggers.Quest, amountOfHappyID, QuestResult.Success }, { Triggers.PlayerDiscovered, AlHadrPlayerID, 1 } },
+        0, 
+        { { Reward.PrestigePoints, 1000 } }, 
+        { { Reprisal.Defeat } }, 
+        OnRegularWaterQuestOver, 
+        nil, 
+        false, 
+        true)
+
+    QuestTemplate:New("Quest_RegularWaterEast", AlAssirPlayerID, 1, 
+        { { Objective.Dummy } },
+        { { Triggers.Quest, amountOfHappyID, QuestResult.Success }, { Triggers.PlayerDiscovered, AlAssirPlayerID, 1 } },
+        0, 
+        { { Reward.PrestigePoints, 1000 } }, 
+        { { Reprisal.Defeat } }, 
+        OnRegularWaterQuestOver, 
+        nil, 
+        false, 
+        true)
+        --  
+
     QuestTemplate:New("Quest_RegularWaterWest", AlHadrPlayerID, AlHadrPlayerID, 
         { { Objective.Dummy } },
         { { Triggers.Quest, amountOfHappyID, QuestResult.Success }, { Triggers.PlayerDiscovered, AlHadrPlayerID, 1 } },
-        0, nil, nil, OnLaunchWaterQuest, nil, false)
+        0, nil, nil, nil, nil, false)
 
     QuestTemplate:New("Quest_RegularWaterEast", AlAssirPlayerID, AlAssirPlayerID, 
         { { Objective.Dummy } },
         { { Triggers.Quest, amountOfHappyID, QuestResult.Success }, { Triggers.PlayerDiscovered, AlAssirPlayerID, 1 } },
-        0, nil, nil, OnLaunchWaterQuest, nil, false)
-
+        0, nil, nil, nil, nil, false)
 
 --- mission lost conditions
     -- those are not exactly the quests. lurk moar.
@@ -221,13 +247,14 @@ function Mission_SetupQuests()
         true
         )
 
-
 ---
 
     QuestTemplate:New("", AlHadrPlayerID, 1,
         { { Objective.Dummy } },
         { { Triggers.Custom, Trigger_RegularWaterWest3 } },
         0, nil, nil, OnStartLionKillQuest, nil, false)
+
+    --Quests[amountOfHappyID]:Success()
 end
 
 
