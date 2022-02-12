@@ -1,16 +1,20 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Data",
     "\\DataOP",
     "\\DataOP\\base",
     "\\DataOP\\base\\shr",
     "\\DataOP\\base\\shr\\Maps",
     "\\DataOP\\base\\shr\\Maps\\Campaign",
     "\\DataOP\\base\\shr\\Maps\\Campaign\\c00",
-    "\\DataOP\\base\\shr\\Maps\\Campaign\\c00\\c00_m09_Husran",
-    "\\DataOP\\base\\shr\\Maps\\Campaign\\c00\\c00_m12_Sahir",
-    "\\DataOP\\base\\shr\\Maps\\Campaign\\c00\\c00_m13_Montecito"
+    "\\DataOP\\base\\shr\\Maps\\Campaign\\c00\\c00_m08_Seydiir",
+    "\\DataOP\\base\\shr\\Maps\\Campaign\\c00\\c00_m16_Rossotorres",
+    "\\Data\\base",
+    "\\Data\\base\\shr",
+    "\\Data\\base\\shr\\Script",
+    "\\Data\\base\\shr\\Script\\Global"
   ],
-  "SelectedNode": "\\DataOP\\base\\shr\\Maps\\Campaign\\c00\\c00_m12_Sahir\\MapScript.lua",
+  "SelectedNode": "\\README.md",
   "PreviewInSolutionExplorer": false
 }
