@@ -15,7 +15,9 @@ CustomGame.KnightTypes = {
     "U_KnightWisdom",
     "U_KnightHealing",
     "U_KnightPlunder",
-    "U_KnightSong"
+    "U_KnightSong",
+    "U_KnightSabatta",
+    "U_KnightRedPrince"
     }
     
 g_MapAndHeroPreview.KnightTypes = CustomGame.KnightTypes
@@ -24,7 +26,7 @@ g_MapAndHeroPreview.KnightTypes = CustomGame.KnightTypes
 MPDefaultKnightNames = CustomGame.KnightTypes
 
 function RemapKnightID( _ID )
-    local Mapping = { [0] = 0, [1] = 7, [2] = 1, [3] = 3, [4] = 4, [5] = 2, [6] = 5, [7] = 6 }
+    local Mapping = { [0] = 0, [1] = 7, [2] = 1, [3] = 3, [4] = 4, [5] = 2, [6] = 5, [7] = 6, [8] = 0, [9] = 0 }
     return Mapping[_ID]
 end
 
