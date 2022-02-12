@@ -10,7 +10,9 @@ function InitSharedOverwrite()
     "U_KnightPlunder",
     "U_KnightSong",
     "U_KnightSabatta",
-    "U_KnightRedPrince" }
+    "U_KnightRedPrince",
+    "U_KnightPraphat",
+    "U_KnightKhana" }
 
     
     -- InitKnightTitleTables

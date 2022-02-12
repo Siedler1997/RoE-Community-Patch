@@ -1,0 +1,13 @@
+ToDos:
+- Söldner-Trupps
+	- Korrekte Fackelanzeige
+	- Audio-Feedback
+	- Von "Alle Einheiten auswählen" erfasst
+- Neue Ritter 
+	- mit Audio-Feedback
+	- Mit Fähigkeiten und "Erinnerungen"
+	- Khana und Praphat
+		- ohne Ability-Buttons
+		- Endstatistik defekt
+		- aus Ritter-Auswahl wieder entfernen
+- Balliste?
