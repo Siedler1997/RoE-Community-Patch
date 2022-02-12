@@ -2,12 +2,12 @@ ToDos:
 - Söldner-Trupps
 	- Korrekte Fackelanzeige
 	- Audio-Feedback
-	- Von "Alle Einheiten auswählen" erfasst
+	- Overhead-Namen entfernen
 - Neue Ritter 
 	- mit Audio-Feedback
 	- Mit Fähigkeiten und "Erinnerungen"
 	- Khana und Praphat
 		- ohne Ability-Buttons
 		- Endstatistik defekt
+		- Diplomatie-Window defekt
 		- aus Ritter-Auswahl wieder entfernen
-- Balliste?
