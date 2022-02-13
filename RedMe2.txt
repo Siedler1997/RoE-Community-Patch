@@ -17,4 +17,4 @@ ToDos:
 - Rebalancing
 	- Neue (sinnvollere) Aufstiegsbedingungen
 	- Katapulte gegen Einheiten
-- Dsibaled Button Textur für Burg/Lager/Kirche (ist zurzeit immer das der Kirche)
+- Disabled Button Textur für Burg/Lager/Kirche (ist zurzeit immer das der Kirche)
