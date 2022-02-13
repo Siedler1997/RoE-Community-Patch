@@ -305,6 +305,9 @@ function GUI_Knight.GetKnightAbilityAndIcons(_KnightID)
     elseif KnightType == Entities.U_KnightSaraya then
         Ability = Abilities.AbilityTribute
         AbilityIconPosition = {1,4,1}
+    elseif KnightType == Entities.U_KnightRedPrince then
+        --Ability = Abilities.AbilityHeal
+        AbilityIconPosition = {15,16}
     end
 
     return Ability, AbilityIconPosition

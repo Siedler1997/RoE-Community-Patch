@@ -1,20 +1,30 @@
 ToDos:
 - Söldner-Trupps
-	- Korrekte Fackelanzeige
-	- Overhead-Namen entfernen
+	- Korrekte Fackelanzeige (auch im Base game)
+	- Overhead-Namen entfernen (RdO)
 - Neue Ritter 
-	- mit Audio-Feedback
-	- Mit Fähigkeiten und "Erinnerungen"
+	- RP
+		- RP-Einheiten in Kasernen
+		- Aktive Fähigkeit (Original oder eigene, muss aber zu AeK passen und nützlich sein)
 	- Khana und Praphat
 		- Abilities
 			- Praphat
 				- Aktiv: Kleidung (wie Elias Nahrung)
-				- Passiv: Mehr Kollekte (wie Allandra), Mehr Ehefrauen (wie Thordal)
+				- Passiv: Mehr Kollekte (wie Allandra) ODER Mehr Ehefrauen (wie Thordal)
 			- Khana
-				- Aktiv: Fackeln (wie Marcus), Bekehren (wie Hakim)
-				- Passiv: Mehr Kollekte (wie Allandra), günstigere Militäreinheiten, Khana-Einheiten in Kasernen
-		- aus Ritter-Auswahl wieder entfernen (Testzwecke!)
+				- Aktiv: Fackeln (wie Marcus) ODER Bekehren (wie Hakim)
+				- Passiv: Mehr Kollekte (wie Allandra) ODER günstigere Militäreinheiten (wie Marcus) UND Khana-Einheiten in Kasernen
+		- aus Ritter-Auswahl wieder entfernen?
+		- mit Audio-Feedback (TTS)
 - Rebalancing
 	- Neue (sinnvollere) Aufstiegsbedingungen
-	- Katapulte gegen Einheiten
-- Disabled Button Textur für Burg/Lager/Kirche (ist zurzeit immer das der Kirche)
+		- wegen zu hohem Aufwand (Kompatibiliätt mit alten Maps) erstmal Low Priority
+	- Einheiten aus DEdK?
+		- Speerkämpfer (Billig-Schwertkämpfer, falls Eisen knapp ist)
+		- Kanonen (twA)
+- Disabled Button Textur für Burg/Lager/Kirche korrigieren (ist zurzeit immer die der Kirche)
+- "Rhian over the sea chapel"-quest und falsche Musik nach laden eines Savegame fixen?
+	- muss nochmal verifiziert werden
+- Auf 4k-Auflösung kann nicht mehr per BorderScroll nach rechts gecrolled werden
+- Max. Zoom leicht erhöhen
+	- Winkel muss nach 0.5 anders kalkuliert werden
