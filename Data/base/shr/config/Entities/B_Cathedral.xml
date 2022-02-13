@@ -259,6 +259,7 @@
         
         <SoundImpactType>Stone</SoundImpactType>
 
+		<OnScreenIcon>MinimapCathedral</OnScreenIcon>
     </Logic>
 
     <Behaviors>

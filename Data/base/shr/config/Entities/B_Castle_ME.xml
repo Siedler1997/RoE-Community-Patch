@@ -271,6 +271,7 @@
 
         <SoundImpactType>Stone</SoundImpactType>
 
+		<OnScreenIcon>MinimapCastle</OnScreenIcon>
     </Logic>
 
     <Behaviors>

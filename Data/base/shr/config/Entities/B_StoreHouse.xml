@@ -154,7 +154,7 @@
             <OutStockCapacity>2500</OutStockCapacity>
         </OutStockCapacities>
 
-        <OnScreenIcon>MinimapCastle</OnScreenIcon>
+        <OnScreenIcon>MinimapStorehouse</OnScreenIcon>
         <KegEffectFactor>0.1</KegEffectFactor>
 
         <Loot>
