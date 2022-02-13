@@ -2,19 +2,17 @@
   "ExpandedNodes": [
     "",
     "\\Data",
-    "\\DataOP",
-    "\\DataOP\\base",
-    "\\DataOP\\base\\shr",
-    "\\DataOP\\base\\shr\\Maps",
-    "\\DataOP\\base\\shr\\Maps\\Campaign",
-    "\\DataOP\\base\\shr\\Maps\\Campaign\\c00",
-    "\\DataOP\\base\\shr\\Maps\\Campaign\\c00\\c00_m08_Seydiir",
-    "\\DataOP\\base\\shr\\Maps\\Campaign\\c00\\c00_m16_Rossotorres",
     "\\Data\\base",
     "\\Data\\base\\shr",
+    "\\Data\\base\\shr\\config",
     "\\Data\\base\\shr\\Script",
-    "\\Data\\base\\shr\\Script\\Global"
+    "\\Data\\base\\shr\\Script\\Global",
+    "\\Data\\base\\shr\\Script\\Global\\ScriptSystems",
+    "\\Data\\extra1\\shr",
+    "\\Data\\extra1\\shr\\Script",
+    "\\Data\\extra1\\shr\\Script\\Local",
+    "\\Data\\extra1\\shr\\text"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\RedMe2.txt",
   "PreviewInSolutionExplorer": false
 }

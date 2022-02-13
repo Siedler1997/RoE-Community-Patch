@@ -7,7 +7,16 @@ ToDos:
 	- mit Audio-Feedback
 	- Mit Fähigkeiten und "Erinnerungen"
 	- Khana und Praphat
-		- ohne Ability-Buttons
+		- Abilities
+			- Praphat
+				- Aktiv: Kleidung (wie Elias Nahrung)
+				- Passiv: Mehr Kollekte (wie Allandra), Mehr Ehefrauen (wie Thordal)
+			- Khana
+				- Aktiv: Fackeln (wie Marcus)
+				- Passiv: Bekehren (wie Hakim), Mehr Kollekte (wie Allandra)
 		- Endstatistik defekt
 		- Diplomatie-Window defekt
-		- aus Ritter-Auswahl wieder entfernen
+		- aus Ritter-Auswahl wieder entfernen (Testzwecke!)
+- Rebalancing
+	- Neue (sinnvollere) Aufstiegsbedingungen
+	- Katapulte gegen Einheiten
