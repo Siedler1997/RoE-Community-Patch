@@ -1,0 +1,988 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+<!-- PRELOADING -->
+    <!-- Put types here that are likely to be on every map and are not
+        on the map by default, e.g. are spawned by script in turn 0.
+        Be careful not to include too many types as it increases loading
+        times (anims & models are preloaded) -->
+    <EntityTypesToPreload>
+        <Entity>U_MilitarySword</Entity>
+        <Entity>U_MilitaryBow</Entity>
+        <Entity>U_TaxCollector</Entity>
+        <Entity>U_Marketer</Entity>
+        <Entity>U_ResourceMerchant</Entity>
+        <Entity>U_GoldCart</Entity>
+        <Entity>U_KnightTrading</Entity>
+        <Entity>U_KnightHealing</Entity>
+        <Entity>U_KnightChivalry</Entity>
+        <Entity>U_KnightPlunder</Entity>
+        <Entity>U_KnightSong</Entity>
+        <Entity>U_KnightWisdom</Entity>
+        <Entity>U_KnightSabatta</Entity>
+        <Entity>U_KnightRedPrince</Entity>
+        <Entity>U_AmmunitionCart</Entity>
+        <Entity>U_MilitarySiegeTower</Entity>
+        <Entity>U_MilitaryCatapult</Entity>
+        <Entity>U_MilitaryBatteringRam</Entity>
+        <Entity>U_SiegeTowerCart</Entity>
+        <Entity>U_CatapultCart</Entity>
+        <Entity>U_BatteringRamCart</Entity>
+    </EntityTypesToPreload>
+
+<!-- RESOURCE/GOOD RESERVATION -->
+    <LogResourceReservations>false</LogResourceReservations>
+    <DisableReservationPriorities>false</DisableReservationPriorities>
+    <ResourceReservationPriorities>
+        <Category>GC_Medicine_Supplier</Category>
+        <Category>GC_Food_Supplier</Category>
+        <Category>GC_Clothes_Supplier</Category>
+        <Category>GC_Hygiene_Supplier</Category>
+        <Category>G_Sword_Supplier</Category>
+        <Category>G_Bow_Supplier</Category>
+        <Category>GC_Weapon_Supplier</Category>
+        <Category>GC_Entertainment_Supplier</Category>
+        <Category>GC_Luxury_Supplier</Category>
+    </ResourceReservationPriorities>
+
+    <NeedSatisfactionPriorities>
+        <Need>NeedMedicine</Need>
+        <Need>NeedNutrition</Need>
+        <Need>NeedClothing</Need>
+        <Need>NeedHygiene</Need>
+        <Need>NeedEntertainment</Need>
+        <Need>NeedWealth</Need>
+        <Need>NeedSecurity</Need>
+    </NeedSatisfactionPriorities>
+
+    <StorehouseFullWarningLimit>10</StorehouseFullWarningLimit>
+    <StorehouseAlmostFullWarningLimit>50</StorehouseAlmostFullWarningLimit>
+
+    <!-- max number of goods carried by workers for special upgrades -->
+    <MaxSpecialUpgradeResourceCarried>5</MaxSpecialUpgradeResourceCarried>
+    <!-- max range from which settlers will decide to help with upgrade, in cm as usual -->
+    <SpecialUpgradeMaxRadius>3200.0</SpecialUpgradeMaxRadius>
+
+
+<!-- TERRAIN -->
+    <!-- HeightDifferenceBlock defines what height difference causes terrain to be blocked -->
+    <!-- currently unused! -->
+    <HeightDifferenceBlock>200</HeightDifferenceBlock>
+    <!-- HeightDifferenceFlat defines the tolerance for flat neighbors when blocking slopes -->
+    <!-- currently unused! -->
+    <HeightDifferenceFlat>0</HeightDifferenceFlat>
+    <!-- MaxFlattenHeight defines what the highest height difference is that can still be flattened or smoothed. -->
+    <!-- currently unused! -->
+    <MaxFlattenHeight>100</MaxFlattenHeight>
+    <!-- MaxSmoothHeight defines how steep something may be after smoothing -->
+    <MaxSmoothHeight>100</MaxSmoothHeight>
+    <!-- SmoothBorder defines what range in each direction from the building is smoothed -->
+    <!-- Note that this is in grid points (= metres) rather than cm! -->
+    <SmoothBorder>6</SmoothBorder>
+
+    <!-- Setting both ranges to 0 disables building height choice -->
+    <!-- Range in which normal buildings set height for new building in cm -->
+    <BuildingHeightChoiceRange>0</BuildingHeightChoiceRange> <!-- was 2000 -->
+    <!-- Range in which market place sets height for new building in cm -->
+    <MarketHeightChoiceRange>0</MarketHeightChoiceRange> <!-- was 3000 -->
+
+
+<!--  SECURITY -->
+<!--  OBSOLETE -->
+    <SecurityIncreasePerSecond>0.0001</SecurityIncreasePerSecond>
+
+<!-- WEALTH -->
+    <WealthGoodDecayPerSecond>0</WealthGoodDecayPerSecond>
+    <WealthGoodTypes>
+        <GoodType>G_Ornament</GoodType>
+        <GoodType>G_Sign</GoodType>
+        <GoodType>G_Banner</GoodType>
+        <GoodType>G_Candle</GoodType>
+    </WealthGoodTypes>
+
+    <!-- Water deeper than the threshold is considered blocking for movement -->
+    <WaterDepthBlockingThreshold>50</WaterDepthBlockingThreshold>
+
+<!-- CARNIVORE -->
+	<!-- Default Health regeneration for carnivore animals (wolf, bear, lion)
+                "CarnivoreHealingPoints" are added each "CarnivoreHealingSeconds"
+-->
+    <CarnivoreHealingSeconds>3</CarnivoreHealingSeconds>
+    <CarnivoreHealingPoints>10</CarnivoreHealingPoints>
+
+<!-- SETTLER -->
+	<!-- Default Health regeneration for all units
+                "SettlerHealingPoints" are added each "SettlerHealingSeconds"
+                This can be overridden for each settler:
+                <HealingSeconds/>
+                <HealingPoints/>
+-->
+    <SettlerHealingSeconds>1</SettlerHealingSeconds>
+    <SettlerHealingPoints>5</SettlerHealingPoints>
+
+    <!-- ILLNESS STUFF -->
+    <!-- When you have this number of settlers or more, illness is activated -->
+    <InitialIllnessNumSettlers>151</InitialIllnessNumSettlers>
+    <!-- When you have exactly <InitialIllnessNumSettlers> and all buildings have non-critical hygiene,
+        this is the probability that a building "falls ill" when one of its workers finishes work  -->
+    <InitialIllnessProbability>0.005</InitialIllnessProbability>
+    <!-- The illness probability climbs the more settlers you have.
+        There are steps defined by the number of settlers required to reach the next step and the amount by which the probability climbs -->
+    <IllnessProbabilityBySettlersAmount>0.001</IllnessProbabilityBySettlersAmount>
+    <IllnessProbabilityBySettlersNumSettlers>10</IllnessProbabilityBySettlersNumSettlers>
+    <!-- Dirty buildings increase the danger of illness, by this much for each dirty (hygiene critical) buildings  -->
+    <IllnessProbabilityPerDirtyBuilding>0.005</IllnessProbabilityPerDirtyBuilding>
+
+  <!--  These tags lead to a base probability for illness in your settlement of
+	InitialIllnessProbability + floor((num_settlers - <InitialNumSettlers>) / <IllnessProbabilityBySettlersNumSettlers>) * <IllnessProbabilityBySettlersAmount> + num_dirty_buildings * <IllnessProbabilityPerDirtyBuilding>
+   -->
+
+    <!-- Modifier for the worker speed depending on his status-->
+    <IllSpeedModifier>1.0</IllSpeedModifier>
+    <FireAlarmSpeedModifier>2</FireAlarmSpeedModifier>
+    <FleeSpeedModifier>2</FleeSpeedModifier>
+
+    <!-- Amount is subtracted once after producing one good or gathering one resource -->
+    <NutritionLossWork>0.1</NutritionLossWork>
+    <ClothingLossWork>0.1</ClothingLossWork>
+    <HygieneLossWork>0.1</HygieneLossWork>
+    <EntertainmentLossWork>0.1</EntertainmentLossWork>
+    <MedicineLossWork>0.0</MedicineLossWork>
+
+    <!-- AlBr: Amount is subtracted once during each idle-cycle in  "TL_WORKER_IDLE.xml"  -->
+    <!-- 3 minutes idle has the same impact as producing a good or transport on waggonload of resources
+    Formular: LoosIdle = (3 minutes* 60 second )/ 0.1 -->
+    <HygieneLossIdle>0.0005</HygieneLossIdle>
+    <ClothingLossIdle>0.0005</ClothingLossIdle>
+    <NutritionLossIdle>0.0005</NutritionLossIdle>
+    <EntertainmentLossIdle>0.0005</EntertainmentLossIdle>
+    <MedicineLossIdle>0.0</MedicineLossIdle>
+
+    <!-- OBSOLETE? Settlers can only die when drowning and should be replaced immediately then -->
+    <WorkerMourningDuration>30</WorkerMourningDuration>
+
+    <!-- Factors for calculation of best provider candidate -->
+    <!--
+        the formula used in the game is
+            (1 - NumGoodsFactor * NumGoods) * (DistanceFactor * Distance)
+        and lower values are deemed better.  Make sure that for a full out stock
+        NumGoodsFactor * NumGoods < 1 or for a full stock distance will not
+        matter (=0) or be deemed best (<0) which is highly dubious.  For
+        example, if OutStocks are at most 10, with 0.05 factor a full out stock
+        will have about half distance penalty compared to one item on stock.
+    -->
+    <ProviderSearchNumGoodsFactor>.05</ProviderSearchNumGoodsFactor>
+    <ProviderSearchDistanceFactor>1</ProviderSearchDistanceFactor>
+
+    <DistanceToMarketplaceToCountStrikingWorker>1000</DistanceToMarketplaceToCountStrikingWorker>
+
+<!-- TAXES -->
+    <!--
+        There are three taxation levels: light, medium, high
+        The tax amount is subtracted from the buildings "gold earnings"
+        "1.0" subtracts all gold from the buildings earnings
+    -->
+    <MaxNumberOfTaxCollectorsPerTaxCollection>6</MaxNumberOfTaxCollectorsPerTaxCollection>
+    <TaxCollectionFrequencyInMinutes>1.25</TaxCollectionFrequencyInMinutes>
+    <NumberOfBuildingsPerTaxCollector>1</NumberOfBuildingsPerTaxCollector>
+    <MaxBuildingEarnings>100</MaxBuildingEarnings>
+    <DefaultTaxLevel>1</DefaultTaxLevel>
+    <TaxLevels>
+        <TaxLevel>
+            <Factor>0</Factor>
+        </TaxLevel>
+        <TaxLevel>
+            <Factor>.5</Factor>
+        </TaxLevel>
+        <TaxLevel>
+            <Factor>1</Factor>
+        </TaxLevel>
+    </TaxLevels>
+
+<!-- PROSPERITY -->
+    <!--    Building which have <MaxBuildingEarnings> * <Factor> earnings,
+            add to the rich building counts. -->
+    <BuildingProsperityFactors>
+        <Factor>.3</Factor>
+    </BuildingProsperityFactors>
+
+<!-- OBSOLETE? PRESTIGE POINTS -->
+    <KnightTitles>
+        <PrestigePointsRequired>0</PrestigePointsRequired>
+        <PrestigePointsRequired>800</PrestigePointsRequired>
+        <PrestigePointsRequired>1600</PrestigePointsRequired>
+        <PrestigePointsRequired>2600</PrestigePointsRequired>
+        <PrestigePointsRequired>3800</PrestigePointsRequired>
+        <PrestigePointsRequired>5000</PrestigePointsRequired>
+        <PrestigePointsRequired>7000</PrestigePointsRequired>
+    </KnightTitles>
+
+<!-- SERMON COLLECTION -->
+    <CollectAmount>5</CollectAmount>
+
+    <SpouseTypes>
+        <SpouseType>U_SpouseS01</SpouseType>
+        <SpouseType>U_SpouseS02</SpouseType>
+        <SpouseType>U_SpouseS03</SpouseType>
+        <SpouseType>U_SpouseF01</SpouseType>
+        <SpouseType>U_SpouseF02</SpouseType>
+        <SpouseType>U_SpouseF03</SpouseType>
+    </SpouseTypes>
+
+
+ <!-- Max. City Reputation is 1 ! -->
+   <CityReputationAdjustPerSecond>.01</CityReputationAdjustPerSecond>
+
+    <CityReputationThresholds>
+        <Threshold>0.6</Threshold>
+        <Threshold>0.3</Threshold>
+    </CityReputationThresholds>
+
+<!-- CITY LEVELS -->
+<!-- OBSOLETE ? -->
+
+    <NumberOfCityStatus>15</NumberOfCityStatus>
+    <!-- Note: Cost for first level is  0 -->
+    <CityStatusCosts>
+        <CityStatusCost>
+            <GoodAmount>
+                <GoodType>G_Gold</GoodType>
+                <Amount>0</Amount>
+            </GoodAmount>
+        </CityStatusCost>
+
+        <CityStatusCost>
+            <GoodAmount>
+                <GoodType>G_Gold</GoodType>
+                <Amount>0</Amount>
+            </GoodAmount>
+        </CityStatusCost>
+
+        <CityStatusCost>
+            <GoodAmount>
+                <GoodType>G_Gold</GoodType>
+                <Amount>0</Amount>
+            </GoodAmount>
+        </CityStatusCost>
+
+        <CityStatusCost>
+            <GoodAmount>
+                <GoodType>G_Gold</GoodType>
+                <Amount>0</Amount>
+            </GoodAmount>
+        </CityStatusCost>
+
+        <CityStatusCost>
+            <GoodAmount>
+                <GoodType>G_Gold</GoodType>
+                <Amount>0</Amount>
+            </GoodAmount>
+        </CityStatusCost>
+
+        <CityStatusCost>
+            <GoodAmount>
+                <GoodType>G_Gold</GoodType>
+                <Amount>0</Amount>
+            </GoodAmount>
+        </CityStatusCost>
+
+        <CityStatusCost>
+            <GoodAmount>
+                <GoodType>G_Gold</GoodType>
+                <Amount>0</Amount>
+            </GoodAmount>
+        </CityStatusCost>
+
+        <CityStatusCost>
+            <GoodAmount>
+                <GoodType>G_Gold</GoodType>
+                <Amount>0</Amount>
+            </GoodAmount>
+        </CityStatusCost>
+
+        <CityStatusCost>
+            <GoodAmount>
+                <GoodType>G_Gold</GoodType>
+                <Amount>0</Amount>
+            </GoodAmount>
+        </CityStatusCost>
+
+        <CityStatusCost>
+            <GoodAmount>
+                <GoodType>G_Gold</GoodType>
+                <Amount>0</Amount>
+            </GoodAmount>
+        </CityStatusCost>
+
+        <CityStatusCost>
+            <GoodAmount>
+                <GoodType>G_Gold</GoodType>
+                <Amount>0</Amount>
+            </GoodAmount>
+        </CityStatusCost>
+        <CityStatusCost>
+            <GoodAmount>
+                <GoodType>G_Gold</GoodType>
+                <Amount>0</Amount>
+            </GoodAmount>
+        </CityStatusCost>
+        <CityStatusCost>
+            <GoodAmount>
+                <GoodType>G_Gold</GoodType>
+                <Amount>0</Amount>
+            </GoodAmount>
+        </CityStatusCost>
+        <CityStatusCost>
+            <GoodAmount>
+                <GoodType>G_Gold</GoodType>
+                <Amount>0</Amount>
+            </GoodAmount>
+        </CityStatusCost>
+    </CityStatusCosts>
+
+
+<!-- Settler limit is increased by upgrading the cathedral
+        The first value is used when no cathedral exists (which shouldn't happen).
+        The next 4 values are the limits for each of the cathedrals upgrade levels
+ -->
+    <SettlerLimits>
+        <SettlerLimit>50</SettlerLimit>
+        <SettlerLimit>50</SettlerLimit>
+        <SettlerLimit>100</SettlerLimit>
+        <SettlerLimit>150</SettlerLimit>
+        <SettlerLimit>250</SettlerLimit>
+        <SettlerLimit>250</SettlerLimit>
+    </SettlerLimits>
+
+<!--BUILDINGS -->
+    <WealthGoodUsedForBuildingLights>G_Candle</WealthGoodUsedForBuildingLights>
+
+    <!-- Health of the construction site (absolute interger value, must be greater than 0)
+            Set to 10 because it then can be destroyed by one torch -->
+    <ConstructionSiteHealth>10</ConstructionSiteHealth>
+
+    <!--    This factor is multiplied with the building's construction time to detemine
+            how long it takes to knock down a building  -->
+    <KnockDownTimeFactor>0.2</KnockDownTimeFactor>
+
+    <!-- The percentage of the original building's cost a player receives when he knocks down the building -->
+    <CompensationOnBuildingSale>50</CompensationOnBuildingSale>
+
+    <!-- Territory Costs (gold cost for claiming a territory) -->
+    <TerritoryPriceLow>200</TerritoryPriceLow>
+    <TerritoryPriceNormal>300</TerritoryPriceNormal>
+    <TerritoryPriceHigh>500</TerritoryPriceHigh>
+    <TerritoryPriceExpensive>1000</TerritoryPriceExpensive>
+    <TerritoryPriceVeryExpensive>1500</TerritoryPriceVeryExpensive>
+
+
+	<!-- Factor of exploration range of buildings under construction -->
+<!-- OBSOLETE ? -->
+    <BuildingUnderConstructionExplorationFactor>0.25</BuildingUnderConstructionExplorationFactor>
+
+	<!-- The max distance a wall turret will snap to a blocked position -->
+    <WallTurretPlacementSnapDistance>502</WallTurretPlacementSnapDistance>
+
+	<!-- The maximum radius a building will snap from a blocked to a free position during placement -->
+    <BuildingPlacementSnapDistance>302</BuildingPlacementSnapDistance>
+
+    <!-- The maximum radius a building will snap towards a road during placement -->
+    <!-- should probably be less than BuildingPlacementSnapDistance to avoid confusing the player -->
+    <BuildingPlacementRoadSnapDistance>700</BuildingPlacementRoadSnapDistance>
+
+    <!-- Maximal height difference that still allows for building. -->
+    <MaxDeltaForCityTerrain>100</MaxDeltaForCityTerrain>
+    <MaxDeltaForOuterRimTerrain>500</MaxDeltaForOuterRimTerrain>
+
+    <!-- SemiFerile Soil has been removed from the game, so these tags can be cleaned up!
+    Modifies the grow speed of all "fields" (grain; honey; milk; wool)
+    based on the soil fertility. The GrowthRate of fields is defined in the entities XMLs -->
+<!-- OBSOLETE ! -->
+    <FertileSoilGrowSpeedModifier>1.0</FertileSoilGrowSpeedModifier>
+    <SemiFertileSoilGrowSpeedModifier>0.5</SemiFertileSoilGrowSpeedModifier>
+
+<!-- Fertility of soil -->
+    <!-- Yield modifiers (Size of OutStock) must be 1 for both soil types,
+    otherwise the progress display (percentage) doesn't work! -->
+    <FertileSoilYieldModifier>1.0</FertileSoilYieldModifier>
+    <SemiFertileSoilYieldModifier>1.0</SemiFertileSoilYieldModifier>
+
+<!-- well -->
+    <WellWaterAmountWarning>5</WellWaterAmountWarning>
+
+
+<!--ROADS -->
+    <RoadPlacementSnapDistance>500</RoadPlacementSnapDistance>
+    <RoadMinimumLength>200</RoadMinimumLength>
+    <RoadMetersPerRoadUnit>10</RoadMetersPerRoadUnit>
+    <RoadCostPerRoadUnit>
+        <GoodAmount>
+            <GoodType>G_Stone</GoodType>
+            <Amount>1</Amount>
+        </GoodAmount>
+    </RoadCostPerRoadUnit>
+
+
+<!-- Default speed modifier for units without a cart -->
+    <SpeedFactorRoad>1.1</SpeedFactorRoad>
+
+<!-- each units speed on ROADS is modified by "SpeedFactorRoad" specified for each type of cart
+        The "TrailSpeedModifier" reduces this speed increase when moving on trails  -->
+    <TrailSpeedModifier>0.5</TrailSpeedModifier>
+
+<!-- WALLS -->
+    <MinDegreesBetweenWallSegments>80</MinDegreesBetweenWallSegments>
+    <WallMetersPerWallUnit>4</WallMetersPerWallUnit>
+<!-- WallCostPerWallUnit for walls, palisades and fences is specified in the entities -->
+
+<!-- FIRE AND REPAIR -->
+    <RepairHealthIncreasePerSecond>10</RepairHealthIncreasePerSecond>
+    <FireHealthDecreasePerSecond>5</FireHealthDecreasePerSecond>
+
+    <!-- This value increases the FireSize as long as the fire isn't completely extinguished
+           THIS TAG ISN'T USED ANYMORE AND CAN BE REMOVED -->
+    <FireSpreadConstant>0</FireSpreadConstant>
+
+    <!-- If it is raining/snowing this value modifies the amount of rain that counteracts the fire
+         set to 1 to have normal precipitation effect, > 1 enhances effect, < 1 weakens effect
+         (reduces the FireSize by the specified amount per second)-->
+    <EffectOfPercipitationOnFireModifier>1</EffectOfPercipitationOnFireModifier>
+
+    <!-- The amount of fire from projectile *before* the building get on fire
+     is reduced every second by this amount, this can be overloaded in building properties
+    OBSOLETE ? This isn't used anymore! -->
+    <FireProjectileDecreasePerSecond>0</FireProjectileDecreasePerSecond>
+
+
+    <!-- Each bucket of water reduces the firesize by 10  -->
+    <FireSizeModificationAmountPerFireAlarmGood>-10</FireSizeModificationAmountPerFireAlarmGood>
+
+    <!-- For Special Buildings (Castle, Cathedral, Storehouse) each stone repairs this amount of health in the specified time  -->
+    <DamageModificationAmountPerRepairAlarmGoodBuilding>50</DamageModificationAmountPerRepairAlarmGoodBuilding>
+    <DamageModificationAmountPerTurnBuilding>1.5</DamageModificationAmountPerTurnBuilding>
+
+    <!-- For Walls and Gates each stone repairs this amount of health in the specified time  -->
+    <DamageModificationAmountPerRepairAlarmGoodWall>100</DamageModificationAmountPerRepairAlarmGoodWall>
+    <DamageModificationAmountPerTurnWall>0.75</DamageModificationAmountPerTurnWall>
+
+    <FireAlarmRadius>6399</FireAlarmRadius>
+    <RepairAlarmRadius>6399</RepairAlarmRadius>
+
+    <FireAlarmGood>G_Water</FireAlarmGood>
+    <FireAlarmTL>TL_WORKER_EXTINGUISH_FIRE</FireAlarmTL>
+    <FireAlarmGoodProviderCategory>G_Water_Supplier</FireAlarmGoodProviderCategory>
+
+    <RepairAlarmGood>G_Stone</RepairAlarmGood>
+    <RepairAlarmTL>TL_WORKER_REPAIR_ALARM</RepairAlarmTL>
+    <RepairAlarmGoodProviderCategory>G_Stone_Supplier</RepairAlarmGoodProviderCategory>
+
+<!-- Fog of War -->
+    <!-- Transparency of the fog in areas that have been seen but cannot be seen at the moment -->
+    <FoWWasSeenFactor>0.25</FoWWasSeenFactor>
+    <!-- Transparency of the fog when the entities in a territory become visible -->
+    <FoWVisibilityThreshold>0.75</FoWVisibilityThreshold>
+    <!-- How long the transition from one fog of war state to another takes -->
+    <FoWTransitionDurationInSeconds>2.5</FoWTransitionDurationInSeconds>
+
+<!-- S6 Fight system -->
+    <!-- When looking for valid targets the pivot of an entity must be within
+         detection range. As buildings have quite an extension we enlarge the
+         detction range by the value specified below. -->
+    <FindBuildingDelta>1500</FindBuildingDelta>
+
+<!-- BATTLE -->
+	<!-- Range in which enemies are attacked by units on an "attack move" -->
+    <AttackMoveRange>2000</AttackMoveRange>
+
+    <!-- Attack damage is modulated by this value when fighting on own
+    territories. Can be overridden for each soldier type.
+    Damage is calculated as:
+
+    result = damage * (player_morale + territory_bonus) * height_modifier
+    -->
+
+    <TerritoryBonus>0.2</TerritoryBonus>
+
+	 <!--
+        The below are guarding distances.  They differ for buildings and other
+        entities.  The distance is checked once a second.  If it is greater
+        than the max distance, the entity will move towards a point that is the
+        move distance away from the guarded entity.
+          Another note: when a non-building entity is inside a building (e.g. a
+        worker), the building is guarded instead, including changing the max
+        and move distance, so guards may "hang back" a little.
+          Of course, move and max distance as upper and lower threshold to avoid
+        constant adjustment are less important for buildings, since buildings
+        have a tendency to stay in one place :)  However, it can have influence
+        when the guards were drawn away during battle.
+    -->
+    <GuardMaxDistanceBuilding>1000.0</GuardMaxDistanceBuilding>
+    <GuardMoveDistanceBuilding>900.0</GuardMoveDistanceBuilding>
+    <GuardMaxDistanceOther>600.0</GuardMaxDistanceOther>
+    <GuardMoveDistanceOther>300.0</GuardMoveDistanceOther>
+
+
+    <WorkerFlightDistance>1000</WorkerFlightDistance>
+    <MaxExperiencePoints>1000</MaxExperiencePoints>
+    <BattleSerfMaxSeconds>-1</BattleSerfMaxSeconds>
+
+<!-- KNIGHT RESURRECTION -->
+    <!-- The time it takes to resurrect a hero, in ms -->
+    <HeroResurrectionTime>60000</HeroResurrectionTime>
+
+    <!--
+        Hero resurrection slippage is in ms per second - when no friend is near and hero had
+        already been helped, it increases the rest of the time required again, so just
+        "walking past" several times does not necessarily resurrect the hero.  Since this is
+        done per turn (!), the value should be divisible by ten to be accurate.  A value that
+        is less than ten will be the same as zero (no slippage) very high slippage means that
+        you'd really have to resurrect the hero in one go, because any benefits from other
+        friends wear off immediately.
+        The example value of 100 means that one second (1000ms) wears of in 10 seconds of the
+        hero being alone again (i.e. 10% rate).
+    -->
+
+<!-- OBSOLETE ?! -->
+    <HeroResurrectionSlippage>100</HeroResurrectionSlippage>
+    <!-- The radius in which friendlies must be to resurrect the hero -->
+    <HeroResurrectionRadius>800.0</HeroResurrectionRadius>
+    <!-- The amount of health the hero has after being resuurected, factor of full health -->
+    <!-- Obviously, this value should be &gt; 0 and &leq; 1 -->
+    <HeroResurrectionHealthFactor>0.5</HeroResurrectionHealthFactor>
+    <!-- The amount of action points after resurrection, factor of full AP -->
+    <!-- This value should be &geq; 0 and &leq; 1 -->
+    <HeroResurrectionActionPointFactor>0.75</HeroResurrectionActionPointFactor>
+    <!-- The exploration range of dead/comnatose heroes. -->
+    <!-- Note that this range is in grid points, NOT cm like most other ranges! -->
+    <HeroComatoseExploration>1</HeroComatoseExploration>
+
+
+    <!--
+        Distances at which the hero interacts, note that the one for Object Interaction is merely
+        a default value that can be overridden by individual interactive objects.
+    -->
+    <NPCInteractionDistance>300.0</NPCInteractionDistance>
+    <ObjectInteractionDistance>300.0</ObjectInteractionDistance>
+
+<!-- RESOURCES -->
+	<!-- Amount of resource at mine triggering user feedback 'running out of...' -->
+    <ResourceDoodadWarnAmount>800</ResourceDoodadWarnAmount>
+
+<!-- VOICE FEEDBACK -->
+	<!-- Frequency the EGL feedback system is updated (old messages are removed, ...) -->
+    <FeedbackHandlerUpdateFrequency>10</FeedbackHandlerUpdateFrequency>
+
+	<!-- Time a message stays in feedback handler in seconds -->
+    <FeedbackHandlerTimeStaysInSystem>60</FeedbackHandlerTimeStaysInSystem>
+
+<!-- EXPELLING SETTLERS -->
+    <!-- The effect which is spawned when a settler is expelled -->
+    <ExpelEffectID>FXDie</ExpelEffectID>
+
+
+<!--WEATHER (old system) -->
+<!-- OBSOLETE ! -->
+	<!-- Factor for exploration of buildings if raining -->
+    <WeatherExplorationBuildingRainFactor>0.8</WeatherExplorationBuildingRainFactor>
+	<!-- Factor for exploration of settlers if raining -->
+    <WeatherExplorationSettlerRainFactor>0.8</WeatherExplorationSettlerRainFactor>
+	<!-- Factor for move speed if raining -->
+    <WeatherMoveSpeedRainFactor>1.0</WeatherMoveSpeedRainFactor>
+	<!-- Factor for exploration of buildings if snowing -->
+    <WeatherExplorationBuildingSnowFactor>1.0</WeatherExplorationBuildingSnowFactor>
+	<!-- Factor for exploration of settlers if snowing -->
+    <WeatherExplorationSettlerSnowFactor>1.0</WeatherExplorationSettlerSnowFactor>
+	<!-- Factor for move speed if snowing -->
+    <WeatherMoveSpeedSnowFactor>0.85</WeatherMoveSpeedSnowFactor>
+	<!-- Miss Chance change (projectiles) (integer %) when it's raining -->
+    <WeatherMissChanceChangeRain>5</WeatherMissChanceChangeRain>
+	<!-- Miss Chance change (projectiles) (integer %) when it's snowing -->
+    <WeatherMissChanceChangeSnow>2</WeatherMissChanceChangeSnow>
+<!-- WEATHER CHANGING -->
+    <!-- The amount of weather energy a player must have in order to change the weather -->
+    <EnergyRequiredForWeatherChange>1000</EnergyRequiredForWeatherChange>
+    <!-- The amount of energy deducted from the other players when a player changes the weather
+          with the weather machine -->
+    <EnergyDeductedFromOtherPlayers>300</EnergyDeductedFromOtherPlayers>
+
+
+
+    <BuildingUpgrades>
+        <BuildingUpgrade>
+            <Category>Woodcutter</Category>
+            <FirstBuilding>B_Woodcutter</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>IronMine</Category>
+            <FirstBuilding>B_IronMine</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>StoneQuarry</Category>
+            <FirstBuilding>B_StoneQuarry</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>HerbGatherer</Category>
+            <FirstBuilding>B_HerbGatherer</FirstBuilding>
+        </BuildingUpgrade>
+
+        <BuildingUpgrade>
+            <Category>FishingHut</Category>
+            <FirstBuilding>B_FishingHut</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>HuntersHut</Category>
+            <FirstBuilding>B_HuntersHut</FirstBuilding>
+        </BuildingUpgrade>
+
+        <BuildingUpgrade>
+            <Category>GrainFarm</Category>
+            <FirstBuilding>B_GrainFarm</FirstBuilding>
+        </BuildingUpgrade>
+
+        <BuildingUpgrade>
+            <Category>GrainField_NorthAfrica</Category>
+            <FirstBuilding>B_GrainField_NA</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>GrainField_SouthEurope</Category>
+            <FirstBuilding>B_GrainField_SE</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>GrainField_NorthEurope</Category>
+            <FirstBuilding>B_GrainField_NE</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>GrainField_MiddleEurope</Category>
+            <FirstBuilding>B_GrainField_ME</FirstBuilding>
+        </BuildingUpgrade>
+
+        <BuildingUpgrade>
+            <Category>CattleFarm</Category>
+            <FirstBuilding>B_CattleFarm</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>SheepFarm</Category>
+            <FirstBuilding>B_SheepFarm</FirstBuilding>
+        </BuildingUpgrade>
+
+        <BuildingUpgrade>
+            <Category>Beekeeper</Category>
+            <FirstBuilding>B_Beekeeper</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>BeeHive</Category>
+            <FirstBuilding>B_Beehive</FirstBuilding>
+        </BuildingUpgrade>
+
+        <BuildingUpgrade>
+            <Category>Bakery</Category>
+            <FirstBuilding>B_Bakery</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>Dairy</Category>
+            <FirstBuilding>B_Dairy</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>Butcher</Category>
+            <FirstBuilding>B_Butcher</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>SmokeHouse</Category>
+            <FirstBuilding>B_SmokeHouse</FirstBuilding>
+        </BuildingUpgrade>
+
+        <BuildingUpgrade>
+            <Category>Tavern</Category>
+            <FirstBuilding>B_Tavern</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>Baths</Category>
+            <FirstBuilding>B_Baths</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>Theatre</Category>
+            <FirstBuilding>B_Theatre</FirstBuilding>
+        </BuildingUpgrade>
+
+        <BuildingUpgrade>
+            <Category>Weaver</Category>
+            <FirstBuilding>B_Weaver</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>Blacksmith</Category>
+            <FirstBuilding>B_Blacksmith</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>Carpenter</Category>
+            <FirstBuilding>B_Carpenter</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>Pharmacy</Category>
+            <FirstBuilding>B_Pharmacy</FirstBuilding>
+        </BuildingUpgrade>
+
+        <BuildingUpgrade>
+            <Category>Tanner</Category>
+            <FirstBuilding>B_Tanner</FirstBuilding>
+        </BuildingUpgrade>
+
+        <BuildingUpgrade>
+            <Category>CandleMaker</Category>
+            <FirstBuilding>B_CandleMaker</FirstBuilding>
+        </BuildingUpgrade>
+
+        <BuildingUpgrade>
+            <Category>BroomMaker</Category>
+            <FirstBuilding>B_BroomMaker</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>Soapmaker</Category>
+            <FirstBuilding>B_Soapmaker</FirstBuilding>
+        </BuildingUpgrade>
+
+        <BuildingUpgrade>
+            <Category>Cathedral</Category>
+            <FirstBuilding>B_Cathedral</FirstBuilding>
+        </BuildingUpgrade>
+
+        <BuildingUpgrade>
+            <Category>SwordSmith</Category>
+            <FirstBuilding>B_SwordSmith</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>BowMaker</Category>
+            <FirstBuilding>B_BowMaker</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>SiegeEngineWorkshop</Category>
+            <FirstBuilding>B_SiegeEngineWorkshop</FirstBuilding>
+        </BuildingUpgrade>
+
+        <BuildingUpgrade>
+            <Category>Barracks</Category>
+            <FirstBuilding>B_Barracks</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>BarracksBow</Category>
+            <FirstBuilding>B_BarracksArchers</FirstBuilding>
+        </BuildingUpgrade>
+
+
+        <BuildingUpgrade>
+            <Category>WallSegment_MiddleEurope</Category>
+            <FirstBuilding>B_WallSegment_ME</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>WallTurret_MiddleEurope</Category>
+            <FirstBuilding>B_WallTurret_ME</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>WallGate_MiddleEurope</Category>
+            <FirstBuilding>B_WallGate_ME</FirstBuilding>
+        </BuildingUpgrade>
+
+        <BuildingUpgrade>
+            <Category>WallSegment_SouthEurope</Category>
+            <FirstBuilding>B_WallSegment_SE</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>WallTurret_SouthEurope</Category>
+            <FirstBuilding>B_WallTurret_SE</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>WallGate_SouthEurope</Category>
+            <FirstBuilding>B_WallGate_SE</FirstBuilding>
+        </BuildingUpgrade>
+
+         <BuildingUpgrade>
+            <Category>WallSegment_NorthEurope</Category>
+            <FirstBuilding>B_WallSegment_NE</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>WallTurret_NorthEurope</Category>
+            <FirstBuilding>B_WallTurret_NE</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>WallGate_NorthEurope</Category>
+            <FirstBuilding>B_WallGate_NE</FirstBuilding>
+        </BuildingUpgrade>
+
+        <BuildingUpgrade>
+            <Category>WallSegment_NorthAfrica</Category>
+            <FirstBuilding>B_WallSegment_NA</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>WallTurret_NorthAfrica</Category>
+            <FirstBuilding>B_WallTurret_NA</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>WallGate_NorthAfrica</Category>
+            <FirstBuilding>B_WallGate_NA</FirstBuilding>
+        </BuildingUpgrade>
+
+
+
+         <BuildingUpgrade>
+            <Category>PalisadeSegment</Category>
+            <FirstBuilding>B_PalisadeSegment</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>PalisadeTurret</Category>
+            <FirstBuilding>B_PalisadeTurret</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>PalisadeGate</Category>
+            <FirstBuilding>B_PalisadeGate</FirstBuilding>
+        </BuildingUpgrade>
+
+        <BuildingUpgrade>
+            <Category>FenceSegment</Category>
+            <FirstBuilding>B_FenceSegment</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>FenceTurret</Category>
+            <FirstBuilding>B_FenceTurret</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>FenceGate</Category>
+            <FirstBuilding>B_FenceGate</FirstBuilding>
+        </BuildingUpgrade>
+
+        <BuildingUpgrade>
+            <Category>Outpost_MiddleEurope</Category>
+            <FirstBuilding>B_Outpost_ME</FirstBuilding>
+        </BuildingUpgrade>
+
+        <BuildingUpgrade>
+            <Category>Outpost_SouthEurope</Category>
+            <FirstBuilding>B_Outpost_SE</FirstBuilding>
+        </BuildingUpgrade>
+
+        <BuildingUpgrade>
+            <Category>Outpost_NorthEurope</Category>
+            <FirstBuilding>B_Outpost_NE</FirstBuilding>
+        </BuildingUpgrade>
+
+        <BuildingUpgrade>
+            <Category>Outpost_NorthAfrica</Category>
+            <FirstBuilding>B_Outpost_NA</FirstBuilding>
+        </BuildingUpgrade>
+
+        <BuildingUpgrade>
+            <Category>Marketplace_MiddleEurope</Category>
+            <FirstBuilding>B_Marketplace_ME</FirstBuilding>
+        </BuildingUpgrade>
+
+        <BuildingUpgrade>
+            <Category>Marketplace_SouthEurope</Category>
+            <FirstBuilding>B_Marketplace_SE</FirstBuilding>
+        </BuildingUpgrade>
+
+        <BuildingUpgrade>
+            <Category>Marketplace_NorthEurope</Category>
+            <FirstBuilding>B_Marketplace_NE</FirstBuilding>
+        </BuildingUpgrade>
+
+        <BuildingUpgrade>
+            <Category>Marketplace_NorthAfrica</Category>
+            <FirstBuilding>B_Marketplace_NA</FirstBuilding>
+        </BuildingUpgrade>
+
+        <BuildingUpgrade>
+            <Category>Well</Category>
+            <FirstBuilding>B_Well</FirstBuilding>
+        </BuildingUpgrade>
+
+
+        <BuildingUpgrade>
+            <Category>BannerMaker</Category>
+            <FirstBuilding>B_BannerMaker</FirstBuilding>
+        </BuildingUpgrade>
+
+        <BuildingUpgrade>
+            <Category>Castle_MiddleEurope</Category>
+            <FirstBuilding>B_Castle_ME</FirstBuilding>
+        </BuildingUpgrade>
+
+        <BuildingUpgrade>
+            <Category>Castle_SouthEurope</Category>
+            <FirstBuilding>B_Castle_SE</FirstBuilding>
+        </BuildingUpgrade>
+
+        <BuildingUpgrade>
+            <Category>Castle_NorthEurope</Category>
+            <FirstBuilding>B_Castle_NE</FirstBuilding>
+        </BuildingUpgrade>
+
+        <BuildingUpgrade>
+            <Category>Castle_NorthAfrica</Category>
+            <FirstBuilding>B_Castle_NA</FirstBuilding>
+        </BuildingUpgrade>
+
+         <BuildingUpgrade>
+            <Category>Storehouse</Category>
+            <FirstBuilding>B_StoreHouse</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>CattlePasture</Category>
+            <FirstBuilding>B_CattlePasture</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>SheepPasture</Category>
+            <FirstBuilding>B_SheepPasture</FirstBuilding>
+        </BuildingUpgrade>
+
+        <BuildingUpgrade>
+            <Category>SpecialEdition_Column</Category>
+            <FirstBuilding>B_SpecialEdition_Column</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>SpecialEdition_Pavilion</Category>
+            <FirstBuilding>B_SpecialEdition_Pavilion</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>SpecialEdition_StatueDario</Category>
+            <FirstBuilding>B_SpecialEdition_StatueDario</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>SpecialEdition_StatueFamily</Category>
+            <FirstBuilding>B_SpecialEdition_StatueFamily</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>SpecialEdition_StatueProduction</Category>
+            <FirstBuilding>B_SpecialEdition_StatueProduction</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>SpecialEdition_StatueSettler</Category>
+            <FirstBuilding>B_SpecialEdition_StatueSettler</FirstBuilding>
+        </BuildingUpgrade>
+        
+        <!-- Dummies -->
+        <BuildingUpgrade>
+            <Category>Dummy_00</Category>
+            <FirstBuilding>B_SpecialEdition_StatueSettler</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>Dummy_01</Category>
+            <FirstBuilding>B_SpecialEdition_StatueSettler</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>Dummy_02</Category>
+            <FirstBuilding>B_SpecialEdition_StatueSettler</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>Dummy_03</Category>
+            <FirstBuilding>B_SpecialEdition_StatueSettler</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>Dummy_04</Category>
+            <FirstBuilding>B_SpecialEdition_StatueSettler</FirstBuilding>
+        </BuildingUpgrade>
+        <BuildingUpgrade>
+            <Category>Dummy_05</Category>
+            <FirstBuilding>B_SpecialEdition_StatueSettler</FirstBuilding>
+        </BuildingUpgrade>
+        
+    </BuildingUpgrades>
+
+    <ShallowWaterResourceType>B_ShallowWater</ShallowWaterResourceType>
+</root>

@@ -1,7 +1,6 @@
 ToDos:
 - Söldner-Trupps
 	- Korrekte Fackelanzeige
-	- Audio-Feedback
 	- Overhead-Namen entfernen
 - Neue Ritter 
 	- mit Audio-Feedback
@@ -12,10 +11,8 @@ ToDos:
 				- Aktiv: Kleidung (wie Elias Nahrung)
 				- Passiv: Mehr Kollekte (wie Allandra), Mehr Ehefrauen (wie Thordal)
 			- Khana
-				- Aktiv: Fackeln (wie Marcus)
-				- Passiv: Bekehren (wie Hakim), Mehr Kollekte (wie Allandra)
-		- Endstatistik defekt
-		- Diplomatie-Window defekt
+				- Aktiv: Fackeln (wie Marcus), Bekehren (wie Hakim)
+				- Passiv: Mehr Kollekte (wie Allandra), günstigere Militäreinheiten, Khana-Einheiten in Kasernen
 		- aus Ritter-Auswahl wieder entfernen (Testzwecke!)
 - Rebalancing
 	- Neue (sinnvollere) Aufstiegsbedingungen
