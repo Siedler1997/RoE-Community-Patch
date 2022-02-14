@@ -1,7 +1,6 @@
 ToDos:
 - Söldner-Trupps
 	- Korrekte Fackelanzeige (auch im Base game)
-	- Overhead-Namen entfernen (RdO)
 - Neue Ritter 
 	- Fähigkeiten: Eigene Tooltips ergänzen (auch bei Sabatta und RP)
 	- RP
