@@ -1,8 +1,5 @@
 ToDos:
 - Söldner-Trupps
-	- Unique Feedback Sounds
-		- Für Merc_AS die von NA
-		- Für Khana - Keine Ahnung
 	- Korrekte Fackelanzeige (auch im Base game)
 	- Overhead-Namen entfernen (RdO)
 - Neue Ritter 

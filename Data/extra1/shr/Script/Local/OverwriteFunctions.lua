@@ -34,10 +34,10 @@ function InitLocalOverwrite()
         g_MilitaryFeedback.Knights[Entities.U_KnightKhana]              = "H_Knight_Khana"
         g_MilitaryFeedback.Knights[Entities.U_KnightPraphat]              = "H_Knight_Praphat"
         
-        g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Melee_AS]		= "Military_Sword"
-        g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Ranged_AS]	= "Military_Bow"
-        g_MilitaryFeedback.Soldiers[Entities.U_MilitarySword_Khana]		= "Military_Sword"
-        g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBow_Khana]	= "Military_Bow"
+        g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Melee_AS]		= "H_NPC_Mercenary_NA"
+        g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Ranged_AS]	= "H_NPC_Mercenary_NA"
+        g_MilitaryFeedback.Soldiers[Entities.U_MilitarySword_Khana]		= "H_NPC_Mercenary_ME"
+        g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBow_Khana]	= "H_NPC_Mercenary_ME"
         
         
     end      
