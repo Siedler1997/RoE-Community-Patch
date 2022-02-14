@@ -4,15 +4,14 @@
     "\\Data",
     "\\Data\\base",
     "\\Data\\base\\shr",
-    "\\Data\\base\\shr\\config",
-    "\\Data\\base\\shr\\Script",
-    "\\Data\\base\\shr\\Script\\Global",
-    "\\Data\\base\\shr\\Script\\Global\\ScriptSystems",
+    "\\Data\\base\\shr\\graphics",
+    "\\Data\\base\\shr\\graphics\\Textures",
+    "\\Data\\base\\shr\\graphics\\Textures\\GUI_960",
+    "\\Data\\extra1",
     "\\Data\\extra1\\shr",
     "\\Data\\extra1\\shr\\Script",
     "\\Data\\extra1\\shr\\Script\\Local",
-    "\\Data\\extra1\\shr\\text"
+    "\\Data\\extra1\\shr\\Script\\Local\\Interface"
   ],
-  "SelectedNode": "\\RedMe2.txt",
   "PreviewInSolutionExplorer": false
 }

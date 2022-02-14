@@ -1,8 +1,12 @@
 ToDos:
 - Söldner-Trupps
+	- Unique Feedback Sounds
+		- Für Merc_AS die von NA
+		- Für Khana - Keine Ahnung
 	- Korrekte Fackelanzeige (auch im Base game)
 	- Overhead-Namen entfernen (RdO)
 - Neue Ritter 
+	- Fähigkeiten: Eigene Tooltips ergänzen (auch bei Sabatta und RP)
 	- RP
 		- RP-Einheiten in Kasernen
 		- Aktive Fähigkeit (Original oder eigene, muss aber zu AeK passen und nützlich sein)
@@ -18,7 +22,8 @@ ToDos:
 		- mit Audio-Feedback (TTS)
 - Rebalancing
 	- Neue (sinnvollere) Aufstiegsbedingungen
-		- wegen zu hohem Aufwand (Kompatibiliätt mit alten Maps) erstmal Low Priority
+		- ggf. mit Indikator, um nur für neue Maps und angepasste zu gelten
+		- wegen zu hohem Aufwand (Kompatibiliät mit alten Maps) erstmal Low Priority
 	- Einheiten aus DEdK?
 		- Speerkämpfer (Billig-Schwertkämpfer, falls Eisen knapp ist)
 		- Kanonen (twA)

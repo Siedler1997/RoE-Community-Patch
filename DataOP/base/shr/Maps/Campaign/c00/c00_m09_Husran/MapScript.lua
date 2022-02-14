@@ -1,4 +1,4 @@
-Script.Load("Script\\Global\\CampaignHotfix.lua")
+--Script.Load("Script\\Global\\CampaignHotfix.lua")
 
 CurrentMapIsCampaignMap = true
 wellList = { "well1", "well2", "well3", "well4" }
@@ -48,7 +48,7 @@ function Mission_InitPlayers()
     
     SetKnightTitle(HusranPlayerID, KnightTitles.Duke)
 	
-	GameCallback_CreateKnightByTypeOrIndex(Entities.U_KnightSabatta, HusranPlayerID)
+	--GameCallback_CreateKnightByTypeOrIndex(Entities.U_KnightSabatta, HusranPlayerID)
 end
 ----------------------------------------------------------------------------------------------------------------------
 function Mission_SetStartingMonth()

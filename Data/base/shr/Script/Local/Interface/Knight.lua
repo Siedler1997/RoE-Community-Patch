@@ -162,7 +162,7 @@ function GUI_Knight.GetKnightAbilityAndIcons(_KnightID)
         Ability = Abilities.AbilityConvert
         AbilityIconPosition = {11,6}
     elseif KnightType == Entities.U_KnightRedPrince then
-        Ability = Abilities.AbilityHeal
+        Ability = Abilities.AbilityConvert
         AbilityIconPosition = {15,16}
     end
 
@@ -969,6 +969,12 @@ function GUI_Knight.StartAbilityClicked(_Ability)
             Message(MessageText)
             return
         end
+    elseif Logic.GetEntityType(KnightID) == Entities.U_KnightRedPrince then
+        --Do custom RP action here
+        GUI.AddNote("Debug: RP doesnt have an ability yet!")
+        Sound.FXPlay2DSound( "ui\\menu_click")
+        HeroAbilityFeedback(KnightID)
+        return
     end
 
     GUI.StartKnightAbility(KnightID,Ability)
