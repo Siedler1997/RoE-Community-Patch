@@ -81,17 +81,12 @@ function MilitaryFeedback_GetSpeaker(_EntityID)
 		local leader = Logic.GetGuardianEntityID(_EntityID)
 		
 		local type = Logic.LeaderGetSoldiersType(leader)
-	
-		if type == Entities.U_MilitarySword then
-	
-			return "Military_Sword"	
-			
+
+		if g_MilitaryFeedback.Soldiers[type] ~= nil then
+			return g_MilitaryFeedback.Soldiers[type]
 		else
-		
-			return "Military_Bow"	
-			
+			return "H_NPC_Mercenary_SE"	
 		end
-	
 	end
 
 	if Logic.IsKnight(_EntityID) then

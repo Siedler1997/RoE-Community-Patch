@@ -2,16 +2,16 @@
   "ExpandedNodes": [
     "",
     "\\Data",
-    "\\Data\\base",
-    "\\Data\\base\\shr",
-    "\\Data\\base\\shr\\graphics",
-    "\\Data\\base\\shr\\graphics\\Textures",
-    "\\Data\\base\\shr\\graphics\\Textures\\GUI_960",
     "\\Data\\extra1",
     "\\Data\\extra1\\shr",
-    "\\Data\\extra1\\shr\\Script",
-    "\\Data\\extra1\\shr\\Script\\Local",
-    "\\Data\\extra1\\shr\\Script\\Local\\Interface"
+    "\\Data\\extra1\\shr\\text",
+    "\\Data\\extra1\\shr\\text\\bb",
+    "\\Data\\extra1\\shr\\text\\bb\\InGame",
+    "\\Data\\extra1\\shr\\text\\de",
+    "\\Data\\extra1\\shr\\text\\de\\InGame",
+    "\\Data\\extra1\\shr\\text\\en",
+    "\\Data\\extra1\\shr\\text\\en\\InGame"
   ],
+  "SelectedNode": "\\Data\\extra1\\shr\\text\\bb\\InGame",
   "PreviewInSolutionExplorer": false
 }

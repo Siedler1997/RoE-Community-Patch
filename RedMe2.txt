@@ -1,5 +1,7 @@
 ToDos:
+- Entlassen-Button
 - Söldner-Trupps
+	- Unique Entity Feedback auch, wenn Eskorte aktiv
 	- Korrekte Fackelanzeige (auch im Base game)
 - Neue Ritter 
 	- Fähigkeiten: Eigene Tooltips ergänzen (auch bei Sabatta und RP)
@@ -16,6 +18,7 @@ ToDos:
 				- Passiv: Mehr Kollekte (wie Allandra) ODER günstigere Militäreinheiten (wie Marcus) UND Khana-Einheiten in Kasernen
 		- aus Ritter-Auswahl wieder entfernen?
 		- mit Audio-Feedback (TTS)
+	- Bei Basegame-Rittern AddOn-Comments ergänzen (TTS)
 - Rebalancing
 	- Neue (sinnvollere) Aufstiegsbedingungen
 		- ggf. mit Indikator, um nur für neue Maps und angepasste zu gelten
@@ -23,9 +26,9 @@ ToDos:
 	- Einheiten aus DEdK?
 		- Speerkämpfer (Billig-Schwertkämpfer, falls Eisen knapp ist)
 		- Kanonen (twA)
-- Disabled Button Textur für Burg/Lager/Kirche korrigieren (ist zurzeit immer die der Kirche)
 - "Rhian over the sea chapel"-quest und falsche Musik nach laden eines Savegame fixen?
 	- muss nochmal verifiziert werden
+- Dunklere Gfx-Sets?
 - Auf 4k-Auflösung kann nicht mehr per BorderScroll nach rechts gecrolled werden
 - Max. Zoom leicht erhöhen
 	- Winkel muss nach 0.5 anders kalkuliert werden
