@@ -2,16 +2,16 @@
   "ExpandedNodes": [
     "",
     "\\Data",
+    "\\Data\\base",
+    "\\Data\\base\\shr",
+    "\\Data\\base\\shr\\Script",
+    "\\Data\\base\\shr\\Script\\Local",
+    "\\Data\\base\\shr\\Script\\Local\\Interface",
     "\\Data\\extra1",
     "\\Data\\extra1\\shr",
-    "\\Data\\extra1\\shr\\text",
-    "\\Data\\extra1\\shr\\text\\bb",
-    "\\Data\\extra1\\shr\\text\\bb\\InGame",
-    "\\Data\\extra1\\shr\\text\\de",
-    "\\Data\\extra1\\shr\\text\\de\\InGame",
-    "\\Data\\extra1\\shr\\text\\en",
-    "\\Data\\extra1\\shr\\text\\en\\InGame"
+    "\\Data\\extra1\\shr\\Script",
+    "\\Data\\extra1\\shr\\Script\\Local"
   ],
-  "SelectedNode": "\\Data\\extra1\\shr\\text\\bb\\InGame",
+  "SelectedNode": "\\Data\\base\\shr\\Script\\Local\\Interface\\CloseUpView.lua",
   "PreviewInSolutionExplorer": false
 }

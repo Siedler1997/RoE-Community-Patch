@@ -1,7 +1,11 @@
 ToDos:
+- Konsistente Spielerfarben für Praphat und Khana
+- Ggf. mehr Varianz in den Spielerfarben der Kampagne
+- Campaign-Hotfix reworken
+- Nur AeK-MainTheme im Hauptmenü
+- KI-Ritter sollen Fähigkeiten nutzen
 - Entlassen-Button
 - Söldner-Trupps
-	- Unique Entity Feedback auch, wenn Eskorte aktiv
 	- Korrekte Fackelanzeige (auch im Base game)
 - Neue Ritter 
 	- Fähigkeiten: Eigene Tooltips ergänzen (auch bei Sabatta und RP)
@@ -26,6 +30,7 @@ ToDos:
 	- Einheiten aus DEdK?
 		- Speerkämpfer (Billig-Schwertkämpfer, falls Eisen knapp ist)
 		- Kanonen (twA)
+- Spielbare Dörfer?
 - "Rhian over the sea chapel"-quest und falsche Musik nach laden eines Savegame fixen?
 	- muss nochmal verifiziert werden
 - Dunklere Gfx-Sets?

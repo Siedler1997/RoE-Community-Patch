@@ -325,6 +325,15 @@ function InitPlayerColorIndex()
     
     g_ColorIndex["TravelingSalesmanColor"] = 15
     
+    -- CP-Colors
+    g_ColorIndex["CP_BabyBlueColor"] = 16
+    g_ColorIndex["CP_PinkColor"] = 17
+    g_ColorIndex["CP_YellowColor"] = 18
+    g_ColorIndex["CP_OrangeColor"] = 19
+    g_ColorIndex["CP_KerberosColor"] = 20
+    g_ColorIndex["CP_BlackColor"] = 21
+    g_ColorIndex["CP_WhiteColor"] = 22
+    
 end
 
 

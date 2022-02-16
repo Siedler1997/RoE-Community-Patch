@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <!-- Shadow properties -->
+    <ShadowBlur>False</ShadowBlur>
+    <ShadowRasterSize>64</ShadowRasterSize>
+
+    <!-- The shadow strength is now defined in the ShadowDecal.fx file -->
+    <ShadowStrength>0.88</ShadowStrength>
+
+    <!-- "Invalid position" color properties -->
+    <InvalidPositionColorModulate>
+        <R>255</R>
+        <G> 31</G>
+        <B>  0</B>
+    </InvalidPositionColorModulate>
+    <InvalidPositionColorEmissive>
+        <R>32</R>
+        <G> 4</G>
+        <B> 0</B>
+    </InvalidPositionColorEmissive>
+    <ApproachPointTexture>B_BuildAidApproach</ApproachPointTexture>
+    <BuildingAreaTextureId>B_BuildAidArea</BuildingAreaTextureId>
+
+    <!-- Fog of War strength -->
+    <!-- Values must be in range 0 to 255  and should be a multiple of 16. -->
+    <FogOfWarNeverSeenLuminance>16</FogOfWarNeverSeenLuminance>
+    <FogOfWarSeenLuminance>64</FogOfWarSeenLuminance>
+
+    <!-- Scale for selection for models with decal -->
+    <SelectionRadiusScaleForModelsWithDecal>0.75</SelectionRadiusScaleForModelsWithDecal>
+
+    <!-- Aura Properties -->
+    <AuraRadius>100</AuraRadius>
+    <AuraHeight>30</AuraHeight>
+    <SpeedTreeAuraRadius>200</SpeedTreeAuraRadius>
+    <AuraTexture>Effects/Auras</AuraTexture>
+    <EnvironmentTexture>mirror_skyref</EnvironmentTexture>
+
+    <RangeIndicatorModel>Doodads\D_RangeIndicator</RangeIndicatorModel>
+
+    <!-- Weather times -->
+    <IceThawDelay>8</IceThawDelay>
+    <IceThawTime>25</IceThawTime>
+    <IceTransitionTime>60</IceTransitionTime>
+    <SnowThawDelay>8</SnowThawDelay>
+    <SnowThawTime>30</SnowThawTime>
+    <SnowTransitionTime>30</SnowTransitionTime>
+    <DryDelay>30</DryDelay>
+    <DryTime>30</DryTime>
+    <WetTransitionTime>6</WetTransitionTime>
+
+
+    <!-- Acknowledgements -->
+    <CommandAcknowledgementModel>YCommandAck</CommandAcknowledgementModel>
+    <CommandAcknowledgementDuration>1.1</CommandAcknowledgementDuration>
+
+    <!-- Border Pins -->
+    <BorderPinModel>Doodads\D_X_Borderstone</BorderPinModel>
+    <MapEdgePinModel>Doodads\D_X_Borderstone</MapEdgePinModel>
+    <NeutralBorderPinColor>
+        <R>48</R>
+        <G>48</G>
+        <B>54</B>
+    </NeutralBorderPinColor>
+
+    <MonsunWaterColor>
+        <R>136</R>
+        <G>89</G>
+        <B>55</B>
+    </MonsunWaterColor>
+
+    <MonsunDeepWaterColor>
+        <R>83</R>
+        <G>55</G>
+        <B>34</B>
+    </MonsunDeepWaterColor>
+
+    <MonsunWaterTransparency>30</MonsunWaterTransparency>
+
+    <!-- MiniMap colors -->
+    <MiniMapColors>
+        <MiniMapColor>
+            <R>  0</R>
+            <G>  0</G>
+            <B>  0</B>
+        </MiniMapColor>
+        <MiniMapColor>
+            <R> 15</R>
+            <G> 64</G>
+            <B> 255</B>
+        </MiniMapColor>
+        <MiniMapColor>
+            <R>250</R>
+            <G>  0</G>
+            <B>  0</B>
+        </MiniMapColor>
+        <MiniMapColor>
+            <R>235</R> 
+            <G>255</G> 
+            <B>53</B> 
+        </MiniMapColor>
+        <MiniMapColor>
+            <R>  0</R>
+            <G>245</G>
+            <B>220</B>
+        </MiniMapColor>
+        <MiniMapColor>
+            <R> 255</R> 
+            <G> 160</G> 
+            <B> 25</B> 
+        </MiniMapColor>
+        <MiniMapColor>
+            <R>161</R> 
+            <G>  0</G> 
+            <B>231</B> 
+        </MiniMapColor>
+        <MiniMapColor>
+            <R>255</R>
+            <G>79</G>
+            <B>200</B>
+        </MiniMapColor>
+        <MiniMapColor>
+            <R>119</R> 
+            <G>219</G> 
+            <B> 66</B> 
+        </MiniMapColor>
+        <MiniMapColor>
+            <R>184</R>
+            <G>184</G>
+            <B> 184</B>
+        </MiniMapColor>
+        <MiniMapColor>
+            <R>184</R>
+            <G>182</G>
+            <B> 90</B>
+        </MiniMapColor>
+        <MiniMapColor>
+            <R>135</R>
+            <G>135</G>
+            <B> 135</B>
+        </MiniMapColor>
+        <MiniMapColor>
+            <R>230</R>
+            <G>230</G>
+            <B> 230</B>
+        </MiniMapColor>
+        <MiniMapColor>
+            <R>57</R>
+            <G>57</G>
+            <B> 57</B>
+        </MiniMapColor>
+        <MiniMapColor>
+            <R>139</R>
+            <G>223</G>
+            <B> 255</B>
+        </MiniMapColor>
+        <MiniMapColor>
+            <R>255</R>
+            <G>150</G>
+            <B> 214</B>
+        </MiniMapColor>
+		
+		<!-- CP colors -->
+		<MiniMapColor>
+			<R>235</R>
+			<G>255</G>
+			<B>53</B>
+		</MiniMapColor>
+		<MiniMapColor>
+			<R>252</R>
+			<G>164</G>
+			<B>39</B>
+		</MiniMapColor>
+		<MiniMapColor>
+			<R>184</R>
+			<G>184</G>
+			<B>184</B>
+		</MiniMapColor>
+		<MiniMapColor>
+			<R>230</R>
+			<G>230</G>
+			<B>230</B>
+		</MiniMapColor>
+		<MiniMapColor>
+			<R>57</R>
+			<G>57</G>
+			<B>57</B>
+		</MiniMapColor>
+    </MiniMapColors>
+
+    <PreLoadModels>
+        <Folder>units</Folder>
+        <Folder>vehicles</Folder>
+        <Folder>goods</Folder>
+        <Folder>tools</Folder>
+        <Folder>animals</Folder>
+    </PreLoadModels>
+
+</root>
