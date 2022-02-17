@@ -172,19 +172,19 @@
 			<B>39</B>
 		</MiniMapColor>
 		<MiniMapColor>
-			<R>184</R>
-			<G>184</G>
-			<B>184</B>
-		</MiniMapColor>
-		<MiniMapColor>
-			<R>230</R>
-			<G>230</G>
-			<B>230</B>
+			<R>136</R>
+			<G>136</G>
+			<B>136</B>
 		</MiniMapColor>
 		<MiniMapColor>
 			<R>57</R>
 			<G>57</G>
 			<B>57</B>
+		</MiniMapColor>
+		<MiniMapColor>
+			<R>230</R>
+			<G>230</G>
+			<B>230</B>
 		</MiniMapColor>
     </MiniMapColors>
 

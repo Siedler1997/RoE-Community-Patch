@@ -132,23 +132,23 @@
 
 		<!-- Dark-Grey (Kerberos wants his color back...) -->
 		<Color>
-			<Red>184</Red>
-			<Green>184</Green>
-			<Blue>184</Blue>
+			<Red>136</Red>
+			<Green>136</Green>
+			<Blue>136</Blue>
 		</Color>
 
 		<!-- Black -->
 		<Color>
-			<Red>230</Red>
-			<Green>230</Green>
-			<Blue>230</Blue>
+			<Red>57</Red>
+			<Green>57</Green>
+			<Blue>57</Blue>
 		</Color>
 
 		<!-- White -->
 		<Color>
-			<Red>57</Red>
-			<Green>57</Green>
-			<Blue>57</Blue>
+			<Red>230</Red>
+			<Green>230</Green>
+			<Blue>230</Blue>
 		</Color>
 	</PlayerColors>
     

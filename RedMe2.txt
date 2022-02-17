@@ -1,14 +1,23 @@
 ToDos:
-- Konsistente Spielerfarben für Praphat und Khana
+- Konsistente Spielerfarben für Praphat und Khana u.a.
+- Idukun ein ticken leichter?
 - Ggf. mehr Varianz in den Spielerfarben der Kampagne
 - Campaign-Hotfix reworken
+- Verbesserte/Glaubwürdigere KI (in der Kampagne)
+- Feedback-Sounds für
+	- Belagerungsturm (bewegen, andocken)
+	- Ramme (bewegen, angreifen)
+	- Karren (nur bewegen)
 - Nur AeK-MainTheme im Hauptmenü
 - KI-Ritter sollen Fähigkeiten nutzen
 - Entlassen-Button
 - Söldner-Trupps
 	- Korrekte Fackelanzeige (auch im Base game)
-- Neue Ritter 
+- "Neue" Ritter 
 	- Fähigkeiten: Eigene Tooltips ergänzen (auch bei Sabatta und RP)
+	- Ritter ohne eigene Loading-Screens
+		- Sollen (wenn passend) Kampagnen-Loadscreens bekommen
+		- Ansonsten gibt es auch weitere ungenutzte Screens
 	- RP
 		- RP-Einheiten in Kasernen
 		- Aktive Fähigkeit (Original oder eigene, muss aber zu AeK passen und nützlich sein)
@@ -27,13 +36,15 @@ ToDos:
 	- Neue (sinnvollere) Aufstiegsbedingungen
 		- ggf. mit Indikator, um nur für neue Maps und angepasste zu gelten
 		- wegen zu hohem Aufwand (Kompatibiliät mit alten Maps) erstmal Low Priority
-	- Einheiten aus DEdK?
-		- Speerkämpfer (Billig-Schwertkämpfer, falls Eisen knapp ist)
-		- Kanonen (twA)
 - Spielbare Dörfer?
 - "Rhian over the sea chapel"-quest und falsche Musik nach laden eines Savegame fixen?
 	- muss nochmal verifiziert werden
 - Dunklere Gfx-Sets?
+- DEdK-Content
+	- Speerkämpfer (Billig-Schwertkämpfer, falls Eisen knapp ist)
+	- Kanonen (twA)
+	- OST
+- Alternatives Wappen-Pack
 - Auf 4k-Auflösung kann nicht mehr per BorderScroll nach rechts gecrolled werden
 - Max. Zoom leicht erhöhen
 	- Winkel muss nach 0.5 anders kalkuliert werden
