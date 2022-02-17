@@ -1,13 +1,8 @@
 ToDos:
-- Konsistente Spielerfarben für Praphat und Khana u.a.
 - Idukun ein ticken leichter?
 - Ggf. mehr Varianz in den Spielerfarben der Kampagne
 - Campaign-Hotfix reworken
 - Verbesserte/Glaubwürdigere KI (in der Kampagne)
-- Feedback-Sounds für
-	- Belagerungsturm (bewegen, andocken)
-	- Ramme (bewegen, angreifen)
-	- Karren (nur bewegen)
 - Nur AeK-MainTheme im Hauptmenü
 - KI-Ritter sollen Fähigkeiten nutzen
 - Entlassen-Button

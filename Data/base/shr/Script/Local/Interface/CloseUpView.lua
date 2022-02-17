@@ -60,8 +60,8 @@ g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Ranged_ME]	= "H_NPC_Mercen
 g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Ranged_NA]	= "H_NPC_Mercenary_NA"
 g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Ranged_NE]	= "H_NPC_Mercenary_NE"
 g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Ranged_SE]	= "H_NPC_Mercenary_SE"
-g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBow_RedPrince]		= "Military_Bow"
-g_MilitaryFeedback.Soldiers[Entities.U_MilitarySword_RedPrince]		= "Military_Sword"
+g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBow_RedPrince]		= "H_NPC_Mercenary_SE"
+g_MilitaryFeedback.Soldiers[Entities.U_MilitarySword_RedPrince]		= "H_NPC_Mercenary_SE"
 
 g_MilitaryFeedback.Thiefs = {}
 g_MilitaryFeedback.Thiefs[Entities.U_Thief] 			= "Thief"
@@ -76,7 +76,13 @@ function MilitaryFeedback_GetSpeaker(_EntityID)
 
 	end			
 
-	if type == Entities.U_MilitaryCatapult then
+	if type == Entities.U_MilitaryCatapult
+     or type == Entities.U_MilitarySiegeTower
+     or type == Entities.U_MilitaryBatteringRam
+     or type == Entities.U_CatapultCart
+     or type == Entities.U_SiegeTowerCart
+     or type == Entities.U_BatteringRamCart
+     or type == Entities.U_AmmunitionCart then
 	
 		local leader = Logic.GetGuardianEntityID(_EntityID)
 		
