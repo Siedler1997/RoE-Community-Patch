@@ -1,5 +1,4 @@
 ToDos:
-- Idukun ein ticken leichter?
 - Ggf. mehr Varianz in den Spielerfarben der Kampagne
 - Campaign-Hotfix reworken
 - Verbesserte/Glaubwürdigere KI (in der Kampagne)

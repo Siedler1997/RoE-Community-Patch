@@ -141,7 +141,7 @@ function SpawnExpeditionAt( _Name )
     g_PraphatAdd = {}
     table.insert( g_PraphatAdd, Logic.CreateBattalionOnUnblockedLand( Entities.U_MilitarySword_Khana, X, Y, 0, 3, 0 ) )
     table.insert( g_PraphatAdd, Logic.CreateBattalionOnUnblockedLand( Entities.U_MilitarySword_Khana, X, Y, 0, 3, 0 ) )
-    table.insert( g_PraphatAdd, Logic.CreateBattalionOnUnblockedLand( Entities.U_MilitarySword_Khana, X, Y, 0, 3, 0 ) )
+    table.insert( g_PraphatAdd, Logic.CreateBattalionOnUnblockedLand( Entities.U_MilitaryBow_Khana, X, Y, 0, 3, 0 ) )
 end
 
 function MoveExpeditionTo( _Name )
