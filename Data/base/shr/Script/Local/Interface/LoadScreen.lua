@@ -157,11 +157,28 @@ function InitLoadScreen(Throneroom, MapType, MapName, Campaign, KnightID)
 
     local filename
     local remappedKnightId = RemapKnightID(KnightID)
+    --local KnightType = Logic.GetEntityType(KnightID)
 
     if remappedKnightId == 0 then
         filename = "loadscreens\\" .. Tex .. ".png"
     else
-        filename = "loadscreens\\" .. Tex .. RemapKnightID(KnightID) .. ".png"
+        if remappedKnightId >= 8 then
+            if remappedKnightId == 11 then  --Khana
+                filename = "loadscreens\\chapter3.png"
+            --[[
+            elseif remappedKnightId == 10 then  --Praphat
+                filename = "loadscreens\\Throneroom.png"
+            elseif Tex == "me" then
+                filename = "loadscreens\\chapter1.png"
+            --]]
+            elseif Tex == "as" then
+                filename = "loadscreens\\Endscreen.png"
+            else
+                filename = "loadscreens\\" .. Tex .. ".png"
+            end
+        else
+            filename = "loadscreens\\" .. Tex .. RemapKnightID(KnightID) .. ".png"
+        end
     end
 
     XGUIEng.SetMaterialTexture("/LoadScreen/LoadScreen/LoadScreenBgd", 0, filename)
