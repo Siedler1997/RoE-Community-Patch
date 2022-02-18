@@ -962,7 +962,7 @@ function Mission_FirstMapAction()
         
         -- CP: Changed player colors to be more consistent
         Logic.PlayerSetPlayerColor(5 , 15, -1, -1)
-        Logic.PlayerSetPlayerColor(8 , 19, -1, -1)
+        Logic.PlayerSetPlayerColor(8 , 12, -1, -1)
     end        
 
     -- create quests

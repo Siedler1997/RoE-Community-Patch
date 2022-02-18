@@ -74,7 +74,7 @@ function Mission_FirstMapAction()
         Startup_Diplomacy()
         
         -- CP: Changed player colors to be more consistent
-        Logic.PlayerSetPlayerColor(2 , 19, -1, -1)
+        Logic.PlayerSetPlayerColor(2 , 12, -1, -1)
         Logic.PlayerSetPlayerColor(3 , 19, -1, -1)
         Logic.PlayerSetPlayerColor(4 , 16, -1, -1)
         Logic.PlayerSetPlayerColor(8 , 13, -1, -1)

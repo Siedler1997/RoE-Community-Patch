@@ -172,7 +172,7 @@ function Mission_FirstMapAction()
         -- CP: Changed player colors to be more consistent
         Logic.PlayerSetPlayerColor(3 , 7, -1, -1)
         Logic.PlayerSetPlayerColor(6 , 5, -1, -1)
-        Logic.PlayerSetPlayerColor(7 , 19, -1, -1)
+        Logic.PlayerSetPlayerColor(7 , 12, -1, -1)
     end        
     do
         local MapName = Framework.GetCurrentMapName()
