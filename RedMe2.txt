@@ -1,4 +1,5 @@
 ToDos:
+- AddOn: Spielername nach KI-Name, nicht nach Stadt-Name
 - Ggf. mehr Varianz in den Spielerfarben der Kampagne
 - Campaign-Hotfix reworken
 - Verbesserte/Glaubwürdigere KI (in der Kampagne)
