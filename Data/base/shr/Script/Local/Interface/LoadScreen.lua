@@ -155,31 +155,8 @@ function InitLoadScreen(Throneroom, MapType, MapName, Campaign, KnightID)
         Tex = "as"        
     end
 
-    local filename
     local remappedKnightId = RemapKnightID(KnightID)
-    --local KnightType = Logic.GetEntityType(KnightID)
-
-    if remappedKnightId == 0 then
-        filename = "loadscreens\\" .. Tex .. ".png"
-    else
-        if remappedKnightId >= 8 then
-            if remappedKnightId == 11 then  --Khana
-                filename = "loadscreens\\chapter3.png"
-            --[[
-            elseif remappedKnightId == 10 then  --Praphat
-                filename = "loadscreens\\Throneroom.png"
-            elseif Tex == "me" then
-                filename = "loadscreens\\chapter1.png"
-            --]]
-            elseif Tex == "as" then
-                filename = "loadscreens\\Endscreen.png"
-            else
-                filename = "loadscreens\\" .. Tex .. ".png"
-            end
-        else
-            filename = "loadscreens\\" .. Tex .. RemapKnightID(KnightID) .. ".png"
-        end
-    end
+    local filename = GetLoadScreen(remappedKnightId, Tex)
 
     XGUIEng.SetMaterialTexture("/LoadScreen/LoadScreen/LoadScreenBgd", 0, filename)
     
@@ -215,6 +192,20 @@ function InitLoadScreen(Throneroom, MapType, MapName, Campaign, KnightID)
 
     Framework.SetLoadScreenProps(filename, Description, RealMapName)
     
+end
+
+function GetLoadScreen(_remappedKnightId, _tex)
+    local filename
+    if _remappedKnightId == 0 then
+        filename = "loadscreens\\" .. _tex .. ".png"
+    else
+        if _remappedKnightId >= 7 then
+            filename = "loadscreens\\" .. _tex .. ".png"
+        else
+            filename = "loadscreens\\" .. _tex .. _remappedKnightId .. ".png"
+        end
+    end
+    return filename
 end
 
 function UpdateProgressBar(_SlotID)

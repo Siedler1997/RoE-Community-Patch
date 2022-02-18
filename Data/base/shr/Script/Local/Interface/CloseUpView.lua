@@ -25,11 +25,12 @@ g_MilitaryFeedback.States["AttackCommand_OutOfAmmo"]			= "NoAmmunition"
 g_MilitaryFeedback.States["AttackCommand_AttackMove"]			= "Attack"
 g_MilitaryFeedback.States["AttackCommand_Capture"]				= "Capture"
 g_MilitaryFeedback.States["AttackCommand_CannotReach"]			= "No"
-g_MilitaryFeedback.States["ExplicitAttackCommand"]				= "Yes"
+g_MilitaryFeedback.States["ExplicitAttackCommand"]				= "Attack"
 g_MilitaryFeedback.States["StealBuildingCommand_CannotReach"]	= "No"
 g_MilitaryFeedback.States["StealBuildingCommand"]				= "Yes"
 g_MilitaryFeedback.States["AttachToWarMachineCommand_CannotReach"]="No"
 g_MilitaryFeedback.States["AttachToWarMachineCommand"]			= "Yes"
+g_MilitaryFeedback.States["HoldGroundCommand"]			        = "HoldPosition"
 
 g_MilitaryFeedback.Variants = {}
 g_MilitaryFeedback.Variants["No"] 						= 3
@@ -40,6 +41,7 @@ g_MilitaryFeedback.Variants["NoAmmunition"] 			= 5
 g_MilitaryFeedback.Variants["MountWall"] 				= 5
 g_MilitaryFeedback.Variants["StealGold"]				= 3
 g_MilitaryFeedback.Variants["Capture"]					= 5
+g_MilitaryFeedback.Variants["HoldPosition"]				= 5
 g_MilitaryFeedback.Knights = {}
 g_MilitaryFeedback.Knights[Entities.U_KnightTrading] 	= "H_Knight_Trading"
 g_MilitaryFeedback.Knights[Entities.U_KnightHealing] 	= "H_Knight_Healing"
@@ -198,8 +200,17 @@ function MilitaryFeedback(_EntityID,_Key)
 
 	local speaker = MilitaryFeedback_GetSpeaker(_EntityID)
 	
-	local state = MilitaryFeedback_GetState(_Key)
+	local state
 	
+    local EntityType = Logic.GetEntityType(_EntityID)
+
+    if EntityType == Entities.U_MilitarySiegeTower and _Key == "AttackCommand" then
+        state = MilitaryFeedback_GetState("MountWallCommand")
+    else
+        state = MilitaryFeedback_GetState(_Key)
+    end
+    --Message("_Key = " .. _Key)
+
 	if speaker == "" or state == "" then
 	
 		return

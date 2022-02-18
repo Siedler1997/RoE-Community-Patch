@@ -32,6 +32,26 @@ function RemapKnightID( _ID )
     return Mapping[_ID]
 end
 
+function GetLoadScreen(_remappedKnightId, _tex)
+    local filename
+    if _remappedKnightId == 0 then
+        filename = "loadscreens\\" .. _tex .. ".png"
+    else
+        if _remappedKnightId >= 8 then
+            if _remappedKnightId == 11 then  --Khana
+                filename = "loadscreens\\chapter3.png"
+            elseif _tex == "as" then
+                filename = "loadscreens\\Endscreen.png"
+            else
+                filename = "loadscreens\\" .. _tex .. ".png"
+            end
+        else
+            filename = "loadscreens\\" .. _tex .. _remappedKnightId .. ".png"
+        end
+    end
+    return filename
+end
+
 function g_MainMenu.ShowIntroVideos()
 
 	if not Framework.IsDevM() then
