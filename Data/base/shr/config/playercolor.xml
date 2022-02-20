@@ -170,6 +170,11 @@
         <Pattern>CoA_Pattern_male08</Pattern>
         <Pattern>CoA_Pattern_male09</Pattern>
         <Pattern>CoA_Pattern_male10</Pattern>
+		<Pattern>CoA_Pattern_male11</Pattern>
+		<Pattern>CoA_Pattern_male12</Pattern>
+		<Pattern>CoA_Pattern_male13</Pattern>
+		<Pattern>CoA_Pattern_male14</Pattern>
+		<Pattern>CoA_Pattern_male15</Pattern>
         <Pattern>CoA_Pattern_female01</Pattern>
         <Pattern>CoA_Pattern_female02</Pattern>
         <Pattern>CoA_Pattern_female03</Pattern>
@@ -180,5 +185,10 @@
         <Pattern>CoA_Pattern_female08</Pattern>
         <Pattern>CoA_Pattern_female09</Pattern>
         <Pattern>CoA_Pattern_female10</Pattern>
+		<Pattern>CoA_Pattern_female11</Pattern>
+		<Pattern>CoA_Pattern_female12</Pattern>
+		<Pattern>CoA_Pattern_female13</Pattern>
+		<Pattern>CoA_Pattern_female14</Pattern>
+		<Pattern>CoA_Pattern_female15</Pattern>
     </PlayerPatterns>
 </Root>

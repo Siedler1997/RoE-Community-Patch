@@ -1,10 +1,13 @@
 ToDos:
-- Campaign-Hotfix reworken
+- Alternative Hintergründe im Hauptmenü
+- Zusätzliche Wappen auf Inganme-Flaggen (statt Platzhalter)
 - Verbesserte/Glaubwürdigere KI (in der Kampagne)
+	- Speziell in den "Last-Stand"-Missionen
+	- Aktive KI-Ritter mit Fähigkeiten
 - Nur AeK-MainTheme im Hauptmenü
-- KI-Ritter sollen Fähigkeiten nutzen
 - Entlassen-Button
 - Söldner-Trupps
+	- Konvertierbar
 	- Korrekte Fackelanzeige (auch im Base game)
 - "Neue" Ritter 
 	- Fähigkeiten: Eigene Tooltips ergänzen (auch bei Sabatta und RP)
@@ -34,7 +37,6 @@ ToDos:
 	- Speerkämpfer (Billig-Schwertkämpfer, falls Eisen knapp ist)
 	- Kanonen (twA)
 	- OST
-- Alternatives Wappen-Pack
 - Auf 4k-Auflösung kann nicht mehr per BorderScroll nach rechts gecrolled werden
 - Max. Zoom leicht erhöhen
 	- Winkel muss nach 0.5 anders kalkuliert werden

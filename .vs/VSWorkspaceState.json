@@ -1,19 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\DataOP",
-    "\\DataOP\\base",
-    "\\DataOP\\base\\shr",
-    "\\DataOP\\base\\shr\\Maps",
-    "\\DataOP\\base\\shr\\Maps\\Campaign",
-    "\\DataOP\\base\\shr\\Maps\\Campaign\\c00",
-    "\\DataOP\\base\\shr\\Maps\\Campaign\\c00\\c00_m09_Husran",
-    "\\DataOP\\base\\shr\\Maps\\Campaign\\c00\\c00_m16_Rossotorres",
+    "\\Data",
     "\\Data\\base",
     "\\Data\\base\\shr",
-    "\\Data\\base\\shr\\text\\bb",
-    "\\Data\\base\\shr\\text\\bb\\InGame"
+    "\\Data\\base\\shr\\config",
+    "\\Data\\base\\shr\\config\\Entities",
+    "\\Data\\extra1",
+    "\\Data\\extra1\\shr",
+    "\\Data\\extra1\\shr\\config",
+    "\\Data\\extra1\\shr\\config\\Entities"
   ],
-  "SelectedNode": "\\DataOP\\base\\shr\\Maps\\Campaign\\c00\\c00_m09_Husran\\MapScript.lua",
+  "SelectedNode": "\\Data\\base\\shr\\config\\Entities\\U_MilitaryBatteringRam.xml",
   "PreviewInSolutionExplorer": false
 }
