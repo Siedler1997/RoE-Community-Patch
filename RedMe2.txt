@@ -1,7 +1,9 @@
 ToDos:
 - Alternative Hintergründe im Hauptmenü
+- BaseGame: SE-Gebäude
 - Zusätzliche Wappen auf Inganme-Flaggen (statt Platzhalter)
 - Verbesserte/Glaubwürdigere KI (in der Kampagne)
+	- Narfang: Sabatta aggressiv, wenn ein Außenposten erobert/zerstört wird
 	- Speziell in den "Last-Stand"-Missionen
 	- Aktive KI-Ritter mit Fähigkeiten
 - Nur AeK-MainTheme im Hauptmenü

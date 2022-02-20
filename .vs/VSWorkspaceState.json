@@ -4,13 +4,13 @@
     "\\Data",
     "\\Data\\base",
     "\\Data\\base\\shr",
-    "\\Data\\base\\shr\\config",
-    "\\Data\\base\\shr\\config\\Entities",
-    "\\Data\\extra1",
+    "\\Data\\base\\shr\\graphics",
+    "\\Data\\base\\shr\\graphics\\Textures",
     "\\Data\\extra1\\shr",
-    "\\Data\\extra1\\shr\\config",
-    "\\Data\\extra1\\shr\\config\\Entities"
+    "\\Data\\extra1\\shr\\graphics",
+    "\\Data\\extra1\\shr\\graphics\\Textures",
+    "\\Data\\extra1\\shr\\graphics\\Textures\\GUI_1200"
   ],
-  "SelectedNode": "\\Data\\base\\shr\\config\\Entities\\U_MilitaryBatteringRam.xml",
+  "SelectedNode": "\\Data\\base\\shr\\graphics\\Textures",
   "PreviewInSolutionExplorer": false
 }
