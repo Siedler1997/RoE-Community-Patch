@@ -296,13 +296,13 @@ function GUI_Knight.GetKnightAbilityAndIcons(_KnightID)
     elseif KnightType == Entities.U_KnightTrading then
         Ability = Abilities.AbilityFood
         AbilityIconPosition = {11,5}
-    elseif KnightType == Entities.U_KnightChivalry then
+    elseif KnightType == Entities.U_KnightChivalry or KnightType == Entities.U_KnightKhana then
         Ability = Abilities.AbilityTorch
         AbilityIconPosition = {11,4}
     elseif KnightType == Entities.U_KnightWisdom or KnightType == Entities.U_KnightSabatta then
         Ability = Abilities.AbilityConvert
         AbilityIconPosition = {11,6}
-    elseif KnightType == Entities.U_KnightSaraya then
+    elseif KnightType == Entities.U_KnightSaraya or KnightType == Entities.U_KnightPraphat then
         Ability = Abilities.AbilityTribute
         AbilityIconPosition = {1,4,1}
     elseif KnightType == Entities.U_KnightRedPrince then

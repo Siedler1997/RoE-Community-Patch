@@ -14,6 +14,7 @@ do
         Script.Load( "Script\\Shared\\ScriptSystems\\SharedConstantsEx1.lua" )
         
         Script.Load("Script\\Local\\Interface\\FeedbackEx1.lua")
+        Script.Load("Script\\Local\\Interface\\BuildingButtonsEx1.lua")
         Script.Load("Script\\Local\\Interface\\KnightEx1.lua")        
         Script.Load("Script\\Local\\Interface\\MissionStatisticEx1.lua")
         Script.Load("Script\\Local\\Interface\\SelectionEx1.lua")

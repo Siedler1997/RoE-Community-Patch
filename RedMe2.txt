@@ -15,13 +15,6 @@ ToDos:
 		- RP-Einheiten in Kasernen
 		- Aktive Fähigkeit (Original oder eigene, muss aber zu AeK passen und nützlich sein)
 	- Khana und Praphat
-		- Abilities
-			- Praphat
-				- Aktiv: Kleidung (wie Elias Nahrung)
-				- Passiv: Mehr Kollekte (wie Allandra) ODER Mehr Ehefrauen (wie Thordal)
-			- Khana
-				- Aktiv: Fackeln (wie Marcus) ODER Bekehren (wie Hakim)
-				- Passiv: Mehr Kollekte (wie Allandra) ODER günstigere Militäreinheiten (wie Marcus) UND Khana-Einheiten in Kasernen
 		- aus Ritter-Auswahl wieder entfernen?
 		- mit Audio-Feedback (TTS)
 	- Bei Basegame-Rittern AddOn-Comments ergänzen (TTS)
@@ -36,6 +29,7 @@ ToDos:
 - DEdK-Content
 	- Speerkämpfer (Billig-Schwertkämpfer, falls Eisen knapp ist)
 	- Kanonen (twA)
+	- Reiter
 	- OST
 - Auf 4k-Auflösung kann nicht mehr per BorderScroll nach rechts gecrolled werden
 - Max. Zoom leicht erhöhen

@@ -4,13 +4,13 @@
     "\\Data",
     "\\Data\\base",
     "\\Data\\base\\shr",
-    "\\Data\\base\\shr\\graphics",
+    "\\Data\\base\\shr\\config",
+    "\\Data\\base\\shr\\config\\Entities",
+    "\\Data\\base\\shr\\graphics\\Animations",
+    "\\Data\\base\\shr\\graphics\\Models",
     "\\Data\\base\\shr\\graphics\\Textures",
-    "\\Data\\extra1\\shr",
-    "\\Data\\extra1\\shr\\graphics",
-    "\\Data\\extra1\\shr\\graphics\\Textures",
-    "\\Data\\extra1\\shr\\graphics\\Textures\\GUI_1200"
+    "\\Data\\base\\shr\\Script"
   ],
-  "SelectedNode": "\\Data\\base\\shr\\graphics\\Textures",
+  "SelectedNode": "\\Data\\base\\shr\\config\\Entities\\B_Barracks.xml",
   "PreviewInSolutionExplorer": false
 }
