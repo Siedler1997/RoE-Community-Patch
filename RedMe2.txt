@@ -1,7 +1,15 @@
 ToDos:
+- Einige neue Spielerfarben im MP nutzbar machen
+	- Können ausgewählt werden, doch ingame werden dann nur die nächsten (Dorf-)Farben in der Liste genutzt
+- Baubares Trebuchet
+- Sturm
+	- soll mal funktionieren
+	- Abwandlung: Schneesturm
+	- Eigene Playlist
 - Zusätzliche Wappen auf Inganme-Flaggen (statt Platzhalter)
 - Verbesserte/Glaubwürdigere KI (in der Kampagne)
 	- Narfang: Sabatta aggressiv, wenn ein Außenposten erobert/zerstört wird
+	- M15: Sturm
 	- Speziell in den "Last-Stand"-Missionen
 	- Aktive KI-Ritter mit Fähigkeiten
 - Nur AeK-MainTheme im Hauptmenü

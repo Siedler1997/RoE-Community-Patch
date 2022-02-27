@@ -45,6 +45,8 @@ function GetLoadScreen(_remappedKnightId, _tex)
             else
                 filename = "loadscreens\\" .. _tex .. ".png"
             end
+        elseif _remappedKnightId == 7 then
+            filename = "loadscreens\\endscreen_presentation.png"
         else
             filename = "loadscreens\\" .. _tex .. _remappedKnightId .. ".png"
         end

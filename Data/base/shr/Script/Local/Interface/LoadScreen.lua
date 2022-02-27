@@ -75,6 +75,21 @@ function RemapKnightID( _ID )
     return _ID
 end
 
+function GetLoadScreen(_remappedKnightId, _tex)
+    local filename
+    if _remappedKnightId == 0 then
+        filename = "loadscreens\\" .. _tex .. ".png"
+    else
+        -- dirty workaround for Saraya
+        if _remappedKnightId >= 7 and Objective.HolyCow ~= 29 then
+            filename = "loadscreens\\" .. _tex .. ".png"
+        else
+            filename = "loadscreens\\" .. _tex .. _remappedKnightId .. ".png"
+        end
+    end
+    return filename
+end
+
 function InitLoadScreen(Throneroom, MapType, MapName, Campaign, KnightID)
 
 	XGUIEng.PushPage("/LoadScreen/LoadScreen", true)
@@ -192,20 +207,6 @@ function InitLoadScreen(Throneroom, MapType, MapName, Campaign, KnightID)
 
     Framework.SetLoadScreenProps(filename, Description, RealMapName)
     
-end
-
-function GetLoadScreen(_remappedKnightId, _tex)
-    local filename
-    if _remappedKnightId == 0 then
-        filename = "loadscreens\\" .. _tex .. ".png"
-    else
-        if _remappedKnightId >= 7 then
-            filename = "loadscreens\\" .. _tex .. ".png"
-        else
-            filename = "loadscreens\\" .. _tex .. _remappedKnightId .. ".png"
-        end
-    end
-    return filename
 end
 
 function UpdateProgressBar(_SlotID)

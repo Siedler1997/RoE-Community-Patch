@@ -333,6 +333,7 @@ function InitPlayerColorIndex()
     g_ColorIndex["CP_KerberosColor"] = 20
     g_ColorIndex["CP_BlackColor"] = 21
     g_ColorIndex["CP_WhiteColor"] = 22
+    g_ColorIndex["CP_PurpleColor"] = 23
     
 end
 

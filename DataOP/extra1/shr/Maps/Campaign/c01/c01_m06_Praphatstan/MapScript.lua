@@ -76,7 +76,7 @@ function Mission_FirstMapAction()
         -- CP: Changed player colors to be more consistent
         Logic.PlayerSetPlayerColor(2 , 12, -1, -1)
         Logic.PlayerSetPlayerColor(3 , 19, -1, -1)
-        Logic.PlayerSetPlayerColor(4 , 16, -1, -1)
+        Logic.PlayerSetPlayerColor(4 , 9, -1, -1)
         Logic.PlayerSetPlayerColor(8 , 13, -1, -1)
     end    
 

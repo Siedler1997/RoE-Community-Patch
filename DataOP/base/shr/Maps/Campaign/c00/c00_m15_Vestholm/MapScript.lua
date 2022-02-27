@@ -170,7 +170,11 @@ function Mission_FirstMapAction()
     StartSimpleJob("MonitorCarfulState")
 	
 	--OnShipReturningToHarbor()
-
+    
+    Logic.WeatherEventSetPrecipitationFalling(true)
+    Logic.WeatherEventSetPrecipitationIsSnow(false)
+    Logic.WeatherEventClearGoodTypesNotGrowing()
+    Logic.ActivateWeatherEvent()
 end
 ----------------------------------------------------------------------------------------------------------------------
 function Mission_SetupQuests()

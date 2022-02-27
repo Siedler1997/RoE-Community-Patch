@@ -6,11 +6,13 @@
     "\\Data\\base\\shr",
     "\\Data\\base\\shr\\config",
     "\\Data\\base\\shr\\config\\Entities",
-    "\\Data\\base\\shr\\graphics\\Animations",
-    "\\Data\\base\\shr\\graphics\\Models",
-    "\\Data\\base\\shr\\graphics\\Textures",
-    "\\Data\\base\\shr\\Script"
+    "\\Data\\base\\shr\\Script",
+    "\\Data\\base\\shr\\Script\\Shared",
+    "\\Data\\base\\shr\\Script\\Shared\\ScriptSystems",
+    "\\Data\\extra1",
+    "\\Data\\extra1\\shr",
+    "\\Data\\extra1\\shr\\Script"
   ],
-  "SelectedNode": "\\Data\\base\\shr\\config\\Entities\\B_Barracks.xml",
+  "SelectedNode": "\\Data\\base\\shr\\config\\Entities\\U_MilitaryCatapult.xml",
   "PreviewInSolutionExplorer": false
 }

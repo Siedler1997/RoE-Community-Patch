@@ -150,6 +150,13 @@
 			<Green>230</Green>
 			<Blue>230</Blue>
 		</Color>
+
+		<!-- Purple -->
+		<Color>
+			<Red>178</Red>
+			<Green>2</Green>
+			<Blue>255</Blue>
+		</Color>
 	</PlayerColors>
     
     <PlayerLogos>

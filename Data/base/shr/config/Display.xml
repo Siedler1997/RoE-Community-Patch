@@ -186,6 +186,11 @@
 			<G>230</G>
 			<B>230</B>
 		</MiniMapColor>
+		<MiniMapColor>
+			<R>178</R>
+			<G>2</G>
+			<B>255</B>
+		</MiniMapColor>
     </MiniMapColors>
 
     <PreLoadModels>
