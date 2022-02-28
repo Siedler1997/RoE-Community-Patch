@@ -133,6 +133,7 @@ function InitLocalOverwrite()
             g_TexturePositions.Entities[Entities.B_Beautification_TriumphalArch]    = {1, 5, 1}
             g_TexturePositions.Entities[Entities.B_Beautification_Vase]             = {5, 2, 1}
             g_TexturePositions.Entities[Entities.B_Beautification_VictoryColumn]    = {1, 6, 1}
+            g_TexturePositions.Entities[Entities.U_Tiger]    = {1, 8, 1}
             
             -- Quest Types
             g_TexturePositions.QuestTypes[Objective.Refill]                  = {5, 9}
@@ -188,6 +189,75 @@ function InitLocalOverwrite()
     end
 end
 
+function MilitaryFeedback(_EntityID,_Key)
+    local EntityType = Logic.GetEntityType(_EntityID)
+    
+	if EntityType == Entities.U_Bear or EntityType == Entities.U_BlackBear or EntityType == Entities.U_PolarBear then
+        --local rand = Logic.GetRandom(2)+1
+        --Sound.FXPlay2DSound("Misc\\earth_quake")
+        --Sound.FXPlaySound("Animals\bear_attack")
+        local x, y = Logic.GetEntityPosition(_EntityID)
+        local z = 0
+
+        Sound.FXPlay3DSound("animals\\bear_attack", x, y, z)
+        --Sound.FXPlay2DSound("animals\\bear_attack")
+    elseif EntityType == Entities.U_Wolf_Grey or EntityType == Entities.U_Wolf_White or EntityType == Entities.U_Wolf_Black or EntityType == Entities.U_Wolf_Brown then
+        --local rand = Logic.GetRandom(2)+1
+        --Sound.FXPlay2DSound("Misc\\earth_quake")
+        --Sound.FXPlaySound("Animals\bear_attack")
+        local x, y = Logic.GetEntityPosition(_EntityID)
+        local z = 0
+
+        Sound.FXPlay3DSound("animals\\wolf_attack", x, y, z)
+        --Sound.FXPlay2DSound("animals\\bear_attack")
+    elseif EntityType == Entities.U_Lion_Male or EntityType == Entities.U_Lion_Female then
+        --local rand = Logic.GetRandom(2)+1
+        --Sound.FXPlay2DSound("Misc\\earth_quake")
+        --Sound.FXPlaySound("Animals\bear_attack")
+        local x, y = Logic.GetEntityPosition(_EntityID)
+        local z = 0
+
+        Sound.FXPlay3DSound("animals\\lion_attack", x, y, z)
+        --Sound.FXPlay2DSound("animals\\bear_attack")
+    elseif EntityType == Entities.U_Tiger then
+        --local rand = Logic.GetRandom(2)+1
+        --Sound.FXPlay2DSound("Misc\\earth_quake")
+        --Sound.FXPlaySound("Animals\bear_attack")
+        local x, y = Logic.GetEntityPosition(_EntityID)
+        local z = 0
+
+        Sound.FXPlay3DSound("misc\\animal_tiger_attack", x, y, z)
+        --Sound.FXPlay2DSound("animals\\bear_attack")
+    else
+	    local folder = "Voices"
+
+	    local type = MilitaryFeedback_GetType(_EntityID)
+
+	    local speaker = MilitaryFeedback_GetSpeaker(_EntityID)
+	
+	    local state
+
+        if EntityType == Entities.U_MilitarySiegeTower and _Key == "AttackCommand" then
+            state = MilitaryFeedback_GetState("MountWallCommand")
+        else
+            state = MilitaryFeedback_GetState(_Key)
+        end
+        --Message("_Key = " .. _Key)
+
+	    if speaker == "" or state == "" then
+	
+		    return
+		
+	    end
+
+	    if speaker == nil or state == nil then
+	
+		    return
+		
+	    end
+	    Sound.PlayVoice("SettlersFeedbackVoice", folder.."/"..speaker.."/"..type.."_"..state..".mp3")
+    end
+end
 
 function EndStatistic_SettlerSpawned( _EntityID )
 
@@ -270,6 +340,16 @@ function InitMultiselection()
     LeaderSortOrder[23] = Entities.U_Thief
     LeaderSortOrder[24] = Entities.U_MilitarySword_Khana
     LeaderSortOrder[25] = Entities.U_MilitaryBow_Khana
+    LeaderSortOrder[26] = Entities.U_Bear
+    LeaderSortOrder[27] = Entities.U_BlackBear
+    LeaderSortOrder[28] = Entities.U_PolarBear
+    LeaderSortOrder[29] = Entities.U_Lion_Male
+    LeaderSortOrder[30] = Entities.U_Lion_Female
+    LeaderSortOrder[31] = Entities.U_Wolf_Grey
+    LeaderSortOrder[32] = Entities.U_Wolf_White
+    LeaderSortOrder[33] = Entities.U_Wolf_Black
+    LeaderSortOrder[34] = Entities.U_Wolf_Brown
+    LeaderSortOrder[35] = Entities.U_Tiger
 end
 
 

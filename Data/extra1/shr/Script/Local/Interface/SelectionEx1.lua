@@ -212,6 +212,23 @@ function GameCallback_GUI_SelectionChanged(_Source)
             XGUIEng.ShowAllSubWidgets("/InGame/Root/Normal/AlignBottomRight/DialogButtons/Thief",1)
 
             GUI_MultiSelection.CreateMultiSelection(_Source)
+            
+        elseif EntityType == Entities.U_Bear or EntityType == Entities.U_BlackBear or EntityType == Entities.U_PolarBear
+            or EntityType == Entities.U_Wolf_Grey or EntityType == Entities.U_Wolf_White or EntityType == Entities.U_Wolf_Black or EntityType == Entities.U_Wolf_Brown
+            or EntityType == Entities.U_Lion_Male or EntityType == Entities.U_Lion_Female or EntityType == Entities.U_Tiger then
+            XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/Selection",1)
+            XGUIEng.ShowAllSubWidgets("/InGame/Root/Normal/AlignBottomRight/Selection",0)
+            XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/Selection/BGMilitary",1)
+            
+            XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons",1)
+            XGUIEng.ShowAllSubWidgets("/InGame/Root/Normal/AlignBottomRight/DialogButtons",0)
+            XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/Military",1)
+            XGUIEng.ShowAllSubWidgets("/InGame/Root/Normal/AlignBottomRight/DialogButtons/Military",0)
+            XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/Military/StandGround",1)
+            XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/Military/Attack",1)
+            
+            GUI_MultiSelection.CreateMultiSelection(_Source)
+
 
         elseif EntityType == Entities.U_AmmunitionCart then
 

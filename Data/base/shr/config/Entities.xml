@@ -540,7 +540,15 @@
     <Entity>U_Trebuchet</Entity>
     <Entity>U_AmmunitionCart</Entity>
     <Entity>U_Thief</Entity>
-
+	<Entity>U_Bear</Entity>
+	<Entity>U_BlackBear</Entity>
+	<Entity>U_PolarBear</Entity>
+	<Entity>U_Wolf_Grey</Entity>
+	<Entity>U_Wolf_White</Entity>
+	<Entity>U_Wolf_Black</Entity>
+	<Entity>U_Wolf_Brown</Entity>
+	<Entity>U_Lion_Male</Entity>
+	<Entity>U_Lion_Female</Entity>
 
 
 

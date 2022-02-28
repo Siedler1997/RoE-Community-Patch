@@ -236,4 +236,13 @@
 <string id="I_X_PortalTomb03_ME" MD5Hash="" mod="20080421102029" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dolmen]]></string>
 	<string id="U_MilitaryTrebuchet" MD5Hash="13DEA75474C25B27EA021E86F9BFECA0" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Trebuchet]]></string>
 	<string id="U_TrebuchetCart" MD5Hash="52763288CE8FD7BC18241DDEFB8B3260" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Trebuchet Cart]]></string>
+	<string id="U_Bear" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bear]]></string>
+	<string id="U_PolarBear" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Polar Bear]]></string>
+	<string id="U_BlackBear" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Black Bear]]></string>
+	<string id="U_Lion_Male" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Lion]]></string>
+	<string id="U_Lion_Female" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Lioness]]></string>
+	<string id="U_Wolf_Grey" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Wolf]]></string>
+	<string id="U_Wolf_White" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Wolf]]></string>
+	<string id="U_Wolf_Black" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Wolf]]></string>
+	<string id="U_Wolf_Brown" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Wolf]]></string>
 </root>

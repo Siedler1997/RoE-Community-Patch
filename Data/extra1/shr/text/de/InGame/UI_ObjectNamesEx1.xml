@@ -54,4 +54,5 @@
 	<string id="Abilities_U_MilitaryBow_Khana" MD5Hash="43417B252EFD6449769E2FE770D4FEFA" mod="20080228143624" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bogenschützen]]></string>
 	<string id="Abilities_U_KnightPraphat" MD5Hash="6D07B8E9A0E9BBAA403330C6226EA2B5" mod="20080304151024" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Praphat]]></string>
 	<string id="Abilities_U_KnightKhana" MD5Hash="77D147AAA8852F941E356DCDBB345BCB" mod="20080304151126" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Khana]]></string>
+	<string id="Abilities_U_Tiger" MD5Hash="77D147AAA8852F941E356DCDBB345BCB" mod="20080304151126" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Tiger]]></string>
 </root>

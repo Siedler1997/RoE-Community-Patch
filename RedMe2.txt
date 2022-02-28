@@ -4,7 +4,7 @@ ToDos:
 	- Eigene Icon-Texturen
 	- Es dreht sich nicht richtig
 	- Begleitende Sodaten bewegen sich nach einem Move nicht mehr korrekt
-- Zahme Tiere
+- Zahme Tiere: MilitaryFeedback global statt lokal
 - Sturm
 	- soll mal funktionieren
 	- Abwandlung: Schneesturm

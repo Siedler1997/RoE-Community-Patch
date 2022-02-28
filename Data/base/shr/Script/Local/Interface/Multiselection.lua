@@ -30,6 +30,15 @@ function InitMultiselection()
     LeaderSortOrder[19] = Entities.U_BatteringRamCart
     LeaderSortOrder[20] = Entities.U_TrebuchetCart
     LeaderSortOrder[21] = Entities.U_Thief
+    LeaderSortOrder[22] = Entities.U_Bear
+    LeaderSortOrder[23] = Entities.U_BlackBear
+    LeaderSortOrder[24] = Entities.U_PolarBear
+    LeaderSortOrder[25] = Entities.U_Lion_Male
+    LeaderSortOrder[26] = Entities.U_Lion_Female
+    LeaderSortOrder[27] = Entities.U_Wolf_Grey
+    LeaderSortOrder[28] = Entities.U_Wolf_White
+    LeaderSortOrder[29] = Entities.U_Wolf_Black
+    LeaderSortOrder[30] = Entities.U_Wolf_Brown
 end
 
 

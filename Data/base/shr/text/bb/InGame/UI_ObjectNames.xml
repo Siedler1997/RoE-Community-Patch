@@ -561,4 +561,13 @@
 	<string id="Abilities_U_TrebuchetCart" MD5Hash="6B56AC83972DB805D22C4EAA79C5769D" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Trebuchet Cart]]></string>
 	<string id="Abilities_U_MilitaryTrebuchet" MD5Hash="2A6A9144EAF0CAE75DDED46B10DFDC73" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Trebuchet]]></string>
 	<string id="Abilities_U_MilitaryTrebuchet_NoSoldiersAttached" MD5Hash="9CFCD9E906978EB79A57A0DE18C2DC9E" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Unmanned Trebuchet]]></string>
+	<string id="Abilities_U_Bear" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bear]]></string>
+	<string id="Abilities_U_PolarBear" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Polar Bear]]></string>
+	<string id="Abilities_U_BlackBear" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Black Bear]]></string>
+	<string id="Abilities_U_Lion_Male" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Lion]]></string>
+	<string id="Abilities_U_Lion_Female" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Lioness]]></string>
+	<string id="Abilities_U_Wolf_Grey" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Wolf]]></string>
+	<string id="Abilities_U_Wolf_White" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Wolf]]></string>
+	<string id="Abilities_U_Wolf_Black" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Wolf]]></string>
+	<string id="Abilities_U_Wolf_Brown" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Wolf]]></string>
 </root>

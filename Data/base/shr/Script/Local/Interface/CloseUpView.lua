@@ -195,38 +195,64 @@ end
 
 
 function MilitaryFeedback(_EntityID,_Key)
-
-	local folder = "Voices"
-
-	local type = MilitaryFeedback_GetType(_EntityID)
-
-	local speaker = MilitaryFeedback_GetSpeaker(_EntityID)
-	
-	local state
-	
     local EntityType = Logic.GetEntityType(_EntityID)
+    
+	if EntityType == Entities.U_Bear or EntityType == Entities.U_BlackBear or EntityType == Entities.U_PolarBear then
+        --local rand = Logic.GetRandom(2)+1
+        --Sound.FXPlay2DSound("Misc\\earth_quake")
+        --Sound.FXPlaySound("Animals\bear_attack")
+        local x, y = Logic.GetEntityPosition(_EntityID)
+        local z = 0
 
-    if EntityType == Entities.U_MilitarySiegeTower and _Key == "AttackCommand" then
-        state = MilitaryFeedback_GetState("MountWallCommand")
+        Sound.FXPlay3DSound("animals\\bear_attack", x, y, z)
+        --Sound.FXPlay2DSound("animals\\bear_attack")
+    elseif EntityType == Entities.U_Wolf_Grey or EntityType == Entities.U_Wolf_White or EntityType == Entities.U_Wolf_Black or EntityType == Entities.U_Wolf_Brown then
+        --local rand = Logic.GetRandom(2)+1
+        --Sound.FXPlay2DSound("Misc\\earth_quake")
+        --Sound.FXPlaySound("Animals\bear_attack")
+        local x, y = Logic.GetEntityPosition(_EntityID)
+        local z = 0
+
+        Sound.FXPlay3DSound("animals\\wolf_attack", x, y, z)
+        --Sound.FXPlay2DSound("animals\\bear_attack")
+    elseif EntityType == Entities.U_Lion_Male or EntityType == Entities.U_Lion_Female then
+        --local rand = Logic.GetRandom(2)+1
+        --Sound.FXPlay2DSound("Misc\\earth_quake")
+        --Sound.FXPlaySound("Animals\bear_attack")
+        local x, y = Logic.GetEntityPosition(_EntityID)
+        local z = 0
+
+        Sound.FXPlay3DSound("animals\\lion_attack", x, y, z)
+        --Sound.FXPlay2DSound("animals\\lion_attack")
     else
-        state = MilitaryFeedback_GetState(_Key)
+	    local folder = "Voices"
+
+	    local type = MilitaryFeedback_GetType(_EntityID)
+
+	    local speaker = MilitaryFeedback_GetSpeaker(_EntityID)
+	
+	    local state
+
+        if EntityType == Entities.U_MilitarySiegeTower and _Key == "AttackCommand" then
+            state = MilitaryFeedback_GetState("MountWallCommand")
+        else
+            state = MilitaryFeedback_GetState(_Key)
+        end
+        --Message("_Key = " .. _Key)
+
+	    if speaker == "" or state == "" then
+	
+		    return
+		
+	    end
+
+	    if speaker == nil or state == nil then
+	
+		    return
+		
+	    end
+	    Sound.PlayVoice("SettlersFeedbackVoice", folder.."/"..speaker.."/"..type.."_"..state..".mp3")
     end
-    --Message("_Key = " .. _Key)
-
-	if speaker == "" or state == "" then
-	
-		return
-		
-	end
-
-	if speaker == nil or state == nil then
-	
-		return
-		
-	end
-	
-	Sound.PlayVoice("SettlersFeedbackVoice", folder.."/"..speaker.."/"..type.."_"..state..".mp3")
-
 end
 
 

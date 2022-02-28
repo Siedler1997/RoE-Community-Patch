@@ -89,4 +89,5 @@
 <string id="B_Beautification_Brazier" MD5Hash="C3FC86D902646EB9859FFFD3C5F40ADD" mod="20080225150737" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Kohlenbecken]]></string>
 <string id="B_Beautification_TriumphalArch" MD5Hash="50E3179098908C5B92F27EFCC9411F0A" mod="20080212130507" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Triumphbogen]]></string>
 <string id="B_Beautification_VictoryColumn" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Siegessäule]]></string>
+	<string id="U_Tiger" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114413" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Tiger]]></string>
 </root>
