@@ -84,7 +84,9 @@ function MilitaryFeedback_GetSpeaker(_EntityID)
      or type == Entities.U_CatapultCart
      or type == Entities.U_SiegeTowerCart
      or type == Entities.U_BatteringRamCart
-     or type == Entities.U_AmmunitionCart then
+     or type == Entities.U_AmmunitionCart
+     or type == Entities.U_MilitaryTrebuchet
+     or type == Entities.U_TrebuchetCart then
 	
 		local leader = Logic.GetGuardianEntityID(_EntityID)
 		

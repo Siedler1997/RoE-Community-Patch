@@ -262,12 +262,14 @@ function InitMultiselection()
     LeaderSortOrder[15] = Entities.U_MilitaryCatapult
     LeaderSortOrder[16] = Entities.U_MilitarySiegeTower
     LeaderSortOrder[17] = Entities.U_MilitaryBatteringRam
-    LeaderSortOrder[18] = Entities.U_CatapultCart
-    LeaderSortOrder[19] = Entities.U_SiegeTowerCart
-    LeaderSortOrder[20] = Entities.U_BatteringRamCart
-    LeaderSortOrder[21] = Entities.U_Thief
-    LeaderSortOrder[22] = Entities.U_MilitarySword_Khana
-    LeaderSortOrder[23] = Entities.U_MilitaryBow_Khana
+    LeaderSortOrder[18] = Entities.U_MilitaryTrebuchet
+    LeaderSortOrder[19] = Entities.U_CatapultCart
+    LeaderSortOrder[20] = Entities.U_SiegeTowerCart
+    LeaderSortOrder[21] = Entities.U_BatteringRamCart
+    LeaderSortOrder[22] = Entities.U_TrebuchetCart
+    LeaderSortOrder[23] = Entities.U_Thief
+    LeaderSortOrder[24] = Entities.U_MilitarySword_Khana
+    LeaderSortOrder[25] = Entities.U_MilitaryBow_Khana
 end
 
 

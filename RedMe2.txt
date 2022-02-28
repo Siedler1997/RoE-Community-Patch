@@ -1,7 +1,10 @@
 ToDos:
-- Einige neue Spielerfarben im MP nutzbar machen
-	- Können ausgewählt werden, doch ingame werden dann nur die nächsten (Dorf-)Farben in der Liste genutzt
 - Baubares Trebuchet
+	- Eigenes Karren-Modell
+	- Eigene Icon-Texturen
+	- Es dreht sich nicht richtig
+	- Begleitende Sodaten bewegen sich nach einem Move nicht mehr korrekt
+- Zahme Tiere
 - Sturm
 	- soll mal funktionieren
 	- Abwandlung: Schneesturm
@@ -31,6 +34,11 @@ ToDos:
 		- ggf. mit Indikator, um nur für neue Maps und angepasste zu gelten
 		- wegen zu hohem Aufwand (Kompatibiliät mit alten Maps) erstmal Low Priority
 - Spielbare Dörfer?
+- ColorChooser für Singleplayer
+	- Nur laut Map valide Farben nutzbar
+- Einige neue Spielerfarben im MP nutzbar machen
+	- Valide Spielerfarben mit Änderung in 'SharedMultiplayer' auswählbar
+	- ingame werden nur die nächsten (Dorf-)Farben aus der Liste gesetzt
 - "Rhian over the sea chapel"-quest und falsche Musik nach laden eines Savegame fixen?
 	- muss nochmal verifiziert werden
 - Dunklere Gfx-Sets?

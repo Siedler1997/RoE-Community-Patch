@@ -67,6 +67,12 @@ function GameCallback_OnGameStart()
         -- INIT PLAYERS
         if Mission_InitPlayers ~= nil then
             Mission_InitPlayers()
+
+            if Framework.IsNetworkGame() then
+                for i=1,8 do
+                    Logic.PlayerSetPlayerColor(i , 18, -1, -1)
+                end  
+            end
         else
             for i=1,8 do
                 AddResourcesToPlayer(Goods.G_Gold,30, i)
