@@ -31,6 +31,9 @@ g_MilitaryFeedback.States["StealBuildingCommand"]				= "Yes"
 g_MilitaryFeedback.States["AttachToWarMachineCommand_CannotReach"]="No"
 g_MilitaryFeedback.States["AttachToWarMachineCommand"]			= "Yes"
 g_MilitaryFeedback.States["HoldGroundCommand"]			        = "HoldPosition"
+g_MilitaryFeedback.States["ShootCatapultCommand"] 				= "ShootCatapult"
+g_MilitaryFeedback.States["OpenGateCommand"] 				    = "ForceOpenGate"
+g_MilitaryFeedback.States["StealBuildingCommand"] 				= "StealBuilding"
 
 g_MilitaryFeedback.Variants = {}
 g_MilitaryFeedback.Variants["No"] 						= 3
@@ -42,6 +45,7 @@ g_MilitaryFeedback.Variants["MountWall"] 				= 5
 g_MilitaryFeedback.Variants["StealGold"]				= 3
 g_MilitaryFeedback.Variants["Capture"]					= 5
 g_MilitaryFeedback.Variants["HoldPosition"]				= 5
+g_MilitaryFeedback.Variants["ShootCatapult"]			= 5
 g_MilitaryFeedback.Knights = {}
 g_MilitaryFeedback.Knights[Entities.U_KnightTrading] 	= "H_Knight_Trading"
 g_MilitaryFeedback.Knights[Entities.U_KnightHealing] 	= "H_Knight_Healing"
@@ -67,6 +71,11 @@ g_MilitaryFeedback.Soldiers[Entities.U_MilitarySword_RedPrince]		= "H_NPC_Mercen
 
 g_MilitaryFeedback.Thiefs = {}
 g_MilitaryFeedback.Thiefs[Entities.U_Thief] 			= "Thief"
+g_MilitaryFeedback.ThiefFeedbackVariants = {
+    "StealGold_rnd_01",
+    "StealInformation_rnd_02",
+    "StealInformation_rnd_04"
+}
 
 function MilitaryFeedback_GetSpeaker(_EntityID)
 
@@ -94,8 +103,6 @@ function MilitaryFeedback_GetSpeaker(_EntityID)
 
 		if g_MilitaryFeedback.Soldiers[type] ~= nil then
 			return g_MilitaryFeedback.Soldiers[type]
-		else
-			return "H_NPC_Mercenary_SE"	
 		end
 	end
 
@@ -172,7 +179,7 @@ function MilitaryFeedback_GetState(_Key)
 		variants = g_MilitaryFeedback.Variants[state]
 		
 	end 
-
+    --Message("_Key = " .. _Key)
 	if variants ~= -1 then
 
 		if variants > 9 then  
@@ -186,9 +193,11 @@ function MilitaryFeedback_GetState(_Key)
 		end
 		
 	else
-	
-		return ""
-	
+	    if _Key == "StealBuildingCommand" then
+            return g_MilitaryFeedback.ThiefFeedbackVariants[(1 + XGUIEng.GetRandom(2))]
+        else
+		    return state
+	    end
 	end
 
 end
@@ -235,6 +244,8 @@ function MilitaryFeedback(_EntityID,_Key)
 
         if EntityType == Entities.U_MilitarySiegeTower and _Key == "AttackCommand" then
             state = MilitaryFeedback_GetState("MountWallCommand")
+        elseif EntityType == Entities.U_MilitaryCatapult and _Key == "AttackCommand" then
+            state = MilitaryFeedback_GetState("ShootCatapultCommand")
         else
             state = MilitaryFeedback_GetState(_Key)
         end

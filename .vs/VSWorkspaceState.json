@@ -2,17 +2,16 @@
   "ExpandedNodes": [
     "",
     "\\Data",
+    "\\DataOP",
+    "\\DataOP\\base",
+    "\\DataOP\\base\\shr",
+    "\\DataOP\\base\\shr\\Maps",
+    "\\DataOP\\base\\shr\\Maps\\Campaign",
+    "\\DataOP\\base\\shr\\Maps\\Campaign\\c00",
     "\\Data\\base",
     "\\Data\\base\\shr",
-    "\\Data\\base\\shr\\text",
-    "\\Data\\base\\shr\\text\\de",
-    "\\Data\\base\\shr\\text\\de\\ingame",
-    "\\Data\\extra1",
-    "\\Data\\extra1\\shr",
-    "\\Data\\extra1\\shr\\Script",
-    "\\Data\\extra1\\shr\\Script\\Local",
-    "\\Data\\extra1\\shr\\Script\\Local\\Interface"
+    "\\Data\\base\\shr\\Script\\Local"
   ],
-  "SelectedNode": "\\Data\\extra1\\shr\\Script\\Local\\Interface\\SelectionEx1.lua",
+  "SelectedNode": "\\Data\\base\\shr\\config\\Entities\\U_MilitaryTrebuchet.xml",
   "PreviewInSolutionExplorer": false
 }

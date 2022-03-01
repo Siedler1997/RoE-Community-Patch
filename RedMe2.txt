@@ -1,4 +1,6 @@
 ToDos:
+- Minimap-Icons von Spezialgebäuden: Richtige Umrandung
+- AddOn-Loadscreens: Richtige Spielerfarben
 - Baubares Trebuchet
 	- Eigenes Karren-Modell
 	- Eigene Icon-Texturen
@@ -11,12 +13,17 @@ ToDos:
 	- Eigene Playlist
 - Zusätzliche Wappen auf Inganme-Flaggen (statt Platzhalter)
 - Verbesserte/Glaubwürdigere KI (in der Kampagne)
+	- Allgemein: Konsequentere Nutzung von RP-/Khana-Einheiten sowie ggf. Söldner
 	- Narfang: Sabatta aggressiv, wenn ein Außenposten erobert/zerstört wird
 	- M15: Sturm
+	- Idukun: Blizzard
 	- Speziell in den "Last-Stand"-Missionen
 	- Aktive KI-Ritter mit Fähigkeiten
+	- Nutzlose Rand-Territorien weg
 - Nur AeK-MainTheme im Hauptmenü
 - Entlassen-Button
+- B_Outpost_1_2
+	- Burg-Ersatz für spielbare Dörfer?
 - Söldner-Trupps
 	- Konvertierbar
 	- Korrekte Fackelanzeige (auch im Base game)
@@ -42,11 +49,13 @@ ToDos:
 - "Rhian over the sea chapel"-quest und falsche Musik nach laden eines Savegame fixen?
 	- muss nochmal verifiziert werden
 - Dunklere Gfx-Sets?
-- DEdK-Content
+- Fremder Content
 	- Speerkämpfer (Billig-Schwertkämpfer, falls Eisen knapp ist)
 	- Kanonen (twA)
 	- Reiter
-	- OST
+	- OST (DEdK, Anno 1404)
 - Auf 4k-Auflösung kann nicht mehr per BorderScroll nach rechts gecrolled werden
+- Biom-spezifisches Retexturing für Kerngebäude
+	- Das oder neue Modelle
 - Max. Zoom leicht erhöhen
 	- Winkel muss nach 0.5 anders kalkuliert werden
