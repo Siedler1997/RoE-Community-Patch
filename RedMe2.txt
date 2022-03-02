@@ -35,6 +35,10 @@ ToDos:
 	- Khana und Praphat
 		- aus Ritter-Auswahl wieder entfernen?
 		- mit Audio-Feedback (TTS)
+	- Kastellane: 
+		- Wieder raus aus Ritter-Auswahl
+		- Audio-Feedback (TTS)
+	- Generische Texte für alles (Stufenaufstieg, Titel-Bettelei, etc.)
 	- Bei Basegame-Rittern AddOn-Comments ergänzen (TTS)
 - Rebalancing
 	- Neue (sinnvollere) Aufstiegsbedingungen

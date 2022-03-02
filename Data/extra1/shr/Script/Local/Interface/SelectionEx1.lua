@@ -194,6 +194,14 @@ function GameCallback_GUI_SelectionChanged(_Source)
                 XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/Knight/ClaimTerritory",0)
             end
 
+            if EntityType == Entities.U_NPC_Castellan_ME or EntityType == Entities.U_NPC_Castellan_NE
+                or EntityType == Entities.U_NPC_Castellan_NA or EntityType == Entities.U_NPC_Castellan_SE
+                or EntityType == Entities.U_NPC_Castellan_AS then
+                XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/Knight/StartAbility",0)
+            else
+                XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/Knight/StartAbility",1)
+            end
+
             XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/Military",1)
             XGUIEng.ShowAllSubWidgets("/InGame/Root/Normal/AlignBottomRight/DialogButtons/Military",1)
             GUI_Military.StrengthUpdate()

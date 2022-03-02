@@ -560,6 +560,14 @@ function GetKnightActor(_KnightEntityType)
         Actor = "H_Knight_Sabatt"
     elseif _KnightEntityType == Entities.U_KnightRedPrince then
         Actor = "H_Knight_RedPrince"
+    elseif _KnightEntityType == Entities.U_NPC_Castellan_ME then
+        Actor = "H_NPC_Castellan_ME"
+    elseif _KnightEntityType == Entities.U_NPC_Castellan_NE then
+        Actor = "H_NPC_Castellan_NE"
+    elseif _KnightEntityType == Entities.U_NPC_Castellan_NA then
+        Actor = "H_NPC_Castellan_NA"
+    elseif _KnightEntityType == Entities.U_NPC_Castellan_SE then
+        Actor = "H_NPC_Castellan_SE"
     end
 
     return Actor

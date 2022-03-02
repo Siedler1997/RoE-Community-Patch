@@ -114,6 +114,7 @@ function InitLocalOverwrite()
             g_TexturePositions.Entities[Entities.U_KnightSaraya] = {5, 4, 1}
             g_TexturePositions.Entities[Entities.U_KnightKhana] = {6, 1, 1}
             g_TexturePositions.Entities[Entities.U_KnightPraphat] = {5, 3, 1}
+            g_TexturePositions.Entities[Entities.U_NPC_Castellan_AS] = {7, 9}
             
             g_TexturePositions.Entities[Entities.U_MilitaryBandit_Melee_AS] = {9, 15}
             g_TexturePositions.Entities[Entities.U_MilitaryBandit_Ranged_AS] = {9, 16}

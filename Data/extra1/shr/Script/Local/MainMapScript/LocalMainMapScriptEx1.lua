@@ -113,6 +113,10 @@ do
             Actor = "H_Knight_Praphat"
             
             return Actor
+        elseif _KnightEntityType == Entities.U_NPC_Castellan_AS then
+            Actor = "H_NPC_Castellan_AS"
+            
+            return Actor
         end
         
         return OldGetKnightActor(_KnightEntityType)

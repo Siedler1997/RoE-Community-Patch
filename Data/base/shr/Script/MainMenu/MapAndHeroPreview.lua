@@ -27,7 +27,11 @@ g_MapAndHeroPreview.KnightTypes =
                         "U_KnightPlunder",
                         "U_KnightSong",
                         "U_KnightSabatta",
-                        "U_KnightRedPrince"
+                        "U_KnightRedPrince",
+                        "U_NPC_Castellan_ME",
+                        "U_NPC_Castellan_NE",
+                        "U_NPC_Castellan_NA",
+                        "U_NPC_Castellan_SE"
                         }
 
 g_MapPage = g_MenuPage:CreateNewMenupage("/InGame/Map")

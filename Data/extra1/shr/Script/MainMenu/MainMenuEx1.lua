@@ -19,7 +19,12 @@ CustomGame.KnightTypes = {
     "U_KnightSabatta",
     "U_KnightRedPrince",
     "U_KnightPraphat",
-    "U_KnightKhana"
+    "U_KnightKhana",
+    "U_NPC_Castellan_ME",
+    "U_NPC_Castellan_NE",
+    "U_NPC_Castellan_NA",
+    "U_NPC_Castellan_SE",
+    "U_NPC_Castellan_AS"
     }
     
 g_MapAndHeroPreview.KnightTypes = CustomGame.KnightTypes
@@ -28,7 +33,7 @@ g_MapAndHeroPreview.KnightTypes = CustomGame.KnightTypes
 MPDefaultKnightNames = CustomGame.KnightTypes
 
 function RemapKnightID( _ID )
-    local Mapping = { [0] = 0, [1] = 7, [2] = 1, [3] = 3, [4] = 4, [5] = 2, [6] = 5, [7] = 6, [8] = 8, [9] = 9, [10] = 10, [11] = 11 }
+    local Mapping = { [0] = 0, [1] = 7, [2] = 1, [3] = 3, [4] = 4, [5] = 2, [6] = 5, [7] = 6, [8] = 8, [9] = 9, [10] = 10, [11] = 11, [12] = 0, [13] = 0 , [14] = 0 , [15] = 0 , [16] = 0  }
     return Mapping[_ID]
 end
 
@@ -45,8 +50,6 @@ function GetLoadScreen(_remappedKnightId, _tex)
             else
                 filename = "loadscreens\\" .. _tex .. ".png"
             end
-        elseif _remappedKnightId == 7 then
-            filename = "loadscreens\\endscreen_presentation.png"
         else
             filename = "loadscreens\\" .. _tex .. _remappedKnightId .. ".png"
         end

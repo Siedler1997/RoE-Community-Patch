@@ -7,7 +7,8 @@ MPDefaultPlayerColors = {1,2,3,4}
 
 MPDefaultKnightNames = {"U_KnightTrading", "U_KnightHealing", "U_KnightChivalry", 
                          "U_KnightWisdom","U_KnightPlunder", "U_KnightSong",
-                         "U_KnightSabatta", "U_KnightRedPrince"}
+                         "U_KnightSabatta", "U_KnightRedPrince",
+                        "U_NPC_Castellan_ME", "U_NPC_Castellan_NE", "U_NPC_Castellan_NA", "U_NPC_Castellan_SE"}
 
 MPDefaultVictoryConditions = {"Default", "InvadeMarketplace", "KnightTitle", "DestroyOnlySpecialBuilding"}
 --MPDefaultVictoryConditions = {"Default", "KnightTitle", "CastleDefense"}
