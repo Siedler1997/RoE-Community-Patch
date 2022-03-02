@@ -115,7 +115,7 @@
 				<AmmunitionLimit>10</AmmunitionLimit>
 
 				<CartEntityType>U_TrebuchetCart</CartEntityType>
-				<ConstructionDelay>5000</ConstructionDelay>
+				<ConstructionDelay>6000</ConstructionDelay>
 
 				<TargetCategoryList>
 

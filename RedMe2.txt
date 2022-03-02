@@ -41,6 +41,9 @@ ToDos:
 		- ggf. mit Indikator, um nur für neue Maps und angepasste zu gelten
 		- wegen zu hohem Aufwand (Kompatibiliät mit alten Maps) erstmal Low Priority
 - Spielbare Dörfer?
+- Ungenutzte Gebäude
+	- Juwelier
+	- Supermarkt?
 - ColorChooser für Singleplayer
 	- Nur laut Map valide Farben nutzbar
 - Einige neue Spielerfarben im MP nutzbar machen

@@ -10617,6 +10617,12 @@
             <CloseUpModeCulling>True</CloseUpModeCulling>
             <OcclusionCaster>True</OcclusionCaster>
         </Model>
+		<Model id="Buildings\B_Outpost_Buildingsite">
+			<Effect>SimpleObjectMultiply</Effect>
+			<SelectionTexture>Selection_Building</SelectionTexture>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+			<OcclusionCaster>True</OcclusionCaster>
+		</Model>
         
         <Model id="Buildings\B_Outpost_ME_Decal">
             <Effect>BuildingDecalWithSnowMasked</Effect>

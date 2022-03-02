@@ -10,8 +10,9 @@
     "\\DataOP\\base\\shr\\Maps\\Campaign\\c00",
     "\\Data\\base",
     "\\Data\\base\\shr",
-    "\\Data\\base\\shr\\Script\\Local"
+    "\\Data\\base\\shr\\config",
+    "\\Data\\base\\shr\\config\\Entities"
   ],
-  "SelectedNode": "\\Data\\base\\shr\\config\\Entities\\U_MilitaryTrebuchet.xml",
+  "SelectedNode": "\\Data\\base\\shr\\config\\Models.xml",
   "PreviewInSolutionExplorer": false
 }
