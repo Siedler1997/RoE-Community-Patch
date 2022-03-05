@@ -30,7 +30,6 @@ ToDos:
 - "Neue" Ritter 
 	- Fähigkeiten: Eigene Tooltips ergänzen (auch bei Sabatta und RP)
 	- RP
-		- RP-Einheiten in Kasernen
 		- Aktive Fähigkeit (Original oder eigene, muss aber zu AeK passen und nützlich sein)
 	- Khana und Praphat
 		- aus Ritter-Auswahl wieder entfernen?
@@ -38,7 +37,7 @@ ToDos:
 	- Kastellane: 
 		- Wieder raus aus Ritter-Auswahl
 		- Audio-Feedback (TTS)
-	- Generische Texte für alles (Stufenaufstieg, Titel-Bettelei, etc.)
+	- Generische Texte für alles (Tooltips, Stufenaufstieg, Titel-Bettelei, etc.)
 	- Bei Basegame-Rittern AddOn-Comments ergänzen (TTS)
 - Rebalancing
 	- Neue (sinnvollere) Aufstiegsbedingungen

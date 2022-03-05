@@ -1163,17 +1163,34 @@ end
 --------------------------------------------------------------------------------
 -- Barracks
 
-function GUI_BuildingButtons.BuyBattalionClicked()
+function GUI_BuildingButtons.BuyBattalionClicked(_IsSpecial)
 
     local PlayerID  = GUI.GetPlayerID()
     local BarrackID = GUI.GetSelectedEntity()
     local BarrackEntityType = Logic.GetEntityType(BarrackID)
+    local KnightType = Logic.GetEntityType(Logic.GetKnightID(GUI.GetPlayerID()))
     local EntityType
 
     if BarrackEntityType == Entities.B_Barracks then
-        EntityType = Entities.U_MilitarySword
+        if _IsSpecial == true then
+            if KnightType == Entities.U_KnightSabatta or KnightType == Entities.U_KnightRedPrince then
+                EntityType = Entities.U_MilitarySword_RedPrince
+            elseif KnightType == Entities.U_KnightKhana then
+                EntityType = Entities.U_MilitarySword_Khana
+            end
+        else
+            EntityType = Entities.U_MilitarySword
+        end
     elseif BarrackEntityType == Entities.B_BarracksArchers then
-        EntityType = Entities.U_MilitaryBow
+        if _IsSpecial == true then
+            if KnightType == Entities.U_KnightSabatta or KnightType == Entities.U_KnightRedPrince then
+                EntityType = Entities.U_MilitaryBow_RedPrince
+            elseif KnightType == Entities.U_KnightKhana then
+                EntityType = Entities.U_MilitaryBow_Khana
+            end
+        else
+            EntityType = Entities.U_MilitaryBow
+        end
     elseif Logic.IsEntityInCategory(BarrackID, EntityCategories.Headquarters) == 1 then
         EntityType = Entities.U_Thief
     else
@@ -1276,24 +1293,45 @@ function GUI_BuildingButtons.BuyBattalionMouseOver()
 end
 
 
-function GUI_BuildingButtons.BuyBattalionUpdate()
-
+function GUI_BuildingButtons.BuyBattalionUpdate(_IsSpecial)
     local CurrentWidgetID = XGUIEng.GetCurrentWidgetID()
     local BarrackID = GUI.GetSelectedEntity()
     local BarrackEntityType = Logic.GetEntityType(BarrackID)
+    local KnightType = Logic.GetEntityType(Logic.GetKnightID(GUI.GetPlayerID()))
+    local doShow = 1
 
     if BarrackEntityType == Entities.B_BarracksArchers then
-        SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitaryBow])
+        if _IsSpecial == true then
+            if KnightType == Entities.U_KnightSabatta or KnightType == Entities.U_KnightRedPrince then
+                SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitaryBow_RedPrince])
+            elseif KnightType == Entities.U_KnightKhana then
+                SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitaryBow_Khana])
+            else
+                doShow = 0
+            end
+        else
+            SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitaryBow])
+        end
     elseif Logic.IsEntityInCategory(BarrackID, EntityCategories.Headquarters) == 1 then
         SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_Thief])
     else
-        SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitarySword])
+        if _IsSpecial == true then
+            if KnightType == Entities.U_KnightSabatta or KnightType == Entities.U_KnightRedPrince then
+                SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitarySword_RedPrince])
+            elseif KnightType == Entities.U_KnightKhana then
+                SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitarySword_Khana])
+            else
+                doShow = 0
+            end
+        else
+            SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitarySword])
+        end
     end
 
     if BarrackEntityType == Entities.B_Barracks
     or BarrackEntityType == Entities.B_BarracksArchers
     or Logic.IsEntityInCategory(BarrackID, EntityCategories.Headquarters) == 1 then
-        XGUIEng.ShowWidget(CurrentWidgetID,1)
+        XGUIEng.ShowWidget(CurrentWidgetID,doShow)
     else
         XGUIEng.ShowWidget(CurrentWidgetID,0)
         return

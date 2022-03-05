@@ -179,6 +179,8 @@
 
         <ProducedUnitTypeList>
             <ProducedUnitType>U_MilitarySword</ProducedUnitType>
+			<ProducedUnitType>U_MilitarySword_RedPrince</ProducedUnitType>
+			<ProducedUnitType>U_MilitarySword_Khana</ProducedUnitType>
 		</ProducedUnitTypeList>
 
         <ProduceBattalion>true</ProduceBattalion>

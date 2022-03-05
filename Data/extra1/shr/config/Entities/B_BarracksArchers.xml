@@ -177,6 +177,8 @@
 
         <ProducedUnitTypeList>
             <ProducedUnitType>U_MilitaryBow</ProducedUnitType>
+			<ProducedUnitType>U_MilitaryBow_RedPrince</ProducedUnitType>
+			<ProducedUnitType>U_MilitaryBow_Khana</ProducedUnitType>
         </ProducedUnitTypeList>
 
         <ProduceBattalion>true</ProduceBattalion>
