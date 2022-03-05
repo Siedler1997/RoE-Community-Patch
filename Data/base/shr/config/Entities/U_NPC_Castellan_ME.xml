@@ -100,14 +100,6 @@
             </Logic>
         </Behavior>
 
-  	<!-- Universal Ability: Military battalions (Swordsmen, Bowmen) cost less gold -->
-        <Behavior>
-            <Logic classname="EGL::CHeroBehaviorProps">
-                <Class>EGL::CHeroBehavior</Class>
-	       <MilitaryParameter>0.8</MilitaryParameter>
-	   </Logic>
-        </Behavior>
-
         <Behavior>
             <Logic classname="EGL::CGuardableBehaviorProps">
                 <Class>EGL::CGuardableBehavior</Class>
