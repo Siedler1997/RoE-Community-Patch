@@ -28,9 +28,7 @@ ToDos:
 	- Konvertierbar
 	- Korrekte Fackelanzeige (auch im Base game)
 - "Neue" Ritter 
-	- Fähigkeiten: Eigene Tooltips ergänzen (auch bei Sabatta und RP)
-	- RP
-		- Aktive Fähigkeit (Original oder eigene, muss aber zu AeK passen und nützlich sein)
+	- RP: Aktive Fähigkeit (Original oder eigene, muss aber zu AeK passen und nützlich sein)
 	- Khana und Praphat
 		- aus Ritter-Auswahl wieder entfernen?
 		- mit Audio-Feedback (TTS)

@@ -985,19 +985,29 @@ function GUI_Knight.StartAbilityClicked(_Ability)
     
 end
 
+function GUI_Knight.GetKnightTooltipTextKey(_KnightID, _Ability)
+    local KnightType = Logic.GetEntityType(_KnightID)
+    local TooltipTextKey
+    if KnightType == Entities.U_KnightSabatta then
+        TooltipTextKey = "AbilityConvertCrimsonSabatt"
+    elseif KnightType == Entities.U_KnightRedPrince then
+        TooltipTextKey = "AbilityPlagueRedPrince"
+    else
+        for key, value in pairs (Abilities) do
+            if value == _Ability then
+                TooltipTextKey = key
+            end
+        end
+    end
+    return TooltipTextKey
+end
 
 function GUI_Knight.StartAbilityMouseOver()
 
     local CurrentWidgetID = XGUIEng.GetCurrentWidgetID()
     local KnightID = GUI.GetSelectedEntity()
     local Ability = GUI_Knight.GetKnightAbilityAndIcons(KnightID)
-    local TooltipTextKey
-
-    for key, value in pairs (Abilities) do
-        if value == Ability then
-            TooltipTextKey = key
-        end
-    end
+    local TooltipTextKey = GUI_Knight.GetKnightTooltipTextKey(KnightID, Ability)
 
     if XGUIEng.IsButtonDisabled(CurrentWidgetID) == 1 then
         local DisabledTooltipTextKey = TooltipTextKey

@@ -38,4 +38,8 @@
 	<string id="U_KnightKhana" MD5Hash="0055D815AC3E445508C9F42176AAD579" mod="20080206075412" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[-]]></string>
 	<string id="U_KnightPraphat" MD5Hash="0055D815AC3E445508C9F42176AAD579" mod="20080206075412" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[-]]></string>
 	<string id="U_NPC_Castellan_AS" MD5Hash="0055D815AC3E445508C9F42176AAD579" mod="20080206075412" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[A simple castellan of Hidun without special abilities.]]></string>
+	<string id="Abilities_U_KnightKhana" MD5Hash="45DCA541F448A243115E748B0FAA940E" mod="20070819153707" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- supply nearby troops with Torches]]></string>
+	<string id="Abilities_U_KnightPraphat" MD5Hash="081F560C7325427C9F5183B161DE8711" mod="20071205123351" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- receive tribute from nearby foreign Storehouses and Castles]]></string>
+	<string id="AbilityTorchKhana" MD5Hash="45DCA541F448A243115E748B0FAA940E" mod="20070819154801" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- supply nearby troops with Torches]]></string>
+	<string id="AbilityTributePraphat" MD5Hash="80CB1EC4FAF3367CECE66805C00059EF" mod="20071205123556" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- receive tribute from nearby foreign Storehouse or Castle]]></string>
 </root>

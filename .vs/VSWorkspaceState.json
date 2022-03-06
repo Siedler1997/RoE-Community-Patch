@@ -4,13 +4,14 @@
     "\\Data",
     "\\Data\\base",
     "\\Data\\base\\shr",
-    "\\Data\\base\\shr\\graphics",
-    "\\Data\\base\\shr\\graphics\\Textures",
-    "\\Data\\base\\shr\\graphics\\Textures\\GUI_768",
-    "\\Data\\base\\shr\\Script",
-    "\\Data\\base\\shr\\Script\\Local",
-    "\\Data\\base\\shr\\Script\\Local\\Interface"
+    "\\Data\\base\\shr\\text",
+    "\\Data\\extra1",
+    "\\Data\\extra1\\shr",
+    "\\Data\\extra1\\shr\\Script",
+    "\\Data\\extra1\\shr\\Script\\Local",
+    "\\Data\\extra1\\shr\\Script\\Local\\Interface",
+    "\\Data\\extra1\\shr\\text"
   ],
-  "SelectedNode": "\\Data\\base\\shr\\graphics\\Textures\\GUI_1200",
+  "SelectedNode": "\\Data\\base\\shr\\text\\bb\\InGame\\UI_ObjectDescription.xml",
   "PreviewInSolutionExplorer": false
 }

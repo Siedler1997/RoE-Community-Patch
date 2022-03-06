@@ -13,10 +13,13 @@ do
         local AbilityIconPosition = {11,2}
         local KnightType = Logic.GetEntityType(_KnightID)
     
-        if KnightType == Entities.U_KnightSaraya then
+        if KnightType == Entities.U_KnightSaraya or KnightType == Entities.U_KnightPraphat then
             Ability = Abilities.AbilityTribute
             -- Wrong icon still!
             AbilityIconPosition = {11,1}
+        elseif KnightType == Entities.U_KnightKhana then
+            Ability = Abilities.AbilityTorch
+            AbilityIconPosition = {11,4}
         else
             Ability, AbilityIconPosition = OldGUI_Knight_GetKnightAbilityAndIcons(_KnightID)
         end
@@ -70,3 +73,27 @@ do
         return OldGUI_Knight_StartAbilityUpdate()    
     end
 end    
+
+do
+    --local OldGUI_Knight_StartAbilityUpdate = GUI_Knight.StartAbilityUpdate
+    function GUI_Knight.GetKnightTooltipTextKey(_KnightID, _Ability)
+        local KnightType = Logic.GetEntityType(_KnightID)
+        local TooltipTextKey
+        if KnightType == Entities.U_KnightSabatta then
+            TooltipTextKey = "AbilityConvertCrimsonSabatt"
+        elseif KnightType == Entities.U_KnightRedPrince then
+            TooltipTextKey = "AbilityPlagueRedPrince"
+        elseif KnightType == Entities.U_KnightKhana then
+            TooltipTextKey = "AbilityTorchKhana"
+        elseif KnightType == Entities.U_KnightPraphat then
+            TooltipTextKey = "AbilityTributePraphat"
+        else
+            for key, value in pairs (Abilities) do
+                if value == _Ability then
+                    TooltipTextKey = key
+                end
+            end
+        end
+        return TooltipTextKey
+    end
+end
