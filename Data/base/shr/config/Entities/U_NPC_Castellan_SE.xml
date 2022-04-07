@@ -78,7 +78,7 @@
 
         <Behavior>
             <Logic classname="EGL::CMilitaryMovementBehaviorProps">
-                <Class>EGL::CMilitaryMovementBehavior</Class>
+                <Class>EGL::CHeroMovementBehavior</Class>
                 <StraightenPath>true</StraightenPath>
                 <EvasionPriority>140</EvasionPriority>
                 <Speed>800</Speed>
@@ -107,6 +107,14 @@
                 <GuardApproachPos><X>-300</X><Y>0</Y></GuardApproachPos>
             </Logic>
         </Behavior>
+
+		<!-- Dummy Ability, because castellans don't count as knights if they have no ability -->
+		<Behavior>
+			<Logic classname="EGL::CHeroBehaviorProps">
+				<Class>EGL::CHeroBehavior</Class>
+				<MilitaryParameter>1.0</MilitaryParameter>
+			</Logic>
+		</Behavior>
 
         <Behavior>
             <Logic classname="EGL::CFightBehaviorProps">

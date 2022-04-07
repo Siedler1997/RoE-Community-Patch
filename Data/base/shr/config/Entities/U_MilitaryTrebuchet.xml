@@ -115,7 +115,7 @@
 				<AmmunitionLimit>10</AmmunitionLimit>
 
 				<CartEntityType>U_TrebuchetCart</CartEntityType>
-				<ConstructionDelay>6000</ConstructionDelay>
+				<ConstructionDelay>8000</ConstructionDelay>
 
 				<TargetCategoryList>
 
@@ -138,12 +138,12 @@
 								<ApplyDamageModifiers>false</ApplyDamageModifiers>
 
 								<AttackAnim>U_Donkey_Trading_Fight</AttackAnim>
-								<MinRange>1600</MinRange>
-								<MaxRange>3200</MaxRange>
+								<MinRange>1800</MinRange>
+								<MaxRange>3600</MaxRange>
 								<ProjectileEffect>E_Trebuchet_Fire_Wall</ProjectileEffect>
 								<MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
 								<CanAttackOverWalls>true</CanAttackOverWalls>
-								<CooldownThousandths>8000</CooldownThousandths>
+								<CooldownThousandths>7500</CooldownThousandths>
 								<ConsumeAmmunition>true</ConsumeAmmunition>
 								<Damage>
 									<DiceCount>0</DiceCount>
@@ -189,12 +189,12 @@
 								<ApplyDamageModifiers>false</ApplyDamageModifiers>
 
 								<AttackAnim>U_Donkey_Trading_Fight</AttackAnim>
-								<MinRange>1600</MinRange>
-								<MaxRange>3200</MaxRange>
+								<MinRange>1800</MinRange>
+								<MaxRange>3600</MaxRange>
 								<ProjectileEffect>E_Trebuchet_Fire_Palisade</ProjectileEffect>
 								<MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
 								<CanAttackOverWalls>true</CanAttackOverWalls>
-								<CooldownThousandths>8000</CooldownThousandths>
+								<CooldownThousandths>7500</CooldownThousandths>
 								<ConsumeAmmunition>true</ConsumeAmmunition>
 								<Damage>
 									<DiceCount>0</DiceCount>
@@ -240,12 +240,12 @@
 								<ApplyDamageModifiers>false</ApplyDamageModifiers>
 
 								<AttackAnim>U_Donkey_Trading_Fight</AttackAnim>
-								<MinRange>1600</MinRange>
-								<MaxRange>3200</MaxRange>
+								<MinRange>1800</MinRange>
+								<MaxRange>3600</MaxRange>
 								<ProjectileEffect>E_Trebuchet_Fire</ProjectileEffect>
 								<MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
 								<CanAttackOverWalls>true</CanAttackOverWalls>
-								<CooldownThousandths>8000</CooldownThousandths>
+								<CooldownThousandths>7500</CooldownThousandths>
 								<ConsumeAmmunition>true</ConsumeAmmunition>
 								<Damage>
 									<DiceCount>0</DiceCount>

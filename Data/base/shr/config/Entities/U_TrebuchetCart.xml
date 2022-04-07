@@ -56,7 +56,7 @@
                 <Class>EGL::CSiegeCartBehavior</Class>
                 <AmmunitionType>G_CatapultAmmunition</AmmunitionType>
                 <AmmunitionAmount>10</AmmunitionAmount>
-                <ConstructionDelay>6000</ConstructionDelay>
+                <ConstructionDelay>8000</ConstructionDelay>
                 <ConstructionModel>Vehicles\V_Trebuchet</ConstructionModel>
                 <EngineList>
                     <Engine>U_MilitaryTrebuchet</Engine>

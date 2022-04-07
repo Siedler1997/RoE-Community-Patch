@@ -1314,6 +1314,9 @@ function GUI_BuildingButtons.BuyBattalionUpdate(_IsSpecial)
         end
     elseif Logic.IsEntityInCategory(BarrackID, EntityCategories.Headquarters) == 1 then
         SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_Thief])
+        if _IsSpecial == true then
+            doShow = 0
+        end
     else
         if _IsSpecial == true then
             if KnightType == Entities.U_KnightSabatta or KnightType == Entities.U_KnightRedPrince then
