@@ -28,6 +28,41 @@
 			<Green>194</Green>
 			<Blue>220</Blue>
 		</Color>
+
+		<!-- Yellow -->
+		<Color>
+			<Red>235</Red>
+			<Green>255</Green>
+			<Blue>53</Blue>
+		</Color>
+
+		<!-- Orange -->
+		<Color>
+			<Red>252</Red>
+			<Green>164</Green>
+			<Blue>39</Blue>
+		</Color>
+
+		<!-- Purple -->
+		<Color>
+			<Red>178</Red>
+			<Green>2</Green>
+			<Blue>255</Blue>
+		</Color>
+
+		<!-- Pink -->
+		<Color>
+			<Red>255</Red>
+			<Green>150</Green>
+			<Blue>214</Blue>
+		</Color>
+
+		<!-- 1 red prince color -->
+		<Color>
+			<Red>111</Red>
+			<Green>5</Green>
+			<Blue>41</Blue>
+		</Color>
 		
 		<!-- 3 village colors -->
 		<Color>
@@ -46,6 +81,13 @@
 			<Blue>103</Blue>
 		</Color>
 		
+		<!-- Baby-Blue -->
+		<Color>
+			<Red>139</Red>
+			<Green>223</Green>
+			<Blue>255</Blue>
+		</Color>
+		
 		<!-- 3 cloister colors -->
 		<Color>
 			<Red>193</Red> 
@@ -61,6 +103,20 @@
 			<Red>184</Red>
 			<Green>171</Green>
 			<Blue>97</Blue>
+		</Color>
+		
+		<!-- White -->
+		<Color>
+			<Red>230</Red>
+			<Green>230</Green>
+			<Blue>230</Blue>
+		</Color>
+
+		<!-- Light Green -->
+		<Color>
+			<Red>115</Red>
+			<Green>209</Green>
+			<Blue>65</Blue>
 		</Color>
 		
 		<!-- 3 bandit colors -->
@@ -82,52 +138,11 @@
 			<Blue>28</Blue>
 		</Color>
 		
-		<!-- 1 red prince color -->		
+		<!-- Black -->
 		<Color>
-			<Red>111</Red>
-			<Green>5</Green>
-			<Blue>41</Blue>
-		</Color>
-		
-		<!-- 1 color for traveling salesman -->
-		<Color>
-			<Red>71</Red>
-			<Green>47</Green>
-			<Blue>39</Blue>
-		</Color>
-		
-		
-		<!-- mor colors not need, or?-->
-
-		<!-- Baby-Blue -->
-		<Color>
-			<Red>139</Red>
-			<Green>223</Green>
-			<Blue>255</Blue>
-		</Color>
-
-		<!-- Pink -->
-		<Color>
-			<Red>255</Red>
-			<Green>150</Green>
-			<Blue>214</Blue>
-		</Color>
-		
-		
-		<!-- CP colors -->
-
-		<!-- Yellow -->
-		<Color>
-			<Red>235</Red>
-			<Green>255</Green>
-			<Blue>53</Blue>
-		</Color>
-
-		<!-- Orange -->
-		<Color>
-			<Red>252</Red>
-			<Green>164</Green>
-			<Blue>39</Blue>
+			<Red>57</Red>
+			<Green>57</Green>
+			<Blue>57</Blue>
 		</Color>
 
 		<!-- Dark-Grey (Kerberos wants his color back...) -->
@@ -136,27 +151,14 @@
 			<Green>136</Green>
 			<Blue>136</Blue>
 		</Color>
-
-		<!-- Black -->
+		
+		<!-- 1 color for traveling salesman -->
 		<Color>
-			<Red>57</Red>
-			<Green>57</Green>
-			<Blue>57</Blue>
+			<Red>71</Red>
+			<Green>47</Green>
+			<Blue>39</Blue>
 		</Color>
 
-		<!-- White -->
-		<Color>
-			<Red>230</Red>
-			<Green>230</Green>
-			<Blue>230</Blue>
-		</Color>
-
-		<!-- Purple -->
-		<Color>
-			<Red>178</Red>
-			<Green>2</Green>
-			<Blue>255</Blue>
-		</Color>
 	</PlayerColors>
     
     <PlayerLogos>

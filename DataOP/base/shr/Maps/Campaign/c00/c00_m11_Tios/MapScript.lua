@@ -2,10 +2,10 @@ CurrentMapIsCampaignMap = true
 ----------------------------------------------------------------------------------------------------------------------
 function Mission_InitPlayers()
 
-    TournamentPlayerID  = SetupPlayer(2,"H_NPC_Castellan_SE", "Tournament", "CP_OrangeColor")
+    TournamentPlayerID  = SetupPlayer(2,"H_NPC_Castellan_SE", "Tournament", "CityColor6")
    	
    	BanditsNorthPlayerID= SetupPlayer(3,"H_NPC_Mercenary_SE", "Bandits Sucea", "BanditsColor1")
-    BanditsWestPlayerID = SetupPlayer(4,"H_NPC_Mercenary_SE","Bandits Horcanada", "CP_BlackColor")
+    BanditsWestPlayerID = SetupPlayer(4,"H_NPC_Mercenary_SE","Bandits Horcanada", "BanditsColor4")
     BanditsEastPlayerID = SetupPlayer(5,"H_NPC_Mercenary_SE","Bandits Dalaganza","BanditsColor3")
     
     CloisterPlayerID    = SetupPlayer(6,"H_NPC_Monk_SE","Santa Cenitza","CloisterColor1")

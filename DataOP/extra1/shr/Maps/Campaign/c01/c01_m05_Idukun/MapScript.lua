@@ -326,9 +326,9 @@ function Mission_FirstMapAction()
         Startup_Diplomacy()
         
         -- CP: Changed player colors to be more consistent
-        Logic.PlayerSetPlayerColor(3 , 5, -1, -1)
-        Logic.PlayerSetPlayerColor(4 , 22, -1, -1)
-        Logic.PlayerSetPlayerColor(5 , 22, -1, -1)
+        Logic.PlayerSetPlayerColor(3 , 18, -1, -1)  --Kultisten: Hellgrün
+        Logic.PlayerSetPlayerColor(4 , 17, -1, -1)  --Ruinen: Weiß
+        Logic.PlayerSetPlayerColor(5 , 8, -1, -1)   --Kloster: Pink
     end        
 
     -- create quests

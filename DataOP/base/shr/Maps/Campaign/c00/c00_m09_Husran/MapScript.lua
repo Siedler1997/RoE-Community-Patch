@@ -11,7 +11,7 @@ function Mission_InitPlayers()
     HusranPlayerID = SetupPlayer(2, "H_Knight_Sabatt", "Husran", "RedPrinceColor")
     AlHadrPlayerID = SetupPlayer(3, "H_NPC_Villager01_NA", "Village1", "VillageColor1")
     AlAssirPlayerID = SetupPlayer(4, "H_NPC_Villager01_NA", "Village2", "VillageColor2")
-    CloisterPlayerID = SetupPlayer(5, "H_NPC_Monk_NA", "Cloister", "CP_BabyBlueColor")
+    CloisterPlayerID = SetupPlayer(5, "H_NPC_Monk_NA", "Cloister", "VillageColor4")
     
 
     -- set some resources for player 1

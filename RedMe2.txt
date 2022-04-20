@@ -1,5 +1,16 @@
 ToDos:
-- Minimap-Icons von Spezialgebäuden: Richtige Umrandung
+- TTS
+	- Ggf. Platzhalter
+	- Notizen
+		- Um +8db verstärken
+		- ggf. Anfang und Ende kürzen
+		- ggf. Geschwindigkeit -25%
+		- Zu mp3 konvertieren
+	- Stimmen
+		- RedPrince: Klaus Bauer
+	- Ko-fi für GameTTS (als Schankedön)
+- Nachrichten-Stau
+- MP-Koop-Fixes
 - AddOn-Loadscreens: Richtige Spielerfarben
 - Baubares Trebuchet
 	- Eigenes Karren-Modell
@@ -47,9 +58,6 @@ ToDos:
 	- Supermarkt?
 - ColorChooser für Singleplayer
 	- Nur laut Map valide Farben nutzbar
-- Einige neue Spielerfarben im MP nutzbar machen
-	- Valide Spielerfarben mit Änderung in 'SharedMultiplayer' auswählbar
-	- ingame werden nur die nächsten (Dorf-)Farben aus der Liste gesetzt
 - "Rhian over the sea chapel"-quest und falsche Musik nach laden eines Savegame fixen?
 	- muss nochmal verifiziert werden
 - Dunklere Gfx-Sets?

@@ -77,10 +77,10 @@ function Mission_InitPlayers()
     
     RossotorresPlayerID     = SetupPlayer(2, "H_Knight_RedPrince", "Rossotorres", "RedPrinceColor")                
     HarborPlayerID          = SetupPlayer(3, HarbourPlayerKnight.Face, "", "VillageColor1")
-    GranCastillaPlayerID    = SetupPlayer(4, GranCastillaPlayerKnight.Face, "", "CP_OrangeColor")    
+    GranCastillaPlayerID    = SetupPlayer(4, GranCastillaPlayerKnight.Face, "", "CityColor6")    
     MonasterioPlayerID      = SetupPlayer(5, MonasterioPlayerKnight.Face, "", "CloisterColor1")        
     Bandits1PlayerID        = SetupPlayer(6, "H_NPC_Mercenary_ME", "Bandits1", "BanditsColor1")
-    Bandits2PlayerID        = SetupPlayer(7, "H_NPC_Mercenary_ME", "Bandits1", "CP_BlackColor")    
+    Bandits2PlayerID        = SetupPlayer(7, "H_NPC_Mercenary_ME", "Bandits1", "BanditsColor4")    
     Bandits3PlayerID        = SetupPlayer(8, "H_NPC_Mercenary_ME", "Bandits1", "BanditsColor3")
        
     TerritoryID_WesternGarrison = 13

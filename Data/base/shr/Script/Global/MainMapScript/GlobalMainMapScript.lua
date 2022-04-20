@@ -308,13 +308,14 @@ end
 
 
 function InitPlayerColorIndex()
-     
     g_ColorIndex = {}
+
     g_ColorIndex["CityColor1"] = 1
     g_ColorIndex["CityColor2"] = 2
     g_ColorIndex["CityColor3"] = 3
     g_ColorIndex["CityColor4"] = 4
-    
+
+     --[[
     g_ColorIndex["VillageColor1"] = 5
     g_ColorIndex["VillageColor2"] = 6
     g_ColorIndex["VillageColor3"] = 7
@@ -332,15 +333,41 @@ function InitPlayerColorIndex()
     g_ColorIndex["TravelingSalesmanColor"] = 15
     
     -- CP-Colors
-    g_ColorIndex["CP_BabyBlueColor"] = 16
-    g_ColorIndex["CP_PinkColor"] = 17
-    g_ColorIndex["CP_YellowColor"] = 18
-    g_ColorIndex["CP_OrangeColor"] = 19
-    g_ColorIndex["CP_KerberosColor"] = 20
-    g_ColorIndex["CP_BlackColor"] = 21
-    g_ColorIndex["CP_WhiteColor"] = 22
-    g_ColorIndex["CP_PurpleColor"] = 23
+    g_ColorIndex["CityColor5"] = 18     --Yellow
+    g_ColorIndex["CityColor6"] = 19     --Orange
+    g_ColorIndex["CityColor7"] = 23     --Purple
+    g_ColorIndex["CityColor8"] = 17     --Pink
+    g_ColorIndex["VillageColor4"] = 16  --Light Blue
+    g_ColorIndex["CloisterColor4"] = 22 --White
+    g_ColorIndex["CloisterColor5"] = 24 --Light Green
+    g_ColorIndex["BanditsColor4"] = 21  --Black
+    g_ColorIndex["BanditsColor5"] = 20  --Dark Grey
+    --]]
+
+    g_ColorIndex["CityColor5"] = 5      --Yellow
+    g_ColorIndex["CityColor6"] = 6      --Orange
+    g_ColorIndex["CityColor7"] = 7      --Purple
+    g_ColorIndex["CityColor8"] = 8      --Pink
+    g_ColorIndex["RedPrinceColor"] = 9
     
+    g_ColorIndex["VillageColor1"] = 10
+    g_ColorIndex["VillageColor2"] = 11
+    g_ColorIndex["VillageColor3"] = 12
+    g_ColorIndex["VillageColor4"] = 13  --Light Blue
+    
+    g_ColorIndex["CloisterColor1"] = 14
+    g_ColorIndex["CloisterColor2"] = 15
+    g_ColorIndex["CloisterColor3"] = 16
+    g_ColorIndex["CloisterColor4"] = 17 --White
+    g_ColorIndex["CloisterColor5"] = 18 --Light Green
+    
+    g_ColorIndex["BanditsColor1"] = 19
+    g_ColorIndex["BanditsColor2"] = 20
+    g_ColorIndex["BanditsColor3"] = 21
+    g_ColorIndex["BanditsColor4"] = 22  --Black
+    g_ColorIndex["BanditsColor5"] = 23  --Dark Grey
+    
+    g_ColorIndex["TravelingSalesmanColor"] = 24
 end
 
 

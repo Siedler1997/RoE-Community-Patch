@@ -4,14 +4,13 @@
     "\\Data",
     "\\Data\\base",
     "\\Data\\base\\shr",
-    "\\Data\\base\\shr\\text",
-    "\\Data\\base\\shr\\text\\de",
-    "\\Data\\base\\shr\\text\\de\\ingame",
+    "\\Data\\base\\shr\\config",
+    "\\Data\\base\\shr\\config\\Entities",
     "\\Data\\extra1",
     "\\Data\\extra1\\shr",
-    "\\Data\\extra1\\shr\\text",
-    "\\Data\\extra1\\shr\\text\\bb",
-    "\\Data\\extra1\\shr\\text\\bb\\InGame"
+    "\\Data\\extra1\\shr\\config",
+    "\\Data\\extra1\\shr\\config\\Entities"
   ],
+  "SelectedNode": "\\Data\\extra1\\shr\\config\\Entities\\R_StoneMine.xml",
   "PreviewInSolutionExplorer": false
 }

@@ -58,8 +58,8 @@ function Mission_FirstMapAction()
         Startup_Diplomacy()
         
         -- CP: Changed player colors to be more consistent
-        Logic.PlayerSetPlayerColor(4 , 16, -1, -1)
-        Logic.PlayerSetPlayerColor(7 , 3, -1, -1)
+        Logic.PlayerSetPlayerColor(4 , 13, -1, -1)  --Letztes Kloster: Hellblau
+        Logic.PlayerSetPlayerColor(7 , 3, -1, -1)   --Khana: Grün
     end    
 
     -- create quests

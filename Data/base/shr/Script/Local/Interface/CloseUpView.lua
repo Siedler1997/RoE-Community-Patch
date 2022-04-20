@@ -36,9 +36,9 @@ g_MilitaryFeedback.States["OpenGateCommand"] 				    = "ForceOpenGate"
 g_MilitaryFeedback.States["StealBuildingCommand"] 				= "StealBuilding"
 
 g_MilitaryFeedback.Variants = {}
-g_MilitaryFeedback.Variants["No"] 						= 3
-g_MilitaryFeedback.Variants["Yes"] 						= 8
-g_MilitaryFeedback.Variants["Attack"] 					= 8
+g_MilitaryFeedback.Variants["No"] 						= 5
+g_MilitaryFeedback.Variants["Yes"] 						= 10
+g_MilitaryFeedback.Variants["Attack"] 					= 10
 g_MilitaryFeedback.Variants["Guard"] 					= 5
 g_MilitaryFeedback.Variants["NoAmmunition"] 			= 5
 g_MilitaryFeedback.Variants["MountWall"] 				= 5
@@ -66,8 +66,8 @@ g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Ranged_ME]	= "H_NPC_Mercen
 g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Ranged_NA]	= "H_NPC_Mercenary_NA"
 g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Ranged_NE]	= "H_NPC_Mercenary_NE"
 g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Ranged_SE]	= "H_NPC_Mercenary_SE"
-g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBow_RedPrince]		= "H_NPC_Mercenary_SE"
-g_MilitaryFeedback.Soldiers[Entities.U_MilitarySword_RedPrince]		= "H_NPC_Mercenary_SE"
+g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBow_RedPrince]		= "Military_RedPrince"
+g_MilitaryFeedback.Soldiers[Entities.U_MilitarySword_RedPrince]		= "Military_RedPrince"
 
 g_MilitaryFeedback.Thiefs = {}
 g_MilitaryFeedback.Thiefs[Entities.U_Thief] 			= "Thief"
@@ -181,17 +181,12 @@ function MilitaryFeedback_GetState(_Key)
 	end 
     --Message("_Key = " .. _Key)
 	if variants ~= -1 then
-
-		if variants > 9 then  
-		
-			return state .. "_rnd_" .. (1 + XGUIEng.GetRandom(variants -1))	
-			
-		else 
-
-			return state .. "_rnd_0" .. (1 + XGUIEng.GetRandom(variants -1))	
-		
+        local text = state .. "_rnd_"
+        local variant = 1 + XGUIEng.GetRandom(variants -1)
+		if variant < 10 then  
+			text = text .. "0"
 		end
-		
+		return text .. variant
 	else
 	    if _Key == "StealBuildingCommand" then
             return g_MilitaryFeedback.ThiefFeedbackVariants[(1 + XGUIEng.GetRandom(2))]

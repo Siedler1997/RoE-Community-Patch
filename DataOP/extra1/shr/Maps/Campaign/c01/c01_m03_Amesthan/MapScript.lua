@@ -41,9 +41,9 @@ function Mission_FirstMapAction()
         Startup_Diplomacy()
         
         -- CP: Changed player colors to be more consistent
-        Logic.PlayerSetPlayerColor(2 , 3, -1, -1)
-        Logic.PlayerSetPlayerColor(3 , 7, -1, -1)
-        Logic.PlayerSetPlayerColor(7 , 12, -1, -1)
+        Logic.PlayerSetPlayerColor(2 , 3, -1, -1)   --Khana: Grün
+        Logic.PlayerSetPlayerColor(3 , 11, -1, -1)  --Outpost: Blaugrün
+        Logic.PlayerSetPlayerColor(7 , 20, -1, -1)  --Praphat: Banditen-Orange
     end    
 
     -- create quests

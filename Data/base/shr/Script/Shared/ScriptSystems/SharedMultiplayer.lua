@@ -2,8 +2,8 @@
 --SharedMultiplayer.lua
 -- shared between global file multiplayer.lua and in menu AspectGameConfig.lua/CreateGamePage.lua
 ----------------------------------------------------------------------------------------------------
-MPDefaultPlayerColors = {1,2,3,4}
---MPDefaultPlayerColors = {1,2,3,4,17,18,19,23}
+--MPDefaultPlayerColors = {1,2,3,4}
+MPDefaultPlayerColors = {1,2,3,4,5,6,7,8,9}
 
 MPDefaultKnightNames = {"U_KnightTrading", "U_KnightHealing", "U_KnightChivalry", 
                          "U_KnightWisdom","U_KnightPlunder", "U_KnightSong",
