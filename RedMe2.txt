@@ -1,4 +1,5 @@
 ToDos:
+- KIs bekommen im MP die Spielerfarben ab Gelb
 - TTS
 	- Ggf. Platzhalter
 	- Notizen
@@ -52,6 +53,8 @@ ToDos:
 	- Neue (sinnvollere) Aufstiegsbedingungen
 		- ggf. mit Indikator, um nur für neue Maps und angepasste zu gelten
 		- wegen zu hohem Aufwand (Kompatibiliät mit alten Maps) erstmal Low Priority
+	- Maximale Anzahl Steuereintreiber erhöhen
+	- Soldatenlimit anheben (ggf. nur, wenn neue Einheiten verfügbar)
 - Spielbare Dörfer?
 - Ungenutzte Gebäude
 	- Juwelier

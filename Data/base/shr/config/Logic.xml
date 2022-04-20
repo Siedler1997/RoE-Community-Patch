@@ -181,10 +181,10 @@
         The tax amount is subtracted from the buildings "gold earnings"
         "1.0" subtracts all gold from the buildings earnings
     -->
-    <MaxNumberOfTaxCollectorsPerTaxCollection>6</MaxNumberOfTaxCollectorsPerTaxCollection>
-    <TaxCollectionFrequencyInMinutes>1.25</TaxCollectionFrequencyInMinutes>
+    <MaxNumberOfTaxCollectorsPerTaxCollection>10</MaxNumberOfTaxCollectorsPerTaxCollection>
+    <TaxCollectionFrequencyInMinutes>1.5</TaxCollectionFrequencyInMinutes>
     <NumberOfBuildingsPerTaxCollector>1</NumberOfBuildingsPerTaxCollector>
-    <MaxBuildingEarnings>100</MaxBuildingEarnings>
+    <MaxBuildingEarnings>200</MaxBuildingEarnings>
     <DefaultTaxLevel>1</DefaultTaxLevel>
     <TaxLevels>
         <TaxLevel>
@@ -202,7 +202,7 @@
     <!--    Building which have <MaxBuildingEarnings> * <Factor> earnings,
             add to the rich building counts. -->
     <BuildingProsperityFactors>
-        <Factor>.3</Factor>
+        <Factor>.25</Factor>
     </BuildingProsperityFactors>
 
 <!-- OBSOLETE? PRESTIGE POINTS -->
