@@ -15,9 +15,9 @@ function InitMusicSystem()
     MusicSystem.GameWon                 = "config\\sound\\PlaylistEventGameWon.xml"
     MusicSystem.GameLost                = "config\\sound\\PlaylistEventGameLost.xml"
 
-    MusicSystem.EventEpidemic           = "config\\sound\\PlaylistEventBlaze.xml"
-    MusicSystem.EventAnimalPlague       = "config\\sound\\PlaylistEventBlaze.xml"
-    MusicSystem.EventPlague             = "config\\sound\\PlaylistEventBlaze.xml"
+    MusicSystem.EventEpidemic           = "config\\sound\\PlaylistEventPlague.xml"
+    MusicSystem.EventAnimalPlague       = "config\\sound\\PlaylistEventPlague.xml"
+    MusicSystem.EventPlague             = "config\\sound\\PlaylistEventPlague.xml"
     MusicSystem.EventLocust             = "config\\sound\\PlaylistEventBlaze.xml"
     MusicSystem.EventVikings            = "config\\sound\\PlaylistEventBlaze.xml"
     MusicSystem.EventStorm              = "config\\sound\\PlaylistEventBlaze.xml"

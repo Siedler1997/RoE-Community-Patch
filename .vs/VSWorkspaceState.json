@@ -2,17 +2,18 @@
   "ExpandedNodes": [
     "",
     "\\Data",
-    "\\DataOP\\extra1\\shr",
-    "\\DataOP\\extra1\\shr\\Maps",
-    "\\DataOP\\extra1\\shr\\Maps\\Campaign",
-    "\\DataOP\\extra1\\shr\\Maps\\Campaign\\c01",
     "\\Data\\base",
     "\\Data\\base\\shr",
-    "\\Data\\base\\shr\\config",
-    "\\Data\\base\\shr\\Script\\Global",
-    "\\Data\\base\\shr\\Script\\Global\\MainMapScript",
-    "\\Data\\extra1"
+    "\\Data\\base\\shr\\text",
+    "\\Data\\base\\shr\\text\\bb",
+    "\\Data\\base\\shr\\text\\bb\\InGame",
+    "\\Data\\extra1",
+    "\\Data\\extra1\\shr",
+    "\\Data\\extra1\\shr\\text",
+    "\\Data\\extra1\\shr\\text\\bb",
+    "\\Data\\extra1\\shr\\text\\bb\\InGame",
+    "\\Data\\extra1\\shr\\text\\en\\InGame"
   ],
-  "SelectedNode": "\\Data\\extra1\\shr\\config",
+  "SelectedNode": "\\Data\\extra1\\shr\\text\\bb\\InGame\\UI_ObjectNamesEx1.xml",
   "PreviewInSolutionExplorer": false
 }
