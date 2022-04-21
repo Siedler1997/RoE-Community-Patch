@@ -2,15 +2,17 @@
   "ExpandedNodes": [
     "",
     "\\Data",
+    "\\DataOP\\extra1\\shr",
+    "\\DataOP\\extra1\\shr\\Maps",
+    "\\DataOP\\extra1\\shr\\Maps\\Campaign",
+    "\\DataOP\\extra1\\shr\\Maps\\Campaign\\c01",
     "\\Data\\base",
     "\\Data\\base\\shr",
     "\\Data\\base\\shr\\config",
-    "\\Data\\base\\shr\\config\\Entities",
-    "\\Data\\extra1",
-    "\\Data\\extra1\\shr",
-    "\\Data\\extra1\\shr\\config",
-    "\\Data\\extra1\\shr\\config\\Entities"
+    "\\Data\\base\\shr\\Script\\Global",
+    "\\Data\\base\\shr\\Script\\Global\\MainMapScript",
+    "\\Data\\extra1"
   ],
-  "SelectedNode": "\\Data\\extra1\\shr\\config\\Entities\\R_StoneMine.xml",
+  "SelectedNode": "\\Data\\extra1\\shr\\config",
   "PreviewInSolutionExplorer": false
 }

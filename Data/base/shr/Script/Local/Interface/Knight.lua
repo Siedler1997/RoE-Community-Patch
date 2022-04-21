@@ -34,7 +34,11 @@ function StartKnightsPromotionCelebration( _PlayerID , _OldTitle, _FirstTime)
         
         LocalScriptCallback_QueueVoiceMessage(_PlayerID, TextKey, false, _PlayerID)
         
-        StartEventMusic(MusicSystem.EventFestivalMusic, _PlayerID)
+        if Logic.GetKnightTitle(_PlayerID) == 6 then
+            StartEventMusic(MusicSystem.EventPromotion2Music, _PlayerID)
+        else
+            StartEventMusic(MusicSystem.EventPromotionMusic, _PlayerID)
+        end
     end
 
     XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/KnightTitleMenu", 0)

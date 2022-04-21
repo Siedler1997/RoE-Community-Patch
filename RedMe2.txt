@@ -1,5 +1,7 @@
 ToDos:
-- KIs bekommen im MP die Spielerfarben ab Gelb
+- Spielerfarben
+	- Minimap-Farben weichen z.T. ab (z.B. Stadt-Grün statt Dorf-Dunkelgrün)
+	- KIs bekommen im MP die Spielerfarben ab Gelb
 - TTS
 	- Ggf. Platzhalter
 	- Notizen

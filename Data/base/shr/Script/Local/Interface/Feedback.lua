@@ -256,6 +256,8 @@ function GameCallback_Feedback_NewCouplesAfterFestival(_PlayerID, _NewCouples, _
     -- stop the event music
     local PlayerID = GUI.GetPlayerID()
     StopEventMusic(MusicSystem.EventFestivalMusic, PlayerID)
+    StopEventMusic(MusicSystem.EventPromotionMusic, PlayerID)
+    StopEventMusic(MusicSystem.EventPromotion2Music, PlayerID)
 
     -- feedback for new couples
     
