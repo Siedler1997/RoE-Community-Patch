@@ -2,18 +2,16 @@
   "ExpandedNodes": [
     "",
     "\\Data",
-    "\\Data\\base",
-    "\\Data\\base\\shr",
-    "\\Data\\base\\shr\\text",
-    "\\Data\\base\\shr\\text\\bb",
-    "\\Data\\base\\shr\\text\\bb\\InGame",
+    "\\DataOP",
+    "\\DataOP\\base",
+    "\\DataOP\\base\\shr",
+    "\\DataOP\\base\\shr\\Maps",
+    "\\DataOP\\base\\shr\\Maps\\Campaign",
+    "\\DataOP\\base\\shr\\Maps\\Campaign\\c00",
     "\\Data\\extra1",
     "\\Data\\extra1\\shr",
-    "\\Data\\extra1\\shr\\text",
-    "\\Data\\extra1\\shr\\text\\bb",
-    "\\Data\\extra1\\shr\\text\\bb\\InGame",
-    "\\Data\\extra1\\shr\\text\\en\\InGame"
+    "\\Data\\extra1\\shr\\config"
   ],
-  "SelectedNode": "\\Data\\extra1\\shr\\text\\bb\\InGame\\UI_ObjectNamesEx1.xml",
+  "SelectedNode": "\\Data\\base\\shr\\config\\Climates.xml",
   "PreviewInSolutionExplorer": false
 }

@@ -1,7 +1,25 @@
 ToDos:
+- Default custom maps
+	- MP-Maps als Freibau-SP-Maps neu hinzufügen
+		- Ggf. nicht alle Maps, nur die "schönsten"
+		- Missionsziel ändern
+		- Konkurrenten entfernen
+		- Diplomatie setzen
+	- Kampagnen-Maps im freien Spiel
+		- mit leichten Ritter-Einschränkungen, wegen Dopplungen
+		- End-Cutscenes checken
+	- Ritter-Auswahl korrigieren/erweitern
+- Loadscreen/Endscreen bei "neuen" Rittern inkonsistent
+- Musik
+	- Playlists fixen (soweit nötig)
+	- Soundtrack aus DEdK (ggf. per externem Tool...)
 - Spielerfarben
-	- Minimap-Farben weichen z.T. ab (z.B. Stadt-Grün statt Dorf-Dunkelgrün) nach Neustart
-	- KIs bekommen im MP die Spielerfarben ab Gelb
+	- Minimap-Grenzstein-Farben weichen nach Neustart z.T. ab 
+		- z.B. Dorf-Dunkelgrün -> Stadt-Grün
+		- Beispiel: Der kalte Strom (Dorf)
+		- Ist ein Vanilla-Bug!
+	- KIs bekommen im MP die Spielerfarben ab Gelb (ValidPlayerColors property der Map vllt.?)
+	- Color chooser auch im SP (ValidPlayerColors property der Map nutzen)
 - Nutzbare (Tier-)Seuche, inkl. Musik
 	- Ruhige, aber bedrohliche Playlist
 	- Erst ab x% Betroffene, da sonst zu oft getriggert
@@ -37,7 +55,6 @@ ToDos:
 	- Speziell in den "Last-Stand"-Missionen
 	- Aktive KI-Ritter mit Fähigkeiten
 	- Nutzlose Rand-Territorien weg
-- Nur AeK-MainTheme im Hauptmenü
 - Entlassen-Button
 - B_Outpost_1_2
 	- Burg-Ersatz für spielbare Dörfer?
@@ -70,10 +87,9 @@ ToDos:
 	- muss nochmal verifiziert werden
 - Dunklere Gfx-Sets?
 - Fremder Content
-	- Speerkämpfer (Billig-Schwertkämpfer, falls Eisen knapp ist)
+	- Speerkämpfer (Defensiv und offensiv schwächer, aber leicht erhöhte Reichweite und billiger)
 	- Kanonen (twA)
 	- Reiter
-	- OST (DEdK, Anno 1404)
 - Auf 4k-Auflösung kann nicht mehr per BorderScroll nach rechts gecrolled werden
 - Biom-spezifisches Retexturing für Kerngebäude
 	- Das oder neue Modelle

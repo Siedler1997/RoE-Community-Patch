@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <!-- If this file is changed _at least_ Config\Sound\PlaylistBackground*.xml must be adjusted! -->
+    <Climate>Generic</Climate>
+	<Climate>ThroneRoom</Climate>
+    <Climate>SouthEurope</Climate>
+    <Climate>MiddleEurope</Climate>
+    <Climate>NorthEurope</Climate>
+    <Climate>NorthAfrica</Climate>
+</root>
