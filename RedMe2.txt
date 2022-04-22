@@ -14,7 +14,7 @@ ToDos:
 	- Playlists fixen (soweit nötig)
 	- Soundtrack aus DEdK (ggf. per externem Tool...)
 - Spielerfarben
-	- Minimap-Grenzstein-Farben weichen nach Neustart z.T. ab 
+	- Minimap-Territorium-Farben weichen nach Neustart z.T. ab 
 		- z.B. Dorf-Dunkelgrün -> Stadt-Grün
 		- Beispiel: Der kalte Strom (Dorf)
 		- Ist ein Vanilla-Bug!
@@ -64,10 +64,10 @@ ToDos:
 - "Neue" Ritter 
 	- RP: Aktive Fähigkeit (Original oder eigene, muss aber zu AeK passen und nützlich sein)
 	- Khana und Praphat
-		- aus Ritter-Auswahl wieder entfernen?
-		- mit Audio-Feedback (TTS)
+		- Sprüche als Strings
+		- Audio-Feedback (TTS)
 	- Kastellane: 
-		- Wieder raus aus Ritter-Auswahl
+		- Sprüche als Strings
 		- Audio-Feedback (TTS)
 	- Generische Texte für alles (Tooltips, Stufenaufstieg, Titel-Bettelei, etc.)
 	- Bei Basegame-Rittern AddOn-Comments ergänzen (TTS)

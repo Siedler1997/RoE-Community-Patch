@@ -19,12 +19,7 @@ CustomGame.KnightTypes = {
     "U_KnightSabatta",
     "U_KnightRedPrince",
     "U_KnightPraphat",
-    "U_KnightKhana",
-    "U_NPC_Castellan_ME",
-    "U_NPC_Castellan_NE",
-    "U_NPC_Castellan_NA",
-    "U_NPC_Castellan_SE",
-    "U_NPC_Castellan_AS"
+    "U_KnightKhana"
     }
     
 g_MapAndHeroPreview.KnightTypes = CustomGame.KnightTypes

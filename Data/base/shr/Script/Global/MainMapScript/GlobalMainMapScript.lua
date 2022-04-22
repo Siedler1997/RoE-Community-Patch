@@ -164,7 +164,6 @@ function GameCallback_OnGameStart()
     
     --init the victory condition
     InitGlobalVictoryCondition()
-
 end
 
 
@@ -174,17 +173,14 @@ end
 
 
 function GameCallback_CreateKnightByTypeOrIndex(_KnightType, _PlayerID)
-
     if Logic.GetKnightID(_PlayerID) == 0 then
     
         local MapType, CampaignName = Framework.GetCurrentMapTypeAndCampaignName()
     
         if (Logic.PlayerGetIsHumanFlag(_PlayerID) )then
         
-            if (MapType == 3 or MapType == 2 or MapType == 0)then  -- Multiplayer, Singleplayer, Custom        
-                    
+            if (MapType == 3 or MapType == 2 or MapType == 0)then  -- Multiplayer, Singleplayer, Custom 
                 local KnightIndex = _KnightType
-                
                 _KnightType = GetKnightTypeIDForMPGame(KnightIndex, _PlayerID)
             end
 		--[[
