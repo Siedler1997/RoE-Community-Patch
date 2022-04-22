@@ -51,10 +51,15 @@ function GetKnightTypeIDForMPGame(_KnightIndex, _PlayerID)
     -- entity type, but I decided to play it safe.
     --
     --Finally fixed...
-    if #ValidKnightNames == 0 then
-        return Entities[KnightNames[_KnightIndex]]
+    if _KnightIndex > 20 then
+        --Ein Index von >20 bedeutet: type statt index (tritt bei Restart der Map auf)
+        return _KnightIndex
     else
-        return Entities[MPDefaultKnightNames[_KnightIndex]] 
+        if #ValidKnightNames == 0 then
+            return Entities[KnightNames[_KnightIndex]]
+        else
+            return Entities[MPDefaultKnightNames[_KnightIndex]] 
+        end
     end
     return -1
 end

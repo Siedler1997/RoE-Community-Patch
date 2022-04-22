@@ -8,7 +8,6 @@ ToDos:
 	- Kampagnen-Maps im freien Spiel
 		- mit leichten Ritter-Einschränkungen, wegen Dopplungen
 		- End-Cutscenes checken
-	- Ritter-Auswahl korrigieren/erweitern
 - Loadscreen/Endscreen bei "neuen" Rittern inkonsistent
 - Musik
 	- Playlists fixen (soweit nötig)
