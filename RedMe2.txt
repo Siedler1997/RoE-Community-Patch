@@ -1,5 +1,5 @@
 ToDos:
-- Konversionsfähigkeiten nicht nutzbar, wenn Soldatenlimit bereits überschritten
+- Generischer Außenposten als "Wachturm"?
 - Default custom maps
 	- MP-Maps als Freibau-SP-Maps neu hinzufügen
 		- Ggf. nicht alle Maps, nur die "schönsten"

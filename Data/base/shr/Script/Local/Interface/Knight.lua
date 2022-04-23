@@ -972,18 +972,44 @@ function GUI_Knight.StartAbilityClicked(_Ability)
             Message(MessageText)
             return
         end
+    elseif Logic.GetEntityType(KnightID) == Entities.U_KnightRedPrince then
+        -- Do custom RP action here
+        --[[
+        local MarketplaceID = GetNearbyEnemyMarketplace(KnightID)
+        local workers = { Logic.GetPlayerEntitiesInCategory(Logic.EntityGetPlayer(MarketplaceID), EntityCategories.Worker ) }
+        for i = 1, #workers do
+            --GUI.AddNote("Building no. " .. i)
+            local workerID = workers[i]
+            if IsNear(MarketplaceID, workerID, 5000) then 
+                GUI.AddNote("Make it ill = " .. i)
+				--Logic.MakeSettlerIll(workerID, true)
+            end  
+        end
+        --]]
+        
+        -- First Part: Spread illness at enemy marketplace
+        local MarketplaceID = GetNearbyEnemyMarketplace(KnightID)
+        if MarketplaceID > 0 then
+            local Buildings = {Logic.GetPlayerEntitiesInCategory(Logic.EntityGetPlayer(MarketplaceID), EntityCategories.CityBuilding)}
+            for i = 1, #Buildings do
+                --GUI.AddNote("Building no. " .. i)
+                local BuildingID = Buildings[i]
+                if IsNear(MarketplaceID, BuildingID, 5000) then 
+                    GUI.AddNote("Make it ill = " .. i)
+                    Logic.MakeBuildingIll(BuildingID)   --Bug: Bricht die Schleife ab (Error)
+                end  
+            end
+        end
+        
+        -- Second Part: Deal light AOE-damage
+
+
     elseif Ability == Abilities.AbilityConvert then
         -- don't convert far beyond soldier limit
         if Logic.GetCurrentSoldierCount(PlayerID) >= Logic.GetCurrentSoldierLimit(PlayerID) then
             Message(XGUIEng.GetStringTableText("Feedback_TextLines/TextLine_SoldierLimitReached"))
             return
         end
-    elseif Logic.GetEntityType(KnightID) == Entities.U_KnightRedPrince then
-        --Do custom RP action here
-        GUI.AddNote("Debug: RP doesnt have an ability yet!")
-        Sound.FXPlay2DSound( "ui\\menu_click")
-        HeroAbilityFeedback(KnightID)
-        return
     end
 
     GUI.StartKnightAbility(KnightID,Ability)
@@ -1059,7 +1085,7 @@ function GUI_Knight.StartAbilityUpdate()
             return
         end
 
-        if Logic.KnightConvertIsPossible(KnightID) == 0 and IsKnightNearEnemyMarketplace(KnightID) == false then
+        if Logic.KnightConvertIsPossible(KnightID) == 0 and GetNearbyEnemyMarketplace(KnightID) < 0 then
             DisableButton(CurrentWidgetID)
             return
         end
@@ -1125,21 +1151,23 @@ function GUI_Knight.StartAbilityUpdate()
 
 end
 
---Abfrage, ob der Ritter in der Nähe eines feindlichen Marktplatzes ist
-function IsKnightNearEnemyMarketplace(_KnightID)
+-- Gibt die EntityId eines feindlichen Marktplatzes in der Nähe zurück
+function GetNearbyEnemyMarketplace(_KnightID)
     local playerId = Logic.EntityGetPlayer(_KnightID)
-    local nearby = false
+    local marketplace = -1
+
     for i = 1, 8 do
         if playerId ~= i then
             if Diplomacy_GetRelationBetween(playerId, i) == DiplomacyStates.Enemy then
                 local MarketplaceID = Logic.GetMarketplace(i)
                 if IsNear(_KnightID, MarketplaceID, 1000) then
                     nearby = true
+                    marketplace = MarketplaceID
                 end
             end
         end
     end
-    return nearby
+    return marketplace
 end
 
 

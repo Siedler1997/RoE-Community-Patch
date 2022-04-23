@@ -35,7 +35,7 @@ end
 function GetLoadScreen(_remappedKnightId, _tex)
     local filename
     if _remappedKnightId == 0 then
-        filename = "loadscreens\\" .. _tex .. ".png"
+        filename = "loadscreens\\" .. _tex .. "_old.png"
     else
         if _remappedKnightId >= 8 then
             if _remappedKnightId == 11 then  --Khana
@@ -43,7 +43,7 @@ function GetLoadScreen(_remappedKnightId, _tex)
             elseif _tex == "as" then
                 filename = "loadscreens\\Endscreen.png"
             else
-                filename = "loadscreens\\" .. _tex .. ".png"
+                filename = "loadscreens\\" .. _tex .. "_old.png"
             end
         else
             filename = "loadscreens\\" .. _tex .. _remappedKnightId .. ".png"
@@ -70,7 +70,7 @@ end
 function g_MainMenu.UpdateBackground()
  
     	XGUIEng.ShowWidget("/InGame/Background/Bars/Demo", 0)
-		XGUIEng.SetMaterialTexture( "/InGame/Background/BG",0,"MainMenu/masterBG.png")
+		XGUIEng.SetMaterialTexture( "/InGame/Background/BG",0,"MainMenu/masterBG_old.png")
         XGUIEng.ShowWidget("/InGame/Background/Bars/Limited", 0)
         XGUIEng.ShowWidget("/InGame/Background/Bars/BottomBarLimited", 0)
         XGUIEng.ShowWidget("/InGame/Background/Bars/BottomBar", 1)
