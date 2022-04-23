@@ -136,7 +136,7 @@
 				<Effect>E_HealingFX</Effect>
 				<SearchRadius>1000</SearchRadius>
 				<Ability>AbilityConvert</Ability>
-				<RechargeTimeSeconds>20</RechargeTimeSeconds>
+				<RechargeTimeSeconds>450</RechargeTimeSeconds>
 				<TaskList>TL_KNIGHT_ABILITY_CONVERT</TaskList>
 			</Logic>
 		</Behavior>

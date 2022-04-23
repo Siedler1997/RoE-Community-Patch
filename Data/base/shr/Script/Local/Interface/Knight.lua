@@ -973,31 +973,22 @@ function GUI_Knight.StartAbilityClicked(_Ability)
             return
         end
     elseif Logic.GetEntityType(KnightID) == Entities.U_KnightRedPrince then
-        -- Do custom RP action here
-        --[[
-        local MarketplaceID = GetNearbyEnemyMarketplace(KnightID)
-        local workers = { Logic.GetPlayerEntitiesInCategory(Logic.EntityGetPlayer(MarketplaceID), EntityCategories.Worker ) }
-        for i = 1, #workers do
-            --GUI.AddNote("Building no. " .. i)
-            local workerID = workers[i]
-            if IsNear(MarketplaceID, workerID, 5000) then 
-                GUI.AddNote("Make it ill = " .. i)
-				--Logic.MakeSettlerIll(workerID, true)
-            end  
-        end
-        --]]
-        
         -- First Part: Spread illness at enemy marketplace
         local MarketplaceID = GetNearbyEnemyMarketplace(KnightID)
         if MarketplaceID > 0 then
-            local Buildings = {Logic.GetPlayerEntitiesInCategory(Logic.EntityGetPlayer(MarketplaceID), EntityCategories.CityBuilding)}
-            for i = 1, #Buildings do
-                --GUI.AddNote("Building no. " .. i)
-                local BuildingID = Buildings[i]
-                if IsNear(MarketplaceID, BuildingID, 5000) then 
-                    GUI.AddNote("Make it ill = " .. i)
-                    Logic.MakeBuildingIll(BuildingID)   --Bug: Bricht die Schleife ab (Error)
-                end  
+            local EnemyPlayerId = Logic.EntityGetPlayer(MarketplaceID)
+            -- Nur möglich, wenn der Gegner mindestens Baron ist und somit Zugang zur Apotheke hat
+            if Logic.GetKnightTitle(EnemyPlayerId) >= 2 then
+                local Buildings = {Logic.GetPlayerEntitiesInCategory(EnemyPlayerId, EntityCategories.CityBuilding)}
+                for i = 1, #Buildings do
+                    -- Bis zu 50% der Gebäude können befallen werden
+                    if i < (#Buildings/2) then
+                        local BuildingID = Buildings[i]
+                        if IsNear(MarketplaceID, BuildingID, 5000) then 
+                            GUI.SendScriptCommand("Logic.MakeBuildingIll("..BuildingID..")")   --Bug: Bricht die Schleife ab (Error)
+                        end  
+                    end
+                end
             end
         end
         
