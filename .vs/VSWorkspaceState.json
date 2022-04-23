@@ -2,17 +2,16 @@
   "ExpandedNodes": [
     "",
     "\\Data",
-    "\\DataOP\\extra1",
-    "\\DataOP\\extra1\\shr",
-    "\\DataOP\\extra1\\shr\\Maps",
-    "\\DataOP\\extra1\\shr\\Maps\\Campaign",
-    "\\DataOP\\extra1\\shr\\Maps\\Campaign\\c01",
-    "\\DataOP\\extra1\\shr\\Maps\\Campaign\\c01\\throneroom",
-    "\\Data\\base",
-    "\\Data\\base\\shr",
-    "\\Data\\base\\shr\\config",
-    "\\Data\\base\\shr\\config\\Sound"
+    "\\Data\\extra1",
+    "\\Data\\extra1\\shr",
+    "\\Data\\extra1\\shr\\config",
+    "\\Data\\extra1\\shr\\config\\Entities",
+    "\\Data\\extra1\\shr\\Script",
+    "\\Data\\extra1\\shr\\Script\\Local",
+    "\\Data\\extra1\\shr\\Script\\Local\\Interface",
+    "\\Data\\extra1\\shr\\text\\bb",
+    "\\Data\\extra1\\shr\\text\\bb\\InGame"
   ],
-  "SelectedNode": "\\Data\\base\\shr\\config\\Sound\\PlaylistBackgroundThroneRoom.xml",
+  "SelectedNode": "\\Data\\base\\shr\\Script\\Local\\Interface\\Knight.lua",
   "PreviewInSolutionExplorer": false
 }

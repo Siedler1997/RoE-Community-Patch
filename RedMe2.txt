@@ -1,4 +1,5 @@
 ToDos:
+- Konversionsfähigkeiten nicht nutzbar, wenn Soldatenlimit bereits überschritten
 - Default custom maps
 	- MP-Maps als Freibau-SP-Maps neu hinzufügen
 		- Ggf. nicht alle Maps, nur die "schönsten"
@@ -8,7 +9,7 @@ ToDos:
 	- Kampagnen-Maps im freien Spiel
 		- mit leichten Ritter-Einschränkungen, wegen Dopplungen
 		- End-Cutscenes checken
-- Loadscreen/Endscreen bei "neuen" Rittern inkonsistent
+	- Hauptspiel-Kampagne im AddOn
 - Musik
 	- Playlists fixen (soweit nötig)
 	- Soundtrack aus DEdK (ggf. per externem Tool...)
@@ -62,13 +63,13 @@ ToDos:
 	- Korrekte Fackelanzeige (auch im Base game)
 - "Neue" Ritter 
 	- RP: Aktive Fähigkeit (Original oder eigene, muss aber zu AeK passen und nützlich sein)
+	- Ability hints
 	- Khana und Praphat
-		- Sprüche als Strings
+		- Sprüche als Strings weiter anpassen
 		- Audio-Feedback (TTS)
 	- Kastellane: 
 		- Sprüche als Strings
 		- Audio-Feedback (TTS)
-	- Generische Texte für alles (Tooltips, Stufenaufstieg, Titel-Bettelei, etc.)
 	- Bei Basegame-Rittern AddOn-Comments ergänzen (TTS)
 - Rebalancing
 	- Neue (sinnvollere) Aufstiegsbedingungen
@@ -84,7 +85,6 @@ ToDos:
 	- Nur laut Map valide Farben nutzbar
 - "Rhian over the sea chapel"-quest und falsche Musik nach laden eines Savegame fixen?
 	- muss nochmal verifiziert werden
-- Dunklere Gfx-Sets?
 - Fremder Content
 	- Speerkämpfer (Defensiv und offensiv schwächer, aber leicht erhöhte Reichweite und billiger)
 	- Kanonen (twA)

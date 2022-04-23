@@ -47,6 +47,7 @@ function GameCallback_Feedback_EntityHurt(_HurtPlayerID, _HurtEntityID,
     if Logic.GetEntityType(_HurtingEntityID) == Entities.U_KnightWisdom
     or Logic.GetEntityType(_HurtingEntityID) == Entities.U_KnightChivalry
     or Logic.GetEntityType(_HurtingEntityID) == Entities.U_KnightSabatta
+    or Logic.GetEntityType(_HurtingEntityID) == Entities.U_KnightRedPrince
     or Logic.GetEntityType(_HurtingEntityID) == Entities.U_KnightKhana then
         
         if Logic.GetHeadquarters(_HurtPlayerID) ~= 0 then

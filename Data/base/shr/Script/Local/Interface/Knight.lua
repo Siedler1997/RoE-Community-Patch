@@ -205,7 +205,6 @@ function GUI_Knight.PromoteKnightClicked()
 
 end
 
-
 function GUI_Knight.PromoteKnightButtonUpdate()
 
     local CurrentWidgetID =  XGUIEng.GetCurrentWidgetID()
@@ -973,6 +972,12 @@ function GUI_Knight.StartAbilityClicked(_Ability)
             Message(MessageText)
             return
         end
+    elseif Ability == Abilities.AbilityConvert then
+        -- don't convert far beyond soldier limit
+        if Logic.GetCurrentSoldierCount(PlayerID) >= Logic.GetCurrentSoldierLimit(PlayerID) then
+            Message(XGUIEng.GetStringTableText("Feedback_TextLines/TextLine_SoldierLimitReached"))
+            return
+        end
     elseif Logic.GetEntityType(KnightID) == Entities.U_KnightRedPrince then
         --Do custom RP action here
         GUI.AddNote("Debug: RP doesnt have an ability yet!")
@@ -1032,7 +1037,6 @@ end
 
 
 function GUI_Knight.StartAbilityUpdate()
-
     local CurrentWidgetID = XGUIEng.GetCurrentWidgetID()
 
     -- check if we have selected a knight
@@ -1048,7 +1052,24 @@ function GUI_Knight.StartAbilityUpdate()
     local RechargeTime = Logic.KnightGetAbilityRechargeTime(KnightID, Ability)
     local TimeLeft = Logic.KnightGetAbiltityChargeSeconds(KnightID, Ability)
 
-    if Ability == Abilities.AbilityPlunder then
+    if Logic.GetEntityType(KnightID) == Entities.U_KnightRedPrince then
+        
+        if TimeLeft < RechargeTime then
+            DisableButton(CurrentWidgetID)
+            return
+        end
+
+        if Logic.KnightConvertIsPossible(KnightID) == 0 and IsKnightNearEnemyMarketplace(KnightID) == false then
+            DisableButton(CurrentWidgetID)
+            return
+        end
+
+        StartKnightVoiceForActionSpecialAbility(Entities.U_KnightRedPrince)
+        
+        EnableButton(CurrentWidgetID)
+        return
+
+    elseif Ability == Abilities.AbilityPlunder then
         -- plunder department ---------------------------------------------------------------------
         -- check recharge time
         if TimeLeft < RechargeTime then
@@ -1102,6 +1123,23 @@ function GUI_Knight.StartAbilityUpdate()
         XGUIEng.DisableButton(CurrentWidgetID, 1)
     end
 
+end
+
+--Abfrage, ob der Ritter in der Nähe eines feindlichen Marktplatzes ist
+function IsKnightNearEnemyMarketplace(_KnightID)
+    local playerId = Logic.EntityGetPlayer(_KnightID)
+    local nearby = false
+    for i = 1, 8 do
+        if playerId ~= i then
+            if Diplomacy_GetRelationBetween(playerId, i) == DiplomacyStates.Enemy then
+                local MarketplaceID = Logic.GetMarketplace(i)
+                if IsNear(_KnightID, MarketplaceID, 1000) then
+                    nearby = true
+                end
+            end
+        end
+    end
+    return nearby
 end
 
 
