@@ -1,5 +1,4 @@
 ToDos:
-- Ritter: In Tooltips auf zusätzliche Rekrutierungsmöglichkeiten und Statuswerte hinweisen
 - Generischer Außenposten als "Wachturm"?
 - Normale Außenposten: Turm-Tatapult auf Spitze bei höchster Ausbaustufe?
 - Default custom maps

@@ -216,7 +216,7 @@
 								<Damage>
 									<DiceCount>0</DiceCount>
 									<FaceCount>0</FaceCount>
-									<BaseValue>30</BaseValue>	<!-- 25 -->
+									<BaseValue>40</BaseValue>	<!-- 25 -->
 								</Damage>
 							</AttackMode>
 						</AttackModeList>
@@ -248,7 +248,7 @@
 								<Damage>
 									<DiceCount>0</DiceCount>
 									<FaceCount>0</FaceCount>
-									<BaseValue>30</BaseValue>	<!-- 25 -->
+									<BaseValue>40</BaseValue>	<!-- 25 -->
 								</Damage>
 							</AttackMode>
 						</AttackModeList>
