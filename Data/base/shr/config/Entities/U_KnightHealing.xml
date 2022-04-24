@@ -2,8 +2,8 @@
     <Display classname="ED::CDisplaySettlerWithSlaveProps">
         <Class>ED::CDisplaySettlerWithSlave</Class>
         <DrawPlayerColor>True</DrawPlayerColor>
-        <Model>Units\U_Horse_Praphat</Model>
-        <Model2>Units\U_Knight_Praphat</Model2>
+        <Model>Units\U_Horse_Healing</Model>
+        <Model2>Units\U_Knight_Healing</Model2>
         <SlaveAlwaysVisible>true</SlaveAlwaysVisible>
     </Display>
     <Logic classname="EGL::CSettlerProps">
@@ -11,7 +11,7 @@
         <AccessCategory>AccessCategoryAttackableSettler</AccessCategory>
         <PlayerSectorType>PlayerSectorTypeMilitary</PlayerSectorType>
         <MilMetaFormationMemberType>MilMetaFormationMemberTypeMelee</MilMetaFormationMemberType>
-        <MaxHealth>1000</MaxHealth>
+        <MaxHealth>1100</MaxHealth>     <!-- 1000 -->
         <HealingSeconds>10</HealingSeconds>
         <HealingPoints>50</HealingPoints>
 
@@ -22,14 +22,14 @@
         <EntityCategories>
             <EntityCategory>Military</EntityCategory>
             <EntityCategory>Hero</EntityCategory>
-			<EntityCategory>GC_Clothes_Supplier</EntityCategory>
+            <EntityCategory>GC_Medicine_Supplier</EntityCategory>
         </EntityCategories>
         <AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
         <RepairFactor>0.3</RepairFactor>
         <Exploration>30</Exploration>
         <IdleTaskList>TL_MILITARY_IDLE</IdleTaskList>
-        <IsSelectable>true</IsSelectable>
         <CanDrown>true</CanDrown>
+        <IsSelectable>true</IsSelectable>
         <DoesntAlert>
             <EntityType>BeeHive</EntityType>
         </DoesntAlert>
@@ -37,8 +37,8 @@
             <With>SheepPasture</With>
             <With>CattlePasture</With>
         </Familiar>
-        <SoundImpactType>Leather</SoundImpactType>
-        <SoundProjectileType>Sword</SoundProjectileType>
+        <SoundImpactType>Metal</SoundImpactType>
+        <SoundProjectileType>Mace</SoundProjectileType>
     </Logic>
     <Behaviors>
 
@@ -46,59 +46,59 @@
             <Logic classname="EGL::CAnimationBehaviorExProps">
                 <Class>EGL::CBehaviorAnimationEx</Class>
 
-                <DefaultAnimation>U_Horse_Wisdom_Stand</DefaultAnimation>
-                <AnimSet>SET_KNIGHT_WISDOM</AnimSet>
+                <DefaultAnimation>U_Horse_Healing_Idle</DefaultAnimation>
+                <AnimSet>SET_KNIGHT_HEALING</AnimSet>
             </Logic>
             <Display classname="ED::CAnimationBehaviorSlaveProps">
                 <Class>ED::CAnimationBehaviorSlave</Class>
                 <SlaveAnimation>
                     <Mapping>
-                        <Master>U_Horse_Wisdom_Ride</Master>
-                        <Slave>U_Knight_Wisdom_Ride</Slave>
+                        <Master>U_Horse_Healing_Ride</Master>
+                        <Slave>U_Knight_Healing_Ride</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_Wisdom_Stand</Master>
-                        <Slave>U_Knight_Wisdom_Stand</Slave>
+                        <Master>U_Horse_Healing_Stand</Master>
+                        <Slave>U_Knight_Healing_Stand</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_Wisdom_Idle1</Master>
-                        <Slave>U_Knight_Wisdom_Idle1</Slave>
+                        <Master>U_Horse_Healing_Idle1</Master>
+                        <Slave>U_Knight_Healing_Idle1</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_Wisdom_Idle2</Master>
-                        <Slave>U_Knight_Wisdom_Idle2</Slave>
+                        <Master>U_Horse_Healing_Idle2</Master>
+                        <Slave>U_Knight_Healing_Idle2</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_Wisdom_Idle3</Master>
-                        <Slave>U_Knight_Wisdom_Idle3</Slave>
+                        <Master>U_Horse_Healing_Idle3</Master>
+                        <Slave>U_Knight_Healing_Idle3</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_Wisdom_Idle4</Master>
-                        <Slave>U_Knight_Wisdom_Idle4</Slave>
+                        <Master>U_Horse_Healing_Idle4</Master>
+                        <Slave>U_Knight_Healing_Idle4</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_Wisdom_Fight</Master>
-                        <Slave>U_Knight_Wisdom_Fight</Slave>
+                        <Master>U_Horse_Healing_Fight</Master>
+                        <Slave>U_Knight_Healing_Fight</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_Wisdom_Fight2</Master>
-                        <Slave>U_Knight_Wisdom_Fight2</Slave>
+                        <Master>U_Horse_Healing_Fight2</Master>
+                        <Slave>U_Knight_Healing_Fight2</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_Wisdom_Fight3</Master>
-                        <Slave>U_Knight_Wisdom_Fight3</Slave>
+                        <Master>U_Horse_Healing_Fight3</Master>
+                        <Slave>U_Knight_Healing_Fight3</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_Wisdom_Turnover</Master>
-                        <Slave>U_Knight_Wisdom_Turnover</Slave>
+                        <Master>U_Horse_Healing_Heal</Master>
+                        <Slave>U_Knight_Healing_Heal</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_Wisdom_Turn</Master>
-                        <Slave>U_Knight_Wisdom_Turn</Slave>
+                        <Master>U_Horse_Healing_Turn</Master>
+                        <Slave>U_Knight_Healing_Turn</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_Wisdom_BattleIdle</Master>
-                        <Slave>U_Knight_Wisdom_BattleIdle</Slave>
+                        <Master>U_Horse_Healing_BattleIdle</Master>
+                        <Slave>U_Knight_Healing_BattleIdle</Slave>
                     </Mapping>
                 </SlaveAnimation>
             </Display>
@@ -113,7 +113,7 @@
                 <SmoothingRadius>1000</SmoothingRadius>
                 <RotationSpeed>400</RotationSpeed>
                 <MoveTaskList>TL_KNIGHT_WALK</MoveTaskList>
-                <MoveIdleAnim>U_Horse_Wisdom_Stand</MoveIdleAnim>
+                <MoveIdleAnim>U_Horse_Healing_Idle</MoveIdleAnim>
             </Logic>
             <Display classname="ED::CBehaviorProps">
                 <Class>ED::CMovementBehaviorSlaveStatic</Class>
@@ -128,43 +128,44 @@
             </Logic>
         </Behavior>
 
-		<!-- Universal Ability: Upgrading OuterRim and City buildings costs less -->
-		<Behavior>
-			<Logic classname="EGL::CHeroBehaviorProps">
-				<Class>EGL::CHeroBehavior</Class>
-				<UpgradeParameter>0.8</UpgradeParameter>
-			</Logic>
-		</Behavior>
-		
-		<!-- Personal Ability: supplies hungry settlers in range with food -->
-		<Behavior>
-			<Logic classname="EGL::CKnightGoodAbilityProps">
-				<Class>EGL::CKnightFoodAbility</Class>
-				<RechargeTimeSeconds>150</RechargeTimeSeconds>
-				<TaskList>TL_KNIGHT_ABILITY_FOOD</TaskList>
-				<Animation>U_Horse_Wisdom_Turnover</Animation>
-				<AnimationGoodAmount>20</AnimationGoodAmount>
-				<AnimationGood>G_ClothesPraphat</AnimationGood>
-				<Effect>E_Knight_Trader_Aura</Effect>
-			</Logic>
-		</Behavior>
 
-		<Behavior>
-			<Logic classname="EGL::CNeedProviderBehaviorProps">
-				<Class>EGL::CNeedProviderNutrition</Class>
-				<FulfillTL>TL_WORKER_FOOD_AT_TRADER</FulfillTL>
-			</Logic>
-		</Behavior>
-		<Behavior>
-			<Logic classname="EGL::CStockBehaviorProps">
-				<Class>EGL::CStockOutBehavior</Class>
-				<MaxAmountOnStock>20</MaxAmountOnStock>
+  	<!-- Universal Ability: Collection after sermon increases a small percentage -->
+       <Behavior>
+            <Logic classname="EGL::CHeroBehaviorProps">
+                <Class>EGL::CHeroBehavior</Class>
+	       <SermonParameter>1.4</SermonParameter>   <!-- 1.2 -->
+	   </Logic>
+        </Behavior>
+
+	<!-- Personal Ability: heals ill settlers in range -->
+        <Behavior>
+            <Logic classname="EGL::CKnightGoodAbilityProps">
+                <Class>EGL::CKnightHealAbility</Class>
+                <RechargeTimeSeconds>150</RechargeTimeSeconds>
+                <TaskList>TL_KNIGHT_ABILITY_HEAL</TaskList>
+                <Animation>U_Horse_Healing_Heal</Animation>
+                <AnimationGoodAmount>30</AnimationGoodAmount>
+                <AnimationGood>G_MedicinLadyHealing</AnimationGood>
+                <Effect>E_HealingFX</Effect>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CNeedProviderBehaviorProps">
+                <Class>EGL::CNeedProviderMedicine</Class>
+                <FulfillTL>TL_WORKER_MEDICIN_AT_LADYHEALING</FulfillTL>
+            </Logic>
+        </Behavior>
+        <Behavior>
+            <Logic classname="EGL::CStockBehaviorProps">
+                <Class>EGL::CStockOutBehavior</Class>
+                <MaxAmountOnStock>30</MaxAmountOnStock>
 				<AddsToGlobalPlayerStock>true</AddsToGlobalPlayerStock>
-				<GoodTypes>
-					<GoodType>G_ClothesPraphat</GoodType>
-				</GoodTypes>
-			</Logic>
-		</Behavior>
+                <GoodTypes>
+                    <GoodType>G_MedicinLadyHealing</GoodType>
+                </GoodTypes>
+            </Logic>
+        </Behavior>
 
         <Behavior>
             <Logic classname="EGL::CGuardableBehaviorProps">
@@ -200,7 +201,7 @@
                                 <ApplyDamageModifiers>true</ApplyDamageModifiers>
 
                                 <MinRange>0</MinRange>
-                                <MaxRange>150</MaxRange>
+                                <MaxRange>100</MaxRange>
                                 <MaxHeightDeltaToTarget>100</MaxHeightDeltaToTarget>
                                 <CanAttackOverWalls>false</CanAttackOverWalls>
                                 <CooldownThousandths>1500</CooldownThousandths>
@@ -265,5 +266,6 @@
         <Clime>Generic</Clime>
         <Scalable>false</Scalable>
     </MapEditor>
+
 
 </root>

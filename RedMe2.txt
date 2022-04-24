@@ -1,5 +1,7 @@
 ToDos:
+- Ritter: In Tooltips auf zusätzliche Rekrutierungsmöglichkeiten und Statuswerte hinweisen
 - Generischer Außenposten als "Wachturm"?
+- Normale Außenposten: Turm-Tatapult auf Spitze bei höchster Ausbaustufe?
 - Default custom maps
 	- MP-Maps als Freibau-SP-Maps neu hinzufügen
 		- Ggf. nicht alle Maps, nur die "schönsten"
@@ -62,8 +64,8 @@ ToDos:
 	- Konvertierbar
 	- Korrekte Fackelanzeige (auch im Base game)
 - "Neue" Ritter 
-	- RP: Aktive Fähigkeit (Original oder eigene, muss aber zu AeK passen und nützlich sein)
-	- Ability hints
+	- Alle Ritter rebalancen, sobald die neuen Fähigkeiten final sind?
+	- RP: Seuchen-Fähigkeit umsetzen, falls GUI.SendScriptCommand irgendwann wieder laufen sollte
 	- Khana und Praphat
 		- Sprüche als Strings weiter anpassen
 		- Audio-Feedback (TTS)

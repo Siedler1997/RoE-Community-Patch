@@ -179,6 +179,11 @@
             <ProducedUnitType>U_MilitaryBow</ProducedUnitType>
 			<ProducedUnitType>U_MilitaryBow_RedPrince</ProducedUnitType>
 			<ProducedUnitType>U_MilitaryBow_Khana</ProducedUnitType>
+			<ProducedUnitType>U_MilitaryBandit_Ranged_ME</ProducedUnitType>
+			<ProducedUnitType>U_MilitaryBandit_Ranged_NE</ProducedUnitType>
+			<ProducedUnitType>U_MilitaryBandit_Ranged_NA</ProducedUnitType>
+			<ProducedUnitType>U_MilitaryBandit_Ranged_SE</ProducedUnitType>
+			<ProducedUnitType>U_MilitaryBandit_Ranged_AS</ProducedUnitType>
         </ProducedUnitTypeList>
 
         <ProduceBattalion>true</ProduceBattalion>
@@ -330,51 +335,6 @@
 				</Cost>
 			</UnitType>
 			<UnitType>
-				<EntityType>U_MilitaryBandit_Ranged_ME</EntityType>
-				<Cost>
-					<GoodAmount>
-						<GoodType>G_Gold</GoodType>
-						<Amount>15</Amount>
-					</GoodAmount>
-				</Cost>
-			</UnitType>
-			<UnitType>
-				<EntityType>U_MilitaryBandit_Ranged_NA</EntityType>
-				<Cost>
-					<GoodAmount>
-						<GoodType>G_Gold</GoodType>
-						<Amount>15</Amount>
-					</GoodAmount>
-				</Cost>
-			</UnitType>
-			<UnitType>
-				<EntityType>U_MilitaryBandit_Ranged_NE</EntityType>
-				<Cost>
-					<GoodAmount>
-						<GoodType>G_Gold</GoodType>
-						<Amount>15</Amount>
-					</GoodAmount>
-				</Cost>
-			</UnitType>
-			<UnitType>
-				<EntityType>U_MilitaryBandit_Ranged_SE</EntityType>
-				<Cost>
-					<GoodAmount>
-						<GoodType>G_Gold</GoodType>
-						<Amount>15</Amount>
-					</GoodAmount>
-				</Cost>
-			</UnitType>
-			<UnitType>
-				<EntityType>U_MilitaryBandit_Ranged_AS</EntityType>
-				<Cost>
-					<GoodAmount>
-						<GoodType>G_Gold</GoodType>
-						<Amount>15</Amount>
-					</GoodAmount>
-				</Cost>
-			</UnitType>
-			<UnitType>
 				<EntityType>U_MilitaryBow_Khana</EntityType>
 				<Cost>
 					<GoodAmount>
@@ -384,6 +344,51 @@
 					<GoodAmount>
 						<GoodType>G_Bow</GoodType>
 						<Amount>1</Amount>
+					</GoodAmount>
+				</Cost>
+			</UnitType>
+			<UnitType>
+				<EntityType>U_MilitaryBandit_Ranged_ME</EntityType>
+				<Cost>
+					<GoodAmount>
+						<GoodType>G_Gold</GoodType>
+						<Amount>30</Amount>
+					</GoodAmount>
+				</Cost>
+			</UnitType>
+			<UnitType>
+				<EntityType>U_MilitaryBandit_Ranged_NA</EntityType>
+				<Cost>
+					<GoodAmount>
+						<GoodType>G_Gold</GoodType>
+						<Amount>30</Amount>
+					</GoodAmount>
+				</Cost>
+			</UnitType>
+			<UnitType>
+				<EntityType>U_MilitaryBandit_Ranged_NE</EntityType>
+				<Cost>
+					<GoodAmount>
+						<GoodType>G_Gold</GoodType>
+						<Amount>30</Amount>
+					</GoodAmount>
+				</Cost>
+			</UnitType>
+			<UnitType>
+				<EntityType>U_MilitaryBandit_Ranged_SE</EntityType>
+				<Cost>
+					<GoodAmount>
+						<GoodType>G_Gold</GoodType>
+						<Amount>30</Amount>
+					</GoodAmount>
+				</Cost>
+			</UnitType>
+			<UnitType>
+				<EntityType>U_MilitaryBandit_Ranged_AS</EntityType>
+				<Cost>
+					<GoodAmount>
+						<GoodType>G_Gold</GoodType>
+						<Amount>30</Amount>
 					</GoodAmount>
 				</Cost>
 			</UnitType>

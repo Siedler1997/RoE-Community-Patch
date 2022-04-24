@@ -42904,7 +42904,7 @@
 					<ToolTipEnabledFlag>true</ToolTipEnabledFlag>
 					<ControlTargetVisibility>true</ControlTargetVisibility>
 					<ToolTipUpdateFunction>
-						<LuaCommand>GUI_BuildingButtons.BuyBattalionMouseOver()</LuaCommand>
+						<LuaCommand>GUI_BuildingButtons.BuyBattalionMouseOver(true)</LuaCommand>
 					</ToolTipUpdateFunction>
 					<RawString></RawString>
 					<StringTableKey></StringTableKey>

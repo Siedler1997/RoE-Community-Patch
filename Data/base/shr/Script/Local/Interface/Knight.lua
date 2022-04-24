@@ -166,8 +166,10 @@ function GUI_Knight.GetKnightAbilityAndIcons(_KnightID)
         Ability = Abilities.AbilityConvert
         AbilityIconPosition = {11,6}
     elseif KnightType == Entities.U_KnightRedPrince then
-        Ability = Abilities.AbilityConvert
-        AbilityIconPosition = {15,16}
+        Ability = Abilities.AbilityTribute
+        AbilityIconPosition = {1,4,1}
+        --Unused: Custom icon for PR illness ability
+        --AbilityIconPosition = {15,16}
     end
 
     return Ability, AbilityIconPosition
@@ -972,6 +974,8 @@ function GUI_Knight.StartAbilityClicked(_Ability)
             Message(MessageText)
             return
         end
+    --[[
+    --Unused ability for Red Prince. Doesn't work in MP games, so he uses tribute instead
     elseif Logic.GetEntityType(KnightID) == Entities.U_KnightRedPrince then
         -- First Part: Spread illness at enemy marketplace
         local MarketplaceID = GetNearbyEnemyMarketplace(KnightID)
@@ -980,21 +984,21 @@ function GUI_Knight.StartAbilityClicked(_Ability)
             -- Nur möglich, wenn der Gegner mindestens Baron ist und somit Zugang zur Apotheke hat
             if Logic.GetKnightTitle(EnemyPlayerId) >= 2 then
                 local Buildings = {Logic.GetPlayerEntitiesInCategory(EnemyPlayerId, EntityCategories.CityBuilding)}
-                for i = 1, #Buildings do
+                for i = 1, #Buildings/2 do
                     -- Bis zu 50% der Gebäude können befallen werden
-                    if i < (#Buildings/2) then
-                        local BuildingID = Buildings[i]
-                        if IsNear(MarketplaceID, BuildingID, 5000) then 
-                            GUI.SendScriptCommand("Logic.MakeBuildingIll("..BuildingID..")")   --Bug: Bricht die Schleife ab (Error)
-                        end  
-                    end
+                    local BuildingID = Buildings[i]
+                    if IsNear(MarketplaceID, BuildingID, 5000) then 
+                        GUI.SendScriptCommand("Logic.MakeBuildingIll("..BuildingID..")")   --Bug: Bricht die Schleife ab (Error)
+                    end  
                 end
+            else
+                --ToDo: Hinweis, dass der Gegner noch nicht soweit ist
             end
         end
         
         -- Second Part: Deal light AOE-damage
-
-
+        GUI.SendScriptCommand("Logic.HurtEntity("..KnightID..", "..(500)..")")
+    --]]
     elseif Ability == Abilities.AbilityConvert then
         -- don't convert far beyond soldier limit
         if Logic.GetCurrentSoldierCount(PlayerID) >= Logic.GetCurrentSoldierLimit(PlayerID) then
@@ -1069,23 +1073,42 @@ function GUI_Knight.StartAbilityUpdate()
     local RechargeTime = Logic.KnightGetAbilityRechargeTime(KnightID, Ability)
     local TimeLeft = Logic.KnightGetAbiltityChargeSeconds(KnightID, Ability)
 
+    --[[
+    --Unused ability for Red Prince. Doesn't work in MP games, so he uses tribute instead
     if Logic.GetEntityType(KnightID) == Entities.U_KnightRedPrince then
         
         if TimeLeft < RechargeTime then
             DisableButton(CurrentWidgetID)
             return
         end
-
+        
         if Logic.KnightConvertIsPossible(KnightID) == 0 and GetNearbyEnemyMarketplace(KnightID) < 0 then
             DisableButton(CurrentWidgetID)
             return
         end
-
+        
         StartKnightVoiceForActionSpecialAbility(Entities.U_KnightRedPrince)
         
         EnableButton(CurrentWidgetID)
         return
-
+    --]]
+    if Ability == Abilities.AbilityTribute then
+        -- tribute department ---------------------------------------------------------------------
+        -- check recharge time
+        if TimeLeft < RechargeTime then
+            DisableButton(CurrentWidgetID)
+            return
+        end
+    
+        if Logic.KnightTributeIsPossible(KnightID) == false then
+            DisableButton(CurrentWidgetID)
+            return
+        else
+            StartKnightVoiceForActionSpecialAbility(Entities.U_KnightRedPrince, true)
+        end
+    
+        EnableButton(CurrentWidgetID)
+        return    
     elseif Ability == Abilities.AbilityPlunder then
         -- plunder department ---------------------------------------------------------------------
         -- check recharge time
@@ -1122,12 +1145,12 @@ function GUI_Knight.StartAbilityUpdate()
             DisableButton(CurrentWidgetID)
             return
         end
-
+        
         if Logic.KnightConvertIsPossible(KnightID) == 0 then
             DisableButton(CurrentWidgetID)
             return
         end
-
+        
         EnableButton(CurrentWidgetID)
         return
     end

@@ -62,6 +62,7 @@ do
                 DisableButton(CurrentWidgetID)
                 return
             else
+                StartKnightVoiceForActionSpecialAbility(Entities.U_KnightRedPrince, true)
                 StartKnightVoiceForActionSpecialAbility(Entities.U_KnightSaraya, true)
                 StartKnightVoiceForActionSpecialAbility(Entities.U_KnightPraphat, true)
             end
@@ -84,9 +85,9 @@ do
         elseif KnightType == Entities.U_KnightRedPrince then
             TooltipTextKey = "AbilityPlagueRedPrince"
         elseif KnightType == Entities.U_KnightKhana then
-            TooltipTextKey = "AbilityTorchKhana"
+            TooltipTextKey = "AbilityKhana"
         elseif KnightType == Entities.U_KnightPraphat then
-            TooltipTextKey = "AbilityTributePraphat"
+            TooltipTextKey = "AbilityPraphat"
         else
             for key, value in pairs (Abilities) do
                 if value == _Ability then

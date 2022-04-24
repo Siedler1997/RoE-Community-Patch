@@ -37,7 +37,7 @@
             <With>CattlePasture</With>
         </Familiar>
         <SoundImpactType>Leather</SoundImpactType>
-        <SoundProjectileType>Mace</SoundProjectileType>
+        <SoundProjectileType>Sword</SoundProjectileType>
     </Logic>
     <Behaviors>
 
@@ -130,14 +130,30 @@
 			</Logic>
 		</Behavior>
 
+		<!--
 		<Behavior>
 			<Logic classname="EGL::CKnightMiscAbilityProps">
 				<Class>EGL::CKnightMiscAbility</Class>
 				<Effect>E_HealingFX</Effect>
 				<SearchRadius>1000</SearchRadius>
 				<Ability>AbilityConvert</Ability>
-				<RechargeTimeSeconds>450</RechargeTimeSeconds>
+				<RechargeTimeSeconds>500</RechargeTimeSeconds>
 				<TaskList>TL_KNIGHT_ABILITY_CONVERT</TaskList>
+			</Logic>
+		</Behavior>
+        -->
+		<Behavior>
+			<Logic classname="EGL::CKnightMiscAbilityProps">
+				<Class>EGL::CKnightMiscAbility</Class>
+				<Ability>AbilityTribute</Ability>
+				<RechargeTimeSeconds>150</RechargeTimeSeconds>
+				<SearchRadius>2000</SearchRadius>
+				<TaskList>TL_KNIGHT_ABILITY_TRIBUTE</TaskList>
+				<Effect>E_Knight_Plunder_Aura</Effect>
+				<SarayaTributeGoodAmountMin>5</SarayaTributeGoodAmountMin>
+				<SarayaTributeGoodAmountMax>18</SarayaTributeGoodAmountMax>
+				<SarayaTributeGoldAmountMin>50</SarayaTributeGoldAmountMin>
+				<SarayaTributeGoldAmountMax>200</SarayaTributeGoldAmountMax>
 			</Logic>
 		</Behavior>
 

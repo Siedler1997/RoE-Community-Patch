@@ -596,3 +596,18 @@ do
     end
 end
 
+do
+    local OldGameCallback_Feedback_AddSettlerMissingNeedGood = GameCallback_Feedback_AddSettlerMissingNeedGood
+    
+    function GameCallback_Feedback_AddSettlerMissingNeedGood(_PlayerID, _EntityID, _GoodCategory)
+        if _PlayerID ~= GUI.GetPlayerID() then
+            return
+        end
+        
+        if _GoodCategory == GoodCategories.GC_Clothes then
+            StartKnightVoiceForActionSpecialAbility(Entities.U_KnightPraphat)
+        end
+        
+        OldGameCallback_Feedback_AddSettlerMissingNeedGood(_PlayerID, _EntityID, _GoodCategory)
+    end
+end

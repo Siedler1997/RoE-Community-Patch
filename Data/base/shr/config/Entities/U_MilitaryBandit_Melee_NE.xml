@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
 
-    <Display classname="ED::CEntityProps">
-        <Class>ED::CDisplaySettler</Class>
-        <Model>Units\Military\U_MilitaryBandit_Melee_SE</Model>
+    <Display classname="ED::CDisplaySettlerWithSlaveProps">
+        <Class>ED::CDisplaySettlerWithSlave</Class>
         <DrawPlayerColor>True</DrawPlayerColor>
-      <LodDistance>3000</LodDistance>
-
+        <Model>Units\Military\U_MilitaryBandit_Melee_NE</Model>
+        <Model2>Units\SpouseFat\U_SpouseF01</Model2>
+        <SlaveAlwaysVisible>false</SlaveAlwaysVisible>
     </Display>
 
     <Logic classname="EGL::CSettlerProps">
@@ -43,8 +43,9 @@
             <With>SheepPasture</With>
             <With>CattlePasture</With>
         </Familiar>
-        <SoundImpactType>Metal</SoundImpactType>
-        <SoundProjectileType>Sword</SoundProjectileType>
+
+        <SoundImpactType>Leather</SoundImpactType>
+        <SoundProjectileType>Axe</SoundProjectileType>
 
 <!--        <OnScreenIcon>MinimapBandit</OnScreenIcon>
 -->
@@ -57,11 +58,21 @@
             <Logic classname="EGL::CAnimationBehaviorExProps">
                 <Class>EGL::CBehaviorAnimationEx</Class>
 
-                <DefaultAnimation>Military\U_MilitarySword_Stand</DefaultAnimation>
-                <AnimSet>SET_MILITARYMELEESOLDIER</AnimSet>
+                <DefaultAnimation>Military\U_MilitaryBandit_Melee_NE_Stand</DefaultAnimation>
+                <AnimSet>SET_MILITARYBANDIT_MELEE_NE</AnimSet>
             </Logic>
-            <Display classname="ED::CBehaviorProps">
-                <Class>ED::CDisplayBehaviorAnimation</Class>
+            <Display classname="ED::CAnimationBehaviorSlaveProps">
+                <Class>ED::CAnimationBehaviorSlave</Class>
+                <SlaveAnimation>
+                    <Mapping>
+                        <Master>Military\U_MilitaryBandit_Melee_NE_HeistFRun</Master>
+                        <Slave>SpouseFat\U_SpouseF_HeistRun</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>Military\U_MilitaryBandit_Melee_NE_HeistSRun</Master>
+                        <Slave>SpouseSexy\U_SpouseS_HeistRun</Slave>
+                    </Mapping>
+                </SlaveAnimation>
             </Display>
         </Behavior>
 
@@ -74,10 +85,10 @@
                 <Speed>480</Speed>
                 <RotationSpeed>500</RotationSpeed>
                 <MoveTaskList>TL_MILITARY_WALK</MoveTaskList>
-                <MoveIdleAnim>Military\U_MilitarySword_Stand</MoveIdleAnim>
+                <MoveIdleAnim>Military\U_MilitaryBandit_Melee_NE_Stand</MoveIdleAnim>
             </Logic>
             <Display classname="ED::CBehaviorProps">
-                <Class>ED::CDisplayBehaviorMovement</Class>
+                <Class>ED::CMovementBehaviorSlaveStatic</Class>
             </Display>
         </Behavior>
 
@@ -107,6 +118,12 @@
 
                 <AmmunitionType>G_TorchAmmunition</AmmunitionType>
                 <AmmunitionLimit>1</AmmunitionLimit>
+
+                <KidnapFatSpouseIdleTL>TL_KIDNAP_FAT_IDLE</KidnapFatSpouseIdleTL>
+                <KidnapFatSpouseMoveTL>TL_KIDNAP_FAT_MOVE</KidnapFatSpouseMoveTL>
+
+                <KidnapSexySpouseIdleTL>TL_KIDNAP_SEXY_IDLE</KidnapSexySpouseIdleTL>
+                <KidnapSexySpouseMoveTL>TL_KIDNAP_SEXY_MOVE</KidnapSexySpouseMoveTL>
 
                 <TargetCategoryList>
 
@@ -165,7 +182,8 @@
 
                      <!-- Torching buildings -->
                     <TargetCategory>
-						<DisableAutoAttack>true</DisableAutoAttack>
+                        <DisableAutoAttack>true</DisableAutoAttack>
+
                      <!-- don't remove  the empty tags, otherwise the data isn't shown correctly in the XML balancer! -->
                         <EntityCategoryList>
                             <EntityCategory/>
@@ -175,6 +193,7 @@
                             <EntityCategory>PalisadeSegment</EntityCategory>
                             <EntityCategory>SpecialBuilding</EntityCategory>
                         </EntityCategoryList>
+
                         <AttackModeList>
                             <AttackMode>
                                 <BattleTL>TL_BATTLE_MELEE</BattleTL>
@@ -198,7 +217,7 @@
                         </AttackModeList>
                     </TargetCategory>
 
-                    <!-- Capturing / attacking  merchants and siege engines -->
+                    <!-- Capturing / attacking merchants and siege engines -->
                     <TargetCategory>
                         <DisableAutoAttack>true</DisableAutoAttack>
                      <!-- don't remove  the empty tags, otherwise the data isn't shown correctly in the XML balancer! -->

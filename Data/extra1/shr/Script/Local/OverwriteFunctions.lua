@@ -30,6 +30,8 @@ function InitLocalOverwrite()
         g_MilitaryFeedback.Knights[Entities.U_KnightSaraya]              = "H_Knight_Saraya"
         
         g_HeroAbilityFeedback.Knights[Entities.U_KnightSaraya] 		     = "Tribute"
+        g_HeroAbilityFeedback.Knights[Entities.U_KnightPraphat] 		 = "Praphat"
+        g_HeroAbilityFeedback.Knights[Entities.U_KnightKhana] 		     = "Khana"
         
         g_MilitaryFeedback.Knights[Entities.U_KnightKhana]              = "H_Knight_Khana"
         g_MilitaryFeedback.Knights[Entities.U_KnightPraphat]              = "H_Knight_Praphat"
@@ -308,6 +310,31 @@ function EndStatistic_SettlerSpawned( _EntityID )
      
 end 
 
+function EndStatistic_ResourceAddedToPlayerStock(_PlayerID, _GoodType, _Amount)
+    
+    if g_EndStatistic ~= nil then
+
+        local GoodCategory = Logic.GetGoodCategoryForGoodType(_GoodType)
+        
+        if  GoodCategory ~= GoodCategories.GC_Water 
+        and _GoodType ~=  Goods.G_FoodLordTrading
+        and _GoodType ~=  Goods.G_MedicinLadyHealing
+        and _GoodType ~=  Goods.G_EntertainmentBard
+        and _GoodType ~=  Goods.G_ClothesPraphat then
+            
+            if GoodCategory == GoodCategories.GC_Resource then
+                g_EndStatistic[_PlayerID].GoodsGathered = g_EndStatistic[_PlayerID].GoodsGathered + _Amount
+            elseif GoodCategory == GoodCategories.GC_Gold then
+                g_EndStatistic[_PlayerID].GoldEarned = g_EndStatistic[_PlayerID].GoldEarned  + _Amount
+            else
+                g_EndStatistic[_PlayerID].GoodsProduced = g_EndStatistic[_PlayerID].GoodsProduced + _Amount
+            end
+            
+        end
+        
+    end
+
+end
 
 function InitMultiselection()
     g_MultiSelection = {}
@@ -385,10 +412,14 @@ function GUI_Knight.GetKnightAbilityAndIcons(_KnightID)
     elseif KnightType == Entities.U_KnightWisdom or KnightType == Entities.U_KnightSabatta then
         Ability = Abilities.AbilityConvert
         AbilityIconPosition = {11,6}
-    elseif KnightType == Entities.U_KnightSaraya or KnightType == Entities.U_KnightPraphat then
+    elseif KnightType == Entities.U_KnightSaraya or KnightType == Entities.U_KnightRedPrince then
         Ability = Abilities.AbilityTribute
         AbilityIconPosition = {1,4,1}
+    elseif KnightType == Entities.U_KnightPraphat then
+        Ability = Abilities.AbilityFood
+        AbilityIconPosition = {1,2}
     elseif KnightType == Entities.U_KnightRedPrince then
+        --Currently unreachable
         Ability = Abilities.AbilityConvert
         AbilityIconPosition = {15,16}
     end

@@ -2,16 +2,17 @@
   "ExpandedNodes": [
     "",
     "\\Data",
+    "\\Data\\base",
+    "\\Data\\base\\shr",
+    "\\Data\\base\\shr\\config",
+    "\\Data\\base\\shr\\config\\TaskLists",
     "\\Data\\extra1",
     "\\Data\\extra1\\shr",
-    "\\Data\\extra1\\shr\\config",
-    "\\Data\\extra1\\shr\\config\\Entities",
     "\\Data\\extra1\\shr\\Script",
+    "\\Data\\extra1\\shr\\Script\\Global",
     "\\Data\\extra1\\shr\\Script\\Local",
-    "\\Data\\extra1\\shr\\Script\\Local\\Interface",
-    "\\Data\\extra1\\shr\\text\\bb",
-    "\\Data\\extra1\\shr\\text\\bb\\InGame"
+    "\\Data\\extra1\\shr\\Script\\Local\\Interface"
   ],
-  "SelectedNode": "\\Data\\base\\shr\\Script\\Local\\Interface\\Knight.lua",
+  "SelectedNode": "\\Data\\extra1\\shr\\Script\\Local\\Interface\\FeedbackEx1.lua",
   "PreviewInSolutionExplorer": false
 }

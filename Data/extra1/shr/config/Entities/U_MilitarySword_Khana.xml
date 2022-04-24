@@ -2,10 +2,8 @@
 
     <Display classname="ED::CEntityProps">
         <Class>ED::CDisplaySettler</Class>
-        <Model>Units\Military\U_MilitaryBandit_Melee_SE</Model>
+        <Model>Units\Military\U_MilitarySword_Khana</Model>
         <DrawPlayerColor>True</DrawPlayerColor>
-      <LodDistance>3000</LodDistance>
-
     </Display>
 
     <Logic classname="EGL::CSettlerProps">
@@ -24,13 +22,16 @@
         <CanDrown>false</CanDrown>
         <IsSelectable>true</IsSelectable>
 
-        <!-- one bandit battalion has only 3 soldiers, so it has to be around 1/3 the normal battalions cost -->
 		<Cost>
 			<GoodAmount>
 				<!-- if the gold costs are changed, the refill costs have to be adjusted as well in "B_Barracks.xml"
                Refilling should cost the same per unit than buying batallions!  -->
 				<GoodType>G_Gold</GoodType>
 				<Amount>15</Amount>
+			</GoodAmount>
+			<GoodAmount>
+				<GoodType>G_Sword</GoodType>
+				<Amount>1</Amount>
 			</GoodAmount>
 		</Cost>
 
@@ -43,7 +44,8 @@
             <With>SheepPasture</With>
             <With>CattlePasture</With>
         </Familiar>
-        <SoundImpactType>Metal</SoundImpactType>
+
+        <SoundImpactType>Leather</SoundImpactType>
         <SoundProjectileType>Sword</SoundProjectileType>
 
 <!--        <OnScreenIcon>MinimapBandit</OnScreenIcon>
@@ -57,8 +59,8 @@
             <Logic classname="EGL::CAnimationBehaviorExProps">
                 <Class>EGL::CBehaviorAnimationEx</Class>
 
-                <DefaultAnimation>Military\U_MilitarySword_Stand</DefaultAnimation>
-                <AnimSet>SET_MILITARYMELEESOLDIER</AnimSet>
+                <DefaultAnimation>Military\U_MilitaryBandit_Melee_NA_Stand</DefaultAnimation>
+                <AnimSet>SET_MILITARYBANDIT_MELEE_NA</AnimSet>
             </Logic>
             <Display classname="ED::CBehaviorProps">
                 <Class>ED::CDisplayBehaviorAnimation</Class>
@@ -74,7 +76,7 @@
                 <Speed>480</Speed>
                 <RotationSpeed>500</RotationSpeed>
                 <MoveTaskList>TL_MILITARY_WALK</MoveTaskList>
-                <MoveIdleAnim>Military\U_MilitarySword_Stand</MoveIdleAnim>
+                <MoveIdleAnim>Military\U_MilitaryBandit_Melee_NA_Stand</MoveIdleAnim>
             </Logic>
             <Display classname="ED::CBehaviorProps">
                 <Class>ED::CDisplayBehaviorMovement</Class>
@@ -140,7 +142,7 @@
                                 </Damage>
                             </AttackMode>
 
-<!-- ranged combat  (those empty tags are needed to show all unit xmls correctly in the XML balancer  -->
+<!-- ranged combat  (those empty tags are needed to show all unit xmls correctly in the XML balancer -->
                             <AttackMode>
                                 <BattleTL/>
                                 <ApplyDamageModifiers>true</ApplyDamageModifiers>
@@ -165,7 +167,8 @@
 
                      <!-- Torching buildings -->
                     <TargetCategory>
-						<DisableAutoAttack>true</DisableAutoAttack>
+                        <DisableAutoAttack>true</DisableAutoAttack>
+
                      <!-- don't remove  the empty tags, otherwise the data isn't shown correctly in the XML balancer! -->
                         <EntityCategoryList>
                             <EntityCategory/>
@@ -175,7 +178,8 @@
                             <EntityCategory>PalisadeSegment</EntityCategory>
                             <EntityCategory>SpecialBuilding</EntityCategory>
                         </EntityCategoryList>
-                        <AttackModeList>
+
+                       <AttackModeList>
                             <AttackMode>
                                 <BattleTL>TL_BATTLE_MELEE</BattleTL>
                                 <!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
@@ -193,6 +197,7 @@
                                     <BaseValue>5</BaseValue>
                                 </Damage>
                                 <BuildingFireSize>10</BuildingFireSize>
+
                                 <ConsumeAmmunition>true</ConsumeAmmunition>
                             </AttackMode>
                         </AttackModeList>
@@ -313,7 +318,7 @@
                 <Attachments>
                     <Attachment>
                         <Type>ATTACHMENT_LEADER_SOLDIER</Type>
-                        <Limit>3</Limit>
+                        <Limit>6</Limit>
                     </Attachment>
                 </Attachments>
             </Logic>
@@ -322,7 +327,7 @@
     </Behaviors>
 
     <MapEditor>
-        <TreePosition>Units\Military\Bandits</TreePosition>
+        <TreePosition>Units\Military</TreePosition>
         <ShowInTree>false</ShowInTree>
         <Clime>Generic</Clime>
         <Scalable>false</Scalable>

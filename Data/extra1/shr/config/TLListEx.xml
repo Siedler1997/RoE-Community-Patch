@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <TaskList>TL_GEOLOGIST_FRAMEWORK</TaskList>
+    <TaskList>TL_GEOLOGIST_LEAVE_STORE_HOUSE</TaskList>
+    <TaskList>TL_GEOLOGIST_WORK</TaskList>
+    <TaskList>TL_GEOLOGIST_REFILL_STONE_MINE</TaskList>
+    <TaskList>TL_GEOLOGIST_REFILL_IRON_MINE</TaskList>
+    <TaskList>TL_DIGGER_IDLE</TaskList>
+</root>

@@ -180,6 +180,10 @@
         <ProducedUnitTypeList>
             <ProducedUnitType>U_MilitarySword</ProducedUnitType>
 			<ProducedUnitType>U_MilitarySword_RedPrince</ProducedUnitType>
+			<ProducedUnitType>U_MilitaryBandit_Melee_ME</ProducedUnitType>
+			<ProducedUnitType>U_MilitaryBandit_Melee_NE</ProducedUnitType>
+			<ProducedUnitType>U_MilitaryBandit_Melee_NA</ProducedUnitType>
+			<ProducedUnitType>U_MilitaryBandit_Melee_SE</ProducedUnitType>
 		</ProducedUnitTypeList>
 
         <ProduceBattalion>true</ProduceBattalion>
@@ -337,7 +341,7 @@
 				<Cost>
 					<GoodAmount>
 						<GoodType>G_Gold</GoodType>
-						<Amount>15</Amount>
+						<Amount>30</Amount>
 					</GoodAmount>
 				</Cost>
 			</UnitType>
@@ -346,7 +350,7 @@
 				<Cost>
 					<GoodAmount>
 						<GoodType>G_Gold</GoodType>
-						<Amount>15</Amount>
+						<Amount>30</Amount>
 					</GoodAmount>
 				</Cost>
 			</UnitType>
@@ -355,7 +359,7 @@
 				<Cost>
 					<GoodAmount>
 						<GoodType>G_Gold</GoodType>
-						<Amount>15</Amount>
+						<Amount>30</Amount>
 					</GoodAmount>
 				</Cost>
 			</UnitType>
@@ -364,7 +368,7 @@
 				<Cost>
 					<GoodAmount>
 						<GoodType>G_Gold</GoodType>
-						<Amount>15</Amount>
+						<Amount>30</Amount>
 					</GoodAmount>
 				</Cost>
 			</UnitType>

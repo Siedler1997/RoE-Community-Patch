@@ -1,11 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
-
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<root>
     <Display classname="ED::CEntityProps">
         <Class>ED::CDisplaySettler</Class>
-        <Model>Units\Military\U_MilitaryBandit_Melee_SE</Model>
+        <Model>Units\Military\U_NPC_Swordsman_AS</Model>
         <DrawPlayerColor>True</DrawPlayerColor>
-      <LodDistance>3000</LodDistance>
-
     </Display>
 
     <Logic classname="EGL::CSettlerProps">
@@ -43,7 +41,8 @@
             <With>SheepPasture</With>
             <With>CattlePasture</With>
         </Familiar>
-        <SoundImpactType>Metal</SoundImpactType>
+
+        <SoundImpactType>Leather</SoundImpactType>
         <SoundProjectileType>Sword</SoundProjectileType>
 
 <!--        <OnScreenIcon>MinimapBandit</OnScreenIcon>
@@ -57,8 +56,8 @@
             <Logic classname="EGL::CAnimationBehaviorExProps">
                 <Class>EGL::CBehaviorAnimationEx</Class>
 
-                <DefaultAnimation>Military\U_MilitarySword_Stand</DefaultAnimation>
-                <AnimSet>SET_MILITARYMELEESOLDIER</AnimSet>
+                <DefaultAnimation>Military\U_MilitaryBandit_Melee_ME_Stand</DefaultAnimation>
+                <AnimSet>SET_MILITARYBANDIT_MELEE_ME</AnimSet>
             </Logic>
             <Display classname="ED::CBehaviorProps">
                 <Class>ED::CDisplayBehaviorAnimation</Class>
@@ -74,7 +73,7 @@
                 <Speed>480</Speed>
                 <RotationSpeed>500</RotationSpeed>
                 <MoveTaskList>TL_MILITARY_WALK</MoveTaskList>
-                <MoveIdleAnim>Military\U_MilitarySword_Stand</MoveIdleAnim>
+                <MoveIdleAnim>Military\U_MilitaryBandit_Melee_ME_Stand</MoveIdleAnim>
             </Logic>
             <Display classname="ED::CBehaviorProps">
                 <Class>ED::CDisplayBehaviorMovement</Class>
@@ -140,7 +139,7 @@
                                 </Damage>
                             </AttackMode>
 
-<!-- ranged combat  (those empty tags are needed to show all unit xmls correctly in the XML balancer  -->
+<!-- ranged combat  (those empty tags are needed to show all unit xmls correctly in the XML balancer -->
                             <AttackMode>
                                 <BattleTL/>
                                 <ApplyDamageModifiers>true</ApplyDamageModifiers>
@@ -165,7 +164,8 @@
 
                      <!-- Torching buildings -->
                     <TargetCategory>
-						<DisableAutoAttack>true</DisableAutoAttack>
+                        <DisableAutoAttack>true</DisableAutoAttack>
+
                      <!-- don't remove  the empty tags, otherwise the data isn't shown correctly in the XML balancer! -->
                         <EntityCategoryList>
                             <EntityCategory/>
@@ -175,7 +175,8 @@
                             <EntityCategory>PalisadeSegment</EntityCategory>
                             <EntityCategory>SpecialBuilding</EntityCategory>
                         </EntityCategoryList>
-                        <AttackModeList>
+
+                       <AttackModeList>
                             <AttackMode>
                                 <BattleTL>TL_BATTLE_MELEE</BattleTL>
                                 <!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
@@ -193,6 +194,7 @@
                                     <BaseValue>5</BaseValue>
                                 </Damage>
                                 <BuildingFireSize>10</BuildingFireSize>
+
                                 <ConsumeAmmunition>true</ConsumeAmmunition>
                             </AttackMode>
                         </AttackModeList>
@@ -322,7 +324,7 @@
     </Behaviors>
 
     <MapEditor>
-        <TreePosition>Units\Military\Bandits</TreePosition>
+        <TreePosition>Units\Military</TreePosition>
         <ShowInTree>false</ShowInTree>
         <Clime>Generic</Clime>
         <Scalable>false</Scalable>
