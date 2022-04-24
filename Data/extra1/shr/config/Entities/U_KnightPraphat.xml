@@ -145,7 +145,7 @@
 				<Animation>U_Horse_Wisdom_Turnover</Animation>
 				<AnimationGoodAmount>20</AnimationGoodAmount>
 				<AnimationGood>G_ClothesPraphat</AnimationGood>
-				<Effect>E_Knight_Trader_Aura</Effect>
+				<Effect>E_Knight_Song_Aura</Effect>
 			</Logic>
 		</Behavior>
 
