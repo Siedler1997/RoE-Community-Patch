@@ -164,8 +164,21 @@ function GameCallback_OnGameStart()
     
     --init the victory condition
     InitGlobalVictoryCondition()
+
+    -- Alternate player color (yellow)
+	StartSimpleJob("PlayerChangePlayerColor")
 end
 
+function PlayerChangePlayerColor()
+	Logic.ExecuteInLuaLocalState("SetAltPlayerColor()")
+    return true
+end
+
+function PlayerChangePlayerColor2(_newColor)
+    Logic.PlayerSetPlayerColor(1, _newColor, -1, -1)
+	Logic.ExecuteInLuaLocalState("Display.UpdatePlayerColors()")
+	Logic.ExecuteInLuaLocalState("GUI.RebuildMinimapTerrain()")
+end
 
 function CreateKnightForPlayer(_PlayerID, _KnightType)
     GameCallback_CreateKnightByTypeOrIndex(_KnightType, _PlayerID)
@@ -311,7 +324,34 @@ function InitPlayerColorIndex()
     g_ColorIndex["CityColor3"] = 3
     g_ColorIndex["CityColor4"] = 4
 
-     --[[
+    g_ColorIndex["CityColor5"] = 5      --Yellow
+    g_ColorIndex["CityColor6"] = 6      --Orange
+    g_ColorIndex["CityColor7"] = 7      --Purple
+    g_ColorIndex["CityColor8"] = 8      --Pink
+    g_ColorIndex["RedPrinceColor"] = 9
+    
+    g_ColorIndex["VillageColor1"] = 10
+    g_ColorIndex["VillageColor2"] = 11
+    g_ColorIndex["VillageColor3"] = 12
+    g_ColorIndex["VillageColor4"] = 13  --Light Blue
+    
+    g_ColorIndex["CloisterColor1"] = 14
+    g_ColorIndex["CloisterColor2"] = 15
+    g_ColorIndex["CloisterColor3"] = 16
+    g_ColorIndex["CloisterColor4"] = 17 --White
+    g_ColorIndex["CloisterColor5"] = 18 --Light Green
+    
+    g_ColorIndex["BanditsColor1"] = 19
+    g_ColorIndex["BanditsColor2"] = 20
+    g_ColorIndex["BanditsColor3"] = 21
+    g_ColorIndex["BanditsColor4"] = 22  --Black
+    g_ColorIndex["BanditsColor5"] = 23  --Dark Grey
+    
+    g_ColorIndex["TravelingSalesmanColor"] = 24
+    
+    
+    
+    --[[
     g_ColorIndex["VillageColor1"] = 5
     g_ColorIndex["VillageColor2"] = 6
     g_ColorIndex["VillageColor3"] = 7
@@ -339,31 +379,6 @@ function InitPlayerColorIndex()
     g_ColorIndex["BanditsColor4"] = 21  --Black
     g_ColorIndex["BanditsColor5"] = 20  --Dark Grey
     --]]
-
-    g_ColorIndex["CityColor5"] = 5      --Yellow
-    g_ColorIndex["CityColor6"] = 6      --Orange
-    g_ColorIndex["CityColor7"] = 7      --Purple
-    g_ColorIndex["CityColor8"] = 8      --Pink
-    g_ColorIndex["RedPrinceColor"] = 9
-    
-    g_ColorIndex["VillageColor1"] = 10
-    g_ColorIndex["VillageColor2"] = 11
-    g_ColorIndex["VillageColor3"] = 12
-    g_ColorIndex["VillageColor4"] = 13  --Light Blue
-    
-    g_ColorIndex["CloisterColor1"] = 14
-    g_ColorIndex["CloisterColor2"] = 15
-    g_ColorIndex["CloisterColor3"] = 16
-    g_ColorIndex["CloisterColor4"] = 17 --White
-    g_ColorIndex["CloisterColor5"] = 18 --Light Green
-    
-    g_ColorIndex["BanditsColor1"] = 19
-    g_ColorIndex["BanditsColor2"] = 20
-    g_ColorIndex["BanditsColor3"] = 21
-    g_ColorIndex["BanditsColor4"] = 22  --Black
-    g_ColorIndex["BanditsColor5"] = 23  --Dark Grey
-    
-    g_ColorIndex["TravelingSalesmanColor"] = 24
 end
 
 

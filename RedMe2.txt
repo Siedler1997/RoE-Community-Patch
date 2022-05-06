@@ -1,4 +1,8 @@
 ToDos:
+- Profil
+	- Speichern der Profileinstellungen aktualisiert nicht immer richtig
+		- ggf. "Annehmen-Button" implementieren
+	- Erstellen/Zurück-Button ohne Hover-Effekt
 - Generischer Außenposten als "Wachturm"?
 	- Mit Soldatenbemannung und Katapult
 - Normale Außenposten: Turm-Katapult auf Spitze bei höchster Ausbaustufe?
@@ -18,7 +22,6 @@ ToDos:
 		- Beispiel: Der kalte Strom (Dorf)
 		- Ist ein Vanilla-Bug!
 	- KIs bekommen im MP die Spielerfarben ab Gelb (ValidPlayerColors property der Map vllt.?)
-	- Color chooser auch im SP (ValidPlayerColors property der Map nutzen)
 - Wikinger: Kontrollierter Ehefrauen-Raub
 - RPG-Sicht zum rumlaufen
 - Nutzbare (Tier-)Seuche, inkl. Musik
@@ -79,10 +82,6 @@ ToDos:
 - Ungenutzte Gebäude
 	- Juwelier
 	- Supermarkt?
-- ColorChooser für Singleplayer
-	- Nur laut Map valide Farben nutzbar
-- "Rhian over the sea chapel"-quest und falsche Musik nach laden eines Savegame fixen?
-	- muss nochmal verifiziert werden
 - Fremder Content
 	- Speerkämpfer (Defensiv und offensiv schwächer, aber leicht erhöhte Reichweite und billiger)
 	- Kanonen (twA)

@@ -670,3 +670,8 @@ function SetupPlayer(_PlayerID, _Head, _Name, _ForceName )
         
     end
 end
+
+function SetAltPlayerColor()
+    local newColor = Options.GetIntValue("Game", "AltPlayerColor", 0)
+    GUI.SendScriptCommand("PlayerChangePlayerColor2("..newColor..")")
+end
