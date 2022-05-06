@@ -1,18 +1,16 @@
 ToDos:
 - Generischer Außenposten als "Wachturm"?
-- Normale Außenposten: Turm-Tatapult auf Spitze bei höchster Ausbaustufe?
+	- Mit Soldatenbemannung und Katapult
+- Normale Außenposten: Turm-Katapult auf Spitze bei höchster Ausbaustufe?
 - Default custom maps
 	- MP-Maps als Freibau-SP-Maps neu hinzufügen
 		- Ggf. nicht alle Maps, nur die "schönsten"
 		- Missionsziel ändern
 		- Konkurrenten entfernen
 		- Diplomatie setzen
-	- Kampagnen-Maps im freien Spiel
-		- mit leichten Ritter-Einschränkungen, wegen Dopplungen
-		- End-Cutscenes checken
 	- Hauptspiel-Kampagne im AddOn
 - Musik
-	- Playlists fixen (soweit nötig)
+	- Playlists fixen (wenn nötig)
 	- Soundtrack aus DEdK (ggf. per externem Tool...)
 - Spielerfarben
 	- Minimap-Territorium-Farben weichen nach Neustart z.T. ab 
@@ -21,6 +19,8 @@ ToDos:
 		- Ist ein Vanilla-Bug!
 	- KIs bekommen im MP die Spielerfarben ab Gelb (ValidPlayerColors property der Map vllt.?)
 	- Color chooser auch im SP (ValidPlayerColors property der Map nutzen)
+- Wikinger: Kontrollierter Ehefrauen-Raub
+- RPG-Sicht zum rumlaufen
 - Nutzbare (Tier-)Seuche, inkl. Musik
 	- Ruhige, aber bedrohliche Playlist
 	- Erst ab x% Betroffene, da sonst zu oft getriggert
@@ -57,13 +57,10 @@ ToDos:
 	- Aktive KI-Ritter mit Fähigkeiten
 	- Nutzlose Rand-Territorien weg
 - Entlassen-Button
-- B_Outpost_1_2
-	- Burg-Ersatz für spielbare Dörfer?
 - Söldner-Trupps
 	- Konvertierbar
 	- Korrekte Fackelanzeige (auch im Base game)
 - "Neue" Ritter 
-	- Alle Ritter rebalancen, sobald die neuen Fähigkeiten final sind?
 	- RP: Seuchen-Fähigkeit umsetzen, falls GUI.SendScriptCommand irgendwann wieder laufen sollte
 	- Khana und Praphat
 		- Sprüche als Strings weiter anpassen

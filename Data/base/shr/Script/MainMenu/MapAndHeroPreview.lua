@@ -101,9 +101,8 @@ end
 ----------------------------------------------------------------------------------------------------
 function g_MapAndHeroPreview.SelectMap(_Map, _MapType)
 
-	XGUIEng.SetText(g_MapAndHeroPreview.Widget.MapName, "{center}" .. Tool_GetLocalizedMapName(_Map, _MapType))
-
     if _Map ~= nil and _Map:len() > 0 then
+	    XGUIEng.SetText(g_MapAndHeroPreview.Widget.MapName, "{center}" .. Tool_GetLocalizedMapName(_Map, _MapType))
 
         local TextureName
 
@@ -134,10 +133,19 @@ function g_MapAndHeroPreview.SelectMap(_Map, _MapType)
 
         end
 
+        if _MapType == 2 then
+            XGUIEng.ShowWidget(g_MapAndHeroPreview.Widget.PlayerPosition,1)
+        else
+            XGUIEng.ShowWidget(g_MapAndHeroPreview.Widget.PlayerPosition,0)
+        end
+
     else
-
-        XGUIEng.ShowWidget(g_MapAndHeroPreview.Widget.MapPreview,0)
-
+        XGUIEng.ShowWidget(g_MapAndHeroPreview.Widget.PlayerPosition,0)
+        XGUIEng.SetMaterialTexture(g_MapAndHeroPreview.Widget.MapPreview,1,"BlackScreen.png")
+        XGUIEng.ShowWidget(g_MapAndHeroPreview.Widget.MapPreview,1)
+        
+	    XGUIEng.SetText(g_MapAndHeroPreview.Widget.MapName, "{center}-")
+  		XGUIEng.SetText(g_MapAndHeroPreview.Widget.MapDescription, XGUIEng.GetStringTableText("UI_Texts/MainMenu_NoMapSelected"))
     end
 
 end

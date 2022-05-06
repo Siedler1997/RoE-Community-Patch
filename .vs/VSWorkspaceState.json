@@ -2,17 +2,18 @@
   "ExpandedNodes": [
     "",
     "\\Data",
+    "\\DataOP\\extra1",
+    "\\DataOP\\extra1\\shr",
+    "\\DataOP\\extra1\\shr\\Maps",
+    "\\DataOP\\extra1\\shr\\Maps\\Singleplayer",
     "\\Data\\base",
     "\\Data\\base\\shr",
-    "\\Data\\base\\shr\\config",
-    "\\Data\\base\\shr\\config\\TaskLists",
-    "\\Data\\extra1",
-    "\\Data\\extra1\\shr",
-    "\\Data\\extra1\\shr\\Script",
-    "\\Data\\extra1\\shr\\Script\\Global",
-    "\\Data\\extra1\\shr\\Script\\Local",
-    "\\Data\\extra1\\shr\\Script\\Local\\Interface"
+    "\\Data\\base\\shr\\graphics",
+    "\\Data\\base\\shr\\graphics\\Textures",
+    "\\Data\\base\\shr\\menu",
+    "\\Data\\base\\shr\\menu\\Projects",
+    "\\Data\\base\\shr\\text"
   ],
-  "SelectedNode": "\\Data\\extra1\\shr\\Script\\Local\\Interface\\FeedbackEx1.lua",
+  "SelectedNode": "\\Data\\base\\shr\\menu\\Projects\\MenuSingleplayer.xml",
   "PreviewInSolutionExplorer": false
 }
