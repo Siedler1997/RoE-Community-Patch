@@ -17,8 +17,12 @@ function g_GameOptions:OnShow()
 
     if Game ~= nil then
         XGUIEng.ShowWidget("/InGame/GameOptionsMain/Backdrop", 1)
+        XGUIEng.ShowWidget("/InGame/GameOptionsMain/RightContainer/PlayerColor", 0)
+        XGUIEng.ShowWidget("/InGame/GameOptionsMain/Tooltips/MainMenuSelectColor", 0)
     else
         XGUIEng.ShowWidget("/InGame/GameOptionsMain/Backdrop", 0)
+        XGUIEng.ShowWidget("/InGame/GameOptionsMain/RightContainer/PlayerColor", 1)
+        XGUIEng.ShowWidget("/InGame/GameOptionsMain/Tooltips/MainMenuSelectColor", 1)
     end
     
     g_MainMenuOptions:ShowHelper()

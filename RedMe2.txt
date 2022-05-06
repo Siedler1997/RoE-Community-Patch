@@ -1,8 +1,8 @@
 ToDos:
 - Profil
+	- Erstellen/Zurück-Button ohne Hover-Effekt
 	- Speichern der Profileinstellungen aktualisiert nicht immer richtig
 		- ggf. "Annehmen-Button" implementieren
-	- Erstellen/Zurück-Button ohne Hover-Effekt
 - Generischer Außenposten als "Wachturm"?
 	- Mit Soldatenbemannung und Katapult
 - Normale Außenposten: Turm-Katapult auf Spitze bei höchster Ausbaustufe?
