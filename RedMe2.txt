@@ -1,8 +1,12 @@
 ToDos:
-- Profil
-	- Erstellen/Zurück-Button ohne Hover-Effekt
-	- Speichern der Profileinstellungen aktualisiert nicht immer richtig
-		- ggf. "Annehmen-Button" implementieren
+- Profil: Erstellen/Zurück-Button ohne Hover-Effekt
+- Spielerfarben
+	- Wappen bei alternativer Spielerfarbe einfärben
+	- Minimap-Territorium-Farben weichen nach Neustart z.T. ab 
+		- z.B. Dorf-Dunkelgrün -> Stadt-Grün
+		- Beispiel: Der kalte Strom (Dorf)
+		- Ist ein Vanilla-Bug!
+	- KIs bekommen im MP die Spielerfarben ab Gelb (ValidPlayerColors property der Map vllt.?)
 - Generischer Außenposten als "Wachturm"?
 	- Mit Soldatenbemannung und Katapult
 - Normale Außenposten: Turm-Katapult auf Spitze bei höchster Ausbaustufe?
@@ -16,12 +20,6 @@ ToDos:
 - Musik
 	- Playlists fixen (wenn nötig)
 	- Soundtrack aus DEdK (ggf. per externem Tool...)
-- Spielerfarben
-	- Minimap-Territorium-Farben weichen nach Neustart z.T. ab 
-		- z.B. Dorf-Dunkelgrün -> Stadt-Grün
-		- Beispiel: Der kalte Strom (Dorf)
-		- Ist ein Vanilla-Bug!
-	- KIs bekommen im MP die Spielerfarben ab Gelb (ValidPlayerColors property der Map vllt.?)
 - Wikinger: Kontrollierter Ehefrauen-Raub
 - RPG-Sicht zum rumlaufen
 - Nutzbare (Tier-)Seuche, inkl. Musik
@@ -39,7 +37,7 @@ ToDos:
 	- Ko-fi für GameTTS (als Schankedön)
 - Nachrichten-Stau
 - MP-Koop-Fixes
-- AddOn-Loadscreens: Richtige Spielerfarben
+- AddOn-Loadscreens: Richtige Spielerfarben (per Bildbearbeitung)
 - Baubares Trebuchet
 	- Eigenes Karren-Modell
 	- Eigene Icon-Texturen
@@ -50,7 +48,9 @@ ToDos:
 	- soll mal funktionieren
 	- Abwandlung: Schneesturm
 	- Eigene Playlist
-- Zusätzliche Wappen auf Inganme-Flaggen (statt Platzhalter)
+- Neue Wappen 
+	- richtig zentrieren (sind z.T. leicht verschoben)
+	- auf Inganme-Flaggen (statt Platzhalter) abbilden
 - Verbesserte/Glaubwürdigere KI (in der Kampagne)
 	- Allgemein: Konsequentere Nutzung von RP-/Khana-Einheiten sowie ggf. Söldner
 	- Narfang: Sabatta aggressiv, wenn ein Außenposten erobert/zerstört wird
@@ -63,8 +63,12 @@ ToDos:
 - Söldner-Trupps
 	- Konvertierbar
 	- Korrekte Fackelanzeige (auch im Base game)
+- Max. Zoom leicht erhöhen
+	- Winkel muss nach 0.5 anders kalkuliert werden
 - "Neue" Ritter 
-	- RP: Seuchen-Fähigkeit umsetzen, falls GUI.SendScriptCommand irgendwann wieder laufen sollte
+	- RP
+		- Button-Tooltip korrigieren (ist noch Seuche)
+		- Seuchen-Fähigkeit umsetzen, falls GUI.SendScriptCommand irgendwann wieder laufen sollte
 	- Khana und Praphat
 		- Sprüche als Strings weiter anpassen
 		- Audio-Feedback (TTS)
@@ -76,8 +80,10 @@ ToDos:
 	- Neue (sinnvollere) Aufstiegsbedingungen
 		- ggf. mit Indikator, um nur für neue Maps und angepasste zu gelten
 		- wegen zu hohem Aufwand (Kompatibiliät mit alten Maps) erstmal Low Priority
-	- Maximale Anzahl Steuereintreiber erhöhen
+	- Maximale Anzahl Steuereintreiber erhöhen (ggf. nur, wenn neue Einheiten verfügbar)
 	- Soldatenlimit anheben (ggf. nur, wenn neue Einheiten verfügbar)
+	- Zwischenproduktionen einführen
+		- Low Priority, da extrem viel Arbeit...
 - Spielbare Dörfer?
 - Ungenutzte Gebäude
 	- Juwelier
@@ -89,5 +95,3 @@ ToDos:
 - Auf 4k-Auflösung kann nicht mehr per BorderScroll nach rechts gecrolled werden
 - Biom-spezifisches Retexturing für Kerngebäude
 	- Das oder neue Modelle
-- Max. Zoom leicht erhöhen
-	- Winkel muss nach 0.5 anders kalkuliert werden

@@ -66,8 +66,8 @@ g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Ranged_ME]	= "H_NPC_Mercen
 g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Ranged_NA]	= "H_NPC_Mercenary_NA"
 g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Ranged_NE]	= "H_NPC_Mercenary_NE"
 g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Ranged_SE]	= "H_NPC_Mercenary_SE"
-g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBow_RedPrince]		= "Military_RedPrince"
-g_MilitaryFeedback.Soldiers[Entities.U_MilitarySword_RedPrince]		= "Military_RedPrince"
+g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBow_RedPrince]		= "H_NPC_Mercenary_SE"
+g_MilitaryFeedback.Soldiers[Entities.U_MilitarySword_RedPrince]		= "H_NPC_Mercenary_SE"
 
 g_MilitaryFeedback.Thiefs = {}
 g_MilitaryFeedback.Thiefs[Entities.U_Thief] 			= "Thief"
