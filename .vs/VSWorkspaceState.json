@@ -4,13 +4,10 @@
     "\\Data",
     "\\Data\\base",
     "\\Data\\base\\shr",
-    "\\Data\\base\\shr\\menu",
+    "\\Data\\base\\shr\\config",
     "\\Data\\base\\shr\\Script",
-    "\\Data\\base\\shr\\Script\\Local",
-    "\\Data\\base\\shr\\Script\\Local\\Interface",
-    "\\Data\\base\\shr\\Script\\Local\\MainMapScript",
     "\\Data\\base\\shr\\Script\\MainMenu"
   ],
-  "SelectedNode": "\\Data\\base\\shr\\Script\\Local\\Interface\\CloseUpView.lua",
+  "SelectedNode": "\\Data\\base\\shr\\config\\AnimSets.xml",
   "PreviewInSolutionExplorer": false
 }

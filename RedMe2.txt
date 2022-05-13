@@ -1,5 +1,4 @@
 ToDos:
-- Profil: Erstellen/Zurück-Button ohne Hover-Effekt
 - Spielerfarben
 	- Wappen bei alternativer Spielerfarbe einfärben
 	- Minimap-Territorium-Farben weichen nach Neustart z.T. ab 

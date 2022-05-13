@@ -19,6 +19,10 @@ g_MainMenuProfile.IndexOfCurrentProfile = 0         -- 0..n
 g_MainMenuProfile.ChangingProfile = 0
 g_MainMenuProfile.TempGender = 0    				-- 0..1
 g_MainMenuProfile.TempPattern = 0					-- 0..1
+g_MainMenuProfile.BottomCleared = 0
+g_MainMenuProfile.ExitCancelVisibile = 0
+g_MainMenuProfile.CreateAcceptVisibile = 0
+
 
 ---------------------------------------------------------------------------------------------------
 -- Main buttons
@@ -93,7 +97,8 @@ function g_MainMenuProfile:OnChangeProfile()
     XGUIEng.ShowWidget(g_ProfileWidget.Right, 0)
     XGUIEng.ShowWidget(g_ProfileWidget.New, 1)
 
-    self:DisplayBottomButtons(g_ProfileWidget.Bottom .. "/AcceptChanges", g_ProfileWidget.Bottom .. "/Cancel")
+    --self:DisplayBottomButtons2(g_ProfileWidget.Bottom .. "/Cancel", g_ProfileWidget.Bottom .. "/AcceptChanges")
+    self:DisplayBottomButtons2(g_ProfileWidget.Bottom .. "/Cancel")
 
     XGUIEng.SetText("/InGame/Profile/NewProfile/ProfileNameInput", ProfileToChange, 1)
     XGUIEng.SetHandleEvents("/InGame/Profile/NewProfile/ProfileNameInput", 0)
@@ -139,7 +144,7 @@ function g_MainMenuProfile:OnNewProfile()
 
     XGUIEng.ShowWidget(g_ProfileWidget.New, 1)
 
-    self:DisplayBottomButtons(g_ProfileWidget.Bottom .. "/CreateNew", g_ProfileWidget.Bottom .. "/Cancel")
+    self:DisplayBottomButtons2(g_ProfileWidget.Bottom .. "/Cancel", g_ProfileWidget.Bottom .. "/CreateNew")
 
 	XGUIEng.PrepareTextInputWidgetForFileNameInput("/InGame/Profile/NewProfile/ProfileNameInput")
     XGUIEng.SetText("/InGame/Profile/NewProfile/ProfileNameInput", XGUIEng.GetStringTableText("UI_Texts/Player"), 1 )
@@ -274,6 +279,10 @@ function g_MainMenuProfile:BackToProfileMenu()
     self:DisplayBottomButtons(g_ProfileWidget.Bottom .. "/BackMenu", g_ProfileWidget.Bottom .. "/ChooseProfile")
 
     self:UpdateProfileList()
+
+    self.BottomCleared = 0
+    self.ExitCancelVisibile = 0
+    self.CreateAcceptVisibile = 0
 end
 ---------------------------------------------------------------------------------------------------
 function g_MainMenuProfile:DisplayBottomButtons(_Button1, _Button2)
@@ -285,13 +294,44 @@ function g_MainMenuProfile:DisplayBottomButtons(_Button1, _Button2)
     XGUIEng.ShowWidget(_Button1, 1)
 
     -- single or double BackGround
-    if _Button2 == nil then
-        XGUIEng.ShowWidget(g_ProfileWidget.Bottom .. "/BG", 1)
-    else
-        XGUIEng.ShowWidget(_Button2, 1)
+    if _Button2 ~= nil then
         XGUIEng.ShowWidget(g_ProfileWidget.Bottom .. "/BGDouble", 1)
+        XGUIEng.ShowWidget(_Button2, 1)
+    else
+        XGUIEng.ShowWidget(g_ProfileWidget.Bottom .. "/BG", 1)
+    end
+    
+end
+
+-- Eine Abwandlung der Funktion, nur für Create/Edit Profile
+function g_MainMenuProfile:DisplayBottomButtons2(_Button1, _Button2)
+    if self.BottomCleared == 0 then
+        self.BottomCleared = 1
+        XGUIEng.ShowAllSubWidgets(g_ProfileWidget.Bottom, 0)
+    end
+    
+    if self.ExitCancelVisibile == 0 then
+        self.ExitCancelVisibile = 1
+        XGUIEng.ShowWidget(_Button1, 1)
     end
 
+    if _Button2 == nil then
+        XGUIEng.ShowWidget(g_ProfileWidget.Bottom .. "/BG", 1)
+        XGUIEng.ShowWidget(g_ProfileWidget.Bottom .. "/BGDouble", 0)
+        
+        self.CreateAcceptVisibile = 0
+        XGUIEng.ShowWidget(g_ProfileWidget.Bottom .. "/CreateFirst", 0)
+        XGUIEng.ShowWidget(g_ProfileWidget.Bottom .. "/CreateNew", 0)
+        XGUIEng.ShowWidget(g_ProfileWidget.Bottom .. "/AcceptChanges", 0)
+    else
+        XGUIEng.ShowWidget(g_ProfileWidget.Bottom .. "/BGDouble", 1)
+        XGUIEng.ShowWidget(g_ProfileWidget.Bottom .. "/BG", 0)
+
+        if self.CreateAcceptVisibile == 0 then
+            self.CreateAcceptVisibile = 1
+            XGUIEng.ShowWidget(_Button2, 1)
+        end
+    end
 end
 ---------------------------------------------------------------------------------------------------
 function g_MainMenuProfile:DisplayGender( _SelectedGender)
@@ -450,31 +490,29 @@ function g_MainMenuProfile:OnPatternSliderValueChange()
 end
 ---------------------------------------------------------------------------------------------------
 function g_MainMenuProfile:UpdateProfileName()
-
     local Name = XGUIEng.GetText("/InGame/Profile/NewProfile/ProfileNameInput")
 
     if Name == "" then
         if self.IsFirstLaunch then
-            self:DisplayBottomButtons(g_ProfileWidget.Bottom .. "/Exit")
+            self:DisplayBottomButtons2(g_ProfileWidget.Bottom .. "/Exit")
         else
-            self:DisplayBottomButtons(g_ProfileWidget.Bottom .. "/Cancel")
+            self:DisplayBottomButtons2(g_ProfileWidget.Bottom .. "/Cancel")
         end
     else
         if self.IsFirstLaunch then
-            self:DisplayBottomButtons(g_ProfileWidget.Bottom .. "/CreateFirst", g_ProfileWidget.Bottom .. "/Exit")
+            self:DisplayBottomButtons2(g_ProfileWidget.Bottom .. "/Exit", g_ProfileWidget.Bottom .. "/CreateFirst")
         else
             if self.ChangingProfile == 1 then
                 if self.HasChanged then
-                    self:DisplayBottomButtons(g_ProfileWidget.Bottom .. "/AcceptChanges", g_ProfileWidget.Bottom .. "/Cancel")
+                    self:DisplayBottomButtons2(g_ProfileWidget.Bottom .. "/Cancel", g_ProfileWidget.Bottom .. "/AcceptChanges")
                 else --no changes yet
-                    self:DisplayBottomButtons(g_ProfileWidget.Bottom .. "/Cancel")
+                    self:DisplayBottomButtons2(g_ProfileWidget.Bottom .. "/Cancel")
                 end
             else
-                self:DisplayBottomButtons(g_ProfileWidget.Bottom .. "/CreateNew", g_ProfileWidget.Bottom .. "/Cancel")
+                self:DisplayBottomButtons2(g_ProfileWidget.Bottom .. "/Cancel", g_ProfileWidget.Bottom .. "/CreateNew")
             end
         end
     end
-
 end
 
 ---------------------------------------------------------------------------------------------------
