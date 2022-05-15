@@ -83,6 +83,7 @@ function g_CoatOfArm.UpdatePattern( _IsSmall, _OptionalPattern, _OptionalGender,
 
     local Widget = _OptionalWidget or XGUIEng.GetCurrentWidgetID()
     local Pattern
+    local newColor = Options.GetIntValue("Game", "AltPlayerColor", 0)
     
     if _OptionalPattern ~= nil then
         Pattern = _OptionalPattern - _OptionalGender * g_CoatOfArm.NumberOfPatterns
@@ -101,15 +102,39 @@ function g_CoatOfArm.UpdatePattern( _IsSmall, _OptionalPattern, _OptionalGender,
             
     if g_CoatOfArm.CurrentGender == 0 then
         if _IsSmall then
-            XGUIEng.SetMaterialUV(Widget, 0, unpack( g_CoatOfArm.Coords.Small.Male[g_CoatOfArm.CurrentPatternIndex+1] ) )
+            local x, y, length, height = unpack(g_CoatOfArm.Coords.Small.Male[g_CoatOfArm.CurrentPatternIndex+1])
+            if newColor > 1 then
+                y = y + 528
+                height = height + 528
+            end
+            
+            XGUIEng.SetMaterialUV(Widget, 0, x, y, length, height )
         else
-            XGUIEng.SetMaterialUV(Widget, 0, unpack( g_CoatOfArm.Coords.Big.Male[g_CoatOfArm.CurrentPatternIndex+1] ) )
+            local x, y, length, height = unpack(g_CoatOfArm.Coords.Big.Male[g_CoatOfArm.CurrentPatternIndex+1])
+            if newColor > 1 then
+                x = x + 640
+                length = length + 640
+            end
+            
+            XGUIEng.SetMaterialUV(Widget, 0, x, y, length, height )
         end
     else
         if _IsSmall then
-            XGUIEng.SetMaterialUV(Widget, 0, unpack( g_CoatOfArm.Coords.Small.Female[g_CoatOfArm.CurrentPatternIndex+1] ) )
+            local x, y, length, height = unpack(g_CoatOfArm.Coords.Small.Female[g_CoatOfArm.CurrentPatternIndex+1])
+            if newColor > 1 then
+                y = y + 528
+                height = height + 528
+            end
+            
+            XGUIEng.SetMaterialUV(Widget, 0, x, y, length, height )
         else
-            XGUIEng.SetMaterialUV(Widget, 0, unpack( g_CoatOfArm.Coords.Big.Female[g_CoatOfArm.CurrentPatternIndex+1] ) )
+            local x, y, length, height = unpack(g_CoatOfArm.Coords.Big.Female[g_CoatOfArm.CurrentPatternIndex+1])
+            if newColor > 1 then
+                x = x + 640
+                length = length + 640
+            end
+            
+            XGUIEng.SetMaterialUV(Widget, 0, x, y, length, height )
         end
     end
 

@@ -1,14 +1,26 @@
 ToDos:
+- Amesthan: Lager von Bihurat Spielerfarbe falsch
+- Audio-Feedback für Ochsen
+- Wappen in Promotion-Window verschoben
+- Nachrichten: Player resetten
+- Außenposten/Aussichtsturm/Wachturm
+	- ME-Aussichtsturm: Schwarze Seite
+	- Aussichtstürme: Alarm?
+	- Eigene Button-Texturen für Aussichtsturm und Wachturm
+		- Wachturm: QuestInformation.Tower (mit Katapult), ...?
+		- Aussichtsturm: PB_Tower1, Alarm, ...?
+	- Generischer Außenposten, inkl. Katapult und Soldatenbemannung
+	- Normale Außenposten: Turm-Katapult auf Spitze bei höchster Ausbaustufe?
 - Spielerfarben
-	- Wappen bei alternativer Spielerfarbe einfärben
 	- Minimap-Territorium-Farben weichen nach Neustart z.T. ab 
 		- z.B. Dorf-Dunkelgrün -> Stadt-Grün
 		- Beispiel: Der kalte Strom (Dorf)
 		- Ist ein Vanilla-Bug!
 	- KIs bekommen im MP die Spielerfarben ab Gelb (ValidPlayerColors property der Map vllt.?)
-- Generischer Außenposten als "Wachturm"?
-	- Mit Soldatenbemannung und Katapult
-- Normale Außenposten: Turm-Katapult auf Spitze bei höchster Ausbaustufe?
+- Neue Wappen 
+	- auf Inganme-Flaggen (statt Platzhalter) abbilden
+- Hidun-Turnier: Neue Zelte und andere Siedler
+	- Texturen für DEdK-Zelte gibt es schon
 - Default custom maps
 	- MP-Maps als Freibau-SP-Maps neu hinzufügen
 		- Ggf. nicht alle Maps, nur die "schönsten"
@@ -36,7 +48,7 @@ ToDos:
 	- Ko-fi für GameTTS (als Schankedön)
 - Nachrichten-Stau
 - MP-Koop-Fixes
-- AddOn-Loadscreens: Richtige Spielerfarben (per Bildbearbeitung)
+- AddOn-Kampagne-Loadscreens: Richtige Spielerfarben (per Bildbearbeitung)
 - Baubares Trebuchet
 	- Eigenes Karren-Modell
 	- Eigene Icon-Texturen
@@ -47,9 +59,6 @@ ToDos:
 	- soll mal funktionieren
 	- Abwandlung: Schneesturm
 	- Eigene Playlist
-- Neue Wappen 
-	- richtig zentrieren (sind z.T. leicht verschoben)
-	- auf Inganme-Flaggen (statt Platzhalter) abbilden
 - Verbesserte/Glaubwürdigere KI (in der Kampagne)
 	- Allgemein: Konsequentere Nutzung von RP-/Khana-Einheiten sowie ggf. Söldner
 	- Narfang: Sabatta aggressiv, wenn ein Außenposten erobert/zerstört wird
@@ -65,9 +74,6 @@ ToDos:
 - Max. Zoom leicht erhöhen
 	- Winkel muss nach 0.5 anders kalkuliert werden
 - "Neue" Ritter 
-	- RP
-		- Button-Tooltip korrigieren (ist noch Seuche)
-		- Seuchen-Fähigkeit umsetzen, falls GUI.SendScriptCommand irgendwann wieder laufen sollte
 	- Khana und Praphat
 		- Sprüche als Strings weiter anpassen
 		- Audio-Feedback (TTS)
@@ -75,6 +81,7 @@ ToDos:
 		- Sprüche als Strings
 		- Audio-Feedback (TTS)
 	- Bei Basegame-Rittern AddOn-Comments ergänzen (TTS)
+	- RP: Seuchen-Fähigkeit umsetzen, falls GUI.SendScriptCommand irgendwann wieder laufen sollte
 - Rebalancing
 	- Neue (sinnvollere) Aufstiegsbedingungen
 		- ggf. mit Indikator, um nur für neue Maps und angepasste zu gelten

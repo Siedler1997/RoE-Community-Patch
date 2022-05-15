@@ -5,7 +5,8 @@
 <string id="AbilityConvertCrimsonSabatt" MD5Hash="FEB671E3B0A58F128D4AFCAB4AC1D649" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Crimson Sabatts Konverison]]></string>
 <string id="AbilityFood" MD5Hash="59C35FAAE4E1FD5400CA22CDA334EF44" mod="20070816074958" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Elias Speisung]]></string>
 <string id="AbilityHeal" MD5Hash="1CB9B2CFCCC6D9EF3B1E036051ADCB34" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Alandras Heilung]]></string>
-<string id="AbilityPlagueRedPrince" MD5Hash="FD5AAAFFA3F9BE2318736AC9DF5F2B09" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Des roten Prinzen Seuche]]></string>
+<string id="AbilityPlagueRedPrince" MD5Hash="FD5AAAFFA3F9BE2318736AC9DF5F2B09" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Des roten Prinzen Tribut]]></string>
+<!--<string id="AbilityPlagueRedPrince" MD5Hash="FD5AAAFFA3F9BE2318736AC9DF5F2B09" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Des roten Prinzen Seuche]]></string>-->
 <string id="AbilityPlunder" MD5Hash="1A6BA1938E89A45910D60C65670F5B34" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Kestrals Plünderung]]></string>
 <string id="AbilityTorch" MD5Hash="336B1F23B628211417C59F1D54777875" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Marcus' Fackeln]]></string>
 <string id="Attack" MD5Hash="EA9BACC4CCE1A9A2DE489A2CBD141560" mod="20070819155220" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bewegen und Angreifen]]></string>
@@ -578,4 +579,6 @@
 	<string id="U_NPC_Castellan_NE" MD5Hash="0055D815AC3E445508C9F42176AAD579" mod="20080206075412" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Kastellan]]></string>
 	<string id="U_NPC_Castellan_NA" MD5Hash="0055D815AC3E445508C9F42176AAD579" mod="20080206075412" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Kastellan]]></string>
 	<string id="U_NPC_Castellan_SE" MD5Hash="0055D815AC3E445508C9F42176AAD579" mod="20080206075412" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Kastellan]]></string>
+	<string id="B_GuardTower" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Wachturm]]></string>
+	<string id="B_WatchTower" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Aussichtsturm]]></string>
 </root>

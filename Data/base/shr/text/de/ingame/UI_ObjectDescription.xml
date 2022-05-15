@@ -354,4 +354,6 @@
 	<string id="U_NPC_Castellan_NE" MD5Hash="0055D815AC3E445508C9F42176AAD579" mod="20080206075412" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Ein einfacher Kastellan von Narlind, der über keine besonderen Fähigkeiten verfügt.]]></string>
 	<string id="U_NPC_Castellan_NA" MD5Hash="0055D815AC3E445508C9F42176AAD579" mod="20080206075412" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Ein einfacher Kastellan von Janub, der über keine besonderen Fähigkeiten verfügt.]]></string>
 	<string id="U_NPC_Castellan_SE" MD5Hash="0055D815AC3E445508C9F42176AAD579" mod="20080206075412" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Ein einfacher Kastellan von Raudrlin, der über keine besonderen Fähigkeiten verfügt.]]></string>
+	<string id="B_GuardTower" MD5Hash="E9308A93A19D9BB3A99609E3C08705DA" mod="20070819142728" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- Nur mit Belagerungswaffen angreifbar{cr}- Mit Katapult ausrüstbar]]></string>
+	<string id="B_WatchTower" MD5Hash="E9308A93A19D9BB3A99609E3C08705DA" mod="20070819142728" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- Nur mit Belagerungswaffen angreifbar{cr}- Verfügt über hohe Sichtweite]]></string>
 </root>

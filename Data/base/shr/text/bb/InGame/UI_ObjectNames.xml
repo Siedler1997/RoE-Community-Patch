@@ -402,7 +402,8 @@
 <string id="MissionSpecific_Trebuchet" MD5Hash="" mod="20070613091700" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Trebuchets]]></string>
 <string id="G_MedicinLadyHealing" MD5Hash="" mod="20070809125627" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Alandra, Lady of Healing]]></string>
 <string id="AbilityConvertCrimsonSabatt" MD5Hash="" mod="20070615092812" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Crimson Sabatt's Conversion]]></string>
-<string id="AbilityPlagueRedPrince" MD5Hash="" mod="20070615092816" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Red Prince's Plague]]></string>
+<string id="AbilityPlagueRedPrince" MD5Hash="" mod="20070615092816" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Red Prince's Tribute]]></string>
+<!--<string id="AbilityPlagueRedPrince" MD5Hash="" mod="20070615092816" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Red Prince's Plague]]></string>-->
 <string id="OfferAmount" MD5Hash="" mod="20070626090946" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: how often you can buy this offer."><![CDATA[Offers]]></string>
 <string id="OfferGoodAmount" MD5Hash="" mod="20070626090956" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: this can refer to different offers like &quot;10 Wood&quot;, &quot;5 Sheep&quot;, &quot;1 Entertainer&quot;, &quot;3 Mercenaries&quot;."><![CDATA[Amount]]></string>
 <string id="CausingPlayerIcon" MD5Hash="" mod="20070628093750" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Causing Faction]]></string>
@@ -578,4 +579,6 @@
 	<string id="U_NPC_Castellan_NE" MD5Hash="0055D815AC3E445508C9F42176AAD579" mod="20080206075412" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Castellan]]></string>
 	<string id="U_NPC_Castellan_NA" MD5Hash="0055D815AC3E445508C9F42176AAD579" mod="20080206075412" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Castellan]]></string>
 	<string id="U_NPC_Castellan_SE" MD5Hash="0055D815AC3E445508C9F42176AAD579" mod="20080206075412" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Castellan]]></string>
+	<string id="B_GuardTower" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Guard Tower]]></string>
+	<string id="B_WatchTower" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Lookout Tower]]></string>
 </root>

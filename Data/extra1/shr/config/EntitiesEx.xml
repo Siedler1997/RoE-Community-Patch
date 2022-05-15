@@ -387,5 +387,12 @@
     <Entity>MissionMap_C01M07</Entity> 
     <Entity>MissionMap_C01M08</Entity> 
 
+	<!-- ********************************************
+    CP stuff
+    ************************************************-->
+
+	<Entity>B_GuardTower_AS</Entity>
+	<Entity>B_WatchTower_AS</Entity>
+
 </root>
 

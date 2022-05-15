@@ -175,9 +175,11 @@ function PlayerChangePlayerColor()
 end
 
 function PlayerChangePlayerColor2(_newColor)
-    Logic.PlayerSetPlayerColor(1, _newColor, -1, -1)
-	Logic.ExecuteInLuaLocalState("Display.UpdatePlayerColors()")
-	Logic.ExecuteInLuaLocalState("GUI.RebuildMinimapTerrain()")
+    if _newColor > 0 then
+        Logic.PlayerSetPlayerColor(1, _newColor, -1, -1)
+	    Logic.ExecuteInLuaLocalState("Display.UpdatePlayerColors()")
+	    Logic.ExecuteInLuaLocalState("GUI.RebuildMinimapTerrain()")
+    end
 end
 
 function CreateKnightForPlayer(_PlayerID, _KnightType)

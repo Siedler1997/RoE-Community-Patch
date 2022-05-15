@@ -1978,5 +1978,18 @@
     <Entity>Z_Dummy07</Entity>
     <Entity>Z_Dummy08</Entity>
     <Entity>Z_Dummy09</Entity>
-    
+
+	<!-- ********************************************
+    CP stuff
+    ************************************************-->
+
+	<Entity>B_GuardTower_ME</Entity>
+	<Entity>B_GuardTower_NE</Entity>
+	<Entity>B_GuardTower_SE</Entity>
+	<Entity>B_GuardTower_NA</Entity>
+	<Entity>B_WatchTower_ME</Entity>
+	<Entity>B_WatchTower_NE</Entity>
+	<Entity>B_WatchTower_SE</Entity>
+	<Entity>B_WatchTower_NA</Entity>
+	
 </root>

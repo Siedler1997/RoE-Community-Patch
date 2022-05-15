@@ -245,4 +245,12 @@
 	<string id="U_Wolf_White" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Wolf]]></string>
 	<string id="U_Wolf_Black" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Wolf]]></string>
 	<string id="U_Wolf_Brown" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Wolf]]></string>
+	<string id="B_GuardTower_ME" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Guard Tower]]></string>
+	<string id="B_GuardTower_NA" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Guard Tower]]></string>
+	<string id="B_GuardTower_NE" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Guard Tower]]></string>
+	<string id="B_GuardTower_SE" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Guard Tower]]></string>
+	<string id="B_WatchTower_ME" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Lookout Tower]]></string>
+	<string id="B_WatchTower_NA" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Lookout Tower]]></string>
+	<string id="B_WatchTower_NE" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Lookout Tower]]></string>
+	<string id="B_WatchTower_SE" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Lookout Tower]]></string>
 </root>

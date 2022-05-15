@@ -354,4 +354,6 @@
 	<string id="U_NPC_Castellan_NE" MD5Hash="0055D815AC3E445508C9F42176AAD579" mod="20080206075412" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[A simple castellan of Narlind without special abilities.]]></string>
 	<string id="U_NPC_Castellan_NA" MD5Hash="0055D815AC3E445508C9F42176AAD579" mod="20080206075412" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[A simple castellan of Janub without special abilities.]]></string>
 	<string id="U_NPC_Castellan_SE" MD5Hash="0055D815AC3E445508C9F42176AAD579" mod="20080206075412" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[A simple castellan of Raudrlin without special abilities.]]></string>
+	<string id="B_GuardTower" MD5Hash="E9308A93A19D9BB3A99609E3C08705DA" mod="20070819142728" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- can only be attacked by Siege Engines{cr}- can be protected by a Catapult]]></string>
+	<string id="B_WatchTower" MD5Hash="E9308A93A19D9BB3A99609E3C08705DA" mod="20070819142728" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- can only be attacked by Siege Engines{cr}- has high visibility]]></string>
 </root>
