@@ -1,7 +1,6 @@
 ToDos:
-- Amesthan: Lager von Bihurat Spielerfarbe falsch
-- Audio-Feedback für Ochsen
 - Wappen in Promotion-Window verschoben
+- Audio-Feedback für Ochsen
 - Nachrichten: Player resetten
 - Außenposten/Aussichtsturm/Wachturm
 	- ME-Aussichtsturm: Schwarze Seite

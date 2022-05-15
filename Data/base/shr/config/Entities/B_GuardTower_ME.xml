@@ -98,7 +98,7 @@
                         <OffsetX>0</OffsetX>
                         <OffsetY>0</OffsetY>
                         <!-- Relative to the wall height -->
-                        <OffsetHeight>300</OffsetHeight>
+                        <OffsetHeight>900</OffsetHeight>
                         <DeliverWorkerType>U_WallConstructionWorker</DeliverWorkerType>
                         <DeliverTL>TL_DELIVER_DEFENSE_WEAPON</DeliverTL>
                     </Slot>
