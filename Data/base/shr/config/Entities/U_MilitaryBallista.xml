@@ -35,7 +35,7 @@
             </GoodAmount>
 	   <GoodAmount>
                 <GoodType>G_Iron</GoodType>
-                <Amount>5</Amount>
+                <Amount>10</Amount>
             </GoodAmount>
         </Cost>
 
@@ -118,7 +118,7 @@
                                 <Damage>
                                     <DiceCount>0</DiceCount>
                                     <FaceCount>0</FaceCount>
-                                    <BaseValue>50</BaseValue>
+                                    <BaseValue>40</BaseValue>
                                 </Damage>
                                 <BuildingFireSize>20</BuildingFireSize>
                                 <DamageRadiusList>
@@ -159,7 +159,7 @@
                                 <Damage>
                                     <DiceCount>0</DiceCount>
                                     <FaceCount>0</FaceCount>
-                                    <BaseValue>50</BaseValue>
+                                    <BaseValue>40</BaseValue>
                                 </Damage>
                                 <BuildingFireSize>20</BuildingFireSize>
                                 <DamageRadiusList>
@@ -200,7 +200,7 @@
                                 <Damage>
                                     <DiceCount>0</DiceCount>
                                     <FaceCount>0</FaceCount>
-                                    <BaseValue>50</BaseValue>
+                                    <BaseValue>40</BaseValue>
                                 </Damage>
                                 <BuildingFireSize>20</BuildingFireSize>
                                 <DamageRadiusList>
@@ -240,7 +240,7 @@
                                 <Damage>
                                     <DiceCount>0</DiceCount>
                                     <FaceCount>0</FaceCount>
-                                    <BaseValue>50</BaseValue>
+                                    <BaseValue>40</BaseValue>
                                 </Damage>
                                 <BuildingFireSize>20</BuildingFireSize>
                                 <DamageRadiusList>

@@ -13,7 +13,7 @@ ToDos:
 		- Ist ein Vanilla-Bug!
 	- KIs bekommen im MP die Spielerfarben ab Gelb (ValidPlayerColors property der Map vllt.?)
 - Neue Wappen 
-	- auf Inganme-Flaggen (statt Platzhalter) abbilden
+	- auf Ingame-Flaggen (statt Platzhalter) abbilden
 - Hidun-Turnier: Neue Zelte und andere Siedler
 	- Texturen für DEdK-Zelte gibt es schon
 - Default custom maps
@@ -41,6 +41,8 @@ ToDos:
 	- Stimmen
 		- RedPrince-Units: Klaus Bauer
 	- Ko-fi für GameTTS (als Schankedön)
+- MP-Regeln
+	- Geologe deaktivieren oder teurer
 - Nachrichten-Stau
 - MP-Koop-Fixes
 - AddOn-Kampagne-Loadscreens: Richtige Spielerfarben (per Bildbearbeitung)
