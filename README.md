@@ -16,8 +16,10 @@ Folgende Änderungen wurden vorgenommen:
 - Allgemein
 	- Marcus wird nicht mehr als generischer Ritter gesetzt
 - Ritter
-	- Passive Fähigkeiten
+	- Passive Fähigkeiten modifiziert
 		- Allandra: Bonusgold für Predigten erhöht (20% -> 40%)
+	- Aktive Fähigkeiten modifiziert
+		- Hakims Konversion: Kann nicht benutzt werden, wenn Soldatenlimit erreicht
 	- Neue Bonus-Fähigkeiten für manche Ritter
 		- Leicht veränderte Statuswerte
 			- Marcus: Lebenspunkte leicht erhöht (1.000 -> 1.100)
@@ -46,15 +48,20 @@ Folgende Änderungen wurden vorgenommen:
 			- Aktive Fähigkeit: Versorgung von Einwohnern mit Kleidung
 			- Passive Fähigkeit: Billigerer ausbau von Gebäuden
 		- Kastellane können theoretisch als Ritter genutzt werden
+		- Varianz an Ladebildschirm-Bildern
 - Militär
 	- Banditen 
 		- Können in Kasernen wieder aufgefüllt werden
 		- Haben ein eigenes Audio-Feedback
-		- Fix: Südeuropäische Banditen-Schwertkämpfer greifen nicht mehr automatisch Gebäude an
+		- Fixes
+			- Südeuropäische Banditen-Schwertkämpfer greifen nicht mehr automatisch Gebäude an
+			- Asiatische Banditen haben keine Overhead-Namen mehr
 	- Signatureinheiten vom Roten Prinzen und Khana 
 		- Können in Kasernen wieder aufgefüllt werden
 		- Haben ein anderes Audio-Feedback 
 			- Zurzeit noch das von Banditen...
+		- RP-Einheiten habe eine eigene Button-Textur
+		- Khana-Einheiten haben keine Overhead-Namen mehr
 	- "Neue" Einheiten
 		- Raubtieren als kontrollierbare Militäreinheiten verfügbar
 			- Konkret: Bären (3 Arten), Löwen (2 Arten), Wölfe (4 Arten), Tiger
@@ -93,16 +100,20 @@ Folgende Änderungen wurden vorgenommen:
 			- Kostet 12 Steine
 			- Besitzt eine hohe Sichtweite
 			- Sieht einfach schick aus :)
+	- Ziergebäude der Special Edition im Hauptspiel verfügbar
 - Hauptmenü
 	- AddOn nutzt weitgehend Hauptspiel-Hintergrund und Soundtrack
 	- Hintergrund ist tageszeitabhängig
 	- Kartenauswahl
 		- Im AddOn wieder alle Ritter auswählbar, inklusive die Neuen
+		- Ritter-Restriktionen erlauben jetzt die korrekte Sperrung einzelner Ritter
 		- Filter
 			- Im Einzelspieler nach Herkunft und Missionsziel
 			- Im Mehrspieler nach Herkunft und maximaler Spieleranzahl
 			- Wenn dadurch keine ausgewählt ist wird Mapvorschau geleert und Starten-Button deaktiviert
+		- Im AddOn auch alle Hauptspiel-Karten auswählbar
 - Diverses
+	- Ungenutztes Audio-Feedback von Rittern, Soldaten und Dieben wird nun verwendet
 	- Eisbären nutzen nun ihre richtige Sterbeanimation
 	- Maximale bzw. Standard-Kapazität von Stein- und Eisenminen etwas erhöht (250 -> 300)
 	- Geologeneinsätze kosten deutlich mehr (250 -> 500)
@@ -120,20 +131,126 @@ Folgende Änderungen wurden vorgenommen:
 	- Profil-Menü
 		- Buttons haben nun alle einen Hover-Effekt
 		- Speichern der Profileinstellungen funktioniert nun zuverlässig
+	- Kampfmusik nun nach Klimazonen getrennt (als verschiedene Playlists)
+	- Unterschiedliche Festival-Musik je nachdem, ob der Anlass eine Heldenbeförderung oder normales Fest ist
+	- Niederlagen-Kamerarotation deutlich verlangsamt
+	- Sieg und Niederlage spielt haben jeweils eine Art "Jingle"
+	- Spielerfarben auf der Minimap sind nun (meistens) korrekt
 - Kampagnen
 	- Bugs gefixt
 		- Verfrühte Meldungen von KI-Mitspielern (M05: Drengir, M09: Husran)
 		- Verstärkung für den Spieler spawnt nicht (M15: Vestholm)
-	- KI aggressiver
-		- M09: Husran
 	- KI-Spielerfarben
 		- Mehr Varianz bei Spielerfarben
 		- Konsistentere Spielerfarben im AddOn
 	- Thronsaal hat einen eigenen Soundtrack
+	- Diverses
+		- M09: Husran: KI aggressiver
+		- AM05: Idukun: durch etwas mehr Startkapital etwas einfacher
 
 
 
-## ToDos
-Folgende Features sind geplant, aber noch nicht umgesetzt:
-1. Als bba gepackte Version für das "alte" AeK
-2. GGf. weitere Modifikationen über den Patch hinaus (aber in einem anderen Branch bzw. Projekt)
+## (Mögliche) ToDos
+- Reiche Stadtgebäude rebalancen
+- Außenposten/Aussichtsturm/Wachturm
+	- ME-Aussichtsturm: Schwarze Seite
+	- Aussichtstürme: Alarm?
+	- Eigene Button-Texturen für Aussichtsturm und Wachturm
+		- Wachturm: QuestInformation.Tower (mit Katapult), ...?
+		- Aussichtsturm: PB_Tower1, Alarm, ...?
+	- Generischer Außenposten, inkl. Katapult und Soldatenbemannung
+- Spielerfarben
+	- Minimap-Territorium-Farben weichen nach Neustart z.T. ab 
+		- z.B. Dorf-Dunkelgrün -> Stadt-Grün
+		- Beispiel: Der kalte Strom (Dorf)
+		- Ist ein Vanilla-Bug!
+	- KIs bekommen im MP die Spielerfarben ab Gelb (ValidPlayerColors property der Map vllt.?)
+- Neue Wappen 
+	- auf Ingame-Flaggen (statt Platzhalter) abbilden
+- Hidun-Turnier: Neue Zelte und andere Siedler
+	- Texturen für DEdK-Zelte gibt es schon
+- Default custom maps
+	- MP-Maps als Freibau-SP-Maps neu hinzufügen
+		- Ggf. nicht alle Maps, nur die "schönsten"
+		- Missionsziel ändern
+		- Konkurrenten entfernen
+		- Diplomatie setzen
+	- Hauptspiel-Kampagne im AddOn
+- Musik
+	- Playlists fixen (wenn nötig)
+	- Soundtrack aus DEdK (ggf. per externem Tool...)
+- Wikinger: Kontrollierter Ehefrauen-Raub
+- RPG-Sicht zum rumlaufen
+- Nutzbare (Tier-)Seuche, inkl. Musik
+	- Ruhige, aber bedrohliche Playlist
+	- Erst ab x% Betroffene, da sonst zu oft getriggert
+- TTS
+	- Ggf. Platzhalter
+	- Notizen
+		- Um +8db verstärken
+		- ggf. Anfang und Ende kürzen
+		- ggf. Geschwindigkeit -25%
+		- Zu mp3 konvertieren
+	- Stimmen
+		- RedPrince-Units: Klaus Bauer
+	- Ko-fi für GameTTS (als Schankedön)
+- MP-Regeln
+	- Geologe deaktivieren oder teurer
+- Nachrichten-Stau
+- MP-Koop-Fixes
+- AddOn-Kampagne-Loadscreens: Richtige Spielerfarben (per Bildbearbeitung)
+- Baubares Trebuchet
+	- Eigenes Karren-Modell
+	- Eigene Icon-Texturen
+	- Es dreht sich nicht richtig
+	- Begleitende Sodaten bewegen sich nach einem Move nicht mehr korrekt
+- Zahme Tiere: MilitaryFeedback global statt lokal
+- Sturm
+	- soll mal funktionieren
+	- Abwandlung: Schneesturm
+	- Eigene Playlist
+- Verbesserte/Glaubwürdigere KI (in der Kampagne)
+	- Allgemein: Konsequentere Nutzung von RP-/Khana-Einheiten sowie ggf. Söldner
+	- Narfang: Sabatta aggressiv, wenn ein Außenposten erobert/zerstört wird
+	- M15: Sturm
+	- Idukun: Blizzard
+	- Speziell in den "Last-Stand"-Missionen
+	- Aktive KI-Ritter mit Fähigkeiten
+	- Nutzlose Rand-Territorien weg
+- Entlassen-Button
+- Söldner-Trupps
+	- Konvertierbar
+	- Korrekte Fackelanzeige (auch im Base game)
+- Max. Zoom leicht erhöhen
+	- Winkel muss nach 0.5 anders kalkuliert werden
+- "Neue" Ritter 
+	- Khana und Praphat
+		- Sprüche als Strings weiter anpassen
+		- Audio-Feedback (TTS)
+	- Kastellane: 
+		- Sprüche als Strings
+		- Audio-Feedback (TTS)
+	- Bei Basegame-Rittern AddOn-Comments ergänzen (TTS)
+	- RP: Seuchen-Fähigkeit umsetzen, falls GUI.SendScriptCommand irgendwann wieder laufen sollte
+- Audio-Feedback für Ochsen
+- Rebalancing
+	- Neue (sinnvollere) Aufstiegsbedingungen
+		- ggf. mit Indikator, um nur für neue Maps und angepasste zu gelten
+		- wegen zu hohem Aufwand (Kompatibiliät mit alten Maps) erstmal Low Priority
+	- Maximale Anzahl Steuereintreiber erhöhen (ggf. nur, wenn neue Einheiten verfügbar)
+	- Soldatenlimit anheben (ggf. nur, wenn neue Einheiten verfügbar)
+	- Zwischenproduktionen einführen
+		- Low Priority, da extrem viel Arbeit...
+- Spielbare Dörfer?
+- Ungenutzte Gebäude
+	- Juwelier
+	- Supermarkt?
+- Fremder Content
+	- Speerkämpfer (Defensiv und offensiv schwächer, aber leicht erhöhte Reichweite und billiger)
+	- Kanonen (twA)
+	- Reiter
+- Auf 4k-Auflösung kann nicht mehr per BorderScroll nach rechts gecrolled werden
+- Biom-spezifisches Retexturing für Kerngebäude
+	- Das oder neue Modelle
+- RedMe auf Englisch
+- Als bba gepackte Version für das Original
