@@ -13,8 +13,6 @@ Mit folgenden Schritten lässt sich der Patch installieren:
 
 ## Features
 Folgende Änderungen wurden vorgenommen:
-- Allgemein
-	- Marcus wird nicht mehr als generischer Ritter gesetzt
 - Ritter
 	- Passive Fähigkeiten modifiziert
 		- Allandra: Bonusgold für Predigten erhöht (20% -> 40%)
@@ -46,7 +44,7 @@ Folgende Änderungen wurden vorgenommen:
 			- Bonus: Rekrutierung von Signatureinheiten in Kasernen
 		- Praphat
 			- Aktive Fähigkeit: Versorgung von Einwohnern mit Kleidung
-			- Passive Fähigkeit: Billigerer ausbau von Gebäuden
+			- Passive Fähigkeit: Billigerer Ausbau von Gebäuden
 		- Kastellane können theoretisch als Ritter genutzt werden
 		- Varianz an Ladebildschirm-Bildern
 - Militär
@@ -113,14 +111,15 @@ Folgende Änderungen wurden vorgenommen:
 			- Wenn dadurch keine ausgewählt ist wird Mapvorschau geleert und Starten-Button deaktiviert
 		- Im AddOn auch alle Hauptspiel-Karten auswählbar
 - Diverses
+	- Marcus wird nicht mehr als generischer Ritter gesetzt
 	- Ungenutztes Audio-Feedback von Rittern, Soldaten und Dieben wird nun verwendet
 	- Eisbären nutzen nun ihre richtige Sterbeanimation
 	- Maximale bzw. Standard-Kapazität von Stein- und Eisenminen etwas erhöht (250 -> 300)
-	- Geologeneinsätze kosten deutlich mehr (250 -> 500)
+	- Geologeneinsätze kosten deutlich mehr Gold (250 -> 500)
 	- Steuern
 		- Maximale Anzahl an Steuereintreibern erhöht (6 -> 8)
 	- Bei Minimap-Benachrichtigung wird der auslösende Spieler erst entfernt, um Verwirrung zu vermeiden
-	- Neuen "neue" Spielerfarben
+	- Neun "neue" Spielerfarben
 	- Wappen
 		- Textur ist im Beförderungs-Fenster nun richtig zentriert
 		- Neue, von Stronghold 2 und Stronghold Legends inspirierte Wappen
@@ -134,12 +133,12 @@ Folgende Änderungen wurden vorgenommen:
 	- Kampfmusik nun nach Klimazonen getrennt (als verschiedene Playlists)
 	- Unterschiedliche Festival-Musik je nachdem, ob der Anlass eine Heldenbeförderung oder normales Fest ist
 	- Niederlagen-Kamerarotation deutlich verlangsamt
-	- Sieg und Niederlage spielt haben jeweils eine Art "Jingle"
+	- Sieg und Niederlage haben jeweils eine Art "Jingle"
 	- Spielerfarben auf der Minimap sind nun (meistens) korrekt
 - Kampagnen
 	- Bugs gefixt
 		- Verfrühte Meldungen von KI-Mitspielern (M05: Drengir, M09: Husran)
-		- Verstärkung für den Spieler spawnt nicht (M15: Vestholm)
+		- Verstärkung für den Spieler spawnt jetzt (M15: Vestholm)
 	- KI-Spielerfarben
 		- Mehr Varianz bei Spielerfarben
 		- Konsistentere Spielerfarben im AddOn
@@ -176,6 +175,8 @@ Folgende Änderungen wurden vorgenommen:
 		- Konkurrenten entfernen
 		- Diplomatie setzen
 	- Hauptspiel-Kampagne im AddOn
+		- Zwischenmenü zur Auswahl der Kampagne
+		- Slot für Community-Kampagnen
 - Musik
 	- Playlists fixen (wenn nötig)
 	- Soundtrack aus DEdK (ggf. per externem Tool...)
@@ -239,6 +240,7 @@ Folgende Änderungen wurden vorgenommen:
 		- wegen zu hohem Aufwand (Kompatibiliät mit alten Maps) erstmal Low Priority
 	- Maximale Anzahl Steuereintreiber erhöhen (ggf. nur, wenn neue Einheiten verfügbar)
 	- Soldatenlimit anheben (ggf. nur, wenn neue Einheiten verfügbar)
+	- Rebalancing insb. für MP
 	- Zwischenproduktionen einführen
 		- Low Priority, da extrem viel Arbeit...
 - Spielbare Dörfer?
@@ -246,8 +248,10 @@ Folgende Änderungen wurden vorgenommen:
 	- Juwelier
 	- Supermarkt?
 - Fremder Content
-	- Speerkämpfer (Defensiv und offensiv schwächer, aber leicht erhöhte Reichweite und billiger)
-	- Kanonen (twA)
+	- Speerkämpfer
+		- Defensiv und offensiv schwächer
+		- Leicht erhöhte Reichweite, billiger und mit Bonusschaden gegen Ritter
+	- Kanonen (macht twA)
 	- Reiter
 - Auf 4k-Auflösung kann nicht mehr per BorderScroll nach rechts gecrolled werden
 - Biom-spezifisches Retexturing für Kerngebäude
