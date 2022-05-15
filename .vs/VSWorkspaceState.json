@@ -1,16 +1,17 @@
 {
   "ExpandedNodes": [
     "",
-    "\\DataOP",
-    "\\DataOP\\base",
-    "\\DataOP\\base\\shr",
-    "\\DataOP\\base\\shr\\Maps",
-    "\\DataOP\\base\\shr\\Maps\\Campaign",
-    "\\DataOP\\base\\shr\\Maps\\Campaign\\c00",
-    "\\DataOP\\base\\shr\\Maps\\Campaign\\c00\\c00_m09_Husran",
-    "\\DataOP\\base\\shr\\Maps\\Campaign\\c00\\c00_m12_Sahir",
-    "\\DataOP\\base\\shr\\Maps\\Campaign\\c00\\c00_m13_Montecito"
+    "\\Data",
+    "\\Data\\base",
+    "\\Data\\base\\shr",
+    "\\Data\\base\\shr\\menu",
+    "\\Data\\base\\shr\\Script",
+    "\\Data\\extra1",
+    "\\Data\\extra1\\shr",
+    "\\Data\\extra1\\shr\\text",
+    "\\Data\\extra1\\shr\\text\\bb",
+    "\\Data\\extra1\\shr\\text\\bb\\InGame"
   ],
-  "SelectedNode": "\\DataOP\\base\\shr\\Maps\\Campaign\\c00\\c00_m12_Sahir\\MapScript.lua",
+  "SelectedNode": "\\Data\\base\\shr\\Script\\Local\\Interface\\Construction.lua",
   "PreviewInSolutionExplorer": false
 }

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+
+	<Display classname="ED::CEntityProps">
+		<Class>ED::CDisplayStaticWithHierarchy</Class>
+		<Model>R_ResorceStone_Scaffold</Model>
+        <RenderInFoW>true</RenderInFoW>
+	</Display>
+    
+	<Logic classname="EGL::CResourceDoodadProperties">
+		  <Class>EGL::CResourceDoodad</Class>
+		  <AccessCategory>AccessCategoryResourceDoodad</AccessCategory>
+		  <DoNotExecute>false</DoNotExecute>
+		  <Capacity>300</Capacity>
+		  <GoodType>G_Stone</GoodType>
+		  <Radius>500</Radius>
+        <NumBlockedPoints>8</NumBlockedPoints>
+		  <SnapTolerance>10.0f</SnapTolerance>
+		  <Center>
+			  <X>0</X>
+			  <Y>0</Y>
+		</Center>
+
+          <OnScreenIcon>MinimapStone</OnScreenIcon>
+		  <DepletedModel>R_ResorceStone_Scaffold_Destroyed</DepletedModel>
+    <!-- Must be a subfolder of graphics\\textures -->
+	</Logic>
+
+	<Behaviors>
+        <Behavior>
+             <Logic classname="EGL::CDiscoveredInFogOfWarBehaviorProperties">
+                <Class>EGL::CDiscoveredInFogOfWarBehavior</Class>
+                <DiscoverRadius>600.0</DiscoverRadius>
+            </Logic>
+        </Behavior>
+        
+        <Behavior>
+             <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::COutStockBehaviorDoodad</Class>
+            </Logic>
+            
+            <Display classname="ED::COutStockBehaviorProps">
+                <Class>ED::COutStockBehavior</Class>
+                <MaxOutStockDisplayed>4</MaxOutStockDisplayed>
+                <StockModel>R_ME_ResorceStone_01</StockModel>
+                <FloorValue>false</FloorValue>
+                
+                <ClimateZones>
+                    <OutStock classname="ED::CStockModel">
+                        <ClimateZone>NorthEurope</ClimateZone>
+                        <StockModel>R_NE_ResorceStone_01</StockModel>
+                    </OutStock>
+                    <OutStock classname="ED::CStockModel">
+                        <ClimateZone>MiddleEurope</ClimateZone>
+                        <StockModel>R_ME_ResorceStone_01</StockModel>
+                    </OutStock>
+                    <OutStock classname="ED::CStockModel">
+                        <ClimateZone>SouthEurope</ClimateZone>
+                        <StockModel>R_SE_ResorceStone_01</StockModel>
+                    </OutStock>
+                    <OutStock classname="ED::CStockModel">
+                        <ClimateZone>NorthAfrica</ClimateZone>
+                        <StockModel>R_NA_ResorceStone_01</StockModel>
+                    </OutStock>
+                </ClimateZones>    
+                
+            </Display>
+        </Behavior>
+	</Behaviors>
+    
+    
+	<MapEditor>
+		  <TreePosition>Resources</TreePosition>
+		  <ShowInTree>true</ShowInTree>
+		  <Clime>Generic</Clime>
+		  <Scalable>false</Scalable>
+		  <TemplateResistant>true</TemplateResistant>
+	</MapEditor>
+
+</root>

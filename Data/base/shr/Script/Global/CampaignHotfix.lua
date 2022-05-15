@@ -1,3 +1,4 @@
+--ToDo: Mybe obsolete. Please check and remove unedited maps!
 function GameCallback_CreateKnightByTypeOrIndex(_KnightType, _PlayerID)
 
     if Logic.GetKnightID(_PlayerID) == 0 then

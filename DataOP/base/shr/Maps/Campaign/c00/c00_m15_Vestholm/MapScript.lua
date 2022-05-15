@@ -17,7 +17,7 @@ function Mission_InitPlayers()
     
     CalhadorHoldPlayerID = SetupPlayer(4, "H_NPC_Mercenary_ME", "Calhador Hold", "BanditsColor1")
 
-    SetupPlayer(5, "H_Knight_Chivalry", "Village of Eastholm", "VillageColor2")
+    SetupPlayer(5, "H_NPC_Villager01_ME", "Village of Eastholm", "VillageColor3")
 
     -- set some resources for player 1
     AddResourcesToPlayer(Goods.G_Gold,250)
@@ -169,8 +169,12 @@ function Mission_FirstMapAction()
 
     StartSimpleJob("MonitorCarfulState")
 	
-	OnShipReturningToHarbor()
-
+	--OnShipReturningToHarbor()
+    
+    Logic.WeatherEventSetPrecipitationFalling(true)
+    Logic.WeatherEventSetPrecipitationIsSnow(false)
+    Logic.WeatherEventClearGoodTypesNotGrowing()
+    Logic.ActivateWeatherEvent()
 end
 ----------------------------------------------------------------------------------------------------------------------
 function Mission_SetupQuests()
@@ -685,10 +689,11 @@ function OnShipReturningToHarbor()
         MecrenariesFromClimatzone = "SE"
     end
 
-    for i=1, NumberOfReinforcements do
+    for i=1, NumberOfReinforcements-1 do
 		-- increased x-value to allow the reinforcements to spawn
         Logic.CreateBattalionOnUnblockedLand(Entities["U_MilitaryBandit_Melee_" ..MecrenariesFromClimatzone], x+50, y, 0, 1)
     end
+    Logic.CreateBattalionOnUnblockedLand(Entities["U_MilitaryBandit_Ranged_" ..MecrenariesFromClimatzone], x+50, y, 0, 1)
     
     FlexibalPlayerID = SetupPlayer(8, "H_NPC_Mercenary_" .. MecrenariesFromClimatzone,  "Vestholm Harbor", "TravelingSalesmanColor")
 

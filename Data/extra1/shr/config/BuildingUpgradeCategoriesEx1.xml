@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<BuildingUpgrades>
+
+    <BuildingUpgrade>
+        <Category>Cistern</Category>
+        <FirstBuilding>B_Cistern</FirstBuilding>
+    </BuildingUpgrade>
+
+    <BuildingUpgrade>
+        <Category>Outpost_Asia</Category>
+        <FirstBuilding>B_Outpost_AS</FirstBuilding>
+    </BuildingUpgrade>
+
+    <BuildingUpgrade>
+        <Category>WallGate_Asia</Category>
+        <FirstBuilding>B_WallGate_AS</FirstBuilding>
+    </BuildingUpgrade>
+
+    <BuildingUpgrade>
+        <Category>WallSegment_Asia</Category>
+        <FirstBuilding>B_WallSegment_AS</FirstBuilding>
+    </BuildingUpgrade>
+
+    <BuildingUpgrade>
+        <Category>WallTurret_Asia</Category>
+        <FirstBuilding>B_WallTurret_AS</FirstBuilding>
+    </BuildingUpgrade>
+    
+    <BuildingUpgrade>
+        <Category>GrainField_Asia</Category>
+        <FirstBuilding>B_GrainField_AS</FirstBuilding>
+    </BuildingUpgrade>
+
+    <BuildingUpgrade>
+        <Category>Beautification_Brazier</Category>
+        <FirstBuilding>B_Beautification_Brazier</FirstBuilding>
+    </BuildingUpgrade>
+
+    <BuildingUpgrade>
+        <Category>Beautification_Pillar</Category>
+        <FirstBuilding>B_Beautification_Pillar</FirstBuilding>
+    </BuildingUpgrade>
+
+    <BuildingUpgrade>
+        <Category>Beautification_Shrine</Category>
+        <FirstBuilding>B_Beautification_Shrine</FirstBuilding>
+    </BuildingUpgrade>
+
+    <BuildingUpgrade>
+        <Category>Beautification_StoneBench</Category>
+        <FirstBuilding>B_Beautification_StoneBench</FirstBuilding>
+    </BuildingUpgrade>
+
+    <BuildingUpgrade>
+        <Category>Beautification_Sundial</Category>
+        <FirstBuilding>B_Beautification_Sundial</FirstBuilding>
+    </BuildingUpgrade>
+
+    <BuildingUpgrade>
+        <Category>Beautification_Vase</Category>
+        <FirstBuilding>B_Beautification_Vase</FirstBuilding>
+    </BuildingUpgrade>
+
+    <BuildingUpgrade>
+        <Category>Beautification_TriumphalArch</Category>
+        <FirstBuilding>B_Beautification_TriumphalArch</FirstBuilding>
+    </BuildingUpgrade>
+
+    <BuildingUpgrade>
+        <Category>Beautification_VictoryColumn</Category>
+        <FirstBuilding>B_Beautification_VictoryColumn</FirstBuilding>
+    </BuildingUpgrade>
+
+
+
+	<!-- Community Patch -->
+	<BuildingUpgrade>
+		<Category>GuardTower_Asia</Category>
+		<FirstBuilding>B_GuardTower_AS</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>WatchTower_Asia</Category>
+		<FirstBuilding>B_WatchTower_AS</FirstBuilding>
+	</BuildingUpgrade>
+
+
+</BuildingUpgrades>

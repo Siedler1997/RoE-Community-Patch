@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MapInfo>
+ <Version>2</Version>
+ <NameKey></NameKey>
+ <DescKey></DescKey>
+ <Name></Name>
+ <Desc></Desc>
+ <SizeX>0</SizeX>
+ <SizeY>0</SizeY>
+ <MaxPlayers>1</MaxPlayers>
+ <PlayListBackground></PlayListBackground>
+ <PlayListBackgroundWinter></PlayListBackgroundWinter>
+ <PlayListCombatSmall></PlayListCombatSmall>
+ <PlayListCombatLarge></PlayListCombatLarge>
+ <PreloadModels>true</PreloadModels>
+ <ClimateZone>ThroneRoom</ClimateZone>
+ <GUID>
+  <GUID>7d31a69c-2b1f-4545-9988-4e91b9019603</GUID>
+ </GUID>
+ <Keys> </Keys>
+ <StartPositions> </StartPositions>
+ <ValidPlayerColors> </ValidPlayerColors>
+ <ValidKnightNames> </ValidKnightNames>
+ <ValidResourceModificators> </ValidResourceModificators>
+ <ValidVictoryConditions> </ValidVictoryConditions>
+ <CombatMusic> </CombatMusic>
+</MapInfo>

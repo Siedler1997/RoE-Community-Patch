@@ -1,4 +1,4 @@
-Script.Load("Script\\Global\\CampaignHotfix.lua")
+--Script.Load("Script\\Global\\CampaignHotfix.lua")
 
 CurrentMapIsCampaignMap = true
 
@@ -72,8 +72,6 @@ function Mission_InitPlayers()
     AddResourcesToPlayer(Goods.G_Gold,250, RedPrincePlayerID)
     AddResourcesToPlayer(Goods.G_Stone,150, RedPrincePlayerID)
     AddResourcesToPlayer(Goods.G_Wood, 150, RedPrincePlayerID)
-	
-	GameCallback_CreateKnightByTypeOrIndex(Entities.U_NPC_Castellan_SE, RedPrincePlayerID)
 
     ----------------------------------------------------------------------------------------------------------------------
     -- Scout the villages
@@ -310,7 +308,7 @@ function Mission_FirstMapAction()
     AIPlayer:new(SeradilloPlayerID, AIPlayerProfile_Village)
     AICore.SetNumericalFact(SeradilloPlayerID, "BPMX", 0 )
     
-    RedPrinceAI = AIPlayer:new(RedPrincePlayerID, AIProfile_Skirmish, Entities.U_KnightSabatta)
+    RedPrinceAI = AIPlayer:new(RedPrincePlayerID, AIProfile_Skirmish, Entities.U_NPC_Castellan_SE)
     RedPrinceAI.Skirmish = {}
     RedPrinceAI.Skirmish.Claim_SuperiorTerritories = 3
     RedPrinceAI.Skirmish.Claim_MinTime = 8 * 60

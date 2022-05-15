@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+    <Display classname="ED::CDisplaySettlerWithSlaveProps">
+        <Class>ED::CDisplaySettlerWithSlave</Class>
+        <DrawPlayerColor>True</DrawPlayerColor>
+        <Model>Units\U_Horse_Praphat</Model>
+        <Model2>Units\U_Knight_Praphat</Model2>
+        <SlaveAlwaysVisible>true</SlaveAlwaysVisible>
+    </Display>
+    <Logic classname="EGL::CSettlerProps">
+        <Class>EGL::CSettler</Class>
+        <AccessCategory>AccessCategoryAttackableSettler</AccessCategory>
+        <PlayerSectorType>PlayerSectorTypeMilitary</PlayerSectorType>
+        <MilMetaFormationMemberType>MilMetaFormationMemberTypeMelee</MilMetaFormationMemberType>
+        <MaxHealth>1000</MaxHealth>
+        <HealingSeconds>10</HealingSeconds>
+        <HealingPoints>50</HealingPoints>
+
+        <NeedsPlayer>true</NeedsPlayer>
+        <ForceNoPlayer>false</ForceNoPlayer>
+        <ApproachR>200</ApproachR>
+
+        <EntityCategories>
+            <EntityCategory>Military</EntityCategory>
+            <EntityCategory>Hero</EntityCategory>
+			<EntityCategory>GC_Clothes_Supplier</EntityCategory>
+        </EntityCategories>
+        <AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
+        <RepairFactor>0.3</RepairFactor>
+        <Exploration>30</Exploration>
+        <IdleTaskList>TL_MILITARY_IDLE</IdleTaskList>
+        <IsSelectable>true</IsSelectable>
+        <CanDrown>true</CanDrown>
+        <DoesntAlert>
+            <EntityType>BeeHive</EntityType>
+        </DoesntAlert>
+        <Familiar>
+            <With>SheepPasture</With>
+            <With>CattlePasture</With>
+        </Familiar>
+        <SoundImpactType>Leather</SoundImpactType>
+        <SoundProjectileType>Sword</SoundProjectileType>
+    </Logic>
+    <Behaviors>
+
+        <Behavior>
+            <Logic classname="EGL::CAnimationBehaviorExProps">
+                <Class>EGL::CBehaviorAnimationEx</Class>
+
+                <DefaultAnimation>U_Horse_Wisdom_Stand</DefaultAnimation>
+                <AnimSet>SET_KNIGHT_WISDOM</AnimSet>
+            </Logic>
+            <Display classname="ED::CAnimationBehaviorSlaveProps">
+                <Class>ED::CAnimationBehaviorSlave</Class>
+                <SlaveAnimation>
+                    <Mapping>
+                        <Master>U_Horse_Wisdom_Ride</Master>
+                        <Slave>U_Knight_Wisdom_Ride</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>U_Horse_Wisdom_Stand</Master>
+                        <Slave>U_Knight_Wisdom_Stand</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>U_Horse_Wisdom_Idle1</Master>
+                        <Slave>U_Knight_Wisdom_Idle1</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>U_Horse_Wisdom_Idle2</Master>
+                        <Slave>U_Knight_Wisdom_Idle2</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>U_Horse_Wisdom_Idle3</Master>
+                        <Slave>U_Knight_Wisdom_Idle3</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>U_Horse_Wisdom_Idle4</Master>
+                        <Slave>U_Knight_Wisdom_Idle4</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>U_Horse_Wisdom_Fight</Master>
+                        <Slave>U_Knight_Wisdom_Fight</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>U_Horse_Wisdom_Fight2</Master>
+                        <Slave>U_Knight_Wisdom_Fight2</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>U_Horse_Wisdom_Fight3</Master>
+                        <Slave>U_Knight_Wisdom_Fight3</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>U_Horse_Wisdom_Turnover</Master>
+                        <Slave>U_Knight_Wisdom_Turnover</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>U_Horse_Wisdom_Turn</Master>
+                        <Slave>U_Knight_Wisdom_Turn</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>U_Horse_Wisdom_BattleIdle</Master>
+                        <Slave>U_Knight_Wisdom_BattleIdle</Slave>
+                    </Mapping>
+                </SlaveAnimation>
+            </Display>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CMilitaryMovementBehaviorProps">
+                <Class>EGL::CHeroMovementBehavior</Class>
+                <StraightenPath>true</StraightenPath>
+                <EvasionPriority>140</EvasionPriority>
+                <Speed>800</Speed>
+                <SmoothingRadius>1000</SmoothingRadius>
+                <RotationSpeed>400</RotationSpeed>
+                <MoveTaskList>TL_KNIGHT_WALK</MoveTaskList>
+                <MoveIdleAnim>U_Horse_Wisdom_Stand</MoveIdleAnim>
+            </Logic>
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CMovementBehaviorSlaveStatic</Class>
+            </Display>
+        </Behavior>
+
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorPropsDying">
+                <Class>EGL::CBehaviorDying</Class>
+                <DyingTaskList>TL_DIE_KNIGHT</DyingTaskList>
+            </Logic>
+        </Behavior>
+
+		<!-- Universal Ability: Upgrading OuterRim and City buildings costs less -->
+		<Behavior>
+			<Logic classname="EGL::CHeroBehaviorProps">
+				<Class>EGL::CHeroBehavior</Class>
+				<UpgradeParameter>0.8</UpgradeParameter>
+			</Logic>
+		</Behavior>
+		
+		<!-- Personal Ability: supplies hungry settlers in range with food -->
+		<Behavior>
+			<Logic classname="EGL::CKnightGoodAbilityProps">
+				<Class>EGL::CKnightFoodAbility</Class>
+				<RechargeTimeSeconds>150</RechargeTimeSeconds>
+				<TaskList>TL_KNIGHT_ABILITY_FOOD</TaskList>
+				<Animation>U_Horse_Wisdom_Turnover</Animation>
+				<AnimationGoodAmount>20</AnimationGoodAmount>
+				<AnimationGood>G_ClothesPraphat</AnimationGood>
+				<Effect>E_Knight_Song_Aura</Effect>
+			</Logic>
+		</Behavior>
+
+		<Behavior>
+			<Logic classname="EGL::CNeedProviderBehaviorProps">
+				<Class>EGL::CNeedProviderNutrition</Class>
+				<FulfillTL>TL_WORKER_FOOD_AT_TRADER</FulfillTL>
+			</Logic>
+		</Behavior>
+		<Behavior>
+			<Logic classname="EGL::CStockBehaviorProps">
+				<Class>EGL::CStockOutBehavior</Class>
+				<MaxAmountOnStock>20</MaxAmountOnStock>
+				<AddsToGlobalPlayerStock>true</AddsToGlobalPlayerStock>
+				<GoodTypes>
+					<GoodType>G_ClothesPraphat</GoodType>
+				</GoodTypes>
+			</Logic>
+		</Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CGuardableBehaviorProps">
+                <Class>EGL::CGuardableBehavior</Class>
+                <GuardRadius>300</GuardRadius>
+                <GuardApproachPos><X>-300</X><Y>0</Y></GuardApproachPos>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CFightBehaviorProps">
+                <Class>EGL::CFightBehavior</Class>
+                <DefendTL>TL_KNIGHT_DEFEND</DefendTL>
+                <MoveTaskList>TL_KNIGHT_WALK</MoveTaskList>
+                <DefendRange>2700</DefendRange>
+                <AttackMoveRange>2700</AttackMoveRange>
+                <IdleWhileDefended>false</IdleWhileDefended>
+                <TargetCategoryList>
+
+                    <TargetCategory>
+                        <EntityCategoryList>
+                            <EntityCategory>Hero</EntityCategory>
+                            <EntityCategory>Leader</EntityCategory>
+                            <EntityCategory>AttackableSettler</EntityCategory>
+                            <EntityCategory>Thief</EntityCategory>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                        </EntityCategoryList>
+                        <AttackModeList>
+                            <AttackMode>
+                                <BattleTL>TL_BATTLE_MELEE</BattleTL>
+                                <!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
+                                <ApplyDamageModifiers>true</ApplyDamageModifiers>
+
+                                <MinRange>0</MinRange>
+                                <MaxRange>150</MaxRange>
+                                <MaxHeightDeltaToTarget>100</MaxHeightDeltaToTarget>
+                                <CanAttackOverWalls>false</CanAttackOverWalls>
+                                <CooldownThousandths>1500</CooldownThousandths>
+                                <Damage>
+                                    <DiceCount>0</DiceCount>
+                                    <FaceCount>0</FaceCount>
+                                    <BaseValue>25</BaseValue>
+                                </Damage>
+                            </AttackMode>
+                        </AttackModeList>
+                    </TargetCategory>
+
+                    <!-- This category is only used to disable auto-attack for carnivores  -->
+                    <TargetCategory>
+                        <DisableAutoAttack>true</DisableAutoAttack>
+                     <!-- don't remove  the empty tags, otherwise the data isn't shown correctly in the XML balancer! -->
+                        <EntityCategoryList>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                            <EntityCategory>AttackableAnimal</EntityCategory>
+                        </EntityCategoryList>
+                        <AttackModeList>
+                            <AttackMode>
+                                <BattleTL>TL_BATTLE_MELEE</BattleTL>
+                                <!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
+                                <ApplyDamageModifiers>true</ApplyDamageModifiers>
+
+                                <MinRange>0</MinRange>
+                                <MaxRange>150</MaxRange>
+                                <MaxHeightDeltaToTarget>100</MaxHeightDeltaToTarget>
+                                <CanAttackOverWalls>false</CanAttackOverWalls>
+                                <CooldownThousandths>1500</CooldownThousandths>
+                                <Damage>
+                                    <DiceCount>0</DiceCount>
+                                    <FaceCount>0</FaceCount>
+                                    <BaseValue>25</BaseValue>
+                                </Damage>
+                            </AttackMode>
+                        </AttackModeList>
+                    </TargetCategory>
+
+                </TargetCategoryList>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::CParticleEffectAttachmentBehavior</Class>
+            </Logic>
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CParticleEffectAttachmentBehavior</Class>
+            </Display>
+        </Behavior>
+
+    </Behaviors>
+    <MapEditor>
+        <TreePosition>Units\Knights</TreePosition>
+        <ShowInTree>true</ShowInTree>
+        <Clime>Generic</Clime>
+        <Scalable>false</Scalable>
+    </MapEditor>
+
+</root>

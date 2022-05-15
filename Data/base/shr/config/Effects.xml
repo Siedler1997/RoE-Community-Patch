@@ -1,0 +1,1903 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <Effects>
+
+        <!--  ********  Character FX (spawned in tasklists)  ******** -->
+
+        <!--Beekeeper smoke effect (is attached to his pipe)-->
+        <Effect id="E_C_Beekeeper_SmokePipe">
+            <Logic classname="EGL::CEffectProps">
+                <Class>EGL::CEffect</Class>
+                <Duration>100000</Duration>
+            </Logic>
+            <Display classname="ED::CEffectParticleSystemProps">
+                <Class>ED::CEffectParticleSystem</Class>
+                <Model>Effects\E_C_Beekeeper_SmokePipe</Model>
+            </Display>
+        </Effect>
+
+        <!--Sheepfarmer effect, played when the sheepfarmer cuts wool-->
+        <Effect id="E_C_Sheepfarmer_cut">
+            <Logic classname="EGL::CEffectProps">
+                <Class>EGL::CEffect</Class>
+                <Duration>100000</Duration>
+            </Logic>
+            <Display classname="ED::CEffectParticleSystemProps">
+                <Class>ED::CEffectParticleSystem</Class>
+                <Model>Effects\E_C_Sheepfarmer_cut</Model>
+            </Display>
+        </Effect>
+
+        <Effect id="E_C_ShakeCussion">
+            <Logic classname="EGL::CEffectProps">
+                <Class>EGL::CEffect</Class>
+                <Duration>2.7</Duration>
+            </Logic>
+            <Display classname="ED::CEffectParticleSystemProps">
+                <Class>ED::CEffectParticleSystem</Class>
+                <Model>Effects\E_C_ShakeCussion</Model>
+                <!--Anim>Effects\E_C_ShakeCussion</Anim-->
+        </Display>
+    </Effect>
+
+    <Effect id="E_C_StoneCutter_HitStone">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>0.1</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_C_StoneCutter_HitStone</Model>
+        </Display>
+    </Effect>
+    <Effect id="E_C_SwordSmith_GlowingSword">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>100</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_C_SwordSmith_GlowingSword</Model>
+        </Display>
+    </Effect>
+    <Effect id="E_C_Bowmaker_CutWood">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>100</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_C_Bowmaker_CutWood</Model>
+        </Display>
+    </Effect>
+    <Effect id="E_C_WoodCutter_CutWood">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>0.1</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_C_WoodCutter_CutWood</Model>
+        </Display>
+    </Effect>
+    <Effect id="E_C_Baker_MixDough">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>100</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_C_Baker_MixDough</Model>
+        </Display>
+    </Effect>
+    <Effect id="E_C_SmokeHouseWorker_CarryFish">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>100</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_C_SmokeHouseWorker_CarryFish</Model>
+        </Display>
+    </Effect>
+    <Effect id="E_C_SmokeHouseWorker_SmokingHead">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>100</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_C_SmokeHouseWorker_SmokingHead</Model>
+        </Display>
+    </Effect>
+    <Effect id="E_C_CarryBreadShovel">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>100</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_C_CarryBreadShovel</Model>
+        </Display>
+    </Effect>
+    <Effect id="E_C_PourWater">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>2</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_C_PourWater</Model>
+        </Display>
+    </Effect>
+    <Effect id="E_C_PourWater_Container_Run">
+        <Logic classname="EGL::CSeasonalEffectProxyProps">
+            <Class>EGL::CSeasonalEffectProxy</Class>
+            <Effects>
+                <Default>E_C_PourWater_Run</Default>
+                <Rain></Rain>
+                <Snow></Snow>
+            </Effects>
+        </Logic>
+    </Effect>
+    <Effect id="E_C_PourWater_Run">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>10000</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_C_PourWater_Run</Model>
+        </Display>
+    </Effect>
+    <Effect id="E_C_EmptyChamberPot_SpouseS_Container">
+        <Logic classname="EGL::CSeasonalEffectProxyProps">
+            <Class>EGL::CSeasonalEffectProxy</Class>
+            <Effects>
+                <Default>E_C_EmptyChamberPot_SpouseS</Default>
+                <Rain></Rain>
+                <Snow></Snow>
+            </Effects>
+        </Logic>
+    </Effect>
+    <Effect id="E_C_EmptyChamberPot_SpouseS">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>100000</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_C_EmptyChamberPot_SpouseS</Model>
+        </Display>
+    </Effect>
+
+    <Effect id="E_C_Sweep_SpouseS_Container">
+        <Logic classname="EGL::CSeasonalEffectProxyProps">
+            <Class>EGL::CSeasonalEffectProxy</Class>
+            <Effects>
+                <Default>E_C_Sweep_SpouseS</Default>
+                <Rain></Rain>
+                <Snow></Snow>
+            </Effects>
+        </Logic>
+    </Effect>
+    <Effect id="E_C_Sweep_SpouseS">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>100000</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_C_Sweep_SpouseS</Model>
+        </Display>
+    </Effect>
+
+    <Effect id="E_C_Sweep_SpouseF_Container">
+        <Logic classname="EGL::CSeasonalEffectProxyProps">
+            <Class>EGL::CSeasonalEffectProxy</Class>
+            <Effects>
+                <Default>E_C_Sweep_SpouseF</Default>
+                <Rain></Rain>
+                <Snow></Snow>
+            </Effects>
+        </Logic>
+    </Effect>
+    <Effect id="E_C_Sweep_SpouseF">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>100000</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_C_Sweep_SpouseF</Model>
+        </Display>
+    </Effect>
+
+
+    <Effect id="DustTrail">
+        <Logic classname="EGL::CSeasonalEffectProxyProps">
+            <Class>EGL::CSeasonalEffectProxy</Class>
+            <Effects>
+                <Default>DustLarge</Default>
+                <Rain></Rain>
+                <Snow></Snow>
+            </Effects>
+        </Logic>
+    </Effect>
+
+    <!--  ********  Knights Abilities  ******** -->
+    <Effect id="E_HealingFX">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>0</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_HealingFX</Model>
+        </Display>
+    </Effect>
+    <Effect id="E_Knight_Trader_Aura">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>0</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_Knight_Trader_Aura</Model>
+        </Display>
+    </Effect>
+    <Effect id="E_Knight_Chivalry_Aura">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>0</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_Knight_Chivalry_Aura</Model>
+        </Display>
+    </Effect>
+    <Effect id="E_Knight_Plunder_Aura">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>0</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_Knight_Plunder_Aura</Model>
+        </Display>
+    </Effect>
+    <Effect id="E_Knight_Song_Aura">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>0</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_Knight_Song_Aura</Model>
+        </Display>
+    </Effect>
+    <Effect id="E_Knight_Wisdom_Aura">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>0</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_Knight_Wisdom_Aura</Model>
+        </Display>
+    </Effect>
+
+    <!--  ********  Other FX  ******** -->
+
+
+    <Effect id="E_Splash">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>5</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_Splash</Model>
+        </Display>
+    </Effect>
+
+
+    <Effect id="FXChopTree">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>5</Duration>
+
+            <SoundID>units\tree_fall</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>false</SoundLooped>
+
+        </Logic>
+        <Display classname="ED::CHAnimEffectProps">
+            <Class>ED::CHAnimEffect</Class>
+            <Model>Effects\E_TreeCollapse_Broadleaf01</Model>
+            <Anim>Effects\E_TreeCollapse_Broadleaf01</Anim>
+        </Display>
+    </Effect>
+
+    <!--  Avalanche Effect -> this is an animated Doodad which is used in a scriptet event in north europe
+    The are three doodads needed for this effect: D_NE_Avalanche_Fixed, D_NE_Avalanche_Broken and D_NE_Avalanche_Anim
+    -->
+    <Effect id="E_NE_Avalanche_Anim">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>6.2240</Duration>
+        </Logic>
+        <Display classname="ED::CHAnimEffectProps">
+            <Class>ED::CHAnimEffect</Class>
+            <Model>Doodads\D_NE_Avalanche_Anim</Model>
+            <Anim>D_NE_Avalanche_Anim</Anim>
+        </Display>
+    </Effect>
+
+    <!--  Falling stones and dust used for the wallgate trap -->
+    <Effect id="E_NE_GateDefense">
+        <Logic classname="EGL::CEffectProps">
+            <SoundID>Impact\impact_stonetrap</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>false</SoundLooped>
+<Class>EGL::CEffect</Class>
+            <Duration>10</Duration>
+        </Logic>
+        <Display classname="ED::CHAnimEffectProps">
+            <Class>ED::CHAnimEffect</Class>
+            <Model>Effects\E_NE_GateDefense</Model>
+            <Anim>Effects\E_NE_GateDefense</Anim>
+        </Display>
+    </Effect>
+    <Effect id="E_SE_GateDefense">
+        <Logic classname="EGL::CEffectProps">
+            <SoundID>Impact\impact_stonetrap</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>false</SoundLooped>
+            <Class>EGL::CEffect</Class>
+            <Duration>10</Duration>
+        </Logic>
+        <Display classname="ED::CHAnimEffectProps">
+            <Class>ED::CHAnimEffect</Class>
+            <Model>Effects\E_SE_GateDefense</Model>
+            <Anim>Effects\E_SE_GateDefense</Anim>
+        </Display>
+    </Effect>
+    <Effect id="E_ME_GateDefense">
+        <Logic classname="EGL::CEffectProps">
+            <SoundID>Impact\impact_stonetrap</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>false</SoundLooped>
+            <Class>EGL::CEffect</Class>
+            <Duration>10</Duration>
+        </Logic>
+        <Display classname="ED::CHAnimEffectProps">
+            <Class>ED::CHAnimEffect</Class>
+            <Model>Effects\E_ME_GateDefense</Model>
+            <Anim>Effects\E_ME_GateDefense</Anim>
+        </Display>
+    </Effect>
+    <Effect id="E_NA_GateDefense">
+        <Logic classname="EGL::CEffectProps">
+            <SoundID>Impact\impact_stonetrap</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>false</SoundLooped>
+            <Class>EGL::CEffect</Class>
+            <Duration>10</Duration>
+        </Logic>
+        <Display classname="ED::CHAnimEffectProps">
+            <Class>ED::CHAnimEffect</Class>
+            <Model>Effects\E_NA_GateDefense</Model>
+            <Anim>Effects\E_NA_GateDefense</Anim>
+        </Display>
+    </Effect>
+     <!--  Used for the tournament at the end of a south europe map -->
+        <Effect id="E_KnightFight">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>5000</Duration>
+        </Logic>
+        <Display classname="ED::CHAnimEffectProps">
+            <Class>ED::CHAnimEffect</Class>
+            <Model>Effects\E_KnightFight</Model>
+            <Anim>Effects\E_KnightFight</Anim>
+        </Display>
+    </Effect>
+    <!--  Knight selection effect for throneroom scene (godrays) -->
+    <Effect id="E_Throneroom_KnightSelection">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>0</Duration>
+        </Logic>
+        <Display classname="ED::CHAnimEffectProps">
+            <Class>ED::CHAnimEffect</Class>
+            <Model>Effects\E_Throneroom_KnightSelection</Model>
+            <Anim>Effects\E_Throneroom_KnightSelection</Anim>
+        </Display>
+    </Effect>
+    <!--  Turning arrow, used as marker for quests -->
+    <Effect id="E_Questmarker">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>0</Duration>
+        </Logic>
+        <Display classname="ED::CHAnimEffectProps">
+            <Class>ED::CHAnimEffect</Class>
+            <Model>Effects\E_Questmarker</Model>
+            <Anim>Effects\E_Questmarker</Anim>
+        </Display>
+    </Effect>
+    <!--  Turning arrow, used as marker for quests 3.5m distance from ground-->
+    <Effect id="E_Questmarker_low">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>0</Duration>
+        </Logic>
+        <Display classname="ED::CHAnimEffectProps">
+            <Class>ED::CHAnimEffect</Class>
+            <Model>Effects\E_Questmarker_low</Model>
+            <Anim>Effects\E_Questmarker_low</Anim>
+        </Display>
+    </Effect>
+
+    <Effect id="FXChopTreeInWinter">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>5</Duration>
+
+            <SoundID>units\tree_fall</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>false</SoundLooped>
+
+        </Logic>
+        <Display classname="ED::CHAnimEffectProps">
+            <Class>ED::CHAnimEffect</Class>
+            <Model>Effects\E_TreeCollapse_Broadleaf01</Model>
+            <Anim>Effects\E_TreeCollapse_Broadleaf01</Anim>
+        </Display>
+    </Effect>
+
+    <Effect id="E_Flies01">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>1000</Duration>
+        </Logic>
+        <Display classname="ED::CHAnimEffectProps">
+            <Class>ED::CHAnimEffect</Class>
+            <Model>Effects\E_Flies01</Model>
+            <Anim>Effects\E_Flies01</Anim>
+        </Display>
+    </Effect>
+    <Effect id="FXFire">
+        <Logic classname="EGL::CEffectFireProps">
+
+            <SoundID>Misc\amb_loop_fire</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>true</SoundLooped>
+
+            <Class>EGL::CEffectFire</Class>
+            <SpreadTime>300</SpreadTime>
+            <SpreadDelay>300</SpreadDelay>
+            <SpreadRadius>12500</SpreadRadius>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\XF_HouseFire</Model>
+        </Display>
+    </Effect>
+    <Effect id="DustLarge">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>100000</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_DustLarge</Model>
+        </Display>
+    </Effect>
+    <Effect id="E_SickBuilding">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>0</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_SickBuilding</Model>
+        </Display>
+    </Effect>
+    <Effect id="E_Debris0">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>3</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_Debris01</Model>
+        </Display>
+    </Effect>
+    <Effect id="FXConfetti">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>25</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_Confetti</Model>
+        </Display>
+    </Effect>
+
+    <Effect id="FXOillamp">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>10000</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_Oillamp</Model>
+        </Display>
+    </Effect>
+
+    <Effect id="FXShockwave02">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>1</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_Shockwave02</Model>
+        </Display>
+    </Effect>
+    <!--  This effect is played when the catapult boulder hits a building or heavy weapon-->   
+    <Effect id="E_Shockwave03">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>1</Duration>
+            <SoundID>Impact\impact_catapult_stone</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>false</SoundLooped>
+        </Logic>
+        <Display classname="ED::CHAnimEffectProps">
+            <Class>ED::CHAnimEffect</Class>
+            <Model>Effects\E_Shockwave03</Model>
+            <Anim>Effects\E_Shockwave03</Anim>
+        </Display>
+    </Effect>
+    
+    <Effect id="DustSmall">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>100000</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_DustSmall</Model>
+        </Display>
+    </Effect>
+    <Effect id="FXBuildingSmoke">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>5</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\XF_BuildingSmoke</Model>
+        </Display>
+    </Effect>
+    <Effect id="E_SmokeBlack01">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>0</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_SmokeBlack01</Model>
+        </Display>
+    </Effect>
+    <Effect id="FX_SmokeBig">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>0</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\FX_SmokeBIG</Model>
+        </Display>
+    </Effect>
+    <Effect id="FXBuildingSmokeMedium">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>5</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\XF_BuildingSmokeMedium</Model>
+        </Display>
+    </Effect>
+    <Effect id="E_Shockwave01">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>1</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_Shockwave01</Model>
+        </Display>
+    </Effect>
+    <Effect id="FXGarland">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>3</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_Garland</Model>
+        </Display>
+    </Effect>
+    <Effect id="FXBuildingSmokeLarge">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>5</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\XF_BuildingSmokeLarge</Model>
+        </Display>
+    </Effect>
+    <!--  This effect is played when the catapult boulder hits the stone wall-->
+    <Effect id="FXWallImpact">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>3.2</Duration>
+            <SoundID>Impact\impact_catapult_stone</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>false</SoundLooped>
+        </Logic>
+        <Display classname="ED::CHAnimEffectProps">
+            <Class>ED::CHAnimEffect</Class>
+            <Model>Effects\E_WallImpact</Model>
+            <Anim>Effects\E_WallImpact</Anim>
+        </Display>
+    </Effect>
+    <!--  This effect is played when the catapult boulder hits the palisade-->
+    <Effect id="FXPalisadeImpact">
+        <Logic classname="EGL::CEffectProps">
+            <SoundID>Impact\impact_catapult_wood</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>false</SoundLooped>
+            <Class>EGL::CEffect</Class>
+            <Duration>3.2</Duration>
+        </Logic>
+        <Display classname="ED::CHAnimEffectProps">
+            <Class>ED::CHAnimEffect</Class>
+            <Model>Effects\E_PalisadeImpact</Model>
+            <Anim>Effects\E_PalisadeImpact</Anim>
+        </Display>
+    </Effect>
+    <!--  This effect is played when a wall tower collapses-->
+    <Effect id="E_ME_TowerCollapse">
+      <Logic classname="EGL::CEffectProps">
+        <SoundID>Buildings\building_teardown_wall</SoundID>
+        <SoundVolume>100</SoundVolume>
+        <SoundLooped>false</SoundLooped>
+        <Class>EGL::CEffect</Class>
+        <Duration>6.6</Duration>
+      </Logic>
+      <Display classname="ED::CHAnimEffectProps">
+        <Class>ED::CHAnimEffect</Class>
+        <Model>Effects\E_ME_TowerCollapse</Model>
+        <Anim>Effects\E_ME_TowerCollapse</Anim>
+      </Display>
+    </Effect>
+    <!--  This effect is played when a wall segment collapses-->
+    <Effect id="E_WallCollapse">
+      <Logic classname="EGL::CEffectProps">
+        <SoundID>Buildings\building_teardown_wall</SoundID>
+        <SoundVolume>100</SoundVolume>
+        <SoundLooped>false</SoundLooped>
+        <Class>EGL::CEffect</Class>
+        <Duration>6.6</Duration>
+        <SoundID>Military\catapult_impact_stone</SoundID>
+        <SoundVolume>100</SoundVolume>
+        <SoundLooped>false</SoundLooped>
+      </Logic>
+      <Display classname="ED::CHAnimEffectProps">
+        <Class>ED::CHAnimEffect</Class>
+        <Model>Effects\E_WallCollapse</Model>
+        <Anim>Effects\E_WallCollapse</Anim>
+      </Display>
+    </Effect>
+    <!--  This effect is played when a palisade segment collapses-->
+    <Effect id="E_PalisadeCollapse">
+      <Logic classname="EGL::CEffectProps">
+        <SoundID>Buildings\building_teardown_palisade</SoundID>
+        <SoundVolume>100</SoundVolume>
+        <SoundLooped>false</SoundLooped>
+        <Class>EGL::CEffect</Class>
+        <Duration>1.0</Duration>
+      </Logic>
+      <Display classname="ED::CHAnimEffectProps">
+        <Class>ED::CHAnimEffect</Class>
+        <Model>Effects\E_PalisadeCollapse</Model>
+        <Anim>Effects\E_PalisadeCollapse</Anim>
+      </Display>
+    </Effect>
+    <!--  This effect is played when the battering ram hits the wall or palisade and is attached to the battering ram model (tag800)-->
+    <Effect id="FXBatteringRam">
+        <Logic classname="EGL::CEffectProps">
+        <SoundID>Impact\impact_ram_stone</SoundID>
+        <SoundVolume>100</SoundVolume>
+        <SoundLooped>false</SoundLooped>
+            <Class>EGL::CEffect</Class>
+            <Duration>3.0</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_BatteringRam</Model>
+        </Display>
+    </Effect>
+
+    <Effect id="E_LvlUp">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>7</Duration>
+        </Logic>
+        <Display classname="ED::CHAnimEffectProps">
+            <Class>ED::CHAnimEffect</Class>
+            <Model>Effects\E_LvlUp</Model>
+            <Anim>Effects\E_LvlUp</Anim>
+        </Display>
+    </Effect>
+    <Effect id="E_DieHero">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>6.5</Duration>
+        </Logic>
+        <Display classname="ED::CHAnimEffectProps">
+            <Class>ED::CHAnimEffect</Class>
+            <Model>Effects\E_DieHero</Model>
+            <Anim>Effects\E_DieHero</Anim>
+        </Display>
+    </Effect>
+    <Effect id="FXDie">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>5</Duration>
+        </Logic>
+        <Display classname="ED::CHAnimEffectProps">
+            <Class>ED::CHAnimEffect</Class>
+            <Model>Effects\XF_Die</Model>
+            <Anim>XF_Die995</Anim>
+            <UsePlayerID>true</UsePlayerID>
+        </Display>
+    </Effect>
+    <Effect id="FXRain">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffectRain</Class>
+            <Global>True</Global>
+        </Logic>
+        <Display classname="ED::CDisplayEffectRainProps">
+            <Class>ED::CDisplayEffectRain</Class>
+            <RainSphereModel>Effects\E_Rain</RainSphereModel>
+        </Display>
+    </Effect>
+    <Effect id="FXSnow">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffectRain</Class>
+            <Global>True</Global>
+        </Logic>
+        <Display classname="ED::CEffectSnowProps">
+            <Class>ED::CEffectSnow</Class>
+            <Textures>
+                <Texture>Effects/SnowFlake</Texture>
+            </Textures>
+            <MaxParticlesNum>3000</MaxParticlesNum>
+            <NewParticlesPerSecond>50</NewParticlesPerSecond>
+            <DeletedParticlesPerSecond>500</DeletedParticlesPerSecond>
+            <ParticleSize>12</ParticleSize>
+            <ParticleZSpeedMin>-100</ParticleZSpeedMin>
+            <ParticleZSpeedMax>-150</ParticleZSpeedMax>
+            <CylinderRadius>2000</CylinderRadius>
+            <CylinderZMin>-2000</CylinderZMin>
+            <CylinderZMax>250</CylinderZMax>
+            <FlowSimulationDeltaTime>0.1</FlowSimulationDeltaTime>
+            <FlowSimulationTimeScale>0.25</FlowSimulationTimeScale>
+            <WindSpeedScale>1500</WindSpeedScale>
+            <WindViscosity>0.15</WindViscosity>
+            <AppliedForceMin>2000</AppliedForceMin>
+            <AppliedForceMin>3000</AppliedForceMin>
+            <ForceTimeMin>8</ForceTimeMin>
+            <ForceTimeMax>12</ForceTimeMax>
+        </Display>
+    </Effect>
+    <Effect id="E_DestructionSmoke">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>4.7</Duration>
+            <!-- 4.25 -->
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_DestructionSmoke</Model>
+        </Display>
+    </Effect>
+    <Effect id="E_Upgrade01">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>0</Duration>
+            <!-- 4.25 -->
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_Upgrade01</Model>
+        </Display>
+    </Effect>
+    <Effect id="E_Wealth">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>4.7</Duration>
+            <!-- 4.25 -->
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_Improvement</Model>
+        </Display>
+    </Effect>
+    <Effect id="E_SmokeBlack01">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>0</Duration>
+            <!-- 4.25 -->
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_SmokeBlack01</Model>
+        </Display>
+    </Effect>
+    <Effect id="FXTorch">
+        <Logic classname="EGL::CArrowEffectProps">
+            <Class>EGL::CArrowEffect</Class>
+            <Global>false</Global>
+            <Duration>0</Duration>
+            <Speed>600.0</Speed>
+            <GravityFactor>600.0f</GravityFactor>
+            <HeightOffsetStart>60.0</HeightOffsetStart>
+            <HeightOffsetTarget>60.0</HeightOffsetTarget>
+            <SoundProjectileType>Torch</SoundProjectileType>
+        </Logic>
+        <Display classname="ED::CFlyingEffectProps">
+            <Class>ED::CFlyingEffect</Class>
+            <Model>Effects\E_Torch</Model>
+        </Display>
+    </Effect>
+    <Effect id="E_Catapult_Fire">
+        <Logic classname="EGL::CSplashEffectProps">
+            <Class>EGL::CSplashEffect</Class>
+            <Global>false</Global>
+            <Duration>0</Duration>
+            <Speed>4000.0</Speed>
+            <GravityFactor>1800.0f</GravityFactor>
+            <HeightOffsetStart>640.0</HeightOffsetStart>
+            <HeightOffsetTarget>250.0</HeightOffsetTarget>
+            <SoundProjectileType>Catapult</SoundProjectileType>
+            <ImpactEffectID>E_Shockwave03</ImpactEffectID>
+        </Logic>
+        <Display classname="ED::CFlyingEffectProps">
+            <Class>ED::CFlyingEffect</Class>
+            <Model>Effects\E_Catapult_Fire</Model>
+        </Display>
+    </Effect>
+
+    <Effect id="E_Catapult_Fire_Palisade">
+        <Logic classname="EGL::CSplashEffectProps">
+            <Class>EGL::CSplashEffect</Class>
+            <Global>false</Global>
+            <Duration>0</Duration>
+            <Speed>4000.0</Speed>
+            <GravityFactor>1800.0f</GravityFactor>
+            <HeightOffsetStart>640.0</HeightOffsetStart>
+            <HeightOffsetTarget>250.0</HeightOffsetTarget>
+            <ImpactEffectID>FXPalisadeImpact</ImpactEffectID>
+            <AlignImpactWithTarget>true</AlignImpactWithTarget>
+            <SoundProjectileType>Catapult</SoundProjectileType>
+        </Logic>
+        <Display classname="ED::CFlyingEffectProps">
+            <Class>ED::CFlyingEffect</Class>
+            <Model>Effects\E_Catapult_Fire</Model>
+        </Display>
+    </Effect>
+    <Effect id="E_Catapult_Fire_Wall">
+        <Logic classname="EGL::CSplashEffectProps">
+            <Class>EGL::CSplashEffect</Class>
+            <Global>false</Global>
+            <Duration>0</Duration>
+            <Speed>3000.0</Speed>
+            <GravityFactor>800.0f</GravityFactor>
+            <HeightOffsetStart>1200.0</HeightOffsetStart>
+            <HeightOffsetTarget>250.0</HeightOffsetTarget>
+            <ImpactEffectID>FXWallImpact</ImpactEffectID>
+            <AlignImpactWithTarget>true</AlignImpactWithTarget>
+            <SoundProjectileType>Catapult</SoundProjectileType>
+        </Logic>
+        <Display classname="ED::CFlyingEffectProps">
+            <Class>ED::CFlyingEffect</Class>
+            <Model>Effects\E_Catapult_Fire</Model>
+        </Display>
+        </Effect>
+		<Effect id="E_Trebuchet_Fire">
+			<Logic classname="EGL::CSplashEffectProps">
+				<Class>EGL::CSplashEffect</Class>
+				<Global>false</Global>
+				<Duration>0</Duration>
+				<Speed>3000.0</Speed>
+				<GravityFactor>800.0f</GravityFactor>
+				<HeightOffsetStart>1200.0</HeightOffsetStart>
+				<HeightOffsetTarget>250.0</HeightOffsetTarget>
+				<SoundProjectileType>Catapult</SoundProjectileType>
+				<ImpactEffectID>E_Shockwave03</ImpactEffectID>
+			</Logic>
+			<Display classname="ED::CFlyingEffectProps">
+				<Class>ED::CFlyingEffect</Class>
+				<Model>Effects\E_Catapult_Fire</Model>
+			</Display>
+		</Effect>
+
+		<Effect id="E_Trebuchet_Fire_Palisade">
+			<Logic classname="EGL::CSplashEffectProps">
+				<Class>EGL::CSplashEffect</Class>
+				<Global>false</Global>
+				<Duration>0</Duration>
+				<Speed>3000.0</Speed>
+				<GravityFactor>800.0f</GravityFactor>
+				<HeightOffsetStart>1200.0</HeightOffsetStart>
+				<HeightOffsetTarget>250.0</HeightOffsetTarget>
+				<ImpactEffectID>FXPalisadeImpact</ImpactEffectID>
+				<AlignImpactWithTarget>true</AlignImpactWithTarget>
+				<SoundProjectileType>Catapult</SoundProjectileType>
+			</Logic>
+			<Display classname="ED::CFlyingEffectProps">
+				<Class>ED::CFlyingEffect</Class>
+				<Model>Effects\E_Catapult_Fire</Model>
+			</Display>
+		</Effect>
+		<Effect id="E_Trebuchet_Fire_Wall">
+			<Logic classname="EGL::CSplashEffectProps">
+				<Class>EGL::CSplashEffect</Class>
+				<Global>false</Global>
+				<Duration>0</Duration>
+				<Speed>3000.0</Speed>
+				<GravityFactor>800.0f</GravityFactor>
+				<HeightOffsetStart>1200.0</HeightOffsetStart>
+				<HeightOffsetTarget>250.0</HeightOffsetTarget>
+				<ImpactEffectID>FXWallImpact</ImpactEffectID>
+				<AlignImpactWithTarget>true</AlignImpactWithTarget>
+				<SoundProjectileType>Catapult</SoundProjectileType>
+			</Logic>
+			<Display classname="ED::CFlyingEffectProps">
+				<Class>ED::CFlyingEffect</Class>
+				<Model>Effects\E_Catapult_Fire</Model>
+			</Display>
+		</Effect>
+	<Effect id="E_TrapProjectile">
+        <Logic classname="EGL::CSplashEffectProps">
+            <Class>EGL::CSplashEffect</Class>
+            <Global>false</Global>
+            <Duration>0</Duration>
+            <Speed>600.0</Speed>
+            <GravityFactor>1800.0f</GravityFactor>
+            <HeightOffsetStart>640.0</HeightOffsetStart>
+            <HeightOffsetTarget>250.0</HeightOffsetTarget>
+        </Logic>
+        <Display classname="ED::CFlyingEffectProps">
+            <Class>ED::CFlyingEffect</Class>
+            <Model>Effects\E_NullFX</Model>
+        </Display>
+    </Effect>
+    <Effect id="FXArrow">
+        <Logic classname="EGL::CArrowEffectProps">
+            <Class>EGL::CArrowEffect</Class>
+            <Global>false</Global>
+            <Duration>0</Duration>
+            <Speed>4000.0</Speed>
+            <GravityFactor>1800.0f</GravityFactor>
+            <HeightOffsetStart>60.0</HeightOffsetStart>
+            <HeightOffsetTarget>60.0</HeightOffsetTarget>
+            <SoundProjectileType>Arrow</SoundProjectileType>
+        </Logic>
+        <Display classname="ED::CFlyingEffectProps">
+            <Class>ED::CFlyingEffect</Class>
+            <Model>Effects\E_Arrow</Model>
+        </Display>
+    </Effect>
+
+    <Effect id="E_Axe">
+        <Logic classname="EGL::CArrowEffectProps">
+            <Class>EGL::CArrowEffect</Class>
+            <Global>false</Global>
+            <Duration>0</Duration>
+            <Speed>1500.0</Speed>
+            <GravityFactor>250.0f</GravityFactor>
+            <HeightOffsetStart>60.0</HeightOffsetStart>
+            <HeightOffsetTarget>60.0</HeightOffsetTarget>
+            <SoundProjectileType>Axe</SoundProjectileType>
+        </Logic>
+        <Display classname="ED::CFlyingEffectProps">
+            <Class>ED::CFlyingEffect</Class>
+            <Model>Effects\E_Axe</Model>
+        </Display>
+    </Effect>
+
+    <Effect id="FXFireArrow">
+        <Logic classname="EGL::CArrowEffectProps">
+            <Class>EGL::CArrowEffect</Class>
+            <Global>false</Global>
+            <Duration>0</Duration>
+            <Speed>4000.0</Speed>
+            <GravityFactor>1800.0f</GravityFactor>
+            <HeightOffsetStart>60.0</HeightOffsetStart>
+            <HeightOffsetTarget>60.0</HeightOffsetTarget>
+            <SoundProjectileType>BurningArrow</SoundProjectileType>
+        </Logic>
+        <Display classname="ED::CFlyingEffectProps">
+            <Class>ED::CFlyingEffect</Class>
+            <Model>Effects\E_Arrow_Fire</Model>
+        </Display>
+    </Effect>
+
+    <Effect id="BlueFish">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>1000</Duration>
+            <!-- 4.25 -->
+        </Logic>
+        <Display classname="ED::CHAnimEffectProps">
+            <Class>ED::CHAnimEffect</Class>
+            <Model>XA_BlueFish</Model>
+            <Anim>XA_BlueFish01</Anim>
+        </Display>
+    </Effect>
+    <Effect id="Dust">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>0</Duration>
+            <!-- 4.25 -->
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\Dust01</Model>
+        </Display>
+    </Effect>
+    <Effect id="Lantern">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>80</Duration>
+            <!-- 4.25 -->
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\FX_Lantern</Model>
+            <EmitterLifeTime>120</EmitterLifeTime>
+        </Display>
+    </Effect>
+    <Effect id="LanternShort">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>40</Duration>
+            <!-- 4.25 -->
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\FX_Lantern</Model>
+            <EmitterLifeTime>40</EmitterLifeTime>
+        </Display>
+    </Effect>
+    <Effect id="FishSwarm">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>0</Duration>
+            <!-- 4.25 -->
+        </Logic>
+        <Display classname="ED::CHAnimEffectProps">
+            <Class>ED::CHAnimEffect</Class>
+            <Model>Effects\FX_FishSwarm</Model>
+            <Anim>FX_FishSwarm</Anim>
+        </Display>
+    </Effect>
+    <Effect id="FishSwarm02">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>0</Duration>
+            <!-- 4.25 -->
+        </Logic>
+        <Display classname="ED::CHAnimEffectProps">
+            <Class>ED::CHAnimEffect</Class>
+            <Model>Effects\FX_FishSwarm02</Model>
+            <Anim>FX_FishSwarm02</Anim>
+        </Display>
+    </Effect>
+    <Effect id="FishSwarm03">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>0</Duration>
+            <!-- 4.25 -->
+        </Logic>
+        <Display classname="ED::CHAnimEffectProps">
+            <Class>ED::CHAnimEffect</Class>
+            <Model>Effects\FX_FishSwarm03</Model>
+            <Anim>FX_FishSwarm03</Anim>
+        </Display>
+    </Effect>
+    <Effect id="FX_Dolphin">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>5</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>FX_Dolphin</Model>
+            <EmitterLifeTime>1</EmitterLifeTime>
+        </Display>
+    </Effect>
+
+
+    <!--
+
+
+    ********  effect sound ********
+
+
+    -->
+    <Effect id="XF_Fire01">
+        <Logic classname="EGL::CEffectFireProps">
+
+            <SoundID>Misc\amb_loop_fire</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>true</SoundLooped>
+
+            <Class>EGL::CEffectFire</Class>
+            <SpreadTime>300</SpreadTime>
+            <SpreadDelay>300</SpreadDelay>
+            <SpreadRadius>12500</SpreadRadius>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\Fire01</Model>
+        </Display>
+    </Effect>
+    <Effect id="FXFireMedium">
+        <Logic classname="EGL::CEffectFireProps">
+
+            <SoundID>Buildings\amb_fire_med</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>true</SoundLooped>
+
+            <Class>EGL::CEffectFire</Class>
+            <SpreadTime>300</SpreadTime>
+            <SpreadDelay>300</SpreadDelay>
+            <SpreadRadius>12500</SpreadRadius>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\XF_HouseFireMedium</Model>
+        </Display>
+    </Effect>
+    <Effect id="FXFireSmall">
+        <Logic classname="EGL::CEffectFireProps">
+
+            <SoundID>Buildings\amb_fire_small</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>true</SoundLooped>
+
+            <Class>EGL::CEffectFire</Class>
+            <SpreadTime>300</SpreadTime>
+            <SpreadDelay>300</SpreadDelay>
+            <SpreadRadius>12500</SpreadRadius>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\XF_HouseFireSmall</Model>
+        </Display>
+    </Effect>
+    <Effect id="FXFireLo">
+        <Logic classname="EGL::CEffectFireProps">
+
+            <SoundID>Buildings\amb_fire_big</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>true</SoundLooped>
+
+            <Class>EGL::CEffectFire</Class>
+            <SpreadTime>300</SpreadTime>
+            <SpreadDelay>300</SpreadDelay>
+            <SpreadRadius>12500</SpreadRadius>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\XF_HouseFireLo</Model>
+        </Display>
+    </Effect>
+    <Effect id="E_SickCow">
+        <Logic classname="EGL::CEffectProps">
+
+            <SoundID>animals\cow_disease</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>true</SoundLooped>
+
+            <Repeatable>true</Repeatable>
+            <RepeatMin>7</RepeatMin>
+            <RepeatMax>10</RepeatMax>
+
+            <Class>EGL::CEffect</Class>
+            <Duration>0</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_SickCow</Model>
+        </Display>
+    </Effect>
+    <Effect id="E_SickSheep">
+        <Logic classname="EGL::CEffectProps">
+
+            <SoundID>animals\sheep_disease</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>true</SoundLooped>
+
+            <Repeatable>true</Repeatable>
+            <RepeatMin>7</RepeatMin>
+            <RepeatMax>10</RepeatMax>
+
+            <Class>EGL::CEffect</Class>
+            <Duration>0</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_SickCow</Model>
+        </Display>
+    </Effect>
+
+    <Effect id="FXCrushBuildingFloor">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>5</Duration>
+
+            <SoundID>Buildings\amb_fire_dest_floor</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>false</SoundLooped>
+
+        </Logic>
+        <Display classname="ED::CHAnimEffectProps">
+            <Class>ED::CHAnimEffect</Class>
+            <Model>Effects\XF_ExplosionPilgrim</Model>
+            <Anim>XF_ExplosionPilgrim</Anim>
+        </Display>
+    </Effect>
+
+    <Effect id="FXFireworks01">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>20</Duration>
+
+            <SoundID>Misc\amb_loop_fireworks</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>true</SoundLooped>
+
+        </Logic>
+        <Display classname="ED::CHAnimEffectProps">
+            <Class>ED::CHAnimEffect</Class>
+            <Model>Effects\E_Fireworks01</Model>
+            <Anim>Effects\E_Fireworks01</Anim>
+        </Display>
+    </Effect>
+
+    <Effect id="FXFireworks02">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>5</Duration>
+
+            <SoundID>Misc\amb_loop_fireworks</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>false</SoundLooped>
+
+        </Logic>
+        <Display classname="ED::CHAnimEffectProps">
+            <Class>ED::CHAnimEffect</Class>
+            <Model>Effects\E_Fireworks01</Model>
+            <Anim>Effects\E_Fireworks01</Anim>
+        </Display>
+    </Effect>
+
+    <Effect id="FXLightning">
+        <Logic classname="EGL::CEffectLightningProps">
+
+            <SoundID>Misc\amb_thunder</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>false</SoundLooped>
+
+            <Class>EGL::CEffectLightning</Class>
+            <DestructionDelay>5</DestructionDelay>
+            <Duration>7</Duration>
+            <SpawnRadius>500</SpawnRadius>
+        </Logic>
+        <Display classname="ED::CEffectProps">
+            <Class>ED::CDisplayEffectLightning</Class>
+            <Textures>
+                <Texture>Effects/Lightning_A1</Texture>
+                <Texture>Effects/Lightning_A2</Texture>
+                <Texture>Effects/Lightning_B1</Texture>
+                <Texture>Effects/Lightning_B2</Texture>
+                <Texture>Effects/Lightning_C1</Texture>
+                <Texture>Effects/Lightning_C2</Texture>
+            </Textures>
+        </Display>
+    </Effect>
+
+    <Effect id="FXWallCollapseFence">
+        <Logic classname="EGL::CEffectProps">
+
+            <SoundID>Buildings\building_teardown_fence</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>false</SoundLooped>
+
+            <Class>EGL::CEffect</Class>
+            <Duration>5.0</Duration>
+        </Logic>
+        <Display classname="ED::CHAnimEffectProps">
+            <Class>ED::CHAnimEffect</Class>
+            <Model>Effects\XF_ExplosionPilgrim</Model>
+            <Anim>XF_ExplosionPilgrim</Anim>
+        </Display>
+    </Effect>
+
+    <Effect id="FXWallCollapseWood">
+        <Logic classname="EGL::CEffectProps">
+
+            <SoundID>Buildings\building_teardown_palisade</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>false</SoundLooped>
+
+            <Class>EGL::CEffect</Class>
+            <Duration>5.0</Duration>
+        </Logic>
+        <Display classname="ED::CHAnimEffectProps">
+            <Class>ED::CHAnimEffect</Class>
+            <Model>Effects\XF_ExplosionPilgrim</Model>
+            <Anim>XF_ExplosionPilgrim</Anim>
+        </Display>
+    </Effect>
+    <Effect id="E_Improvement">
+        <Logic classname="EGL::CEffectProps">
+
+            <SoundID>Buildings\building_wealth</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>false</SoundLooped>
+
+            <Class>EGL::CEffect</Class>
+            <Duration>4.7</Duration>
+            <!-- 4.25 -->
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_Improvement</Model>
+        </Display>
+    </Effect>
+
+    <Effect id="Seagull01">
+        <Logic classname="EGL::CEffectProps">
+
+            <SoundID>animals\amb_coast_seagulls</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <Repeatable>true</Repeatable>
+            <RepeatMin>5</RepeatMin>
+            <RepeatMax>10</RepeatMax>
+
+            <Class>EGL::CEffect</Class>
+            <Duration>0</Duration>
+            <!-- 4.25 -->
+        </Logic>
+        <Display classname="ED::CHAnimEffectProps">
+            <Class>ED::CHAnimEffect</Class>
+            <Model>Effects\FX_Seagull</Model>
+            <Anim>FX_Seagull</Anim>
+        </Display>
+    </Effect>
+    <Effect id="Seagull02">
+        <Logic classname="EGL::CEffectProps">
+
+            <SoundID>amb_coast_seagulls</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <Repeatable>true</Repeatable>
+            <RepeatMin>5</RepeatMin>
+            <RepeatMax>10</RepeatMax>
+
+            <Class>EGL::CEffect</Class>
+            <Duration>0</Duration>
+            <!-- 4.25 -->
+        </Logic>
+        <Display classname="ED::CHAnimEffectProps">
+            <Class>ED::CHAnimEffect</Class>
+            <Model>Effects\FX_Seagull</Model>
+            <Anim>FX_Seagull02</Anim>
+        </Display>
+    </Effect>
+    <Effect id="Seagull03">
+        <Logic classname="EGL::CEffectProps">
+
+            <SoundID>amb_coast_seagulls</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <Repeatable>true</Repeatable>
+            <RepeatMin>5</RepeatMin>
+            <RepeatMax>10</RepeatMax>
+
+            <Class>EGL::CEffect</Class>
+            <Duration>0</Duration>
+            <!-- 4.25 -->
+        </Logic>
+        <Display classname="ED::CHAnimEffectProps">
+            <Class>ED::CHAnimEffect</Class>
+            <Model>Effects\FX_Seagull</Model>
+            <Anim>FX_Seagull03</Anim>
+        </Display>
+    </Effect>
+
+    <Effect id="FX_FreeBees">
+        <Logic classname="EGL::CSwarmEffectProps">
+            <SoundID>Buildings\building_beehive</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>true</SoundLooped>
+            <Class>EGL::CBeeSwarmEffect</Class>
+            <Duration>0</Duration>
+            <Radius>5000.0f</Radius>
+            <TargetSwitchInterval>2</TargetSwitchInterval>
+            <NumberOfTargets>24</NumberOfTargets>
+            <SwarmSpeedInMeterPerSecond>20</SwarmSpeedInMeterPerSecond>
+            <SwarmSpeedModifier>3.5</SwarmSpeedModifier>
+            <TargetTypes>
+                <TargetType>P_ME_Flowers01</TargetType>
+                <TargetType>P_ME_Flowers02</TargetType>
+                <TargetType>P_ME_Flowers03</TargetType>
+                <TargetType>P_ME_Flowers04</TargetType>
+                <TargetType>P_ME_Flowers05</TargetType>
+                <TargetType>P_ME_Flowers06</TargetType>
+                <TargetType>P_SE_Flowers01</TargetType>
+                <TargetType>P_SE_Flowers02</TargetType>
+                <TargetType>P_SE_Flowers03</TargetType>
+                <TargetType>P_SE_Flowers04</TargetType>
+                <TargetType>P_SE_Flowers05</TargetType>
+                <TargetType>P_SE_Flowers06</TargetType>
+                <TargetType>P_SE_Flowers07</TargetType>
+                <TargetType>P_SE_Flowers08</TargetType>
+                <TargetType>D_NE_Bush01</TargetType>
+                <TargetType>D_NE_Bush02</TargetType>
+                <TargetType>D_NE_Bush03</TargetType>
+                <TargetType>D_NE_Bush04</TargetType>
+                <TargetType>D_NE_Bush05</TargetType>
+                <TargetType>D_NE_Bush06</TargetType>
+                <TargetType>D_NE_Bush07</TargetType>
+                <TargetType>D_NE_Bush08</TargetType>
+                <TargetType>D_NE_Bush09</TargetType>
+                <TargetType>D_NE_Bush10</TargetType>
+                <TargetType>D_NE_Bush11</TargetType>
+                <TargetType>D_NE_Bush12</TargetType>
+                <TargetType>P_NA_Cactus01</TargetType>
+                <TargetType>P_NA_Cactus02</TargetType>
+                <TargetType>P_NA_Cactus03</TargetType>
+                <TargetType>P_NA_Cactus04</TargetType>
+                <TargetType>P_NA_Cactus05</TargetType>
+                <TargetType>P_NA_Cactus06</TargetType>
+            </TargetTypes>
+        </Logic>
+        <Display classname="ED::CSwarmEffectProps">
+            <Class>ED::CSwarmEffect</Class>
+            <TextureName>A_Bee</TextureName>
+            <SwarmHeightOffset>40.0</SwarmHeightOffset>
+            <NumberOfAgents>25</NumberOfAgents>
+            <SwarmRadius>100.0</SwarmRadius>
+            <AgentSize>7.0</AgentSize>
+            <AgentSizeBias>20.0</AgentSizeBias>
+            <!-- In percent -->
+            <AgentLifespan>200.0</AgentLifespan>
+            <AgentLifespanBias>5.0</AgentLifespanBias>
+            <AgentMaxSpeed>500.0</AgentMaxSpeed>
+            <AgentTurnSpeed>4.0</AgentTurnSpeed>
+            <TexX0>0.0</TexX0>
+            <TexX1>1.0</TexX1>
+        </Display>
+    </Effect>
+
+    <Effect id="FX_Bees">
+        <Logic classname="EGL::CSwarmEffectProps">
+
+            <SoundID>Buildings\building_beehive</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>true</SoundLooped>
+
+            <Class>EGL::CBeeSwarmEffect</Class>
+            <Duration>0</Duration>
+            <Radius>1000.0f</Radius>
+            <TargetSwitchInterval>2</TargetSwitchInterval>
+            <NumberOfTargets>3</NumberOfTargets>
+            <SwarmSpeedInMeterPerSecond>20</SwarmSpeedInMeterPerSecond>
+            <SwarmSpeedModifier>3.5</SwarmSpeedModifier>
+            <TargetTypes>
+                <TargetType>B_Beehive</TargetType>
+                <!--<TargetType>U_Beekeeper</TargetType>-->
+            </TargetTypes>
+        </Logic>
+        <Display classname="ED::CSwarmEffectProps">
+            <Class>ED::CSwarmEffect</Class>
+            <TextureName>A_Bee</TextureName>
+            <SwarmHeightOffset>40.0</SwarmHeightOffset>
+            <NumberOfAgents>100</NumberOfAgents>
+            <SwarmRadius>100.0</SwarmRadius>
+            <AgentSize>7.0</AgentSize>
+            <AgentSizeBias>20.0</AgentSizeBias>
+            <!-- In percent -->
+            <AgentLifespan>200.0</AgentLifespan>
+            <AgentLifespanBias>5.0</AgentLifespanBias>
+            <AgentMaxSpeed>500.0</AgentMaxSpeed>
+            <AgentTurnSpeed>4.0</AgentTurnSpeed>
+            <TexX0>0.0</TexX0>
+            <TexX1>1.0</TexX1>
+        </Display>
+    </Effect>
+
+    <Effect id="FX_Flys">
+        <Logic classname="EGL::CSwarmEffectProps">
+
+            <SoundID>Buildings\building_dirty</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>true</SoundLooped>
+
+            <Class>EGL::CBeeSwarmEffect</Class>
+            <Duration>0</Duration>
+            <Radius>1000.0f</Radius>
+            <TargetSwitchInterval>3</TargetSwitchInterval>
+            <NumberOfTargets>1</NumberOfTargets>
+            <SwarmSpeedInMeterPerSecond>20</SwarmSpeedInMeterPerSecond>
+            <SwarmSpeedModifier>3.5</SwarmSpeedModifier>
+            <TargetTypes>
+            </TargetTypes>
+        </Logic>
+        <Display classname="ED::CSwarmEffectProps">
+            <Class>ED::CSwarmEffect</Class>
+            <TextureName>A_Insect</TextureName>
+            <SwarmHeightOffset>40.0</SwarmHeightOffset>
+            <NumberOfAgents>100</NumberOfAgents>
+            <SwarmRadius>500.0</SwarmRadius>
+            <AgentSize>7.0</AgentSize>
+            <AgentSizeBias>20.0</AgentSizeBias>
+            <!-- In percent -->
+            <AgentLifespan>200.0</AgentLifespan>
+            <AgentLifespanBias>5.0</AgentLifespanBias>
+            <AgentMaxSpeed>500.0</AgentMaxSpeed>
+            <AgentTurnSpeed>4.0</AgentTurnSpeed>
+            <TexX0>0.0</TexX0>
+            <TexX1>1.0</TexX1>
+        </Display>
+    </Effect>
+
+    <Effect id="FX_Flys02">
+        <Logic classname="EGL::CSwarmEffectProps">
+
+            <SoundID>Buildings\building_dirty</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>true</SoundLooped>
+
+            <Class>EGL::CBeeSwarmEffect</Class>
+            <Duration>0</Duration>
+            <Radius>1000.0f</Radius>
+            <TargetSwitchInterval>3</TargetSwitchInterval>
+            <NumberOfTargets>1</NumberOfTargets>
+            <SwarmSpeedInMeterPerSecond>20</SwarmSpeedInMeterPerSecond>
+            <SwarmSpeedModifier>3.5</SwarmSpeedModifier>
+            <TargetTypes>
+            </TargetTypes>
+        </Logic>
+        <Display classname="ED::CSwarmEffectProps">
+            <Class>ED::CSwarmEffect</Class>
+            <TextureName>A_Insect</TextureName>
+            <SwarmHeightOffset>40.0</SwarmHeightOffset>
+            <NumberOfAgents>100</NumberOfAgents>
+            <SwarmRadius>500.0</SwarmRadius>
+            <AgentSize>7.0</AgentSize>
+            <AgentSizeBias>20.0</AgentSizeBias>
+            <!-- In percent -->
+            <AgentLifespan>200.0</AgentLifespan>
+            <AgentLifespanBias>5.0</AgentLifespanBias>
+            <AgentMaxSpeed>500.0</AgentMaxSpeed>
+            <AgentTurnSpeed>4.0</AgentTurnSpeed>
+            <TexX0>0.0</TexX0>
+            <TexX1>1.0</TexX1>
+        </Display>
+    </Effect>
+    <Effect id="FX_Flys03">
+        <Logic classname="EGL::CSwarmEffectProps">
+
+            <SoundID>Buildings\building_dirty</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>true</SoundLooped>
+
+            <Class>EGL::CBeeSwarmEffect</Class>
+            <Duration>0</Duration>
+            <Radius>1000.0f</Radius>
+            <TargetSwitchInterval>2</TargetSwitchInterval>
+            <NumberOfTargets>3</NumberOfTargets>
+            <SwarmSpeedInMeterPerSecond>20</SwarmSpeedInMeterPerSecond>
+            <SwarmSpeedModifier>3.5</SwarmSpeedModifier>
+            <TargetTypes>
+                <!--<TargetType>U_Beekeeper</TargetType>-->
+            </TargetTypes>
+        </Logic>
+        <Display classname="ED::CSwarmEffectProps">
+            <Class>ED::CSwarmEffect</Class>
+            <TextureName>A_Insect</TextureName>
+            <SwarmHeightOffset>40.0</SwarmHeightOffset>
+            <NumberOfAgents>15</NumberOfAgents>
+            <SwarmRadius>100.0</SwarmRadius>
+            <AgentSize>5.0</AgentSize>
+            <AgentSizeBias>20.0</AgentSizeBias>
+            <!-- In percent -->
+            <AgentLifespan>200.0</AgentLifespan>
+            <AgentLifespanBias>5.0</AgentLifespanBias>
+            <AgentMaxSpeed>500.0</AgentMaxSpeed>
+            <AgentTurnSpeed>4.0</AgentTurnSpeed>
+            <TexX0>0.0</TexX0>
+            <TexX1>1.0</TexX1>
+        </Display>
+    </Effect>
+
+     <Effect id="FX_Mosquitos">
+        <Logic classname="EGL::CSwarmEffectProps">
+
+            <SoundID>Buildings\building_dirty</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>true</SoundLooped>
+
+            <Class>EGL::CBeeSwarmEffect</Class>
+            <Duration>0</Duration>
+            <Radius>3000.0f</Radius>
+            <TargetSwitchInterval>10</TargetSwitchInterval>
+            <NumberOfTargets>5</NumberOfTargets>
+            <SwarmSpeedInMeterPerSecond>1</SwarmSpeedInMeterPerSecond>
+            <SwarmSpeedModifier>2.5</SwarmSpeedModifier>
+            <TargetTypes>
+                <TargetType>P_NE_Reed01</TargetType>
+                <TargetType>P_NE_Reed02</TargetType>
+                <TargetType>P_NE_WaterLily01</TargetType>
+                <TargetType>P_NE_WaterLily02</TargetType>
+                <TargetType>P_NE_WaterLily03</TargetType>
+                <TargetType>P_ME_Reed01</TargetType>
+                <TargetType>P_ME_Reed02</TargetType>
+                <TargetType>P_ME_WaterLily01</TargetType>
+                <TargetType>P_ME_WaterLily02</TargetType>
+                <TargetType>P_ME_WaterLily03</TargetType>
+                <TargetType>P_ME_WaterLily04</TargetType>
+                <TargetType>P_NA_Reed01</TargetType>
+                <TargetType>P_NA_Reed02</TargetType>
+                <TargetType>P_NA_WaterLily01</TargetType>
+                <TargetType>P_NA_WaterLily02</TargetType>
+                <TargetType>P_SE_WaterLily01</TargetType>
+                <TargetType>P_SE_WaterLily02</TargetType>
+                <TargetType>P_SE_WaterLily03</TargetType>
+                <TargetType>P_SE_WaterLily04</TargetType>
+            </TargetTypes>
+        </Logic>
+        <Display classname="ED::CSwarmEffectProps">
+            <Class>ED::CSwarmEffect</Class>
+            <TextureName>A_Insect</TextureName>
+            <SwarmHeightOffset>55.0</SwarmHeightOffset>
+            <NumberOfAgents>25</NumberOfAgents>
+            <SwarmRadius>50.0</SwarmRadius>
+            <AgentSize>5.0</AgentSize>
+            <AgentSizeBias>20.0</AgentSizeBias>
+            <!-- In percent -->
+            <AgentLifespan>200.0</AgentLifespan>
+            <AgentLifespanBias>5.0</AgentLifespanBias>
+            <AgentMaxSpeed>200.0</AgentMaxSpeed>
+            <AgentTurnSpeed>5.0</AgentTurnSpeed>
+            <TexX0>0.0</TexX0>
+            <TexX1>1.0</TexX1>
+        </Display>
+    </Effect>
+
+    <Effect id="FX_Grasshopper">
+        <Logic classname="EGL::CSwarmEffectProps">
+
+            <SoundID>animals\plague_locusts</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>true</SoundLooped>
+
+            <Class>EGL::CBeeSwarmEffect</Class>
+            <Duration>0</Duration>
+            <Radius>1000.0f</Radius>
+            <TargetSwitchInterval>3</TargetSwitchInterval>
+            <NumberOfTargets>1</NumberOfTargets>
+            <SwarmSpeedInMeterPerSecond>20</SwarmSpeedInMeterPerSecond>
+            <SwarmSpeedModifier>3.5</SwarmSpeedModifier>
+            <TargetTypes>
+            </TargetTypes>
+        </Logic>
+        <Display classname="ED::CSwarmEffectProps">
+            <Class>ED::CSwarmEffect</Class>
+            <TextureName>A_Grasshopper</TextureName>
+            <SwarmHeightOffset>35.0</SwarmHeightOffset>
+            <NumberOfAgents>200</NumberOfAgents>
+            <SwarmRadius>700.0</SwarmRadius>
+            <AgentSize>9.0</AgentSize>
+            <AgentSizeBias>20.0</AgentSizeBias>
+            <!-- In percent -->
+            <AgentLifespan>200.0</AgentLifespan>
+            <AgentLifespanBias>5.0</AgentLifespanBias>
+            <AgentMaxSpeed>1000.0</AgentMaxSpeed>
+            <AgentTurnSpeed>12.0</AgentTurnSpeed>
+            <TexX0>0.0</TexX0>
+            <TexX1>1.0</TexX1>
+        </Display>
+    </Effect>
+    <Effect id="FX_Grasshopper2">
+        <Logic classname="EGL::CSwarmEffectProps">
+
+            <SoundID>animals\plague_locusts</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>true</SoundLooped>
+
+            <Class>EGL::CBeeSwarmEffect</Class>
+            <Duration>0</Duration>
+            <Radius>1000.0f</Radius>
+            <TargetSwitchInterval>3</TargetSwitchInterval>
+            <NumberOfTargets>1</NumberOfTargets>
+            <SwarmSpeedInMeterPerSecond>20</SwarmSpeedInMeterPerSecond>
+            <SwarmSpeedModifier>3.5</SwarmSpeedModifier>
+            <TargetTypes>
+            </TargetTypes>
+        </Logic>
+        <Display classname="ED::CSwarmEffectProps">
+            <Class>ED::CSwarmEffect</Class>
+            <TextureName>A_Grasshopper02</TextureName>
+            <SwarmHeightOffset>40.0</SwarmHeightOffset>
+            <NumberOfAgents>200</NumberOfAgents>
+            <SwarmRadius>500.0</SwarmRadius>
+            <AgentSize>9.0</AgentSize>
+            <AgentSizeBias>20.0</AgentSizeBias>
+            <!-- In percent -->
+            <AgentLifespan>200.0</AgentLifespan>
+            <AgentLifespanBias>5.0</AgentLifespanBias>
+            <AgentMaxSpeed>1200.0</AgentMaxSpeed>
+            <AgentTurnSpeed>8.0</AgentTurnSpeed>
+            <TexX0>0.0</TexX0>
+            <TexX1>1.0</TexX1>
+        </Display>
+    </Effect>
+    <Effect id="FX_Grasshopper3">
+        <Logic classname="EGL::CEffectProps">
+
+            <SoundID>animals\plague_locusts</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>true</SoundLooped>
+
+            <Class>EGL::CEffect</Class>
+            <Duration>0</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_Grasshopper03</Model>
+        </Display>
+    </Effect>
+
+    <Effect id="FXFirebreath">
+        <Logic classname="EGL::CEffectProps">
+
+            <Class>EGL::CEffect</Class>
+            <Duration>0.833333</Duration>
+
+            <SoundID>Misc\fire_spitter</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>false</SoundLooped>
+        </Logic>
+
+        <Display classname="ED::CHAnimEffectProps">
+            <Class>ED::CHAnimEffect</Class>
+            <Model>Effects\E_Firebreath</Model>
+            <Anim>Effects\E_Firebreath</Anim>
+        </Display>
+    </Effect>
+
+    <Effect id="E_Rubble">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>15</Duration>
+
+            <SoundID>Buildings\amb_fire_dest_floor</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>false</SoundLooped>
+
+        </Logic>
+        <Display classname="ED::CHAnimEffectProps">
+            <Class>ED::CHAnimEffect</Class>
+            <Model>Effects\E_Rubble</Model>
+            <Anim>E_Rubble</Anim>
+        </Display>
+    </Effect>
+
+    <Effect id="E_C_PourWater_Container">
+        <Logic classname="EGL::CSeasonalEffectProxyProps">
+            <Class>EGL::CSeasonalEffectProxy</Class>
+
+            <SoundID>units\settler_pourwater</SoundID>
+            <SoundVolume>100</SoundVolume>
+            <SoundLooped>false</SoundLooped>
+
+            <Effects>
+                <Default>E_C_PourWater</Default>
+                <Rain></Rain>
+                <Snow></Snow>
+            </Effects>
+        </Logic>
+    </Effect>
+
+    <Effect id="E_HealingFX">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>0</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_HealingFX</Model>
+        </Display>
+    </Effect>
+
+    <Effect id="E_Dummy00">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>0</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_HealingFX</Model>
+        </Display>
+    </Effect>
+
+    <Effect id="E_Dummy01">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>0</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_HealingFX</Model>
+        </Display>
+    </Effect>
+
+    <Effect id="E_Dummy02">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>0</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_HealingFX</Model>
+        </Display>
+    </Effect>
+
+    <Effect id="E_Dummy03">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>0</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_HealingFX</Model>
+        </Display>
+    </Effect>
+
+    <Effect id="E_Dummy04">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>0</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_HealingFX</Model>
+        </Display>
+    </Effect>
+
+</Effects>
+</root>

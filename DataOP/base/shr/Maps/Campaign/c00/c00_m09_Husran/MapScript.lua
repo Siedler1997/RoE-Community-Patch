@@ -1,4 +1,4 @@
-Script.Load("Script\\Global\\CampaignHotfix.lua")
+--Script.Load("Script\\Global\\CampaignHotfix.lua")
 
 CurrentMapIsCampaignMap = true
 wellList = { "well1", "well2", "well3", "well4" }
@@ -11,7 +11,7 @@ function Mission_InitPlayers()
     HusranPlayerID = SetupPlayer(2, "H_Knight_Sabatt", "Husran", "RedPrinceColor")
     AlHadrPlayerID = SetupPlayer(3, "H_NPC_Villager01_NA", "Village1", "VillageColor1")
     AlAssirPlayerID = SetupPlayer(4, "H_NPC_Villager01_NA", "Village2", "VillageColor2")
-    CloisterPlayerID = SetupPlayer(5, "H_NPC_Monk_NA", "Cloister", "VillageColor3")
+    CloisterPlayerID = SetupPlayer(5, "H_NPC_Monk_NA", "Cloister", "VillageColor4")
     
 
     -- set some resources for player 1
@@ -48,7 +48,7 @@ function Mission_InitPlayers()
     
     SetKnightTitle(HusranPlayerID, KnightTitles.Duke)
 	
-	GameCallback_CreateKnightByTypeOrIndex(Entities.U_KnightSabatta, HusranPlayerID)
+	--GameCallback_CreateKnightByTypeOrIndex(Entities.U_KnightSabatta, HusranPlayerID)
 end
 ----------------------------------------------------------------------------------------------------------------------
 function Mission_SetStartingMonth()
@@ -94,7 +94,7 @@ function Mission_FirstMapAction()
     Mission_SetupDiplomacyStates()
     Mission_SetupQuests()
 
-    AIPlayer = AIPlayer:new(HusranPlayerID, AIProfile_Skirmish, Entities.U_KnightSabatta)
+    AIPlayer = AIPlayer:new(HusranPlayerID, AIProfile_Sabatta, Entities.U_KnightSabatta)
 
 end
 
@@ -119,7 +119,7 @@ function OnHusranDiscovered()
     TriggerHusranAttacks()
 
 
-    Quests[amountOfHappyID]:Success()
+    --Quests[amountOfHappyID]:Success()
 end
 
 function OnLostStoreHouse()
@@ -439,6 +439,7 @@ end
 
 function TriggerHusranAttacks()
     if not HusranAttacksTriggered then
+        AIPlayer = AIPlayer:new(HusranPlayerID, AIProfile_Sabatta, Entities.U_KnightSabatta)
         HusranAttacksTriggered = true
     end
 end
@@ -495,41 +496,49 @@ end
 function OnAmountOfHappySettlersOver()
     Quests[discoverAlHadrID]:Interrupt()
     Quests[discoverAlAssirID]:Interrupt()
+
+    --AIProfile_Sabatta(AIPlayer)
 end
 
-HusranSwordmen = 2
-HusranBowmen = 2
+HusranSwordmen = 1
+HusranBowmen = 0
 HusranAttackCount = 0
-function AIProfile_Sabbatha(self)
-    
+function AIProfile_Sabatta(self)
+    AIProfile_Skirmish(self)
     if HusranAttacksTriggered then
         HusranAttackCounter = HusranAttackCounter - 1
+
+        -- Gives Sabatta some iron because she has no iron mine
+        if GetPlayerResources(Goods.G_Iron, HusranPlayerID) < 10 then
+            AddResourcesToPlayer(Goods.G_Iron, 10, HusranPlayerID)
+        end
+        --Logic.DEBUG_AddNote("Iron = " .. GetPlayerResources(Goods.G_Iron, HusranPlayerID))
     end
 
     --
     -- check if we have to attack something 
     --
     if HusranAttacksTriggered and HusranAttackCounter == 0 then
-        HusranAttackCounter = 5 * 60
+        HusranAttackCounter = 10 * 60
     
         if (self.m_Behavior["AttackCity"] == nil) then
-
+            --[[
             local rams = 0
             local x, y = Logic.GetEntityPosition(Logic.GetStoreHouse(1))
             local p1Sector = Logic.DEBUG_GetSectorAtPosition(x, y)
             if p1Sector ~= 0 then
                 rams = 1
             end
-
+            --]]
             self.m_Behavior["AttackCity"] = self:GenerateBehaviour(AIBehavior_AttackCity);
 
             self.m_Behavior["AttackCity"].m_TargetID = Logic.GetStoreHouse(1)
             self.m_Behavior["AttackCity"].CB_AttackFinished = OnHusranAttackFinished
-            self.m_Behavior["AttackCity"].m_MinNumberOfSwordsmen = 0
+            self.m_Behavior["AttackCity"].m_MinNumberOfSwordsmen = HusranSwordmen
             self.m_Behavior["AttackCity"].m_MaxNumberOfSwordsmen = HusranSwordmen
             self.m_Behavior["AttackCity"].m_FleeNumberOfSwordsmen = 0
             
-            self.m_Behavior["AttackCity"].m_MinNumberOfBowmen = 0
+            self.m_Behavior["AttackCity"].m_MinNumberOfBowmen = HusranBowmen
             self.m_Behavior["AttackCity"].m_MaxNumberOfBowmen = HusranBowmen
             self.m_Behavior["AttackCity"].m_FleeNumberOfBowmen = 0
             
@@ -537,8 +546,7 @@ function AIProfile_Sabbatha(self)
             self.m_Behavior["AttackCity"].m_MaxNumberOfCatapults = 0
             self.m_Behavior["AttackCity"].m_FleeNumberOfCatapults = 0    
 
-            self.m_Behavior["AttackCity"].m_MinNumberOfRams= rams
-            self.m_Behavior["AttackCity"].m_MaxNumberOfRams = rams
+            self.m_Behavior["AttackCity"].m_MinNumberOfRams= 1
             self.m_Behavior["AttackCity"].m_FleeNumberOfRams = 0  
 
             self.m_Behavior["AttackCity"].m_MinNumberOfTowers= 0
@@ -553,7 +561,8 @@ function AIProfile_Sabbatha(self)
             
             if HusranAttackCount == 1 then
                 --AnSu:This message has the wrong voice... Can we find a generic one for sabatt????
-                SendVoiceMessage(HusranPlayerID, "NPCTalk_SabattasFirstAttack")
+                --CP: Done
+                SendVoiceMessage(HusranPlayerID, "NPCTalk_SabattaWins")
             end
 
             if HusranBowmen < 5 then

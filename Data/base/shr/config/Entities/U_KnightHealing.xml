@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+    <Display classname="ED::CDisplaySettlerWithSlaveProps">
+        <Class>ED::CDisplaySettlerWithSlave</Class>
+        <DrawPlayerColor>True</DrawPlayerColor>
+        <Model>Units\U_Horse_Healing</Model>
+        <Model2>Units\U_Knight_Healing</Model2>
+        <SlaveAlwaysVisible>true</SlaveAlwaysVisible>
+    </Display>
+    <Logic classname="EGL::CSettlerProps">
+        <Class>EGL::CSettler</Class>
+        <AccessCategory>AccessCategoryAttackableSettler</AccessCategory>
+        <PlayerSectorType>PlayerSectorTypeMilitary</PlayerSectorType>
+        <MilMetaFormationMemberType>MilMetaFormationMemberTypeMelee</MilMetaFormationMemberType>
+        <MaxHealth>1100</MaxHealth>     <!-- 1000 -->
+        <HealingSeconds>10</HealingSeconds>
+        <HealingPoints>50</HealingPoints>
+
+        <NeedsPlayer>true</NeedsPlayer>
+        <ForceNoPlayer>false</ForceNoPlayer>
+        <ApproachR>200</ApproachR>
+
+        <EntityCategories>
+            <EntityCategory>Military</EntityCategory>
+            <EntityCategory>Hero</EntityCategory>
+            <EntityCategory>GC_Medicine_Supplier</EntityCategory>
+        </EntityCategories>
+        <AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
+        <RepairFactor>0.3</RepairFactor>
+        <Exploration>30</Exploration>
+        <IdleTaskList>TL_MILITARY_IDLE</IdleTaskList>
+        <CanDrown>true</CanDrown>
+        <IsSelectable>true</IsSelectable>
+        <DoesntAlert>
+            <EntityType>BeeHive</EntityType>
+        </DoesntAlert>
+        <Familiar>
+            <With>SheepPasture</With>
+            <With>CattlePasture</With>
+        </Familiar>
+        <SoundImpactType>Metal</SoundImpactType>
+        <SoundProjectileType>Mace</SoundProjectileType>
+    </Logic>
+    <Behaviors>
+
+        <Behavior>
+            <Logic classname="EGL::CAnimationBehaviorExProps">
+                <Class>EGL::CBehaviorAnimationEx</Class>
+
+                <DefaultAnimation>U_Horse_Healing_Idle</DefaultAnimation>
+                <AnimSet>SET_KNIGHT_HEALING</AnimSet>
+            </Logic>
+            <Display classname="ED::CAnimationBehaviorSlaveProps">
+                <Class>ED::CAnimationBehaviorSlave</Class>
+                <SlaveAnimation>
+                    <Mapping>
+                        <Master>U_Horse_Healing_Ride</Master>
+                        <Slave>U_Knight_Healing_Ride</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>U_Horse_Healing_Stand</Master>
+                        <Slave>U_Knight_Healing_Stand</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>U_Horse_Healing_Idle1</Master>
+                        <Slave>U_Knight_Healing_Idle1</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>U_Horse_Healing_Idle2</Master>
+                        <Slave>U_Knight_Healing_Idle2</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>U_Horse_Healing_Idle3</Master>
+                        <Slave>U_Knight_Healing_Idle3</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>U_Horse_Healing_Idle4</Master>
+                        <Slave>U_Knight_Healing_Idle4</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>U_Horse_Healing_Fight</Master>
+                        <Slave>U_Knight_Healing_Fight</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>U_Horse_Healing_Fight2</Master>
+                        <Slave>U_Knight_Healing_Fight2</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>U_Horse_Healing_Fight3</Master>
+                        <Slave>U_Knight_Healing_Fight3</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>U_Horse_Healing_Heal</Master>
+                        <Slave>U_Knight_Healing_Heal</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>U_Horse_Healing_Turn</Master>
+                        <Slave>U_Knight_Healing_Turn</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>U_Horse_Healing_BattleIdle</Master>
+                        <Slave>U_Knight_Healing_BattleIdle</Slave>
+                    </Mapping>
+                </SlaveAnimation>
+            </Display>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CMilitaryMovementBehaviorProps">
+                <Class>EGL::CHeroMovementBehavior</Class>
+                <StraightenPath>true</StraightenPath>
+                <EvasionPriority>140</EvasionPriority>
+                <Speed>800</Speed>
+                <SmoothingRadius>1000</SmoothingRadius>
+                <RotationSpeed>400</RotationSpeed>
+                <MoveTaskList>TL_KNIGHT_WALK</MoveTaskList>
+                <MoveIdleAnim>U_Horse_Healing_Idle</MoveIdleAnim>
+            </Logic>
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CMovementBehaviorSlaveStatic</Class>
+            </Display>
+        </Behavior>
+
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorPropsDying">
+                <Class>EGL::CBehaviorDying</Class>
+                <DyingTaskList>TL_DIE_KNIGHT</DyingTaskList>
+            </Logic>
+        </Behavior>
+
+
+  	<!-- Universal Ability: Collection after sermon increases a small percentage -->
+       <Behavior>
+            <Logic classname="EGL::CHeroBehaviorProps">
+                <Class>EGL::CHeroBehavior</Class>
+	       <SermonParameter>1.4</SermonParameter>   <!-- 1.2 -->
+	   </Logic>
+        </Behavior>
+
+	<!-- Personal Ability: heals ill settlers in range -->
+        <Behavior>
+            <Logic classname="EGL::CKnightGoodAbilityProps">
+                <Class>EGL::CKnightHealAbility</Class>
+                <RechargeTimeSeconds>150</RechargeTimeSeconds>
+                <TaskList>TL_KNIGHT_ABILITY_HEAL</TaskList>
+                <Animation>U_Horse_Healing_Heal</Animation>
+                <AnimationGoodAmount>30</AnimationGoodAmount>
+                <AnimationGood>G_MedicinLadyHealing</AnimationGood>
+                <Effect>E_HealingFX</Effect>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CNeedProviderBehaviorProps">
+                <Class>EGL::CNeedProviderMedicine</Class>
+                <FulfillTL>TL_WORKER_MEDICIN_AT_LADYHEALING</FulfillTL>
+            </Logic>
+        </Behavior>
+        <Behavior>
+            <Logic classname="EGL::CStockBehaviorProps">
+                <Class>EGL::CStockOutBehavior</Class>
+                <MaxAmountOnStock>30</MaxAmountOnStock>
+				<AddsToGlobalPlayerStock>true</AddsToGlobalPlayerStock>
+                <GoodTypes>
+                    <GoodType>G_MedicinLadyHealing</GoodType>
+                </GoodTypes>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CGuardableBehaviorProps">
+                <Class>EGL::CGuardableBehavior</Class>
+                <GuardRadius>300</GuardRadius>
+                <GuardApproachPos><X>-300</X><Y>0</Y></GuardApproachPos>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CFightBehaviorProps">
+                <Class>EGL::CFightBehavior</Class>
+                <DefendTL>TL_KNIGHT_DEFEND</DefendTL>
+                <MoveTaskList>TL_KNIGHT_WALK</MoveTaskList>
+                <DefendRange>2700</DefendRange>
+                <AttackMoveRange>2700</AttackMoveRange>
+                <IdleWhileDefended>false</IdleWhileDefended>
+                <TargetCategoryList>
+
+                    <TargetCategory>
+                        <EntityCategoryList>
+                            <EntityCategory>Hero</EntityCategory>
+                            <EntityCategory>Leader</EntityCategory>
+                            <EntityCategory>AttackableSettler</EntityCategory>
+                            <EntityCategory>Thief</EntityCategory>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                        </EntityCategoryList>
+                        <AttackModeList>
+                            <AttackMode>
+                                <BattleTL>TL_BATTLE_MELEE</BattleTL>
+                                <!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
+                                <ApplyDamageModifiers>true</ApplyDamageModifiers>
+
+                                <MinRange>0</MinRange>
+                                <MaxRange>100</MaxRange>
+                                <MaxHeightDeltaToTarget>100</MaxHeightDeltaToTarget>
+                                <CanAttackOverWalls>false</CanAttackOverWalls>
+                                <CooldownThousandths>1500</CooldownThousandths>
+                                <Damage>
+                                    <DiceCount>0</DiceCount>
+                                    <FaceCount>0</FaceCount>
+                                    <BaseValue>25</BaseValue>
+                                </Damage>
+                            </AttackMode>
+                        </AttackModeList>
+                    </TargetCategory>
+
+                    <!-- This category is only used to disable auto-attack for carnivores  -->
+                    <TargetCategory>
+                        <DisableAutoAttack>true</DisableAutoAttack>
+                     <!-- don't remove  the empty tags, otherwise the data isn't shown correctly in the XML balancer! -->
+                        <EntityCategoryList>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                            <EntityCategory>AttackableAnimal</EntityCategory>
+                        </EntityCategoryList>
+                        <AttackModeList>
+                            <AttackMode>
+                                <BattleTL>TL_BATTLE_MELEE</BattleTL>
+                                <!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
+                                <ApplyDamageModifiers>true</ApplyDamageModifiers>
+
+                                <MinRange>0</MinRange>
+                                <MaxRange>150</MaxRange>
+                                <MaxHeightDeltaToTarget>100</MaxHeightDeltaToTarget>
+                                <CanAttackOverWalls>false</CanAttackOverWalls>
+                                <CooldownThousandths>1500</CooldownThousandths>
+                                <Damage>
+                                    <DiceCount>0</DiceCount>
+                                    <FaceCount>0</FaceCount>
+                                    <BaseValue>25</BaseValue>
+                                </Damage>
+                            </AttackMode>
+                        </AttackModeList>
+                    </TargetCategory>
+
+                </TargetCategoryList>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::CParticleEffectAttachmentBehavior</Class>
+            </Logic>
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CParticleEffectAttachmentBehavior</Class>
+            </Display>
+        </Behavior>
+
+    </Behaviors>
+    <MapEditor>
+        <TreePosition>Units\Knights</TreePosition>
+        <ShowInTree>true</ShowInTree>
+        <Clime>Generic</Clime>
+        <Scalable>false</Scalable>
+    </MapEditor>
+
+
+</root>
