@@ -181,8 +181,8 @@
         The tax amount is subtracted from the buildings "gold earnings"
         "1.0" subtracts all gold from the buildings earnings
     -->
-    <MaxNumberOfTaxCollectorsPerTaxCollection>10</MaxNumberOfTaxCollectorsPerTaxCollection>
-    <TaxCollectionFrequencyInMinutes>1.5</TaxCollectionFrequencyInMinutes>
+    <MaxNumberOfTaxCollectorsPerTaxCollection>8</MaxNumberOfTaxCollectorsPerTaxCollection>
+    <TaxCollectionFrequencyInMinutes>1.25</TaxCollectionFrequencyInMinutes>
     <NumberOfBuildingsPerTaxCollector>1</NumberOfBuildingsPerTaxCollector>
     <MaxBuildingEarnings>200</MaxBuildingEarnings>
     <DefaultTaxLevel>1</DefaultTaxLevel>

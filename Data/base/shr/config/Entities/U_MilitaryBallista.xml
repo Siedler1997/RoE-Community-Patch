@@ -31,7 +31,7 @@
         <Cost>
 	   <GoodAmount>
                 <GoodType>G_Gold</GoodType>
-                <Amount>200</Amount>
+                <Amount>300</Amount>
             </GoodAmount>
 	   <GoodAmount>
                 <GoodType>G_Iron</GoodType>
@@ -107,7 +107,7 @@
                                 <BattleTL>TL_BATTLE_CATAPULT</BattleTL>
                                 <!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
                                 <ApplyDamageModifiers>false</ApplyDamageModifiers>
-                                <MinRange>1000</MinRange>
+                                <MinRange>1200</MinRange>
                                 <!-- The max range is chosen to allow defending against catapults. It must be adapted if the segment max length is changed -->
                                 <MaxRange>2675</MaxRange>
                                 <ProjectileEffect>E_Catapult_Fire_Wall</ProjectileEffect>

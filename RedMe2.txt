@@ -1,4 +1,5 @@
 ToDos:
+- Reiche Stadtgebäude rebalancen
 - Außenposten/Aussichtsturm/Wachturm
 	- ME-Aussichtsturm: Schwarze Seite
 	- Aussichtstürme: Alarm?

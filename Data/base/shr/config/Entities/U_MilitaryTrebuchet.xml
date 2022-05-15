@@ -148,7 +148,7 @@
 								<Damage>
 									<DiceCount>0</DiceCount>
 									<FaceCount>0</FaceCount>
-									<BaseValue>150</BaseValue>
+									<BaseValue>100</BaseValue>
 								</Damage>
 								<BuildingFireSize>20</BuildingFireSize>
 								<DamageRadiusList>
@@ -199,7 +199,7 @@
 								<Damage>
 									<DiceCount>0</DiceCount>
 									<FaceCount>0</FaceCount>
-									<BaseValue>150</BaseValue>
+									<BaseValue>100</BaseValue>
 								</Damage>
 								<BuildingFireSize>20</BuildingFireSize>
 								<DamageRadiusList>
@@ -250,7 +250,7 @@
 								<Damage>
 									<DiceCount>0</DiceCount>
 									<FaceCount>0</FaceCount>
-									<BaseValue>150</BaseValue>
+									<BaseValue>100</BaseValue>
 								</Damage>
 								<BuildingFireSize>20</BuildingFireSize>
 								<DamageRadiusList>
