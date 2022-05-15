@@ -13,8 +13,6 @@ Mit folgenden Schritten lässt sich der Patch installieren:
 
 ## Features
 Folgende Änderungen wurden vorgenommen:
-- Allgemein
-	- Marcus wird nicht mehr als generischer Ritter gesetzt
 - Ritter
 	- Passive Fähigkeiten modifiziert
 		- Allandra: Bonusgold für Predigten erhöht (20% -> 40%)
@@ -46,7 +44,7 @@ Folgende Änderungen wurden vorgenommen:
 			- Bonus: Rekrutierung von Signatureinheiten in Kasernen
 		- Praphat
 			- Aktive Fähigkeit: Versorgung von Einwohnern mit Kleidung
-			- Passive Fähigkeit: Billigerer ausbau von Gebäuden
+			- Passive Fähigkeit: Billigerer Ausbau von Gebäuden
 		- Kastellane können theoretisch als Ritter genutzt werden
 		- Varianz an Ladebildschirm-Bildern
 - Militär
@@ -113,6 +111,7 @@ Folgende Änderungen wurden vorgenommen:
 			- Wenn dadurch keine ausgewählt ist wird Mapvorschau geleert und Starten-Button deaktiviert
 		- Im AddOn auch alle Hauptspiel-Karten auswählbar
 - Diverses
+	- Marcus wird nicht mehr als generischer Ritter gesetzt
 	- Ungenutztes Audio-Feedback von Rittern, Soldaten und Dieben wird nun verwendet
 	- Eisbären nutzen nun ihre richtige Sterbeanimation
 	- Maximale bzw. Standard-Kapazität von Stein- und Eisenminen etwas erhöht (250 -> 300)
