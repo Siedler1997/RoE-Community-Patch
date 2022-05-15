@@ -569,6 +569,8 @@ function GUI_FeedbackSpeech.Speak(_SpeechTextKey, _EntityInfo, _CausingPlayerID,
             SetPlayerIcon(_CausingPlayerID, IconWidget, ColorWidget)
 
             XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/MapFrame/FeedbackSpeechCausingPlayer", 1)
+        else
+            XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/MapFrame/FeedbackSpeechCausingPlayer", 0)
         end
     end
 end

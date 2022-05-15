@@ -1,7 +1,4 @@
 ToDos:
-- Wappen in Promotion-Window verschoben
-- Audio-Feedback für Ochsen
-- Nachrichten: Player resetten
 - Außenposten/Aussichtsturm/Wachturm
 	- ME-Aussichtsturm: Schwarze Seite
 	- Aussichtstürme: Alarm?
@@ -9,7 +6,6 @@ ToDos:
 		- Wachturm: QuestInformation.Tower (mit Katapult), ...?
 		- Aussichtsturm: PB_Tower1, Alarm, ...?
 	- Generischer Außenposten, inkl. Katapult und Soldatenbemannung
-	- Normale Außenposten: Turm-Katapult auf Spitze bei höchster Ausbaustufe?
 - Spielerfarben
 	- Minimap-Territorium-Farben weichen nach Neustart z.T. ab 
 		- z.B. Dorf-Dunkelgrün -> Stadt-Grün
@@ -81,6 +77,7 @@ ToDos:
 		- Audio-Feedback (TTS)
 	- Bei Basegame-Rittern AddOn-Comments ergänzen (TTS)
 	- RP: Seuchen-Fähigkeit umsetzen, falls GUI.SendScriptCommand irgendwann wieder laufen sollte
+- Audio-Feedback für Ochsen
 - Rebalancing
 	- Neue (sinnvollere) Aufstiegsbedingungen
 		- ggf. mit Indikator, um nur für neue Maps und angepasste zu gelten
