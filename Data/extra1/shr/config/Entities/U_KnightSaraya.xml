@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<root>
     <Display classname="ED::CDisplaySettlerWithSlaveProps">
         <Class>ED::CDisplaySettlerWithSlave</Class>
         <DrawPlayerColor>True</DrawPlayerColor>
-        <Model>Units\U_Horse_RedPrince</Model>
-        <Model2>Units\U_Knight_RedPrince</Model2>
+        <Model>Units\U_Horse_Saraya</Model>
+        <Model2>Units\U_Knight_Saraya</Model2>
         <SlaveAlwaysVisible>true</SlaveAlwaysVisible>
     </Display>
     <Logic classname="EGL::CSettlerProps">
@@ -21,7 +22,7 @@
 
         <EntityCategories>
             <EntityCategory>Military</EntityCategory>
-            <EntityCategory>Hero</EntityCategory>
+            <EntityCategory>Hero</EntityCategory>            
         </EntityCategories>
         <AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
         <RepairFactor>0.3</RepairFactor>
@@ -41,59 +42,64 @@
     </Logic>
     <Behaviors>
 
+
         <Behavior>
             <Logic classname="EGL::CAnimationBehaviorExProps">
                 <Class>EGL::CBehaviorAnimationEx</Class>
 
-                <DefaultAnimation>U_Horse_RedPrince_Stand</DefaultAnimation>
-                <AnimSet>SET_KNIGHT_REDPRINCE</AnimSet>
+                <DefaultAnimation>U_Horse_Healing_Idle</DefaultAnimation>
+                <AnimSet>SET_KNIGHT_HEALING</AnimSet>
             </Logic>
             <Display classname="ED::CAnimationBehaviorSlaveProps">
                 <Class>ED::CAnimationBehaviorSlave</Class>
                 <SlaveAnimation>
                     <Mapping>
-                        <Master>U_Horse_RedPrince_Ride</Master>
-                        <Slave>U_Knight_RedPrince_Ride</Slave>
+                        <Master>U_Horse_Healing_Ride</Master>
+                        <Slave>U_Knight_Healing_Ride</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_RedPrince_Stand</Master>
-                        <Slave>U_Knight_RedPrince_Stand</Slave>
+                        <Master>U_Horse_Healing_Stand</Master>
+                        <Slave>U_Knight_Healing_Stand</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_RedPrince_Idle1</Master>
-                        <Slave>U_Knight_RedPrince_Idle1</Slave>
+                        <Master>U_Horse_Healing_Idle1</Master>
+                        <Slave>U_Knight_Healing_Idle1</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_RedPrince_Idle2</Master>
-                        <Slave>U_Knight_RedPrince_Idle2</Slave>
+                        <Master>U_Horse_Healing_Idle2</Master>
+                        <Slave>U_Knight_Healing_Idle2</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_RedPrince_Idle3</Master>
-                        <Slave>U_Knight_RedPrince_Idle3</Slave>
+                        <Master>U_Horse_Healing_Idle3</Master>
+                        <Slave>U_Knight_Healing_Idle3</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_RedPrince_Idle4</Master>
-                        <Slave>U_Knight_RedPrince_Idle4</Slave>
+                        <Master>U_Horse_Healing_Idle4</Master>
+                        <Slave>U_Knight_Healing_Idle4</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_RedPrince_Fight</Master>
-                        <Slave>U_Knight_RedPrince_Fight</Slave>
+                        <Master>U_Horse_Healing_Fight</Master>
+                        <Slave>U_Knight_Healing_Fight</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_RedPrince_Fight2</Master>
-                        <Slave>U_Knight_RedPrince_Fight2</Slave>
+                        <Master>U_Horse_Healing_Fight2</Master>
+                        <Slave>U_Knight_Healing_Fight2</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_RedPrince_Fight3</Master>
-                        <Slave>U_Knight_RedPrince_Fight3</Slave>
+                        <Master>U_Horse_Healing_Fight3</Master>
+                        <Slave>U_Knight_Healing_Fight3</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_RedPrince_Turn</Master>
-                        <Slave>U_Knight_RedPrince_Turn</Slave>
+                        <Master>U_Horse_Healing_Heal</Master>
+                        <Slave>U_Knight_Healing_Heal</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_RedPrince_BattleIdle</Master>
-                        <Slave>U_Knight_RedPrince_BattleIdle</Slave>
+                        <Master>U_Horse_Healing_Turn</Master>
+                        <Slave>U_Knight_Healing_Turn</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>U_Horse_Healing_BattleIdle</Master>
+                        <Slave>U_Knight_Healing_BattleIdle</Slave>
                     </Mapping>
                 </SlaveAnimation>
             </Display>
@@ -108,7 +114,7 @@
                 <SmoothingRadius>1000</SmoothingRadius>
                 <RotationSpeed>400</RotationSpeed>
                 <MoveTaskList>TL_KNIGHT_WALK</MoveTaskList>
-                <MoveIdleAnim>U_Horse_RedPrince_Stand</MoveIdleAnim>
+                <MoveIdleAnim>U_Horse_Healing_Idle</MoveIdleAnim>
             </Logic>
             <Display classname="ED::CBehaviorProps">
                 <Class>ED::CMovementBehaviorSlaveStatic</Class>
@@ -122,41 +128,28 @@
                 <DyingTaskList>TL_DIE_KNIGHT</DyingTaskList>
             </Logic>
         </Behavior>
-		
-		<Behavior>
-			<Logic classname="EGL::CHeroBehaviorProps">
-				<Class>EGL::CHeroBehavior</Class>
-				<TaxParameter>1.2</TaxParameter>
-			</Logic>
-		</Behavior>
 
-		<!--
-		<Behavior>
-			<Logic classname="EGL::CKnightMiscAbilityProps">
-				<Class>EGL::CKnightMiscAbility</Class>
-				<Effect>E_HealingFX</Effect>
-				<SearchRadius>1000</SearchRadius>
-				<Ability>AbilityConvert</Ability>
-				<RechargeTimeSeconds>500</RechargeTimeSeconds>
-				<TaskList>TL_KNIGHT_ABILITY_CONVERT</TaskList>
-			</Logic>
-		</Behavior>
-        -->
-		<Behavior>
-			<Logic classname="EGL::CKnightMiscAbilityProps">
-				<Class>EGL::CKnightMiscAbility</Class>
-				<Ability>AbilityTribute</Ability>
-				<RechargeTimeSeconds>150</RechargeTimeSeconds>
-				<SearchRadius>2000</SearchRadius>
-				<TaskList>TL_KNIGHT_ABILITY_TRIBUTE</TaskList>
-				<Effect>E_Knight_Saraya_Aura</Effect>
-				<SarayaTributeGoodAmountMin>9</SarayaTributeGoodAmountMin>
-				<SarayaTributeGoodAmountMax>18</SarayaTributeGoodAmountMax>
-				<SarayaTributeGoldAmountMin>50</SarayaTributeGoldAmountMin>
-				<SarayaTributeGoldAmountMax>200</SarayaTributeGoldAmountMax>
-			</Logic>
-		</Behavior>
-
+        <Behavior>
+            <Logic classname="EGL::CHeroBehaviorProps" version="2">
+                <Class>EGL::CHeroBehavior</Class>
+                <TradePostParameter>.25</TradePostParameter>
+            </Logic>
+        </Behavior>
+        <Behavior>
+            <Logic classname="EGL::CKnightMiscAbilityProps">
+                <Class>EGL::CKnightMiscAbility</Class>
+                <Ability>AbilityTribute</Ability>
+                <RechargeTimeSeconds>150</RechargeTimeSeconds>
+                <SearchRadius>2000</SearchRadius>
+                <TaskList>TL_KNIGHT_ABILITY_TRIBUTE</TaskList>
+                <Effect>E_Knight_Saraya_Aura</Effect>
+                <SarayaTributeGoodAmountMin>9</SarayaTributeGoodAmountMin>
+                <SarayaTributeGoodAmountMax>18</SarayaTributeGoodAmountMax>
+                <SarayaTributeGoldAmountMin>50</SarayaTributeGoldAmountMin>
+                <SarayaTributeGoldAmountMax>200</SarayaTributeGoldAmountMax>
+            </Logic>
+        </Behavior>
+        
         <Behavior>
             <Logic classname="EGL::CGuardableBehaviorProps">
                 <Class>EGL::CGuardableBehavior</Class>
@@ -180,8 +173,8 @@
                             <EntityCategory>Hero</EntityCategory>
                             <EntityCategory>Leader</EntityCategory>
                             <EntityCategory>AttackableSettler</EntityCategory>
-                            <EntityCategory>Thief</EntityCategory>
-                            <EntityCategory/>
+                             <EntityCategory>Thief</EntityCategory>
+                           <EntityCategory/>
                             <EntityCategory/>
                         </EntityCategoryList>
                         <AttackModeList>

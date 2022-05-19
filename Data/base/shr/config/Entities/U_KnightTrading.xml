@@ -2,8 +2,8 @@
     <Display classname="ED::CDisplaySettlerWithSlaveProps">
         <Class>ED::CDisplaySettlerWithSlave</Class>
         <DrawPlayerColor>True</DrawPlayerColor>
-        <Model>Units\U_Horse_RedPrince</Model>
-        <Model2>Units\U_Knight_RedPrince</Model2>
+        <Model>Units\U_Donkey_Trading</Model>
+        <Model2>Units\U_Knight_Trading</Model2>
         <SlaveAlwaysVisible>true</SlaveAlwaysVisible>
     </Display>
     <Logic classname="EGL::CSettlerProps">
@@ -22,6 +22,7 @@
         <EntityCategories>
             <EntityCategory>Military</EntityCategory>
             <EntityCategory>Hero</EntityCategory>
+            <EntityCategory>GC_Food_Supplier</EntityCategory>
         </EntityCategories>
         <AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
         <RepairFactor>0.3</RepairFactor>
@@ -37,7 +38,7 @@
             <With>CattlePasture</With>
         </Familiar>
         <SoundImpactType>Leather</SoundImpactType>
-        <SoundProjectileType>Sword</SoundProjectileType>
+        <SoundProjectileType>MorningStar</SoundProjectileType>
     </Logic>
     <Behaviors>
 
@@ -45,55 +46,71 @@
             <Logic classname="EGL::CAnimationBehaviorExProps">
                 <Class>EGL::CBehaviorAnimationEx</Class>
 
-                <DefaultAnimation>U_Horse_RedPrince_Stand</DefaultAnimation>
-                <AnimSet>SET_KNIGHT_REDPRINCE</AnimSet>
+                <DefaultAnimation>U_Donkey_Trading_Stand</DefaultAnimation>
+                <AnimSet>SET_KNIGHT_TRADING</AnimSet>
             </Logic>
             <Display classname="ED::CAnimationBehaviorSlaveProps">
                 <Class>ED::CAnimationBehaviorSlave</Class>
                 <SlaveAnimation>
                     <Mapping>
-                        <Master>U_Horse_RedPrince_Ride</Master>
-                        <Slave>U_Knight_RedPrince_Ride</Slave>
+                        <Master>U_Donkey_Trading_Ride</Master>
+                        <Slave>U_Knight_Trading_Ride</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_RedPrince_Stand</Master>
-                        <Slave>U_Knight_RedPrince_Stand</Slave>
+                        <Master>U_Donkey_Trading_Sing</Master>
+                        <Slave>U_Knight_Trading_Sing</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_RedPrince_Idle1</Master>
-                        <Slave>U_Knight_RedPrince_Idle1</Slave>
+                        <Master>U_Donkey_Trading_Stand</Master>
+                        <Slave>U_Knight_Trading_Stand</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_RedPrince_Idle2</Master>
-                        <Slave>U_Knight_RedPrince_Idle2</Slave>
+                        <Master>U_Donkey_Trading_Fight</Master>
+                        <Slave>U_Knight_Trading_Fight</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_RedPrince_Idle3</Master>
-                        <Slave>U_Knight_RedPrince_Idle3</Slave>
+                        <Master>U_Donkey_Trading_Fight2</Master>
+                        <Slave>U_Knight_Trading_Fight2</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_RedPrince_Idle4</Master>
-                        <Slave>U_Knight_RedPrince_Idle4</Slave>
+                        <Master>U_Donkey_Trading_Fight3</Master>
+                        <Slave>U_Knight_Trading_Fight3</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_RedPrince_Fight</Master>
-                        <Slave>U_Knight_RedPrince_Fight</Slave>
+                        <Master>U_Donkey_Trading_Die</Master>
+                        <Slave>U_Knight_Trading_Die</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_RedPrince_Fight2</Master>
-                        <Slave>U_Knight_RedPrince_Fight2</Slave>
+                        <Master>U_Donkey_Trading_Bow</Master>
+                        <Slave>U_Knight_Trading_Bow</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_RedPrince_Fight3</Master>
-                        <Slave>U_Knight_RedPrince_Fight3</Slave>
+                        <Master>U_Donkey_Trading_Present</Master>
+                        <Slave>U_Knight_Trading_Present</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_RedPrince_Turn</Master>
-                        <Slave>U_Knight_RedPrince_Turn</Slave>
+                        <Master>U_Donkey_Trading_Idle1</Master>
+                        <Slave>U_Knight_Trading_Idle1</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_RedPrince_BattleIdle</Master>
-                        <Slave>U_Knight_RedPrince_BattleIdle</Slave>
+                        <Master>U_Donkey_Trading_Idle2</Master>
+                        <Slave>U_Knight_Trading_Idle2</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>U_Donkey_Trading_Idle3</Master>
+                        <Slave>U_Knight_Trading_Idle3</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>U_Donkey_Trading_Idle4</Master>
+                        <Slave>U_Knight_Trading_Idle4</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>U_Donkey_Trading_BattleIdle</Master>
+                        <Slave>U_Knight_Trading_BattleIdle</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>U_Donkey_Trading_Turn</Master>
+                        <Slave>U_Knight_Trading_Turn</Slave>
                     </Mapping>
                 </SlaveAnimation>
             </Display>
@@ -108,7 +125,7 @@
                 <SmoothingRadius>1000</SmoothingRadius>
                 <RotationSpeed>400</RotationSpeed>
                 <MoveTaskList>TL_KNIGHT_WALK</MoveTaskList>
-                <MoveIdleAnim>U_Horse_RedPrince_Stand</MoveIdleAnim>
+                <MoveIdleAnim>U_Donkey_Trading_Stand</MoveIdleAnim>
             </Logic>
             <Display classname="ED::CBehaviorProps">
                 <Class>ED::CMovementBehaviorSlaveStatic</Class>
@@ -122,40 +139,45 @@
                 <DyingTaskList>TL_DIE_KNIGHT</DyingTaskList>
             </Logic>
         </Behavior>
-		
-		<Behavior>
-			<Logic classname="EGL::CHeroBehaviorProps">
-				<Class>EGL::CHeroBehavior</Class>
-				<TaxParameter>1.2</TaxParameter>
-			</Logic>
-		</Behavior>
 
-		<!--
-		<Behavior>
-			<Logic classname="EGL::CKnightMiscAbilityProps">
-				<Class>EGL::CKnightMiscAbility</Class>
-				<Effect>E_HealingFX</Effect>
-				<SearchRadius>1000</SearchRadius>
-				<Ability>AbilityConvert</Ability>
-				<RechargeTimeSeconds>500</RechargeTimeSeconds>
-				<TaskList>TL_KNIGHT_ABILITY_CONVERT</TaskList>
-			</Logic>
-		</Behavior>
-        -->
-		<Behavior>
-			<Logic classname="EGL::CKnightMiscAbilityProps">
-				<Class>EGL::CKnightMiscAbility</Class>
-				<Ability>AbilityTribute</Ability>
-				<RechargeTimeSeconds>150</RechargeTimeSeconds>
-				<SearchRadius>2000</SearchRadius>
-				<TaskList>TL_KNIGHT_ABILITY_TRIBUTE</TaskList>
-				<Effect>E_Knight_Saraya_Aura</Effect>
-				<SarayaTributeGoodAmountMin>9</SarayaTributeGoodAmountMin>
-				<SarayaTributeGoodAmountMax>18</SarayaTributeGoodAmountMax>
-				<SarayaTributeGoldAmountMin>50</SarayaTributeGoldAmountMin>
-				<SarayaTributeGoldAmountMax>200</SarayaTributeGoldAmountMax>
-			</Logic>
-		</Behavior>
+  	<!-- Universal Ability: Increase the amount of gold earned by selling goods or resources. -->
+        <Behavior>
+            <Logic classname="EGL::CHeroBehaviorProps">
+                <Class>EGL::CHeroBehavior</Class>
+	       <TradeParameter>1.4</TradeParameter>
+	   </Logic>
+        </Behavior>
+
+	<!-- Personal Ability: supplies hungry settlers in range with food -->
+	<Behavior>
+            <Logic classname="EGL::CKnightGoodAbilityProps">
+                <Class>EGL::CKnightFoodAbility</Class>
+                <RechargeTimeSeconds>150</RechargeTimeSeconds>
+                <TaskList>TL_KNIGHT_ABILITY_FOOD</TaskList>
+                <Animation>U_Donkey_Trading_Sing</Animation>
+                <AnimationGoodAmount>30</AnimationGoodAmount>
+                <AnimationGood>G_FoodLordTrading</AnimationGood>
+	       <Effect>E_Knight_Trader_Aura</Effect>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CNeedProviderBehaviorProps">
+                <Class>EGL::CNeedProviderNutrition</Class>
+                <FulfillTL>TL_WORKER_FOOD_AT_TRADER</FulfillTL>
+            </Logic>
+        </Behavior>
+        <Behavior>
+            <Logic classname="EGL::CStockBehaviorProps">
+                <Class>EGL::CStockOutBehavior</Class>
+                <MaxAmountOnStock>30</MaxAmountOnStock>
+				<AddsToGlobalPlayerStock>true</AddsToGlobalPlayerStock>
+                <GoodTypes>
+                    <GoodType>G_FoodLordTrading</GoodType>
+                </GoodTypes>
+            </Logic>
+        </Behavior>
+
 
         <Behavior>
             <Logic classname="EGL::CGuardableBehaviorProps">
@@ -180,8 +202,8 @@
                             <EntityCategory>Hero</EntityCategory>
                             <EntityCategory>Leader</EntityCategory>
                             <EntityCategory>AttackableSettler</EntityCategory>
-                            <EntityCategory>Thief</EntityCategory>
-                            <EntityCategory/>
+                             <EntityCategory>Thief</EntityCategory>
+                           <EntityCategory/>
                             <EntityCategory/>
                         </EntityCategoryList>
                         <AttackModeList>

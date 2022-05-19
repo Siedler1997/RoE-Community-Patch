@@ -139,7 +139,7 @@
 
 								<AttackAnim>U_Donkey_Trading_Fight</AttackAnim>
 								<MinRange>1800</MinRange>
-								<MaxRange>3600</MaxRange>
+								<MaxRange>3200</MaxRange>
 								<ProjectileEffect>E_Trebuchet_Fire_Wall</ProjectileEffect>
 								<MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
 								<CanAttackOverWalls>true</CanAttackOverWalls>
@@ -190,7 +190,7 @@
 
 								<AttackAnim>U_Donkey_Trading_Fight</AttackAnim>
 								<MinRange>1800</MinRange>
-								<MaxRange>3600</MaxRange>
+								<MaxRange>3200</MaxRange>
 								<ProjectileEffect>E_Trebuchet_Fire_Palisade</ProjectileEffect>
 								<MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
 								<CanAttackOverWalls>true</CanAttackOverWalls>
@@ -241,7 +241,7 @@
 
 								<AttackAnim>U_Donkey_Trading_Fight</AttackAnim>
 								<MinRange>1800</MinRange>
-								<MaxRange>3600</MaxRange>
+								<MaxRange>3200</MaxRange>
 								<ProjectileEffect>E_Trebuchet_Fire</ProjectileEffect>
 								<MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
 								<CanAttackOverWalls>true</CanAttackOverWalls>

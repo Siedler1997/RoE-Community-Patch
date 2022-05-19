@@ -14,38 +14,48 @@ Mit folgenden Schritten lässt sich der Patch installieren:
 ## Features
 Folgende Änderungen wurden vorgenommen:
 - Ritter
-	- Passive Fähigkeiten modifiziert
-		- Allandra: Bonusgold für Predigten erhöht (20% -> 40%)
-	- Aktive Fähigkeiten modifiziert
-		- Hakims Konversion: Kann nicht benutzt werden, wenn Soldatenlimit erreicht
-	- Neue Bonus-Fähigkeiten für manche Ritter
-		- Leicht veränderte Statuswerte
-			- Marcus: Lebenspunkte leicht erhöht (1.000 -> 1.100)
-			- Allandra: Lebenspunkte leicht erhöht (1.000 -> 1.100)
-			- Thordal: Angriffskraft erhöht (25 -> 40)
-		- Thordal: Rekrutierung von Wikingern in Kasernen
-		- Kestral: Rekrutierung von Banditen in Kasernen (Art hängt von Klimazone ab)
-	- "Neue" Ritter
+	- "Alte" Ritter überarbeitet
+		- Allandra
+			- Passive Fähigkeiten: Bonusgold für Predigten erhöht (20% -> 40%)
+			- Bonus: Lebenspunkte leicht erhöht (1.000 -> 1.100)
+		- Elias
+			- Passive Fähigkeiten: Handelsbonus erhöht (20% -> 40%)
+		- Hakim
+			- Aktive Fähigkeit (Konversion)
+				- Cooldown leicht erhöht (7:30 Min. -> 8:00 Min.)
+				- Kann nicht benutzt werden, wenn Soldatenlimit schon erreicht
+		- Marcus
+			- Bonus: Lebenspunkte leicht erhöht (1.000 -> 1.100)
+		- Thordal
+			- Boni: Angriffskraft erhöht (25 -> 40) und Rekrutierung von Wikingern in Kasernen
+		- Kestral
+			- Bonus: Rekrutierung von Banditen in Kasernen (Art hängt von Klimazone ab)
+		- Saraya
+			- Aktive Fähigkeit: Mindest-Warenmenge erhöht (5 -> 9)
+			- Passive Fähigkeit: Handelsposten noch billiger (50% -> 25%)
+	- "Neue" Ritter implementiert
 		- Crimson Sabatt
-			- Aktive Fähigkeit: Konversion
-			- Passive Fähigkeit: Bessere Handelskonditionen
+			- Aktive Fähigkeit: Konversion (wie Hakim)
+			- Passive Fähigkeit: Bessere Handelskonditionen (wie Elias)
 			- Bonus: Rekrutierung von Signatureinheiten in Kasernen
 		- Der Rote Prinz
-			- Aktive Fähigkeit: Tribut
-			- Passive Fähigkeit: Höhere Steuern
+			- Aktive Fähigkeit: Tribut (im Hauptspiel nur Gold, im AddOn wie Saraya)
+			- Passive Fähigkeit: Höhere Steuern (wie Kestral)
 			- Bonus: Rekrutierung von Signatureinheiten in Kasernen
 			- Für Mapper: 
 				- Es gibt auskommentierte Codeschnippsel für eine "richtige" Seuchen-Fähigkeit
 				- Wird zurzeit nicht verwendet, da im Mehrspieler nicht nutzbar
 				- Wer sie nutzen will, kann sie womöglich reaktivieren
 		- Khana
-			- Aktive Fähigkeit: Versorgung von Sodaten mit Fackeln
-			- Passive Fähigkeit: Mehr Gold von Predigten (40%)
+			- Aktive Fähigkeit: Versorgung von Soldaten mit Fackeln (wie Marcus)
+			- Passive Fähigkeit: Mehr Gold von Predigten (wie Allandra)
 			- Bonus: Rekrutierung von Signatureinheiten in Kasernen
 		- Praphat
-			- Aktive Fähigkeit: Versorgung von Einwohnern mit Kleidung
-			- Passive Fähigkeit: Billigerer Ausbau von Gebäuden
-		- Kastellane können theoretisch als Ritter genutzt werden
+			- Aktive Fähigkeit: Versorgung von Einwohnern mit Kleidung (analog Elias/Thordal)
+			- Passive Fähigkeit: Billigerer Ausbau von Gebäuden (wie Hakim)
+		- Kastellane 
+			- Können theoretisch als Ritter genutzt werden
+			- Haben keine besonderen Fähigkeiten
 		- Varianz an Ladebildschirm-Bildern
 - Militär
 	- Banditen 
@@ -58,20 +68,20 @@ Folgende Änderungen wurden vorgenommen:
 		- Können in Kasernen wieder aufgefüllt werden
 		- Haben ein anderes Audio-Feedback 
 			- Zurzeit noch das von Banditen...
-		- RP-Einheiten habe eine eigene Button-Textur
+		- RP-Einheiten haben eine eigene Button-Textur
 		- Khana-Einheiten haben keine Overhead-Namen mehr
 	- "Neue" Einheiten
-		- Raubtieren als kontrollierbare Militäreinheiten verfügbar
+		- Raubtiere als kontrollierbare Militäreinheiten verfügbar
 			- Konkret: Bären (3 Arten), Löwen (2 Arten), Wölfe (4 Arten), Tiger
 		- Trebuchet
 			- Funktioniert ähnlich wie ein Katapult
-				- Höhere Maximalreichweite (3.600 > 2.400)
+				- Höhere Maximalreichweite (3.200 > 2.400)
 				- Höhere Mindestreichweite (1.800 > 1.000)
 				- Höherer Schaden (100 > 50)
 				- Geringere Feuerrate (7.5 Sek > 5 Sek)
 				- Braucht länger zum Auf- und Abbau (8.000 > 5.000)
 			- Kann sich in aufgebauter Form nicht fortbewegen
-			- Zurzeit noch nicht baubar
+			- Zurzeit noch nicht baubar, vllt. mit Titel "Erzherzog"?
 	- Rammen können keine Mauern mehr angreifen
 	- (Turm-)Katapulte und Trebuchets können Militäreinheiten aktiv angreifen
 	- Mauerkatapulte abgeschwächt
@@ -113,7 +123,7 @@ Folgende Änderungen wurden vorgenommen:
 - Diverses
 	- Marcus wird nicht mehr als generischer Ritter gesetzt
 	- Ungenutztes Audio-Feedback von Rittern, Soldaten und Dieben wird nun verwendet
-	- Eisbären nutzen nun ihre richtige Sterbeanimation
+	- Eisbären nutzen ihre richtige Sterbeanimation
 	- Maximale bzw. Standard-Kapazität von Stein- und Eisenminen etwas erhöht (250 -> 300)
 	- Geologeneinsätze kosten deutlich mehr Gold (250 -> 500)
 	- Steuern
@@ -130,8 +140,8 @@ Folgende Änderungen wurden vorgenommen:
 	- Profil-Menü
 		- Buttons haben nun alle einen Hover-Effekt
 		- Speichern der Profileinstellungen funktioniert nun zuverlässig
-	- Kampfmusik nun nach Klimazonen getrennt (als verschiedene Playlists)
-	- Unterschiedliche Festival-Musik je nachdem, ob der Anlass eine Heldenbeförderung oder normales Fest ist
+	- Kampfmusik nach Klimazonen getrennt (als verschiedene Playlists)
+	- Unterschiedliche Festival-Musik, je nachdem, ob der Anlass eine Heldenbeförderung oder ein normales Fest ist
 	- Niederlagen-Kamerarotation deutlich verlangsamt
 	- Sieg und Niederlage haben jeweils eine Art "Jingle"
 	- Spielerfarben auf der Minimap sind nun (meistens) korrekt
@@ -150,7 +160,6 @@ Folgende Änderungen wurden vorgenommen:
 
 
 ## (Mögliche) ToDos
-- Reiche Stadtgebäude rebalancen
 - Außenposten/Aussichtsturm/Wachturm
 	- ME-Aussichtsturm: Schwarze Seite
 	- Aussichtstürme: Alarm?
@@ -195,8 +204,6 @@ Folgende Änderungen wurden vorgenommen:
 	- Stimmen
 		- RedPrince-Units: Klaus Bauer
 	- Ko-fi für GameTTS (als Schankedön)
-- MP-Regeln
-	- Geologe deaktivieren oder teurer
 - Nachrichten-Stau
 - MP-Koop-Fixes
 - AddOn-Kampagne-Loadscreens: Richtige Spielerfarben (per Bildbearbeitung)
@@ -213,7 +220,8 @@ Folgende Änderungen wurden vorgenommen:
 - Verbesserte/Glaubwürdigere KI (in der Kampagne)
 	- Allgemein: Konsequentere Nutzung von RP-/Khana-Einheiten sowie ggf. Söldner
 	- Narfang: Sabatta aggressiv, wenn ein Außenposten erobert/zerstört wird
-	- M15: Sturm
+	- Husran: Eisenmine für Sabatta statt Eisen "frei Haus"
+	- M15:Vestholm: Sturm
 	- Idukun: Blizzard
 	- Speziell in den "Last-Stand"-Missionen
 	- Aktive KI-Ritter mit Fähigkeiten
@@ -235,6 +243,12 @@ Folgende Änderungen wurden vorgenommen:
 	- RP: Seuchen-Fähigkeit umsetzen, falls GUI.SendScriptCommand irgendwann wieder laufen sollte
 - Audio-Feedback für Ochsen
 - Rebalancing
+	- Mauern erst ab Landvogt/Baron?
+	- Mauerkatapulte erst ab Marquis?
+	- Max. Anzahl Wachtürme regulieren? -> z.B. 10
+	- Max. Anzahl Diebe regulieren? -> z.B. 10
+	- Schwertkämpfer ggü. Schützen buffen bzw. Schützen nerfen?
+	- Söldner mit etwas anderen Stats/Fähigkeiten
 	- Neue (sinnvollere) Aufstiegsbedingungen
 		- ggf. mit Indikator, um nur für neue Maps und angepasste zu gelten
 		- wegen zu hohem Aufwand (Kompatibiliät mit alten Maps) erstmal Low Priority
@@ -256,5 +270,6 @@ Folgende Änderungen wurden vorgenommen:
 - Auf 4k-Auflösung kann nicht mehr per BorderScroll nach rechts gecrolled werden
 - Biom-spezifisches Retexturing für Kerngebäude
 	- Das oder neue Modelle
-- RedMe auf Englisch
+- Cheats am Ende komplett deaktivieren
+- ReadMe auf Englisch
 - Als bba gepackte Version für das Original
