@@ -1188,6 +1188,7 @@ function GUI_BuildingButtons.BuyBattalionClicked(_IsSpecial)
     local ClimateZoneName = Framework.GetMapClimateZone(MapName, MapType, Campaign)
     local EntityType
 
+
     if BarrackEntityType == Entities.B_Barracks then
         if _IsSpecial == true then
             if KnightType == Entities.U_KnightSabatta or KnightType == Entities.U_KnightRedPrince then
