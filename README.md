@@ -19,6 +19,7 @@ Folgende Änderungen wurden vorgenommen:
 			- Passive Fähigkeiten: Bonusgold für Predigten erhöht (20% -> 40%)
 			- Bonus: Lebenspunkte leicht erhöht (1.000 -> 1.100)
 		- Elias
+			- Aktive Fähigkeit: Gewährt zusätzlich den "Vielfältige Nahrung"-Bonus
 			- Passive Fähigkeiten: Handelsbonus erhöht (20% -> 40%)
 		- Hakim
 			- Aktive Fähigkeit (Konversion)
@@ -27,6 +28,7 @@ Folgende Änderungen wurden vorgenommen:
 		- Marcus
 			- Bonus: Lebenspunkte leicht erhöht (1.000 -> 1.100)
 		- Thordal
+			- Aktive Fähigkeit: Gewährt zusätzlich den "Vielfältige Unterhaltung"-Bonus
 			- Boni: Angriffskraft erhöht (25 -> 40) und Rekrutierung von Wikingern in Kasernen
 		- Kestral
 			- Bonus: Rekrutierung von Banditen in Kasernen (Art hängt von Klimazone ab)
@@ -51,7 +53,7 @@ Folgende Änderungen wurden vorgenommen:
 			- Passive Fähigkeit: Mehr Gold von Predigten (wie Allandra)
 			- Bonus: Rekrutierung von Signatureinheiten in Kasernen
 		- Praphat
-			- Aktive Fähigkeit: Versorgung von Einwohnern mit Kleidung (analog Elias/Thordal)
+			- Aktive Fähigkeit: Versorgung von Einwohnern mit Kleidung und gewährt "Vielfältige Kleidung"-Bonus (analog Elias/Thordal)
 			- Passive Fähigkeit: Billigerer Ausbau von Gebäuden (wie Hakim)
 		- Kastellane 
 			- Können theoretisch als Ritter genutzt werden
