@@ -213,14 +213,14 @@ function DebugKeyBindings_Init()
 
     Input.KeyBindDown(Keys.ModifierControl + Keys.ModifierShift + Keys.F9,       "KeyBindings_ToggleDebugOutput()", 2, true)
 
-    Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad5, "KeyBindings_CreateBattalionOnMousePositionForActiveGUIPlayer(Entities.U_MilitarySword)", 2, true)
-    Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad4, "KeyBindings_CreateBattalionOnMousePositionForActiveGUIPlayer(Entities.U_MilitaryBow)", 2, true)
+    Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad5, "KeyBindings_CreateBattalionOnMousePositionForActiveGUIPlayer(Entities.U_MilitaryBandit_Melee_NE)", 2, true)
+    Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad4, "KeyBindings_CreateBattalionOnMousePositionForActiveGUIPlayer(Entities.U_MilitaryBandit_Ranged_NE)", 2, true)
     Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad6, "KeyBindings_CreateEntityAtMousePositionForActiveGUIPlayer(Entities.U_CatapultCart)", 2, true)
     Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad7, "KeyBindings_CreateEntityAtMousePositionForActiveGUIPlayer(Entities.U_BatteringRamCart)", 2, true)
     --Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad8, "KeyBindings_CreateEntityAtMousePositionForActiveGUIPlayer(Entities.U_SiegeTowerCart)", 2, true)
+    Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad8, "KeyBindings_ToggleRights()", 2, true)
     Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad9, "KeyBindings_CreateEntityAtMousePositionForActiveGUIPlayer(Entities.U_MilitaryTrebuchet)", 2, true)
     
-    Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad8, "KeyBindings_ToggleRights()", 2, true)
 
     -----------------------------------------------------------------------------------------------
     -- Camera debug

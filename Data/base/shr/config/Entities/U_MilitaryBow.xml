@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<root>
+<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+
     <Display classname="ED::CEntityProps">
         <Class>ED::CDisplaySettler</Class>
-        <Model>Units\Military\U_NPC_Bowman_AS</Model>
+        <Model>Units\Military\U_MilitaryBow</Model>
         <DisplayPlayerColor>True</DisplayPlayerColor>
+        <LodDistance>3000</LodDistance>
     </Display>
 
     <Logic classname="EGL::CSettlerProps">
@@ -24,14 +25,18 @@
         <IsSelectable>true</IsSelectable>
         <BlockRadius>60</BlockRadius>
 
-		<Cost>
-			<GoodAmount>
-				<!-- if the gold costs are changed, the refill costs have to be adjusted as well in "B_Barracks.xml"
-               Refilling should cost the same per unit than buying batallions!  -->
-				<GoodType>G_Gold</GoodType>
-				<Amount>15</Amount>
-			</GoodAmount>
-		</Cost>
+        <Cost>
+            <GoodAmount>
+                <!-- if the gold costs are changed, the refill costs have to be adjusted as well in "B_Barracks_Archers.xml"
+                Refilling should cost the same per unit than buying batallions! -->
+                <GoodType>G_Gold</GoodType>
+                <Amount>15</Amount>
+            </GoodAmount>
+            <GoodAmount>
+                <GoodType>G_Bow</GoodType>
+                <Amount>1</Amount>
+            </GoodAmount>
+        </Cost>
 
         <EntityCategories>
             <EntityCategory>Military</EntityCategory>
@@ -101,7 +106,7 @@
                 <StationaryDefendFormation>StationaryDefend</StationaryDefendFormation>
 
                 <AmmunitionType>G_TorchAmmunition</AmmunitionType>
-                <AmmunitionLimit>2</AmmunitionLimit>
+                <AmmunitionLimit>1</AmmunitionLimit>
 
                 <TargetCategoryList>
 
@@ -169,7 +174,6 @@
                     <!-- Torching buildings -->
                     <TargetCategory>
                         <DisableAutoAttack>true</DisableAutoAttack>
-                        <UsePlayerMorale>false</UsePlayerMorale>
 
                         <EntityCategoryList>
                             <EntityCategory/>
@@ -186,7 +190,7 @@
                                 <!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
                                 <ApplyDamageModifiers>false</ApplyDamageModifiers>
 
-                                <MinRange>0</MinRange>
+                               <MinRange>0</MinRange>
                                 <MaxRange>2400</MaxRange>
                                 <ProjectileEffect>FXFireArrow</ProjectileEffect>
                                 <MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
@@ -195,7 +199,7 @@
                                 <Damage>
                                     <DiceCount>0</DiceCount>
                                     <FaceCount>0</FaceCount>
-                                    <BaseValue>10</BaseValue>
+                                    <BaseValue>5</BaseValue>
                                 </Damage>
 
                                 <!-- Each thrown torch increases the buildings FireSize by this amount     -->
@@ -332,7 +336,7 @@
                 <Attachments>
                     <Attachment>
                         <Type>ATTACHMENT_LEADER_SOLDIER</Type>
-                        <Limit>3</Limit>
+                        <Limit>6</Limit>
                     </Attachment>
                 </Attachments>
             </Logic>
@@ -341,7 +345,7 @@
     </Behaviors>
 
     <MapEditor>
-        <TreePosition>Units\Military</TreePosition>
+        <TreePosition>Units\Military\Ranged Weapons</TreePosition>
         <ShowInTree>false</ShowInTree>
         <Clime>Generic</Clime>
         <Scalable>false</Scalable>

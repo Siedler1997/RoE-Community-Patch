@@ -117,7 +117,7 @@
                 <AttackFormation>DoubleRow</AttackFormation>
 
                 <AmmunitionType>G_TorchAmmunition</AmmunitionType>
-                <AmmunitionLimit>1</AmmunitionLimit>
+                <AmmunitionLimit>2</AmmunitionLimit>
 
                 <KidnapFatSpouseIdleTL>TL_KIDNAP_FAT_IDLE</KidnapFatSpouseIdleTL>
                 <KidnapFatSpouseMoveTL>TL_KIDNAP_FAT_MOVE</KidnapFatSpouseMoveTL>
@@ -209,7 +209,7 @@
                                 <Damage>
                                     <DiceCount>0</DiceCount>
                                     <FaceCount>0</FaceCount>
-                                    <BaseValue>5</BaseValue>
+                                    <BaseValue>10</BaseValue>
                                 </Damage>
                                 <BuildingFireSize>10</BuildingFireSize>
                                 <ConsumeAmmunition>true</ConsumeAmmunition>

@@ -61,6 +61,9 @@ Folgende Änderungen wurden vorgenommen:
 	- Banditen 
 		- Können in Kasernen wieder aufgefüllt werden
 		- Haben ein eigenes Audio-Feedback
+		- Können effektiver Gebäude anzünden
+			- Schaden pro Fackel verdoppelt (5 -> 10)
+			- Jeder Bandit trägt eine Fackel mehr (1 -> 2)
 		- Fixes
 			- Südeuropäische Banditen-Schwertkämpfer greifen nicht mehr automatisch Gebäude an
 			- Asiatische Banditen haben keine Overhead-Namen mehr

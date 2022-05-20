@@ -5,12 +5,10 @@
     "\\Data\\base",
     "\\Data\\base\\shr",
     "\\Data\\base\\shr\\config",
-    "\\Data\\base\\shr\\config\\Entities",
     "\\Data\\extra1",
     "\\Data\\extra1\\shr",
     "\\Data\\extra1\\shr\\config",
     "\\Data\\extra1\\shr\\config\\Entities"
   ],
-  "SelectedNode": "\\Data\\base\\shr\\config\\Entities\\U_KnightSabatta.xml",
   "PreviewInSolutionExplorer": false
 }
