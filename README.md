@@ -250,10 +250,8 @@ Folgende Änderungen wurden vorgenommen:
 	- RP: Seuchen-Fähigkeit umsetzen, falls GUI.SendScriptCommand irgendwann wieder laufen sollte
 - Audio-Feedback für Ochsen
 - Rebalancing
-	- Mauern erst ab Landvogt/Baron?
-	- Mauerkatapulte erst ab Marquis?
-	- Max. Anzahl Wachtürme regulieren? -> z.B. 10
-	- Max. Anzahl Diebe regulieren? -> z.B. 10
+	- Max. Anzahl Wachtürme regulieren? -> z.B. 12
+	- Max. Anzahl Diebe regulieren? -> z.B. 6
 	- Neue (sinnvollere) Aufstiegsbedingungen
 		- ggf. mit Indikator, um nur für neue Maps und angepasste zu gelten
 		- wegen zu hohem Aufwand (Kompatibiliät mit alten Maps) erstmal Low Priority

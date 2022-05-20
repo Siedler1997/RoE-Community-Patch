@@ -3,7 +3,10 @@
 --------------------------------------------------------------------------
 
 GUI_BuildingButtons = {}
-
+GUI_BuildingButtons.EntitiesWithLimit = {
+    [Entities.U_Thief]              = 6,
+    [Entities.U_MilitaryBallista]   = 12,
+}
 
 function GUI_BuildingButtons.BuildingButtonsPositionUpdater()
 
@@ -758,6 +761,11 @@ function GUI_BuildingButtons.UpgradeTurretClicked()
         Message(MessageText)
         return
     end
+    
+    if GUI_BuildingButtons.GetLimitReached(Entities.U_MilitaryBallista, Entities.U_MilitaryBallista_BuildingSite) then
+        Message(XGUIEng.GetStringTableText("Feedback_TextLines/TextLine_EntityLimitReached"))
+        return
+    end
 
     -- TODO: we assume that the building holds a single slot only
     if CanBuyBoolean == true then
@@ -775,6 +783,7 @@ function GUI_BuildingButtons.UpgradeTurretMouseOver()
     local CurrentWidgetID = XGUIEng.GetCurrentWidgetID()
     local EntityID = GUI.GetSelectedEntity()
     local WeaponTypeList = {Logic.GetWeaponTypeList(EntityID, 0)}
+    local EntityLimitString = GUI_BuildingButtons.GetLimitString(Entities.U_MilitaryBallista, Entities.U_MilitaryBallista_BuildingSite)
     local Costs = {Logic.GetEntityTypeFullCost(WeaponTypeList[1])}
 
     local TooltipTextKey
@@ -785,7 +794,7 @@ function GUI_BuildingButtons.UpgradeTurretMouseOver()
         Technology = Technologies.R_Ballista -- stonetrap unlocked with ballista
     end
 
-    GUI_Tooltip.TooltipBuy(Costs, TooltipTextKey, nil, Technologies.R_Ballista)
+    GUI_Tooltip.TooltipBuy(Costs, TooltipTextKey, nil, Technologies.R_Ballista, nil, nil, EntityLimitString)
 end
 
 
@@ -815,6 +824,11 @@ function GUI_BuildingButtons.UpgradeTurretUpdate()
         end
 
         XGUIEng.ShowWidget(CurrentWidgetID, 1)
+
+        if GUI_BuildingButtons.GetLimitReached(Entities.U_MilitaryBallista, Entities.U_MilitaryBallista_BuildingSite) then
+            XGUIEng.DisableButton(CurrentWidgetID, 1)
+            return
+        end
 
         if EnableRights == nil or EnableRights == false then
             XGUIEng.DisableButton(CurrentWidgetID, 0)
@@ -1228,6 +1242,11 @@ function GUI_BuildingButtons.BuyBattalionClicked(_IsSpecial)
         return
     end
 
+    if GUI_BuildingButtons.GetLimitReached(EntityType) then
+        Message(XGUIEng.GetStringTableText("Feedback_TextLines/TextLine_EntityLimitReached"))
+        return
+    end
+
     local Costs = {Logic.GetUnitCost(BarrackID, EntityType)}
 
     local CanBuyBoolean, CanNotBuyString = AreCostsAffordable(Costs)
@@ -1271,6 +1290,7 @@ end
 
 
 function GUI_BuildingButtons.BuyBattalionMouseOver(_IsSpecial)
+    local PlayerID  = GUI.GetPlayerID()
     local CurrentWidgetID = XGUIEng.GetCurrentWidgetID()
     local BarrackID = GUI.GetSelectedEntity()
     local BarrackEntityType = Logic.GetEntityType(BarrackID)
@@ -1307,6 +1327,7 @@ function GUI_BuildingButtons.BuyBattalionMouseOver(_IsSpecial)
         return
     end
 
+    local EntityLimitString = GUI_BuildingButtons.GetLimitString(EntityType)
     local Costs = {Logic.GetUnitCost(BarrackID, EntityType)}
 
     --Marcus buys these for less Gold
@@ -1329,9 +1350,8 @@ function GUI_BuildingButtons.BuyBattalionMouseOver(_IsSpecial)
         TooltipStringDisabled = "BuyThief"
     end
 
-    GUI_Tooltip.TooltipBuy(Costs, TooltipString, TooltipStringDisabled, TechnologyType )
+    GUI_Tooltip.TooltipBuy(Costs, TooltipString, TooltipStringDisabled, TechnologyType, nil, nil, EntityLimitString)
 end
-
 
 function GUI_BuildingButtons.BuyBattalionUpdate(_IsSpecial)
     local CurrentWidgetID = XGUIEng.GetCurrentWidgetID()
@@ -1419,6 +1439,11 @@ function GUI_BuildingButtons.BuyBattalionUpdate(_IsSpecial)
     if Logic.IsEntityInCategory(BarrackID, EntityCategories.Headquarters) == 1 then
         local PlayerID = GUI.GetPlayerID()
         local TechnologyState = Logic.TechnologyGetState(PlayerID, Technologies.R_Thieves)
+        
+        if GUI_BuildingButtons.GetLimitReached(Entities.U_Thief) then
+            XGUIEng.DisableButton(CurrentWidgetID, 1)
+            return
+        end
 
         if EnableRights == nil or EnableRights == false then
             XGUIEng.DisableButton(CurrentWidgetID,0)
@@ -1786,4 +1811,50 @@ end
 
 function IsSpecificBuildingUpgradeLocked( _PlayerID, _EntityID )
     return Mission_Callback_IsSpecificBuildingUpgradeLocked and Mission_Callback_IsSpecificBuildingUpgradeLocked( _PlayerID, _EntityID )
+end
+
+-- CP funcs
+function GUI_BuildingButtons.GetLimitReached(_entityType, _secondEntityType)
+    local PlayerID  = GUI.GetPlayerID()
+    local limitReached = false
+    local numberOfEntities = Logic.GetNumberOfEntitiesOfTypeOfPlayer(PlayerID, _entityType)
+    local maxNumberOfEntities = GUI_BuildingButtons.EntitiesWithLimit[_entityType]
+
+    --Some entities have a buildingSite...
+    local numberOfEntities2 = 0 
+    if _secondEntityType ~= nil then
+        numberOfEntities2 = Logic.GetNumberOfEntitiesOfTypeOfPlayer(PlayerID, _secondEntityType)
+    end
+    
+    if maxNumberOfEntities ~= nil then
+        if numberOfEntities + numberOfEntities2 >= maxNumberOfEntities then
+            limitReached = true
+        end
+    end
+    return limitReached
+end
+
+function GUI_BuildingButtons.GetLimitString(_entityType, _secondEntityType)
+    local PlayerID  = GUI.GetPlayerID()
+    local limitString = ""        
+    
+    local numberOfEntities = Logic.GetNumberOfEntitiesOfTypeOfPlayer(PlayerID, _entityType)
+    local maxNumberOfEntities = GUI_BuildingButtons.EntitiesWithLimit[_entityType]
+
+    --Some entities have a buildingSite...
+    local numberOfEntities2 = 0 
+    if _secondEntityType ~= nil then
+        numberOfEntities2 = Logic.GetNumberOfEntitiesOfTypeOfPlayer(PlayerID, _secondEntityType)
+    end
+
+    if maxNumberOfEntities ~= nil then
+        local maxNumberColor = ""
+        local sumOfEntities = numberOfEntities + numberOfEntities2
+        if sumOfEntities >= maxNumberOfEntities then
+            maxNumberColor = "{@color:220, 0, 0}"
+        end
+        limitString = limitString .. " ("..maxNumberColor..sumOfEntities.."/"..maxNumberOfEntities.."{@color:none})"
+    end
+
+    return limitString
 end
