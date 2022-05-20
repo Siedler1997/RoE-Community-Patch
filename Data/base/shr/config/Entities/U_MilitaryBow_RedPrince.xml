@@ -2,10 +2,10 @@
 
     <Display classname="ED::CEntityProps">
         <Class>ED::CDisplaySettler</Class>
-        <Model>Units\Military\U_MilitaryBandit_Ranged_ME</Model>
+        <Model>Units\Military\U_MilitaryBow_RedPrince</Model>
         <DisplayPlayerColor>True</DisplayPlayerColor>
-	  <LodDistance>3000</LodDistance>
-	</Display>
+        <LodDistance>3000</LodDistance>
+    </Display>
 
     <Logic classname="EGL::CSettlerProps">
         <Class>EGL::CMilitarySoldier</Class>
@@ -16,22 +16,27 @@
         <HealingSeconds>10</HealingSeconds>
         <HealingPoints>15</HealingPoints>
 
+        <CostsCanBeModified>true</CostsCanBeModified>
         <NeedsPlayer>true</NeedsPlayer>
         <ForceNoPlayer>false</ForceNoPlayer>
         <Exploration>30</Exploration>
         <IdleTaskList>TL_MILITARY_IDLE</IdleTaskList>
         <CanDrown>false</CanDrown>
         <IsSelectable>true</IsSelectable>
+        <BlockRadius>60</BlockRadius>
 
-        <!-- one bandit battalion has only 3 soldiers, so it has to be around 1/3 the normal battalions cost -->
-		<Cost>
-			<GoodAmount>
-				<!-- if the gold costs are changed, the refill costs have to be adjusted as well in "B_Barracks.xml"
-               Refilling should cost the same per unit than buying batallions!  -->
-				<GoodType>G_Gold</GoodType>
-				<Amount>15</Amount>
-			</GoodAmount>
-		</Cost>
+        <Cost>
+            <GoodAmount>
+                <!-- if the gold costs are changed, the refill costs have to be adjusted as well in "B_Barracks_Archers.xml"
+                Refilling should cost the same per unit than buying batallions! -->
+                <GoodType>G_Gold</GoodType>
+                <Amount>15</Amount>
+            </GoodAmount>
+            <GoodAmount>
+                <GoodType>G_Bow</GoodType>
+                <Amount>1</Amount>
+            </GoodAmount>
+        </Cost>
 
         <EntityCategories>
             <EntityCategory>Military</EntityCategory>
@@ -44,6 +49,9 @@
         </Familiar>
         <SoundImpactType>Leather</SoundImpactType>
         <SoundProjectileType>Arrow</SoundProjectileType>
+
+<!--        <OnScreenIcon>MinimapBow</OnScreenIcon>
+-->
     </Logic>
 
     <Behaviors>
@@ -85,7 +93,7 @@
                 <AttackMoveRange>2700</AttackMoveRange>
                 <BattleFreedomRange>300</BattleFreedomRange>
 
-               <DefendTL>TL_MILITARY_DEFEND</DefendTL>
+                <DefendTL>TL_MILITARY_DEFEND</DefendTL>
                 <IdleTaskList>TL_MILITARY_IDLE</IdleTaskList>
                 <MoveTaskList>TL_MILITARY_WALK</MoveTaskList>
                 <AttackRunTaskList>TL_MILITARY_ATTACKRUN</AttackRunTaskList>
@@ -98,18 +106,18 @@
                 <StationaryDefendFormation>StationaryDefend</StationaryDefendFormation>
 
                 <AmmunitionType>G_TorchAmmunition</AmmunitionType>
-                <AmmunitionLimit>2</AmmunitionLimit>
+                <AmmunitionLimit>1</AmmunitionLimit>
 
                 <TargetCategoryList>
 
-                     <!-- Melee and Ranged Attack -->
+                    <!-- Melee and Ranged Attack -->
                     <TargetCategory>
                         <EntityCategoryList>
                             <EntityCategory>Hero</EntityCategory>
                             <EntityCategory>Leader</EntityCategory>
                             <EntityCategory>AttackableSettler</EntityCategory>
                             <EntityCategory>Thief</EntityCategory>
-                             <EntityCategory/>
+                            <EntityCategory/>
                             <EntityCategory/>
                         </EntityCategoryList>
 
@@ -150,23 +158,23 @@
                                     <BaseValue>20</BaseValue>
                                 </Damage>
 
-<!--      HeightDamageModifierSlope : 0.0833333 = 0.5 / 6 (meter wall height)
-            HeightDamageModifierBase  : 1.0
-            HeightDamageModifierMin     :  1.0
-            HeightDamageModifierMax     : 1.0
-            (Default Werte für Min und Max sind 1.0 so dass keine HeightDamage Modification stattfindet wenn nicht explizit in einem Attack Mode angegeben)
--->
-                    <!-- if bowmen stand 6m lower than their target they only do 50% of their damage -->
+                                <!--        HeightDamageModifierSlope : 0.0833333 = 0.5 / 6 (meter wall height)
+                                HeightDamageModifierBase  : 1.0
+                                HeightDamageModifierMin   : 1.0
+                                HeightDamageModifierMax   : 1.0
+                                (Default Werte für Min und Max sind 1.0 so dass keine HeightDamage Modification stattfindet wenn nicht explizit in einem Attack Mode angegeben)
+                                -->
+                                <!-- if bowmen stand 6m lower than their target they only do 50% of their damage -->
                                 <HeightDamageModifierMin>0.5</HeightDamageModifierMin>
-
                                 <NoMinRangeWhenNotOnGround>true</NoMinRangeWhenNotOnGround>
                             </AttackMode>
                         </AttackModeList>
                     </TargetCategory>
 
-                     <!-- Torching buildings -->
+                    <!-- Torching buildings -->
                     <TargetCategory>
                         <DisableAutoAttack>true</DisableAutoAttack>
+                        <UsePlayerMorale>false</UsePlayerMorale>
 
                         <EntityCategoryList>
                             <EntityCategory/>
@@ -192,9 +200,12 @@
                                 <Damage>
                                     <DiceCount>0</DiceCount>
                                     <FaceCount>0</FaceCount>
-                                    <BaseValue>10</BaseValue>
+                                    <BaseValue>5</BaseValue>
                                 </Damage>
+
+                                <!-- Each thrown torch increases the buildings FireSize by this amount     -->
                                 <BuildingFireSize>10</BuildingFireSize>
+
                                 <ConsumeAmmunition>true</ConsumeAmmunition>
                             </AttackMode>
                         </AttackModeList>
@@ -203,7 +214,7 @@
                     <!-- Capturing merchants and siege engines -->
                     <TargetCategory>
                         <DisableAutoAttack>true</DisableAutoAttack>
-                     <!-- don't remove  the empty tags, otherwise the data isn't shown correctly in the XML balancer! -->
+                        <!-- don't remove  the empty tags, otherwise the data isn't shown correctly in the XML balancer! -->
                         <EntityCategoryList>
                             <EntityCategory/>
                             <EntityCategory/>
@@ -282,13 +293,13 @@
                                     <BaseValue>20</BaseValue>
                                 </Damage>
 
-<!--      HeightDamageModifierSlope : 0.0833333 = 0.5 / 6 (meter wall height)
-            HeightDamageModifierBase  : 1.0
-            HeightDamageModifierMin     :  1.0
-            HeightDamageModifierMax     : 1.0
-            (Default Werte für Min und Max sind 1.0 so dass keine HeightDamage Modification stattfindet wenn nicht explizit in einem Attack Mode angegeben)
--->
-                    <!-- if bowmen stand 6m lower than their target they only do 50% of their damage -->
+                                <!--        HeightDamageModifierSlope : 0.0833333 = 0.5 / 6 (meter wall height)
+                                HeightDamageModifierBase  : 1.0
+                                HeightDamageModifierMin   : 1.0
+                                HeightDamageModifierMax   : 1.0
+                                (Default Werte fuer Min und Max sind 1.0 so dass keine HeightDamage Modification stattfindet wenn nicht explizit in einem Attack Mode angegeben)
+                                -->
+                                <!-- if bowmen stand 6m lower than their target they only do 50% of their damage -->
                                 <HeightDamageModifierMin>0.5</HeightDamageModifierMin>
 
                                 <NoMinRangeWhenNotOnGround>true</NoMinRangeWhenNotOnGround>
@@ -326,7 +337,7 @@
                 <Attachments>
                     <Attachment>
                         <Type>ATTACHMENT_LEADER_SOLDIER</Type>
-                        <Limit>3</Limit>
+                        <Limit>6</Limit>
                     </Attachment>
                 </Attachments>
             </Logic>
@@ -335,7 +346,7 @@
     </Behaviors>
 
     <MapEditor>
-        <TreePosition>Units\Military\Bandits</TreePosition>
+        <TreePosition>Units\Military\Ranged Weapons</TreePosition>
         <ShowInTree>false</ShowInTree>
         <Clime>Generic</Clime>
         <Scalable>false</Scalable>

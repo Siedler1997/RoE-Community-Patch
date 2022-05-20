@@ -58,6 +58,10 @@ Folgende Änderungen wurden vorgenommen:
 			- Haben keine besonderen Fähigkeiten
 		- Varianz an Ladebildschirm-Bildern
 - Militär
+	- Bogenschützen allgemein
+		- Fernkampf-Schaden deutlich reduziert (30 -> 20)
+		- Maximale Fernkampf-Reichweite leicht erhöht (24sm -> 25sm)
+		- Ausnahme: Wikinger-Axtwerfer
 	- Banditen 
 		- Können in Kasernen wieder aufgefüllt werden
 		- Haben ein eigenes Audio-Feedback
@@ -78,11 +82,11 @@ Folgende Änderungen wurden vorgenommen:
 			- Konkret: Bären (3 Arten), Löwen (2 Arten), Wölfe (4 Arten), Tiger
 		- Trebuchet
 			- Funktioniert ähnlich wie ein Katapult
-				- Höhere Maximalreichweite (3.200 > 2.400)
-				- Höhere Mindestreichweite (1.800 > 1.000)
+				- Höhere Maximalreichweite (32sm > 24sm)
+				- Höhere Mindestreichweite (18sm > 10sm)
 				- Höherer Schaden (100 > 50)
-				- Geringere Feuerrate (7.5 Sek > 5 Sek)
-				- Braucht länger zum Auf- und Abbau (8.000 > 5.000)
+				- Geringere Feuerrate (7.5 Sek. > 5 Sek.)
+				- Braucht länger zum Auf- und Abbau (8 Sek. > 5 Sek.)
 			- Kann sich in aufgebauter Form nicht fortbewegen
 			- Zurzeit noch nicht baubar, vllt. mit Titel "Erzherzog"?
 	- Rammen können keine Mauern mehr angreifen
@@ -91,7 +95,7 @@ Folgende Änderungen wurden vorgenommen:
 		- Kosten mehr Eisen (5 -> 10)
 		- Kosten mehr Gold (200 -> 300)
 		- Schaden reduziert (50 -> 40)
-		- Mindestreichweite erhöht (1.000 -> 1.200)
+		- Mindestreichweite erhöht (10sm -> 12sm)
 - Gebäude
 	- Kirche
 		- Mehr Siedler pro Predigt möglich
@@ -250,8 +254,6 @@ Folgende Änderungen wurden vorgenommen:
 	- Mauerkatapulte erst ab Marquis?
 	- Max. Anzahl Wachtürme regulieren? -> z.B. 10
 	- Max. Anzahl Diebe regulieren? -> z.B. 10
-	- Schwertkämpfer ggü. Schützen buffen bzw. Schützen nerfen?
-	- Söldner mit etwas anderen Stats/Fähigkeiten
 	- Neue (sinnvollere) Aufstiegsbedingungen
 		- ggf. mit Indikator, um nur für neue Maps und angepasste zu gelten
 		- wegen zu hohem Aufwand (Kompatibiliät mit alten Maps) erstmal Low Priority
