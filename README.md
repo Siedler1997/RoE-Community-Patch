@@ -119,6 +119,7 @@ Folgende Änderungen wurden vorgenommen:
 			- Besitzt eine hohe Sichtweite
 			- Sieht einfach schick aus :)
 	- Ziergebäude der Special Edition im Hauptspiel verfügbar
+	- Bienenstöcke haben weniger Lebenspunkte (10 -> 5)
 - Hauptmenü
 	- AddOn nutzt weitgehend Hauptspiel-Hintergrund und Soundtrack
 	- Hintergrund ist tageszeitabhängig
