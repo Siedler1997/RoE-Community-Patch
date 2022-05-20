@@ -96,6 +96,9 @@ Folgende Änderungen wurden vorgenommen:
 		- Kosten mehr Gold (200 -> 300)
 		- Schaden reduziert (50 -> 40)
 		- Mindestreichweite erhöht (10sm -> 12sm)
+		- Sind auf maximal 12 Stück gleichzeitig pro Spieler limitiert
+	- Diebe
+		- Sind auf maximal 6 Stück gleichzeitig pro Spieler limitiert
 - Gebäude
 	- Kirche
 		- Mehr Siedler pro Predigt möglich
@@ -228,7 +231,7 @@ Folgende Änderungen wurden vorgenommen:
 	- Allgemein: Konsequentere Nutzung von RP-/Khana-Einheiten sowie ggf. Söldner
 	- Narfang: Sabatta aggressiv, wenn ein Außenposten erobert/zerstört wird
 	- Husran: Eisenmine für Sabatta statt Eisen "frei Haus"
-	- M15:Vestholm: Sturm
+	- M15: Vestholm: Sturm
 	- Idukun: Blizzard
 	- Speziell in den "Last-Stand"-Missionen
 	- Aktive KI-Ritter mit Fähigkeiten
@@ -250,8 +253,6 @@ Folgende Änderungen wurden vorgenommen:
 	- RP: Seuchen-Fähigkeit umsetzen, falls GUI.SendScriptCommand irgendwann wieder laufen sollte
 - Audio-Feedback für Ochsen
 - Rebalancing
-	- Max. Anzahl Wachtürme regulieren? -> z.B. 12
-	- Max. Anzahl Diebe regulieren? -> z.B. 6
 	- Neue (sinnvollere) Aufstiegsbedingungen
 		- ggf. mit Indikator, um nur für neue Maps und angepasste zu gelten
 		- wegen zu hohem Aufwand (Kompatibiliät mit alten Maps) erstmal Low Priority
