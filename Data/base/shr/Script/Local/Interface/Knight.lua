@@ -974,6 +974,17 @@ function GUI_Knight.StartAbilityClicked(_Ability)
             Message(MessageText)
             return
         end
+        
+        if Ability == Abilities.AbilityFood then
+            if Logic.GetEntityType(KnightID) == Entities.U_KnightTrading then
+                GUI.AddBuff(Buffs.Buff_FoodDiversity)
+            elseif Logic.GetEntityType(KnightID) == Entities.U_KnightPraphat then
+                GUI.AddBuff(Buffs.Buff_ClothesDiversity)
+            end
+        elseif Ability == Abilities.Buff_EntertainmentDiversity then
+            GUI.AddBuff(Buffs.Buff_EntertainmentDiversity)
+        end
+
     --[[
     --Unused ability for Red Prince. Doesn't work in MP games, so he uses tribute instead
     elseif Logic.GetEntityType(KnightID) == Entities.U_KnightRedPrince then

@@ -98,7 +98,7 @@
                 <StationaryDefendFormation>StationaryDefend</StationaryDefendFormation>
 
                 <AmmunitionType>G_TorchAmmunition</AmmunitionType>
-                <AmmunitionLimit>1</AmmunitionLimit>
+                <AmmunitionLimit>2</AmmunitionLimit>
 
                 <TargetCategoryList>
 
@@ -137,7 +137,7 @@
                                 <ApplyDamageModifiers>true</ApplyDamageModifiers>
 
                                 <MinRange>500</MinRange>
-                                <MaxRange>2400</MaxRange>
+                                <MaxRange>2500</MaxRange>
                                 <MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
                                 <CanAttackOverWalls>false</CanAttackOverWalls>
                                 <CooldownThousandths>4500</CooldownThousandths>
@@ -147,7 +147,7 @@
                                 <Damage>
                                     <DiceCount>0</DiceCount>
                                     <FaceCount>0</FaceCount>
-                                    <BaseValue>30</BaseValue>
+                                    <BaseValue>20</BaseValue>
                                 </Damage>
 
 <!--      HeightDamageModifierSlope : 0.0833333 = 0.5 / 6 (meter wall height)
@@ -184,7 +184,7 @@
                                 <ApplyDamageModifiers>false</ApplyDamageModifiers>
 
                                 <MinRange>0</MinRange>
-                                <MaxRange>2400</MaxRange>
+                                <MaxRange>2500</MaxRange>
                                 <ProjectileEffect>FXFireArrow</ProjectileEffect>
                                 <MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
                                 <CanAttackOverWalls>false</CanAttackOverWalls>
@@ -192,7 +192,7 @@
                                 <Damage>
                                     <DiceCount>0</DiceCount>
                                     <FaceCount>0</FaceCount>
-                                    <BaseValue>5</BaseValue>
+                                    <BaseValue>10</BaseValue>
                                 </Damage>
                                 <BuildingFireSize>10</BuildingFireSize>
                                 <ConsumeAmmunition>true</ConsumeAmmunition>
@@ -269,7 +269,7 @@
                                 <ApplyDamageModifiers>true</ApplyDamageModifiers>
 
                                 <MinRange>500</MinRange>
-                                <MaxRange>2400</MaxRange>
+                                <MaxRange>2500</MaxRange>
                                 <MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
                                 <CanAttackOverWalls>false</CanAttackOverWalls>
                                 <CooldownThousandths>4500</CooldownThousandths>
@@ -279,7 +279,7 @@
                                 <Damage>
                                     <DiceCount>0</DiceCount>
                                     <FaceCount>0</FaceCount>
-                                    <BaseValue>30</BaseValue>
+                                    <BaseValue>20</BaseValue>
                                 </Damage>
 
 <!--      HeightDamageModifierSlope : 0.0833333 = 0.5 / 6 (meter wall height)

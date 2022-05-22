@@ -112,7 +112,7 @@ end
 
 
 function GUI_Tooltip.TooltipBuy(_Costs, _OptionalTextKeyName, _OptionalDisabledTextKeyName, _TechnologyType,
-        _GoodsInSettlementBoolean, _OptionalPositionWidget)
+        _GoodsInSettlementBoolean, _OptionalPositionWidget, _LimitString)
     
     local TooltipContainerPath = "/InGame/Root/Normal/TooltipBuy"
     local TooltipContainer = XGUIEng.GetWidgetID(TooltipContainerPath)
@@ -132,7 +132,7 @@ function GUI_Tooltip.TooltipBuy(_Costs, _OptionalTextKeyName, _OptionalDisabledT
         end
     end
     
-    GUI_Tooltip.SetNameAndDescription(TooltipNameWidget, TooltipDescriptionWidget, _OptionalTextKeyName, _OptionalDisabledTextKeyName)
+    GUI_Tooltip.SetNameAndDescription(TooltipNameWidget, TooltipDescriptionWidget, _OptionalTextKeyName, _OptionalDisabledTextKeyName, nil, _LimitString)
     GUI_Tooltip.ResizeBG(TooltipBGWidget, TooltipDescriptionWidget)
     GUI_Tooltip.SetCosts(TooltipCostsContainer, _Costs, _GoodsInSettlementBoolean)
     
@@ -227,12 +227,13 @@ end
 
 
 function GUI_Tooltip.SetNameAndDescription(_TooltipNameWidget, _TooltipDescriptionWidget, _OptionalTextKeyName, _OptionalDisabledTextKeyName,
-        _OptionalMissionTextFileBoolean)
+        _OptionalMissionTextFileBoolean, _LimitString)
     local CurrentWidgetID = XGUIEng.GetCurrentWidgetID()
     local WidgetName = XGUIEng.GetWidgetNameByID(CurrentWidgetID)
 
     local TooltipName
     local TooltipDesc
+    local TooltipLimit = _LimitString or ""
 
     if _OptionalTextKeyName == nil then
         
@@ -305,7 +306,7 @@ function GUI_Tooltip.SetNameAndDescription(_TooltipNameWidget, _TooltipDescripti
         TooltipDesc = TooltipDesc .. DoesDescExist .. "{@color:220, 0, 0}" .. ButtonDisabledText .. "{@color:none}"
     end
 
-    XGUIEng.SetText(_TooltipNameWidget, "{center}" .. TooltipName)
+    XGUIEng.SetText(_TooltipNameWidget, "{center}" .. TooltipName .. TooltipLimit)
     XGUIEng.SetText(_TooltipDescriptionWidget, TooltipDesc)
     
     local Height = XGUIEng.GetTextHeight(_TooltipDescriptionWidget, true)

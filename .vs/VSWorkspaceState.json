@@ -4,14 +4,13 @@
     "\\Data",
     "\\Data\\base",
     "\\Data\\base\\shr",
-    "\\Data\\base\\shr\\menu",
-    "\\Data\\base\\shr\\Script",
-    "\\Data\\extra1",
-    "\\Data\\extra1\\shr",
-    "\\Data\\extra1\\shr\\text",
-    "\\Data\\extra1\\shr\\text\\bb",
-    "\\Data\\extra1\\shr\\text\\bb\\InGame"
+    "\\Data\\base\\shr\\graphics",
+    "\\Data\\base\\shr\\graphics\\Animations",
+    "\\Data\\base\\shr\\graphics\\Animations\\Military",
+    "\\Data\\base\\shr\\graphics\\Models\\Units",
+    "\\Data\\base\\shr\\graphics\\Models\\Units\\Military",
+    "\\Data\\base\\shr\\graphics\\Textures"
   ],
-  "SelectedNode": "\\Data\\base\\shr\\Script\\Local\\Interface\\Construction.lua",
+  "SelectedNode": "\\Data\\base\\shr\\graphics\\Textures",
   "PreviewInSolutionExplorer": false
 }

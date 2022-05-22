@@ -150,7 +150,7 @@
 				<SearchRadius>2000</SearchRadius>
 				<TaskList>TL_KNIGHT_ABILITY_TRIBUTE</TaskList>
 				<Effect>E_Knight_Saraya_Aura</Effect>
-				<SarayaTributeGoodAmountMin>5</SarayaTributeGoodAmountMin>
+				<SarayaTributeGoodAmountMin>9</SarayaTributeGoodAmountMin>
 				<SarayaTributeGoodAmountMax>18</SarayaTributeGoodAmountMax>
 				<SarayaTributeGoldAmountMin>50</SarayaTributeGoldAmountMin>
 				<SarayaTributeGoldAmountMax>200</SarayaTributeGoldAmountMax>

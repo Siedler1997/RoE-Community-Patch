@@ -278,13 +278,6 @@
             <OcclusionReceiver>True</OcclusionReceiver>
             <DefaultAnimID>Military\U_MilitarySword_Run</DefaultAnimID>
         </Model>
-        <Model id="HoK\PU_LeaderPoleArm2">
-            <SelectionRadius>100</SelectionRadius>
-            <Effect>SettlerRimPlayerColorSpecular</Effect>
-            <SelectionTexture>Selection_Soldier</SelectionTexture>
-            <OcclusionReceiver>True</OcclusionReceiver>
-            <DefaultAnimID>HoK\PU_LeaderPoleArm2_Run1</DefaultAnimID>
-        </Model>
         
         <Model id="Units\Military\U_MilitarySword_RedPrince">
             <SelectionRadius>100</SelectionRadius>
@@ -332,16 +325,6 @@
             <OcclusionReceiver>false</OcclusionReceiver>
             <DefaultAnimID>V_Catapult_Collapse</DefaultAnimID>
         </Model>
-		<Model id="V_Cannon">
-			<SelectionRadius>400</SelectionRadius>
-			<Effect>SettlerRimPlayerColorSpecular</Effect>
-			<SelectionTexture>Selection_siegemachine</SelectionTexture>
-			<OcclusionReceiver>True</OcclusionReceiver>
-			<AlignToTerrain>true</AlignToTerrain>
-			<AlwaysUpright>false</AlwaysUpright>
-			<DefaultAnimID>V_Cannon_Idle</DefaultAnimID>
-			<OcclusionReceiver>True</OcclusionReceiver>
-		</Model>
         <Model id="Vehicles\V_Trebuchet">
             <SelectionRadius>400</SelectionRadius>
             <Effect>SettlerRimPlayerColorSpecular</Effect>
@@ -14633,7 +14616,14 @@
             <SelectionTexture>Selection_Soldier</SelectionTexture>
             <UseSurfaceHeight>True</UseSurfaceHeight>
         </Model>
-        
+
+		<Model id="Units\Military\U_MilitaryPoleArm">
+			<SelectionRadius>100</SelectionRadius>
+			<Effect>SettlerRimPlayerColorSpecular</Effect>
+			<SelectionTexture>Selection_Soldier</SelectionTexture>
+			<OcclusionReceiver>True</OcclusionReceiver>
+			<DefaultAnimID>Military\U_MilitaryPoleArm_Run</DefaultAnimID>
+		</Model>
         
     </Models>
 </root>
