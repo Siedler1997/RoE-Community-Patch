@@ -4,11 +4,13 @@
     "\\Data",
     "\\Data\\base",
     "\\Data\\base\\shr",
-    "\\Data\\base\\shr\\config",
-    "\\Data\\extra1",
-    "\\Data\\extra1\\shr",
-    "\\Data\\extra1\\shr\\config",
-    "\\Data\\extra1\\shr\\config\\Entities"
+    "\\Data\\base\\shr\\graphics",
+    "\\Data\\base\\shr\\graphics\\Animations",
+    "\\Data\\base\\shr\\graphics\\Animations\\Military",
+    "\\Data\\base\\shr\\graphics\\Models\\Units",
+    "\\Data\\base\\shr\\graphics\\Models\\Units\\Military",
+    "\\Data\\base\\shr\\graphics\\Textures"
   ],
+  "SelectedNode": "\\Data\\base\\shr\\graphics\\Textures",
   "PreviewInSolutionExplorer": false
 }

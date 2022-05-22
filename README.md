@@ -5,8 +5,9 @@ Dieser inoffizielle Patch behebt diverse Bugs vom Spiel 'Die Siedler - Aufstieg 
 
 ## Installation
 Mit folgenden Schritten lässt sich der Patch installieren:
-1. Projekt über Code -> Download ZIP herunterladen
-2. Ordner in das AeK-Hauptverzeichnis entpacken
+1. Sicherungskopie vom AeK-Ordner anlegen und z.B. "thesettlers6_Orig" nennen
+2. Projekt über Code -> Download ZIP herunterladen
+3. Projektordner in den Ornder OHNE "_Orig-Zusatz" entpacken und die Frage nach Überschreiben von X Dateien bestätigen
 3. Zocken
 
 
@@ -29,7 +30,7 @@ Folgende Änderungen wurden vorgenommen:
 			- Bonus: Lebenspunkte leicht erhöht (1.000 -> 1.100)
 		- Thordal
 			- Aktive Fähigkeit: Gewährt zusätzlich den "Vielfältige Unterhaltung"-Bonus
-			- Boni: Angriffskraft erhöht (25 -> 40) und Rekrutierung von Wikingern in Kasernen
+			- Boni: Angriffskraft erhöht (25 -> 50) und Rekrutierung von Wikingern in Kasernen
 		- Kestral
 			- Bonus: Rekrutierung von Banditen in Kasernen (Art hängt von Klimazone ab)
 		- Saraya
@@ -80,6 +81,14 @@ Folgende Änderungen wurden vorgenommen:
 		- RP-Einheiten haben eine eigene Button-Textur
 		- Khana-Einheiten haben keine Overhead-Namen mehr
 	- "Neue" Einheiten
+		- Hellebardiere
+			- Inspiriert von den Hellebardieren in DEdK
+			- Statuswerte (im Vergleich zu Schwertkämpfern)
+				- Höhere Lebenspunkte (150 > 120)
+				- Weniger Schaden (15 < 20)
+				- Etwas höhere Reichweite (2sm > 1,5sm)
+				- Langsamere Bewegungsgeschwindigkeit (420 < 480)
+			- Zurzeit noch in Entwicklung
 		- Raubtiere als kontrollierbare Militäreinheiten verfügbar
 			- Konkret: Bären (3 Arten), Löwen (2 Arten), Wölfe (4 Arten), Tiger
 		- Trebuchet
@@ -173,6 +182,17 @@ Folgende Änderungen wurden vorgenommen:
 
 
 ## (Mögliche) ToDos
+- Speerkämpfer
+	- Icon
+	- Audio-Feedback
+	- Rekrutierung
+		- Eigener Warenkreislauf?
+			- Gebäude
+			- Waren
+		- ODER: Der Nahkämpferkaserne hinzufügen
+			- Neuer Button für die Kaserne
+			- "Schwertkämpfer***"-Strings zu "Nahkämpfer***" abändern
+	- Spielerfarbe abbilden (PU_SoldierPoleArm4_masks.dds)
 - Außenposten/Aussichtsturm/Wachturm
 	- ME-Aussichtsturm: Schwarze Seite
 	- Aussichtstürme: Alarm?
@@ -199,11 +219,8 @@ Folgende Änderungen wurden vorgenommen:
 	- Hauptspiel-Kampagne im AddOn
 		- Zwischenmenü zur Auswahl der Kampagne
 		- Slot für Community-Kampagnen
-- Musik
-	- Playlists fixen (wenn nötig)
-	- Soundtrack aus DEdK (ggf. per externem Tool...)
 - Wikinger: Kontrollierter Ehefrauen-Raub
-- RPG-Sicht zum rumlaufen
+- RPG-Sicht zum rumlaufen ("Heist")
 - Nutzbare (Tier-)Seuche, inkl. Musik
 	- Ruhige, aber bedrohliche Playlist
 	- Erst ab x% Betroffene, da sonst zu oft getriggert
@@ -269,11 +286,8 @@ Folgende Änderungen wurden vorgenommen:
 	- Juwelier
 	- Supermarkt?
 - Fremder Content
-	- Speerkämpfer
-		- Defensiv und offensiv schwächer
-		- Leicht erhöhte Reichweite, billiger und mit Bonusschaden gegen Ritter
-	- Kanonen (macht twA)
 	- Reiter
+	- DEdK-Soundtrack
 - Auf 4k-Auflösung kann nicht mehr per BorderScroll nach rechts gecrolled werden
 - Biom-spezifisches Retexturing für Kerngebäude
 	- Das oder neue Modelle

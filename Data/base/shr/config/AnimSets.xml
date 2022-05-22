@@ -32,7 +32,6 @@
   	<AnimSet>SET_BANDIT_MELEE</AnimSet>
   	<AnimSet>SET_MILITARYBOWSOLDIER</AnimSet>
   	<AnimSet>SET_MILITARYMELEESOLDIER</AnimSet>
-	<!--<AnimSet>SET_MILITARYMELEESOLDIER2</AnimSet>-->
 	<AnimSet>SET_MILITARYCATAPULT</AnimSet>
   	<AnimSet>SET_MILITARYBALLISTA</AnimSet>
     <AnimSet>SET_MILITARYBALLISTA_BUILDINGSITE</AnimSet>
@@ -40,7 +39,6 @@
   	<AnimSet>SET_MILITARYBATTERINGRAM</AnimSet>
   	<AnimSet>SET_MILITARYBANDIT_MELEE_NA</AnimSet>
   	<AnimSet>SET_MILITARYBANDIT_MELEE_NE</AnimSet>
-	<!--<AnimSet>SET_MILITARYCANNON</AnimSet>-->
 <!-- Heros -->
   	<AnimSet>SET_KNIGHT_HEALING</AnimSet>
   	<AnimSet>SET_KNIGHT_HEALING_STANDING</AnimSet>
@@ -77,4 +75,6 @@
     <AnimSet>SET_DUMMY_08</AnimSet>
     <AnimSet>SET_DUMMY_09</AnimSet>
 
+	<!-- CP -->
+	<AnimSet>SET_MILITARYPOLEARM</AnimSet>
 </root>
