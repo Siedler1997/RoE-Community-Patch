@@ -49,5 +49,9 @@
     <Id>GathererBuilding</Id>
     <Id>FarmerBuilding</Id>
     <Id>Spouse</Id>
+
+    <!-- Community Patch -->
+
+    <Id>LongRange</Id>
     
 </EntityCategories>
