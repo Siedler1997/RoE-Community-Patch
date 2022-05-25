@@ -1987,4 +1987,11 @@
 	<Entity>B_WatchTower_NE</Entity>
 	<Entity>B_WatchTower_SE</Entity>
 	<Entity>B_WatchTower_NA</Entity>
+
+    <Entity>U_Marketer_Mission</Entity>
+    <Entity>U_Medicus_Mission</Entity>
+    <Entity>U_Noblemen_Cart_Mission</Entity>
+    <Entity>U_RegaliaCart_Mission</Entity>
+    <Entity>U_ResourceMerchant_Mission</Entity>
+    <Entity>U_ThiefCart_Mission</Entity>
 </root>
