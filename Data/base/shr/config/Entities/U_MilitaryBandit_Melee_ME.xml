@@ -37,6 +37,7 @@
             <EntityCategory>Military</EntityCategory>
             <EntityCategory>Soldier</EntityCategory>
             <EntityCategory>Melee</EntityCategory>
+            <EntityCategory>Sword</EntityCategory>
         </EntityCategories>
         <Familiar>
             <With>SheepPasture</With>

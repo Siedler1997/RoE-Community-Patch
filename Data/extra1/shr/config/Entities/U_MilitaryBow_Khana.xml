@@ -41,6 +41,7 @@
             <EntityCategory>Military</EntityCategory>
             <EntityCategory>Soldier</EntityCategory>
             <EntityCategory>Range</EntityCategory>
+            <EntityCategory>Bow</EntityCategory>
         </EntityCategories>
         <Familiar>
             <With>SheepPasture</With>

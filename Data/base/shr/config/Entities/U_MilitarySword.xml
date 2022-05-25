@@ -2,49 +2,57 @@
 
     <Display classname="ED::CEntityProps">
         <Class>ED::CDisplaySettler</Class>
-        <Model>Units\Military\U_MilitaryBandit_Ranged_NE</Model>
-        <DisplayPlayerColor>True</DisplayPlayerColor>
-	  <LodDistance>3000</LodDistance>
-	</Display>
+        <Model>Units\Military\U_MilitarySword</Model>
+        <DrawPlayerColor>true</DrawPlayerColor>
+        <LodDistance>3000</LodDistance>
+    </Display>
 
     <Logic classname="EGL::CSettlerProps">
         <Class>EGL::CMilitarySoldier</Class>
         <AccessCategory>AccessCategorySoldier</AccessCategory>
         <PlayerSectorType>PlayerSectorTypeMilitary</PlayerSectorType>
-        <MilMetaFormationMemberType>MilMetaFormationMemberTypeRanged</MilMetaFormationMemberType>
-        <MaxHealth>90</MaxHealth>
+        <MilMetaFormationMemberType>MilMetaFormationMemberTypeMelee</MilMetaFormationMemberType>
+        <CostsCanBeModified>true</CostsCanBeModified>
+        <MaxHealth>120</MaxHealth>
         <HealingSeconds>10</HealingSeconds>
-        <HealingPoints>15</HealingPoints>
+        <HealingPoints>20</HealingPoints>
 
         <NeedsPlayer>true</NeedsPlayer>
         <ForceNoPlayer>false</ForceNoPlayer>
         <Exploration>30</Exploration>
-        <IdleTaskList>TL_MILITARY_IDLE</IdleTaskList>
+        <IdleTaskList>TL_MILITARY_DEFEND</IdleTaskList>
         <CanDrown>false</CanDrown>
         <IsSelectable>true</IsSelectable>
+        <BlockRadius>60</BlockRadius>
 
-        <!-- one bandit battalion has only 3 soldiers, so it has to be around 1/3 the normal battalions cost -->
-		<Cost>
-			<GoodAmount>
-				<!-- if the gold costs are changed, the refill costs have to be adjusted as well in "B_Barracks.xml"
+        <Cost>
+            <GoodAmount>
+        <!-- if the gold costs are changed, the refill costs have to be adjusted as well in "B_Barracks.xml"
                Refilling should cost the same per unit than buying batallions!  -->
-				<GoodType>G_Gold</GoodType>
-				<Amount>15</Amount>
-			</GoodAmount>
-		</Cost>
+                <GoodType>G_Gold</GoodType>
+                <Amount>15</Amount>
+            </GoodAmount>
+            <GoodAmount>
+                <GoodType>G_Sword</GoodType>
+                <Amount>1</Amount>
+            </GoodAmount>
+        </Cost>
 
         <EntityCategories>
             <EntityCategory>Military</EntityCategory>
             <EntityCategory>Soldier</EntityCategory>
-            <EntityCategory>Range</EntityCategory>
-            <EntityCategory>Bow</EntityCategory>
+            <EntityCategory>Melee</EntityCategory>
+            <EntityCategory>Sword</EntityCategory>
         </EntityCategories>
         <Familiar>
             <With>SheepPasture</With>
             <With>CattlePasture</With>
         </Familiar>
-        <SoundImpactType>Leather</SoundImpactType>
-        <SoundProjectileType>Axe</SoundProjectileType>
+        <SoundImpactType>Metal</SoundImpactType>
+        <SoundProjectileType>Sword</SoundProjectileType>
+
+<!--        <OnScreenIcon>MinimapSword</OnScreenIcon>
+-->
     </Logic>
 
     <Behaviors>
@@ -53,10 +61,10 @@
         <Behavior>
             <Logic classname="EGL::CAnimationBehaviorExProps">
                 <Class>EGL::CBehaviorAnimationEx</Class>
-
-                <DefaultAnimation>Military\U_MilitaryBandit_Ranged_NE_Stand</DefaultAnimation>
-                <AnimSet>SET_MILITARYBANDIT_RANGED_NE</AnimSet>
+                <DefaultAnimation>Military\U_MilitarySword_Stand</DefaultAnimation>
+                <AnimSet>SET_MILITARYMELEESOLDIER</AnimSet>
             </Logic>
+
             <Display classname="ED::CBehaviorProps">
                 <Class>ED::CDisplayBehaviorAnimation</Class>
             </Display>
@@ -71,7 +79,7 @@
                 <Speed>480</Speed>
                 <RotationSpeed>500</RotationSpeed>
                 <MoveTaskList>TL_MILITARY_WALK</MoveTaskList>
-                <MoveIdleAnim>Military\U_MilitaryBandit_Ranged_NE_Stand</MoveIdleAnim>
+                <MoveIdleAnim>Military\U_MilitarySword_Stand</MoveIdleAnim>
             </Logic>
             <Display classname="ED::CBehaviorProps">
                 <Class>ED::CDisplayBehaviorMovement</Class>
@@ -86,37 +94,44 @@
                 <AttackMoveRange>2700</AttackMoveRange>
                 <BattleFreedomRange>300</BattleFreedomRange>
 
-               <DefendTL>TL_MILITARY_DEFEND</DefendTL>
+                <!-- NewHealth = CurrentHealth - (Damage * RaiseShieldFactor / 100) -->
+                <RaiseShieldFactor>60</RaiseShieldFactor>
+
+                <DefendTL>TL_MILITARY_DEFEND</DefendTL>
                 <IdleTaskList>TL_MILITARY_IDLE</IdleTaskList>
                 <MoveTaskList>TL_MILITARY_WALK</MoveTaskList>
                 <AttackRunTaskList>TL_MILITARY_ATTACKRUN</AttackRunTaskList>
                 <StandToArmsTaskList>TL_MILITARY_STAND_TO_ARMS</StandToArmsTaskList>
+                <RaiseShieldTaskList>TL_MILITARY_RAISE_SHIELD</RaiseShieldTaskList>
+                <RaiseShieldRunTaskList>TL_MILITARY_RAISE_SHIELD_RUN</RaiseShieldRunTaskList>
 
                 <DefaultFormation>DoubleColumn</DefaultFormation>
                 <StandFormation>DoubleColumn</StandFormation>
+                <StationaryDefendFormation>StationaryDefend</StationaryDefendFormation>
+                <StandToAttentionFormation>DoubleColumn</StandToAttentionFormation>
                 <WalkFormation>DoubleColumn</WalkFormation>
                 <AttackFormation>DoubleRow</AttackFormation>
-                <StationaryDefendFormation>StationaryDefend</StationaryDefendFormation>
 
                 <AmmunitionType>G_TorchAmmunition</AmmunitionType>
-                <AmmunitionLimit>2</AmmunitionLimit>
+                <AmmunitionLimit>1</AmmunitionLimit>
 
                 <TargetCategoryList>
 
-                     <!-- Melee and Ranged Attack -->
+                    <!-- Plain attack -->
                     <TargetCategory>
+                        <!-- don't remove  the empty tags, otherwise the data isn't shown correctly in the XML balancer! -->
                         <EntityCategoryList>
                             <EntityCategory>Hero</EntityCategory>
                             <EntityCategory>Leader</EntityCategory>
                             <EntityCategory>AttackableSettler</EntityCategory>
                             <EntityCategory>Thief</EntityCategory>
-                             <EntityCategory/>
+                            <EntityCategory/>
                             <EntityCategory/>
                         </EntityCategoryList>
 
                         <AttackModeList>
-                            <AttackMode> <!-- close combat-->
-                                <BattleTL>TL_BATTLE_BOW_CLOSECOMBAT</BattleTL>
+                            <AttackMode>
+                                <BattleTL>TL_BATTLE_MELEE</BattleTL>
                                 <!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
                                 <ApplyDamageModifiers>true</ApplyDamageModifiers>
 
@@ -124,44 +139,34 @@
                                 <MaxRange>150</MaxRange>
                                 <MaxHeightDeltaToTarget>100</MaxHeightDeltaToTarget>
                                 <CanAttackOverWalls>false</CanAttackOverWalls>
-                                <CooldownThousandths>1500</CooldownThousandths>
+                                <CooldownThousandths>3000</CooldownThousandths>
                                 <Damage>
                                     <DiceCount>0</DiceCount>
                                     <FaceCount>0</FaceCount>
-                                    <BaseValue>10</BaseValue>
+                                    <BaseValue>20</BaseValue>
                                 </Damage>
                             </AttackMode>
 
-                            <AttackMode> <!-- ranged combat -->
-                                <BattleTL>TL_BATTLE_AXE</BattleTL>
-                                <!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
+<!-- ranged combat  (those empty tags are needed to show all unit xmls correctly in the XML balancer  -->
+                            <AttackMode>
+                                <BattleTL/>
                                 <ApplyDamageModifiers>true</ApplyDamageModifiers>
-
-                                <MinRange>500</MinRange>
-                                <MaxRange>1600</MaxRange>
-                                <MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
+                                <MinRange/>
+                                <MaxRange/>
+                                <MaxHeightDeltaToTarget/>
                                 <CanAttackOverWalls>false</CanAttackOverWalls>
-                                <CooldownThousandths>4500</CooldownThousandths>
-                                <ProjectileEffect>E_Axe</ProjectileEffect>
-                                <ProjectileOffsetHeight>120</ProjectileOffsetHeight>
-                                <ProjectileOffsetFront>50</ProjectileOffsetFront>
+                                <CooldownThousandths/>
+                                <ProjectileEffect/>
+                                <ProjectileOffsetHeight/>
+                                <ProjectileOffsetFront/>
                                 <Damage>
-                                    <DiceCount>0</DiceCount>
-                                    <FaceCount>0</FaceCount>
-                                    <BaseValue>30</BaseValue>
+                                    <DiceCount/>
+                                    <FaceCount/>
+                                    <BaseValue/>
                                 </Damage>
-
-<!--      HeightDamageModifierSlope : 0.0833333 = 0.5 / 6 (meter wall height)
-            HeightDamageModifierBase  : 1.0
-            HeightDamageModifierMin     :  1.0
-            HeightDamageModifierMax     : 1.0
-            (Default Werte für Min und Max sind 1.0 so dass keine HeightDamage Modification stattfindet wenn nicht explizit in einem Attack Mode angegeben)
--->
-                    <!-- if bowmen stand 6m lower than their target they only do 50% of their damage -->
-                                <HeightDamageModifierMin>0.5</HeightDamageModifierMin>
-
-                                <NoMinRangeWhenNotOnGround>true</NoMinRangeWhenNotOnGround>
+                                <NoMinRangeWhenNotOnGround>false</NoMinRangeWhenNotOnGround>
                             </AttackMode>
+
                         </AttackModeList>
                     </TargetCategory>
 
@@ -169,6 +174,7 @@
                     <TargetCategory>
                         <DisableAutoAttack>true</DisableAutoAttack>
 
+                        <!-- don't remove  the empty tags, otherwise the data isn't shown correctly in the XML balancer! -->
                         <EntityCategoryList>
                             <EntityCategory/>
                             <EntityCategory/>
@@ -180,20 +186,20 @@
 
                         <AttackModeList>
                             <AttackMode>
-                                <BattleTL>TL_BATTLE_BOW</BattleTL>
+                                <BattleTL>TL_BATTLE_MELEE</BattleTL>
                                 <!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
                                 <ApplyDamageModifiers>false</ApplyDamageModifiers>
 
                                 <MinRange>0</MinRange>
-                                <MaxRange>1600</MaxRange>
-                                <ProjectileEffect>FXFireArrow</ProjectileEffect>
+                                <MaxRange>800</MaxRange>
+                                <ProjectileEffect>FXTorch</ProjectileEffect>
                                 <MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
                                 <CanAttackOverWalls>false</CanAttackOverWalls>
-                                <CooldownThousandths>4500</CooldownThousandths>
+                                <CooldownThousandths>3000</CooldownThousandths>
                                 <Damage>
                                     <DiceCount>0</DiceCount>
                                     <FaceCount>0</FaceCount>
-                                    <BaseValue>10</BaseValue>
+                                    <BaseValue>5</BaseValue>
                                 </Damage>
                                 <BuildingFireSize>10</BuildingFireSize>
                                 <ConsumeAmmunition>true</ConsumeAmmunition>
@@ -201,10 +207,10 @@
                         </AttackModeList>
                     </TargetCategory>
 
-                    <!-- Capturing merchants and siege engines -->
+                    <!-- Capturing / attacking  merchants and siege engines -->
                     <TargetCategory>
                         <DisableAutoAttack>true</DisableAutoAttack>
-                     <!-- don't remove  the empty tags, otherwise the data isn't shown correctly in the XML balancer! -->
+                        <!-- don't remove  the empty tags, otherwise the data isn't shown correctly in the XML balancer! -->
                         <EntityCategoryList>
                             <EntityCategory/>
                             <EntityCategory/>
@@ -215,8 +221,8 @@
                         </EntityCategoryList>
 
                         <AttackModeList>
-                            <AttackMode> <!-- close combat for expicit attack -->
-                                <BattleTL>TL_BATTLE_BOW_CLOSECOMBAT</BattleTL>
+                            <AttackMode>
+                                <BattleTL>TL_BATTLE_MELEE</BattleTL>
                                 <!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
                                 <ApplyDamageModifiers>true</ApplyDamageModifiers>
 
@@ -237,6 +243,7 @@
                     <!-- This category is only used to disable auto-attack for carnivores  -->
                     <TargetCategory>
                         <DisableAutoAttack>true</DisableAutoAttack>
+                        <!-- don't remove  the empty tags, otherwise the data isn't shown correctly in the XML balancer! -->
                         <EntityCategoryList>
                             <EntityCategory/>
                             <EntityCategory/>
@@ -245,10 +252,9 @@
                             <EntityCategory/>
                             <EntityCategory>AttackableAnimal</EntityCategory>
                         </EntityCategoryList>
-
                         <AttackModeList>
-                            <AttackMode> <!-- close combat-->
-                                <BattleTL>TL_BATTLE_BOW_CLOSECOMBAT</BattleTL>
+                            <AttackMode>
+                                <BattleTL>TL_BATTLE_MELEE</BattleTL>
                                 <!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
                                 <ApplyDamageModifiers>true</ApplyDamageModifiers>
 
@@ -256,47 +262,36 @@
                                 <MaxRange>150</MaxRange>
                                 <MaxHeightDeltaToTarget>100</MaxHeightDeltaToTarget>
                                 <CanAttackOverWalls>false</CanAttackOverWalls>
-                                <CooldownThousandths>1500</CooldownThousandths>
+                                <CooldownThousandths>3000</CooldownThousandths>
                                 <Damage>
                                     <DiceCount>0</DiceCount>
                                     <FaceCount>0</FaceCount>
-                                    <BaseValue>5</BaseValue>
+                                    <BaseValue>20</BaseValue>
                                 </Damage>
                             </AttackMode>
 
-                            <AttackMode> <!-- ranged combat -->
-                                <BattleTL>TL_BATTLE_AXE</BattleTL>
-                                <!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
+<!-- ranged combat -->
+                            <AttackMode>
+                                <BattleTL/>
                                 <ApplyDamageModifiers>true</ApplyDamageModifiers>
-
-                                <MinRange>500</MinRange>
-                                <MaxRange>1600</MaxRange>
-                                <MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
+                                <MinRange/>
+                                <MaxRange/>
+                                <MaxHeightDeltaToTarget/>
                                 <CanAttackOverWalls>false</CanAttackOverWalls>
-                                <CooldownThousandths>4500</CooldownThousandths>
-                                <ProjectileEffect>E_Axe</ProjectileEffect>
-                                <ProjectileOffsetHeight>100</ProjectileOffsetHeight>
-                                <ProjectileOffsetFront>50</ProjectileOffsetFront>
+                                <CooldownThousandths/>
+                                <ProjectileEffect/>
+                                <ProjectileOffsetHeight/>
+                                <ProjectileOffsetFront/>
                                 <Damage>
-                                    <DiceCount>0</DiceCount>
-                                    <FaceCount>0</FaceCount>
-                                    <BaseValue>30</BaseValue>
+                                    <DiceCount/>
+                                    <FaceCount/>
+                                    <BaseValue/>
                                 </Damage>
-
-<!--      HeightDamageModifierSlope : 0.0833333 = 0.5 / 6 (meter wall height)
-            HeightDamageModifierBase  : 1.0
-            HeightDamageModifierMin     :  1.0
-            HeightDamageModifierMax     : 1.0
-            (Default Werte für Min und Max sind 1.0 so dass keine HeightDamage Modification stattfindet wenn nicht explizit in einem Attack Mode angegeben)
--->
-                    <!-- if bowmen stand 6m lower than their target they only do 50% of their damage -->
-                                <HeightDamageModifierMin>0.5</HeightDamageModifierMin>
-
-                                <NoMinRangeWhenNotOnGround>true</NoMinRangeWhenNotOnGround>
+                                <NoMinRangeWhenNotOnGround>false</NoMinRangeWhenNotOnGround>
                             </AttackMode>
+
                         </AttackModeList>
                     </TargetCategory>
-
                 </TargetCategoryList>
 
             </Logic>
@@ -310,7 +305,7 @@
             </Logic>
         </Behavior>
 
-        <!-- PARTICLES -->
+        <!-- PARTICULES -->
         <Behavior>
             <Logic classname="EGL::CBehaviorProps">
                 <Class>EGL::CParticleEffectAttachmentBehavior</Class>
@@ -327,16 +322,15 @@
                 <Attachments>
                     <Attachment>
                         <Type>ATTACHMENT_LEADER_SOLDIER</Type>
-                        <Limit>3</Limit>
+                        <Limit>6</Limit>
                     </Attachment>
                 </Attachments>
             </Logic>
         </Behavior>
-
     </Behaviors>
 
     <MapEditor>
-        <TreePosition>Units\Military\Bandits</TreePosition>
+        <TreePosition>Units\Military\Melee Weapons</TreePosition>
         <ShowInTree>false</ShowInTree>
         <Clime>Generic</Clime>
         <Scalable>false</Scalable>

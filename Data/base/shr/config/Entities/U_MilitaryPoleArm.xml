@@ -42,6 +42,7 @@
 			<EntityCategory>Military</EntityCategory>
 			<EntityCategory>Soldier</EntityCategory>
 			<EntityCategory>Melee</EntityCategory>
+            <EntityCategory>Spear</EntityCategory>
 		</EntityCategories>
 		<Familiar>
 			<With>SheepPasture</With>

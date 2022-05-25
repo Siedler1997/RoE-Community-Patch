@@ -21,6 +21,7 @@
         <EntityCategories>
             <EntityCategory>Military</EntityCategory>
             <EntityCategory>HeavyWeapon</EntityCategory>
+            <EntityCategory>Balista</EntityCategory>
         </EntityCategories>
         <AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
         <Exploration>30</Exploration>
