@@ -390,6 +390,8 @@
     <TaskList>TL_DUMMY07</TaskList>
     <TaskList>TL_DUMMY08</TaskList>
     <TaskList>TL_DUMMY09</TaskList>
+
+    <!-- Community Patch -->
 	
 	<TaskList>TL_KNIGHT_ABILITY_TRIBUTE</TaskList>
 </root>

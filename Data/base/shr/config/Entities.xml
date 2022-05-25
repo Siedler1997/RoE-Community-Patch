@@ -1992,4 +1992,5 @@
 	<Entity>B_WatchTower_NA</Entity>
 
 	<Entity>U_MilitaryPoleArm</Entity>
+	<Entity>U_MilitaryCavalry</Entity>
 </root>

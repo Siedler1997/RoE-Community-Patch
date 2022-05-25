@@ -77,4 +77,5 @@
 
 	<!-- CP -->
 	<AnimSet>SET_MILITARYPOLEARM</AnimSet>
+	<AnimSet>SET_MILITARYCAVALRY</AnimSet>
 </root>
