@@ -110,6 +110,56 @@
                 <AmmunitionLimit>1</AmmunitionLimit>
 
                 <TargetCategoryList>
+                    <!-- Bonus damage -->
+                    <TargetCategory>
+                        <EntityCategoryList>
+                            <EntityCategory>Cavalry</EntityCategory>
+                            <EntityCategory>Spear</EntityCategory>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                        </EntityCategoryList>
+
+                        <AttackModeList>
+                            <AttackMode>
+                                <BattleTL/>
+                                <ApplyDamageModifiers>true</ApplyDamageModifiers>
+
+                                <MinRange/>
+                                <MaxRange/>
+                                <MaxHeightDeltaToTarget/>
+                                <CanAttackOverWalls>false</CanAttackOverWalls>
+                                <CooldownThousandths/>
+                                <Damage>
+                                    <DiceCount/>
+                                    <FaceCount/>
+                                    <BaseValue/>
+                                </Damage>
+                            </AttackMode>
+
+                            <AttackMode>
+                                <BattleTL>TL_BATTLE_BOW</BattleTL>
+                                <ApplyDamageModifiers>true</ApplyDamageModifiers>
+
+                                <MinRange>500</MinRange>
+                                <MaxRange>2500</MaxRange>
+                                <MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
+                                <CanAttackOverWalls>false</CanAttackOverWalls>
+                                <CooldownThousandths>4500</CooldownThousandths>
+                                <ProjectileEffect>FXArrow</ProjectileEffect>
+                                <ProjectileOffsetHeight>100</ProjectileOffsetHeight>
+                                <ProjectileOffsetFront>50</ProjectileOffsetFront>
+                                <Damage>
+                                    <DiceCount>0</DiceCount>
+                                    <FaceCount>0</FaceCount>
+                                    <BaseValue>20</BaseValue>
+                                </Damage>
+                                <HeightDamageModifierMin>0.5</HeightDamageModifierMin>
+                                <NoMinRangeWhenNotOnGround>true</NoMinRangeWhenNotOnGround>
+                            </AttackMode>
+                        </AttackModeList>
+                    </TargetCategory>
 
                     <!-- Melee and Ranged Attack -->
                     <TargetCategory>
