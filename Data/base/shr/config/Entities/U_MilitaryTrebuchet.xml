@@ -221,6 +221,41 @@
 						</AttackModeList>
 					</TargetCategory>
 
+					<!-- Dragon -->
+					<TargetCategory>
+						<DisableAutoAttack>true</DisableAutoAttack>
+						<IgnoreGuards>true</IgnoreGuards>
+						<EntityCategoryList>
+							<EntityCategory>Dragon</EntityCategory>
+							<EntityCategory/>
+							<EntityCategory/>
+							<EntityCategory/>
+							<EntityCategory/>
+							<EntityCategory/>
+						</EntityCategoryList>
+						<AttackModeList>
+							<AttackMode>
+								<BattleTL>TL_BATTLE_CATAPULT</BattleTL>
+								<!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
+								<ApplyDamageModifiers>false</ApplyDamageModifiers>
+
+								<AttackAnim>U_Donkey_Trading_Fight</AttackAnim>
+								<MinRange>1800</MinRange>
+								<MaxRange>3200</MaxRange>
+								<ProjectileEffect>E_Trebuchet_Fire_Fly</ProjectileEffect>
+								<MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
+								<CanAttackOverWalls>true</CanAttackOverWalls>
+								<CooldownThousandths>7500</CooldownThousandths>
+								<ConsumeAmmunition>true</ConsumeAmmunition>
+								<Damage>
+									<DiceCount>0</DiceCount>
+									<FaceCount>0</FaceCount>
+									<BaseValue>150</BaseValue>
+								</Damage>
+							</AttackMode>
+						</AttackModeList>
+					</TargetCategory>
+
 					<!-- And the rest ... -->
 					<TargetCategory>
 						<DisableAutoAttack>true</DisableAutoAttack>

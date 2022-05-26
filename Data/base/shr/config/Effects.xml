@@ -869,6 +869,21 @@
             <Model>Effects\E_Torch</Model>
         </Display>
     </Effect>
+	<!--  This effect is played when the catapult boulder hits a dragon-->
+	<Effect id="E_Shockwave04">
+		<Logic classname="EGL::CEffectProps">
+			<Class>EGL::CEffect</Class>
+			<Duration>1</Duration>
+			<SoundID>Impact\impact_catapult_stone</SoundID>
+			<SoundVolume>100</SoundVolume>
+			<SoundLooped>false</SoundLooped>
+		</Logic>
+		<Display classname="ED::CHAnimEffectProps">
+			<Class>ED::CHAnimEffect</Class>
+			<Model>Effects\E_Shockwave03</Model>
+			<Anim>Effects\E_Shockwave03</Anim>
+		</Display>
+	</Effect>
     <Effect id="E_Catapult_Fire">
         <Logic classname="EGL::CSplashEffectProps">
             <Class>EGL::CSplashEffect</Class>
@@ -923,6 +938,23 @@
             <Model>Effects\E_Catapult_Fire</Model>
         </Display>
         </Effect>
+		<Effect id="E_Catapult_Fire_Fly">
+			<Logic classname="EGL::CArrowEffectProps">
+				<Class>EGL::CArrowEffect</Class>
+				<Global>false</Global>
+				<Duration>0</Duration>
+				<Speed>3000.0</Speed>
+				<GravityFactor>1800.0f</GravityFactor>
+				<HeightOffsetStart>640.0</HeightOffsetStart>
+				<HeightOffsetTarget>1300.0</HeightOffsetTarget>
+				<SoundProjectileType>Catapult</SoundProjectileType>
+				<ImpactEffectID>E_Shockwave04</ImpactEffectID>
+			</Logic>
+			<Display classname="ED::CFlyingEffectProps">
+				<Class>ED::CFlyingEffect</Class>
+				<Model>Effects\E_Catapult_Fire</Model>
+			</Display>
+		</Effect>
 		<Effect id="E_Trebuchet_Fire">
 			<Logic classname="EGL::CSplashEffectProps">
 				<Class>EGL::CSplashEffect</Class>
@@ -977,6 +1009,23 @@
 				<Model>Effects\E_Catapult_Fire</Model>
 			</Display>
 		</Effect>
+		<Effect id="E_Trebuchet_Fire_Fly">
+			<Logic classname="EGL::CArrowEffectProps">
+				<Class>EGL::CArrowEffect</Class>
+				<Global>false</Global>
+				<Duration>0</Duration>
+				<Speed>3000.0</Speed>
+				<GravityFactor>800.0f</GravityFactor>
+				<HeightOffsetStart>1200.0</HeightOffsetStart>
+				<HeightOffsetTarget>1300.0</HeightOffsetTarget>
+				<SoundProjectileType>Catapult</SoundProjectileType>
+				<ImpactEffectID>E_Shockwave04</ImpactEffectID>
+			</Logic>
+			<Display classname="ED::CFlyingEffectProps">
+				<Class>ED::CFlyingEffect</Class>
+				<Model>Effects\E_Catapult_Fire</Model>
+			</Display>
+		</Effect>
 	<Effect id="E_TrapProjectile">
         <Logic classname="EGL::CSplashEffectProps">
             <Class>EGL::CSplashEffect</Class>
@@ -1008,6 +1057,22 @@
             <Model>Effects\E_Arrow</Model>
         </Display>
     </Effect>
+	<Effect id="FXArrow_Fly">
+		<Logic classname="EGL::CArrowEffectProps">
+			<Class>EGL::CArrowEffect</Class>
+			<Global>false</Global>
+			<Duration>0</Duration>
+			<Speed>4000.0</Speed>
+			<GravityFactor>1800.0f</GravityFactor>
+			<HeightOffsetStart>60.0</HeightOffsetStart>
+			<HeightOffsetTarget>1300.0</HeightOffsetTarget>
+			<SoundProjectileType>Arrow</SoundProjectileType>
+		</Logic>
+		<Display classname="ED::CFlyingEffectProps">
+			<Class>ED::CFlyingEffect</Class>
+			<Model>Effects\E_Arrow</Model>
+		</Display>
+	</Effect>
 
     <Effect id="E_Axe">
         <Logic classname="EGL::CArrowEffectProps">
@@ -1025,6 +1090,22 @@
             <Model>Effects\E_Axe</Model>
         </Display>
     </Effect>
+	<Effect id="E_Axe_Fly">
+		<Logic classname="EGL::CArrowEffectProps">
+			<Class>EGL::CArrowEffect</Class>
+			<Global>false</Global>
+			<Duration>0</Duration>
+			<Speed>1500.0</Speed>
+			<GravityFactor>250.0f</GravityFactor>
+			<HeightOffsetStart>60.0</HeightOffsetStart>
+			<HeightOffsetTarget>1300.0</HeightOffsetTarget>
+			<SoundProjectileType>Axe</SoundProjectileType>
+		</Logic>
+		<Display classname="ED::CFlyingEffectProps">
+			<Class>ED::CFlyingEffect</Class>
+			<Model>Effects\E_Axe</Model>
+		</Display>
+	</Effect>
 
     <Effect id="FXFireArrow">
         <Logic classname="EGL::CArrowEffectProps">

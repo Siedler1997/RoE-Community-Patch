@@ -296,6 +296,44 @@
                         </AttackModeList>
                     </TargetCategory>
 
+					<!-- Dragon -->
+					<TargetCategory>
+						<EntityCategoryList>
+							<EntityCategory>Dragon</EntityCategory>
+							<EntityCategory/>
+							<EntityCategory/>
+							<EntityCategory/>
+							<EntityCategory/>
+							<EntityCategory/>
+						</EntityCategoryList>
+
+						<AttackModeList>
+							<AttackMode>
+								<!-- ranged combat -->
+								<BattleTL>TL_BATTLE_AXE</BattleTL>
+								<!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
+								<ApplyDamageModifiers>true</ApplyDamageModifiers>
+
+								<MinRange>500</MinRange>
+								<MaxRange>1600</MaxRange>
+								<MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
+								<CanAttackOverWalls>false</CanAttackOverWalls>
+								<CooldownThousandths>4500</CooldownThousandths>
+								<ProjectileEffect>E_Axe_fly</ProjectileEffect>
+								<ProjectileOffsetHeight>100</ProjectileOffsetHeight>
+								<ProjectileOffsetFront>50</ProjectileOffsetFront>
+								<Damage>
+									<DiceCount>0</DiceCount>
+									<FaceCount>0</FaceCount>
+									<BaseValue>30</BaseValue>
+								</Damage>
+
+								<HeightDamageModifierMin>0.5</HeightDamageModifierMin>
+								<NoMinRangeWhenNotOnGround>true</NoMinRangeWhenNotOnGround>
+							</AttackMode>
+						</AttackModeList>
+					</TargetCategory>
+
                 </TargetCategoryList>
 
             </Logic>

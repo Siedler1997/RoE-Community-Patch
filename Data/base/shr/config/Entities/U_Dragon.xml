@@ -18,6 +18,7 @@
 		<HealingPoints>10</HealingPoints>
 		<IsAttackable>true</IsAttackable>
 		<AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
+		<Exploration>20</Exploration>
 		<IdleTaskList>TL_MILITARY_DEFEND</IdleTaskList>
 		<CanDrown>false</CanDrown>
 		<IsSelectable>true</IsSelectable>
@@ -51,7 +52,7 @@
 			<Logic classname="EGL::CMilitaryMovementBehaviorProps">
 				<Class>EGL::CMilitaryMovementBehavior</Class>
 				<Speed>1000</Speed>
-				<RotationSpeed>100</RotationSpeed>
+				<RotationSpeed>200</RotationSpeed>
 			</Logic>
 			<Display classname="ED::CBehaviorProps">
 				<Class>ED::CDisplayBehaviorMovement</Class>
@@ -75,7 +76,7 @@
 				<IdleWhileDefended>false</IdleWhileDefended>
 
 				<AmmunitionType>G_TorchAmmunition</AmmunitionType>
-				<AmmunitionLimit>10</AmmunitionLimit>
+				<AmmunitionLimit>1</AmmunitionLimit>
 				
 				<TargetCategoryList>
 
@@ -183,7 +184,6 @@
 
 					<!-- And the rest ... -->
 					<TargetCategory>
-						<DisableAutoAttack>true</DisableAutoAttack>
 						<IgnoreGuards>true</IgnoreGuards>
 						<EntityCategoryList>
 							<EntityCategory>AttackableBuilding</EntityCategory>

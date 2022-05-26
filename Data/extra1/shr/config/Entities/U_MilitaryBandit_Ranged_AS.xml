@@ -140,7 +140,7 @@
                                 <ApplyDamageModifiers>true</ApplyDamageModifiers>
 
                                 <MinRange>500</MinRange>
-                                <MaxRange>2500</MaxRange>
+                                <MaxRange>2400</MaxRange>
                                 <MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
                                 <CanAttackOverWalls>false</CanAttackOverWalls>
                                 <CooldownThousandths>4500</CooldownThousandths>
@@ -187,7 +187,7 @@
                                 <ApplyDamageModifiers>false</ApplyDamageModifiers>
 
                                 <MinRange>0</MinRange>
-                                <MaxRange>2500</MaxRange>
+                                <MaxRange>2400</MaxRange>
                                 <ProjectileEffect>FXFireArrow</ProjectileEffect>
                                 <MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
                                 <CanAttackOverWalls>false</CanAttackOverWalls>
@@ -275,7 +275,7 @@
                                 <ApplyDamageModifiers>true</ApplyDamageModifiers>
 
                                 <MinRange>500</MinRange>
-                                <MaxRange>2500</MaxRange>
+                                <MaxRange>2400</MaxRange>
                                 <MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
                                 <CanAttackOverWalls>false</CanAttackOverWalls>
                                 <CooldownThousandths>4500</CooldownThousandths>
@@ -321,11 +321,11 @@
 								<ApplyDamageModifiers>true</ApplyDamageModifiers>
 
 								<MinRange>500</MinRange>
-								<MaxRange>2500</MaxRange>
+								<MaxRange>2400</MaxRange>
 								<MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
 								<CanAttackOverWalls>false</CanAttackOverWalls>
 								<CooldownThousandths>4500</CooldownThousandths>
-								<ProjectileEffect>FXArrow</ProjectileEffect>
+								<ProjectileEffect>FXArrow_fly</ProjectileEffect>
 								<ProjectileOffsetHeight>100</ProjectileOffsetHeight>
 								<ProjectileOffsetFront>50</ProjectileOffsetFront>
 								<Damage>

@@ -280,6 +280,7 @@ Folgende Änderungen wurden vorgenommen:
 	- Zwischenproduktionen einführen
 		- Low Priority, da extrem viel Arbeit...
 - Spielbare Dörfer?
+- MainMenu: RdO mit eigenen Tag/Nacht-Hintergrund
 - Ungenutzte Gebäude
 	- Juwelier
 	- Supermarkt?
