@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+
+    <Category>TC_DUMMY</Category>
+    
+	<Tasks>
+
+    <Task classname="EGL::CTaskArgs">
+        <TaskType>TASK_CREATE_DEAD_ENTITY</TaskType>
+    </Task>
+
+	<Task classname="EGL::CTaskArgs">
+		<TaskType>TASK_DELETE_SELF</TaskType>
+	</Task>
+
+	<Task classname="EGL::CTaskArgs">
+		<TaskType>TASK_LIST_DONE</TaskType>
+	</Task>
+
+	</Tasks>
+</root>

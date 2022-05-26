@@ -21,24 +21,26 @@ function InitMultiselection()
     LeaderSortOrder[10] = Entities.U_MilitaryBandit_Ranged_NA
     LeaderSortOrder[11] = Entities.U_MilitaryBandit_Ranged_NE
     LeaderSortOrder[12] = Entities.U_MilitaryBandit_Ranged_SE
-    LeaderSortOrder[13] = Entities.U_MilitaryCatapult
-    LeaderSortOrder[14] = Entities.U_MilitarySiegeTower
-    LeaderSortOrder[15] = Entities.U_MilitaryBatteringRam
-    LeaderSortOrder[16] = Entities.U_MilitaryTrebuchet
-    LeaderSortOrder[17] = Entities.U_CatapultCart
-    LeaderSortOrder[18] = Entities.U_SiegeTowerCart
-    LeaderSortOrder[19] = Entities.U_BatteringRamCart
-    LeaderSortOrder[20] = Entities.U_TrebuchetCart
-    LeaderSortOrder[21] = Entities.U_Thief
-    LeaderSortOrder[22] = Entities.U_Bear
-    LeaderSortOrder[23] = Entities.U_BlackBear
-    LeaderSortOrder[24] = Entities.U_PolarBear
-    LeaderSortOrder[25] = Entities.U_Lion_Male
-    LeaderSortOrder[26] = Entities.U_Lion_Female
-    LeaderSortOrder[27] = Entities.U_Wolf_Grey
-    LeaderSortOrder[28] = Entities.U_Wolf_White
-    LeaderSortOrder[29] = Entities.U_Wolf_Black
-    LeaderSortOrder[30] = Entities.U_Wolf_Brown
+    LeaderSortOrder[13] = Entities.U_MilitaryCannon
+    LeaderSortOrder[14] = Entities.U_MilitaryCatapult
+    LeaderSortOrder[15] = Entities.U_MilitarySiegeTower
+    LeaderSortOrder[16] = Entities.U_MilitaryBatteringRam
+    LeaderSortOrder[17] = Entities.U_MilitaryTrebuchet
+    LeaderSortOrder[18] = Entities.U_CatapultCart
+    LeaderSortOrder[19] = Entities.U_CannonCart
+    LeaderSortOrder[20] = Entities.U_SiegeTowerCart
+    LeaderSortOrder[21] = Entities.U_BatteringRamCart
+    LeaderSortOrder[22] = Entities.U_TrebuchetCart
+    LeaderSortOrder[23] = Entities.U_Thief
+    LeaderSortOrder[24] = Entities.U_Bear
+    LeaderSortOrder[25] = Entities.U_BlackBear
+    LeaderSortOrder[26] = Entities.U_PolarBear
+    LeaderSortOrder[27] = Entities.U_Lion_Male
+    LeaderSortOrder[28] = Entities.U_Lion_Female
+    LeaderSortOrder[29] = Entities.U_Wolf_Grey
+    LeaderSortOrder[30] = Entities.U_Wolf_White
+    LeaderSortOrder[31] = Entities.U_Wolf_Black
+    LeaderSortOrder[32] = Entities.U_Wolf_Brown
 end
 
 

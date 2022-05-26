@@ -11166,4 +11166,29 @@
 		<FileLength>53164</FileLength>
 		<AnimationDuration>0.8</AnimationDuration>
 	</Animation>
+
+    <Animation>
+		<FileName>military\V_Cannon_Destroyed</FileName>
+		<Timestamp>128178463530000000</Timestamp>
+		<FileLength>53164</FileLength>
+		<AnimationDuration>5.34</AnimationDuration>
+	</Animation>
+    <Animation>
+		<FileName>military\V_Cannon_Drive</FileName>
+		<Timestamp>128178463530000000</Timestamp>
+		<FileLength>53164</FileLength>
+		<AnimationDuration>1.6</AnimationDuration>
+	</Animation>
+    <Animation>
+		<FileName>military\V_Cannon_Idle</FileName>
+		<Timestamp>128178463530000000</Timestamp>
+		<FileLength>53164</FileLength>
+		<AnimationDuration>0.9</AnimationDuration>
+	</Animation>
+    <Animation>
+		<FileName>military\V_Cannon_Shoot</FileName>
+		<Timestamp>128178463530000000</Timestamp>
+		<FileLength>53164</FileLength>
+		<AnimationDuration>2.33</AnimationDuration>
+	</Animation>
 </Root>

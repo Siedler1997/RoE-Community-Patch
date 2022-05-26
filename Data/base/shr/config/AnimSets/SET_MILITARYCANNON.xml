@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AnimSet>
+    <Categories>
+		<Category classname="EGL::CAnimCategory" classid="0xa7b5dfb8">
+			<Name>Stand</Name>
+			<Animation>V_Cannon_Idle</Animation>
+		</Category>
+		<Category classname="EGL::CAnimCategory" classid="0xa7b5dfb8">
+			<Name>Walk</Name>
+			<Animation>V_Cannon_Drive</Animation>
+		</Category>
+		<Category classname="EGL::CAnimCategory" classid="0xa7b5dfb8">
+			<Name>Run</Name>
+			<Animation>V_Cannon_Drive</Animation>
+		</Category>
+        <Category classname="EGL::CAnimCategory">
+            <Name>Shoot</Name>
+            <Animation>V_Cannon_Shoot</Animation>
+        </Category>
+		<Category classname="EGL::CAnimCategory" classid="0xa7b5dfb8">
+			<Name>Idle</Name>
+			<Animation>V_Cannon_Idle</Animation>
+		</Category>
+		<Category classname="EGL::CAnimCategory" classid="0xa7b5dfb8">
+			<Name>Idle1</Name>
+			<Animation>V_Cannon_Idle</Animation>
+		</Category>
+		<Category classname="EGL::CAnimCategory" classid="0xa7b5dfb8">
+			<Name>Idle2</Name>
+			<Animation>V_Cannon_Idle</Animation>
+		</Category>
+		<Category classname="EGL::CAnimCategory" classid="0xa7b5dfb8">
+			<Name>Idle3</Name>
+			<Animation>V_Cannon_Idle</Animation>
+		</Category>
+		<Category classname="EGL::CAnimCategory" classid="0xa7b5dfb8">
+			<Name>Idle4</Name>
+			<Animation>V_Cannon_Idle</Animation>
+		</Category>
+		<Category classname="EGL::CAnimCategory" classid="0xa7b5dfb8">
+			<Name>Idle5</Name>
+			<Animation>V_Cannon_Idle</Animation>
+		</Category>
+		<Category classname="EGL::CAnimCategory" classid="0xa7b5dfb8">
+			<Name>Die</Name>
+			<Animation>V_Cannon_Destroyed</Animation>
+		</Category>
+	</Categories>
+</AnimSet>

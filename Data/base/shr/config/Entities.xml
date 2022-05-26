@@ -1992,4 +1992,8 @@
 	<Entity>B_WatchTower_NA</Entity>
 
 	<Entity>U_MilitaryPoleArm</Entity>
+	<Entity>U_CannonCart</Entity>
+	<Entity>U_CannonCart_Collapse</Entity>
+	<Entity>U_MilitaryCannon</Entity>
+	<Entity>U_MilitaryCannon_Collapse</Entity>
 </root>

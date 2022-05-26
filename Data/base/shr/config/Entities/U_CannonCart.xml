@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+    <Display classname="ED::CDisplaySettlerWithSlaveProps">
+        <Class>ED::CDisplaySettlerWithSlave</Class>
+        <Model>Units\Misc_Unit\U_Ox_Master</Model>
+        <Model2>Units\Misc_Unit\U_SiegeTower_Cart</Model2>
+        <SlaveAlwaysVisible>false</SlaveAlwaysVisible>
+    </Display>
+    <Logic classname="EGL::CSettlerProps">
+        <Class>EGL::CSettler</Class>
+        <AccessCategory>AccessCategoryAttackableSettler</AccessCategory>
+        <PlayerSectorType>PlayerSectorTypeMilitary</PlayerSectorType>
+        <MilMetaFormationMemberType>MilMetaFormationMemberTypeCart</MilMetaFormationMemberType>
+        <MaxHealth>100</MaxHealth>
+        <HealingSeconds/>
+        <HealingPoints>0</HealingPoints>
+
+        <NeedsPlayer>true</NeedsPlayer>
+        <ForceNoPlayer>false</ForceNoPlayer>
+        <ApproachR>200</ApproachR>
+        <IsSelectable>true</IsSelectable>
+        <ShowInMiniMap>1</ShowInMiniMap>
+
+        <EntityCategories>
+            <EntityCategory>Military</EntityCategory>
+            <EntityCategory>HeavyWeapon</EntityCategory>
+        </EntityCategories>
+        <AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
+        <RepairFactor>0.3</RepairFactor>
+        <Exploration>0</Exploration>
+        <IdleTaskList>TL_MILITARY_DEFEND</IdleTaskList>
+
+        <Cost>
+            <GoodAmount>
+                <GoodType>G_Gold</GoodType>
+                <Amount>150</Amount>
+            </GoodAmount>
+            <GoodAmount>
+                <GoodType>G_SiegeEnginePart</GoodType>
+                <Amount>5</Amount>
+            </GoodAmount>
+        </Cost>
+
+        <Familiar>
+            <With>SheepPasture</With>
+            <With>CattlePasture</With>
+        </Familiar>
+        <SoundImpactType>Wood</SoundImpactType>
+
+<!--        <OnScreenIcon>MinimapCatapult</OnScreenIcon>
+-->
+    </Logic>
+
+    <Behaviors>
+        <Behavior>
+            <Logic classname="EGL::CSiegeCartBehaviorProps">
+                <Class>EGL::CSiegeCartBehavior</Class>
+                <AmmunitionType>G_CatapultAmmunition</AmmunitionType>
+                <AmmunitionAmount>10</AmmunitionAmount>
+                <ConstructionDelay>5000</ConstructionDelay>
+                <ConstructionModel>Vehicles\V_Cannon</ConstructionModel>
+                <EngineList>
+                    <Engine>U_MilitaryCannon</Engine>
+                </EngineList>
+            </Logic>
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CSiegeCartBehavior</Class>
+            </Display>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CAnimationBehaviorExProps">
+                <Class>EGL::CBehaviorAnimationEx</Class>
+
+                <AnimSet>SET_OX</AnimSet>
+            </Logic>
+            <Display classname="ED::CAnimationBehaviorSlaveProps">
+                <Class>ED::CAnimationBehaviorSlave</Class>
+                <SlaveAnimation>
+                    <Mapping>
+                        <Master>Misc_Unit\U_Ox_Idle1</Master>
+                        <Slave>Misc_Unit\U_SiegeTower_Cart_Stand</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>Misc_Unit\U_Ox_Idle2</Master>
+                        <Slave>Misc_Unit\U_SiegeTower_Cart_Stand</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>Misc_Unit\U_Ox_Walk</Master>
+                        <Slave>Misc_Unit\U_SiegeTower_Cart_Walk</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>Misc_Unit\U_Ox_Die</Master>
+                        <Slave>Misc_Unit\U_SiegeTower_Cart_Stand</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>Misc_Unit\U_Ox_Run</Master>
+                        <Slave>Misc_Unit\U_SiegeTower_Cart_Walk</Slave>
+                    </Mapping>
+                </SlaveAnimation>
+            </Display>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CMilitaryMovementBehaviorProps">
+                <Class>EGL::CMilitaryMovementBehavior</Class>
+                <StraightenPath>true</StraightenPath>
+                <Speed>400</Speed>
+                <RotationSpeed>150</RotationSpeed>
+                <MoveTaskList>TL_MILITARY_WALK</MoveTaskList>
+                <MoveIdleAnim>Misc_unit\U_Ox_Stand</MoveIdleAnim>
+            </Logic>
+            <!--
+            <Logic classname="EGL::CBehaviorDefaultMovementProps">
+                <Class>EGL::CSettlerMovement</Class> -->
+
+                <!-- SensorRadius: Radius around the unit for checking if evaison is needed (default 250)
+                SensorShift: Offset to move sensor radius in movement direction. 1.0 moves the radius completely in front of the settler (default 0.3)
+                AvoidFactor: Strength of evasion (default 3.0)
+                -->
+                <!--
+                <SensorRadius>200</SensorRadius>
+                <SensorShift>0.8</SensorShift>
+                <AvoidFactor>1.5</AvoidFactor>
+                <EvasionPriority>140</EvasionPriority>
+
+                <Speed>480</Speed>
+                <SpeedFactorRoad>1.5</SpeedFactorRoad>
+                <RotationSpeed>30</RotationSpeed>
+                <MoveTaskList>TL_LEADER_WALK</MoveTaskList>
+                <MoveIdleAnim>Misc_unit\U_Ox_Stand</MoveIdleAnim>
+            </Logic>
+            -->
+            <Display classname="ED::CMovementBehaviorSlaveCartProps">
+                <Class>ED::CMovementBehaviorSlaveCart</Class>
+                <MovementToRotationSets>
+                    <Set>
+                        <MasterModel>Units\Misc_Unit\U_Ox_Master</MasterModel>
+                        <AngleLock>60</AngleLock>
+                        <LowRotationAngle>10</LowRotationAngle>
+                        <MovementToRotationFactor>0.3</MovementToRotationFactor>
+                        <MovementToLowRotationFactor>0.2</MovementToLowRotationFactor>
+                    </Set>
+                </MovementToRotationSets>
+            </Display>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CFightBehaviorProps">
+                <Class>EGL::CFightBehavior</Class>
+                <DefendTL>TL_MILITARY_DEFEND</DefendTL>
+                <MoveTaskList>TL_KNIGHT_WALK</MoveTaskList>
+                <DefendRange>0</DefendRange>
+                <AttackMoveRange>0</AttackMoveRange>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::CBehaviorWalkCommand</Class>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CGuardableBehaviorProps">
+                <Class>EGL::CGuardableBehavior</Class>
+                <GuardFormationID>GuardingMechant</GuardFormationID>
+                <GuardApproachPos><X>-200</X><Y>0</Y></GuardApproachPos>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorPropsDying">
+                <Class>EGL::CBehaviorDying</Class>
+                <DyingTaskList>TL_DIE_CANNON</DyingTaskList>
+                <DeadEntity>U_CannonCart_Collapse</DeadEntity>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::CParticleEffectAttachmentBehavior</Class>
+            </Logic>
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CParticleEffectAttachmentBehavior</Class>
+            </Display>
+        </Behavior>
+    </Behaviors>
+
+    <MapEditor>
+        <TreePosition>Units\Military\Heavy Weapons</TreePosition>
+        <ShowInTree>false</ShowInTree>
+        <Clime>Generic</Clime>
+        <Scalable>false</Scalable>
+    </MapEditor>
+</root>
