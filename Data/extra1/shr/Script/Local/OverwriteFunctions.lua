@@ -137,8 +137,6 @@ function InitLocalOverwrite()
             g_TexturePositions.Entities[Entities.B_Beautification_Vase]             = {5, 2, 1}
             g_TexturePositions.Entities[Entities.B_Beautification_VictoryColumn]    = {1, 6, 1}
             g_TexturePositions.Entities[Entities.U_Tiger]    = {1, 8, 1}
-            g_TexturePositions.Entities[Entities.B_GuardTower_AS]    = {12, 3}
-            g_TexturePositions.Entities[Entities.B_WatchTower_AS]    = {7, 6}
             
             -- Quest Types
             g_TexturePositions.QuestTypes[Objective.Refill]                  = {5, 9}

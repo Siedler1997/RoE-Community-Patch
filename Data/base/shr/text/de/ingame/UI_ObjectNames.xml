@@ -575,8 +575,4 @@
 	<string id="U_NPC_Castellan_NE" MD5Hash="0055D815AC3E445508C9F42176AAD579" mod="20080206075412" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Kastellan]]></string>
 	<string id="U_NPC_Castellan_NA" MD5Hash="0055D815AC3E445508C9F42176AAD579" mod="20080206075412" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Kastellan]]></string>
 	<string id="U_NPC_Castellan_SE" MD5Hash="0055D815AC3E445508C9F42176AAD579" mod="20080206075412" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Kastellan]]></string>
-	<string id="B_GuardTower" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Wachturm]]></string>
-	<string id="B_WatchTower" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Aussichtsturm]]></string>
-	<string id="BuySpearfighters" MD5Hash="499006B1DC7CF75C0F9DF638C575904A" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Hellebardier]]></string>
-	<string id="U_MilitarySword" MD5Hash="499006B1DC7CF75C0F9DF638C575904A" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Hellebardier]]></string>
 </root>

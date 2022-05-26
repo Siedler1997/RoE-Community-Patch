@@ -984,38 +984,6 @@
 
 
 		<!-- Community Patch -->
-		<BuildingUpgrade>
-			<Category>GuardTower_MiddleEurope</Category>
-			<FirstBuilding>B_GuardTower_ME</FirstBuilding>
-		</BuildingUpgrade>
-		<BuildingUpgrade>
-			<Category>GuardTower_NorthEurope</Category>
-			<FirstBuilding>B_GuardTower_NE</FirstBuilding>
-		</BuildingUpgrade>
-		<BuildingUpgrade>
-			<Category>GuardTower_SouthEurope</Category>
-			<FirstBuilding>B_GuardTower_SE</FirstBuilding>
-		</BuildingUpgrade>
-		<BuildingUpgrade>
-			<Category>GuardTower_NorthAfrica</Category>
-			<FirstBuilding>B_GuardTower_NA</FirstBuilding>
-		</BuildingUpgrade>
-		<BuildingUpgrade>
-			<Category>WatchTower_MiddleEurope</Category>
-			<FirstBuilding>B_WatchTower_ME</FirstBuilding>
-		</BuildingUpgrade>
-		<BuildingUpgrade>
-			<Category>WatchTower_NorthEurope</Category>
-			<FirstBuilding>B_WatchTower_NE</FirstBuilding>
-		</BuildingUpgrade>
-		<BuildingUpgrade>
-			<Category>WatchTower_SouthEurope</Category>
-			<FirstBuilding>B_WatchTower_SE</FirstBuilding>
-		</BuildingUpgrade>
-		<BuildingUpgrade>
-			<Category>WatchTower_NorthAfrica</Category>
-			<FirstBuilding>B_WatchTower_NA</FirstBuilding>
-		</BuildingUpgrade>
         
     </BuildingUpgrades>
 

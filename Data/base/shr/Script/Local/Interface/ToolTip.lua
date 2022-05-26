@@ -172,7 +172,7 @@ function GUI_Tooltip.TooltipBuild(_OptionalPositionTooltipAboveBoolean, _Optiona
     local WidgetName = XGUIEng.GetWidgetNameByID(CurrentWidgetID)
     local BuildingType
     
-    if WidgetName == "B_WallGate" or WidgetName == "B_GuardTower" or WidgetName == "B_WatchTower" then
+    if WidgetName == "B_WallGate" then
         BuildingType = GetEntityTypeForClimatezone(WidgetName)
     else
         BuildingType = Entities[WidgetName]

@@ -75,14 +75,5 @@
 
 
 	<!-- Community Patch -->
-	<BuildingUpgrade>
-		<Category>GuardTower_Asia</Category>
-		<FirstBuilding>B_GuardTower_AS</FirstBuilding>
-	</BuildingUpgrade>
-	<BuildingUpgrade>
-		<Category>WatchTower_Asia</Category>
-		<FirstBuilding>B_WatchTower_AS</FirstBuilding>
-	</BuildingUpgrade>
-
 
 </BuildingUpgrades>
