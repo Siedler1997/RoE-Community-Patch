@@ -23,7 +23,7 @@
 		<IdleTaskList>TL_MILITARY_DEFEND</IdleTaskList>
 		<CanDrown>false</CanDrown>
 		<IsSelectable>true</IsSelectable>
-		<BlockRadius>60</BlockRadius>
+		<BlockRadius>100</BlockRadius>
 
 		<Cost>
 			<GoodAmount>
@@ -77,7 +77,7 @@
 				<Speed>800</Speed>
                 <SmoothingRadius>1000</SmoothingRadius>
 				<RotationSpeed>400</RotationSpeed>
-				<MoveTaskList>TL_MILITARY_WALK</MoveTaskList>
+				<MoveTaskList>TL_KNIGHT_WALK</MoveTaskList>
 				<MoveIdleAnim>Military\U_MilitaryCavalry_Idle1</MoveIdleAnim>
 			</Logic>
 			<Display classname="ED::CBehaviorProps">
@@ -98,11 +98,11 @@
 
 				<DefendTL>TL_MILITARY_DEFEND</DefendTL>
 				<IdleTaskList>TL_MILITARY_IDLE</IdleTaskList>
-				<MoveTaskList>TL_MILITARY_WALK</MoveTaskList>
-				<AttackRunTaskList>TL_MILITARY_ATTACKRUN</AttackRunTaskList>
+				<MoveTaskList>TL_KNIGHT_WALK</MoveTaskList>
+				<AttackRunTaskList>TL_KNIGHT_WALK</AttackRunTaskList>
 				<StandToArmsTaskList>TL_MILITARY_STAND_TO_ARMS</StandToArmsTaskList>
 				<RaiseShieldTaskList>TL_MILITARY_RAISE_SHIELD</RaiseShieldTaskList>
-				<RaiseShieldRunTaskList>TL_MILITARY_RAISE_SHIELD_RUN</RaiseShieldRunTaskList>
+				<RaiseShieldRunTaskList>TL_KNIGHT_WALK</RaiseShieldRunTaskList>
 
 				<DefaultFormation>DoubleColumn</DefaultFormation>
 				<StandFormation>DoubleColumn</StandFormation>
