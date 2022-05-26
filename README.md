@@ -1,5 +1,5 @@
 # Unofficial RoE Communitypatch
-Dieser inoffizielle Patch behebt diverse Bugs vom Spiel 'Die Siedler - Aufstieg eines Königreichs' und fügt neue Features hinzu.
+Dieser inoffizielle Patch behebt diverse Bugs der History Edition vom Spiel 'Die Siedler - Aufstieg eines Königreichs' und fügt neue Features hinzu.
 
 
 
@@ -182,7 +182,7 @@ Folgende Änderungen wurden vorgenommen:
 
 
 ## (Mögliche) ToDos
-- Speerkämpfer
+- Hellebardiere
 	- Icon
 	- Audio-Feedback
 	- Rekrutierung
@@ -192,7 +192,7 @@ Folgende Änderungen wurden vorgenommen:
 		- ODER: Der Nahkämpferkaserne hinzufügen
 			- Neuer Button für die Kaserne
 			- "Schwertkämpfer***"-Strings zu "Nahkämpfer***" abändern
-	- Spielerfarbe abbilden (PU_SoldierPoleArm4_masks.dds)
+- Scripte für NPCs mit SpielerId 0 anpassen (Also Beseitigung von Scriptfehlern)
 - Außenposten/Aussichtsturm/Wachturm
 	- ME-Aussichtsturm: Schwarze Seite
 	- Aussichtstürme: Alarm?
@@ -219,8 +219,8 @@ Folgende Änderungen wurden vorgenommen:
 	- Hauptspiel-Kampagne im AddOn
 		- Zwischenmenü zur Auswahl der Kampagne
 		- Slot für Community-Kampagnen
-- Wikinger: Kontrollierter Ehefrauen-Raub
-- RPG-Sicht zum rumlaufen ("Heist")
+- Wikinger: Kontrollierter Ehefrauen-Raub ("Heist")
+- RPG-Sicht zum rumlaufen
 - Nutzbare (Tier-)Seuche, inkl. Musik
 	- Ruhige, aber bedrohliche Playlist
 	- Erst ab x% Betroffene, da sonst zu oft getriggert
@@ -257,9 +257,7 @@ Folgende Änderungen wurden vorgenommen:
 	- Aktive KI-Ritter mit Fähigkeiten
 	- Nutzlose Rand-Territorien weg
 - Entlassen-Button
-- Söldner-Trupps
-	- Konvertierbar
-	- Korrekte Fackelanzeige (auch im Base game)
+- Söldner-Trupps: Korrekte Fackelanzeige
 - Max. Zoom leicht erhöhen
 	- Winkel muss nach 0.5 anders kalkuliert werden
 - "Neue" Ritter 

@@ -11089,81 +11089,87 @@
   <AnimationDuration>1.3333333730697632</AnimationDuration>
  </Animation>
 	<Animation>
-		<FileName>military\u_militarypolearm_battleidle</FileName>
+		<FileName>military\u_militaryspear_battleidle</FileName>
 		<Timestamp>128208607970000000</Timestamp>
 		<FileLength>53164</FileLength>
 		<AnimationDuration>5.675</AnimationDuration>
 	</Animation>
 	<Animation>
-		<FileName>military\u_militarypolearm_die</FileName>
+		<FileName>military\u_militaryspeardie</FileName>
 		<Timestamp>128306301210000000</Timestamp>
 		<FileLength>53164</FileLength>
 		<AnimationDuration>1.925</AnimationDuration>
 	</Animation>
 	<Animation>
-		<FileName>military\u_militarypolearm_fight</FileName>
+		<FileName>military\u_militaryspear_fight</FileName>
 		<Timestamp>128178413810000000</Timestamp>
 		<FileLength>53164</FileLength>
 		<AnimationDuration>1.325</AnimationDuration>
 	</Animation>
 	<Animation>
-		<FileName>military\u_militarypolearm_fight2</FileName>
+		<FileName>military\u_militaryspear_fight2</FileName>
 		<Timestamp>128193943300000000</Timestamp>
 		<FileLength>53164</FileLength>
 		<AnimationDuration>1.2</AnimationDuration>
 	</Animation>
 	<Animation>
-		<FileName>military\u_militarypolearm_fight3</FileName>
+		<FileName>military\u_militaryspear_fight3</FileName>
 		<Timestamp>128193943570000000</Timestamp>
 		<FileLength>53164</FileLength>
 		<AnimationDuration>1.475</AnimationDuration>
 	</Animation>
 	<Animation>
-		<FileName>military\u_militarypolearm_idle1</FileName>
+		<FileName>military\u_militaryspear_idle1</FileName>
 		<Timestamp>128304434450000000</Timestamp>
 		<FileLength>53164</FileLength>
 		<AnimationDuration>5.325</AnimationDuration>
 	</Animation>
 	<Animation>
-		<FileName>military\u_militarypolearm_idle2</FileName>
+		<FileName>military\u_militaryspear_idle2</FileName>
 		<Timestamp>128304434630000000</Timestamp>
 		<FileLength>53164</FileLength>
 		<AnimationDuration>3.</AnimationDuration>
 	</Animation>
 	<Animation>
-		<FileName>military\u_militarypolearm_idle3</FileName>
+		<FileName>military\u_militaryspear_idle3</FileName>
 		<Timestamp>128304434820000000</Timestamp>
 		<FileLength>53164</FileLength>
 		<AnimationDuration>1.725</AnimationDuration>
 	</Animation>
 	<Animation>
-		<FileName>military\u_militarypolearm_idle4</FileName>
+		<FileName>military\u_militaryspear_idle4</FileName>
 		<Timestamp>128304434820000000</Timestamp>
 		<FileLength>53164</FileLength>
 		<AnimationDuration>1.8</AnimationDuration>
 	</Animation>
 	<Animation>
-		<FileName>military\u_militarypolearm_idle5</FileName>
+		<FileName>military\u_militaryspear_idle5</FileName>
 		<Timestamp>128304434820000000</Timestamp>
 		<FileLength>53164</FileLength>
 		<AnimationDuration>1.8</AnimationDuration>
 	</Animation>
 	<Animation>
-		<FileName>military\u_militarypolearm_idle6</FileName>
+		<FileName>military\u_militaryspear_idle6</FileName>
 		<Timestamp>128304434820000000</Timestamp>
 		<FileLength>53164</FileLength>
 		<AnimationDuration>5.325</AnimationDuration>
 	</Animation>
 	<Animation>
-		<FileName>military\u_militarypolearm_run</FileName>
+		<FileName>military\u_militaryspear_run</FileName>
 		<Timestamp>127941656140000000</Timestamp>
 		<FileLength>53164</FileLength>
 		<AnimationDuration>1.6</AnimationDuration>
 	</Animation>
 	<Animation>
-		<FileName>military\u_militarypolearm_walk</FileName>
+		<FileName>military\u_militaryspear_walk</FileName>
 		<Timestamp>128178463530000000</Timestamp>
 		<FileLength>53164</FileLength>
 		<AnimationDuration>0.8</AnimationDuration>
+	</Animation>
+	<Animation>
+		<FileName>military\u_dragon_fly</FileName>
+		<Timestamp>128178463530000000</Timestamp>
+		<FileLength>53248</FileLength>
+		<AnimationDuration>1.175</AnimationDuration>
 	</Animation>
 </Root>

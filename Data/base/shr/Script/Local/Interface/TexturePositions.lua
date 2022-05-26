@@ -104,7 +104,7 @@ function InitTexturePositions()
     [Entities.U_NPC_Castellan_NE]           = {7, 2, 1},
     [Entities.U_NPC_Castellan_NA]           = {7, 2, 1},
     [Entities.U_NPC_Castellan_SE]           = {7, 2, 1},
-    [Entities.U_MilitaryPoleArm]            = {9, 1, 1},
+    [Entities.U_MilitarySpear]            = {9, 1, 1},
 
     [Entities.U_TaxCollector]               = {14, 13},
     [Entities.U_GoldCart]                   = {7, 1},

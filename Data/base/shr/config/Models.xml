@@ -14617,9 +14617,25 @@
             <UseSurfaceHeight>True</UseSurfaceHeight>
         </Model>
 
-		<Model id="Units\Military\U_MilitaryPoleArm">
+		<Model id="Units\Military\U_MilitarySpear">
 			<SelectionRadius>100</SelectionRadius>
-			<Effect>SettlerRimPlayerColorSpecular</Effect>
+			<!--<Effect>SettlerRimPlayerColorSpecular</Effect>-->
+			<SelectionTexture>Selection_Soldier</SelectionTexture>
+			<OcclusionReceiver>True</OcclusionReceiver>
+			<DefaultAnimID>Military\U_MilitaryPoleArm_Run</DefaultAnimID>
+		</Model>
+
+		<Model id="Doodads\D_X_Beautification_Dragon">
+			<CastShadow>True</CastShadow>
+			<ShareShadowRaster>True</ShareShadowRaster>
+			<!--<UseAlphaBlending>True</UseAlphaBlending>-->
+			<OcclusionCaster>True</OcclusionCaster>
+			<Effect>SimpleObjectMultiply</Effect>
+		</Model>
+
+		<Model id="Units\Military\U_Dragon">
+			<SelectionRadius>200</SelectionRadius>
+			<Effect>SettlerThroneRoom</Effect>
 			<SelectionTexture>Selection_Soldier</SelectionTexture>
 			<OcclusionReceiver>True</OcclusionReceiver>
 			<DefaultAnimID>Military\U_MilitaryPoleArm_Run</DefaultAnimID>

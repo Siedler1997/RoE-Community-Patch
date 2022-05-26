@@ -76,5 +76,6 @@
     <AnimSet>SET_DUMMY_09</AnimSet>
 
 	<!-- CP -->
-	<AnimSet>SET_MILITARYPOLEARM</AnimSet>
+	<AnimSet>SET_MILITARYSPEAR</AnimSet>
+	<AnimSet>SET_DRAGON</AnimSet>
 </root>
