@@ -59,7 +59,7 @@
                 <Class>EGL::CMilitaryBigUnitMovementBehavior</Class>
                 <StraightenPath>true</StraightenPath>
                 <EvasionPriority>140</EvasionPriority>
-                <Speed>500</Speed>
+                <Speed>300</Speed>
                 <SmoothingRadius>1000</SmoothingRadius>
                 <RotationSpeed>200</RotationSpeed>
                 <MoveTaskList>TL_MILITARY_WALK</MoveTaskList>
@@ -92,8 +92,7 @@
         <Behavior>
             <Logic classname="EGL::CAttachableWarMachineBehaviorProps">
                 <Class>EGL::CAttachableWarMachineBehavior</Class>
-                <GuardFormationID>OperatingCatapult</GuardFormationID>
-                <GuardApproachPos><X>-500</X><Y>0</Y></GuardApproachPos>
+                <GuardFormationID>GuardingMechant</GuardFormationID>
             </Logic>
         </Behavior>
 
@@ -214,7 +213,7 @@
                             <EntityCategory>HeavyWeapon</EntityCategory>
                             <EntityCategory>Trebuchet</EntityCategory>
 							<EntityCategory>Military</EntityCategory>
-                            <EntityCategory/>
+							<EntityCategory>Leader</EntityCategory>
                             <EntityCategory/>
                         </EntityCategoryList>
                         <AttackModeList>

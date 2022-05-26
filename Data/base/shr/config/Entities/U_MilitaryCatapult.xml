@@ -92,7 +92,8 @@
         <Behavior>
             <Logic classname="EGL::CAttachableWarMachineBehaviorProps">
                 <Class>EGL::CAttachableWarMachineBehavior</Class>
-                <GuardFormationID>OperatingSiegeTower</GuardFormationID>
+                <GuardFormationID>OperatingCatapult</GuardFormationID>
+                <GuardApproachPos><X>-500</X><Y>0</Y></GuardApproachPos>
             </Logic>
         </Behavior>
 
@@ -213,7 +214,7 @@
                             <EntityCategory>HeavyWeapon</EntityCategory>
                             <EntityCategory>Trebuchet</EntityCategory>
 							<EntityCategory>Military</EntityCategory>
-                            <EntityCategory/>
+							<EntityCategory>Leader</EntityCategory>
                             <EntityCategory/>
                         </EntityCategoryList>
                         <AttackModeList>

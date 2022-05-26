@@ -75,6 +75,7 @@
     <AnimSet>SET_DUMMY_08</AnimSet>
     <AnimSet>SET_DUMMY_09</AnimSet>
 
-	<!-- CP -->
+	<!-- Community Patch -->
 	<AnimSet>SET_MILITARYPOLEARM</AnimSet>
+	<AnimSet>SET_MILITARYCANNON</AnimSet>
 </root>
