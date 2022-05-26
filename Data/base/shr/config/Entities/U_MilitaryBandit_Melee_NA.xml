@@ -109,6 +109,54 @@
                 <AmmunitionLimit>2</AmmunitionLimit>
 
                 <TargetCategoryList>
+                    <!-- Bonus against ranged -->
+                    <TargetCategory>
+                        <EntityCategoryList>
+                            <EntityCategory>LongRange</EntityCategory>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                        </EntityCategoryList>
+
+                        <AttackModeList>
+                            <AttackMode>
+                                <BattleTL>TL_BATTLE_MELEE</BattleTL>
+                                <ApplyDamageModifiers>true</ApplyDamageModifiers>
+
+                                <MinRange>0</MinRange>
+                                <MaxRange>150</MaxRange>
+                                <MaxHeightDeltaToTarget>100</MaxHeightDeltaToTarget>
+                                <CanAttackOverWalls>false</CanAttackOverWalls>
+                                <CooldownThousandths>3000</CooldownThousandths>
+                                <Damage>
+                                    <DiceCount>0</DiceCount>
+                                    <FaceCount>0</FaceCount>
+                                    <BaseValue>20</BaseValue>
+                                </Damage>
+                            </AttackMode>
+                            <AttackMode>
+                                <BattleTL/>
+                                <ApplyDamageModifiers>true</ApplyDamageModifiers>
+                                <MinRange/>
+                                <MaxRange/>
+                                <MaxHeightDeltaToTarget/>
+                                <CanAttackOverWalls>false</CanAttackOverWalls>
+                                <CooldownThousandths/>
+                                <ProjectileEffect/>
+                                <ProjectileOffsetHeight/>
+                                <ProjectileOffsetFront/>
+                                <Damage>
+                                    <DiceCount/>
+                                    <FaceCount/>
+                                    <BaseValue/>
+                                </Damage>
+                                <NoMinRangeWhenNotOnGround>false</NoMinRangeWhenNotOnGround>
+                            </AttackMode>
+
+                        </AttackModeList>
+                    </TargetCategory>
 
                     <!-- Plain attack -->
                     <TargetCategory>
