@@ -115,7 +115,7 @@
 				<AmmunitionLimit>1</AmmunitionLimit>
 
 				<TargetCategoryList>
-                    <!-- Bonus damage against bow and sword -->
+                    <!-- Bonus damage -->
 					<TargetCategory>
 						<!-- don't remove  the empty tags, otherwise the data isn't shown correctly in the XML balancer! -->
 						<EntityCategoryList>
