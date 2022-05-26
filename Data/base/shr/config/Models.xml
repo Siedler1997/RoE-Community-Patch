@@ -14616,14 +14616,6 @@
             <SelectionTexture>Selection_Soldier</SelectionTexture>
             <UseSurfaceHeight>True</UseSurfaceHeight>
         </Model>
-
-		<Model id="Units\Military\U_MilitaryPoleArm">
-			<SelectionRadius>100</SelectionRadius>
-			<Effect>SettlerRimPlayerColorSpecular</Effect>
-			<SelectionTexture>Selection_Soldier</SelectionTexture>
-			<OcclusionReceiver>True</OcclusionReceiver>
-			<DefaultAnimID>Military\U_MilitaryPoleArm_Run</DefaultAnimID>
-		</Model>
         
     </Models>
 </root>

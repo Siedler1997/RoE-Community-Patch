@@ -119,7 +119,7 @@ function GUI_Military.DisassembleUpdate()
     
     if CartType == Entities.U_BatteringRamCart then
         DisassembleIcon = {12, 10}
-    elseif CartType == Entities.U_CatapultCart or CartType == Entities.U_TrebuchetCart then
+    elseif CartType == Entities.U_CatapultCart then
         DisassembleIcon = {12, 9}
     elseif CartType == Entities.U_SiegeTowerCart then
         DisassembleIcon = {12, 11}
@@ -189,8 +189,6 @@ function GUI_Military.ErectMouseOver()
         TooltipTextKey = "ErectCatapult"
     elseif SiegeEngineType == Entities.U_MilitarySiegeTower then
         TooltipTextKey = "ErectSiegeTower"
-    elseif SiegeEngineType == Entities.U_MilitaryTrebuchet then
-        TooltipTextKey = "ErectTrebuchet"
     end
     
     local TooltipDisabledTextKey
@@ -225,7 +223,7 @@ function GUI_Military.ErectUpdate()
     
     if SiegeEngineType == Entities.U_MilitaryBatteringRam then
         ErectIcon = {12, 7}
-    elseif SiegeEngineType == Entities.U_MilitaryCatapult or SiegeEngineType == Entities.U_MilitaryTrebuchet then
+    elseif SiegeEngineType == Entities.U_MilitaryCatapult then
         ErectIcon = {12, 6}
     elseif SiegeEngineType == Entities.U_MilitarySiegeTower then
         ErectIcon = {12, 8}

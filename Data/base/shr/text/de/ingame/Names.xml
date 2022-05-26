@@ -234,8 +234,6 @@
 <string id="I_X_PortalTomb01_ME" MD5Hash="EF8D0F188BB981286F5539234627B90F" mod="20080421102009" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Hünengrab]]></string>
 <string id="I_X_PortalTomb02_ME" MD5Hash="EF8D0F188BB981286F5539234627B90F" mod="20080421102024" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Hünengrab]]></string>
 <string id="I_X_PortalTomb03_ME" MD5Hash="EF8D0F188BB981286F5539234627B90F" mod="20080421102033" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Hünengrab]]></string>
-	<string id="U_MilitaryTrebuchet" MD5Hash="13DEA75474C25B27EA021E86F9BFECA0" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Tribok]]></string>
-	<string id="U_TrebuchetCart" MD5Hash="52763288CE8FD7BC18241DDEFB8B3260" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Tribokkarren]]></string>
 	<string id="U_Bear" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bär]]></string>
 	<string id="U_PolarBear" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Eisbär]]></string>
 	<string id="U_BlackBear" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Schwarzbär]]></string>

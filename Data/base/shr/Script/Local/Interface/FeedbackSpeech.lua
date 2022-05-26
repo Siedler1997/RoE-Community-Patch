@@ -365,9 +365,7 @@ function GUI_FeedbackSpeech.NearbyCheck(_EntityInfo)
     Entities.U_ResourceMerchant,
     Entities.U_Marketer,
     Entities.U_TaxCollector,
-    Entities.U_Thief,
-    Entities.U_MilitaryTrebuchet,
-    Entities.U_TrebuchetCart
+    Entities.U_Thief
     }
 
     --don't look for same entitytype as speech entityID

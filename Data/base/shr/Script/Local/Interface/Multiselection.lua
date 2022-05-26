@@ -24,21 +24,19 @@ function InitMultiselection()
     LeaderSortOrder[13] = Entities.U_MilitaryCatapult
     LeaderSortOrder[14] = Entities.U_MilitarySiegeTower
     LeaderSortOrder[15] = Entities.U_MilitaryBatteringRam
-    LeaderSortOrder[16] = Entities.U_MilitaryTrebuchet
-    LeaderSortOrder[17] = Entities.U_CatapultCart
-    LeaderSortOrder[18] = Entities.U_SiegeTowerCart
-    LeaderSortOrder[19] = Entities.U_BatteringRamCart
-    LeaderSortOrder[20] = Entities.U_TrebuchetCart
-    LeaderSortOrder[21] = Entities.U_Thief
-    LeaderSortOrder[22] = Entities.U_Bear
-    LeaderSortOrder[23] = Entities.U_BlackBear
-    LeaderSortOrder[24] = Entities.U_PolarBear
-    LeaderSortOrder[25] = Entities.U_Lion_Male
-    LeaderSortOrder[26] = Entities.U_Lion_Female
-    LeaderSortOrder[27] = Entities.U_Wolf_Grey
-    LeaderSortOrder[28] = Entities.U_Wolf_White
-    LeaderSortOrder[29] = Entities.U_Wolf_Black
-    LeaderSortOrder[30] = Entities.U_Wolf_Brown
+    LeaderSortOrder[16] = Entities.U_CatapultCart
+    LeaderSortOrder[17] = Entities.U_SiegeTowerCart
+    LeaderSortOrder[18] = Entities.U_BatteringRamCart
+    LeaderSortOrder[19] = Entities.U_Thief
+    LeaderSortOrder[20] = Entities.U_Bear
+    LeaderSortOrder[21] = Entities.U_BlackBear
+    LeaderSortOrder[22] = Entities.U_PolarBear
+    LeaderSortOrder[23] = Entities.U_Lion_Male
+    LeaderSortOrder[24] = Entities.U_Lion_Female
+    LeaderSortOrder[25] = Entities.U_Wolf_Grey
+    LeaderSortOrder[26] = Entities.U_Wolf_White
+    LeaderSortOrder[27] = Entities.U_Wolf_Black
+    LeaderSortOrder[28] = Entities.U_Wolf_Brown
 end
 
 
@@ -306,8 +304,6 @@ function GUI_MultiSelection.IconUpdate()
             or EntityType == Entities.U_BatteringRamCart
             or EntityType == Entities.U_AmmunitionCart
             or EntityType == Entities.U_MilitaryBallista
-            or EntityType == Entities.U_TrebuchetCart
-            or EntityType == Entities.U_Trebuchet
             or Logic.GetNumSoldiersAttachedToWarMachine(EntityID) > 0) then
                 SetIcon(CurrentWidgetID, g_TexturePositions.Entities[EntityType])
             
@@ -366,8 +362,7 @@ function GUI_MultiSelection.IconMouseOver()
 
     if (EntityType == Entities.U_MilitaryCatapult
     or EntityType == Entities.U_MilitarySiegeTower
-    or EntityType == Entities.U_MilitaryBatteringRam
-    or EntityType == Entities.U_MilitaryTrebuchet)
+    or EntityType == Entities.U_MilitaryBatteringRam)
     and Logic.GetNumSoldiersAttachedToWarMachine(EntityID) == 0 then
         TooltipTextKey = TooltipTextKey .. "_NoSoldiersAttached"
     end

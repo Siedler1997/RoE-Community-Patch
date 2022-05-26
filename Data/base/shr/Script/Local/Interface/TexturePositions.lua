@@ -68,7 +68,6 @@ function InitTexturePositions()
     [Entities.U_AmmunitionCart]             = {10, 4},
     [Entities.U_BatteringRamCart]           = {9, 5},
     [Entities.U_CatapultCart]               = {9, 4},
-    [Entities.U_TrebuchetCart]              = {9, 4},
     [Entities.U_SiegeTowerCart]             = {9, 6},
     [Entities.U_MilitaryBallista]           = {10, 5},
     [Entities.U_MilitaryBandit_Melee_ME]    = {9, 9},
@@ -82,7 +81,6 @@ function InitTexturePositions()
     [Entities.U_MilitaryBatteringRam]       = {9, 2},
     [Entities.U_MilitaryBow]                = {9, 8},
     [Entities.U_MilitaryCatapult]           = {9, 1},
-    [Entities.U_MilitaryTrebuchet]          = {9, 1},
     [Entities.U_Trebuchet]                  = {9, 1},
     [Entities.U_MilitarySiegeTower]         = {9, 3},
     [Entities.U_MilitarySword]              = {9, 7},
@@ -104,7 +102,6 @@ function InitTexturePositions()
     [Entities.U_NPC_Castellan_NE]           = {7, 2, 1},
     [Entities.U_NPC_Castellan_NA]           = {7, 2, 1},
     [Entities.U_NPC_Castellan_SE]           = {7, 2, 1},
-    [Entities.U_MilitaryPoleArm]            = {9, 1, 1},
 
     [Entities.U_TaxCollector]               = {14, 13},
     [Entities.U_GoldCart]                   = {7, 1},

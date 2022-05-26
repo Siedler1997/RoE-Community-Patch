@@ -558,10 +558,6 @@
 <string id="I_X_PortalTomb01_ME" MD5Hash="" mod="20080421120414" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dolmen]]></string>
 <string id="I_X_PortalTomb02_ME" MD5Hash="" mod="20080421120429" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dolmen]]></string>
 <string id="I_X_PortalTomb03_ME" MD5Hash="" mod="20080421120442" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dolmen]]></string>
-	<string id="ErectTrebuchet" MD5Hash="71FD008E955D82637A6A67362AEAA055" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Erect Trebuchet]]></string>
-	<string id="Abilities_U_TrebuchetCart" MD5Hash="6B56AC83972DB805D22C4EAA79C5769D" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Trebuchet Cart]]></string>
-	<string id="Abilities_U_MilitaryTrebuchet" MD5Hash="2A6A9144EAF0CAE75DDED46B10DFDC73" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Trebuchet]]></string>
-	<string id="Abilities_U_MilitaryTrebuchet_NoSoldiersAttached" MD5Hash="9CFCD9E906978EB79A57A0DE18C2DC9E" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Unmanned Trebuchet]]></string>
 	<string id="Abilities_U_Bear" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bear]]></string>
 	<string id="Abilities_U_PolarBear" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Polar Bear]]></string>
 	<string id="Abilities_U_BlackBear" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Black Bear]]></string>
@@ -583,5 +579,4 @@
 	<string id="B_WatchTower" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Lookout Tower]]></string>
 	<string id="BuySpearfighters" MD5Hash="499006B1DC7CF75C0F9DF638C575904A" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Halberdier]]></string>
 	<string id="U_MilitarySword" MD5Hash="499006B1DC7CF75C0F9DF638C575904A" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Halberdier]]></string>
-	<string id="Abilities_U_MilitaryPoleArm" MD5Hash="499006B1DC7CF75C0F9DF638C575904A" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Halberdier]]></string>
 </root>

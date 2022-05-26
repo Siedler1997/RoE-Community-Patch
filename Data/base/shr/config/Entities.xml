@@ -520,7 +520,6 @@
     <Entity>U_MilitarySiegeTower</Entity>
     <Entity>U_MilitaryCatapult</Entity>
     <Entity>U_MilitaryBatteringRam</Entity>
-	<Entity>U_MilitaryTrebuchet</Entity>
 
     <Entity>U_SiegeTowerCart</Entity>
     <Entity>U_SiegeTowerCart_Collapse</Entity>
@@ -528,8 +527,6 @@
     <Entity>U_CatapultCart_Collapse</Entity>
     <Entity>U_BatteringRamCart</Entity>
     <Entity>U_BatteringRamCart_Collapse</Entity>
-	<Entity>U_TrebuchetCart</Entity>
-	<Entity>U_TrebuchetCart_Collapse</Entity>
 
     <Entity>U_MilitarySiegeTower_Collapse</Entity>
     <Entity>U_MilitaryCatapult_Collapse</Entity>
@@ -1916,7 +1913,7 @@
     <!-- ********************************************
     SOUNDS
     ************************************************-->
-    *
+    
     <Entity>XS_Forest</Entity>
     <Entity>XS_ForestME</Entity>
     <Entity>XS_ForestNA</Entity>
@@ -1990,6 +1987,4 @@
 	<Entity>B_WatchTower_NE</Entity>
 	<Entity>B_WatchTower_SE</Entity>
 	<Entity>B_WatchTower_NA</Entity>
-
-	<Entity>U_MilitaryPoleArm</Entity>
 </root>

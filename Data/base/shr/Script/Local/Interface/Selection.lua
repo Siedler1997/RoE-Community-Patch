@@ -14,7 +14,7 @@ g_SelectionChangedSource = {}
 g_SelectionChangedSource.User    = 0  --(selecting and deselecting with mouse)
 g_SelectionChangedSource.Logic   = 1  --(entites deselected or removed from logic (dying))
 g_SelectionChangedSource.Script  = 2  --(selection changed by a script call to the logic)
-g_SelectionChangedSource.Upgrade = 3  --(entities exchanged (building upgrade, …))
+g_SelectionChangedSource.Upgrade = 3  --(entities exchanged (building upgrade, ï¿½))
 
 
 function GUI_Selection.RightClicked()
@@ -266,8 +266,7 @@ function GameCallback_GUI_SelectionChanged(_Source)
 
         elseif (EntityType == Entities.U_CatapultCart
         or EntityType == Entities.U_SiegeTowerCart
-        or EntityType == Entities.U_BatteringRamCart
-        or EntityType == Entities.U_TrebuchetCart) then
+        or EntityType == Entities.U_BatteringRamCart) then
 
             --SoundToPlay = "ui\\siege_select"
 
@@ -318,8 +317,7 @@ function GameCallback_GUI_SelectionChanged(_Source)
 
             if (EntityType == Entities.U_MilitaryCatapult
             or EntityType == Entities.U_MilitarySiegeTower
-            or EntityType == Entities.U_MilitaryBatteringRam
-            or EntityType == Entities.U_MilitaryTrebuchet) then
+            or EntityType == Entities.U_MilitaryBatteringRam) then
                 XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/SiegeEngine",1)
             end
 
