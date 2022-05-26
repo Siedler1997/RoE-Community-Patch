@@ -74,8 +74,9 @@
 				<Class>EGL::CMilitarySoldierMovementBehavior</Class>
 				<StraightenPath>true</StraightenPath>
 				<EvasionPriority>140</EvasionPriority>
-				<Speed>420</Speed>
-				<RotationSpeed>500</RotationSpeed>
+				<Speed>800</Speed>
+                <SmoothingRadius>1000</SmoothingRadius>
+				<RotationSpeed>400</RotationSpeed>
 				<MoveTaskList>TL_MILITARY_WALK</MoveTaskList>
 				<MoveIdleAnim>Military\U_MilitaryCavalry_Idle1</MoveIdleAnim>
 			</Logic>
