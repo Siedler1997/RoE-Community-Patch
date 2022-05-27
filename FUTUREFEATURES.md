@@ -4,6 +4,8 @@
 
 ### Pferde als Resource
 
+- Eine neue Ware wird ins Spiel eingeführt -> G_Steed "Zuchtpferd"
+  (Proxyresource um Pferde zu kaufen. Siehe G_Cow, G_Sheep)
 - Eine neue Ware wird ins Spiel eingeführt -> G_PoorHorse "Schlachtross"
 - eine neue Kategorie wird ins Spiel eingeführt -> HorsePasture "Schlachtross"
 - Pferde werden als Nutztiere eingeführt -> X_A_Horse "Schlachtross"
@@ -17,6 +19,7 @@
 - Pferde werden in Ställen gehalten -> B_HorsePasture "Pferdestall"
   (Reskin des üblichen Stalls)
 - Pferdestall braucht Wasser (wie alle Ställe)
+- Pferde werden langsamer produziert als Milch und Wolle
 
 ### Rekrutierungsgebäude
 
