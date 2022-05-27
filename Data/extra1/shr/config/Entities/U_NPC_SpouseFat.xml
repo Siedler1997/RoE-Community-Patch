@@ -9,7 +9,7 @@
 		<AccessCategory>AccessCategorySettler</AccessCategory>
         <PlayerSectorType>PlayerSectorTypeCivil</PlayerSectorType>
 		<MaxHealth> 200 </MaxHealth>
-		<NeedsPlayer>false</NeedsPlayer>
+		<NeedsPlayer>true</NeedsPlayer>
 		<ForceNoPlayer>false</ForceNoPlayer>
 		<EntityCategories>
 			<EntityCategory>Worker</EntityCategory>
