@@ -9,13 +9,13 @@
 	<Logic classname="EGL::CSettlerProps">
 		<Class>EGL::CSettler</Class>
 		<AccessCategory>AccessCategoryAttackableSettler</AccessCategory>
-		<PlayerSectorType>PlayerSectorTypeMilitary</PlayerSectorType>
+		<PlayerSectorType>PlayerSectorTypeCivil</PlayerSectorType>
 		<MilMetaFormationMemberType>MilMetaFormationMemberTypeMelee</MilMetaFormationMemberType>
 		<NeedsPlayer>true</NeedsPlayer>
 		<ForceNoPlayer>false</ForceNoPlayer>
 		<MaxHealth>5000</MaxHealth>
 		<HealingSeconds>1</HealingSeconds>
-		<HealingPoints>10</HealingPoints>
+		<HealingPoints>25</HealingPoints>
 		<IsAttackable>true</IsAttackable>
 		<AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
 		<Exploration>20</Exploration>
@@ -31,8 +31,8 @@
 		</Familiar>
 
 		<EntityCategories>
-			<EntityCategory>Dragon</EntityCategory>
 			<EntityCategory>Military</EntityCategory>
+			<EntityCategory>Dragon</EntityCategory>
 		</EntityCategories>
 		<SoundImpactType>Leather</SoundImpactType>
 	</Logic>
@@ -99,13 +99,14 @@
 								<ApplyDamageModifiers>false</ApplyDamageModifiers>
 
 								<AttackAnim>U_Donkey_Trading_Fight</AttackAnim>
-								<MinRange>600</MinRange>
+								<MinRange>650</MinRange>
 								<MaxRange>2400</MaxRange>
-								<ProjectileEffect>E_Trebuchet_Fire_Wall</ProjectileEffect>
+								<ProjectileEffect>E_Dragon_Fire_Wall</ProjectileEffect>
 								<MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
 								<CanAttackOverWalls>true</CanAttackOverWalls>
 								<CooldownThousandths>3000</CooldownThousandths>
 								<ConsumeAmmunition>false</ConsumeAmmunition>
+								<ProjectileOffsetFront>650</ProjectileOffsetFront>
 								<Damage>
 									<DiceCount>0</DiceCount>
 									<FaceCount>0</FaceCount>
@@ -115,15 +116,15 @@
 								<DamageRadiusList>
 									<!-- Must be sorted from inner to outer. -->
 									<DamageRadius>
-										<Radius>200</Radius>
+										<Radius>150</Radius>
 										<Percentage>100</Percentage>
 									</DamageRadius>
 									<DamageRadius>
-										<Radius>400</Radius>
+										<Radius>300</Radius>
 										<Percentage> 50</Percentage>
 									</DamageRadius>
 									<DamageRadius>
-										<Radius>600</Radius>
+										<Radius>450</Radius>
 										<Percentage> 25</Percentage>
 									</DamageRadius>
 								</DamageRadiusList>
@@ -150,13 +151,14 @@
 								<ApplyDamageModifiers>false</ApplyDamageModifiers>
 
 								<AttackAnim>U_Donkey_Trading_Fight</AttackAnim>
-								<MinRange>600</MinRange>
+								<MinRange>650</MinRange>
 								<MaxRange>2400</MaxRange>
-								<ProjectileEffect>E_Trebuchet_Fire_Palisade</ProjectileEffect>
+								<ProjectileEffect>E_Dragon_Fire_Palisade</ProjectileEffect>
 								<MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
 								<CanAttackOverWalls>true</CanAttackOverWalls>
 								<CooldownThousandths>3000</CooldownThousandths>
 								<ConsumeAmmunition>false</ConsumeAmmunition>
+								<ProjectileOffsetFront>650</ProjectileOffsetFront>
 								<Damage>
 									<DiceCount>0</DiceCount>
 									<FaceCount>0</FaceCount>
@@ -166,15 +168,67 @@
 								<DamageRadiusList>
 									<!-- Must be sorted from inner to outer. -->
 									<DamageRadius>
-										<Radius>200</Radius>
+										<Radius>150</Radius>
 										<Percentage>100</Percentage>
 									</DamageRadius>
 									<DamageRadius>
-										<Radius>400</Radius>
+										<Radius>300</Radius>
 										<Percentage> 50</Percentage>
 									</DamageRadius>
 									<DamageRadius>
-										<Radius>600</Radius>
+										<Radius>450</Radius>
+										<Percentage> 25</Percentage>
+									</DamageRadius>
+								</DamageRadiusList>
+							</AttackMode>
+						</AttackModeList>
+					</TargetCategory>
+
+					<!-- Buildings and carnivores -->
+					<TargetCategory>
+						<DisableAutoAttack>true</DisableAutoAttack>
+						<IgnoreGuards>true</IgnoreGuards>
+						<EntityCategoryList>
+							<EntityCategory>AttackableBuilding</EntityCategory>
+							<EntityCategory>Trebuchet</EntityCategory>
+							<EntityCategory>AttackableAnimal</EntityCategory>
+							<EntityCategory/>
+							<EntityCategory/>
+							<EntityCategory/>
+						</EntityCategoryList>
+						<AttackModeList>
+							<AttackMode>
+								<BattleTL>TL_BATTLE_CATAPULT</BattleTL>
+								<!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
+								<ApplyDamageModifiers>false</ApplyDamageModifiers>
+
+								<AttackAnim>U_Donkey_Trading_Fight</AttackAnim>
+								<MinRange>650</MinRange>
+								<MaxRange>2400</MaxRange>
+								<ProjectileEffect>E_Dragon_Fire</ProjectileEffect>
+								<MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
+								<CanAttackOverWalls>true</CanAttackOverWalls>
+								<CooldownThousandths>3000</CooldownThousandths>
+								<ConsumeAmmunition>false</ConsumeAmmunition>
+								<ProjectileOffsetFront>650</ProjectileOffsetFront>
+								<Damage>
+									<DiceCount>0</DiceCount>
+									<FaceCount>0</FaceCount>
+									<BaseValue>100</BaseValue>
+								</Damage>
+								<BuildingFireSize>20</BuildingFireSize>
+								<DamageRadiusList>
+									<!-- Must be sorted from inner to outer. -->
+									<DamageRadius>
+										<Radius>150</Radius>
+										<Percentage>100</Percentage>
+									</DamageRadius>
+									<DamageRadius>
+										<Radius>300</Radius>
+										<Percentage> 50</Percentage>
+									</DamageRadius>
+									<DamageRadius>
+										<Radius>450</Radius>
 										<Percentage> 25</Percentage>
 									</DamageRadius>
 								</DamageRadiusList>
@@ -186,10 +240,10 @@
 					<TargetCategory>
 						<IgnoreGuards>true</IgnoreGuards>
 						<EntityCategoryList>
-							<EntityCategory>AttackableBuilding</EntityCategory>
 							<EntityCategory>HeavyWeapon</EntityCategory>
-							<EntityCategory>Trebuchet</EntityCategory>
 							<EntityCategory>Military</EntityCategory>
+							<EntityCategory>AttackableSettler</EntityCategory>
+							<EntityCategory/>
 							<EntityCategory/>
 							<EntityCategory/>
 						</EntityCategoryList>
@@ -200,13 +254,14 @@
 								<ApplyDamageModifiers>false</ApplyDamageModifiers>
 
 								<AttackAnim>U_Donkey_Trading_Fight</AttackAnim>
-								<MinRange>600</MinRange>
+								<MinRange>650</MinRange>
 								<MaxRange>2400</MaxRange>
-								<ProjectileEffect>E_Trebuchet_Fire</ProjectileEffect>
+								<ProjectileEffect>E_Dragon_Fire</ProjectileEffect>
 								<MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
 								<CanAttackOverWalls>true</CanAttackOverWalls>
 								<CooldownThousandths>3000</CooldownThousandths>
 								<ConsumeAmmunition>false</ConsumeAmmunition>
+								<ProjectileOffsetFront>650</ProjectileOffsetFront>
 								<Damage>
 									<DiceCount>0</DiceCount>
 									<FaceCount>0</FaceCount>
@@ -216,15 +271,15 @@
 								<DamageRadiusList>
 									<!-- Must be sorted from inner to outer. -->
 									<DamageRadius>
-										<Radius>200</Radius>
+										<Radius>150</Radius>
 										<Percentage>100</Percentage>
 									</DamageRadius>
 									<DamageRadius>
-										<Radius>400</Radius>
+										<Radius>300</Radius>
 										<Percentage> 50</Percentage>
 									</DamageRadius>
 									<DamageRadius>
-										<Radius>600</Radius>
+										<Radius>450</Radius>
 										<Percentage> 25</Percentage>
 									</DamageRadius>
 								</DamageRadiusList>

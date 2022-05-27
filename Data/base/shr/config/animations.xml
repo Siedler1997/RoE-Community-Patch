@@ -11095,7 +11095,7 @@
 		<AnimationDuration>5.675</AnimationDuration>
 	</Animation>
 	<Animation>
-		<FileName>military\u_militaryspeardie</FileName>
+		<FileName>military\u_militaryspear_die</FileName>
 		<Timestamp>128306301210000000</Timestamp>
 		<FileLength>53164</FileLength>
 		<AnimationDuration>1.925</AnimationDuration>
@@ -11166,6 +11166,7 @@
 		<FileLength>53164</FileLength>
 		<AnimationDuration>0.8</AnimationDuration>
 	</Animation>
+	
 	<Animation>
 		<FileName>military\u_dragon_fly</FileName>
 		<Timestamp>128178463530000000</Timestamp>

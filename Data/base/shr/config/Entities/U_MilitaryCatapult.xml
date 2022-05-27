@@ -9,7 +9,7 @@
         <Class>EGL::CBigSettler</Class>
         <AccessCategory>AccessCategoryAttackableSettler</AccessCategory>
         <PlayerSectorType>PlayerSectorTypeMilitary</PlayerSectorType>
-        <MilMetaFormationMemberType>MilMetaFormationMemberTypeEngine</MilMetaFormationMemberType>
+        <MilMetaFormationMemberType>MilMetaFormationMemberTypeCart</MilMetaFormationMemberType>
         <MaxHealth>250</MaxHealth>
         <HealingSeconds/>
         <HealingPoints>0</HealingPoints>
@@ -92,7 +92,7 @@
         <Behavior>
             <Logic classname="EGL::CAttachableWarMachineBehaviorProps">
                 <Class>EGL::CAttachableWarMachineBehavior</Class>
-                <GuardFormationID>OperatingCatapult</GuardFormationID>
+                <GuardFormationID>GuardingMechant</GuardFormationID>
                 <GuardApproachPos><X>-500</X><Y>0</Y></GuardApproachPos>
             </Logic>
         </Behavior>

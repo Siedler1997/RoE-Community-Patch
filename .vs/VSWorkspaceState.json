@@ -6,11 +6,11 @@
     "\\Data\\base\\shr",
     "\\Data\\base\\shr\\config",
     "\\Data\\base\\shr\\config\\Entities",
-    "\\Data\\extra1",
-    "\\Data\\extra1\\shr",
-    "\\Data\\extra1\\shr\\config",
-    "\\Data\\extra1\\shr\\config\\Entities"
+    "\\Data\\base\\shr\\config\\Sound",
+    "\\Data\\base\\shr\\graphics",
+    "\\Data\\base\\shr\\graphics\\Animations",
+    "\\Data\\base\\shr\\graphics\\Animations\\Military"
   ],
-  "SelectedNode": "\\Data\\base\\shr\\config\\Entities\\U_MilitaryBandit_Ranged_NE.xml",
+  "SelectedNode": "\\Data\\base\\shr\\config\\Sound\\LogicSounds.xml",
   "PreviewInSolutionExplorer": false
 }
