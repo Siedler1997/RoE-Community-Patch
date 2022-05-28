@@ -14635,7 +14635,7 @@
 
 		<Model id="Units\Military\U_Dragon">
 			<SelectionRadius>300</SelectionRadius>
-			<!--<Effect>SettlerThroneRoom</Effect>-->
+			<Effect>SettlerThroneRoom</Effect>
 			<SelectionTexture>Selection_Soldier</SelectionTexture>
 			<OcclusionReceiver>True</OcclusionReceiver>
 			<DefaultAnimID>Military\U_MilitaryPoleArm_Run</DefaultAnimID>

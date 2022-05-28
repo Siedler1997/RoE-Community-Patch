@@ -192,7 +192,6 @@ Folgende Änderungen wurden vorgenommen:
 		- ODER: Der Nahkämpferkaserne hinzufügen
 			- Neuer Button für die Kaserne
 			- "Schwertkämpfer***"-Strings zu "Nahkämpfer***" abändern
-- Scripte für NPCs mit SpielerId 0 anpassen (Also Beseitigung von Scriptfehlern)
 - Außenposten/Aussichtsturm/Wachturm
 	- ME-Aussichtsturm: Schwarze Seite
 	- Aussichtstürme: Alarm?
