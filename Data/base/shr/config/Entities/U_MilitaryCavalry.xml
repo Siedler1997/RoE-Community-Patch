@@ -23,7 +23,7 @@
 		<IdleTaskList>TL_MILITARY_DEFEND</IdleTaskList>
 		<CanDrown>false</CanDrown>
 		<IsSelectable>true</IsSelectable>
-		<BlockRadius>100</BlockRadius>
+		<BlockRadius>250</BlockRadius>
 
 		<Cost>
 			<GoodAmount>
