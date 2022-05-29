@@ -111,7 +111,7 @@
 
         <ProducedGood>
             <GoodType>G_Bow</GoodType>
-            <Amount>3</Amount>
+            <Amount>1</Amount>
         </ProducedGood>
         
         <BattalionSize>6</BattalionSize>

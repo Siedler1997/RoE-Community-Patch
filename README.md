@@ -168,6 +168,8 @@ Folgende Änderungen wurden vorgenommen:
 	- Sieg und Niederlage haben jeweils eine Art "Jingle"
 	- Spielerfarben auf der Minimap sind nun (meistens) korrekt
     - NPC Charaktere können nicht mehr Spieler 0 angehören
+    - Arbeiter von Kasernen holen nur eine Ware per Zyklus
+      (Soll nicht vollständig gefüllte Kasernen verhindern)
 - Kampagnen
 	- Bugs gefixt
 		- Verfrühte Meldungen von KI-Mitspielern (M05: Drengir, M09: Husran)
@@ -183,8 +185,6 @@ Folgende Änderungen wurden vorgenommen:
 
 
 ## (Mögliche) ToDos
-- Arbeiter von Kasernen holen nur eine Ware per Zyklus
-  (Soll nicht vollständig gefüllte Kasernen verhindern)
 - Speerkämpfer
 	- Icon
 	- Audio-Feedback
