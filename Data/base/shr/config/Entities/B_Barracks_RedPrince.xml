@@ -110,9 +110,9 @@
 
         <ProducedGood>
             <GoodType>G_Sword</GoodType>
-            <Amount>1</Amount>
+            <Amount>3</Amount>
         </ProducedGood>
-        
+
         <BattalionSize>6</BattalionSize>
 
         <!-- chance to get a spouse at the festival (0-1). 0 means that the workers don't go to the festival at all -->
@@ -186,7 +186,7 @@
 			<ProducedUnitType>U_MilitaryBandit_Melee_NE</ProducedUnitType>
 			<ProducedUnitType>U_MilitaryBandit_Melee_NA</ProducedUnitType>
 			<ProducedUnitType>U_MilitaryBandit_Melee_SE</ProducedUnitType>
-		</ProducedUnitTypeList>
+        </ProducedUnitTypeList>
 
         <ProduceBattalion>true</ProduceBattalion>
 

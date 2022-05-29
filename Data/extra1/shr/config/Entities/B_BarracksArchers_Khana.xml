@@ -1,48 +1,49 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+
   <Display classname="ED::CCityBuildingProps">
     <Class>ED::CCityBuilding</Class>
-    <Model>Buildings\B_BarracksSwordsmen_Floor_1</Model>
+    <Model>Buildings\B_BarracksArchers_Floor_1</Model>
     <Banner>Default</Banner>
-    <Decal>Buildings\B_BarracksSwordsmen_Decal</Decal>
-    <Yard_1>Buildings\B_BarracksSwordsmen_Yard_1</Yard_1>
-    <Yard_2>Buildings\B_BarracksSwordsmen_Yard_2</Yard_2>
-    <Yard_3>Buildings\B_BarracksSwordsmen_Yard_3</Yard_3>
-    <Roof_1>Buildings\B_BarracksSwordsmen_Roof_1</Roof_1>
-    <Roof_2>Buildings\B_BarracksSwordsmen_Roof_2</Roof_2>
-    <Roof_3>Buildings\B_BarracksSwordsmen_Roof_3</Roof_3>
-    <Roof_Destroyed>Buildings\B_BarracksSwordsmen_Rubble</Roof_Destroyed>
-    <Upgrade_Site>Buildings\B_BarracksSwordsmen_BuildingSite</Upgrade_Site>
-    <Floor_1>Buildings\B_BarracksSwordsmen_Floor_1</Floor_1>
-    <Floor_2>Buildings\B_BarracksSwordsmen_Floor_2</Floor_2>
-    <Floor_3>Buildings\B_BarracksSwordsmen_Floor_3</Floor_3>
-    <Gable_1>Buildings\B_BarracksSwordsmen_Gable_1</Gable_1>
-    <Gable_2>Buildings\B_BarracksSwordsmen_Gable_2</Gable_2>
-    <Gable_3>Buildings\B_BarracksSwordsmen_Gable_3</Gable_3>
+    <Decal>Buildings\B_BarracksArchers_Decal</Decal>
+    <Yard_1>Buildings\B_BarracksArchers_Yard_1</Yard_1>
+    <Yard_2>Buildings\B_BarracksArchers_Yard_2</Yard_2>
+    <Yard_3>Buildings\B_BarracksArchers_Yard_3</Yard_3>
+    <Roof_1>Buildings\B_BarracksArchers_Roof_1</Roof_1>
+    <Roof_2>Buildings\B_BarracksArchers_Roof_2</Roof_2>
+    <Roof_3>Buildings\B_BarracksArchers_Roof_3</Roof_3>
+    <Roof_Destroyed>Buildings\B_BarracksArchers_Rubble</Roof_Destroyed>
+    <Upgrade_Site>Buildings\B_BarracksArchers_Buildingsite</Upgrade_Site>
+    <Floor_1>Buildings\B_BarracksArchers_Floor_1</Floor_1>
+    <Floor_2>Buildings\B_BarracksArchers_Floor_2</Floor_2>
+    <Floor_3>Buildings\B_BarracksArchers_Floor_3</Floor_3>
+    <Gable_1>Buildings\B_BarracksArchers_Gable_1</Gable_1>
+    <Gable_2>Buildings\B_BarracksArchers_Gable_2</Gable_2>
+    <Gable_3>Buildings\B_BarracksArchers_Gable_3</Gable_3>
 		<Luxury_1>
-        <Upgrade_1>Buildings\B_BarracksSwordsmen_W_Bannermaker_1</Upgrade_1>
-        <Animation_1>B_BarracksSwordsmen_W_Bannermaker_1</Animation_1>
-        <Upgrade_2>Buildings\B_BarracksSwordsmen_W_Bannermaker_2</Upgrade_2>
-        <Animation_2>B_BarracksSwordsmen_W_Bannermaker_2</Animation_2>
-        <Upgrade_3>Buildings\B_BarracksSwordsmen_W_Bannermaker_3</Upgrade_3>
+        <Upgrade_1>Buildings\B_BarracksArchers_W_Bannermaker_1</Upgrade_1>
+        <Animation_1>B_BarracksArchers_W_Bannermaker_1</Animation_1>
+        <Upgrade_2>Buildings\B_BarracksArchers_W_Bannermaker_2</Upgrade_2>
+        <Animation_2>B_BarracksArchers_W_Bannermaker_2</Animation_2>
+        <Upgrade_3>Buildings\B_BarracksArchers_W_Bannermaker_3</Upgrade_3>
     </Luxury_1>
     <Luxury_2>
-        <Upgrade_1>Buildings\B_BarracksSwordsmen_W_Carpenter_1</Upgrade_1>
-        <Upgrade_2>Buildings\B_BarracksSwordsmen_W_Carpenter_2</Upgrade_2>
-        <Upgrade_3>Buildings\B_BarracksSwordsmen_W_Carpenter_3</Upgrade_3>
+        <Upgrade_1>Buildings\B_BarracksArchers_W_Carpenter_1</Upgrade_1>
+        <Upgrade_2>Buildings\B_BarracksArchers_W_Carpenter_2</Upgrade_2>
+        <Upgrade_3>Buildings\B_BarracksArchers_W_Carpenter_3</Upgrade_3>
     </Luxury_2>
     <Luxury_3>
-        <Upgrade_1>Buildings\B_BarracksSwordsmen_W_Blacksmith_1</Upgrade_1>
-        <Upgrade_2>Buildings\B_BarracksSwordsmen_W_Blacksmith_2</Upgrade_2>
-        <Upgrade_3>Buildings\B_BarracksSwordsmen_W_Blacksmith_3</Upgrade_3>
+        <Upgrade_1>Buildings\B_BarracksArchers_W_Blacksmith_1</Upgrade_1>
+        <Upgrade_2>Buildings\B_BarracksArchers_W_Blacksmith_2</Upgrade_2>
+        <Upgrade_3>Buildings\B_BarracksArchers_W_Blacksmith_3</Upgrade_3>
     </Luxury_3>
     <Luxury_4>
-        <Upgrade_1>Buildings\B_BarracksSwordsmen_W_Candlemaker_1</Upgrade_1>
-        <Upgrade_2>Buildings\B_BarracksSwordsmen_W_Candlemaker_2</Upgrade_2>
-        <Upgrade_3>Buildings\B_BarracksSwordsmen_W_Candlemaker_3</Upgrade_3>
+        <Upgrade_1>Buildings\B_BarracksArchers_W_Candlemaker_1</Upgrade_1>
+        <Upgrade_2>Buildings\B_BarracksArchers_W_Candlemaker_2</Upgrade_2>
+        <Upgrade_3>Buildings\B_BarracksArchers_W_Candlemaker_3</Upgrade_3>
     </Luxury_4>
-    <LightFloor_1>Buildings\B_BarracksSwordsmen_Floor_1_Light</LightFloor_1>
-    <LightFloor_2>Buildings\B_BarracksSwordsmen_Floor_2_Light</LightFloor_2>
-    <LightFloor_3>Buildings\B_BarracksSwordsmen_Floor_3_Light</LightFloor_3>
+    <LightFloor_1>Buildings\B_BarracksArchers_Floor_1_Light</LightFloor_1>
+    <LightFloor_2>Buildings\B_BarracksArchers_Floor_2_Light</LightFloor_2>
+    <LightFloor_3>Buildings\B_BarracksArchers_Floor_3_Light</LightFloor_3>
     <FireCountFloor_1>14</FireCountFloor_1>
     <FireCountFloor_2>10</FireCountFloor_2>
     <FireCountFloor_3>10</FireCountFloor_3>
@@ -109,14 +110,14 @@
         </UpgradeCosts>
 
         <ProducedGood>
-            <GoodType>G_Sword</GoodType>
+            <GoodType>G_Bow</GoodType>
             <Amount>1</Amount>
         </ProducedGood>
-        
+
         <BattalionSize>6</BattalionSize>
 
-        <!-- chance to get a spouse at the festival (0-1). 0 means that the workers don't go to the festival at all -->
-        <SpouseProbabilityFactor>0.3</SpouseProbabilityFactor>
+    <!-- chance to get a spouse at the festival (0-1). 0 means that the workers don't go to the festival at all -->
+               <SpouseProbabilityFactor>0.3</SpouseProbabilityFactor>
 
         <OutStockCapacities>
             <OutStockCapacity>9</OutStockCapacity>
@@ -132,17 +133,15 @@
         <MaxHealth>200</MaxHealth>
 
     <CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim>
-
-	<IsHeightLocking>true</IsHeightLocking>
-	<FlattenOnBuild>true</FlattenOnBuild>
-	<MayRemoveEntities>true</MayRemoveEntities>
+    <IsHeightLocking>true</IsHeightLocking>
+    <FlattenOnBuild>true</FlattenOnBuild>
+    <MayRemoveEntities>true</MayRemoveEntities>
     <AccessCategory>AccessCategoryBuilding</AccessCategory>
     <NeedsPlayer>true</NeedsPlayer>
     <ForceNoPlayer>false</ForceNoPlayer>
     <CanBeKnockedDown>true</CanBeKnockedDown>
-    <Worker>U_Armourer</Worker>
+    <Worker>U_BowArmourer</Worker>
     <MaxWorkers>3</MaxWorkers>
-
 
     <WorkTaskLists>
             <WorkTaskList>TL_PROCESSOR_WORK</WorkTaskList>
@@ -161,32 +160,31 @@
       <EntityCategory>CityBuilding</EntityCategory>
       <EntityCategory>AttackableBuilding</EntityCategory>
     </EntityCategories>
-
-         <ApproachPos>
-            <X>300</X>
-            <Y>-700</Y>
+    <ApproachPos>
+            <X>-200</X>
+            <Y>-600</Y>
         </ApproachPos>
         <ApproachR>0</ApproachR>
         <DoorPos>
-            <X>300</X>
-            <Y>-100</Y>
+            <X>-200</X>
+            <Y>-200</Y>
         </DoorPos>
 
         <IdlePos>
-            <X>100</X>
+            <X>-400</X>
             <Y>-700</Y>
         </IdlePos>
 
         <ProducedUnitTypeList>
-            <ProducedUnitType>U_MilitarySword</ProducedUnitType>
-			<ProducedUnitType>U_MilitarySword_RedPrince</ProducedUnitType>
-			<ProducedUnitType>U_MilitaryPoleArm</ProducedUnitType>
-			<ProducedUnitType>U_MilitaryCavalry</ProducedUnitType>
-			<ProducedUnitType>U_MilitaryBandit_Melee_ME</ProducedUnitType>
-			<ProducedUnitType>U_MilitaryBandit_Melee_NE</ProducedUnitType>
-			<ProducedUnitType>U_MilitaryBandit_Melee_NA</ProducedUnitType>
-			<ProducedUnitType>U_MilitaryBandit_Melee_SE</ProducedUnitType>
-		</ProducedUnitTypeList>
+            <ProducedUnitType>U_MilitaryBow</ProducedUnitType>
+			<ProducedUnitType>U_MilitaryBow_RedPrince</ProducedUnitType>
+			<ProducedUnitType>U_MilitaryBow_Khana</ProducedUnitType>
+            <ProducedUnitType>U_MilitaryBandit_Ranged_ME</ProducedUnitType>
+			<ProducedUnitType>U_MilitaryBandit_Ranged_NE</ProducedUnitType>
+			<ProducedUnitType>U_MilitaryBandit_Ranged_NA</ProducedUnitType>
+			<ProducedUnitType>U_MilitaryBandit_Ranged_SE</ProducedUnitType>
+			<ProducedUnitType>U_MilitaryBandit_Ranged_AS</ProducedUnitType>
+        </ProducedUnitTypeList>
 
         <ProduceBattalion>true</ProduceBattalion>
 
@@ -199,11 +197,11 @@
             <BlockingArea>
                 <Blocked1>
                     <X>-600</X>
-                    <Y>500</Y>
+                    <Y>600</Y>
                 </Blocked1>
                 <Blocked2>
                     <X>500</X>
-                    <Y>-600</Y>
+                    <Y>-500</Y>
                 </Blocked2>
             </BlockingArea>
         </BlockingAreas>
@@ -211,11 +209,11 @@
             <BuildBlockingArea>
                 <Blocked1>
                     <X>-600</X>
-                    <Y>500</Y>
+                    <Y>600</Y>
                 </Blocked1>
                 <Blocked2>
                     <X>500</X>
-                    <Y>-750</Y>
+                    <Y>-650</Y>
                 </Blocked2>
             </BuildBlockingArea>
         </BuildBlockingAreas>
@@ -246,8 +244,7 @@
         <Class>ED::CDisplayBehaviorBuildingAnimation</Class>
       </Display>
     </Behavior>
-
-        <Behavior>
+    <Behavior>
       <Logic classname="EGL::CBuildingSpouseAnimsProps">
         <Class>EGL::CBuildingSpouseAnimsBehavior</Class>
         <BuildingAnimSet>SET_BUILDING</BuildingAnimSet>
@@ -266,28 +263,27 @@
         <Class>ED::CBuildingBehaviorSpouseAnim</Class>
       </Display>
     </Behavior>
-
     <Behavior>
       <Logic classname="EGL::CStockBehaviorProps">
         <Class>EGL::CStockOutBehavior</Class>
         <MaxAmountOnStock>18</MaxAmountOnStock>
         <GoodTypes>
-          <GoodType>G_Sword</GoodType>
+          <GoodType>G_Bow</GoodType>
         </GoodTypes>
       </Logic>
       <Display classname="ED::COutStockBehaviorProps">
         <Class>ED::COutStockBehavior</Class>
         <MaxOutStockDisplayed>3</MaxOutStockDisplayed>
-        <StockModel>Goods\G_BattalionBarracksSwordsmen01</StockModel>
+        <StockModel>Goods\G_BattalionBarracksArchers01</StockModel>
       </Display>
     </Behavior>
-
-        <Behavior>
+    <Behavior>
       <Logic classname="EGL::CStockBehaviorProps">
         <Class>EGL::CStockInBehavior</Class>
-        <MaxAmountOnStock>9</MaxAmountOnStock>
+        <MaxAmountOnStock>10</MaxAmountOnStock>
         <GoodTypes>
-          <GoodType>G_PoorSword</GoodType>
+          <GoodType>G_PoorBow</GoodType>
+          <!--GoodType>G_None</GoodType-->
         </GoodTypes>
       </Logic>
     </Behavior>
@@ -311,61 +307,48 @@
         <RefillingRange>2000</RefillingRange>
         <UnitTypes>
             <UnitType>
-                <EntityType>U_MilitarySword</EntityType>
+                <EntityType>U_MilitaryBow</EntityType>
                 <Cost>
                     <GoodAmount>
-        <!-- if the refill costs are changed, the costs for buying a battallion have to be adjusted as well in "U_MilitarySword.xml"
+        <!-- if the refill costs are changed, the costs for buying a battallion have to be adjusted as well in "U_MilitaryBow.xml"
                Refilling should cost the same per unit than buying batallions!  -->
                         <GoodType>G_Gold</GoodType>
                         <Amount>15</Amount>
                     </GoodAmount>
                     <GoodAmount>
-                        <GoodType>G_Sword</GoodType>
+                        <GoodType>G_Bow</GoodType>
                         <Amount>1</Amount>
                     </GoodAmount>
                 </Cost>
             </UnitType>
 			<UnitType>
-				<EntityType>U_MilitarySword_RedPrince</EntityType>
+				<EntityType>U_MilitaryBow_RedPrince</EntityType>
 				<Cost>
 					<GoodAmount>
 						<GoodType>G_Gold</GoodType>
 						<Amount>15</Amount>
 					</GoodAmount>
 					<GoodAmount>
-						<GoodType>G_Sword</GoodType>
+						<GoodType>G_Bow</GoodType>
 						<Amount>1</Amount>
 					</GoodAmount>
 				</Cost>
 			</UnitType>
-			<UnitType>
-				<EntityType>U_MilitaryPoleArm</EntityType>
+            <UnitType>
+				<EntityType>U_MilitaryBow_Khana</EntityType>
 				<Cost>
 					<GoodAmount>
 						<GoodType>G_Gold</GoodType>
 						<Amount>15</Amount>
 					</GoodAmount>
 					<GoodAmount>
-						<GoodType>G_Sword</GoodType>
+						<GoodType>G_Bow</GoodType>
 						<Amount>1</Amount>
 					</GoodAmount>
 				</Cost>
 			</UnitType>
 			<UnitType>
-				<EntityType>U_MilitaryCavalry</EntityType>
-				<Cost>
-					<GoodAmount>
-						<GoodType>G_Gold</GoodType>
-						<Amount>15</Amount>
-					</GoodAmount>
-					<GoodAmount>
-						<GoodType>G_Sword</GoodType>
-						<Amount>1</Amount>
-					</GoodAmount>
-				</Cost>
-			</UnitType>
-			<UnitType>
-				<EntityType>U_MilitaryBandit_Melee_ME</EntityType>
+				<EntityType>U_MilitaryBandit_Ranged_ME</EntityType>
 				<Cost>
 					<GoodAmount>
 						<GoodType>G_Gold</GoodType>
@@ -374,7 +357,7 @@
 				</Cost>
 			</UnitType>
 			<UnitType>
-				<EntityType>U_MilitaryBandit_Melee_NA</EntityType>
+				<EntityType>U_MilitaryBandit_Ranged_NA</EntityType>
 				<Cost>
 					<GoodAmount>
 						<GoodType>G_Gold</GoodType>
@@ -383,7 +366,7 @@
 				</Cost>
 			</UnitType>
 			<UnitType>
-				<EntityType>U_MilitaryBandit_Melee_NE</EntityType>
+				<EntityType>U_MilitaryBandit_Ranged_NE</EntityType>
 				<Cost>
 					<GoodAmount>
 						<GoodType>G_Gold</GoodType>
@@ -392,7 +375,16 @@
 				</Cost>
 			</UnitType>
 			<UnitType>
-				<EntityType>U_MilitaryBandit_Melee_SE</EntityType>
+				<EntityType>U_MilitaryBandit_Ranged_SE</EntityType>
+				<Cost>
+					<GoodAmount>
+						<GoodType>G_Gold</GoodType>
+						<Amount>30</Amount>
+					</GoodAmount>
+				</Cost>
+			</UnitType>
+			<UnitType>
+				<EntityType>U_MilitaryBandit_Ranged_AS</EntityType>
 				<Cost>
 					<GoodAmount>
 						<GoodType>G_Gold</GoodType>
@@ -404,7 +396,7 @@
       </Logic>
     </Behavior>
 
-        <Behavior>
+    <Behavior>
             <Logic classname="EGL::CAmmunitionFillerBehaviorProps">
                 <Class>EGL::CAmmunitionFillerBehavior</Class>
                 <TargetCategory>Soldier</TargetCategory>
@@ -434,14 +426,13 @@
 			<MinScale>1</MinScale>
 			<MaxScale>1</MaxScale>
 			<SpawnTypes>
-				<SpawnType>A_X_Dog</SpawnType>
+				<SpawnType>A_X_Cat</SpawnType>
 			</SpawnTypes>
             <RemovedSpawnedOnDeletion>true</RemovedSpawnedOnDeletion>
 		</Logic>
     </Behavior>
 
   </Behaviors>
-
   <MapEditor>
     <TreePosition>Buildings\City</TreePosition>
     <ShowInTree>true</ShowInTree>
@@ -449,4 +440,5 @@
     <Scalable>false</Scalable>
     <TemplateResistant>true</TemplateResistant>
   </MapEditor>
+
 </root>
