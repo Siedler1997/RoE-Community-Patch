@@ -4,16 +4,13 @@
     "\\Data",
     "\\Data\\base",
     "\\Data\\base\\shr",
-    "\\Data\\base\\shr\\text",
-    "\\Data\\base\\shr\\text\\bb",
-    "\\Data\\base\\shr\\text\\bb\\InGame",
+    "\\Data\\base\\shr\\config",
+    "\\Data\\base\\shr\\config\\Entities",
+    "\\Data\\base\\shr\\graphics",
+    "\\Data\\base\\shr\\graphics\\Textures",
     "\\Data\\base\\shr\\text\\de",
-    "\\Data\\base\\shr\\text\\de\\ingame",
-    "\\Data\\extra1\\shr",
-    "\\Data\\extra1\\shr\\Script",
-    "\\Data\\extra1\\shr\\Script\\Local",
-    "\\Data\\extra1\\shr\\Script\\Local\\Interface"
+    "\\Data\\base\\shr\\text\\de\\ingame"
   ],
-  "SelectedNode": "\\Data\\base\\shr\\text\\bb\\InGame\\Names.xml",
+  "SelectedNode": "\\Data\\base\\shr\\config\\Effects.xml",
   "PreviewInSolutionExplorer": false
 }

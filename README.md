@@ -182,6 +182,7 @@ Folgende Änderungen wurden vorgenommen:
 
 
 ## (Mögliche) ToDos
+- Sound von Mauer-/Palisadencrash leiser
 - Hellebardiere
 	- Icon
 	- Audio-Feedback
@@ -192,6 +193,8 @@ Folgende Änderungen wurden vorgenommen:
 		- ODER: Der Nahkämpferkaserne hinzufügen
 			- Neuer Button für die Kaserne
 			- "Schwertkämpfer***"-Strings zu "Nahkämpfer***" abändern
+- Ritter mit Fackeln
+- Bomben-Munition?
 - Außenposten/Aussichtsturm/Wachturm
 	- ME-Aussichtsturm: Schwarze Seite
 	- Aussichtstürme: Alarm?
