@@ -13,7 +13,7 @@
 		<Class>EGL::CBigSettler</Class>
 		<AccessCategory>AccessCategoryAttackableSettler</AccessCategory>
 		<PlayerSectorType>PlayerSectorTypeMilitary</PlayerSectorType>
-		<MilMetaFormationMemberType>MilMetaFormationMemberTypeCart</MilMetaFormationMemberType>
+		<MilMetaFormationMemberType>MilMetaFormationMemberTypeEngine</MilMetaFormationMemberType>
 		<MaxHealth>250</MaxHealth>
 		<HealingSeconds/>
 		<HealingPoints>0</HealingPoints>
@@ -25,8 +25,8 @@
 			<EntityCategory>HeavyWeapon</EntityCategory>
 		</EntityCategories>
 		<AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
-		<Exploration>32</Exploration>
-		<IdleTaskList>TL_MILITARY_DEFEND</IdleTaskList>
+		<Exploration>0</Exploration>
+		<IdleTaskList>TL_MILITARY_IDLE</IdleTaskList>
 		<CanDrown>true</CanDrown>
 		<IsSelectable>true</IsSelectable>
 
@@ -37,24 +37,6 @@
 			<With>SheepPasture</With>
 			<With>CattlePasture</With>
 		</Familiar>
-		<AttackPoints>
-			<AttackPoint>
-				<X>-300</X>
-				<Y>0</Y>
-			</AttackPoint>
-			<AttackPoint>
-				<X>+300</X>
-				<Y>0</Y>
-			</AttackPoint>
-			<AttackPoint>
-				<X>0</X>
-				<Y>-300</Y>
-			</AttackPoint>
-			<AttackPoint>
-				<X>0</X>
-				<Y>+300</Y>
-			</AttackPoint>
-		</AttackPoints>
 		<SoundImpactType>Wood</SoundImpactType>
 		<SoundProjectileType>Stone</SoundProjectileType>
 
@@ -85,21 +67,26 @@
 				<Class>ED::CDisplayBehaviorAnimation</Class>
 			</Display>
 		</Behavior>
-		<!--
+
+		<Behavior>
+			<Logic classname="EGL::CBehaviorPropsDying">
+				<Class>EGL::CBehaviorDying</Class>
+				<DyingTaskList>TL_DIE</DyingTaskList>
+			</Logic>
+		</Behavior>
+
+		<Behavior>
+			<Logic classname="EGL::CBehaviorProps">
+				<Class>EGL::CParticleEffectAttachmentBehavior</Class>
+			</Logic>
+			<Display classname="ED::CBehaviorProps">
+				<Class>ED::CParticleEffectAttachmentBehavior</Class>
+			</Display>
+		</Behavior>
+
 		<Behavior>
 			<Logic classname="EGL::CAttachableWarMachineBehaviorProps">
 				<Class>EGL::CAttachableWarMachineBehavior</Class>
-				<GuardFormationID>OperatingCatapult</GuardFormationID>
-				<GuardApproachPos>
-					<X>-500</X>
-					<Y>0</Y>
-				</GuardApproachPos>
-			</Logic>
-		</Behavior>
-		-->
-		<Behavior>
-			<Logic classname="EGL::CGuardableBehaviorProps">
-				<Class>EGL::CGuardableBehavior</Class>
 				<GuardFormationID>OperatingCatapult</GuardFormationID>
 				<GuardApproachPos>
 					<X>-500</X>
@@ -113,18 +100,16 @@
 				<Class>EGL::CCapturableBehavior</Class>
 			</Logic>
 		</Behavior>
-		
+
 		<Behavior>
-			<Logic classname="EGL::CStationaryFightBehaviorProps">
-				<Class>EGL::CStationaryFightBehavior</Class>
+			<Logic classname="EGL::CFightBehaviorProps">
+				<Class>EGL::CFightBehavior</Class>
 				<DefendTL>TL_MILITARY_DEFEND</DefendTL>
-				<MoveTaskList>TL_KNIGHT_WALK</MoveTaskList>
+				<MoveTaskList>TL_MILITARY_DEFEND</MoveTaskList>
 				<DefendRange>2700</DefendRange>
 				<AttackMoveRange>2700</AttackMoveRange>
-				<!--
 				<OperatingSoldierCount>1</OperatingSoldierCount>
 				<IdleWhileDefended>false</IdleWhileDefended>
-				-->
 
 				<AmmunitionType>G_CatapultAmmunition</AmmunitionType>
 				<AmmunitionLimit>10</AmmunitionLimit>
@@ -323,33 +308,9 @@
 					</TargetCategory>
 				</TargetCategoryList>
 			</Logic>
-			
 			<Display classname="ED::CBehaviorProps">
 				<Class>ED::CSiegeCartBehavior</Class>
 			</Display>
-		</Behavior>
-
-		<!-- Required for defense engines -->
-		<Behavior>
-			<Logic classname="EGL::CAutomaticWeaponBehaviorProps">
-				<Class>EGL::CAutomaticWeaponBehavior</Class>
-			</Logic>
-		</Behavior>
-
-		<Behavior>
-			<Logic classname="EGL::CBehaviorProps">
-				<Class>EGL::CParticleEffectAttachmentBehavior</Class>
-			</Logic>
-			<Display classname="ED::CBehaviorProps">
-				<Class>ED::CParticleEffectAttachmentBehavior</Class>
-			</Display>
-		</Behavior>
-
-		<Behavior>
-			<Logic classname="EGL::CBehaviorPropsDying">
-				<Class>EGL::CBehaviorDying</Class>
-				<DyingTaskList>TL_DIE</DyingTaskList>
-			</Logic>
 		</Behavior>
 	</Behaviors>
 

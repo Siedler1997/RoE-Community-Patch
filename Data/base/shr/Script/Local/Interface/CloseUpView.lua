@@ -230,6 +230,10 @@ function MilitaryFeedback(_EntityID,_Key)
         Sound.FXPlay3DSound("animals\\lion_attack", x, y, z)
         --Sound.FXPlay2DSound("animals\\lion_attack")
     else
+        if EntityType == Entities.U_MilitaryTrebuchet and _Key == "WalkCommand" then
+            GUI.SendCommandStationaryDefend(_EntityID)
+        end
+
 	    local folder = "Voices"
 
 	    local type = MilitaryFeedback_GetType(_EntityID)
