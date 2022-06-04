@@ -585,4 +585,5 @@
 	<string id="U_MilitarySpear" MD5Hash="499006B1DC7CF75C0F9DF638C575904A" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Halberdier]]></string>
 	<string id="Abilities_U_MilitarySpear" MD5Hash="499006B1DC7CF75C0F9DF638C575904A" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Halberdier]]></string>
 	<string id="Abilities_U_Dragon" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Drache]]></string>
+	<string id="Abilities_U_Trebuchet" MD5Hash="2A6A9144EAF0CAE75DDED46B10DFDC73" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Trebuchet]]></string>
 </root>
