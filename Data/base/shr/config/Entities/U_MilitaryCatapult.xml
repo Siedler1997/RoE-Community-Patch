@@ -9,7 +9,7 @@
         <Class>EGL::CBigSettler</Class>
         <AccessCategory>AccessCategoryAttackableSettler</AccessCategory>
         <PlayerSectorType>PlayerSectorTypeMilitary</PlayerSectorType>
-        <MilMetaFormationMemberType>MilMetaFormationMemberTypeEngine</MilMetaFormationMemberType>
+        <MilMetaFormationMemberType>MilMetaFormationMemberTypeCart</MilMetaFormationMemberType>
         <MaxHealth>250</MaxHealth>
         <HealingSeconds/>
         <HealingPoints>0</HealingPoints>
@@ -93,7 +93,7 @@
         <Behavior>
             <Logic classname="EGL::CAttachableWarMachineBehaviorProps">
                 <Class>EGL::CAttachableWarMachineBehavior</Class>
-                <GuardFormationID>OperatingCatapult</GuardFormationID>
+                <GuardFormationID>GuardingMechant</GuardFormationID>
                 <GuardApproachPos><X>-500</X><Y>0</Y></GuardApproachPos>
             </Logic>
         </Behavior>
@@ -205,6 +205,41 @@
                             </AttackMode>
                         </AttackModeList>
                     </TargetCategory>
+
+					<!-- Dragon -->
+					<TargetCategory>
+						<EntityCategoryList>
+							<EntityCategory>Dragon</EntityCategory>
+							<EntityCategory/>
+							<EntityCategory/>
+							<EntityCategory/>
+							<EntityCategory/>
+							<EntityCategory/>
+						</EntityCategoryList>
+
+						<AttackModeList>
+							<AttackMode>
+								<!-- ranged combat -->
+								<BattleTL>TL_BATTLE_CATAPULT</BattleTL>
+								<!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
+								<ApplyDamageModifiers>false</ApplyDamageModifiers>
+
+								<AttackAnim>U_Donkey_Trading_Fight</AttackAnim>
+								<MinRange>1000</MinRange>
+								<MaxRange>2400</MaxRange>
+								<ProjectileEffect>E_Catapult_Fire_Fly</ProjectileEffect>
+								<MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
+								<CanAttackOverWalls>true</CanAttackOverWalls>
+								<CooldownThousandths>5000</CooldownThousandths>
+								<ConsumeAmmunition>true</ConsumeAmmunition>
+								<Damage>
+									<DiceCount>0</DiceCount>
+									<FaceCount>0</FaceCount>
+									<BaseValue>100</BaseValue>
+								</Damage>
+							</AttackMode>
+						</AttackModeList>
+					</TargetCategory>
 
                     <!-- And the rest ... -->
                     <TargetCategory>

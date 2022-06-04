@@ -99,7 +99,13 @@ Folgende Änderungen wurden vorgenommen:
 				- Geringere Feuerrate (7.5 Sek. > 5 Sek.)
 				- Braucht länger zum Auf- und Abbau (8 Sek. > 5 Sek.)
 			- Kann sich in aufgebauter Form nicht fortbewegen
+			- Muss nicht von Soldaten bedient werden
 			- Zurzeit noch nicht baubar, vllt. mit Titel "Erzherzog"?
+	- "Alte" Trebuchets
+		- Richtiges Selektionsmenü
+		- Eigener Tooltip-String
+		- Mit Munition belieferbar
+		- Diverse Anpassungen auf Basis des "neuen" Trebuchets
 	- Rammen können keine Mauern mehr angreifen
 	- (Turm-)Katapulte und Trebuchets können Militäreinheiten aktiv angreifen
 	- Mauerkatapulte abgeschwächt
@@ -143,6 +149,7 @@ Folgende Änderungen wurden vorgenommen:
 			- Wenn dadurch keine ausgewählt ist wird Mapvorschau geleert und Starten-Button deaktiviert
 		- Im AddOn auch alle Hauptspiel-Karten auswählbar
 - Diverses
+	- Teardown-Sound von Palisaden/Mauern etwas leiser
 	- Marcus wird nicht mehr als generischer Ritter gesetzt
 	- Ungenutztes Audio-Feedback von Rittern, Soldaten und Dieben wird nun verwendet
 	- Eisbären nutzen ihre richtige Sterbeanimation
@@ -184,8 +191,9 @@ Folgende Änderungen wurden vorgenommen:
 
 
 
-## (Mögliche) ToDos
-- Speerkämpfer
+## (M�gliche) ToDos
+- SelectionNames und korrekte Menüs für NPC-Gebäude
+- Hellebardiere
 	- Icon
 	- Audio-Feedback
 	- Rekrutierung
@@ -195,7 +203,8 @@ Folgende Änderungen wurden vorgenommen:
 		- ODER: Der Nahkämpferkaserne hinzufügen
 			- Neuer Button für die Kaserne
 			- "Schwertkämpfer***"-Strings zu "Nahkämpfer***" abändern
-	- Spielerfarbe abbilden (PU_SoldierPoleArm4_masks.dds)
+- Ritter mit Fackeln
+- Bomben-Munition?
 - Außenposten/Aussichtsturm/Wachturm
 	- ME-Aussichtsturm: Schwarze Seite
 	- Aussichtstürme: Alarm?
@@ -261,7 +270,6 @@ Folgende Änderungen wurden vorgenommen:
 	- Nutzlose Rand-Territorien weg
 - Entlassen-Button
 - Söldner-Trupps
-	- Konvertierbar
 	- Korrekte Fackelanzeige (auch im Base game)
 - Max. Zoom leicht erhöhen
 	- Winkel muss nach 0.5 anders kalkuliert werden
@@ -285,15 +293,15 @@ Folgende Änderungen wurden vorgenommen:
 	- Zwischenproduktionen einführen
 		- Low Priority, da extrem viel Arbeit...
 - Spielbare Dörfer?
+- MainMenu: RdO mit eigenen Tag/Nacht-Hintergrund
 - Ungenutzte Gebäude
 	- Juwelier
 	- Supermarkt?
 - Fremder Content
-	- Reiter
 	- DEdK-Soundtrack
 - Auf 4k-Auflösung kann nicht mehr per BorderScroll nach rechts gecrolled werden
 - Biom-spezifisches Retexturing für Kerngebäude
 	- Das oder neue Modelle
-- Cheats am Ende komplett deaktivieren
+- Kritische Cheats am Ende weitgehend deaktivieren
 - ReadMe auf Englisch
 - Als bba gepackte Version für das Original

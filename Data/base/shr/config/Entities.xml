@@ -1990,9 +1990,12 @@
 	<Entity>B_WatchTower_NE</Entity>
 	<Entity>B_WatchTower_SE</Entity>
 	<Entity>B_WatchTower_NA</Entity>
+    
+	<Entity>B_Beautification_Dragon</Entity>
 
-	<Entity>U_MilitaryPoleArm</Entity>
+	<Entity>U_MilitarySpear</Entity>
 	<Entity>U_MilitaryCavalry</Entity>
+	<Entity>U_Dragon</Entity>
 
     <Entity>U_Marketer_Mission</Entity>
     <Entity>U_Medicus_Mission</Entity>

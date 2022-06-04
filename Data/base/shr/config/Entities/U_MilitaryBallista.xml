@@ -214,13 +214,97 @@
                         </AttackModeList>
                     </TargetCategory>
 
+				   <!-- Dragon -->
+				   <TargetCategory>
+					   <DisableAutoAttack>true</DisableAutoAttack>
+					   <IgnoreGuards>true</IgnoreGuards>
+					   <EntityCategoryList>
+						   <EntityCategory>Dragon</EntityCategory>
+						   <EntityCategory/>
+						   <EntityCategory/>
+						   <EntityCategory/>
+						   <EntityCategory/>
+						   <EntityCategory/>
+					   </EntityCategoryList>
+					   <AttackModeList>
+						   <AttackMode>
+							   <BattleTL>TL_BATTLE_CATAPULT</BattleTL>
+							   <!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
+							   <ApplyDamageModifiers>false</ApplyDamageModifiers>
+							   <MinRange>1000</MinRange>
+							   <!-- The max range is chosen to allow defending against catapults. It must be adapted if the segment max length is changed -->
+							   <MaxRange>2675</MaxRange>
+							   <ProjectileEffect>E_Catapult_Fire_Fly</ProjectileEffect>
+							   <MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
+							   <CanAttackOverWalls>true</CanAttackOverWalls>
+							   <CooldownThousandths>5000</CooldownThousandths>
+							   <ConsumeAmmunition>true</ConsumeAmmunition>
+							   <Damage>
+								   <DiceCount>0</DiceCount>
+								   <FaceCount>0</FaceCount>
+								   <BaseValue>80</BaseValue>
+							   </Damage>
+						   </AttackMode>
+					   </AttackModeList>
+				   </TargetCategory>
+
+				   <!-- Military units -->
+				   <TargetCategory>
+					   <DisableAutoAttack>true</DisableAutoAttack>
+					   <IgnoreGuards>true</IgnoreGuards>
+					   <EntityCategoryList>
+						   <EntityCategory>Military</EntityCategory>
+						   <EntityCategory/>
+						   <EntityCategory/>
+						   <EntityCategory/>
+						   <EntityCategory/>
+						   <EntityCategory/>
+					   </EntityCategoryList>
+					   <AttackModeList>
+						   <AttackMode>
+							   <BattleTL>TL_BATTLE_CATAPULT</BattleTL>
+							   <!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
+							   <ApplyDamageModifiers>false</ApplyDamageModifiers>
+							   <MinRange>1000</MinRange>
+							   <!-- The max range is chosen to allow defending against catapults. It must be adapted if the segment max length is changed -->
+							   <MaxRange>2675</MaxRange>
+							   <ProjectileEffect>E_Catapult_Fire</ProjectileEffect>
+							   <MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
+							   <CanAttackOverWalls>true</CanAttackOverWalls>
+							   <CooldownThousandths>5000</CooldownThousandths>
+							   <ConsumeAmmunition>true</ConsumeAmmunition>
+							   <Damage>
+								   <DiceCount>0</DiceCount>
+								   <FaceCount>0</FaceCount>
+								   <BaseValue>40</BaseValue>
+							   </Damage>
+							   <BuildingFireSize>20</BuildingFireSize>
+							   <DamageRadiusList>
+								   <!-- Must be sorted from inner to outer. -->
+								   <DamageRadius>
+									   <Radius>200</Radius>
+									   <Percentage>100</Percentage>
+								   </DamageRadius>
+								   <DamageRadius>
+									   <Radius>400</Radius>
+									   <Percentage> 50</Percentage>
+								   </DamageRadius>
+								   <DamageRadius>
+									   <Radius>600</Radius>
+									   <Percentage> 25</Percentage>
+								   </DamageRadius>
+							   </DamageRadiusList>
+						   </AttackMode>
+					   </AttackModeList>
+				   </TargetCategory>
+
                     <!-- Heavy Weapons (the only TargetCategory that is auto attacked!) -->
                     <TargetCategory>
                         <IgnoreGuards>true</IgnoreGuards>
                         <EntityCategoryList>
                             <EntityCategory>HeavyWeapon</EntityCategory>
                             <EntityCategory>Trebuchet</EntityCategory>
-                            <EntityCategory>Military</EntityCategory>
+							<EntityCategory/>
                             <EntityCategory/>
                             <EntityCategory/>
                             <EntityCategory/>
