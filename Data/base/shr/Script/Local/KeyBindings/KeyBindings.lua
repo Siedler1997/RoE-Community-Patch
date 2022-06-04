@@ -220,9 +220,9 @@ function DebugKeyBindings_Init()
     Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad7, "KeyBindings_CreateEntityAtMousePositionForActiveGUIPlayer(Entities.U_BatteringRamCart)", 2, true)
     --Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad8, "KeyBindings_CreateEntityAtMousePositionForActiveGUIPlayer(Entities.U_SiegeTowerCart)", 2, true)
     Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad8, "KeyBindings_ToggleRights()", 2, true)
-    --Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad9, "KeyBindings_CreateEntityAtMousePositionForActiveGUIPlayer(Entities.U_TrebuchetCart)", 2, true)
+    Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad9, "KeyBindings_CreateEntityAtMousePositionForActiveGUIPlayer(Entities.U_TrebuchetCart)", 2, true)
     --Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad9, "KeyBindings_CreateEntityAtMousePositionForActiveGUIPlayer(Entities.B_Beautification_Dragon)", 2, true)
-    Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad9, "KeyBindings_CreateEntityAtMousePositionForActiveGUIPlayer(Entities.U_Dragon)", 2, true)
+    --Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad9, "KeyBindings_CreateEntityAtMousePositionForActiveGUIPlayer(Entities.U_Dragon)", 2, true)
     
 
     -----------------------------------------------------------------------------------------------

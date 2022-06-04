@@ -96,9 +96,10 @@ Folgende Änderungen wurden vorgenommen:
 				- Höhere Maximalreichweite (32sm > 24sm)
 				- Höhere Mindestreichweite (18sm > 10sm)
 				- Höherer Schaden (100 > 50)
-				- Geringere Feuerrate (7.5 Sek. > 5 Sek.)
+				- Geringere Feuerrate (8 Sek. > 5 Sek.)
 				- Braucht länger zum Auf- und Abbau (8 Sek. > 5 Sek.)
 			- Kann sich in aufgebauter Form nicht fortbewegen
+			- Muss nicht von Soldaten bedient werden
 			- Zurzeit noch nicht baubar, vllt. mit Titel "Erzherzog"?
 	- Rammen können keine Mauern mehr angreifen
 	- (Turm-)Katapulte und Trebuchets können Militäreinheiten aktiv angreifen
@@ -287,11 +288,10 @@ Folgende Änderungen wurden vorgenommen:
 	- Juwelier
 	- Supermarkt?
 - Fremder Content
-	- Reiter
 	- DEdK-Soundtrack
 - Auf 4k-Auflösung kann nicht mehr per BorderScroll nach rechts gecrolled werden
 - Biom-spezifisches Retexturing für Kerngebäude
 	- Das oder neue Modelle
-- Cheats am Ende komplett deaktivieren
+- Kritische Cheats am Ende weitgehend deaktivieren
 - ReadMe auf Englisch
 - Als bba gepackte Version für das Original

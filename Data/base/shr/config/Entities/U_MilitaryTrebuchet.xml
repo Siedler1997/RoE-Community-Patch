@@ -13,7 +13,7 @@
 		<Class>EGL::CBigSettler</Class>
 		<AccessCategory>AccessCategoryAttackableSettler</AccessCategory>
 		<PlayerSectorType>PlayerSectorTypeMilitary</PlayerSectorType>
-		<MilMetaFormationMemberType>MilMetaFormationMemberTypeEngine</MilMetaFormationMemberType>
+		<MilMetaFormationMemberType>MilMetaFormationMemberTypeCart</MilMetaFormationMemberType>
 		<MaxHealth>250</MaxHealth>
 		<HealingSeconds/>
 		<HealingPoints>0</HealingPoints>
@@ -25,8 +25,8 @@
 			<EntityCategory>HeavyWeapon</EntityCategory>
 		</EntityCategories>
 		<AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
-		<Exploration>0</Exploration>
-		<IdleTaskList>TL_MILITARY_IDLE</IdleTaskList>
+		<Exploration>32</Exploration>
+		<IdleTaskList>TL_MILITARY_DEFEND</IdleTaskList>
 		<CanDrown>true</CanDrown>
 		<IsSelectable>true</IsSelectable>
 
@@ -37,6 +37,24 @@
 			<With>SheepPasture</With>
 			<With>CattlePasture</With>
 		</Familiar>
+		<AttackPoints>
+			<AttackPoint>
+				<X>-300</X>
+				<Y>0</Y>
+			</AttackPoint>
+			<AttackPoint>
+				<X>+300</X>
+				<Y>0</Y>
+			</AttackPoint>
+			<AttackPoint>
+				<X>0</X>
+				<Y>-300</Y>
+			</AttackPoint>
+			<AttackPoint>
+				<X>0</X>
+				<Y>+300</Y>
+			</AttackPoint>
+		</AttackPoints>
 		<SoundImpactType>Wood</SoundImpactType>
 		<SoundProjectileType>Stone</SoundProjectileType>
 
@@ -47,7 +65,7 @@
 		<Behavior>
 			<Logic classname="EGL::CMilitaryMovementBehaviorProps">
 				<Class>EGL::CMilitaryMovementBehavior</Class>
-				<StraightenPath>true</StraightenPath>
+				<!--<StraightenPath>true</StraightenPath>-->
 				<Speed>0</Speed>
 				<RotationSpeed>50</RotationSpeed>
 				<MoveTaskList>TL_MILITARY_WALK</MoveTaskList>
@@ -67,26 +85,21 @@
 				<Class>ED::CDisplayBehaviorAnimation</Class>
 			</Display>
 		</Behavior>
-
-		<Behavior>
-			<Logic classname="EGL::CBehaviorPropsDying">
-				<Class>EGL::CBehaviorDying</Class>
-				<DyingTaskList>TL_DIE</DyingTaskList>
-			</Logic>
-		</Behavior>
-
-		<Behavior>
-			<Logic classname="EGL::CBehaviorProps">
-				<Class>EGL::CParticleEffectAttachmentBehavior</Class>
-			</Logic>
-			<Display classname="ED::CBehaviorProps">
-				<Class>ED::CParticleEffectAttachmentBehavior</Class>
-			</Display>
-		</Behavior>
-
+		<!--
 		<Behavior>
 			<Logic classname="EGL::CAttachableWarMachineBehaviorProps">
 				<Class>EGL::CAttachableWarMachineBehavior</Class>
+				<GuardFormationID>OperatingCatapult</GuardFormationID>
+				<GuardApproachPos>
+					<X>-500</X>
+					<Y>0</Y>
+				</GuardApproachPos>
+			</Logic>
+		</Behavior>
+		-->
+		<Behavior>
+			<Logic classname="EGL::CGuardableBehaviorProps">
+				<Class>EGL::CGuardableBehavior</Class>
 				<GuardFormationID>OperatingCatapult</GuardFormationID>
 				<GuardApproachPos>
 					<X>-500</X>
@@ -100,16 +113,18 @@
 				<Class>EGL::CCapturableBehavior</Class>
 			</Logic>
 		</Behavior>
-
+		
 		<Behavior>
-			<Logic classname="EGL::CFightBehaviorProps">
-				<Class>EGL::CFightBehavior</Class>
+			<Logic classname="EGL::CStationaryFightBehaviorProps">
+				<Class>EGL::CStationaryFightBehavior</Class>
 				<DefendTL>TL_MILITARY_DEFEND</DefendTL>
-				<MoveTaskList>TL_MILITARY_DEFEND</MoveTaskList>
+				<MoveTaskList>TL_KNIGHT_WALK</MoveTaskList>
 				<DefendRange>2700</DefendRange>
 				<AttackMoveRange>2700</AttackMoveRange>
+				<!--
 				<OperatingSoldierCount>1</OperatingSoldierCount>
 				<IdleWhileDefended>false</IdleWhileDefended>
+				-->
 
 				<AmmunitionType>G_CatapultAmmunition</AmmunitionType>
 				<AmmunitionLimit>10</AmmunitionLimit>
@@ -143,7 +158,7 @@
 								<ProjectileEffect>E_Trebuchet_Fire_Wall</ProjectileEffect>
 								<MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
 								<CanAttackOverWalls>true</CanAttackOverWalls>
-								<CooldownThousandths>7500</CooldownThousandths>
+								<CooldownThousandths>8000</CooldownThousandths>
 								<ConsumeAmmunition>true</ConsumeAmmunition>
 								<Damage>
 									<DiceCount>0</DiceCount>
@@ -194,7 +209,7 @@
 								<ProjectileEffect>E_Trebuchet_Fire_Palisade</ProjectileEffect>
 								<MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
 								<CanAttackOverWalls>true</CanAttackOverWalls>
-								<CooldownThousandths>7500</CooldownThousandths>
+								<CooldownThousandths>8000</CooldownThousandths>
 								<ConsumeAmmunition>true</ConsumeAmmunition>
 								<Damage>
 									<DiceCount>0</DiceCount>
@@ -245,7 +260,7 @@
 								<ProjectileEffect>E_Trebuchet_Fire_Fly</ProjectileEffect>
 								<MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
 								<CanAttackOverWalls>true</CanAttackOverWalls>
-								<CooldownThousandths>7500</CooldownThousandths>
+								<CooldownThousandths>8000</CooldownThousandths>
 								<ConsumeAmmunition>true</ConsumeAmmunition>
 								<Damage>
 									<DiceCount>0</DiceCount>
@@ -280,7 +295,7 @@
 								<ProjectileEffect>E_Trebuchet_Fire</ProjectileEffect>
 								<MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
 								<CanAttackOverWalls>true</CanAttackOverWalls>
-								<CooldownThousandths>7500</CooldownThousandths>
+								<CooldownThousandths>8000</CooldownThousandths>
 								<ConsumeAmmunition>true</ConsumeAmmunition>
 								<Damage>
 									<DiceCount>0</DiceCount>
@@ -308,9 +323,33 @@
 					</TargetCategory>
 				</TargetCategoryList>
 			</Logic>
+			
 			<Display classname="ED::CBehaviorProps">
 				<Class>ED::CSiegeCartBehavior</Class>
 			</Display>
+		</Behavior>
+
+		<!-- Required for defense engines -->
+		<Behavior>
+			<Logic classname="EGL::CAutomaticWeaponBehaviorProps">
+				<Class>EGL::CAutomaticWeaponBehavior</Class>
+			</Logic>
+		</Behavior>
+
+		<Behavior>
+			<Logic classname="EGL::CBehaviorProps">
+				<Class>EGL::CParticleEffectAttachmentBehavior</Class>
+			</Logic>
+			<Display classname="ED::CBehaviorProps">
+				<Class>ED::CParticleEffectAttachmentBehavior</Class>
+			</Display>
+		</Behavior>
+
+		<Behavior>
+			<Logic classname="EGL::CBehaviorPropsDying">
+				<Class>EGL::CBehaviorDying</Class>
+				<DyingTaskList>TL_DIE</DyingTaskList>
+			</Logic>
 		</Behavior>
 	</Behaviors>
 

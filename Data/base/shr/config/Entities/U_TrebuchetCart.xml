@@ -168,6 +168,14 @@
             </Logic>
         </Behavior>
 
+		<!--
+		<Behavior>
+			<Logic classname="EGL::CCapturableBehaviorProps">
+				<Class>EGL::CCapturableBehavior</Class>
+			</Logic>
+		</Behavior>
+		-->
+
         <Behavior>
             <Logic classname="EGL::CBehaviorPropsDying">
                 <Class>EGL::CBehaviorDying</Class>
