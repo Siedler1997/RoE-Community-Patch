@@ -101,6 +101,11 @@ Folgende Änderungen wurden vorgenommen:
 			- Kann sich in aufgebauter Form nicht fortbewegen
 			- Muss nicht von Soldaten bedient werden
 			- Zurzeit noch nicht baubar, vllt. mit Titel "Erzherzog"?
+	- "Alte" Trebuchets
+		- Richtiges Selektionsmenü
+		- Eigener Tooltip-String
+		- Mit Munition belieferbar
+		- Diverse Anpassungen auf Basis des "neuen" Trebuchets
 	- Rammen können keine Mauern mehr angreifen
 	- (Turm-)Katapulte und Trebuchets können Militäreinheiten aktiv angreifen
 	- Mauerkatapulte abgeschwächt
@@ -144,6 +149,7 @@ Folgende Änderungen wurden vorgenommen:
 			- Wenn dadurch keine ausgewählt ist wird Mapvorschau geleert und Starten-Button deaktiviert
 		- Im AddOn auch alle Hauptspiel-Karten auswählbar
 - Diverses
+	- Teardown-Sound von Palisaden/Mauern etwas leiser
 	- Marcus wird nicht mehr als generischer Ritter gesetzt
 	- Ungenutztes Audio-Feedback von Rittern, Soldaten und Dieben wird nun verwendet
 	- Eisbären nutzen ihre richtige Sterbeanimation
@@ -183,7 +189,7 @@ Folgende Änderungen wurden vorgenommen:
 
 
 ## (Mögliche) ToDos
-- Sound von Mauer-/Palisadencrash leiser
+- SelectionNames und korrekte Menüs für NPC-Gebäude
 - Hellebardiere
 	- Icon
 	- Audio-Feedback
