@@ -59,4 +59,22 @@
 	<string id="U_NPC_Castellan_AS" MD5Hash="0055D815AC3E445508C9F42176AAD579" mod="20080206075412" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Castellan]]></string>
 	<string id="AbilityKhana" MD5Hash="" mod="20070801080004" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Khanas Torches]]></string>
 	<string id="AbilityPraphat" MD5Hash="7AECF10FC4C911BFC5B954ED5448A464" mod="20071205123806" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Praphat's Clothes]]></string>
+	<string id="B_Barracks_Khana" MD5Hash="7C09F0F8DAA84544A8386542D391651E" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Swordsmen Barracks]]></string>
+	<string id="B_BarracksArchers_Khana" MD5Hash="AD138B10E96B283046D186ED57D341AF" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bowmen Barracks]]></string>
+	<string id="B_NPC_BanditsHQ_AS" MD5Hash="59A51173D3A340F8B8B84B1A6BB412D4" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bandit Camp]]></string>
+	<string id="B_NPC_BanditsHutBig_AS" MD5Hash="59A51173D3A340F8B8B84B1A6BB412D4" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bandit Tent]]></string>
+	<string id="B_NPC_BanditsHutSmall_AS" MD5Hash="59A51173D3A340F8B8B84B1A6BB412D4" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bandit Tent]]></string>
+	<string id="B_NPC_Marketplace_AS" MD5Hash="BE03A74A67A8C111DC17745E182A4407" mod="20070801140845" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Marketplace]]></string>
+	<string id="B_NPC_Barracks_AS" MD5Hash="2DAA94E4EAAD666AE94F1A1406A86ECC" mod="20070801141407" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Barracks]]></string>
+	<string id="B_NPC_StoreHouse_AS" MD5Hash="BFDE014F6DB6F65625702E245F6C6EAD" mod="20070801141733" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Storehouse]]></string>
+	<string id="B_NPC_Bakery_AS" MD5Hash="654BE0C8CA53B779282A08825FBB80C7" mod="20070801141020" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bakery]]></string>
+	<string id="B_NPC_Butcher_AS" MD5Hash="8029555CEFD09184E72B7A86DFDB876B" mod="20070801141038" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Butcher's Shop]]></string>
+	<string id="B_NPC_Dairy_AS" MD5Hash="064872655C50D1EABED10A9199A58C2C" mod="20070801141444" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dairy]]></string>
+	<string id="B_NPC_SmokeHouse_AS" MD5Hash="AAF2240DE8D6131A90C9F901D794C6DA" mod="20070801141602" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Smokehouse]]></string>
+	<string id="B_NPC_Cloister_AS" MD5Hash="74485AD428BE6AC7DF2579E2F062D294" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cloister]]></string>
+	<string id="B_NPC_Cloister_Bakery_AS" MD5Hash="654BE0C8CA53B779282A08825FBB80C7" mod="20070801141114" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bakery]]></string>
+	<string id="B_NPC_Cloister_Butcher_AS" MD5Hash="8029555CEFD09184E72B7A86DFDB876B" mod="20070801141316" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Butcher's Shop]]></string>
+	<string id="B_NPC_Cloister_Dairy_AS" MD5Hash="064872655C50D1EABED10A9199A58C2C" mod="20070801141338" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dairy]]></string>
+	<string id="B_NPC_Cloister_Pharmacy_AS" MD5Hash="2DAA94E4EAAD666AE94F1A1406A86ECC" mod="20070801141407" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Pharmacy]]></string>
+	<string id="U_NPC_Monk_Khana" MD5Hash="12D78470B56D9FBE63BC7E03EE459F71" mod="20080125122253" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Monk]]></string>
 </root>

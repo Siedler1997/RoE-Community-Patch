@@ -36,6 +36,10 @@
                 <GoodType>G_Bow</GoodType>
                 <Amount>1</Amount>
             </GoodAmount>
+			<GoodAmount>
+				<GoodType>G_Iron</GoodType>
+				<Amount>1</Amount>
+			</GoodAmount>
         </Cost>
 
         <EntityCategories>

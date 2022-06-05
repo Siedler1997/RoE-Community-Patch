@@ -4,7 +4,7 @@
 <string id="B_Castle_NE" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Castle]]></string>
 <string id="B_Castle_SE" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Castle]]></string>
 <string id="B_Castle_NA" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Castle]]></string>
-<string id="B_Cathedral" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cathedral]]></string>
+<string id="B_Cathedral" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Church]]></string>
 <string id="B_Cathedral_Big" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cathedral]]></string>
 <string id="B_Marketplace_ME" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Marketplace]]></string>
 <string id="B_Marketplace_NE" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Marketplace]]></string>
@@ -167,7 +167,7 @@
 <string id="R_WildBoar_Child" MD5Hash="" mod="20070607013832" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Wild Boar Carcass]]></string>
 <string id="R_WildBoar_Female" MD5Hash="" mod="20070607013832" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Wild Boar Carcass]]></string>
 <string id="R_WildBoar_Male" MD5Hash="" mod="20070607013832" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Wild Boar Carcass]]></string>
-<string id="B_NPC_TournamentPlace_MainBuilding" MD5Hash="" mod="20070801115149" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Tournament Tent]]></string>
+<string id="B_NPC_TournamentPlace_MainBuilding" MD5Hash="" mod="20070801115149" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Tournament Camp]]></string>
 <string id="B_NPC_Prison" MD5Hash="" mod="20070607112634" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Prison Tower]]></string>
 <string id="B_NPC_Cloister_Bakery_ME" MD5Hash="" mod="20070801103303" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bakery]]></string>
 <string id="B_NPC_Cloister_Bakery_NE" MD5Hash="" mod="20070801103313" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bakery]]></string>

@@ -4,7 +4,7 @@
 <string id="B_Castle_NE" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Castle]]></string>
 <string id="B_Castle_NA" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Castle]]></string>
 <string id="B_Castle_SE" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Castle]]></string>
-<string id="B_Cathedral" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cathedral]]></string>
+<string id="B_Cathedral" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Church]]></string>
 <string id="B_StoreHouse" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Storehouse]]></string>
 <string id="B_Marketplace_ME" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Marketplace]]></string>
 <string id="B_Marketplace_NE" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Marketplace]]></string>
@@ -586,4 +586,13 @@
 	<string id="Abilities_U_MilitarySpear" MD5Hash="499006B1DC7CF75C0F9DF638C575904A" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Halberdier]]></string>
 	<string id="Abilities_U_Dragon" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dragon]]></string>
 	<string id="Abilities_U_Trebuchet" MD5Hash="2A6A9144EAF0CAE75DDED46B10DFDC73" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Trebuchet]]></string>
+	<string id="B_Barracks_RedPrince" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Swordsmen Barracks]]></string>
+	<string id="B_BarracksArchers_RedPrince" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bowmen Barracks]]></string>
+	<string id="B_NPC_Barracks_ME" MD5Hash="2DAA94E4EAAD666AE94F1A1406A86ECC" mod="20070801141407" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Barracks]]></string>
+	<string id="B_NPC_Barracks_NE" MD5Hash="2DAA94E4EAAD666AE94F1A1406A86ECC" mod="20070801141407" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Barracks]]></string>
+	<string id="B_NPC_Barracks_SE" MD5Hash="2DAA94E4EAAD666AE94F1A1406A86ECC" mod="20070801141407" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Barracks]]></string>
+	<string id="B_NPC_Barracks_NA" MD5Hash="2DAA94E4EAAD666AE94F1A1406A86ECC" mod="20070801141407" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Barracks]]></string>
+	<string id="B_Cathedral_Big" MD5Hash="2DAA94E4EAAD666AE94F1A1406A86ECC" mod="20070801141407" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cathedral]]></string>
+	<string id="B_NPC_TournamentPlace_MainBuilding" MD5Hash="" mod="20070801115149" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Tournament Camp]]></string>
+	<string id="U_TournamentWorker" MD5Hash="" mod="20070801115149" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Worker]]></string>
 </root>

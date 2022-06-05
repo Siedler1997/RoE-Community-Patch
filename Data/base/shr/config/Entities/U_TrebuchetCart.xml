@@ -32,7 +32,7 @@
         <Cost>
             <GoodAmount>
                 <GoodType>G_Gold</GoodType>
-                <Amount>200</Amount>
+                <Amount>250</Amount>
             </GoodAmount>
             <GoodAmount>
                 <GoodType>G_SiegeEnginePart</GoodType>

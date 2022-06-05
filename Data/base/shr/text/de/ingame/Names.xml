@@ -124,7 +124,7 @@
 <string id="B_NPC_StoreHouse_NA" MD5Hash="BFDE014F6DB6F65625702E245F6C6EAD" mod="20070801115414" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Lagerhaus]]></string>
 <string id="B_NPC_StoreHouse_NE" MD5Hash="BFDE014F6DB6F65625702E245F6C6EAD" mod="20070801115415" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Lagerhaus]]></string>
 <string id="B_NPC_StoreHouse_SE" MD5Hash="BFDE014F6DB6F65625702E245F6C6EAD" mod="20070801115418" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Lagerhaus]]></string>
-<string id="B_NPC_TournamentPlace_MainBuilding" MD5Hash="0CE5C47325F1EF20BAA21D649E9F8146" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Turnierzelt]]></string>
+<string id="B_NPC_TournamentPlace_MainBuilding" MD5Hash="0CE5C47325F1EF20BAA21D649E9F8146" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Turnierlager]]></string>
 <string id="B_Outpost_ME" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Außenposten]]></string>
 <string id="B_Outpost_NA" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Außenposten]]></string>
 <string id="B_Outpost_NE" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Außenposten]]></string>

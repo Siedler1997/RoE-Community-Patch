@@ -189,7 +189,13 @@ Folgende Änderungen wurden vorgenommen:
 
 
 ## (Mögliche) ToDos
-- SelectionNames und korrekte Menüs für NPC-Gebäude
+- NPC-Gebäude
+	- RP- und Khana-Kasernen richtig nutzbar
+	- Dorfkasernen und Banditenzelte mit Rektutierungsoptionen
+	- Einnahmen
+	- Turnierzelte
+	- NPC-Karren
+	- Base-Marktplätze mit Overhead-Stuff (ohne Selektion)
 - Hellebardiere
 	- Icon
 	- Audio-Feedback

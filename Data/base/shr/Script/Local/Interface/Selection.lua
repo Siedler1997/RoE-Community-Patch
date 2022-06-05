@@ -131,7 +131,9 @@ function GameCallback_GUI_SelectionChanged(_Source)
 
                     if EntityType == Entities.B_Barracks
                     or EntityType == Entities.B_BarracksArchers
-                    or EntityType == Entities.B_SiegeEngineWorkshop then
+                    or EntityType == Entities.B_SiegeEngineWorkshop
+                    or EntityType == Entities.B_Barracks_RedPrince
+                    or EntityType == Entities.B_BarracksArchers_Redprince then
                         XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/Selection/Business/City/Money", 0)
                         XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/Selection/Needs/Prosperity", 0)
                     end

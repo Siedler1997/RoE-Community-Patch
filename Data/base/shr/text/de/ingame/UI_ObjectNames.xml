@@ -586,4 +586,13 @@
 	<string id="Abilities_U_MilitarySpear" MD5Hash="499006B1DC7CF75C0F9DF638C575904A" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Hellebardier]]></string>
 	<string id="Abilities_U_Dragon" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Drache]]></string>
 	<string id="Abilities_U_Trebuchet" MD5Hash="2A6A9144EAF0CAE75DDED46B10DFDC73" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Trebuchet]]></string>
+	<string id="B_Barracks_RedPrince" MD5Hash="7C09F0F8DAA84544A8386542D391651E" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Schwertkämpferkaserne]]></string>
+	<string id="B_BarracksArchers_RedPrince" MD5Hash="AD138B10E96B283046D186ED57D341AF" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bogenschützenkaserne]]></string>
+	<string id="B_NPC_Barracks_ME" MD5Hash="2DAA94E4EAAD666AE94F1A1406A86ECC" mod="20070801141407" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Kaserne]]></string>
+	<string id="B_NPC_Barracks_NE" MD5Hash="2DAA94E4EAAD666AE94F1A1406A86ECC" mod="20070801141407" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Kaserne]]></string>
+	<string id="B_NPC_Barracks_SE" MD5Hash="2DAA94E4EAAD666AE94F1A1406A86ECC" mod="20070801141407" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Kaserne]]></string>
+	<string id="B_NPC_Barracks_NA" MD5Hash="2DAA94E4EAAD666AE94F1A1406A86ECC" mod="20070801141407" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Kaserne]]></string>
+	<string id="B_Cathedral_Big" MD5Hash="2DAA94E4EAAD666AE94F1A1406A86ECC" mod="20070801141407" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Kathedrale]]></string>
+	<string id="B_NPC_TournamentPlace_MainBuilding" MD5Hash="0CE5C47325F1EF20BAA21D649E9F8146" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Turnierlager]]></string>
+	<string id="U_TournamentWorker" MD5Hash="" mod="20070801115149" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Arbeiter]]></string>
 </root>
