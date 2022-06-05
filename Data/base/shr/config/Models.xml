@@ -11516,7 +11516,7 @@
             <TwoPassAlphaBlending>False</TwoPassAlphaBlending>
             <CloseUpModeCulling>True</CloseUpModeCulling>
         </Model>
-        <Model id="Buildings\B_NPC_Marketplace_ME">
+		<!--Model id="Buildings\B_NPC_Marketplace_ME">
             <Effect>SimpleObjectMultiply</Effect>
             <UseAlphaBlending>True</UseAlphaBlending>
         </Model>
@@ -11531,7 +11531,7 @@
         <Model id="Buildings\B_NPC_Marketplace_NA">
             <Effect>SimpleObjectMultiply</Effect>
             <UseAlphaBlending>True</UseAlphaBlending>
-        </Model>
+        </Model-->
         <Model id="Buildings\B_NPC_Marketplace_ME_No_Decal">
             <Effect>SimpleObjectMultiply</Effect>
             <UseAlphaBlending>True</UseAlphaBlending>

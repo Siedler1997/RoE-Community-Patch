@@ -83,7 +83,7 @@ function GUI_Tooltip.GetDisabledKeyForTechnologyType(_TechnologyType)
         local TitleName = GetNameOfKeyInTable(KnightTitles, NeededTitle)
         local KnightGender = KnightGender[KnightType]
         if KnightGender == nil then
-            KnightGender = KnightGender[Entities.U_KnightChivalry]
+            KnightGender = "male"
         end
         DisabledTextKeyName = "Title_" .. TitleName .."_" .. KnightGender .. "_needed"    
         

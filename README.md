@@ -108,6 +108,7 @@ Folgende Änderungen wurden vorgenommen:
 		- Diverse Anpassungen auf Basis des "neuen" Trebuchets
 	- Rammen können keine Mauern mehr angreifen
 	- (Turm-)Katapulte und Trebuchets können Militäreinheiten aktiv angreifen
+	- Overhead und SelectionMenu vom Gefängniskarren den anderen Karren angeglichen
 	- Mauerkatapulte abgeschwächt
 		- Kosten mehr Eisen (5 -> 10)
 		- Kosten mehr Gold (200 -> 300)
@@ -135,8 +136,16 @@ Folgende Änderungen wurden vorgenommen:
 			- Kostet 12 Steine
 			- Besitzt eine hohe Sichtweite
 			- Sieht einfach schick aus :)
-	- Ziergebäude der Special Edition im Hauptspiel verfügbar
+	- NPC-Gebäude
+		- RP-/Khana-Kasernen
+			- Funktionieren unter Spieler-Kontrolle wie normale Kasernen auch
+			- Ermöglichen, unabhängig vom Ritter, Rekrutierung von RP- bzw. Khana-Einheiten
+		- Alle NPC-Gebäude mit Menü
+			- Sollten nun einen Namens-String haben
+			- Zeigen die Ausbaustufe "1/1" an
+		- Hauptspiel-Marktplätze haben ein Mouseover
 	- Bienenstöcke haben weniger Lebenspunkte (10 -> 5)
+	- Ziergebäude der Special Edition im Hauptspiel verfügbar
 - Hauptmenü
 	- AddOn nutzt weitgehend Hauptspiel-Hintergrund und Soundtrack
 	- Hintergrund ist tageszeitabhängig
@@ -190,12 +199,9 @@ Folgende Änderungen wurden vorgenommen:
 
 ## (Mögliche) ToDos
 - NPC-Gebäude
-	- RP- und Khana-Kasernen richtig nutzbar
 	- Dorfkasernen und Banditenzelte mit Rektutierungsoptionen
+		- Neue Entities, da vorhandene zu sehr gescripted
 	- Einnahmen
-	- Turnierzelte
-	- NPC-Karren
-	- Base-Marktplätze mit Overhead-Stuff (ohne Selektion)
 - Hellebardiere
 	- Icon
 	- Audio-Feedback
