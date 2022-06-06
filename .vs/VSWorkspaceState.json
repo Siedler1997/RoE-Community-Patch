@@ -4,13 +4,17 @@
     "\\Data",
     "\\Data\\base",
     "\\Data\\base\\shr",
-    "\\Data\\base\\shr\\config",
-    "\\Data\\base\\shr\\config\\Entities",
+    "\\Data\\base\\shr\\Script",
+    "\\Data\\base\\shr\\Script\\Local",
+    "\\Data\\base\\shr\\Script\\Local\\Interface",
     "\\Data\\extra1",
     "\\Data\\extra1\\shr",
     "\\Data\\extra1\\shr\\config",
-    "\\Data\\extra1\\shr\\config\\Entities"
+    "\\Data\\extra1\\shr\\config\\Entities",
+    "\\Data\\extra1\\shr\\Script",
+    "\\Data\\extra1\\shr\\Script\\Local",
+    "\\Data\\extra1\\shr\\Script\\Local\\Interface"
   ],
-  "SelectedNode": "\\Data\\extra1\\shr\\config\\Entities\\B_BarracksArchers_Khana.xml",
+  "SelectedNode": "\\Data\\extra1\\shr\\Script\\Local\\Interface\\SelectionEx1.lua",
   "PreviewInSolutionExplorer": false
 }

@@ -1296,7 +1296,7 @@ function GUI_BuildingButtons.BuyBattalionClicked(_IsSpecial)
         SoldierSize = Logic.GetBattalionSize(BarrackID)
     end
 
-    if (CurrentSoldierCount + SoldierSize) > CurrentSoldierLimit then
+    if (CurrentSoldierCount + 3) > CurrentSoldierLimit then
         CanBuyBoolean = false
         CanNotBuyString = XGUIEng.GetStringTableText("Feedback_TextLines/TextLine_SoldierLimitReached")
     end
@@ -1493,11 +1493,13 @@ function GUI_BuildingButtons.BuyBattalionUpdate(_IsSpecial)
     or BarrackEntityType == Entities.B_BarracksArchers_Redprince
     or BarrackEntityType == Entities.B_Barracks_Khana
     or BarrackEntityType == Entities.B_BarracksArchers_Khana
+    --[[
     or BarrackEntityType == Entities.B_NPC_Barracks_ME
     or BarrackEntityType == Entities.B_NPC_Barracks_NE
     or BarrackEntityType == Entities.B_NPC_Barracks_SE
     or BarrackEntityType == Entities.B_NPC_Barracks_NA
     or BarrackEntityType == Entities.B_NPC_Barracks_AS
+    --]]
     or Logic.IsEntityInCategory(BarrackID, EntityCategories.Headquarters) == 1 then
         XGUIEng.ShowWidget(CurrentWidgetID,doShow)
     else
