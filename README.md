@@ -198,8 +198,6 @@ Folgende Änderungen wurden vorgenommen:
 
 
 ## (Mögliche) ToDos
-- Farmen haben keine Feld-Buttons mehr!
-- Kasernen mit Einzelabholung
 - NPC-Gebäude
 	- Dorfkasernen und Banditenzelte mit Rektutierungsoptionen
 		- Neue Entities, da vorhandene zu sehr gescripted

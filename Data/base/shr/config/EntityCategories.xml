@@ -45,10 +45,11 @@
     <Id>CityWallGate</Id>
     <Id>PalisadeSegment</Id>
     <Id>Turret</Id>
-	<Id>Dragon</Id>
     
     <Id>GathererBuilding</Id>
     <Id>FarmerBuilding</Id>
     <Id>Spouse</Id>
+	
+	<Id>Dragon</Id>
     
 </EntityCategories>
