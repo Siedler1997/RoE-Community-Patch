@@ -508,10 +508,6 @@ function AIProfile_Sabatta(self)
     if HusranAttacksTriggered then
         HusranAttackCounter = HusranAttackCounter - 1
 
-        -- Gives Sabatta some iron because she has no iron mine
-        if GetPlayerResources(Goods.G_Iron, HusranPlayerID) < 10 then
-            AddResourcesToPlayer(Goods.G_Iron, 10, HusranPlayerID)
-        end
         --Logic.DEBUG_AddNote("Iron = " .. GetPlayerResources(Goods.G_Iron, HusranPlayerID))
     end
 

@@ -2,19 +2,19 @@
   "ExpandedNodes": [
     "",
     "\\Data",
-    "\\Data\\base",
-    "\\Data\\base\\shr",
-    "\\Data\\base\\shr\\Script",
-    "\\Data\\base\\shr\\Script\\Local",
-    "\\Data\\base\\shr\\Script\\Local\\Interface",
+    "\\DataOP",
+    "\\DataOP\\base",
+    "\\DataOP\\base\\shr",
+    "\\DataOP\\base\\shr\\Maps",
+    "\\DataOP\\base\\shr\\Maps\\Campaign",
+    "\\DataOP\\base\\shr\\Maps\\Campaign\\c00",
+    "\\DataOP\\base\\shr\\Maps\\Campaign\\c00\\c00_m09_Husran",
     "\\Data\\extra1",
     "\\Data\\extra1\\shr",
-    "\\Data\\extra1\\shr\\config",
-    "\\Data\\extra1\\shr\\config\\Entities",
     "\\Data\\extra1\\shr\\Script",
     "\\Data\\extra1\\shr\\Script\\Local",
     "\\Data\\extra1\\shr\\Script\\Local\\Interface"
   ],
-  "SelectedNode": "\\Data\\extra1\\shr\\Script\\Local\\Interface\\SelectionEx1.lua",
+  "SelectedNode": "\\DataOP\\base\\shr\\Maps\\Campaign\\c00\\c00_m09_Husran",
   "PreviewInSolutionExplorer": false
 }

@@ -187,21 +187,19 @@ Folgende Änderungen wurden vorgenommen:
 	- Bugs gefixt
 		- Verfrühte Meldungen von KI-Mitspielern (M05: Drengir, M09: Husran)
 		- Verstärkung für den Spieler spawnt jetzt (M15: Vestholm)
+		- KI verliert am Anfang der Mission keine Territorien mehr (M09: Husran)
+		- Unnütze Randterritorien in benachbarte eingegliedert (M14: Gueranna)
 	- KI-Spielerfarben
 		- Mehr Varianz bei Spielerfarben
 		- Konsistentere Spielerfarben im AddOn
 	- Thronsaal hat einen eigenen Soundtrack
 	- Diverses
-		- M09: Husran: KI aggressiver
+		- M09: Husran: KI aggressiver und mit eigener Eisenmine
 		- AM05: Idukun: durch etwas mehr Startkapital etwas einfacher
 
 
 
 ## (Mögliche) ToDos
-- NPC-Gebäude
-	- Dorfkasernen und Banditenzelte mit Rektutierungsoptionen
-		- Neue Entities, da vorhandene zu sehr gescripted
-	- Einnahmen
 - Hellebardiere
 	- Icon
 	- Audio-Feedback
@@ -269,14 +267,13 @@ Folgende Änderungen wurden vorgenommen:
 	- Abwandlung: Schneesturm
 	- Eigene Playlist
 - Verbesserte/Glaubwürdigere KI (in der Kampagne)
+	- Ungenutzte Territorien nutzbar machen (zumindest für die KI)
 	- Allgemein: Konsequentere Nutzung von RP-/Khana-Einheiten sowie ggf. Söldner
 	- Narfang: Sabatta aggressiv, wenn ein Außenposten erobert/zerstört wird
-	- Husran: Eisenmine für Sabatta statt Eisen "frei Haus"
 	- M15: Vestholm: Sturm
 	- Idukun: Blizzard
 	- Speziell in den "Last-Stand"-Missionen
 	- Aktive KI-Ritter mit Fähigkeiten
-	- Nutzlose Rand-Territorien weg
 - Entlassen-Button
 - Söldner-Trupps: Korrekte Fackelanzeige
 - Max. Zoom leicht erhöhen
@@ -300,7 +297,11 @@ Folgende Änderungen wurden vorgenommen:
 	- Rebalancing insb. für MP
 	- Zwischenproduktionen einführen
 		- Low Priority, da extrem viel Arbeit...
-- Spielbare Dörfer?
+- Spielbare Dörfer
+	- Dorfkasernen und Banditenzelte mit Rektutierungsoptionen
+		- Neue Entities, da vorhandene zu sehr gescripted
+	- Einnahmen?
+	- Burg-Ersatz?
 - MainMenu: RdO mit eigenen Tag/Nacht-Hintergrund
 - Ungenutzte Gebäude
 	- Juwelier
