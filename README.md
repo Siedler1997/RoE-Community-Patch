@@ -230,11 +230,12 @@ Folgende Änderungen wurden vorgenommen:
 - Hidun-Turnier: Neue Zelte und andere Siedler
 	- Texturen für DEdK-Zelte gibt es schon
 - Default custom maps
-	- MP-Maps als Freibau-SP-Maps neu hinzufügen
-		- Ggf. nicht alle Maps, nur die "schönsten"
-		- Missionsziel ändern
-		- Konkurrenten entfernen
-		- Diplomatie setzen
+	- MP-Maps als Freibau-SP-Maps anpassen
+		- Städte als KI-Städte neu erstellen
+		- Diplomatie
+			- Standard: Handelsverträge zum Spieler
+			- Ggf. Option zur Kriegserklärung
+		- ggf. Mapbeschreibungen anpassen
 	- Hauptspiel-Kampagne im AddOn
 		- Zwischenmenü zur Auswahl der Kampagne
 		- Slot für Community-Kampagnen
@@ -274,6 +275,7 @@ Folgende Änderungen wurden vorgenommen:
 	- Idukun: Blizzard
 	- Speziell in den "Last-Stand"-Missionen
 	- Aktive KI-Ritter mit Fähigkeiten
+	- Exploits beseitigen sowie andere Optimierungen
 - Entlassen-Button
 - Söldner-Trupps: Korrekte Fackelanzeige
 - Max. Zoom leicht erhöhen
@@ -311,6 +313,7 @@ Folgende Änderungen wurden vorgenommen:
 - Auf 4k-Auflösung kann nicht mehr per BorderScroll nach rechts gecrolled werden
 - Biom-spezifisches Retexturing für Kerngebäude
 	- Das oder neue Modelle
+	- ggf. auch für andere Gebäude
 - Kritische Cheats am Ende weitgehend deaktivieren
 - ReadMe auf Englisch
 - Als bba gepackte Version für das Original
