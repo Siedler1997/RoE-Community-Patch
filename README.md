@@ -283,9 +283,7 @@ Folgende Änderungen wurden vorgenommen:
 	- Speziell in den "Last-Stand"-Missionen
 	- Aktive KI-Ritter mit Fähigkeiten
 	- Exploits beseitigen sowie andere Optimierungen
-- Entlassen-Button verbessern
-	- Bei Battalionen: Entlassen einzelner Soldaten
-	- Im MP möglich machen (GUI.SendScriptCommand erforderlich)
+- Entlassen-Button im MP möglich machen (GUI.SendScriptCommand erforderlich)
 - Söldner-Trupps: Korrekte Fackelanzeige
 - Max. Zoom leicht erhöhen
 	- Winkel muss nach 0.5 anders kalkuliert werden

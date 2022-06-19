@@ -425,9 +425,18 @@ function GUI_Military.SuspendClicked()
     local EntityID = GUI.GetSelectedEntity()
     local CurrentHealth = Logic.GetEntityHealth(EntityID)
     local MaxHealth = Logic.GetEntityMaxHealth(EntityID)
-
+    --local soldiers = {Logic.GetSoldiersAttachedToLeader(_EntityID)}
     if Logic.IsKnight(EntityID) ~= true then
-        GUI.SendScriptCommand("Logic.DestroyEntity("..EntityID..")")
+        --GUI.SendScriptCommand("Logic.DestroyEntity("..EntityID..")")
+        
+        if Logic.IsEntityInCategory(EntityID, EntityCategories.Leader) == 0 then
+            GUI.SendScriptCommand("Logic.DestroyEntity("..EntityID..")")
+        else
+            local soldiers = {Logic.GetSoldiersAttachedToLeader(EntityID)}
+            if soldiers[1] > 0 then
+                GUI.SendScriptCommand("Logic.DestroyEntity("..soldiers[2]..")")
+            end
+        end
         --[[
         if Logic.IsEntityInCategory(EntityID, EntityCategories.Leader) == 0 then
             --GUI.SendScriptCommand("Logic.DestroyEntity("..EntityID..")")
