@@ -12,9 +12,9 @@
         <AccessCategory>AccessCategorySoldier</AccessCategory>
         <PlayerSectorType>PlayerSectorTypeMilitary</PlayerSectorType>
         <MilMetaFormationMemberType>MilMetaFormationMemberTypeRanged</MilMetaFormationMemberType>
-        <MaxHealth>90</MaxHealth>
+        <MaxHealth>85</MaxHealth>
         <HealingSeconds>10</HealingSeconds>
-        <HealingPoints>15</HealingPoints>
+        <HealingPoints>14</HealingPoints>
 
         <NeedsPlayer>true</NeedsPlayer>
         <ForceNoPlayer>false</ForceNoPlayer>
@@ -67,7 +67,7 @@
                 <Class>EGL::CMilitarySoldierMovementBehavior</Class>
                 <StraightenPath>true</StraightenPath>
                 <EvasionPriority>140</EvasionPriority>
-                <Speed>480</Speed>
+                <Speed>500</Speed>
                 <RotationSpeed>500</RotationSpeed>
                 <MoveTaskList>TL_MILITARY_WALK</MoveTaskList>
                 <MoveIdleAnim>Military\U_MilitaryBandit_Ranged_NE_Stand</MoveIdleAnim>

@@ -69,9 +69,11 @@ Folgende Änderungen wurden vorgenommen:
 	- Banditen 
 		- Können in Kasernen wieder aufgefüllt werden
 		- Haben ein eigenes Audio-Feedback
-		- Können effektiver Gebäude anzünden
-			- Schaden pro Fackel verdoppelt (5 -> 10)
-			- Jeder Bandit trägt eine Fackel mehr (1 -> 2)
+		- Haben etwas andere Statuswerte ggü. konventionellen Einheiten
+			- Weniger Lebenspunkte (-5)
+			- Höhere Bewegungsgeschwindigkeit (480 < 500)
+			- Höherer Schaden gegen Gebäude (5 -> 10)
+			- Eine Fackel mehr (1 -> 2)
 		- Fixes
 			- Südeuropäische Banditen-Schwertkämpfer greifen nicht mehr automatisch Gebäude an
 			- Asiatische Banditen haben keine Overhead-Namen mehr
@@ -79,6 +81,14 @@ Folgende Änderungen wurden vorgenommen:
 		- Können in Kasernen wieder aufgefüllt werden
 		- Haben ein anderes Audio-Feedback 
 			- Zurzeit noch das von Banditen...
+		- Haben etwas andere Statuswerte ggü. konventionellen Einheiten
+			- RP
+				- Weniger Lebenspunkte (-5)
+				- Höhere Bewegungsgeschwindigkeit (480 < 490)
+			- Khana
+				- Weniger Lebenspunkte (-10)
+				- Höhere Bewegungsgeschwindigkeit (480 < 500)
+				- Höherer Schaden gegen anderen Einheiten (20 < 22)
 		- RP-Einheiten haben eine eigene Button-Textur
 		- Khana-Einheiten haben keine Overhead-Namen mehr
 	- "Neue" Einheiten

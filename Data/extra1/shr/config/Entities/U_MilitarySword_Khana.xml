@@ -11,9 +11,9 @@
         <AccessCategory>AccessCategorySoldier</AccessCategory>
         <PlayerSectorType>PlayerSectorTypeMilitary</PlayerSectorType>
         <MilMetaFormationMemberType>MilMetaFormationMemberTypeMelee</MilMetaFormationMemberType>
-        <MaxHealth>120</MaxHealth>
+        <MaxHealth>110</MaxHealth>
         <HealingSeconds>10</HealingSeconds>
-        <HealingPoints>20</HealingPoints>
+        <HealingPoints>18</HealingPoints>
 
         <NeedsPlayer>true</NeedsPlayer>
         <ForceNoPlayer>false</ForceNoPlayer>
@@ -73,7 +73,7 @@
                 <Class>EGL::CMilitarySoldierMovementBehavior</Class>
                 <StraightenPath>true</StraightenPath>
                 <EvasionPriority>140</EvasionPriority>
-                <Speed>480</Speed>
+                <Speed>500</Speed>
                 <RotationSpeed>500</RotationSpeed>
                 <MoveTaskList>TL_MILITARY_WALK</MoveTaskList>
                 <MoveIdleAnim>Military\U_MilitaryBandit_Melee_NA_Stand</MoveIdleAnim>
@@ -138,7 +138,7 @@
                                 <Damage>
                                     <DiceCount>0</DiceCount>
                                     <FaceCount>0</FaceCount>
-                                    <BaseValue>20</BaseValue>
+                                    <BaseValue>22</BaseValue>
                                 </Damage>
                             </AttackMode>
 
@@ -230,7 +230,7 @@
                                 <Damage>
                                     <DiceCount>0</DiceCount>
                                     <FaceCount>0</FaceCount>
-                                    <BaseValue>20</BaseValue>
+                                    <BaseValue>22</BaseValue>
                                 </Damage>
                             </AttackMode>
                         </AttackModeList>
@@ -262,7 +262,7 @@
                                 <Damage>
                                     <DiceCount>0</DiceCount>
                                     <FaceCount>0</FaceCount>
-                                    <BaseValue>20</BaseValue>
+                                    <BaseValue>22</BaseValue>
                                 </Damage>
                             </AttackMode>
 
