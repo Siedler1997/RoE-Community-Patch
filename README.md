@@ -61,6 +61,7 @@ Folgende Änderungen wurden vorgenommen:
 			- Haben keine besonderen Fähigkeiten
 		- Varianz an Ladebildschirm-Bildern
 - Militär
+	- Einheiten können mittels Entlassen-Button ... entlassen werden
 	- Bogenschützen allgemein
 		- Fernkampf-Schaden deutlich reduziert (30 -> 20)
 		- Maximale Fernkampf-Reichweite leicht erhöht (24sm -> 25sm)
@@ -220,10 +221,6 @@ Folgende Änderungen wurden vorgenommen:
 		- Aussichtsturm: PB_Tower1, Alarm, ...?
 	- Generischer Außenposten, inkl. Katapult und Soldatenbemannung
 - Spielerfarben
-	- Minimap-Territorium-Farben weichen nach Neustart z.T. ab 
-		- z.B. Dorf-Dunkelgrün -> Stadt-Grün
-		- Beispiel: Der kalte Strom (Dorf)
-		- Ist ein Vanilla-Bug!
 	- KIs bekommen im MP die Spielerfarben ab Gelb (ValidPlayerColors property der Map vllt.?)
 - Neue Wappen 
 	- auf Ingame-Flaggen (statt Platzhalter) abbilden
@@ -276,7 +273,9 @@ Folgende Änderungen wurden vorgenommen:
 	- Speziell in den "Last-Stand"-Missionen
 	- Aktive KI-Ritter mit Fähigkeiten
 	- Exploits beseitigen sowie andere Optimierungen
-- Entlassen-Button
+- Entlassen-Button verbessern
+	- Bei Battalionen: Entlassen einzelner Soldaten
+	- Im MP möglich machen (GUI.SendScriptCommand erforderlich)
 - Söldner-Trupps: Korrekte Fackelanzeige
 - Max. Zoom leicht erhöhen
 	- Winkel muss nach 0.5 anders kalkuliert werden
@@ -307,7 +306,6 @@ Folgende Änderungen wurden vorgenommen:
 - MainMenu: RdO mit eigenen Tag/Nacht-Hintergrund
 - Ungenutzte Gebäude
 	- Juwelier
-	- Supermarkt?
 - Fremder Content
 	- DEdK-Soundtrack
 - Auf 4k-Auflösung kann nicht mehr per BorderScroll nach rechts gecrolled werden

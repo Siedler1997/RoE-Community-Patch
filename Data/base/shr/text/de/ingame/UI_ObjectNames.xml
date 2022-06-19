@@ -622,4 +622,5 @@
 	<string id="U_NPC_Baker_NA" MD5Hash="12D78470B56D9FBE63BC7E03EE459F71" mod="20080125122256" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bäcker]]></string>
 	<string id="U_NPC_SpouseFat" MD5Hash="12D78470B56D9FBE63BC7E03EE459F71" mod="20080125122256" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Frau]]></string>
 	<string id="U_NPC_Baker" MD5Hash="12D78470B56D9FBE63BC7E03EE459F71" mod="20080125122256" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bäcker]]></string>
+	<string id="Suspend" MD5Hash="12D78470B56D9FBE63BC7E03EE459F71" mod="20080125122256" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Einheit entlassen]]></string>
 </root>

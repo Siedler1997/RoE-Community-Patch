@@ -110,7 +110,7 @@
 
         <ProducedGood>
             <GoodType>G_Sword</GoodType>
-            <Amount>1</Amount>
+            <Amount>3</Amount>
         </ProducedGood>
         
         <BattalionSize>6</BattalionSize>

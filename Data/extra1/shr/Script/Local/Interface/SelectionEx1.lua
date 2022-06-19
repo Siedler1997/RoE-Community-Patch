@@ -230,6 +230,9 @@ function GameCallback_GUI_SelectionChanged(_Source)
 
             GUI_MultiSelection.CreateMultiSelection(_Source)
             
+            XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/SuspendUnit",1)
+            XGUIEng.ShowAllSubWidgets("/InGame/Root/Normal/AlignBottomRight/DialogButtons/SuspendUnit",1)
+            
         elseif EntityType == Entities.U_Bear or EntityType == Entities.U_BlackBear or EntityType == Entities.U_PolarBear
             or EntityType == Entities.U_Wolf_Grey or EntityType == Entities.U_Wolf_White or EntityType == Entities.U_Wolf_Black or EntityType == Entities.U_Wolf_Brown
             or EntityType == Entities.U_Lion_Male or EntityType == Entities.U_Lion_Female or EntityType == Entities.U_Tiger or EntityType == Entities.U_Dragon then
@@ -245,7 +248,9 @@ function GameCallback_GUI_SelectionChanged(_Source)
             XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/Military/Attack",1)
             
             GUI_MultiSelection.CreateMultiSelection(_Source)
-
+            
+            XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/SuspendUnit",1)
+            XGUIEng.ShowAllSubWidgets("/InGame/Root/Normal/AlignBottomRight/DialogButtons/SuspendUnit",1)
 
         elseif EntityType == Entities.U_AmmunitionCart then
 
@@ -260,6 +265,9 @@ function GameCallback_GUI_SelectionChanged(_Source)
             XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/AmmunitionCart",1)
 
             GUI_MultiSelection.CreateMultiSelection(_Source)
+            
+            XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/SuspendUnit",1)
+            XGUIEng.ShowAllSubWidgets("/InGame/Root/Normal/AlignBottomRight/DialogButtons/SuspendUnit",1)
 
         elseif (EntityType == Entities.U_CatapultCart
         or EntityType == Entities.U_SiegeTowerCart
@@ -277,6 +285,9 @@ function GameCallback_GUI_SelectionChanged(_Source)
             XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/SiegeEngineCart",1)
 
             GUI_MultiSelection.CreateMultiSelection(_Source)
+            
+            XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/SuspendUnit",1)
+            XGUIEng.ShowAllSubWidgets("/InGame/Root/Normal/AlignBottomRight/DialogButtons/SuspendUnit",1)
 
         elseif Logic.IsEntityInCategory(EntityID,EntityCategories.Leader) == 1 then
 
@@ -293,6 +304,9 @@ function GameCallback_GUI_SelectionChanged(_Source)
             GUI_Military.StrengthUpdate()
 
             GUI_MultiSelection.CreateMultiSelection(_Source)
+            
+            XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/SuspendUnit",1)
+            XGUIEng.ShowAllSubWidgets("/InGame/Root/Normal/AlignBottomRight/DialogButtons/SuspendUnit",1)
 
         elseif EntityType == Entities.U_TradeGatherer then
             --no selection menu
@@ -329,7 +343,8 @@ function GameCallback_GUI_SelectionChanged(_Source)
             XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/Selection",1)
             XGUIEng.ShowAllSubWidgets("/InGame/Root/Normal/AlignBottomRight/Selection",0)
             XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/Selection/BGMilitary",1)
-            XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons",0)
+            XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons",1)
+            XGUIEng.ShowAllSubWidgets("/InGame/Root/Normal/AlignBottomRight/DialogButtons",0)
 
             if #SelectedEntities == 1 then
                 XGUIEng.ShowWidget("/InGame/Root/Normal/BuildingButtons",1)
@@ -338,6 +353,9 @@ function GameCallback_GUI_SelectionChanged(_Source)
             end
 
             GUI_MultiSelection.CreateMultiSelection(_Source)
+            
+            XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/SuspendUnit",1)
+            XGUIEng.ShowAllSubWidgets("/InGame/Root/Normal/AlignBottomRight/DialogButtons/SuspendUnit",1)
 
         elseif EntityType == Entities.U_MilitaryTrap then
 

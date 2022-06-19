@@ -49,11 +49,14 @@ function GUI_Military.StrengthUpdate()
     SetIcon(CurrentWidgetID, Icon)
     
     --position
+    --[[
     if XGUIEng.IsWidgetShown("/InGame/Root/Normal/AlignBottomRight/Selection/BGMilitary") == 1 then
         XGUIEng.SetWidgetLocalPosition(MotherWidget, 39, 94)
     else
         XGUIEng.SetWidgetLocalPosition(MotherWidget, 39, 32)
     end
+    --]]
+    XGUIEng.SetWidgetLocalPosition(MotherWidget, 39, 32)
 end
 
 
@@ -386,3 +389,56 @@ function GUI_Military.RefillUpdate()
     end
 end
 
+
+function GUI_Military.SuspendUpdate()
+    local CurrentWidgetID = XGUIEng.GetCurrentWidgetID()
+    local EntityID = GUI.GetSelectedEntity()
+
+    if Framework.IsNetworkGame() == true then
+        XGUIEng.DisableButton(CurrentWidgetID, 1)
+    else
+        local PlayerID = GUI.GetPlayerID()
+        local SiegeEngineType = Logic.GetAvailableSiegeEngineTypes(EntityID)
+        --Logic.CanCreateCartFromSiegeEngine(PlayerID, SiegeEngineID, CartType)
+        if Logic.IsEntityInCategory(EntityID, EntityCategories.HeavyWeapon) == 1 
+         and (Logic.IsSiegeEngineUnderConstruction(EntityID) == true
+         or XGUIEng.IsWidgetShown("/InGame/Root/Normal/AlignBottomRight/Selection/SiegeEngine") == 1) then
+            XGUIEng.DisableButton(CurrentWidgetID, 1)
+        else
+            XGUIEng.DisableButton(CurrentWidgetID, 0)
+        end
+    end
+end
+
+function GUI_Military.SuspendMouseOver()
+    local TooltipTextKey
+    local TooltipDisabledTextKey
+    if Framework.IsNetworkGame() == true then
+        TooltipDisabledTextKey = "ErectNoSoldiersAttached"
+    else
+        TooltipDisabledTextKey = "Suspend"
+    end
+    GUI_Tooltip.TooltipNormal(TooltipTextKey, TooltipDisabledTextKey)
+end
+
+function GUI_Military.SuspendClicked()
+    local EntityID = GUI.GetSelectedEntity()
+    local CurrentHealth = Logic.GetEntityHealth(EntityID)
+    local MaxHealth = Logic.GetEntityMaxHealth(EntityID)
+
+    if Logic.IsKnight(EntityID) ~= true then
+        GUI.SendScriptCommand("Logic.DestroyEntity("..EntityID..")")
+        --[[
+        if Logic.IsEntityInCategory(EntityID, EntityCategories.Leader) == 0 then
+            --GUI.SendScriptCommand("Logic.DestroyEntity("..EntityID..")")
+            GUI.SendScriptCommand("Logic.HurtEntity("..EntityID..", "..MaxHealth..")")
+        else
+            local MaxSoldiers = Logic.LeaderGetMaxNumberOfSoldiers(EntityID)
+            local CurrentSoldiers = Logic.GetSoldiersAttachedToLeader(EntityID)
+
+            --GUI.SendScriptCommand("Logic.DestroyGroupByLeader("..EntityID..")")
+            GUI.SendScriptCommand("Logic.HurtEntity("..EntityID..", 20)")
+        end
+        --]]
+    end
+end
