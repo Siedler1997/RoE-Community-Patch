@@ -131,7 +131,7 @@
         <Behavior>
             <Logic classname="EGL::CHeroBehaviorProps">
                 <Class>EGL::CHeroBehavior</Class>
-	       <UpgradeParameter>0.9</UpgradeParameter>
+	       <UpgradeParameter>0.9</UpgradeParameter> <!-- 0.8 -->
 	   </Logic>
         </Behavior>
 
@@ -140,7 +140,7 @@
 		<Logic classname="EGL::CKnightMiscAbilityProps">
 			<Class>EGL::CKnightMiscAbility</Class>
 			<Ability>AbilityConvert</Ability>
-			<RechargeTimeSeconds>540</RechargeTimeSeconds>
+			<RechargeTimeSeconds>540</RechargeTimeSeconds> <!-- 480 -->
 			<SearchRadius>1000</SearchRadius>
 			<TaskList>TL_KNIGHT_ABILITY_CONVERT</TaskList>
 			<Effect>E_Knight_Wisdom_Aura</Effect>

@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
     <Display classname="ED::CDisplaySettlerWithSlaveProps">
         <Class>ED::CDisplaySettlerWithSlave</Class>
         <DrawPlayerColor>True</DrawPlayerColor>
-        <Model>Units\U_Horse_Chivalry</Model>
-        <Model2>Units\U_Knight_Chivalry</Model2>
+        <Model>Units\U_Horse_Plunder</Model>
+        <Model2>Units\U_Knight_Plunder</Model2>
         <SlaveAlwaysVisible>true</SlaveAlwaysVisible>
     </Display>
     <Logic classname="EGL::CSettlerProps">
@@ -11,7 +11,7 @@
         <AccessCategory>AccessCategoryAttackableSettler</AccessCategory>
         <PlayerSectorType>PlayerSectorTypeMilitary</PlayerSectorType>
         <MilMetaFormationMemberType>MilMetaFormationMemberTypeMelee</MilMetaFormationMemberType>
-        <MaxHealth>1100</MaxHealth> <!-- 1000 -->
+        <MaxHealth>1000</MaxHealth>
         <HealingSeconds>10</HealingSeconds>
         <HealingPoints>50</HealingPoints>
 
@@ -36,8 +36,8 @@
             <With>SheepPasture</With>
             <With>CattlePasture</With>
         </Familiar>
-        <SoundImpactType>Metal</SoundImpactType>
-        <SoundProjectileType>Lance</SoundProjectileType>
+        <SoundImpactType>Leather</SoundImpactType>
+        <SoundProjectileType>Sword</SoundProjectileType>
     </Logic>
     <Behaviors>
 
@@ -45,55 +45,63 @@
             <Logic classname="EGL::CAnimationBehaviorExProps">
                 <Class>EGL::CBehaviorAnimationEx</Class>
 
-                <DefaultAnimation>U_Horse_Chivalry_Ride</DefaultAnimation>
-                <AnimSet>SET_KNIGHT_CHIVALRY</AnimSet>
+                <DefaultAnimation>U_Horse_Plunder_Idle1</DefaultAnimation>
+                <AnimSet>SET_KNIGHT_PLUNDER</AnimSet>
             </Logic>
             <Display classname="ED::CAnimationBehaviorSlaveProps">
                 <Class>ED::CAnimationBehaviorSlave</Class>
                 <SlaveAnimation>
                     <Mapping>
-                        <Master>U_Horse_Chivalry_Ride</Master>
-                        <Slave>U_Knight_Chivalry_Ride</Slave>
+                        <Master>U_Horse_Plunder_Ride</Master>
+                        <Slave>U_Knight_Plunder_Ride</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_Chivalry_Stand</Master>
-                        <Slave>U_Knight_Chivalry_Stand</Slave>
+                        <Master>U_Horse_Plunder_Stand</Master>
+                        <Slave>U_Knight_Plunder_Stand</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_Chivalry_Idle1</Master>
-                        <Slave>U_Knight_Chivalry_Idle1</Slave>
+                        <Master>U_Horse_Plunder_Idle1</Master>
+                        <Slave>U_Knight_Plunder_Idle1</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_Chivalry_Idle2</Master>
-                        <Slave>U_Knight_Chivalry_Idle2</Slave>
+                        <Master>U_Horse_Plunder_Idle2</Master>
+                        <Slave>U_Knight_Plunder_Idle2</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_Chivalry_Idle3</Master>
-                        <Slave>U_Knight_Chivalry_Idle3</Slave>
+                        <Master>U_Horse_Plunder_Idle3</Master>
+                        <Slave>U_Knight_Plunder_Idle3</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_Chivalry_Idle4</Master>
-                        <Slave>U_Knight_Chivalry_Idle4</Slave>
+                        <Master>U_Horse_Plunder_Idle4</Master>
+                        <Slave>U_Knight_Plunder_Idle4</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_Chivalry_Fight</Master>
-                        <Slave>U_Knight_Chivalry_Fight</Slave>
+                        <Master>U_Horse_Plunder_Fight</Master>
+                        <Slave>U_Knight_Plunder_Fight</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_Chivalry_Fight2</Master>
-                        <Slave>U_Knight_Chivalry_Fight2</Slave>
+                        <Master>U_Horse_Plunder_Fight2</Master>
+                        <Slave>U_Knight_Plunder_Fight2</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_Chivalry_Fight3</Master>
-                        <Slave>U_Knight_Chivalry_Fight3</Slave>
+                        <Master>U_Horse_Plunder_Fight3</Master>
+                        <Slave>U_Knight_Plunder_Fight3</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_Chivalry_Turn</Master>
-                        <Slave>U_Knight_Chivalry_Turn</Slave>
+                        <Master>U_Horse_Plunder_Die</Master>
+                        <Slave>U_Knight_Plunder_Die</Slave>
                     </Mapping>
                     <Mapping>
-                        <Master>U_Horse_Chivalry_BattleIdle</Master>
-                        <Slave>U_Knight_Chivalry_BattleIdle</Slave>
+                        <Master>U_Horse_Plunder_Turn</Master>
+                        <Slave>U_Knight_Plunder_Turn</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>U_Horse_Plunder_Plunder</Master>
+                        <Slave>U_Knight_Plunder_Plunder</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>U_Horse_Plunder_BattleIdle</Master>
+                        <Slave>U_Knight_Plunder_BattleIdle</Slave>
                     </Mapping>
                 </SlaveAnimation>
             </Display>
@@ -108,7 +116,7 @@
                 <SmoothingRadius>1000</SmoothingRadius>
                 <RotationSpeed>400</RotationSpeed>
                 <MoveTaskList>TL_KNIGHT_WALK</MoveTaskList>
-                <MoveIdleAnim>U_Horse_Chivalry_Stand</MoveIdleAnim>
+                <MoveIdleAnim>U_Horse_Plunder_Idle1</MoveIdleAnim>
             </Logic>
             <Display classname="ED::CBehaviorProps">
                 <Class>ED::CMovementBehaviorSlaveStatic</Class>
@@ -123,35 +131,25 @@
             </Logic>
         </Behavior>
 
-  	<!-- Universal Ability: Military battalions cost less gold -->
+  	<!-- Universal Ability: A percentage of gold is added to the collected taxes. -->
         <Behavior>
             <Logic classname="EGL::CHeroBehaviorProps">
                 <Class>EGL::CHeroBehavior</Class>
-	       <MilitaryParameter>0.6</MilitaryParameter> <!-- 0.8 -->
-	   </Logic>
-        </Behavior>
-
-	<!-- Personal Ability: Torch supply: swordsmen and bowmen within range are re-supplied with torches -->
-        <Behavior>
-            <Logic classname="EGL::CKnightMiscAbilityProps">
-                <Class>EGL::CKnightMiscAbility</Class>
-                <Ability>AbilityTorch</Ability>
-	       <RechargeTimeSeconds>270</RechargeTimeSeconds>
-	       <TaskList>TL_KNIGHT_ABILITY_TORCH</TaskList>
-	       <Effect>E_Knight_Chivalry_Aura</Effect>
+	       <TaxParameter>1.6</TaxParameter> <!-- 1.2 -->
             </Logic>
         </Behavior>
 
-        <!-- Add this behavior to the torch misc ability! -->
-        <Behavior>
-            <Logic classname="EGL::CAmmunitionFillerBehaviorProps">
-                <Class>EGL::CAmmunitionFillerBehavior</Class>
-                <TargetCategory>Soldier</TargetCategory>
-                <AmmunitionType>G_TorchAmmunition</AmmunitionType>
-                <CooldownTurns>1002</CooldownTurns>
-                <RefillingRange>800</RefillingRange>
-            </Logic>
-        </Behavior>
+	<!-- Personal Ability: earnings of the nearest city building in range are transferred to own castle -->
+	<Behavior>
+		<Logic classname="EGL::CKnightMiscAbilityProps">
+			<Class>EGL::CKnightMiscAbility</Class>
+			<Ability>AbilityPlunder</Ability>
+			<RechargeTimeSeconds>150</RechargeTimeSeconds>
+			<SearchRadius>1000</SearchRadius>
+			<TaskList>TL_KNIGHT_ABILITY_PLUNDER</TaskList>
+			<Effect>E_Knight_Plunder_Aura</Effect>
+		</Logic>
+	</Behavior>
 
 
         <Behavior>
@@ -177,8 +175,8 @@
                             <EntityCategory>Hero</EntityCategory>
                             <EntityCategory>Leader</EntityCategory>
                             <EntityCategory>AttackableSettler</EntityCategory>
-                            <EntityCategory>Thief</EntityCategory>
-                            <EntityCategory/>
+                             <EntityCategory>Thief</EntityCategory>
+                           <EntityCategory/>
                             <EntityCategory/>
                         </EntityCategoryList>
                         <AttackModeList>
