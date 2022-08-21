@@ -254,4 +254,7 @@
 	<string id="B_WatchTower_NE" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Lookout Tower]]></string>
 	<string id="B_WatchTower_SE" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Lookout Tower]]></string>
 	<string id="U_Dragon" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dragon]]></string>
+
+    <string id="B_ArmorMaker" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="do not delete this"><![CDATA[]]></string>
+    <string id="B_ArmorSmith" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="do not delete this"><![CDATA[]]></string>
 </root>

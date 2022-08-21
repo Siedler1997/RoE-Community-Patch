@@ -362,4 +362,7 @@
 	<string id="BuySpearfighters" MD5Hash="95CFABAA4D1C78A808F217A2DF1C6BE4" mod="20070809143407" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- Kann Gebäude in Brand setzen]]></string>
     <string id="Abilities_U_MilitaryCavalry" MD5Hash="377AE3ADBBD33D16DDFCC04584058269" mod="20070819134229" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- Kann Karren und Ritter schützen{cr}- Kann Karren und unbemannte Belagerungswaffen einnehmen{cr}- Setzt Fackeln gegen Gebäude ein, die in Kasernen und Außenposten aufgefüllt werden können{cr}- Kann Stadttore des Feindes von innen öffnen]]></string>
 	<string id="Abilities_U_MilitarySpear" MD5Hash="377AE3ADBBD33D16DDFCC04584058269" mod="20070819134229" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- Kann Karren und Ritter schützen{cr}- Kann Karren und unbemannte Belagerungswaffen einnehmen{cr}- Setzt Fackeln gegen Gebäude ein, die in Kasernen und Außenposten aufgefüllt werden können{cr}- Kann beschädigte Außenposten einnehmen{cr}- Kann Stadttore des Feindes von innen öffnen]]></string>
+
+    <string id="B_ArmorMaker" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="do not delete this"><![CDATA[- Stellt Lederrüstungen her]]></string>
+    <string id="B_ArmorSmith" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="do not delete this"><![CDATA[- Stellt Plattenrüstungen her]]></string>
 </root>

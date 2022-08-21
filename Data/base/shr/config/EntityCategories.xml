@@ -52,6 +52,9 @@
 
     <!-- Community Patch -->
 
+    <Id>GC_LeatherArmor_Supplier</Id>
+    <Id>GC_PlateArmor_Supplier</Id>
+
     <Id>Sword</Id>
     <Id>Bow</Id>
     <Id>Spear</Id>
