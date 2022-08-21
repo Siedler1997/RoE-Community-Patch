@@ -220,7 +220,8 @@ function DebugKeyBindings_Init()
     Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad7, "KeyBindings_CreateEntityAtMousePositionForActiveGUIPlayer(Entities.U_BatteringRamCart)", 2, true)
     --Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad8, "KeyBindings_CreateEntityAtMousePositionForActiveGUIPlayer(Entities.U_SiegeTowerCart)", 2, true)
     Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad8, "KeyBindings_ToggleRights()", 2, true)
-    Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad9, "KeyBindings_CreateEntityAtMousePositionForActiveGUIPlayer(Entities.U_TrebuchetCart)", 2, true)
+    --Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad8, "KeyBindings_TestFunc()", 2, true)
+    Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad9, "KeyBindings_CreateEntityAtMousePositionForActiveGUIPlayer(Entities.B_SpearMaker)", 2, true)
     --Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad9, "KeyBindings_CreateEntityAtMousePositionForActiveGUIPlayer(Entities.B_Beautification_Dragon)", 2, true)
     --Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad9, "KeyBindings_CreateEntityAtMousePositionForActiveGUIPlayer(Entities.U_Dragon)", 2, true)
     
@@ -1253,4 +1254,15 @@ end
 function KeyBindings_QuestTrace()
     g_QuestSysTraceActive = not g_QuestSysTraceActive
     GUI.AddNote( "Quest trace: " .. (g_QuestSysTraceActive and "Enabled" or "Disabled") )
+end
+
+function KeyBindings_TestFunc()
+    if g_Camera.RPGCamEnabled ~= true then
+        local PlayerID = GUI.GetPlayerID()
+        local KnightID = GUI.GetSelectedEntity()
+
+        EnableRPGMode(KnightID)
+    else
+        DisableRPGMode()
+    end
 end

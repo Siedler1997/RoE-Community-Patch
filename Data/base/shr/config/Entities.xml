@@ -1990,6 +1990,8 @@
 	<Entity>B_WatchTower_NE</Entity>
 	<Entity>B_WatchTower_SE</Entity>
 	<Entity>B_WatchTower_NA</Entity>
+	<Entity>B_SpearMaker</Entity>
+	<Entity>U_SpearMaker</Entity>
 
 	<Entity>U_MilitarySpear</Entity>
 	<Entity>B_Beautification_Dragon</Entity>

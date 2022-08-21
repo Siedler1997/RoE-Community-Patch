@@ -33,6 +33,7 @@
     <Id>GC_Weapon_Supplier</Id>
     <Id>GC_Clothes_Supplier</Id>
 
+
     <Id>HuntableMeat</Id>
 
     <Id>AttackableBuilding</Id>
@@ -50,6 +51,7 @@
     <Id>FarmerBuilding</Id>
     <Id>Spouse</Id>
 	
+	<Id>G_Spear_Supplier</Id>
 	<Id>Dragon</Id>
     
 </EntityCategories>

@@ -51,7 +51,9 @@ function InitTexturePositions()
     [Goods.G_Water]                         = {1, 16},
     [Goods.G_Wood]                          = {1, 9},
     [Goods.G_Wool]                          = {2, 3},
-    [Goods.G_Regalia]                       = {16, 4}
+    [Goods.G_Regalia]                       = {16, 4},
+    [Goods.G_PoorSpear]                     = {2, 16},
+    [Goods.G_Spear]                         = {1, 16}
     
     }
 

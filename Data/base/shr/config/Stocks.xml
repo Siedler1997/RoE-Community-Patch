@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+
+  <Stocks>
+    <BaseModel>Goods\G_CheeseDairy01</BaseModel>
+    <BaseModel>Goods\G_MeadTavern01</BaseModel>
+    <BaseModel>Goods\G_SmokedFishSmokehouse01</BaseModel>
+    <BaseModel>Goods\G_HygieneBaths01</BaseModel>
+    <BaseModel>Goods\G_BreadBakery01</BaseModel>
+    <BaseModel>Goods\G_MedicinePharmacy01</BaseModel>
+    <BaseModel>Goods\G_NE_GrainField01</BaseModel>
+    <BaseModel>Goods\G_ME_GrainField01</BaseModel>
+    <BaseModel>Goods\G_SE_GrainField01</BaseModel>
+    <BaseModel>Goods\G_NA_GrainField01</BaseModel>
+    <BaseModel>Goods\G_SwordSwordSmith01</BaseModel>
+    <BaseModel>Goods\G_SausageButcher01</BaseModel>
+    <BaseModel>Goods\G_BowBowMaker01</BaseModel>
+    <BaseModel>Goods\G_SoapSoapmaker01</BaseModel>
+    <BaseModel>Goods\G_BattalionBarracksSwordsmen01</BaseModel>
+    <BaseModel>Goods\G_OrnamentBlacksmith_01</BaseModel>
+    <BaseModel>Goods\G_BroomBroomMaker01</BaseModel>  
+    <BaseModel>Goods\G_CandleCandlemaker01</BaseModel>    
+    <BaseModel>Goods\G_SignCarpenter01</BaseModel> 
+    <BaseModel>Goods\G_LeatherTanner01</BaseModel>     
+    <BaseModel>Goods\G_ClothesWeaver01</BaseModel>   
+    <BaseModel>Goods\G_TrayBaths01</BaseModel>
+    <BaseModel>Goods\G_BattalionBarracksArchers01</BaseModel>    
+    <BaseModel>Goods\G_Waterfeeder01</BaseModel>   
+    <BaseModel>R_ME_ResorceStone_01</BaseModel>
+    <BaseModel>R_NA_ResorceStone_01</BaseModel>
+    <BaseModel>R_NE_ResorceStone_01</BaseModel>
+    <BaseModel>R_SE_ResorceStone_01</BaseModel>
+	<BaseModel>Goods\G_SpearSpearMaker01</BaseModel>
+  </Stocks>
+  
+</root>

@@ -1,0 +1,1947 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<OnScreenIcons>
+
+    <!-- Empty -->
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconEmpty</IconName>
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>0</U2>
+        <V2>0</V2>
+        <Size>0</Size>
+        <Row>0</Row> <!-- 15 -->
+        <Col>0</Col> <!-- 14 -->
+    </Icon>
+
+
+
+
+
+    <!-- 44x44 Icons -->
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon44Construct</IconName>
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>0</Row>
+        <Col>7</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon44Upgrade</IconName>
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>3</Row>
+        <Col>3</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon44DeliverWeapon</IconName>
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>11</Row>
+        <Col>1</Col>
+    </Icon>
+
+
+
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon44Food</IconName>
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>0</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon44Clothing</IconName>
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>1</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon44Entertainment</IconName>
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>3</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon44Prosperity</IconName>
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>5</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon44Merchant</IconName>
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>7</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon44Water</IconName>
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>15</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon44Medicine</IconName>
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>9</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon44Gathering</IconName>
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>3</Row>
+        <Col>2</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon44KnockDown</IconName>
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>14</Row>
+        <Col>2</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon44Producing</IconName>
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>11</Row>
+        <Col>3</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon44Sermon</IconName>
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>13</Row>
+        <Col>3</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon44Festival</IconName>
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>14</Row>
+        <Col>3</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon44Arrive</IconName>
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>15</Row>
+        <Col>4</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon44Repair</IconName>
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>12</Row>
+        <Col>5</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon44Fire</IconName>
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>14</Row>
+        <Col>5</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon44Flee</IconName>
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>3</Row>
+        <Col>6</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon44GrainField</IconName>
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>1</Row>
+        <Col>13</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon44GrainFieldWinter</IconName>
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>6</Row>
+        <Col>13</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon44StorehouseFull</IconName>
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>8</Row>
+        <Col>13</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon44Interaction</IconName>
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>9</Row>
+        <Col>13</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon44Idle</IconName>
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>10</Row>
+        <Col>13</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon44Leaving</IconName>
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>11</Row>
+        <Col>13</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon44Cleanliness</IconName>
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>0</Row>
+        <Col>15</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon44Bubble</IconName>
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>11</Row>
+        <Col>15</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon44BubbleCritical</IconName>
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>10</Row>
+        <Col>15</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon44Hakim</IconName>
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>10</Row>
+        <Col>5</Col>
+    </Icon>
+
+
+
+
+
+    <!-- 64x64 Icons -->
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64Food</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>0</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64Clothing</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>1</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64Broom</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>2</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64Entertainment</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>3</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64Ornament</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>4</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64TreasuryFull</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>5</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64Wood</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>8</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64Clothes</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>10</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64Leather</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>11</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64Grain</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>12</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64Carcass</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>13</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64RawFish</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>14</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64Water</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>15</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64Honeycomb</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>0</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64Herb</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>1</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64Wool</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>2</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64Iron</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>3</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64Bread</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>4</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64Sausage</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>5</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64Cheese</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>6</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64SmokedFish</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>7</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64Soap</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>8</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64Medicine</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>9</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64PoorBow</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>10</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64PoorSword</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>11</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64Beer</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>12</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64EntBath</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>13</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64Milk</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>15</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64Sign</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>0</Row>
+        <Col>2</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64Candle</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>1</Row>
+        <Col>2</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64Banner</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>2</Row>
+        <Col>2</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64KnockDown</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>14</Row>
+        <Col>2</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64Stopped</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>12</Row>
+        <Col>3</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64Repair</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>12</Row>
+        <Col>5</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64Fire</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>14</Row>
+        <Col>5</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64GateForcedOpen</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>12</Row>
+        <Col>6</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64GoodStopped</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>8</Row>
+        <Col>15</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64StorehouseFull</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>8</Row>
+        <Col>13</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64Cleanliness</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>0</Row>
+        <Col>15</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64PlayMaterial</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>1</Row>
+        <Col>15</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64NoGather</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>5</Row>
+        <Col>15</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64Burning</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>6</Row>
+        <Col>15</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64BackgroundWarning</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>14</Row>
+        <Col>15</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64BackgroundCritical</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>15</Row>
+        <Col>15</Col>
+    </Icon>
+
+
+
+
+
+    <!-- Minimap Icons -->
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>MinimapStone</IconName>           <!-- reserved, do not delete -->
+        <TextureName>IconsTiny.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>32</Size>
+        <Row>1</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>MinimapCarcass</IconName>         <!-- reserved, do not delete -->
+        <TextureName>IconsTiny.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>32</Size>
+        <Row>2</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>MinimapRawFish</IconName>         <!-- reserved, do not delete -->
+        <TextureName>IconsTiny.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>32</Size>
+        <Row>3</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>MinimapHerb</IconName>            <!-- reserved, do not delete -->
+        <TextureName>IconsTiny.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>32</Size>
+        <Row>4</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>MinimapIron</IconName>            <!-- reserved, do not delete -->
+        <TextureName>IconsTiny.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>32</Size>
+        <Row>5</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>MinimapCathedral</IconName>       <!-- reserved, do not delete -->
+        <TextureName>IconsTiny.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>32</Size>
+        <Row>8</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>MinimapStorehouse</IconName>      <!-- reserved, do not delete -->
+        <TextureName>IconsTiny.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>32</Size>
+        <Row>9</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>MinimapCastle</IconName>          <!-- reserved, do not delete -->
+        <TextureName>IconsTiny.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>32</Size>
+        <Row>10</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>MinimapCloister</IconName>        <!-- reserved, do not delete -->
+        <TextureName>IconsTiny.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>32</Size>
+        <Row>11</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>MinimapHarbour</IconName>         <!-- reserved, do not delete -->
+        <TextureName>IconsTiny.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>32</Size>
+        <Row>12</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>MinimapMercenary</IconName>       <!-- reserved, do not delete -->
+        <TextureName>IconsTiny.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>32</Size>
+        <Row>13</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>MinimapCart</IconName>            <!-- reserved, do not delete -->
+        <TextureName>IconsTiny.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>32</Size>
+        <Row>15</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>MinimapSword</IconName>           <!-- reserved, do not delete -->
+        <TextureName>IconsTiny.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>32</Size>
+        <Row>1</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>MinimapBow</IconName>             <!-- reserved, do not delete -->
+        <TextureName>IconsTiny.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>32</Size>
+        <Row>2</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>MinimapThief</IconName>           <!-- reserved, do not delete -->
+        <TextureName>IconsTiny.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>32</Size>
+        <Row>3</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>MinimapCatapult</IconName>        <!-- reserved, do not delete -->
+        <TextureName>IconsTiny.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>32</Size>
+        <Row>4</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>MinimapBatteringRam</IconName>    <!-- reserved, do not delete -->
+        <TextureName>IconsTiny.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>32</Size>
+        <Row>5</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>MinimapSiegeTower</IconName>      <!-- reserved, do not delete -->
+        <TextureName>IconsTiny.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>32</Size>
+        <Row>6</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>MinimapBandit</IconName>          <!-- reserved, do not delete -->
+        <TextureName>IconsTiny.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>32</Size>
+        <Row>7</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>MinimapMerchant</IconName>        <!-- reserved, do not delete -->
+        <TextureName>IconsTiny.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>32</Size>
+        <Row>10</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>MinimapKnight</IconName>          <!-- reserved, do not delete -->
+        <TextureName>IconsTiny.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>32</Size>
+        <Row>0</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>MiniMapOutpostConstructionWorker</IconName>
+        <TextureName>IconsTiny.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>32</Size>
+        <Row>12</Row>
+        <Col>1</Col>
+    </Icon>
+
+<!-- TODO: what's this? -->
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>MinimapSphere</IconName>          <!-- reserved, do not delete -->
+        <TextureName>miniMap_Sphere.dds</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>0</Size>
+        <Row>0</Row>
+        <Col>0</Col>
+    </Icon>
+
+<!-- TODO: what's this? -->
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>MinimapQuad</IconName>            <!-- reserved, do not delete -->
+        <TextureName>minimap_quad.dds</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>0</Size>
+        <Row>0</Row>
+        <Col>0</Col>
+    </Icon>
+
+
+
+
+
+    <!-- OnScreen Icons -->
+
+<!-- TODO: which icon? -->
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>HealthBar</IconName>              <!-- reserved, do not delete -->
+        <TextureName>onScreen\Hearts_bw.png</TextureName>
+        <U>2</U>
+        <V>33</V>
+        <U2>22</U2>
+        <V2>40</V2>
+    </Icon>
+
+<!-- TODO: which icon? -->
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>HealthBarBackground</IconName>    <!-- reserved, do not delete -->
+        <TextureName>onScreen\Hearts_bw.png</TextureName>
+        <U>2</U>
+        <V>45</V>
+        <U2>22</U2>
+        <V2>52</V2>
+    </Icon>
+
+<!-- TODO: what's this? -->
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconNPC1</IconName>               <!-- reserved, do not delete -->
+        <TextureName>onScreen\NPCmarker1.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>0</Size>
+        <Row>0</Row>
+        <Col>0</Col>
+    </Icon>
+
+<!-- TODO: what's this? -->
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconNPC2</IconName>               <!-- reserved, do not delete -->
+        <TextureName>onScreen\NPCmarker2.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>0</Size>
+        <Row>0</Row>
+        <Col>0</Col>
+    </Icon>
+
+<!-- TODO: what's this? -->
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconNPC3</IconName>               <!-- reserved, do not delete -->
+        <TextureName>onScreen\NPCmarker3.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>0</Size>
+        <Row>0</Row>
+        <Col>0</Col>
+    </Icon>
+
+<!-- TODO: what's this? -->
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconNPC4</IconName>               <!-- reserved, do not delete -->
+        <TextureName>onScreen\NPCmarker4.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>0</Size>
+        <Row>0</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconClothes</IconName>            <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>10</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconBroom</IconName>              <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>2</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconOrnament</IconName>           <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>4</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconGold</IconName>               <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>7</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconWood</IconName>               <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>8</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconStone</IconName>              <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>9</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconCatapultAmmunition</IconName> <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>9</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconLeather</IconName>            <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>11</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconGrain</IconName>              <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>12</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconCarcass</IconName>            <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>13</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconRawFish</IconName>            <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>14</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconWater</IconName>              <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>15</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconHoneycomb</IconName>          <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>0</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconHerb</IconName>               <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>1</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconWool</IconName>               <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>2</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconIron</IconName>               <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>3</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconBread</IconName>              <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>4</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconSausage</IconName>            <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>5</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconCheese</IconName>             <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>6</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconSmokedFish</IconName>         <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>7</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconSoap</IconName>               <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>8</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconMedicine</IconName>           <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>9</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconPoorBow</IconName>            <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>10</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconPoorSword</IconName>          <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>11</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconBeer</IconName>               <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>12</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconEntBaths</IconName>           <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>13</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconSiegeEnginePart</IconName>    <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>14</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconMilk</IconName>               <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>15</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconSign</IconName>               <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>0</Row>
+        <Col>2</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconCandle</IconName>             <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>1</Row>
+        <Col>2</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconBanner</IconName>             <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>2</Row>
+        <Col>2</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconBow</IconName>                <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>3</Row>
+        <Col>4</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconSword</IconName>              <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>4</Row>
+        <Col>4</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconInformation</IconName>        <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>5</Row>
+        <Col>4</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconSalt</IconName>               <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>9</Row>
+        <Col>4</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconDye</IconName>                <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>10</Row>
+        <Col>4</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconSpawnStone</IconName>         <!-- reserved, do not delete -->
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>9</Row>
+        <Col>7</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconSpawnCarcass</IconName>       <!-- reserved, do not delete -->
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>10</Row>
+        <Col>7</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconSpawnRawFish</IconName>       <!-- reserved, do not delete -->
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>11</Row>
+        <Col>7</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconSpawnHerb</IconName>          <!-- reserved, do not delete -->
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>12</Row>
+        <Col>7</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconSpawnIron</IconName>          <!-- reserved, do not delete -->
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>13</Row>
+        <Col>7</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconTorchAmmunition</IconName>    <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>3</Row>
+        <Col>10</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconPlayMaterial</IconName>       <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>1</Row>
+        <Col>15</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconEntTheatre</IconName>         <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>1</Row>
+        <Col>15</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconDummy00</IconName>         <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>1</Row>
+        <Col>15</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconDummy01</IconName>         <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>1</Row>
+        <Col>15</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconDummy02</IconName>         <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>1</Row>
+        <Col>15</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconDummy03</IconName>         <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>1</Row>
+        <Col>15</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconDummy04</IconName>         <!-- reserved, do not delete -->
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>1</Row>
+        <Col>15</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64Swordsman</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>9</Row>
+        <Col>7</Col>
+    </Icon>
+
+    <!-- CP stuff -->
+	
+	<Icon classname="GGUI::COnScreenIconProps">
+		<IconName>Icon64PoorSpear</IconName>
+		<TextureName>IconsBig.png</TextureName>
+		<U>0</U>
+		<V>0</V>
+		<U2>1</U2>
+		<V2>1</V2>
+		<Size>64</Size>
+		<Row>15</Row>
+		<Col>1</Col>
+	</Icon>
+	
+	<Icon classname="GGUI::COnScreenIconProps">
+		<IconName>IconPoorSpear</IconName>
+		<!-- reserved, do not delete -->
+		<TextureName>Icons.png</TextureName>
+		<U>0</U>
+		<V>0</V>
+		<U2>1</U2>
+		<V2>1</V2>
+		<Size>44</Size>
+		<Row>15</Row>
+		<Col>1</Col>
+	</Icon>
+
+	<Icon classname="GGUI::COnScreenIconProps">
+		<IconName>MinimapSpear</IconName>
+		<!-- reserved, do not delete -->
+		<TextureName>IconsTiny.png</TextureName>
+		<U>0</U>
+		<V>0</V>
+		<U2>1</U2>
+		<V2>1</V2>
+		<Size>32</Size>
+		<Row>1</Row>
+		<Col>1</Col>
+	</Icon>
+	
+	<Icon classname="GGUI::COnScreenIconProps">
+		<IconName>Icon64Spearman</IconName>
+		<TextureName>IconsBig.png</TextureName>
+		<U>0</U>
+		<V>0</V>
+		<U2>1</U2>
+		<V2>1</V2>
+		<Size>44</Size>
+		<Row>9</Row>
+		<Col>7</Col>
+	</Icon>
+	
+	<Icon classname="GGUI::COnScreenIconProps">
+		<IconName>IconSpear</IconName>
+		<!-- reserved, do not delete -->
+		<TextureName>Icons.png</TextureName>
+		<U>0</U>
+		<V>0</V>
+		<U2>1</U2>
+		<V2>1</V2>
+		<Size>44</Size>
+		<Row>15</Row>
+		<Col>0</Col>
+	</Icon>
+
+</OnScreenIcons>

@@ -14640,6 +14640,13 @@
 			<OcclusionReceiver>True</OcclusionReceiver>
 			<DefaultAnimID>Military\U_MilitaryPoleArm_Run</DefaultAnimID>
 		</Model>
-        
+		
+		
+		<Model id="Goods\G_SpearSpearMaker01">
+			<Effect>SimpleObject</Effect>
+			<OcclusionCaster>False</OcclusionCaster>
+			<CastShadow>True</CastShadow>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
     </Models>
 </root>

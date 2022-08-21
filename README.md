@@ -263,7 +263,13 @@ Folgende Änderungen wurden vorgenommen:
 	- Ko-fi für GameTTS (als Schankedön)
 - Nachrichten-Stau
 - MP-Koop-Fixes
-- AddOn-Kampagne-Loadscreens: Richtige Spielerfarben (per Bildbearbeitung)
+- Loadscreens
+	- Format ändern, um das ganze Bild sehen zu können
+		- Beispiel: siehe "chapter3_Test.png"
+		- Ränder sollten noch etwas dekoriert werden
+	- Eigene für "neue" Ritter
+	- AddOn-Kampagne-Loadscreens: Richtige Spielerfarben (per Bildbearbeitung)
+	- MainMenu-Background: AddOn mit eigenen Tag/Nacht Varianten
 - Baubares Trebuchet
 	- Eigenes Karren-Modell
 	- Eigene Icon-Texturen
@@ -311,7 +317,6 @@ Folgende Änderungen wurden vorgenommen:
 		- Neue Entities, da vorhandene zu sehr gescripted
 	- Einnahmen?
 	- Burg-Ersatz?
-- MainMenu: RdO mit eigenen Tag/Nacht-Hintergrund
 - Ungenutzte Gebäude
 	- Juwelier
 - Fremder Content
@@ -321,5 +326,7 @@ Folgende Änderungen wurden vorgenommen:
 	- Das oder neue Modelle
 	- ggf. auch für andere Gebäude
 - Kritische Cheats am Ende weitgehend deaktivieren
+	- "Hintertür" für Mapper offen lassen
+	- Andere zu regulären KeyBindings
 - ReadMe auf Englisch
 - Als bba gepackte Version für das Original

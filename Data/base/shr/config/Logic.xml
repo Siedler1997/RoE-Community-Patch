@@ -39,6 +39,7 @@
         <Category>GC_Hygiene_Supplier</Category>
         <Category>G_Sword_Supplier</Category>
         <Category>G_Bow_Supplier</Category>
+		<Category>G_Spear_Supplier</Category>
         <Category>GC_Weapon_Supplier</Category>
         <Category>GC_Entertainment_Supplier</Category>
         <Category>GC_Luxury_Supplier</Category>
@@ -984,6 +985,10 @@
 
 
 		<!-- Community Patch -->
+		<BuildingUpgrade>
+			<Category>SpearMaker</Category>
+			<FirstBuilding>B_SpearMaker</FirstBuilding>
+		</BuildingUpgrade>
 		<BuildingUpgrade>
 			<Category>GuardTower_MiddleEurope</Category>
 			<FirstBuilding>B_GuardTower_ME</FirstBuilding>
