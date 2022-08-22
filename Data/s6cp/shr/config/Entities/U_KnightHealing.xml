@@ -133,7 +133,7 @@
        <Behavior>
             <Logic classname="EGL::CHeroBehaviorProps">
                 <Class>EGL::CHeroBehavior</Class>
-	       <SermonParameter>1.4</SermonParameter>   <!-- 1.2 -->
+	       <SermonParameter>1.6</SermonParameter>   <!-- 1.2 -->
 	   </Logic>
         </Behavior>
 

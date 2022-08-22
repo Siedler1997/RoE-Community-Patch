@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+<DivIcons>
+
+    <Swordsman>Icon64Swordsman</Swordsman>
+    <GateForcedOpenIcon>Icon64GateForcedOpen</GateForcedOpenIcon>
+    <BuildingFireAlarm>Icon64Fire</BuildingFireAlarm>
+    <BuildingRepairAlarm>Icon64Repair</BuildingRepairAlarm>
+    <BuildingBurning>Icon64Burning</BuildingBurning>
+    <BuildingMourning>IconEmpty</BuildingMourning> <!-- will be deleted -->
+    <BuildingKnockdown>Icon64KnockDown</BuildingKnockdown>
+    <BuildingStopped>Icon64Stopped</BuildingStopped>
+    <BuildingOutstockFull>IconEmpty</BuildingOutstockFull> <!-- will be deleted -->
+    <BuildingTreasuryFull>Icon64TreasuryFull</BuildingTreasuryFull>
+    <BuildingSermon>Icon44Sermon</BuildingSermon>
+    <BuildingMerchantActive>Icon44Merchant</BuildingMerchantActive>
+    <ObjectActive>Icon44Interaction</ObjectActive>
+    <BuildingResurrection>Icon44Hakim</BuildingResurrection> <!-- respawn of knight -->
+    <BuildingFestival>Icon44Festival</BuildingFestival>
+    <BuildingStoreHouseFull>Icon64StorehouseFull</BuildingStoreHouseFull>
+    <BuildingStoreHouseNearlyFull>Icon64StorehouseFull</BuildingStoreHouseNearlyFull> <!-- no special icon at the moment -->
+    <BuildingStoppedByGood>Icon64GoodStopped</BuildingStoppedByGood>    
+
+    <!-- Shown over pasture, when no water is available  -->
+    <BuildingRequiresWater>Icon64Water</BuildingRequiresWater>
+    <BuildingNothingToGather>Icon64NoGather</BuildingNothingToGather>
+
+    <!-- Shown over building when "attention needed" and no good can be allocated -->
+    <BuildingAttentionFood>Icon64Food</BuildingAttentionFood>
+    <BuildingAttentionClothing>Icon64Clothing</BuildingAttentionClothing>
+    <BuildingAttentionHygiene>Icon64Cleanliness</BuildingAttentionHygiene>
+    <BuildingAttentionEntertainment>Icon64Entertainment</BuildingAttentionEntertainment>
+    <BuildingAttentionMedicine>Icon64Medicine</BuildingAttentionMedicine>
+    <BuildingAttentionSecurity>IconEmpty</BuildingAttentionSecurity> <!-- will be deleted -->
+
+    <!-- Shown over building when "critical" and no good can be allocated -->
+    <BuildingNeedsFood>Icon64Food</BuildingNeedsFood>
+    <BuildingNeedsClothing>Icon64Clothing</BuildingNeedsClothing>
+    <BuildingNeedsHygiene>Icon64Cleanliness</BuildingNeedsHygiene>
+    <BuildingNeedsEntertainment>Icon64Entertainment</BuildingNeedsEntertainment>
+    <BuildingNeedsMedicine>Icon64Medicine</BuildingNeedsMedicine>
+    <BuildingNeedsSecurity>IconEmpty</BuildingNeedsSecurity> <!-- will be deleted -->
+
+    <BuildingWarningBackground>Icon64BackgroundWarning</BuildingWarningBackground>
+    <BuildingCriticalBackground>Icon64BackgroundCritical</BuildingCriticalBackground>
+
+    <TaskBackground>Icon44Bubble</TaskBackground>
+    <TaskCriticalBackground>Icon44BubbleCritical</TaskCriticalBackground>
+
+</DivIcons>
+
+<!-- TaskTypes -->
+<TaskTypeIconMappings>
+
+    <Mapping>
+        <TaskType>TaskTypeIdle</TaskType>
+        <Icon>Icon44Idle</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeFlee</TaskType>
+        <Icon>Icon44Flee</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeCleaning</TaskType>
+        <Icon>Icon44Cleanliness</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeClothingBringHome</TaskType>
+        <Icon>Icon44Clothing</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeClothingGoToProvider</TaskType>
+        <Icon>Icon44Clothing</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeDancingCompany</TaskType>
+        <Icon>Icon44Festival</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeDancingWithCompany</TaskType>
+        <Icon>Icon44Festival</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeDeliveringWealthGood</TaskType>
+        <Icon>Icon44Producing</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeDeliverResource</TaskType>
+        <Icon>Icon44Gathering</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeEntertainmentGoToProvider</TaskType>
+        <Icon>Icon44Entertainment</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeEnjoyingFestival</TaskType>
+        <Icon>Icon44Festival</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeFullSermon</TaskType>
+        <Icon>Icon44Sermon</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeGather</TaskType>
+        <Icon>Icon44Gathering</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeGetResource</TaskType>
+        <Icon>Icon44Producing</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeGoingToFestival</TaskType>
+        <Icon>Icon44Festival</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeGoToSermon</TaskType>
+        <Icon>Icon44Sermon</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeHoldingSermon</TaskType>
+        <Icon>Icon44Sermon</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeHunt</TaskType>
+        <Icon>Icon44Gathering</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeHygieneBringHome</TaskType>
+        <Icon>Icon44Cleanliness</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeHygieneGoToProvider</TaskType>
+        <Icon>Icon44Cleanliness</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeIdlePriest</TaskType>
+        <Icon>Icon44Idle</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeInSermon</TaskType>
+        <Icon>Icon44Sermon</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeKnockDown</TaskType>
+        <Icon>Icon44KnockDown</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeLeave</TaskType>
+        <Icon>Icon44Leaving</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeMedicineGoToProvider</TaskType>
+        <Icon>Icon44Medicine</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeNutritionBringHome</TaskType>
+        <Icon>Icon44Food</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeNutritionGoToProvider</TaskType>
+        <Icon>Icon44Food</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypePayCollect</TaskType>
+        <Icon>Icon44Sermon</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeProduce</TaskType>
+        <Icon>Icon44Producing</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeReturnConstructionMaterial</TaskType>
+        <Icon>Icon44Leaving</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeTalkingToCompany</TaskType>
+        <Icon>Icon44Festival</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeTaxCollectorCollectedTax</TaskType>
+        <Icon>Icon44Prosperity</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeTaxCollectorOnWayToTaxableBuilding</TaskType>
+        <Icon>Icon44Prosperity</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeTaxCollectorReturningToTreasury</TaskType>
+        <Icon>Icon44Prosperity</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeWaitingForCompany</TaskType>
+        <Icon>Icon44Festival</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeClothingFailed</TaskType>
+        <Icon>Icon44Clothing</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeClothingSucceeded</TaskType>
+        <Icon>Icon44Clothing</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeEntertainmentFailed</TaskType>
+        <Icon>Icon44Entertainment</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeEntertainmentSucceeded</TaskType>
+        <Icon>Icon44Entertainment</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeHygieneFailed</TaskType>
+        <Icon>Icon44Cleanliness</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeHygieneSucceeded</TaskType>
+        <Icon>Icon44Cleanliness</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeIdleSpouse</TaskType>
+        <Icon>Icon44Idle</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeMedicineFailed</TaskType>
+        <Icon>Icon44Medicine</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeMedicineSucceeded</TaskType>
+        <Icon>Icon44Medicine</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeNutritionFailed</TaskType>
+        <Icon>Icon44Food</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeNutritionSucceeded</TaskType>
+        <Icon>Icon44Food</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeRepair</TaskType>
+        <Icon>Icon44Repair</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeRepairAlarm</TaskType>
+        <Icon>Icon44Repair</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeExtinguishFire</TaskType>
+        <Icon>Icon44Fire</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeFetchingWaterForFarmAnimal</TaskType>
+        <Icon>Icon44Water</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeFetchingMedicineForFarmAnimal</TaskType>
+        <Icon>Icon44Medicine</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeCarryMedicineHome</TaskType>
+        <Icon>Icon44Medicine</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeDeliveringCollect</TaskType>
+        <Icon>Icon44Sermon</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeArrive</TaskType>
+        <Icon>Icon44Arrive</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeWaitForTreasurySpace</TaskType>
+        <Icon>Icon44Prosperity</Icon>
+    </Mapping>
+
+
+    <!-- default icons right now -->
+    <Mapping>
+        <TaskType>TaskTypeConstruct</TaskType>
+        <Icon>Icon44Construct</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeUpgrade</TaskType>
+        <Icon>Icon44Upgrade</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeDeliverWeapon</TaskType>
+        <Icon>Icon44DeliverWeapon</Icon>
+    </Mapping>
+
+
+    <!-- not deleted for debug reasons -->
+    <Mapping>
+        <TaskType>TaskTypeWealthFailed</TaskType>
+        <Icon>IconEmpty</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeWealthSucceeded</TaskType>
+        <Icon>IconEmpty</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeWealthBringHome</TaskType>
+        <Icon>IconEmpty</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>TaskTypeWealthGoToProvider</TaskType>
+        <Icon>IconEmpty</Icon>
+    </Mapping>
+
+</TaskTypeIconMappings>
+
+
+<!-- IdleReasons -->
+<TaskIdleIconMappings>
+
+    <Mapping>
+        <TaskType>IdleReasonNone</TaskType>
+        <Icon>Icon44Idle</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>IdleReasonNoResource</TaskType>
+        <Icon>Icon44Idle</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>IdleReasonOutstockFull</TaskType>
+        <Icon>Icon44Idle</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>IdleReasonBuildingStopped</TaskType>
+        <Icon>Icon44Idle</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>IdleReasonBuildingDamaged</TaskType>
+        <Icon>Icon44Idle</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>IdleReasonStarving</TaskType>
+        <Icon>Icon44Food</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>IdleReasonIll</TaskType>
+        <Icon>Icon44Medicine</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>IdleReasonBored</TaskType>
+        <Icon>Icon44Entertainment</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>IdleReasonNoClothing</TaskType>
+        <Icon>Icon44Clothing</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>IdleReasonNoHygiene</TaskType>
+        <Icon>Icon44Cleanliness</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>IdleReasonNoTargetBuilding</TaskType>
+        <Icon>Icon44Idle</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>IdleReasonNoSpaceInStoreHouse</TaskType>
+        <Icon>Icon44StorehouseFull</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>IdleReasonNoMedicineForFarmAnimals</TaskType>
+        <Icon>Icon44Idle</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>IdleReasonNoWaterForFarmAnimals</TaskType>
+        <Icon>Icon44Idle</Icon>
+    </Mapping>
+
+
+    <!-- not deleted for debug reasons -->
+    <Mapping>
+        <TaskType>IdleReasonPoor</TaskType>
+        <Icon>IconEmpty</Icon>
+    </Mapping>
+    <Mapping>
+        <TaskType>IdleReasonNoStoreHouse</TaskType>
+        <Icon>IconEmpty</Icon>
+    </Mapping>
+
+</TaskIdleIconMappings>
+
+
+<!-- FleeReasons -->
+<TaskFleeIconMappings>
+    <Mapping>
+        <TaskType>FleeReasonNone</TaskType>
+        <Icon>Icon44Flee</Icon>
+    </Mapping>
+</TaskFleeIconMappings>
+
+</root>

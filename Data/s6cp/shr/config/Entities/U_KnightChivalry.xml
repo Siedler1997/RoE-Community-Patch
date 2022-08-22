@@ -123,11 +123,11 @@
             </Logic>
         </Behavior>
 
-  	<!-- Universal Ability: Military battalions (Swordsmen, Bowmen) cost less gold -->
+  	<!-- Universal Ability: Military battalions cost less gold -->
         <Behavior>
             <Logic classname="EGL::CHeroBehaviorProps">
                 <Class>EGL::CHeroBehavior</Class>
-	       <MilitaryParameter>0.8</MilitaryParameter>
+	       <MilitaryParameter>0.6</MilitaryParameter> <!-- 0.8 -->
 	   </Logic>
         </Behavior>
 
@@ -136,7 +136,7 @@
             <Logic classname="EGL::CKnightMiscAbilityProps">
                 <Class>EGL::CKnightMiscAbility</Class>
                 <Ability>AbilityTorch</Ability>
-	       <RechargeTimeSeconds>300</RechargeTimeSeconds>
+	       <RechargeTimeSeconds>270</RechargeTimeSeconds>
 	       <TaskList>TL_KNIGHT_ABILITY_TORCH</TaskList>
 	       <Effect>E_Knight_Chivalry_Aura</Effect>
             </Logic>
