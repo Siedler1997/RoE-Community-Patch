@@ -1982,6 +1982,9 @@
     CP stuff
     ************************************************-->
 
+	<Entity>B_ArmorMaker</Entity>
+	<Entity>B_ArmorSmith</Entity>
+
 	<Entity>B_GuardTower_ME</Entity>
 	<Entity>B_GuardTower_NE</Entity>
 	<Entity>B_GuardTower_SE</Entity>
@@ -2003,4 +2006,6 @@
     <Entity>U_RegaliaCart_Mission</Entity>
     <Entity>U_ResourceMerchant_Mission</Entity>
     <Entity>U_ThiefCart_Mission</Entity>
+	<Entity>U_ArmorMaker</Entity>
+	<Entity>U_ArmorSmith</Entity>
 </root>

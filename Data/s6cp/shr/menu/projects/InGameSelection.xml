@@ -47390,9 +47390,9 @@
                          <BackgroundMaterial>
                           <Texture>iconsbig.png</Texture>
                           <TextureCoordinatesMinU>64.</TextureCoordinatesMinU>
-                          <TextureCoordinatesMinV>320.</TextureCoordinatesMinV>
-                          <TextureCoordinatesMxU>128.</TextureCoordinatesMxU>
-                          <TextureCoordinatesMxV>384.</TextureCoordinatesMxV>
+                          <TextureCoordinatesMinV>1024.</TextureCoordinatesMinV>
+                          <TextureCoordinatesMxU>1024.</TextureCoordinatesMxU>
+                          <TextureCoordinatesMxV>1088.</TextureCoordinatesMxV>
                           <TextureFixedSizeX>0.</TextureFixedSizeX>
                           <TextureFixedSizeY>0.</TextureFixedSizeY>
                           <Color>

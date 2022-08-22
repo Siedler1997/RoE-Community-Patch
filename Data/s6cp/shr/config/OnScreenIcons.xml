@@ -1879,7 +1879,7 @@
         <Col>7</Col>
     </Icon>
 
-    <!-- CP -->
+    <!-- COMMUNITY PACHT ICONS -->
 
     <Icon classname="GGUI::COnScreenIconProps">
         <IconName>Icon64Resource</IconName>
@@ -1891,6 +1891,78 @@
         <Size>64</Size>
         <Row>3</Row>
         <Col>9</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconLeatherArmor</IconName>
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>16</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconPlateArmor</IconName>
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>16</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon44LeatherArmor</IconName>
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>16</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon44PlateArmor</IconName>
+        <TextureName>Icons.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>16</Row>
+        <Col>1</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64LeatherArmor</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>16</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon64PlateArmor</IconName>
+        <TextureName>IconsBig.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>64</Size>
+        <Row>16</Row>
+        <Col>1</Col>
     </Icon>
 
 </OnScreenIcons>

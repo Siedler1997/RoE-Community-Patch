@@ -51,8 +51,9 @@ function InitTexturePositions()
     [Goods.G_Water]                         = {1, 16},
     [Goods.G_Wood]                          = {1, 9},
     [Goods.G_Wool]                          = {2, 3},
-    [Goods.G_Regalia]                       = {16, 4}
-    
+    [Goods.G_Regalia]                       = {16, 4},
+    [Goods.G_LeatherArmor]                  = {1, 17},
+    [Goods.G_PlateArmor]                    = {2, 17}
     }
 
     g_TexturePositions.Entities = {

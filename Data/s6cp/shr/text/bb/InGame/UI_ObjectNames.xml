@@ -586,9 +586,14 @@
     <!-- Community Patch -->
     
     <string id="U_MilitarySword" MD5Hash="499006B1DC7CF75C0F9DF638C575904A" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Halberdier]]></string>
-	<string id="Abilities_U_MilitaryCavalry" MD5Hash="377AE3ADBBD33D16DDFCC04584058269" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cavalry]]></string>
 	<string id="U_MilitarySpear" MD5Hash="499006B1DC7CF75C0F9DF638C575904A" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Halberdier]]></string>
-	<string id="Abilities_U_MilitarySpear" MD5Hash="499006B1DC7CF75C0F9DF638C575904A" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Halberdier]]></string>
+	
+    <string id="Abilities_U_MilitaryCavalry" MD5Hash="377AE3ADBBD33D16DDFCC04584058269" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cavalry]]></string>
+	
+    <string id="Abilities_U_MilitarySpear" MD5Hash="499006B1DC7CF75C0F9DF638C575904A" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Halberdier]]></string>
 	<string id="Abilities_U_Dragon" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Drache]]></string>
 	<string id="Abilities_U_Trebuchet" MD5Hash="2A6A9144EAF0CAE75DDED46B10DFDC73" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Trebuchet]]></string>
+
+    <string id="B_ArmorMaker" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="do not delete this"><![CDATA[Armor Maker]]></string>
+    <string id="B_ArmorSmith" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="do not delete this"><![CDATA[Armor Smith]]></string>
 </root>
