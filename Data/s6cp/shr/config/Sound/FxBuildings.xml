@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!-- building sounds -->
+
+<FXDEFINITIONS>
+
+  <!--
+  *************************************************
+
+  *** Buildings
+
+  *************************************************
+  -->
+
+  <FX>
+    <Name>Buildings\building_open_palisade</Name>
+    <Category>Buildings_laut</Category>
+    <FileName>Sounds\building\building_open_palisade.wav</FileName>
+  </FX>
+
+  <FX>
+    <Name>Buildings\building_close_palisade</Name>
+    <Category>Buildings_laut</Category>
+    <FileName>Sounds\building\building_close_palisade.wav</FileName>
+  </FX>
+
+  <FX>
+    <Name>Buildings\building_teardown_palisade</Name>
+    <Category>Buildings_dest</Category>
+    <Volume>50</Volume>
+    <FileName>Sounds\building\building_teardown_palisade.wav</FileName>
+  </FX>
+
+  <FX>
+    <Name>Buildings\building_teardown_wall</Name>
+    <Category>Buildings_dest</Category>
+    <Volume>60</Volume>
+    <FileName>Sounds\building\building_teardown_wall.wav</FileName>
+  </FX>
+
+  <FX>
+    <Name>Buildings\building_well</Name>
+    <Category>Buildings_laut</Category>
+    <FileName>Sounds\building\building_well.wav</FileName>
+  </FX>
+
+  <FX>
+    <Name>Buildings\building_open_gate</Name>
+    <Category>Buildings_laut</Category>
+    <FileName>Sounds\building\building_open_gate.wav</FileName>
+  </FX>
+
+  <FX>
+    <Name>Buildings\building_close_gate</Name>
+    <Category>Buildings_laut</Category>
+    <FileName>Sounds\building\building_close_gate.wav</FileName>
+  </FX>
+
+  
+
+  <FX>
+    <Name>Buildings\building_sermon_bells</Name>
+    <Category>Buildings_laut</Category>
+    <Volume>50</Volume>
+    <FileName>Sounds\building\building_sermon_bells.wav</FileName>
+  </FX>
+
+  
+
+  <FX>
+    <Name>Buildings\building_beehive</Name>
+    <Category>Buildings_leise</Category>
+    <Loopable>true</Loopable>
+    <Volume>18</Volume>
+    <Priority>100</Priority>
+    <InnerSoundCircleVolume>100</InnerSoundCircleVolume>
+    <InnerSoundCircleSize>1000</InnerSoundCircleSize>
+    <OuterSoundCircleVolume>0</OuterSoundCircleVolume>
+    <OuterSoundCircleSize>2500</OuterSoundCircleSize>
+    <FileName>Sounds\building\building_beehive.wav</FileName>
+  </FX>
+
+  <FX>
+    <Name>Buildings\building_dirty</Name>
+    <Category>Buildings_leise</Category>
+    <Loopable>true</Loopable>
+    <Volume>25</Volume>
+    <Priority>100</Priority>
+    <InnerSoundCircleVolume>100</InnerSoundCircleVolume>
+    <InnerSoundCircleSize>1000</InnerSoundCircleSize>
+    <OuterSoundCircleVolume>0</OuterSoundCircleVolume>
+    <OuterSoundCircleSize>3000</OuterSoundCircleSize>
+    <FileName>Sounds\building\building_dirty.wav</FileName>
+  </FX>
+
+  <FX>
+    <Name>Buildings\building_kettle</Name>
+    <Category>Buildings_leise</Category>
+    <Volume>30</Volume>
+    <InnerSoundCircleVolume>100</InnerSoundCircleVolume>
+    <InnerSoundCircleSize>1000</InnerSoundCircleSize>
+    <OuterSoundCircleVolume>0</OuterSoundCircleVolume>
+    <OuterSoundCircleSize>1500</OuterSoundCircleSize>
+    <FileName>Sounds\building\building_kettle.wav</FileName>
+    <Loopable>true</Loopable>
+  </FX>
+
+  <FX>
+    <Name>Buildings\machine_metal_squeak_s</Name>
+    <Category>Buildings_leise</Category>
+    <FileName>Sounds\building\machine_metal_squeak_s01.wav</FileName>
+    <FileName>Sounds\building\machine_metal_squeak_s02.wav</FileName>
+    <FileName>Sounds\building\machine_metal_squeak_s03.wav</FileName>
+    <FileName>Sounds\building\machine_metal_squeak_s04.wav</FileName>
+  </FX>
+
+  <FX>
+    <Name>Buildings\machine_metal_squeak_b</Name>
+    <Category>Buildings_leise</Category>
+    <FileName>Sounds\building\machine_metal_squeak_b01.wav</FileName>
+    <FileName>Sounds\building\machine_metal_squeak_b02.wav</FileName>
+    <FileName>Sounds\building\machine_metal_squeak_b03.wav</FileName>
+    <FileName>Sounds\building\machine_metal_squeak_b04.wav</FileName>
+  </FX>
+
+  <FX>
+    <Name>Buildings\machine_wood_squeak_s</Name>
+    <Category>Buildings_leise</Category>
+    <FileName>Sounds\building\machine_wood_squeak_s01.wav</FileName>
+    <FileName>Sounds\building\machine_wood_squeak_s02.wav</FileName>
+    <FileName>Sounds\building\machine_wood_squeak_s03.wav</FileName>
+    <FileName>Sounds\building\machine_wood_squeak_s04.wav</FileName>
+  </FX>
+
+  <FX>
+    <Name>Buildings\machine_wood_squeak_b</Name>
+    <Category>Buildings_leise</Category>
+    <FileName>Sounds\building\machine_wood_squeak_b01.wav</FileName>
+    <FileName>Sounds\building\machine_wood_squeak_b02.wav</FileName>
+    <FileName>Sounds\building\machine_wood_squeak_b03.wav</FileName>
+    <FileName>Sounds\building\machine_wood_squeak_b04.wav</FileName>
+  </FX>
+
+  <FX>
+    <Name>Buildings\machine_small</Name>
+    <Category>Buildings_leise</Category>
+    <Loopable>true</Loopable>
+    <FileName>Sounds\building\machine_small01.wav</FileName>
+    <FileName>Sounds\building\machine_small02.wav</FileName>
+    <FileName>Sounds\building\machine_small03.wav</FileName>
+    <FileName>Sounds\building\machine_small04.wav</FileName>
+  </FX>
+
+  <FX>
+    <Name>Buildings\machine_big</Name>
+    <Category>Buildings_laut</Category>
+    <Loopable>true</Loopable>
+    <FileName>Sounds\building\machine_big01.wav</FileName>
+    <FileName>Sounds\building\machine_big02.wav</FileName>
+    <FileName>Sounds\building\machine_big03.wav</FileName>
+    <FileName>Sounds\building\machine_big04.wav</FileName>
+  </FX>
+
+  <FX>
+    <Name>Buildings\machine_wood_move</Name>
+    <Category>Buildings_leise</Category>
+    <FileName>Sounds\building\machine_wood_move01.wav</FileName>
+    <FileName>Sounds\building\machine_wood_move02.wav</FileName>
+    <FileName>Sounds\building\machine_wood_move03.wav</FileName>
+    <FileName>Sounds\building\machine_wood_move04.wav</FileName>
+  </FX>
+
+  <FX>
+    <Name>Buildings\machine_impact_metal</Name>
+    <Category>Buildings_leise</Category>
+    <FileName>Sounds\building\machine_impact_metal01.wav</FileName>
+    <FileName>Sounds\building\machine_impact_metal02.wav</FileName>
+    <FileName>Sounds\building\machine_impact_metal03.wav</FileName>
+    <FileName>Sounds\building\machine_impact_metal04.wav</FileName>
+  </FX>
+
+  <FX>
+    <Name>Buildings\machine_siegeengine_crane_metal</Name>
+    <Category>Buildings_leise</Category>
+    <Volume>50</Volume>
+    <FileName>Sounds\building\machine_impact_metal02.wav</FileName>
+  </FX>
+
+  <FX>
+    <Name>Buildings\machine_siegeengine_crane_wood</Name>
+    <Category>Buildings_leise</Category>
+    <Volume>50</Volume>
+    <FileName>Sounds\building\machine_impact_wood_01.wav</FileName>
+    <FileName>Sounds\building\machine_impact_wood_03.wav</FileName>
+  </FX>
+
+
+  <FX>
+    <Name>Buildings\machine_impact_metal_dull</Name>
+    <Category>Buildings_leise</Category>
+    <FileName>Sounds\building\machine_impact_metal_dull01.wav</FileName>
+    <FileName>Sounds\building\machine_impact_metal_dull02.wav</FileName>
+  </FX>
+
+
+  <FX>
+    <Name>Buildings\machine_impact_wood</Name>
+    <Category>Buildings_leise</Category>
+    <FileName>Sounds\building\machine_impact_wood_01.wav</FileName>
+    <FileName>Sounds\building\machine_impact_wood_02.wav</FileName>
+    <FileName>Sounds\building\machine_impact_wood_03.wav</FileName>
+    <FileName>Sounds\building\machine_impact_wood_04.wav</FileName>
+  </FX>
+
+  <FX>
+    <Name>Buildings\window_open</Name>
+    <Category>Buildings_leise</Category>
+    <FileName>Sounds\building\window_open01.wav</FileName>
+    <FileName>Sounds\building\window_open02.wav</FileName>
+    <FileName>Sounds\building\window_open03.wav</FileName>
+    <FileName>Sounds\building\window_open04.wav</FileName>
+  </FX>
+
+  <FX>
+    <Name>Buildings\window_close</Name>
+    <Category>Buildings_leise</Category>
+    <FileName>Sounds\building\window_close01.wav</FileName>
+    <FileName>Sounds\building\window_close02.wav</FileName>
+    <FileName>Sounds\building\window_close03.wav</FileName>
+    <FileName>Sounds\building\window_close04.wav</FileName>
+  </FX>
+
+  <FX>
+    <Name>Buildings\door_open</Name>
+    <Category>Buildings_leise</Category>
+    <FileName>Sounds\building\door_open01.wav</FileName>
+    <FileName>Sounds\building\door_open02.wav</FileName>
+    <FileName>Sounds\building\door_open03.wav</FileName>
+    <FileName>Sounds\building\door_open04.wav</FileName>
+  </FX>
+
+  <FX>
+    <Name>Buildings\door_close</Name>
+    <Category>Buildings_leise</Category>
+    <FileName>Sounds\building\door_close01.wav</FileName>
+    <FileName>Sounds\building\door_close02.wav</FileName>
+    <FileName>Sounds\building\door_close03.wav</FileName>
+    <FileName>Sounds\building\door_close04.wav</FileName>
+  </FX>
+
+  <FX>
+    <Name>Buildings\amb_fire_small</Name>
+    <Category>Buildings_leise</Category>
+    <FileName>Sounds\Atmo\amb_fire_small.wav</FileName>
+    <Loopable>true</Loopable>
+  </FX>
+
+  <FX>
+    <Name>Buildings\amb_fire_med</Name>
+    <Volume>25</Volume>
+    <Category>Buildings_dest</Category>
+    <FileName>Sounds\Atmo\amb_fire_med.wav</FileName>
+    <Loopable>true</Loopable>
+  </FX>
+
+  <FX>
+    <Name>Buildings\amb_fire_big</Name>
+    <Volume>20</Volume>
+    <Category>Buildings_dest</Category>
+    <FileName>Sounds\Atmo\amb_fire_big.wav</FileName>
+    <Loopable>true</Loopable>
+  </FX>
+
+  <FX>
+    <Name>Buildings\amb_fire_dest_floor</Name>
+    <Volume>75</Volume>
+    <Category>Buildings_dest</Category>
+    <FileName>Sounds\Atmo\amb_fire_dest_floor_wood01.wav</FileName>
+    <FileName>Sounds\Atmo\amb_fire_dest_floor_wood02.wav</FileName>
+    <FileName>Sounds\Atmo\amb_fire_dest_stone_floor01.wav</FileName>
+    <FileName>Sounds\Atmo\amb_fire_dest_stone_floor02.wav</FileName>
+ </FX>
+
+  <FX>
+    <Name>Buildings\teardown_house_small</Name>
+    <Volume>50</Volume>
+    <Category>Buildings_dest</Category>
+    <FileName>Sounds\building\building_teardown_small.wav</FileName>
+ </FX>
+
+
+  <FX>
+    <Name>Buildings\teardown_house_med</Name>
+    <Volume>50</Volume>
+    <Category>Buildings_dest</Category>
+    <FileName>Sounds\building\building_teardown_med.wav</FileName>
+ </FX>
+
+
+  <FX>
+    <Name>Buildings\building_teardown_big</Name>
+    <Volume>50</Volume>
+    <Category>Buildings_dest</Category>
+    <FileName>Sounds\building\building_teardown_big.wav</FileName>
+ </FX>
+
+  <FX>
+    <Name>Buildings\siege_tower_dest</Name>
+    <Volume>100</Volume>
+    <Category>Buildings_dest</Category>
+    <FileName>Sounds\Atmo\amb_fire_dest_floor_wood01.wav</FileName>
+    <FileName>Sounds\Atmo\amb_fire_dest_floor_wood02.wav</FileName>
+ </FX>
+
+  <FX>
+    <Name>Buildings\siege_tower_dest_start</Name>
+    <Volume>80</Volume>
+    <Category>Buildings_dest</Category>
+    <FileName>Sounds\building\building_teardown_small.wav</FileName>
+ </FX>
+
+  <FX>
+    <Name>Buildings\amb_fireworks</Name>
+    <Category>Buildings_laut</Category>
+    <FileName>Sounds\Atmo\amb_fireworks01.wav</FileName>
+    <FileName>Sounds\Atmo\amb_fireworks02.wav</FileName>
+    <FileName>Sounds\Atmo\amb_fireworks03.wav</FileName>
+ </FX>
+
+  <FX>
+    <Name>Buildings\building_wealth</Name>
+    <Category>Buildings_laut</Category>
+    <FileName>Sounds\building\building_wealth.wav</FileName>
+ </FX>
+
+  <FX>
+    <Name>Buildings\building_teardown_fence</Name>
+    <Category>Buildings_laut</Category>
+    <FileName>Sounds\building\building_teardown_fence.wav</FileName>
+ </FX>
+
+  <FX>
+    <Name>Buildings\building_teardown_tent_small</Name>
+    <Category>Buildings_dest</Category>
+    <FileName>Sounds\building\building_teardown_tent_small.wav</FileName>
+ </FX>
+
+
+  <FX>
+    <Name>Buildings\building_teardown_tent_big</Name>
+    <Category>Buildings_dest</Category>
+    <FileName>Sounds\building\building_teardown_tent_big.wav</FileName>
+ </FX>
+
+  <FX>
+    <Name>Buildings\arm_catapult_load</Name>
+    <Category>Impact_big</Category>
+    <Volume>40</Volume>
+    <FileName>Sounds\vehicle\arm_catapult_load01.wav</FileName>
+    <FileName>Sounds\vehicle\arm_catapult_load02.wav</FileName>
+ </FX>
+
+  <FX>
+    <Name>Buildings\arm_catapult_shoot</Name>
+    <Category>Impact_big</Category>
+    <Volume>60</Volume>
+    <FileName>Sounds\vehicle\arm_catapult_shoot1.wav</FileName>
+    <FileName>Sounds\vehicle\arm_catapult_shoot2.wav</FileName>
+ </FX>
+
+  <FX>
+    <Name>Buildings\arm_trebuchet_shoot</Name>
+    <Category>Impact_big</Category>
+    <FileName>Sounds\vehicle\arm_trebuchet_shoot.wav</FileName>
+ </FX>
+
+  <FX>
+    <Name>Buildings\arm_trebuchet_load</Name>
+    <Category>Impact_big</Category>
+    <FileName>Sounds\vehicle\arm_trebuchet_load01.wav</FileName>
+    <FileName>Sounds\vehicle\arm_trebuchet_load02.wav</FileName>
+ </FX>
+
+  <FX>
+    <Name>Buildings\cart_small_move</Name>
+    <Category>Vehicle</Category>
+    <Loopable>true</Loopable>
+    <FileName>Sounds\vehicle\cart_small01.wav</FileName>
+    <FileName>Sounds\vehicle\cart_small02.wav</FileName>
+    <FileName>Sounds\vehicle\cart_small03.wav</FileName>
+    <FileName>Sounds\vehicle\cart_small04.wav</FileName>
+    <FileName>Sounds\vehicle\cart_small05.wav</FileName>
+    <FileName>Sounds\vehicle\cart_small06.wav</FileName>
+    <FileName>Sounds\vehicle\cart_small07.wav</FileName>
+    <FileName>Sounds\vehicle\cart_small08.wav</FileName>
+    <FileName>Sounds\vehicle\cart_small09.wav</FileName>
+    <FileName>Sounds\vehicle\cart_small10.wav</FileName>
+</FX>
+
+  <FX>
+    <Name>Buildings\cart_med_move</Name>
+    <Category>Vehicle</Category>
+    <Volume>22</Volume>
+    <Loopable>true</Loopable>
+    <FileName>Sounds\vehicle\cart_med01.wav</FileName>
+    <FileName>Sounds\vehicle\cart_med02.wav</FileName>
+    <FileName>Sounds\vehicle\cart_med03.wav</FileName>
+    <FileName>Sounds\vehicle\cart_med04.wav</FileName>
+    <FileName>Sounds\vehicle\cart_med05.wav</FileName>
+    <FileName>Sounds\vehicle\cart_med06.wav</FileName>
+    <FileName>Sounds\vehicle\cart_med07.wav</FileName>
+    <FileName>Sounds\vehicle\cart_med08.wav</FileName>
+    <FileName>Sounds\vehicle\cart_med09.wav</FileName>
+    <FileName>Sounds\vehicle\cart_med10.wav</FileName>
+</FX>
+
+  <FX>
+    <Name>Buildings\cart_big_move</Name>
+    <Category>Vehicle</Category>
+    <Volume>25</Volume>
+    <Loopable>true</Loopable>
+    <FileName>Sounds\vehicle\cart_big01.wav</FileName>
+    <FileName>Sounds\vehicle\cart_big02.wav</FileName>
+    <FileName>Sounds\vehicle\cart_big03.wav</FileName>
+    <FileName>Sounds\vehicle\cart_big04.wav</FileName>
+    <FileName>Sounds\vehicle\cart_big05.wav</FileName>
+    <FileName>Sounds\vehicle\cart_big06.wav</FileName>
+    <FileName>Sounds\vehicle\cart_big07.wav</FileName>
+    <FileName>Sounds\vehicle\cart_big08.wav</FileName>
+    <FileName>Sounds\vehicle\cart_big09.wav</FileName>
+    <FileName>Sounds\vehicle\cart_big10.wav</FileName>
+</FX>
+
+<!-- Patch 1.4 -->
+
+<FX>
+    <Name>Buildings\building_alarm</Name>
+    <Category>Buildings_laut</Category>
+    <Volume>60</Volume>
+    <FileName>Sounds\building\building_alarm.wav</FileName>
+  </FX>
+  
+  <FX>
+    <Name>Buildings\building_start_sermon</Name>
+    <Category>Buildings_laut</Category>
+    <Volume>100</Volume>
+    <FileName>Sounds\building\building_start_sermon.wav</FileName>
+  </FX>
+
+</FXDEFINITIONS>

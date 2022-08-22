@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<PlayListUI>
+
+  <PlayListEntry>
+    <FileName>Music\S6_01_the_settlers.mp3</FileName>
+    <Type>Loop</Type>
+  </PlayListEntry>  
+
+</PlayListUI>

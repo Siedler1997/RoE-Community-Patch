@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AnimSet>
+    <Categories>
+        <Category classname="EGL::CAnimCategory">
+            <Name>Walk</Name>
+            <Animation>Animal\A_NE_PolarBear_Walk</Animation>
+        </Category>
+        <Category classname="EGL::CAnimCategory">
+            <Name>Run</Name>
+            <Animation>Animal\A_NE_PolarBear_Run</Animation>
+        </Category>
+        <Category classname="EGL::CAnimCategory">
+            <Name>AttackRun</Name>
+            <Animation>Animal\A_NE_PolarBear_Run</Animation>
+        </Category>
+        <Category classname="EGL::CAnimCategory">
+            <Name>Stand</Name>
+            <Animation>Animal\A_NE_PolarBear_Idle1</Animation>
+        </Category>
+        <Category classname="EGL::CAnimCategory">
+            <Name>Dead</Name>
+            <Animation>Animal\A_NE_PolarBear_Walk</Animation>
+        </Category>
+        <Category classname="EGL::CAnimCategory">
+            <Name>Die</Name>
+            <Animation>Animal\A_NE_PolarBear_Die</Animation>
+        </Category>
+        <Category classname="EGL::CAnimCategory">
+            <Name>Eat</Name>
+            <Animation>Animal\A_NE_PolarBear_Eat</Animation>
+        </Category>
+        <Category classname="EGL::CAnimCategory">
+            <Name>BattleIdle</Name>
+            <Animation>Animal\A_NE_PolarBear_Idle1</Animation>
+        </Category>
+		<!--********************************** IDLE **********************************-->
+
+
+          <Category classname="EGL::CAnimCategory">
+            <Name>Idle</Name>
+    	    <RandomAnims>
+    		    <RandomAnim>
+    			    <Animation>Animal\A_NE_PolarBear_Idle1</Animation>
+    			    <Rank>1</Rank>
+    		    </RandomAnim>
+    		    <RandomAnim>
+    			    <Animation>Animal\A_NE_PolarBear_Idle2</Animation>
+    			    <Rank>3</Rank>
+    		    </RandomAnim>
+    		    <RandomAnim>
+    			    <Animation>Animal\A_NE_PolarBear_Idle1</Animation>
+    			    <Rank>2</Rank>
+    		    </RandomAnim>
+    	    </RandomAnims>
+        </Category>
+        
+		<!--********************************** ATTACK **********************************-->
+
+
+         <Category classname="EGL::CAnimCategory">
+            <Name>Attack</Name>
+    	    <RandomAnims>
+    		    <RandomAnim>
+    			    <Animation>Animal\A_NE_PolarBear_Attack1</Animation>
+    			    <Rank>1</Rank>
+    		    </RandomAnim>
+    		    <RandomAnim>
+    			    <Animation>Animal\A_NE_PolarBear_Attack1</Animation>
+    			    <Rank>3</Rank>
+    		    </RandomAnim>
+    		    <RandomAnim>
+    			    <Animation>Animal\A_NE_PolarBear_Attack1</Animation>
+    			    <Rank>2</Rank>
+    		    </RandomAnim>
+    	    </RandomAnims>
+        </Category>
+
+    </Categories>
+</AnimSet>

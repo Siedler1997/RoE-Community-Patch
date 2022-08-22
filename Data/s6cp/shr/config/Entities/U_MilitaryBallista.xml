@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+    <Display classname="ED::CEntityProps">
+        <Class>ED::CDisplaySettler</Class>
+        <Model>Vehicles\U_MilitaryBallista</Model>
+        <DrawPlayerColor>true</DrawPlayerColor>
+    </Display>
+
+    <Logic classname="EGL::CSettlerProps">
+        <Class>EGL::CBigSettler</Class>
+        <AccessCategory>AccessCategoryAttackableSettler</AccessCategory>
+        <PlayerSectorType>PlayerSectorTypeMilitary</PlayerSectorType>
+        <MaxHealth>250</MaxHealth>
+        <HealingSeconds/>
+        <HealingPoints>0</HealingPoints>
+
+        <MapFileDontSave>true</MapFileDontSave>
+        <NeedsPlayer>true</NeedsPlayer>
+        <ForceNoPlayer>false</ForceNoPlayer>
+        <CanBePlacedOnBlockedGround>true</CanBePlacedOnBlockedGround>
+
+        <EntityCategories>
+            <EntityCategory>Military</EntityCategory>
+            <EntityCategory>HeavyWeapon</EntityCategory>
+            <EntityCategory>Balista</EntityCategory>
+        </EntityCategories>
+        <AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
+        <Exploration>30</Exploration>
+        <IdleTaskList>TL_MILITARY_DEFEND</IdleTaskList>
+        <CanDrown>false</CanDrown>
+        <IsSelectable>true</IsSelectable>
+
+        <Cost>
+	   <GoodAmount>
+                <GoodType>G_Gold</GoodType>
+                <Amount>300</Amount>
+            </GoodAmount>
+	   <GoodAmount>
+                <GoodType>G_Iron</GoodType>
+                <Amount>10</Amount>
+            </GoodAmount>
+        </Cost>
+
+        <Familiar>
+            <With>SheepPasture</With>
+            <With>CattlePasture</With>
+        </Familiar>
+        <SoundImpactType>Wood</SoundImpactType>
+        <SoundProjectileType>Catapult</SoundProjectileType>
+    </Logic>
+
+    <Behaviors>
+
+        <Behavior>
+            <Logic classname="EGL::CMilitaryMovementBehaviorProps">
+                <Class>EGL::CMilitaryMovementBehavior</Class>
+                <Speed>0</Speed>
+                <RotationSpeed>50</RotationSpeed>
+                <MoveTaskList>TL_MILITARY_WALK</MoveTaskList>
+                <MoveIdleAnim>U_Military_Ballista_Stand</MoveIdleAnim>
+            </Logic>
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CDisplayBehaviorMovement</Class>
+            </Display>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CAnimationBehaviorExProps">
+                <Class>EGL::CBehaviorAnimationEx</Class>
+
+                <AnimSet>SET_MILITARYBALLISTA</AnimSet>
+            </Logic>
+
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CDisplayBehaviorAnimation</Class>
+            </Display>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CStationaryFightBehaviorProps">
+                <Class>EGL::CStationaryFightBehavior</Class>
+                <DefendTL>TL_MILITARY_DEFEND</DefendTL>
+                <MoveTaskList>TL_KNIGHT_WALK</MoveTaskList>
+                <DefendRange>0</DefendRange>
+                <AttackMoveRange>0</AttackMoveRange>
+
+                <AmmunitionType>G_CatapultAmmunition</AmmunitionType>
+                <AmmunitionLimit>10</AmmunitionLimit>
+
+                <ConstructionSiteType>U_MilitaryBallista_BuildingSite</ConstructionSiteType>
+                <ConstructionDelay>5000</ConstructionDelay>
+
+               <TargetCategoryList>
+                    <!-- Walls -->
+                    <TargetCategory>
+                        <DisableAutoAttack>true</DisableAutoAttack>
+                        <IgnoreGuards>true</IgnoreGuards>
+                        <EntityCategoryList>
+                            <EntityCategory>CityWallGate</EntityCategory>
+                            <EntityCategory>CityWallSegment</EntityCategory>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                        </EntityCategoryList>
+
+                        <AttackModeList>
+                            <AttackMode>
+                                <BattleTL>TL_BATTLE_CATAPULT</BattleTL>
+                                <!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
+                                <ApplyDamageModifiers>false</ApplyDamageModifiers>
+                                <MinRange>1200</MinRange>
+                                <!-- The max range is chosen to allow defending against catapults. It must be adapted if the segment max length is changed -->
+                                <MaxRange>2675</MaxRange>
+                                <ProjectileEffect>E_Catapult_Fire_Wall</ProjectileEffect>
+                                <MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
+                                <CanAttackOverWalls>true</CanAttackOverWalls>
+                                <CooldownThousandths>5000</CooldownThousandths>
+                                <ConsumeAmmunition>true</ConsumeAmmunition>
+                                <Damage>
+                                    <DiceCount>0</DiceCount>
+                                    <FaceCount>0</FaceCount>
+                                    <BaseValue>40</BaseValue>
+                                </Damage>
+                                <BuildingFireSize>20</BuildingFireSize>
+                                <DamageRadiusList>
+                                    <!-- Must be sorted from inner to outer. -->
+                                    <DamageRadius> <Radius>200</Radius> <Percentage>100</Percentage> </DamageRadius>
+                                    <DamageRadius> <Radius>400</Radius> <Percentage> 50</Percentage> </DamageRadius>
+                                    <DamageRadius> <Radius>600</Radius> <Percentage> 25</Percentage> </DamageRadius>
+                                </DamageRadiusList>
+                            </AttackMode>
+                        </AttackModeList>
+                    </TargetCategory>
+
+                    <!-- Palisades -->
+                    <TargetCategory>
+                        <DisableAutoAttack>true</DisableAutoAttack>
+                        <IgnoreGuards>true</IgnoreGuards>
+                        <EntityCategoryList>
+                            <EntityCategory>PalisadeSegment</EntityCategory>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                        </EntityCategoryList>
+                        <AttackModeList>
+                            <AttackMode>
+                                <BattleTL>TL_BATTLE_CATAPULT</BattleTL>
+                                <!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
+                                <ApplyDamageModifiers>false</ApplyDamageModifiers>
+                                <MinRange>1000</MinRange>
+                                <!-- The max range is chosen to allow defending against catapults. It must be adapted if the segment max length is changed -->
+                                <MaxRange>2675</MaxRange>
+                                <ProjectileEffect>E_Catapult_Fire_Palisade</ProjectileEffect>
+                                <MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
+                                <CanAttackOverWalls>true</CanAttackOverWalls>
+                                <CooldownThousandths>5000</CooldownThousandths>
+                                <ConsumeAmmunition>true</ConsumeAmmunition>
+                                <Damage>
+                                    <DiceCount>0</DiceCount>
+                                    <FaceCount>0</FaceCount>
+                                    <BaseValue>40</BaseValue>
+                                </Damage>
+                                <BuildingFireSize>20</BuildingFireSize>
+                                <DamageRadiusList>
+                                    <!-- Must be sorted from inner to outer. -->
+                                    <DamageRadius> <Radius>200</Radius> <Percentage>100</Percentage> </DamageRadius>
+                                    <DamageRadius> <Radius>400</Radius> <Percentage> 50</Percentage> </DamageRadius>
+                                    <DamageRadius> <Radius>600</Radius> <Percentage> 25</Percentage> </DamageRadius>
+                                </DamageRadiusList>
+                            </AttackMode>
+                        </AttackModeList>
+                    </TargetCategory>
+
+                    <!-- Buildings -->
+                    <TargetCategory>
+                        <DisableAutoAttack>true</DisableAutoAttack>
+                        <IgnoreGuards>true</IgnoreGuards>
+                        <EntityCategoryList>
+                            <EntityCategory>AttackableBuilding</EntityCategory>
+							<EntityCategory/>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                        </EntityCategoryList>
+                        <AttackModeList>
+                            <AttackMode>
+                                <BattleTL>TL_BATTLE_CATAPULT</BattleTL>
+                                <!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
+                                <ApplyDamageModifiers>false</ApplyDamageModifiers>
+                                <MinRange>1000</MinRange>
+                                <!-- The max range is chosen to allow defending against catapults. It must be adapted if the segment max length is changed -->
+                                <MaxRange>2675</MaxRange>
+                                <ProjectileEffect>E_Catapult_Fire</ProjectileEffect>
+                                <MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
+                                <CanAttackOverWalls>true</CanAttackOverWalls>
+                                <CooldownThousandths>5000</CooldownThousandths>
+                                <ConsumeAmmunition>true</ConsumeAmmunition>
+                                <Damage>
+                                    <DiceCount>0</DiceCount>
+                                    <FaceCount>0</FaceCount>
+                                    <BaseValue>40</BaseValue>
+                                </Damage>
+                                <BuildingFireSize>20</BuildingFireSize>
+                                <DamageRadiusList>
+                                    <!-- Must be sorted from inner to outer. -->
+                                    <DamageRadius> <Radius>200</Radius> <Percentage>100</Percentage> </DamageRadius>
+                                    <DamageRadius> <Radius>400</Radius> <Percentage> 50</Percentage> </DamageRadius>
+                                    <DamageRadius> <Radius>600</Radius> <Percentage> 25</Percentage> </DamageRadius>
+                                </DamageRadiusList>
+                            </AttackMode>
+                        </AttackModeList>
+                    </TargetCategory>
+
+				   <!-- Dragon -->
+				   <TargetCategory>
+					   <DisableAutoAttack>true</DisableAutoAttack>
+					   <IgnoreGuards>true</IgnoreGuards>
+					   <EntityCategoryList>
+						   <EntityCategory>Dragon</EntityCategory>
+						   <EntityCategory/>
+						   <EntityCategory/>
+						   <EntityCategory/>
+						   <EntityCategory/>
+						   <EntityCategory/>
+					   </EntityCategoryList>
+					   <AttackModeList>
+						   <AttackMode>
+							   <BattleTL>TL_BATTLE_CATAPULT</BattleTL>
+							   <!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
+							   <ApplyDamageModifiers>false</ApplyDamageModifiers>
+							   <MinRange>1000</MinRange>
+							   <!-- The max range is chosen to allow defending against catapults. It must be adapted if the segment max length is changed -->
+							   <MaxRange>2675</MaxRange>
+							   <ProjectileEffect>E_Catapult_Fire_Fly</ProjectileEffect>
+							   <MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
+							   <CanAttackOverWalls>true</CanAttackOverWalls>
+							   <CooldownThousandths>5000</CooldownThousandths>
+							   <ConsumeAmmunition>true</ConsumeAmmunition>
+							   <Damage>
+								   <DiceCount>0</DiceCount>
+								   <FaceCount>0</FaceCount>
+								   <BaseValue>80</BaseValue>
+							   </Damage>
+						   </AttackMode>
+					   </AttackModeList>
+				   </TargetCategory>
+
+				   <!-- Military units -->
+				   <TargetCategory>
+					   <DisableAutoAttack>true</DisableAutoAttack>
+					   <IgnoreGuards>true</IgnoreGuards>
+					   <EntityCategoryList>
+						   <EntityCategory>Military</EntityCategory>
+						   <EntityCategory/>
+						   <EntityCategory/>
+						   <EntityCategory/>
+						   <EntityCategory/>
+						   <EntityCategory/>
+					   </EntityCategoryList>
+					   <AttackModeList>
+						   <AttackMode>
+							   <BattleTL>TL_BATTLE_CATAPULT</BattleTL>
+							   <!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
+							   <ApplyDamageModifiers>false</ApplyDamageModifiers>
+							   <MinRange>1000</MinRange>
+							   <!-- The max range is chosen to allow defending against catapults. It must be adapted if the segment max length is changed -->
+							   <MaxRange>2675</MaxRange>
+							   <ProjectileEffect>E_Catapult_Fire</ProjectileEffect>
+							   <MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
+							   <CanAttackOverWalls>true</CanAttackOverWalls>
+							   <CooldownThousandths>5000</CooldownThousandths>
+							   <ConsumeAmmunition>true</ConsumeAmmunition>
+							   <Damage>
+								   <DiceCount>0</DiceCount>
+								   <FaceCount>0</FaceCount>
+								   <BaseValue>40</BaseValue>
+							   </Damage>
+							   <BuildingFireSize>20</BuildingFireSize>
+							   <DamageRadiusList>
+								   <!-- Must be sorted from inner to outer. -->
+								   <DamageRadius>
+									   <Radius>200</Radius>
+									   <Percentage>100</Percentage>
+								   </DamageRadius>
+								   <DamageRadius>
+									   <Radius>400</Radius>
+									   <Percentage> 50</Percentage>
+								   </DamageRadius>
+								   <DamageRadius>
+									   <Radius>600</Radius>
+									   <Percentage> 25</Percentage>
+								   </DamageRadius>
+							   </DamageRadiusList>
+						   </AttackMode>
+					   </AttackModeList>
+				   </TargetCategory>
+
+                    <!-- Heavy Weapons (the only TargetCategory that is auto attacked!) -->
+                    <TargetCategory>
+                        <IgnoreGuards>true</IgnoreGuards>
+                        <EntityCategoryList>
+                            <EntityCategory>HeavyWeapon</EntityCategory>
+                            <EntityCategory>Trebuchet</EntityCategory>
+							<EntityCategory/>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                        </EntityCategoryList>
+                        <AttackModeList>
+                            <AttackMode>
+                                <BattleTL>TL_BATTLE_CATAPULT</BattleTL>
+                                <!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
+                                <ApplyDamageModifiers>false</ApplyDamageModifiers>
+                                <MinRange>1000</MinRange>
+                                <!-- The max range is chosen to allow defending against catapults. It must be adapted if the segment max length is changed -->
+                                <MaxRange>2675</MaxRange>
+                                <ProjectileEffect>E_Catapult_Fire</ProjectileEffect>
+                                <MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
+                                <CanAttackOverWalls>true</CanAttackOverWalls>
+                                <CooldownThousandths>5000</CooldownThousandths>
+                                <ConsumeAmmunition>true</ConsumeAmmunition>
+                                <Damage>
+                                    <DiceCount>0</DiceCount>
+                                    <FaceCount>0</FaceCount>
+                                    <BaseValue>40</BaseValue>
+                                </Damage>
+                                <BuildingFireSize>20</BuildingFireSize>
+                                <DamageRadiusList>
+                                    <!-- Must be sorted from inner to outer. -->
+                                    <DamageRadius> <Radius>200</Radius> <Percentage>100</Percentage> </DamageRadius>
+                                    <DamageRadius> <Radius>400</Radius> <Percentage> 50</Percentage> </DamageRadius>
+                                    <DamageRadius> <Radius>600</Radius> <Percentage> 25</Percentage> </DamageRadius>
+                                </DamageRadiusList>
+                            </AttackMode>
+                        </AttackModeList>
+                    </TargetCategory>
+
+                </TargetCategoryList>
+            </Logic>
+
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CSiegeCartBehavior</Class>
+            </Display>
+        </Behavior>
+
+<!-- Required for defense engines -->
+        <Behavior>
+            <Logic classname="EGL::CAutomaticWeaponBehaviorProps">
+                <Class>EGL::CAutomaticWeaponBehavior</Class>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::CParticleEffectAttachmentBehavior</Class>
+            </Logic>
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CParticleEffectAttachmentBehavior</Class>
+            </Display>
+        </Behavior>
+
+       <Behavior>
+         <Logic classname="EGL::CBehaviorPropsDying">
+               <Class>EGL::CBehaviorDying</Class>
+               <DyingTaskList>TL_DIE_BALLISTA</DyingTaskList>
+    	       <DeadEntity>U_MilitaryBallista_Collapse</DeadEntity>
+         </Logic>
+       </Behavior>
+
+    </Behaviors>
+
+    <MapEditor>
+        <TreePosition>Units\Military\Heavy Weapons</TreePosition>
+        <ShowInTree>false</ShowInTree>
+        <Clime>Generic</Clime>
+        <Scalable>false</Scalable>
+    </MapEditor>
+</root>
