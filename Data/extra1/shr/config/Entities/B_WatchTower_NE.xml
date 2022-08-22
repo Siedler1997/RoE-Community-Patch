@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+    <Display classname="ED::CReplaceUpgradeBuildingProps">
+        <Class>ED::CReplaceUpgradeBuilding</Class>
+        <Model>Buildings/B_WallGateTurret_NE</Model>
+        <Anims/>
+        <ConstructionSite>Buildings/B_WallTurret_BuildingSite_NE</ConstructionSite>
+    </Display>
+
+    <Logic classname="EGL::CUpgradableBuildingProps">
+        <Class>EGL::CUpgradableBuilding</Class>
+        <AccessCategory>AccessCategoryBuilding</AccessCategory>
+        <EntityCategories>
+			<EntityCategory>Wall</EntityCategory>
+        </EntityCategories>
+		<RepairBuildingTL>TL_WORKER_REPAIR</RepairBuildingTL>
+        <NeedsPlayer>true</NeedsPlayer>
+        <ForceNoPlayer>false</ForceNoPlayer>
+        <Worker>U_WallConstructionWorker</Worker> <!-- construction only -->
+        <MaxWorkers>0</MaxWorkers>                <!-- construction only -->
+        <MaxHealth>800</MaxHealth>
+        <Exploration>45</Exploration>
+		<SoundImpactType>Stone</SoundImpactType>
+        <CanBeKnockedDown>true</CanBeKnockedDown>
+        <FlattenOnBuild>true</FlattenOnBuild>
+        <MayRemoveEntities>true</MayRemoveEntities>
+	    <IsHeightLocking>true</IsHeightLocking>
+        <CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim>
+        <MaxFloorFireSize>0</MaxFloorFireSize>
+		<Cost>
+			<GoodAmount>
+				<GoodType>G_Stone</GoodType>
+				<Amount>12</Amount>
+			</GoodAmount>
+		</Cost>
+
+		<ApproachPos>
+			<X>0</X>
+			<Y>400</Y>
+		</ApproachPos>
+		<ApproachR>0</ApproachR>
+		<DoorPos>
+			<X>0</X>
+			<Y>0</Y>
+		</DoorPos>
+		<BlockingAreas>
+			<BlockingArea>
+				<Blocked1>
+					<X>-200</X>
+					<Y>-200</Y>
+				</Blocked1>
+				<Blocked2>
+					<X>200</X>
+					<Y>200</Y>
+				</Blocked2>
+			</BlockingArea>
+		</BlockingAreas>
+		<BuildBlockingAreas>
+			<BuildBlockingArea>
+				<Blocked1>
+					<X>-300</X>
+					<Y>-300</Y>
+				</Blocked1>
+				<Blocked2>
+					<X>300</X>
+					<Y>300</Y>
+				</Blocked2>
+			</BuildBlockingArea>
+		</BuildBlockingAreas>
+
+        <ConstructionInfo>
+            <Time>18</Time>
+            <BuilderSlots>
+                <BuilderSlot>
+                    <Position>
+                        <X>100</X>
+                        <Y>-200</Y>
+                    </Position>
+                    <Orientation>0</Orientation>
+                </BuilderSlot>
+            </BuilderSlots>
+            <ConstructionSite>B_BuildingPlot_WallTurret</ConstructionSite>
+        </ConstructionInfo>
+
+
+    </Logic>
+
+    <MapEditor>
+        <TreePosition>CommunityPatch\buildings\camps</TreePosition>
+        <ShowInTree>false</ShowInTree>
+            <Clime>NorthEurope</Clime>
+        <Scalable>false</Scalable>
+        <TemplateResistant>true</TemplateResistant>
+    </MapEditor>
+</root>

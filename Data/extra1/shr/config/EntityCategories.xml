@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<EntityCategories>
+
+    <Id>OuterRimBuilding</Id>
+    
+    <Id>VillageStorehouse</Id>
+    <Id>NonTorchable</Id>
+
+    <Id>GrainField</Id>
+    <Id>BeeHive</Id>
+    <Id>CattlePasture</Id>
+    <Id>SheepPasture</Id>
+    
+    <Id>G_Grain_Supplier</Id>
+    <Id>G_Milk_Supplier</Id>
+    <Id>G_Stone_Supplier</Id>
+    <Id>G_Water_Supplier</Id>
+    <Id>G_Wood_Supplier</Id>
+    <Id>G_Wool_Supplier</Id>
+    <Id>G_Honeycomb_Supplier</Id>
+    <Id>G_Iron_Supplier</Id>
+    <Id>G_Herb_Supplier</Id>
+    <Id>G_Carcass_Supplier</Id>
+    <Id>G_RawFish_Supplier</Id>
+    <Id>G_Sausage_Supplier</Id>
+    <Id>G_Sword_Supplier</Id>
+    <Id>G_Bow_Supplier</Id>
+    <Id>GC_Entertainment_Supplier</Id>
+    <Id>GC_Food_Supplier</Id>
+    <Id>GC_Hygiene_Supplier</Id>
+    <Id>GC_Luxury_Supplier</Id>
+    <Id>GC_Medicine_Supplier</Id>
+    <Id>GC_Weapon_Supplier</Id>
+    <Id>GC_Clothes_Supplier</Id>
+
+    <Id>HuntableMeat</Id>
+
+    <Id>AttackableBuilding</Id>
+    <Id>AttackableSettler</Id>
+    <Id>AttackableMerchant</Id>
+    <Id>AttackableAnimal</Id>
+    <Id>SiegeEngine</Id>
+    <Id>Trebuchet</Id>
+    <Id>CityWallSegment</Id>
+    <Id>CityWallGate</Id>
+    <Id>PalisadeSegment</Id>
+    <Id>Turret</Id>
+    
+    <Id>GathererBuilding</Id>
+    <Id>FarmerBuilding</Id>
+    <Id>Spouse</Id>
+
+    <!-- Community Patch -->
+
+    <Id>GC_LeatherArmor_Supplier</Id>
+    <Id>GC_PlateArmor_Supplier</Id>
+
+    <Id>Sword</Id>
+    <Id>Bow</Id>
+    <Id>Spear</Id>
+    <Id>Cavalry</Id>
+    <Id>Catapult</Id>
+    <Id>Balista</Id>
+    <Id>Cannon</Id>
+    
+	<Id>Dragon</Id>
+    
+</EntityCategories>

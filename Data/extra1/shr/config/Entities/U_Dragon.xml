@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<root>
+	<Display classname="ED::CEntityProps">
+		<Class>ED::CDisplaySettler</Class>
+		<Model>Units\Military\U_Dragon</Model>
+		<!--<LodDistance>3000</LodDistance>-->
+	</Display>
+
+	<Logic classname="EGL::CSettlerProps">
+		<Class>EGL::CSettler</Class>
+		<AccessCategory>AccessCategoryAttackableSettler</AccessCategory>
+		<PlayerSectorType>PlayerSectorTypeCivil</PlayerSectorType>
+		<MilMetaFormationMemberType>MilMetaFormationMemberTypeMelee</MilMetaFormationMemberType>
+		<NeedsPlayer>true</NeedsPlayer>
+		<ForceNoPlayer>false</ForceNoPlayer>
+		<MaxHealth>5000</MaxHealth>
+		<HealingSeconds>1</HealingSeconds>
+		<HealingPoints>25</HealingPoints>
+		<IsAttackable>true</IsAttackable>
+		<AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
+		<Exploration>20</Exploration>
+		<IdleTaskList>TL_MILITARY_DEFEND</IdleTaskList>
+		<CanDrown>false</CanDrown>
+		<IsSelectable>true</IsSelectable>
+		<DoesntAlert>
+			<EntityType>BeeHive</EntityType>
+		</DoesntAlert>
+		<Familiar>
+			<With>SheepPasture</With>
+			<With>CattlePasture</With>
+		</Familiar>
+
+		<EntityCategories>
+			<EntityCategory>Military</EntityCategory>
+			<EntityCategory>Dragon</EntityCategory>
+		</EntityCategories>
+		<SoundImpactType>Leather</SoundImpactType>
+	</Logic>
+
+	<Behaviors>
+		<Behavior>
+			<Logic classname="EGL::CAnimationBehaviorExProps">
+				<Class>EGL::CBehaviorAnimationEx</Class>
+				<AnimSet>SET_DRAGON</AnimSet>
+			</Logic>
+			<Display classname="ED::CBehaviorProps">
+				<Class>ED::CDisplayBehaviorAnimation</Class>
+			</Display>
+		</Behavior>
+
+		<Behavior>
+			<Logic classname="EGL::CMilitaryMovementBehaviorProps">
+				<Class>EGL::CMilitaryMovementBehavior</Class>
+				<Speed>1000</Speed>
+				<RotationSpeed>200</RotationSpeed>
+			</Logic>
+			<Display classname="ED::CBehaviorProps">
+				<Class>ED::CDisplayBehaviorMovement</Class>
+			</Display>
+		</Behavior>
+
+		<Behavior>
+			<Logic classname="EGL::CBehaviorPropsDying">
+				<Class>EGL::CBehaviorDying</Class>
+				<DyingTaskList>TL_DIE</DyingTaskList>
+			</Logic>
+		</Behavior>
+		<Behavior>
+			<Logic classname="EGL::CFightBehaviorProps">
+				<Class>EGL::CFightBehavior</Class>
+				<DefendTL>TL_MILITARY_DEFEND</DefendTL>
+				<MoveTaskList>TL_PREDATOR_RUN</MoveTaskList>
+				<AttackRunTaskList>TL_PREDATOR_RUN</AttackRunTaskList>
+				<DefendRange>1800</DefendRange>
+				<AttackMoveRange>1800</AttackMoveRange>
+				<IdleWhileDefended>false</IdleWhileDefended>
+
+				<AmmunitionType>G_TorchAmmunition</AmmunitionType>
+				<AmmunitionLimit>1</AmmunitionLimit>
+				
+				<TargetCategoryList>
+
+					<!-- Walls -->
+					<TargetCategory>
+						<DisableAutoAttack>true</DisableAutoAttack>
+						<IgnoreGuards>true</IgnoreGuards>
+						<EntityCategoryList>
+							<EntityCategory>CityWallGate</EntityCategory>
+							<EntityCategory>CityWallSegment</EntityCategory>
+							<EntityCategory/>
+							<EntityCategory/>
+							<EntityCategory/>
+							<EntityCategory/>
+						</EntityCategoryList>
+						<AttackModeList>
+							<AttackMode>
+								<BattleTL>TL_BATTLE_CATAPULT</BattleTL>
+								<!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
+								<ApplyDamageModifiers>false</ApplyDamageModifiers>
+
+								<AttackAnim>U_Donkey_Trading_Fight</AttackAnim>
+								<MinRange>650</MinRange>
+								<MaxRange>2400</MaxRange>
+								<ProjectileEffect>E_Dragon_Fire_Wall</ProjectileEffect>
+								<MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
+								<CanAttackOverWalls>true</CanAttackOverWalls>
+								<CooldownThousandths>3000</CooldownThousandths>
+								<ConsumeAmmunition>false</ConsumeAmmunition>
+								<ProjectileOffsetFront>650</ProjectileOffsetFront>
+								<Damage>
+									<DiceCount>0</DiceCount>
+									<FaceCount>0</FaceCount>
+									<BaseValue>100</BaseValue>
+								</Damage>
+								<BuildingFireSize>20</BuildingFireSize>
+								<DamageRadiusList>
+									<!-- Must be sorted from inner to outer. -->
+									<DamageRadius>
+										<Radius>150</Radius>
+										<Percentage>100</Percentage>
+									</DamageRadius>
+									<DamageRadius>
+										<Radius>300</Radius>
+										<Percentage> 50</Percentage>
+									</DamageRadius>
+									<DamageRadius>
+										<Radius>450</Radius>
+										<Percentage> 25</Percentage>
+									</DamageRadius>
+								</DamageRadiusList>
+							</AttackMode>
+						</AttackModeList>
+					</TargetCategory>
+
+					<!-- Palisades -->
+					<TargetCategory>
+						<DisableAutoAttack>true</DisableAutoAttack>
+						<IgnoreGuards>true</IgnoreGuards>
+						<EntityCategoryList>
+							<EntityCategory>PalisadeSegment</EntityCategory>
+							<EntityCategory/>
+							<EntityCategory/>
+							<EntityCategory/>
+							<EntityCategory/>
+							<EntityCategory/>
+						</EntityCategoryList>
+						<AttackModeList>
+							<AttackMode>
+								<BattleTL>TL_BATTLE_CATAPULT</BattleTL>
+								<!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
+								<ApplyDamageModifiers>false</ApplyDamageModifiers>
+
+								<AttackAnim>U_Donkey_Trading_Fight</AttackAnim>
+								<MinRange>650</MinRange>
+								<MaxRange>2400</MaxRange>
+								<ProjectileEffect>E_Dragon_Fire_Palisade</ProjectileEffect>
+								<MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
+								<CanAttackOverWalls>true</CanAttackOverWalls>
+								<CooldownThousandths>3000</CooldownThousandths>
+								<ConsumeAmmunition>false</ConsumeAmmunition>
+								<ProjectileOffsetFront>650</ProjectileOffsetFront>
+								<Damage>
+									<DiceCount>0</DiceCount>
+									<FaceCount>0</FaceCount>
+									<BaseValue>100</BaseValue>
+								</Damage>
+								<BuildingFireSize>20</BuildingFireSize>
+								<DamageRadiusList>
+									<!-- Must be sorted from inner to outer. -->
+									<DamageRadius>
+										<Radius>150</Radius>
+										<Percentage>100</Percentage>
+									</DamageRadius>
+									<DamageRadius>
+										<Radius>300</Radius>
+										<Percentage> 50</Percentage>
+									</DamageRadius>
+									<DamageRadius>
+										<Radius>450</Radius>
+										<Percentage> 25</Percentage>
+									</DamageRadius>
+								</DamageRadiusList>
+							</AttackMode>
+						</AttackModeList>
+					</TargetCategory>
+
+					<!-- Buildings and carnivores -->
+					<TargetCategory>
+						<DisableAutoAttack>true</DisableAutoAttack>
+						<IgnoreGuards>true</IgnoreGuards>
+						<EntityCategoryList>
+							<EntityCategory>AttackableBuilding</EntityCategory>
+							<EntityCategory>Trebuchet</EntityCategory>
+							<EntityCategory>AttackableAnimal</EntityCategory>
+							<EntityCategory/>
+							<EntityCategory/>
+							<EntityCategory/>
+						</EntityCategoryList>
+						<AttackModeList>
+							<AttackMode>
+								<BattleTL>TL_BATTLE_CATAPULT</BattleTL>
+								<!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
+								<ApplyDamageModifiers>false</ApplyDamageModifiers>
+
+								<AttackAnim>U_Donkey_Trading_Fight</AttackAnim>
+								<MinRange>650</MinRange>
+								<MaxRange>2400</MaxRange>
+								<ProjectileEffect>E_Dragon_Fire</ProjectileEffect>
+								<MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
+								<CanAttackOverWalls>true</CanAttackOverWalls>
+								<CooldownThousandths>3000</CooldownThousandths>
+								<ConsumeAmmunition>false</ConsumeAmmunition>
+								<ProjectileOffsetFront>650</ProjectileOffsetFront>
+								<Damage>
+									<DiceCount>0</DiceCount>
+									<FaceCount>0</FaceCount>
+									<BaseValue>100</BaseValue>
+								</Damage>
+								<BuildingFireSize>20</BuildingFireSize>
+								<DamageRadiusList>
+									<!-- Must be sorted from inner to outer. -->
+									<DamageRadius>
+										<Radius>150</Radius>
+										<Percentage>100</Percentage>
+									</DamageRadius>
+									<DamageRadius>
+										<Radius>300</Radius>
+										<Percentage> 50</Percentage>
+									</DamageRadius>
+									<DamageRadius>
+										<Radius>450</Radius>
+										<Percentage> 25</Percentage>
+									</DamageRadius>
+								</DamageRadiusList>
+							</AttackMode>
+						</AttackModeList>
+					</TargetCategory>
+
+					<!-- And the rest ... -->
+					<TargetCategory>
+						<IgnoreGuards>true</IgnoreGuards>
+						<EntityCategoryList>
+							<EntityCategory>HeavyWeapon</EntityCategory>
+							<EntityCategory>Military</EntityCategory>
+							<EntityCategory>AttackableSettler</EntityCategory>
+							<EntityCategory/>
+							<EntityCategory/>
+							<EntityCategory/>
+						</EntityCategoryList>
+						<AttackModeList>
+							<AttackMode>
+								<BattleTL>TL_BATTLE_CATAPULT</BattleTL>
+								<!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
+								<ApplyDamageModifiers>false</ApplyDamageModifiers>
+
+								<AttackAnim>U_Donkey_Trading_Fight</AttackAnim>
+								<MinRange>650</MinRange>
+								<MaxRange>2400</MaxRange>
+								<ProjectileEffect>E_Dragon_Fire</ProjectileEffect>
+								<MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
+								<CanAttackOverWalls>true</CanAttackOverWalls>
+								<CooldownThousandths>3000</CooldownThousandths>
+								<ConsumeAmmunition>false</ConsumeAmmunition>
+								<ProjectileOffsetFront>650</ProjectileOffsetFront>
+								<Damage>
+									<DiceCount>0</DiceCount>
+									<FaceCount>0</FaceCount>
+									<BaseValue>100</BaseValue>
+								</Damage>
+								<BuildingFireSize>20</BuildingFireSize>
+								<DamageRadiusList>
+									<!-- Must be sorted from inner to outer. -->
+									<DamageRadius>
+										<Radius>150</Radius>
+										<Percentage>100</Percentage>
+									</DamageRadius>
+									<DamageRadius>
+										<Radius>300</Radius>
+										<Percentage> 50</Percentage>
+									</DamageRadius>
+									<DamageRadius>
+										<Radius>450</Radius>
+										<Percentage> 25</Percentage>
+									</DamageRadius>
+								</DamageRadiusList>
+							</AttackMode>
+						</AttackModeList>
+					</TargetCategory>
+				</TargetCategoryList>
+			</Logic>
+		</Behavior>
+
+		<Behavior>
+			<Logic classname="EGL::CBehaviorProps">
+				<Class>EGL::CParticleEffectAttachmentBehavior</Class>
+			</Logic>
+			<Display classname="ED::CBehaviorProps">
+				<Class>ED::CParticleEffectAttachmentBehavior</Class>
+			</Display>
+		</Behavior>
+	</Behaviors>
+
+	<MapEditor>
+		<TreePosition>CommunityPatch\Animals\Aggressive</TreePosition>
+		<ShowInTree>true</ShowInTree>
+		<Clime>Generic</Clime>
+		<Scalable>false</Scalable>
+	</MapEditor>
+</root>

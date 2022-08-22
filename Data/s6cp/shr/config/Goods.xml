@@ -2298,7 +2298,7 @@
             </Display>
         </Good>
 
-        <!-- COMMUNITY PACHT GOODS -->
+        <!-- COMMUNITY PATCH GOODS -->
 
         <Good id="G_LeatherArmor">
             <Logic classname="EGL::CGoodProps">
