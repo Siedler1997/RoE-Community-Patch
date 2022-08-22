@@ -180,7 +180,7 @@
         <ProducedUnitTypeList>
             <ProducedUnitType>U_MilitarySword</ProducedUnitType>
 			<ProducedUnitType>U_MilitarySword_RedPrince</ProducedUnitType>
-			<ProducedUnitType>U_MilitaryPoleArm</ProducedUnitType>
+			<ProducedUnitType>U_MilitarySpear</ProducedUnitType>
 			<ProducedUnitType>U_MilitaryCavalry</ProducedUnitType>
 			<ProducedUnitType>U_MilitaryBandit_Melee_ME</ProducedUnitType>
 			<ProducedUnitType>U_MilitaryBandit_Melee_NE</ProducedUnitType>
@@ -339,7 +339,7 @@
 				</Cost>
 			</UnitType>
 			<UnitType>
-				<EntityType>U_MilitaryPoleArm</EntityType>
+				<EntityType>U_MilitarySpear</EntityType>
 				<Cost>
 					<GoodAmount>
 						<GoodType>G_Gold</GoodType>

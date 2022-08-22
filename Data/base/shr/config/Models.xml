@@ -14622,7 +14622,7 @@
 			<!--<Effect>SettlerRimPlayerColorSpecular</Effect>-->
 			<SelectionTexture>Selection_Soldier</SelectionTexture>
 			<OcclusionReceiver>True</OcclusionReceiver>
-			<DefaultAnimID>Military\U_MilitaryPoleArm_Run</DefaultAnimID>
+			<DefaultAnimID>Military\U_MilitarySpear_Run</DefaultAnimID>
 		</Model>
 
 		<Model id="Doodads\D_X_Beautification_Dragon">
@@ -14638,7 +14638,7 @@
 			<Effect>SettlerThroneRoom</Effect>
 			<SelectionTexture>Selection_Soldier</SelectionTexture>
 			<OcclusionReceiver>True</OcclusionReceiver>
-			<DefaultAnimID>Military\U_MilitaryPoleArm_Run</DefaultAnimID>
+			<DefaultAnimID>Military\U_Dragon_Fly</DefaultAnimID>
 		</Model>
         
     </Models>
