@@ -1,1 +1,0 @@
-Settlers6R.exe -ADDDATADIR:s6cp/shr -extra1

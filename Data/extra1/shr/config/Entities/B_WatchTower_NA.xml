@@ -85,7 +85,7 @@
     </Logic>
 
     <MapEditor>
-        <TreePosition>CommunityPatch\buildings\camps</TreePosition>
+        <TreePosition>buildings\camps</TreePosition>
         <ShowInTree>false</ShowInTree>
             <Clime>NorthAfrica</Clime>
         <Scalable>false</Scalable>

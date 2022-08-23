@@ -143,7 +143,7 @@
 	</Behaviors>
 
 	<MapEditor>
-		<TreePosition>CommunityPatch\Animals\Aggressive</TreePosition>
+		<TreePosition>Animals\Aggressive</TreePosition>
 		<ShowInTree>true</ShowInTree>
 		<Clime>Generic</Clime>
 		<Scalable>false</Scalable>

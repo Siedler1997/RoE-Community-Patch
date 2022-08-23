@@ -268,7 +268,7 @@
 
     </Behaviors>
     <MapEditor>
-        <TreePosition>CommunityPatch\Units\Workers</TreePosition>
+        <TreePosition>Units\Workers</TreePosition>
         <ShowInTree>false</ShowInTree>
         <Clime>Generic</Clime>
         <Scalable>false</Scalable>

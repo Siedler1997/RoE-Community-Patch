@@ -115,7 +115,7 @@
 
     </Behaviors>
     <MapEditor>
-        <TreePosition>CommunityPatch\buildings\camps</TreePosition>
+        <TreePosition>buildings\camps</TreePosition>
         <ShowInTree>false</ShowInTree>
             <Clime>MiddleEurope</Clime>
         <Scalable>false</Scalable>

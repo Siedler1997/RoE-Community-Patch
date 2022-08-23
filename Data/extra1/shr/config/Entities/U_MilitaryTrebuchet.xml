@@ -355,7 +355,7 @@
 	</Behaviors>
 
 	<MapEditor>
-		<TreePosition>CommunityPatch\Units\Military\Heavy Weapons</TreePosition>
+		<TreePosition>Units\Military\Heavy Weapons</TreePosition>
 		<ShowInTree>false</ShowInTree>
 		<Clime>Generic</Clime>
 		<Scalable>false</Scalable>

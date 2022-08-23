@@ -171,7 +171,7 @@
     </Behaviors>
 
     <MapEditor>
-        <TreePosition>CommunityPatch\Units\Mission</TreePosition>
+        <TreePosition>Units\Mission</TreePosition>
         <ShowInTree>true</ShowInTree>
         <Clime>Generic</Clime>
         <Scalable>false</Scalable>

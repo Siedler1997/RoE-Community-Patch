@@ -763,6 +763,13 @@
                         </GoodAmount>
                         <ProviderCategory>G_Iron_Supplier</ProviderCategory>
                     </Resource>
+                    <Resource>
+                        <GoodAmount>
+                            <GoodType>G_Wool</GoodType>
+                            <Amount>1</Amount>
+                        </GoodAmount>
+                        <ProviderCategory>G_Wool_Supplier</ProviderCategory>
+                    </Resource>
                 </RequiredResources>
             </Logic>
             <Display classname="ED::CDisplayGoodProps">
