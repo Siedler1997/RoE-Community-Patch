@@ -14,7 +14,7 @@
         <MilMetaFormationMemberType>MilMetaFormationMemberTypeRanged</MilMetaFormationMemberType>
         <MaxHealth>90</MaxHealth>
         <HealingSeconds>10</HealingSeconds>
-        <HealingPoints>15</HealingPoints>
+        <HealingPoints>10</HealingPoints>
 
         <NeedsPlayer>true</NeedsPlayer>
         <ForceNoPlayer>false</ForceNoPlayer>

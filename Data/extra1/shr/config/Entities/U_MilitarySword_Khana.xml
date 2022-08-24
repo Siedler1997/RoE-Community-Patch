@@ -11,7 +11,7 @@
         <AccessCategory>AccessCategorySoldier</AccessCategory>
         <PlayerSectorType>PlayerSectorTypeMilitary</PlayerSectorType>
         <MilMetaFormationMemberType>MilMetaFormationMemberTypeMelee</MilMetaFormationMemberType>
-        <MaxHealth>120</MaxHealth>
+        <MaxHealth>150</MaxHealth>
         <HealingSeconds>10</HealingSeconds>
         <HealingPoints>20</HealingPoints>
 

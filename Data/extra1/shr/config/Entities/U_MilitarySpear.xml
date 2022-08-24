@@ -13,9 +13,9 @@
 		<PlayerSectorType>PlayerSectorTypeMilitary</PlayerSectorType>
 		<MilMetaFormationMemberType>MilMetaFormationMemberTypeMelee</MilMetaFormationMemberType>
 		<CostsCanBeModified>true</CostsCanBeModified>
-		<MaxHealth>180</MaxHealth>
+		<MaxHealth>120</MaxHealth>
 		<HealingSeconds>10</HealingSeconds>
-		<HealingPoints>30</HealingPoints>
+		<HealingPoints>10</HealingPoints>
 
 		<NeedsPlayer>true</NeedsPlayer>
 		<ForceNoPlayer>false</ForceNoPlayer>
@@ -142,7 +142,7 @@
 								<Damage>
 									<DiceCount>0</DiceCount>
 									<FaceCount>0</FaceCount>
-									<BaseValue>30</BaseValue>
+									<BaseValue>35</BaseValue>
 								</Damage>
 							</AttackMode>
 
@@ -195,7 +195,7 @@
 								<Damage>
 									<DiceCount>0</DiceCount>
 									<FaceCount>0</FaceCount>
-									<BaseValue>15</BaseValue>
+									<BaseValue>20</BaseValue>
 								</Damage>
 							</AttackMode>
 
