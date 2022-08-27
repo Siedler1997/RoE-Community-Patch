@@ -52,7 +52,7 @@ function InitTexturePositions()
     [Goods.G_Wood]                          = {1, 9},
     [Goods.G_Wool]                          = {2, 3},
     [Goods.G_Regalia]                       = {16, 4},
-    [Goods.G_PoorSpear]                     = {2, 16},
+    [Goods.G_PoorSpear]                     = {14, 12},
     [Goods.G_Spear]                         = {1, 16}
     
     }
@@ -107,6 +107,7 @@ function InitTexturePositions()
     [Entities.U_NPC_Castellan_NA]           = {7, 2, 1},
     [Entities.U_NPC_Castellan_SE]           = {7, 2, 1},
     [Entities.U_MilitarySpear]              = {9, 1, 1},
+    [Entities.U_Helbardier]                 = {9, 1, 1},
     [Entities.U_Dragon]                     = {7, 3},
 
     [Entities.U_TaxCollector]               = {14, 13},

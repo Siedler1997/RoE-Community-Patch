@@ -14625,6 +14625,14 @@
 			<DefaultAnimID>Military\U_MilitaryPoleArm_Run</DefaultAnimID>
 		</Model>
 
+		<Model id="Units\U_Helbardier">
+			<SelectionRadius>100</SelectionRadius>
+			<!--<Effect>SettlerRimPlayerColorSpecular</Effect>-->
+			<SelectionTexture>Selection_Soldier</SelectionTexture>
+			<OcclusionReceiver>True</OcclusionReceiver>
+			<DefaultAnimID>U_Helbardier_Run</DefaultAnimID>
+		</Model>
+
 		<Model id="Doodads\D_X_Beautification_Dragon">
 			<CastShadow>True</CastShadow>
 			<ShareShadowRaster>True</ShareShadowRaster>
@@ -14645,7 +14653,7 @@
 		<Model id="Goods\G_SpearSpearMaker01">
 			<Effect>SimpleObject</Effect>
 			<OcclusionCaster>False</OcclusionCaster>
-			<CastShadow>True</CastShadow>
+			<CastShadow>False</CastShadow>
 			<CloseUpModeCulling>True</CloseUpModeCulling>
 		</Model>
     </Models>

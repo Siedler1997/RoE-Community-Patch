@@ -437,6 +437,7 @@ function GUI_Military.SuspendClicked()
                 GUI.SendScriptCommand("Logic.DestroyEntity("..soldiers[2]..")")
             end
         end
+        Sound.FXPlay2DSound("ui\\menu_click")
         --[[
         if Logic.IsEntityInCategory(EntityID, EntityCategories.Leader) == 0 then
             --GUI.SendScriptCommand("Logic.DestroyEntity("..EntityID..")")

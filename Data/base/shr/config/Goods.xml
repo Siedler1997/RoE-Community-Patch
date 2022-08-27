@@ -875,8 +875,8 @@
 				<GoodCategory>GC_Weapon</GoodCategory>
 				<Value>0.2</Value>
 				<Worth>10</Worth>
-				<StandCarryAnimationCategory>StandCarryGood</StandCarryAnimationCategory>
-				<WalkCarryAnimationCategory>WalkCarryGood</WalkCarryAnimationCategory>
+				<StandCarryAnimationCategory>StandCarryBucket</StandCarryAnimationCategory>
+				<WalkCarryAnimationCategory>WalkCarryBucket</WalkCarryAnimationCategory>
 				<RequiredResources>
 					<Resource>
 						<GoodAmount>

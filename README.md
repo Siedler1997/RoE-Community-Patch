@@ -157,6 +157,7 @@ Folgende Änderungen wurden vorgenommen:
 		- Hauptspiel-Marktplätze haben ein Mouseover
 	- Bienenstöcke haben weniger Lebenspunkte (10 -> 5)
 	- Ziergebäude der Special Edition im Hauptspiel verfügbar
+	- Handelsposten-Baubutton hat einen etwas verständlicheren Tooltip
 - Hauptmenü
 	- AddOn nutzt weitgehend Hauptspiel-Hintergrund und Soundtrack
 	- Hintergrund ist tageszeitabhängig
@@ -174,7 +175,10 @@ Folgende Änderungen wurden vorgenommen:
 	- Ungenutztes Audio-Feedback von Rittern, Soldaten und Dieben wird nun verwendet
 	- Eisbären nutzen ihre richtige Sterbeanimation
 	- Maximale bzw. Standard-Kapazität von Stein- und Eisenminen etwas erhöht (250 -> 300)
-	- Geologeneinsätze kosten deutlich mehr Gold (250 -> 500)
+	- Geologeneinsätze 
+		- Kosten deutlich mehr Gold (250 -> 500)
+		- Haben einen verständlicheren Tooltip sowie einen eigenen Disabled-Tooltip
+		- Für Mapper: Können mit den neuen Technologie 'R_RefillStoneMine', 'R_RefillIronMine' und 'R_RefillCistern' verboten werden
 	- Steuern
 		- Maximale Anzahl an Steuereintreibern erhöht (6 -> 8)
 	- Bei Minimap-Benachrichtigung wird der auslösende Spieler erst entfernt, um Verwirrung zu vermeiden

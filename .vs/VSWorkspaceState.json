@@ -4,14 +4,13 @@
     "\\Data",
     "\\Data\\base",
     "\\Data\\base\\shr",
-    "\\Data\\base\\shr\\config",
-    "\\Data\\base\\shr\\config\\Entities",
+    "\\Data\\base\\shr\\menu\\Projects",
+    "\\Data\\base\\shr\\text\\bb",
+    "\\Data\\base\\shr\\text\\bb\\InGame",
     "\\Data\\extra1",
     "\\Data\\extra1\\shr",
-    "\\Data\\extra1\\shr\\graphics",
-    "\\Data\\extra1\\shr\\graphics\\Textures",
-    "\\Data\\extra1\\shr\\graphics\\Textures\\GUI_1200",
-    "\\Data\\extra1\\shr\\graphics\\Textures\\GUI_1200\\Loadscreens"
+    "\\Data\\extra1\\shr\\config"
   ],
+  "SelectedNode": "\\Data\\extra1\\shr\\config\\TechnologiesEx1.xml",
   "PreviewInSolutionExplorer": false
 }

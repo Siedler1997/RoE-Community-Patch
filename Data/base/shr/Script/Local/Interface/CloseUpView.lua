@@ -68,7 +68,8 @@ g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Ranged_NE]	= "H_NPC_Mercen
 g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Ranged_SE]	= "H_NPC_Mercenary_SE"
 g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBow_RedPrince]		= "H_NPC_Mercenary_SE"
 g_MilitaryFeedback.Soldiers[Entities.U_MilitarySword_RedPrince]		= "H_NPC_Mercenary_SE"
-g_MilitaryFeedback.Soldiers[Entities.U_MilitarySpear]				= "Military_Sword"
+g_MilitaryFeedback.Soldiers[Entities.U_MilitarySpear]				= "H_NPC_Mercenary_NE"
+g_MilitaryFeedback.Soldiers[Entities.U_Helbardier]				    = "H_NPC_Mercenary_NE"
 
 g_MilitaryFeedback.Thiefs = {}
 g_MilitaryFeedback.Thiefs[Entities.U_Thief] 			= "Thief"
@@ -110,6 +111,10 @@ function MilitaryFeedback_GetSpeaker(_EntityID)
 	if Logic.IsKnight(_EntityID) then
 	
 		return g_MilitaryFeedback.Knights[type]
+
+	elseif type == Entities.U_Helbardier then
+	
+		return g_MilitaryFeedback.Soldiers[type]
 
 	else
 	

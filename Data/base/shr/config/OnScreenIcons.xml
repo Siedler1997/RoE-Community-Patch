@@ -1889,8 +1889,8 @@
 		<U2>1</U2>
 		<V2>1</V2>
 		<Size>64</Size>
-		<Row>15</Row>
-		<Col>1</Col>
+		<Row>11</Row>
+		<Col>13</Col>
 	</Icon>
 	
 	<Icon classname="GGUI::COnScreenIconProps">
@@ -1902,8 +1902,8 @@
 		<U2>1</U2>
 		<V2>1</V2>
 		<Size>44</Size>
-		<Row>15</Row>
-		<Col>1</Col>
+		<Row>11</Row>
+		<Col>13</Col>
 	</Icon>
 
 	<Icon classname="GGUI::COnScreenIconProps">

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Technologies>
+
+    <Technology id="R_Cistern"></Technology>
+    <Technology id="R_Beautification_Brazier"></Technology>
+    <Technology id="R_Beautification_Flowerpot_Round"></Technology>
+    <Technology id="R_Beautification_Flowerpot_Square"></Technology>
+    <Technology id="R_Beautification_Lantern"></Technology>
+    <Technology id="R_Beautification_Pillar"></Technology>
+    <Technology id="R_Beautification_Shrine"></Technology>
+    <Technology id="R_Beautification_StoneBench"></Technology>
+    <Technology id="R_Beautification_Sundial"></Technology>
+    <Technology id="R_Beautification_Vase"></Technology>
+    <Technology id="R_Beautification_Waystone"></Technology>
+    <Technology id="R_Beautification_TriumphalArch"></Technology>
+    <Technology id="R_Beautification_VictoryColumn"></Technology>
+	<Technology id="R_RefillStoneMine"></Technology>
+	<Technology id="R_RefillIronMine"></Technology>
+	<Technology id="R_RefillCistern"></Technology>
+
+</Technologies>

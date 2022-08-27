@@ -1994,6 +1994,7 @@
 	<Entity>U_SpearMaker</Entity>
 
 	<Entity>U_MilitarySpear</Entity>
+	<Entity>U_Helbardier</Entity>
 	<Entity>B_Beautification_Dragon</Entity>
 	<Entity>U_Dragon</Entity>
 </root>
