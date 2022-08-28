@@ -23,6 +23,7 @@ Script.Load("Script\\MainMenu\\Campaign.lua" )
 Script.Load("Script\\MainMenu\\LoadGame.lua" )
 Script.Load("Script\\MainMenu\\Requester.lua" )
 Script.Load("Script\\MainMenu\\CampaignMap.lua" )
+Script.Load("Script\\MainMenu\\CampaignMenu.lua" )
 Script.Load("Script\\MainMenu\\CustomGame.lua" )
 Script.Load("Script\\MainMenu\\CreditsDialog.lua" )
 

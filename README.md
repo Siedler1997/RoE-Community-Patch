@@ -92,14 +92,19 @@ Folgende Änderungen wurden vorgenommen:
 		- RP-Einheiten haben eine eigene Button-Textur
 		- Khana-Einheiten haben keine Overhead-Namen mehr
 	- "Neue" Einheiten
-		- Hellebardiere
-			- Inspiriert von den Hellebardieren in DEdK
+		- Lanzenträger
+			- Inspiriert von den Streitkanzenträgern in DEdK
 			- Statuswerte (im Vergleich zu Schwertkämpfern)
-				- Höhere Lebenspunkte (150 > 120)
+				- Höhere Lebenspunkte (180 > 120)
 				- Weniger Schaden (15 < 20)
 				- Etwas höhere Reichweite (2sm > 1,5sm)
 				- Langsamere Bewegungsgeschwindigkeit (420 < 480)
-			- Zurzeit noch in Entwicklung
+		- Hellebardiere
+			- Basieren auf den Hellebardieren in DEdK
+			- Haben noch etwas bessere Stats als Streitlanzenträger
+			- Sind Einzelgänger
+			- NICHT rekrutierbar, aber kontrollierbar
+				- Für Mapper: Gut nutzbar als NPCs bzw. Dekoration
 		- Raubtiere als kontrollierbare Militäreinheiten verfügbar
 			- Konkret: Bären (3 Arten), Löwen (2 Arten), Wölfe (4 Arten), Tiger
 		- Trebuchet
@@ -185,7 +190,7 @@ Folgende Änderungen wurden vorgenommen:
 	- Neun "neue" Spielerfarben
 	- Wappen
 		- Textur ist im Beförderungs-Fenster nun richtig zentriert
-		- Neue, von Stronghold 2 und Stronghold Legends inspirierte Wappen
+		- Neue, von Stronghold 2 und Legends inspirierte Wappen
 	- Alternative Spielerfarbe: Gelb
 		- Ist in den Optionen (de-)aktivierbar
 		- Wirkt sich auch auf das gewählte Wappen aus
@@ -207,7 +212,9 @@ Folgende Änderungen wurden vorgenommen:
 	- KI-Spielerfarben
 		- Mehr Varianz bei Spielerfarben
 		- Konsistentere Spielerfarben im AddOn
-	- Thronsaal hat einen eigenen Soundtrack
+	- Thronsaal 
+		- Hat einen eigenen Soundtrack
+		- Tür wird von Hellebardieren bewacht
 	- Diverses
 		- M09: Husran: KI aggressiver und mit eigener Eisenmine
 		- AM05: Idukun: durch etwas mehr Startkapital etwas einfacher
@@ -230,6 +237,7 @@ Folgende Änderungen wurden vorgenommen:
 - Außenposten/Aussichtsturm/Wachturm
 	- ME-Aussichtsturm: Schwarze Seite
 	- Aussichtstürme: Alarm?
+	- Wachtürme: Mit Schützen bemannbar statt mit Katapulten ausrüstbar?
 	- Eigene Button-Texturen für Aussichtsturm und Wachturm
 		- Wachturm: QuestInformation.Tower (mit Katapult), ...?
 		- Aussichtsturm: PB_Tower1, Alarm, ...?

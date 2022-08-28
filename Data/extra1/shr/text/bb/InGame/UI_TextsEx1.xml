@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<string id="CampaignMenuBaseGame_center" MD5Hash="B1A57BE8AF4EF7FA176EA5B643BE3E1E" mod="20080305203709" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[{center}Rise of an Empire]]></string>
+	<string id="CampaignMenuAddOn_center" MD5Hash="B1A57BE8AF4EF7FA176EA5B643BE3E1E" mod="20080305203709" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[{center}The Eastern Realm]]></string>
+	<string id="CampaignMenuCP_center" MD5Hash="B1A57BE8AF4EF7FA176EA5B643BE3E1E" mod="20080305203709" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[{center}Custom]]></string>
+</root>
