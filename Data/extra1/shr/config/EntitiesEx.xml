@@ -393,6 +393,6 @@
 
 	<Entity>B_GuardTower_AS</Entity>
 	<Entity>B_WatchTower_AS</Entity>
-
+	<Entity>B_NPC_Spicetrader</Entity>
 </root>
 

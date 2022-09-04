@@ -144,6 +144,7 @@ Folgende Änderungen wurden vorgenommen:
 	- Lagerhaus
 		- Lagerkapazität der 3. und 4. Ausbaustufe erhöht
 		- Eigenes Icon auf der Minimap
+	- Marktplatz: Generische Ritter-Statue bei Khana, Praphat und Kastellanen
 	- "Neue" Gebäude
 		- Wachturm
 			- Kostet 11 Steine
@@ -174,6 +175,7 @@ Folgende Änderungen wurden vorgenommen:
 			- Im Mehrspieler nach Herkunft und maximaler Spieleranzahl
 			- Wenn dadurch keine ausgewählt ist wird Mapvorschau geleert und Starten-Button deaktiviert
 		- Im AddOn auch alle Hauptspiel-Karten auswählbar
+	- Hauptspiel-Kampagne im AddOn spielbar
 - Diverses
 	- Teardown-Sound von Palisaden/Mauern etwas leiser
 	- Marcus wird nicht mehr als generischer Ritter gesetzt
@@ -199,11 +201,13 @@ Folgende Änderungen wurden vorgenommen:
 		- Buttons haben nun alle einen Hover-Effekt
 		- Speichern der Profileinstellungen funktioniert nun zuverlässig
 	- Kampfmusik nach Klimazonen getrennt (als verschiedene Playlists)
+	- Baumenü: BeautificationMenu verschönert
 	- Unterschiedliche Festival-Musik, je nachdem, ob der Anlass eine Heldenbeförderung oder ein normales Fest ist
 	- Niederlagen-Kamerarotation deutlich verlangsamt
 	- Sieg und Niederlage haben jeweils eine Art "Jingle"
 	- Spielerfarben auf der Minimap sind nun (meistens) korrekt
 - Kampagnen
+	- Hauptspiel-Kampagne auch im AddOn spielbar
 	- Bugs gefixt
 		- Verfrühte Meldungen von KI-Mitspielern (M05: Drengir, M09: Husran)
 		- Verstärkung für den Spieler spawnt jetzt (M15: Vestholm)
@@ -222,7 +226,10 @@ Folgende Änderungen wurden vorgenommen:
 
 
 ## (Mögliche) ToDos
-- Hellebardiere
+- Error wegen Missionsstatistik bei Mapstart (z.B. Salida del Sol)
+- c00-m3: Falsche Nachricht am Anfang
+- Bonus-Ritterfähigkeit im Thronsaal ragt in Titelliste mit rein
+- Lanzenträger/Hellebardiere
 	- Icon
 	- Audio-Feedback
 	- Rekrutierung
@@ -255,9 +262,6 @@ Folgende Änderungen wurden vorgenommen:
 			- Standard: Handelsverträge zum Spieler
 			- Ggf. Option zur Kriegserklärung
 		- ggf. Mapbeschreibungen anpassen
-	- Hauptspiel-Kampagne im AddOn
-		- Zwischenmenü zur Auswahl der Kampagne
-		- Slot für Community-Kampagnen
 - Wikinger: Kontrollierter Ehefrauen-Raub ("Heist")
 - RPG-Sicht zum rumlaufen
 - Nutzbare (Tier-)Seuche, inkl. Musik
@@ -331,6 +335,7 @@ Folgende Änderungen wurden vorgenommen:
 	- Burg-Ersatz?
 - Ungenutzte Gebäude
 	- Juwelier
+	- SpiceTrader
 - Fremder Content
 	- DEdK-Soundtrack
 - Auf 4k-Auflösung kann nicht mehr per BorderScroll nach rechts gecrolled werden

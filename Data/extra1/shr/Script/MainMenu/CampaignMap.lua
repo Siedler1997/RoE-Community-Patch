@@ -5,6 +5,7 @@ CampaignDialog.Widget.Frame = "/InGame/Singleplayer/Campaign/BG"
 CampaignDialog.SelectedMission = -1
 CampaignDialog.SelectedVideo = -1
 CampaignDialog.Starting = false
+CampaignDialog.SelectedMapName = ""
 ----------------------------------------------------------------------------------------------------------------------
 function OpenCampaignMap()
     
@@ -46,6 +47,7 @@ function OpenCampaignMap()
 	
     CampaignDialog.SelectedVideo = -1  
  	CampaignDialog.SelectedMission = -1
+    CampaignDialog.SelectedMapName = ""
 
 	for i = 1, Data.NumberOfMaps do
 	
@@ -136,6 +138,8 @@ function CampaignDialog_BackOnLeftClick()
     
     DisplayLoadBottomButtons("/InGame/Singleplayer/ContainerBottom/BackCampaignMenu")
 
+	XGUIEng.DisableButton("/InGame/Singleplayer/CampaignMenu/PlayCPCampaign",1)
+
 end
 ----------------------------------------------------------------------------------------------------------------------
 function CampaignMap_Video_OnClicked(video)
@@ -154,7 +158,6 @@ function CampaignMap_Video_OnClicked(video)
 
     CampaignDialog.SelectedMission = -1
     CampaignDialog.SelectedVideo = video
-
 end
 ----------------------------------------------------------------------------------------------------------------------
 function CampaignMap_OnClicked(map)
@@ -275,10 +278,23 @@ function CampaignMap_PlayVideo(_video)
 end
 ----------------------------------------------------------------------------------------------------------------------
 function CampaignMap_StartMission(_map)
+    local trueMapId = _map;
+    local campName = Framework.GetCampaignName()
+    if campName == "c01" then
+        trueMapId = trueMapId + CampaignData["c00"].NumberOfMaps
+    elseif campName == "c02" then
+        trueMapId = trueMapId + CampaignData["c00"].NumberOfMaps + CampaignData["c01"].NumberOfMaps
+    end  
+    
+    --Workaround, um alle Missionen starten zu können
+    local Maps = CreateMapTable(-1, campName)
+    CampaignDialog.SelectedMapName = Maps[1+_map]
+
+    --assert(Framework.GetCampaignName() == "c01", "Value: " .. _map + mapId)
     --
     CampaignDialog.Starting = true
     Input.NoneMode()
-    Framework.SetCampaignMap(_map)
+    Framework.SetCampaignMap(trueMapId)
     
     g_MainMenu.CampaignStateSequence = 1
     g_MainMenu.VideoTimer = 0
@@ -295,7 +311,7 @@ function CampaignMap_FadeInCallback()
 	XGUIEng.ShowAllSubWidgets("/InGame",0)
 
 	Framework.ResetProgressBar()
-	InitLoadScreen(true, -1, Framework.GetCampaignMap(), Framework.GetCampaignName(), 1)
+	InitLoadScreen(true, -1, CampaignDialog.SelectedMapName, Framework.GetCampaignName(), 1)
 
 	InitializeFader()
 	FadeIn(1,CampaignMap_StartMapCallback)	
@@ -304,14 +320,15 @@ end
 function CampaignMap_StartMapCallback()
 
     local CampaignName = Framework.GetCampaignName()
-    local CampaignMap  = Framework.GetCampaignMap()
+    --local CampaignMap  = Framework.GetCampaignMap()
 
     if false and CampaignName == "c01" then
-        Framework.StartMap(CampaignMap, -1, CampaignName ) --  -1 = Campaign!
+        Framework.StartMap(CampaignDialog.SelectedMapName, -1, CampaignName ) --  -1 = Campaign!
     else
-        Framework.StartMapWithKnightChoice(CampaignMap, -1, CampaignName ) --  -1 = Campaign!
+        Framework.StartMapWithKnightChoice(CampaignDialog.SelectedMapName, -1, CampaignName ) --  -1 = Campaign!
     end
 	
+	--InitLoadScreen(true, -1, CampaignDialog.SelectedMapName, Framework.GetCampaignName(), 1)
 end
 ----------------------------------------------------------------------------------------------------------------------
 function CampaignMap_OnActionButtonLeftClick()
@@ -346,15 +363,11 @@ function  CampaignMap_OnMouseOver()
   
    local Campaign = Framework.GetCampaignName()
     local Maps = CreateMapTable(-1, Campaign)
-    XGUIEng.SetText("/InGame/Singleplayer/Campaign/Tooltip/Text", "{center}Test_" .. #Maps)
     
     local MapIndex =  XGUIEng.GetWidgetNameByID(XGUIEng.GetWidgetsMotherID(CurrentWidget))
     local MapName = Tool_GetLocalizedMapName(Maps[0+MapIndex])    
 
-
-   
-    --XGUIEng.SetText("/InGame/Singleplayer/Campaign/Tooltip/Text", "{center}" .. MapName)
-    --XGUIEng.SetText("/InGame/Singleplayer/Campaign/Tooltip/Text", "{center}Test_" .. Campaign)
+    XGUIEng.SetText("/InGame/Singleplayer/Campaign/Tooltip/Text", "{center}" .. MapName)
 end
 
 ----------------------------------------------------------------------------------------------------------------------

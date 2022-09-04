@@ -14656,5 +14656,112 @@
 			<CastShadow>False</CastShadow>
 			<CloseUpModeCulling>True</CloseUpModeCulling>
 		</Model>
+
+
+
+		<Model id="Buildings\B_Spicetrader_Buildingsite_1">
+			<Effect>SimpleObjectMultiply</Effect>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+			<OcclusionCaster>True</OcclusionCaster>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Buildingsite_2">
+			<Effect>SimpleObjectMultiply</Effect>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+			<OcclusionCaster>True</OcclusionCaster>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Buildingsite_3">
+			<Effect>SimpleObjectMultiply</Effect>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+			<OcclusionCaster>True</OcclusionCaster>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Yard_1">
+			<Effect>CityBuilding</Effect>
+			<OcclusionCaster>True</OcclusionCaster>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Yard_2">
+			<Effect>CityBuilding</Effect>
+			<OcclusionCaster>True</OcclusionCaster>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Yard_3">
+			<Effect>CityBuilding</Effect>
+			<OcclusionCaster>True</OcclusionCaster>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Floor_1">
+			<SelectionTexture>Selection_Building</SelectionTexture>
+			<Effect>CityBuilding</Effect>
+			<OcclusionCaster>True</OcclusionCaster>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Floor_2">
+			<Effect>CityBuilding</Effect>
+			<OcclusionCaster>True</OcclusionCaster>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Floor_3">
+			<Effect>CityBuilding</Effect>
+			<OcclusionCaster>True</OcclusionCaster>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Gable_1">
+			<Effect>CityBuilding</Effect>
+			<OcclusionCaster>True</OcclusionCaster>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Gable_2">
+			<Effect>CityBuilding</Effect>
+			<OcclusionCaster>True</OcclusionCaster>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Gable_3">
+			<Effect>CityBuilding</Effect>
+			<OcclusionCaster>True</OcclusionCaster>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Roof_1">
+			<Effect>Roof</Effect>
+			<OcclusionCaster>True</OcclusionCaster>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Roof_2">
+			<Effect>Roof</Effect>
+			<OcclusionCaster>True</OcclusionCaster>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Roof_3">
+			<Effect>Roof</Effect>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+			<OcclusionCaster>True</OcclusionCaster>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Floor_1_Light">
+			<Effect>DecalAdditive</Effect>
+			<UseAlphaBlending>True</UseAlphaBlending>
+			<TwoPassAlphaBlending>False</TwoPassAlphaBlending>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Floor_2_Light">
+			<Effect>DecalAdditive</Effect>
+			<UseAlphaBlending>True</UseAlphaBlending>
+			<TwoPassAlphaBlending>False</TwoPassAlphaBlending>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Floor_3_Light">
+			<Effect>DecalAdditive</Effect>
+			<UseAlphaBlending>True</UseAlphaBlending>
+			<TwoPassAlphaBlending>False</TwoPassAlphaBlending>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Rubble_1">
+			<SelectionTexture>Selection_Building</SelectionTexture>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+			<OcclusionCaster>True</OcclusionCaster>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Rubble_2">
+			<SelectionTexture>Selection_Building</SelectionTexture>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+			<OcclusionCaster>True</OcclusionCaster>
+		</Model>
     </Models>
 </root>

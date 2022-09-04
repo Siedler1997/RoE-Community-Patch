@@ -115,7 +115,7 @@ do
     end
 end
 
-function Mission_TellStory()
+function Mission_TellStory(_mapName)
 
     local StoryMaps = {
         ["c01_m01_basrima"] = { ["MapKey"] = "Map_c01_m01_Basrima", ["SpeechKey"] = "c01m01_Chapter1LoadScreen", ["LoadScreen"] = "chapter1" },
@@ -123,7 +123,7 @@ function Mission_TellStory()
         ["c01_m06_praphatstan"] = { ["MapKey"] = "Map_c01_m06_Praphatstan", ["SpeechKey"] = "c01m06_Chapter3LoadScreen", ["LoadScreen"] = "chapter3" }
     }
     
-    local MapName = string.lower(Framework.GetCampaignMap())    
+    local MapName = string.lower(_mapName)    
     
     local StoryMapTable = StoryMaps[MapName]
 

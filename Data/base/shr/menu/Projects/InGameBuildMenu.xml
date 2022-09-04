@@ -15567,10 +15567,10 @@
                       <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
                       <TabIndex>1</TabIndex>
                       <Rectangle>
-                       <X>7.</X>
-                       <Y>27.</Y>
+                       <X>48.</X>
+                       <Y>75.</Y>
                        <W>37.</W>
-                       <H>213.</H>
+                       <H>170.</H>
                        <KeepAspectRatio>true</KeepAspectRatio>
                        <CirclePointTest>false</CirclePointTest>
                        <FixedTextureSetSize>true</FixedTextureSetSize>
@@ -15651,16 +15651,16 @@
                       <IsShown>true</IsShown>
                       <UpdateManualFlag>true</UpdateManualFlag>
                       <EventHandling>true</EventHandling>
-                      <ZPriority>60.</ZPriority>
+                      <ZPriority>80.</ZPriority>
                       <ForceToHandleMouseEventsFlag>false</ForceToHandleMouseEventsFlag>
                       <ForceToHandleKeyboardEventsFlag>false</ForceToHandleKeyboardEventsFlag>
                       <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
                       <TabIndex>2</TabIndex>
                       <Rectangle>
-                       <X>67.</X>
-                       <Y>31.</Y>
+                       <X>103.</X>
+                       <Y>75.</Y>
                        <W>37.</W>
-                       <H>213.</H>
+                       <H>170.</H>
                        <KeepAspectRatio>true</KeepAspectRatio>
                        <CirclePointTest>false</CirclePointTest>
                        <FixedTextureSetSize>true</FixedTextureSetSize>
@@ -15738,7 +15738,7 @@
                       </BackgroundMaterial>
                      </Widget>
                      <Widget classname="EGUIX::CStaticWidget">
-                      <IsShown>true</IsShown>
+                      <IsShown>false</IsShown>
                       <UpdateManualFlag>true</UpdateManualFlag>
                       <EventHandling>true</EventHandling>
                       <ZPriority>60.</ZPriority>
@@ -15748,9 +15748,9 @@
                       <TabIndex>2</TabIndex>
                       <Rectangle>
                        <X>118.</X>
-                       <Y>24.</Y>
+                       <Y>75.</Y>
                        <W>37.</W>
-                       <H>213.</H>
+                       <H>170.</H>
                        <KeepAspectRatio>true</KeepAspectRatio>
                        <CirclePointTest>false</CirclePointTest>
                        <FixedTextureSetSize>true</FixedTextureSetSize>
@@ -15831,7 +15831,7 @@
                       <IsShown>true</IsShown>
                       <UpdateManualFlag>true</UpdateManualFlag>
                       <EventHandling>true</EventHandling>
-                      <ZPriority>50.</ZPriority>
+                      <ZPriority>100.</ZPriority>
                       <ForceToHandleMouseEventsFlag>false</ForceToHandleMouseEventsFlag>
                       <ForceToHandleKeyboardEventsFlag>false</ForceToHandleKeyboardEventsFlag>
                       <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
@@ -15917,6 +15917,96 @@
                        </Color>
                       </BackgroundMaterial>
                      </Widget>
+					    <Widget classname="EGUIX::CStaticWidget">
+						    <IsShown>true</IsShown>
+						    <UpdateManualFlag>true</UpdateManualFlag>
+						    <EventHandling>true</EventHandling>
+						    <ZPriority>100.</ZPriority>
+						    <ForceToHandleMouseEventsFlag>false</ForceToHandleMouseEventsFlag>
+						    <ForceToHandleKeyboardEventsFlag>false</ForceToHandleKeyboardEventsFlag>
+						    <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
+						    <TabIndex>0</TabIndex>
+						    <Rectangle>
+							    <X>0.</X>
+							    <Y>215.</Y>
+								<W>215.</W>
+								<H>37.</H>
+							    <KeepAspectRatio>true</KeepAspectRatio>
+							    <CirclePointTest>false</CirclePointTest>
+							    <FixedTextureSetSize>true</FixedTextureSetSize>
+							    <AlignmentX>0</AlignmentX>
+							    <AlignmentY>0</AlignmentY>
+							    <AnchorX>0</AnchorX>
+							    <AnchorY>0</AnchorY>
+						    </Rectangle>
+						    <OnPushToStack>
+							    <LuaCommand></LuaCommand>
+						    </OnPushToStack>
+						    <OnMouseOver>
+							    <LuaCommand></LuaCommand>
+						    </OnMouseOver>
+						    <OnMouseOut>
+							    <LuaCommand></LuaCommand>
+						    </OnMouseOut>
+						    <OnRightClick>
+							    <LuaCommand></LuaCommand>
+						    </OnRightClick>
+						    <OnLeftClick>
+							    <LuaCommand></LuaCommand>
+						    </OnLeftClick>
+						    <OnKeyPress>
+							    <LuaCommand></LuaCommand>
+						    </OnKeyPress>
+						    <OnFocus>
+							    <LuaCommand></LuaCommand>
+						    </OnFocus>
+						    <OnBlur>
+							    <LuaCommand></LuaCommand>
+						    </OnBlur>
+						    <UpdateFunction>
+							    <LuaCommand></LuaCommand>
+						    </UpdateFunction>
+						    <UpdateFunctionTurnBased>
+							    <LuaCommand></LuaCommand>
+						    </UpdateFunctionTurnBased>
+						    <UpdateFunctionSecondBased>
+							    <LuaCommand></LuaCommand>
+						    </UpdateFunctionSecondBased>
+						    <ToolTipHelper>
+							    <ToolTipEnabledFlag>true</ToolTipEnabledFlag>
+							    <ControlTargetVisibility>true</ControlTargetVisibility>
+							    <ToolTipUpdateFunction>
+								    <LuaCommand></LuaCommand>
+							    </ToolTipUpdateFunction>
+							    <RawString></RawString>
+							    <StringTableKey></StringTableKey>
+							    <TargetWidget01></TargetWidget01>
+							    <TargetWidget02></TargetWidget02>
+							    <TargetWidget03></TargetWidget03>
+							    <TargetWidget04></TargetWidget04>
+							    <TargetWidget05></TargetWidget05>
+						    </ToolTipHelper>
+						    <Group></Group>
+						    <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition</MotherID>
+						    <Name>CPBar</Name>
+						    <FullScreenBackground>false</FullScreenBackground>
+						    <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
+						    <BackgroundMaterial>
+							    <Texture>Frames.png</Texture>
+								<TextureCoordinatesMinU>17.</TextureCoordinatesMinU>
+								<TextureCoordinatesMinV>981.</TextureCoordinatesMinV>
+								<TextureCoordinatesMxU>230.</TextureCoordinatesMxU>
+								<TextureCoordinatesMxV>1018.</TextureCoordinatesMxV>
+							    <TextureFixedSizeX>0.</TextureFixedSizeX>
+							    <TextureFixedSizeY>0.</TextureFixedSizeY>
+							    <Color>
+								    <Red>255</Red>
+								    <Green>255</Green>
+								    <Blue>255</Blue>
+								    <Alpha>255</Alpha>
+							    </Color>
+						    </BackgroundMaterial>
+					    </Widget>
                     </WidgetList>
                    </SubWidgets>
                   </Widget>

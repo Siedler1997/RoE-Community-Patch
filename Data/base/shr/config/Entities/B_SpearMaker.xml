@@ -25,6 +25,7 @@
 		<LightFloor_1>Buildings\B_BroomMaker_Floor_1_Light</LightFloor_1>
 		<LightFloor_2>Buildings\B_BroomMaker_Floor_2_Light</LightFloor_2>
 		<LightFloor_3>Buildings\B_BroomMaker_Floor_3_Light</LightFloor_3>
+		
 		<!--Decal>Buildings\B_Bakery_Decal</Decal>
 		<Model>Buildings\B_Jewelry_Floor_1</Model>
 		<Banner>Default</Banner>
@@ -79,9 +80,9 @@
 		<FireCountRoof>10</FireCountRoof>
 		<Anim/>
 		<RoofColorMultiply>
-			<Red>1.5</Red>
-			<Green>1.3</Green>
-			<Blue>0.5</Blue>
+			<Red>1.0</Red>
+			<Green>1.0</Green>
+			<Blue>1.0</Blue>
 		</RoofColorMultiply>
 
 	</Display>

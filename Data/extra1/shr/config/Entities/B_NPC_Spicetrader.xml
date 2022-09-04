@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<root>
+  <Display classname="ED::CCityBuildingProps">
+    <Class>ED::CCityBuilding</Class>
+	  <Decal>Buildings\B_Bakery_Decal</Decal>
+	  <Model>Buildings\B_Spicetrader_Floor_1</Model>
+	  <Banner>Default</Banner>
+	  <Yard_1>Buildings\B_Jewelry_Yard_1</Yard_1>
+	  <Yard_2>Buildings\B_Jewelry_Yard_2</Yard_2>
+	  <Yard_3>Buildings\B_Jewelry_Yard_3</Yard_3>
+	  <Roof_1>Buildings\B_Spicetrader_Roof_1</Roof_1>
+	  <Roof_2>Buildings\B_Spicetrader_Roof_2</Roof_2>
+	  <Roof_3>Buildings\B_Spicetrader_Roof_3</Roof_3>
+	  <Roof_Destroyed>Buildings\B_Spicetrader_Rubble_2</Roof_Destroyed>
+	  <Upgrade_Site>Buildings\B_Spicetrader_Buildingsite_1</Upgrade_Site>
+
+	  <Floor_1>Buildings\B_Spicetrader_Floor_1</Floor_1>
+	  <Floor_2>Buildings\B_Spicetrader_Floor_2</Floor_2>
+	  <Floor_3>Buildings\B_Spicetrader_Floor_3</Floor_3>
+	  <Gable_1>Buildings\B_Spicetrader_Gable_1</Gable_1>
+	  <Gable_2>Buildings\B_Spicetrader_Gable_2</Gable_2>
+	  <Gable_3>Buildings\B_Spicetrader_Gable_3</Gable_3>
+	  <LightFloor_1>Buildings\B_Spicetrader_Floor_1_Light</LightFloor_1>
+	  <LightFloor_2>Buildings\B_Spicetrader_Floor_2_Light</LightFloor_2>
+	  <LightFloor_3>Buildings\B_Spicetrader_Floor_3_Light</LightFloor_3>
+	  <FireCountFloor_1>10</FireCountFloor_1>
+	  <FireCountFloor_2>13</FireCountFloor_2>
+	  <FireCountFloor_3>15</FireCountFloor_3>
+	  <FireCountRoof>30</FireCountRoof>
+    </Display>
+
+    <Logic classname="EGL::CUpgradableBuildingProps">
+    <Class>EGL::CUpgradableBuilding</Class>
+
+        <CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim>
+        <FlattenOnBuild>true</FlattenOnBuild>
+        <MayRemoveEntities>true</MayRemoveEntities>
+        <MaxNumberOfUpgrades>2</MaxNumberOfUpgrades>
+        <SecondsToUpgrade>18</SecondsToUpgrade>
+
+        <MinFloorFireSize>0</MinFloorFireSize>
+        <MaxFloorFireSize>15</MaxFloorFireSize>
+        <MaxHealth>200</MaxHealth>
+
+        <AccessCategory>AccessCategoryBuilding</AccessCategory>
+        <NeedsPlayer>true</NeedsPlayer>
+        <ForceNoPlayer>false</ForceNoPlayer>
+        <CanBeKnockedDown>true</CanBeKnockedDown>
+        <Worker>U_OutpostConstructionWorker</Worker> <!-- Construction only -->
+        <MaxWorkers>0</MaxWorkers>
+
+    <RepairBuildingTL>TL_WORKER_REPAIR</RepairBuildingTL>
+    <IsHeightLocking>true</IsHeightLocking>
+    <Exploration>0</Exploration>
+    <EntityCategories>
+      <EntityCategory>CityBuilding</EntityCategory>
+      <EntityCategory>AttackableBuilding</EntityCategory>
+    </EntityCategories>
+   
+    <UpgradeCosts>
+       <UpgradeCost>
+           <GoodAmount>
+               <GoodType>G_Wood</GoodType>
+               <Amount>1</Amount>
+           </GoodAmount>
+           <GoodAmount>
+               <GoodType>G_Wood</GoodType>
+               <Amount>1</Amount>
+           </GoodAmount>
+       </UpgradeCost>
+    
+       <UpgradeCost>
+           <GoodAmount>
+               <GoodType>G_Wood</GoodType>
+               <Amount>1</Amount>
+           </GoodAmount>
+           <GoodAmount>
+               <GoodType>G_Wood</GoodType>
+               <Amount>1</Amount>
+           </GoodAmount>
+        </UpgradeCost>
+    </UpgradeCosts>
+
+        <ApproachPos>
+            <X>-100</X>
+            <Y>-400</Y>
+        </ApproachPos>
+        <ApproachR>0</ApproachR>
+        <DoorPos>
+            <X>0</X>
+            <Y>-100</Y>
+        </DoorPos>
+        <BlockingAreas>
+            <BlockingArea>
+            <Blocked1>
+              <X>-300</X>
+              <Y>400</Y>
+            </Blocked1>
+            <Blocked2>
+              <X>400</X>
+              <Y>-300</Y>
+            </Blocked2>
+          </BlockingArea>
+        </BlockingAreas>
+        <BuildBlockingAreas>
+            <BuildBlockingArea>
+                <Blocked1>
+                    <X>-300</X>
+                    <Y>400</Y>
+                </Blocked1>
+                <Blocked2>
+                    <X>400</X>
+                    <Y>-450</Y>
+                </Blocked2>
+            </BuildBlockingArea>
+        </BuildBlockingAreas>
+        <ConstructionInfo>
+            <Time>18</Time>
+
+            <BuilderSlots>
+                <BuilderSlot>
+                    <Position>
+                        <X>0</X>
+                        <Y>0</Y>
+                    </Position>
+                    <Orientation>0</Orientation>
+                </BuilderSlot>
+            </BuilderSlots>
+            <TaskListConstruction>TL_CONSTRUCT_BUILDING</TaskListConstruction>
+            <ConstructionSite>B_BuildingPlot_8x8</ConstructionSite>
+        </ConstructionInfo>
+        <Exploration>0</Exploration>
+        <SoundImpactType>Stone</SoundImpactType>
+    </Logic>
+
+  <Behaviors>
+    </Behaviors>
+
+    <MapEditor>
+        <TreePosition>Buildings\City</TreePosition>
+        <ShowInTree>true</ShowInTree>
+        <Clime>Generic</Clime>
+        <Scalable>false</Scalable>
+        <TemplateResistant>true</TemplateResistant>
+    </MapEditor>
+</root>

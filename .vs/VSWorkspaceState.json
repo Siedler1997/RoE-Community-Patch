@@ -2,16 +2,17 @@
   "ExpandedNodes": [
     "",
     "\\Data",
-    "\\Data\\base",
-    "\\Data\\base\\shr",
-    "\\Data\\base\\shr\\Script",
-    "\\Data\\base\\shr\\Script\\Global",
-    "\\Data\\base\\shr\\Script\\Global\\ScriptSystems",
+    "\\DataOP\\extra1",
+    "\\DataOP\\extra1\\shr",
+    "\\DataOP\\extra1\\shr\\Maps",
+    "\\DataOP\\extra1\\shr\\Maps\\Campaign",
+    "\\DataOP\\extra1\\shr\\Maps\\Campaign\\c01",
     "\\Data\\extra1",
     "\\Data\\extra1\\shr",
     "\\Data\\extra1\\shr\\Script",
-    "\\Data\\extra1\\shr\\Script\\Local"
+    "\\Data\\extra1\\shr\\Script\\Local",
+    "\\Data\\extra1\\shr\\Script\\Local\\Interface"
   ],
-  "SelectedNode": "\\Data\\extra1\\shr\\Script\\Local\\LocalScriptEx1.lua",
+  "SelectedNode": "\\Data\\base\\shr\\Script\\MainMenu\\CustomGame.lua",
   "PreviewInSolutionExplorer": false
 }
