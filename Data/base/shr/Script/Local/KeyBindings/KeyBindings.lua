@@ -171,7 +171,7 @@ function DebugKeyBindings_Init()
     -----------------------------------------------------------------------------------------------
 
     Input.KeyBindDown(Keys.F10, "KeyBindings_OpenInGameMenu()", 2)
-    Input.KeyBindDown(Keys.ModifierControl + Keys.S, "KeyBindings_SaveGame()", 2)
+    Input.KeyBindDown(Keys.ModifierControl + Keys.S, "KeyBindings_SaveGame_Neu()", 2)
     Input.KeyBindDown(Keys.ModifierControl + Keys.L, "KeyBindings_LoadGame()", 2)
 
     -----------------------------------------------------------------------------------------------
@@ -456,7 +456,25 @@ end
 
 
 function KeyBindings_SaveGame()
+    --[[
+    if g_Throneroom ~= nil
+    or Framework and Framework.IsNetworkGame()
+    or XGUIEng.IsWidgetShownEx("/InGame/MissionStatistic") == 1
+    or GUI_Window.IsOpen("MissionEndScreen")
+    or XGUIEng.IsWidgetShownEx("/LoadScreen/LoadScreen") == 1
+    or XGUIEng.IsWidgetShownEx("/InGame/Dialog") == 1 then
+        return
+    end
 
+    OpenDialog("{cr}{cr}" .. XGUIEng.GetStringTableText("UI_Texts/Saving_center") .. "{cr}{cr}" .. "QuickSave", XGUIEng.GetStringTableText("UI_Texts/MainMenuSaveGame_center"))
+    XGUIEng.ShowWidget("/InGame/Dialog/Ok", 0);
+    
+    Dialog_SetUpdateCallback( KeyBindings_SaveGame_Delayed )
+    --]]
+end
+
+function KeyBindings_SaveGame_Neu()
+    
     if g_Throneroom ~= nil
     or Framework and Framework.IsNetworkGame()
     or XGUIEng.IsWidgetShownEx("/InGame/MissionStatistic") == 1

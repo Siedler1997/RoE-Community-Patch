@@ -177,6 +177,8 @@ Folgende Änderungen wurden vorgenommen:
 		- Im AddOn auch alle Hauptspiel-Karten auswählbar
 	- Hauptspiel-Kampagne im AddOn spielbar
 - Diverses
+	- Automatisches Schnellspeichern deaktiviert
+		- Für Mapper: Schnellspeichern geht nun über eine neue Funktion: KeyBindings_SaveGame_Neu()
 	- Teardown-Sound von Palisaden/Mauern etwas leiser
 	- Marcus wird nicht mehr als generischer Ritter gesetzt
 	- Ungenutztes Audio-Feedback von Rittern, Soldaten und Dieben wird nun verwendet
@@ -226,7 +228,6 @@ Folgende Änderungen wurden vorgenommen:
 
 
 ## (Mögliche) ToDos
-- Error wegen Missionsstatistik bei Mapstart (z.B. Salida del Sol)
 - c00-m3: Falsche Nachricht am Anfang
 - Bonus-Ritterfähigkeit im Thronsaal ragt in Titelliste mit rein
 - Lanzenträger/Hellebardiere
