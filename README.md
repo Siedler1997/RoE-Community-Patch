@@ -178,7 +178,7 @@ Folgende Änderungen wurden vorgenommen:
 	- Hauptspiel-Kampagne im AddOn spielbar
 - Diverses
 	- Automatisches Schnellspeichern deaktiviert
-		- Für Mapper: Schnellspeichern geht nun über eine neue Funktion: KeyBindings_SaveGame_Neu()
+		- Für Mapper: Quicksave wurde über neue Funktion umgeleitet: KeyBindings_SaveGame_Neu()
 	- Teardown-Sound von Palisaden/Mauern etwas leiser
 	- Marcus wird nicht mehr als generischer Ritter gesetzt
 	- Ungenutztes Audio-Feedback von Rittern, Soldaten und Dieben wird nun verwendet
@@ -187,7 +187,7 @@ Folgende Änderungen wurden vorgenommen:
 	- Geologeneinsätze 
 		- Kosten deutlich mehr Gold (250 -> 500)
 		- Haben einen verständlicheren Tooltip sowie einen eigenen Disabled-Tooltip
-		- Für Mapper: Können mit den neuen Technologie 'R_RefillStoneMine', 'R_RefillIronMine' und 'R_RefillCistern' verboten werden
+		- Für Mapper: Können mit den neuen Technologien 'R_RefillStoneMine', 'R_RefillIronMine' und 'R_RefillCistern' verboten werden
 	- Steuern
 		- Maximale Anzahl an Steuereintreibern erhöht (6 -> 8)
 	- Bei Minimap-Benachrichtigung wird der auslösende Spieler erst entfernt, um Verwirrung zu vermeiden
@@ -284,7 +284,6 @@ Folgende Änderungen wurden vorgenommen:
 	- Format ändern, um das ganze Bild sehen zu können
 		- Beispiel: siehe "chapter3_Test.png"
 		- Ränder sollten noch etwas dekoriert werden
-	- Eigene für "neue" Ritter
 	- AddOn-Kampagne-Loadscreens: Richtige Spielerfarben (per Bildbearbeitung)
 	- MainMenu-Background: AddOn mit eigenen Tag/Nacht Varianten
 - Baubares Trebuchet
@@ -292,7 +291,6 @@ Folgende Änderungen wurden vorgenommen:
 	- Eigene Icon-Texturen
 	- Es dreht sich nicht richtig
 	- Begleitende Sodaten bewegen sich nach einem Move nicht mehr korrekt
-- Zahme Tiere: MilitaryFeedback global statt lokal
 - Sturm
 	- soll mal funktionieren
 	- Abwandlung: Schneesturm
