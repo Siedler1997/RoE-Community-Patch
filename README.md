@@ -43,7 +43,7 @@ Folgende Änderungen wurden vorgenommen:
 			- Passive Fähigkeit: Bessere Handelskonditionen (wie Elias)
 			- Bonus: Rekrutierung von Signatureinheiten in Kasernen
 		- Der Rote Prinz
-			- Aktive Fähigkeit: Tribut (im Hauptspiel nur Gold, im AddOn wie Saraya)
+			- Aktive Fähigkeit: Tribut (wie Saraya)
 			- Passive Fähigkeit: Höhere Steuern (wie Kestral)
 			- Bonus: Rekrutierung von Signatureinheiten in Kasernen
 			- Für Mapper: 
@@ -165,7 +165,6 @@ Folgende Änderungen wurden vorgenommen:
 			- Zeigen die Ausbaustufe "1/1" an
 		- Hauptspiel-Marktplätze haben ein Mouseover
 	- Bienenstöcke haben weniger Lebenspunkte (10 -> 5)
-	- Ziergebäude der Special Edition im Hauptspiel verfügbar
 	- Handelsposten-Baubutton hat einen etwas verständlicheren Tooltip
 - Hauptmenü
 	- AddOn nutzt weitgehend Hauptspiel-Hintergrund und Soundtrack
@@ -178,7 +177,6 @@ Folgende Änderungen wurden vorgenommen:
 			- Im Mehrspieler nach Herkunft und maximaler Spieleranzahl
 			- Wenn dadurch keine ausgewählt ist wird Mapvorschau geleert und Starten-Button deaktiviert
 		- Im AddOn auch alle Hauptspiel-Karten auswählbar
-	- Hauptspiel-Kampagne im AddOn spielbar
 - Diverses
 	- Automatisches Schnellspeichern deaktiviert
 		- Für Mapper: Quicksave wurde über neue Funktion umgeleitet: KeyBindings_SaveGame_Neu()
