@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <Effects>
+
+        <Effect id="E_AS_RockBarrier_Anim">
+            <Logic classname="EGL::CEffectProps">
+                <Class>EGL::CEffect</Class>
+                <Duration>6.2240</Duration>
+                
+                <SoundID>Misc\RockBarrier_StoneFall</SoundID>
+                <SoundVolume>100</SoundVolume>
+                <SoundLooped>false</SoundLooped>
+                    
+            </Logic>
+            <Display classname="ED::CHAnimEffectProps">
+                <Class>ED::CHAnimEffect</Class>
+                <Model>Doodads\D_AS_RockBarrier_Anim</Model>
+                <Anim>D_AS_RockBarrier_Anim</Anim>
+            </Display>
+        </Effect>
+        <Effect id="E_KhanaTemple_Fire">
+       		 <Logic classname="EGL::CEffectProps">
+            	<Class>EGL::CEffect</Class>
+            	<Duration>0</Duration>
+       		 </Logic>
+       		 <Display classname="ED::CEffectParticleSystemProps">
+            	<Class>ED::CEffectParticleSystem</Class>
+            	<Model>Effects\E_KhanaTemple_Fire</Model>
+        	 </Display>
+   		  </Effect>
+        <Effect id="E_Knight_Saraya_Aura">
+        <Logic classname="EGL::CEffectProps">
+            <Class>EGL::CEffect</Class>
+            <Duration>0</Duration>
+        </Logic>
+        <Display classname="ED::CEffectParticleSystemProps">
+            <Class>ED::CEffectParticleSystem</Class>
+            <Model>Effects\E_Knight_Saraya_Aura</Model>
+        </Display>
+    </Effect>
+		
+		<Effect id="FXBomb">
+			<Logic classname="EGL::CArrowEffectProps">
+				<Class>EGL::CArrowEffect</Class>
+				<Global>false</Global>
+				<Duration>0</Duration>
+				<Speed>600.0</Speed>
+				<GravityFactor>600.0f</GravityFactor>
+				<HeightOffsetStart>60.0</HeightOffsetStart>
+				<HeightOffsetTarget>60.0</HeightOffsetTarget>
+				<SoundProjectileType>Catapult</SoundProjectileType>
+				<ImpactEffectID>E_Shockwave03</ImpactEffectID>
+			</Logic>
+			<Display classname="ED::CFlyingEffectProps">
+				<Class>ED::CFlyingEffect</Class>
+				<Model>Effects\XD_Hero2Bomb</Model>
+			</Display>
+		</Effect>
+    </Effects>
+</root>

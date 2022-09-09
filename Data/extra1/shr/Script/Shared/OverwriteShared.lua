@@ -1,6 +1,5 @@
 
 function InitSharedOverwrite()
-
 -- be careful, this table must have the same order like the "CustomGame.KnightTypes"-table *really ugly*
     MPDefaultKnightNames = {"U_KnightSaraya",
     "U_KnightTrading",

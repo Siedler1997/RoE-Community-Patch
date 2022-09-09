@@ -374,7 +374,7 @@ function MilitaryFeedback(_EntityID, _Key)
 		return
 		
 	end
-    Message(folder.."/"..speaker.."/"..type.."_"..state..".mp3")
+    --Message(folder.."/"..speaker.."/"..type.."_"..state..".mp3")
 	Sound.PlayVoice("SettlersFeedbackVoice", folder.."/"..speaker.."/"..type.."_"..state..".mp3")
 end
 

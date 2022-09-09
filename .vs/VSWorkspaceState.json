@@ -2,15 +2,19 @@
   "ExpandedNodes": [
     "",
     "\\Data",
+    "\\DataOP",
+    "\\DataOP\\extra1",
+    "\\DataOP\\extra1\\shr",
+    "\\DataOP\\extra1\\shr\\Maps",
+    "\\DataOP\\extra1\\shr\\Maps\\Campaign",
+    "\\DataOP\\extra1\\shr\\Maps\\Campaign\\c01",
+    "\\DataOP\\extra1\\shr\\Maps\\Campaign\\c01\\c01_m05_Idukun",
     "\\Data\\base",
     "\\Data\\base\\shr",
-    "\\Data\\base\\shr\\config",
     "\\Data\\base\\shr\\Script",
-    "\\Data\\base\\shr\\Script\\Local",
-    "\\Data\\base\\shr\\Script\\Local\\Interface",
-    "\\Data\\extra1",
-    "\\Data\\extra1\\lng"
+    "\\Data\\base\\shr\\Script\\Global",
+    "\\Data\\base\\shr\\Script\\Global\\MainMapScript"
   ],
-  "SelectedNode": "\\Data\\extra1\\lng\\de\\Voices\\Animals\\animal_tiger_idle01.wav",
+  "SelectedNode": "\\DataOP\\extra1\\shr\\Maps\\Campaign\\c01\\c01_m05_Idukun\\MapScript.lua",
   "PreviewInSolutionExplorer": false
 }

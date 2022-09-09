@@ -15,6 +15,7 @@ Mit folgenden Schritten lässt sich der Patch installieren:
 ## Features
 Folgende Änderungen wurden vorgenommen:
 - Ritter
+	- Haben nun je 3 "Fackeln", um Gebäude angreifen zu können
 	- "Alte" Ritter überarbeitet
 		- Allandra
 			- Passive Fähigkeiten: Bonusgold für Predigten erhöht (20% -> 40%)
@@ -141,6 +142,8 @@ Folgende Änderungen wurden vorgenommen:
 	- Burg
 		- Soldatenlimit pro Ausbaustufe erhöht
 		- Eigenes Icon auf der Minimap
+		- Spielerwappen wird nicht mehr auf dem Banner am Eingang abgebildet
+			- Technisch leider zwecks Konsistenz zwischen alten und neuen Wappen notwendig
 	- Lagerhaus
 		- Lagerkapazität der 3. und 4. Ausbaustufe erhöht
 		- Eigenes Icon auf der Minimap
@@ -240,20 +243,13 @@ Folgende Änderungen wurden vorgenommen:
 		- ODER: Der Nahkämpferkaserne hinzufügen
 			- Neuer Button für die Kaserne
 			- "Schwertkämpfer***"-Strings zu "Nahkämpfer***" abändern
-- Ritter mit Fackeln
-- Bomben-Munition?
 - Außenposten/Aussichtsturm/Wachturm
 	- ME-Aussichtsturm: Schwarze Seite
-	- Aussichtstürme: Alarm?
 	- Wachtürme: Mit Schützen bemannbar statt mit Katapulten ausrüstbar?
 	- Eigene Button-Texturen für Aussichtsturm und Wachturm
 		- Wachturm: QuestInformation.Tower (mit Katapult), ...?
 		- Aussichtsturm: PB_Tower1, Alarm, ...?
 	- Generischer Außenposten, inkl. Katapult und Soldatenbemannung
-- Spielerfarben
-	- KIs bekommen im MP die Spielerfarben ab Gelb (ValidPlayerColors property der Map vllt.?)
-- Neue Wappen 
-	- auf Ingame-Flaggen (statt Platzhalter) abbilden
 - Hidun-Turnier: Neue Zelte und andere Siedler
 	- Texturen für DEdK-Zelte gibt es schon
 - Default custom maps
@@ -285,7 +281,6 @@ Folgende Änderungen wurden vorgenommen:
 		- Beispiel: siehe "chapter3_Test.png"
 		- Ränder sollten noch etwas dekoriert werden
 	- AddOn-Kampagne-Loadscreens: Richtige Spielerfarben (per Bildbearbeitung)
-	- MainMenu-Background: AddOn mit eigenen Tag/Nacht Varianten
 - Baubares Trebuchet
 	- Eigenes Karren-Modell
 	- Eigene Icon-Texturen
@@ -325,8 +320,6 @@ Folgende Änderungen wurden vorgenommen:
 	- Maximale Anzahl Steuereintreiber erhöhen (ggf. nur, wenn neue Einheiten verfügbar)
 	- Soldatenlimit anheben (ggf. nur, wenn neue Einheiten verfügbar)
 	- Rebalancing insb. für MP
-	- Zwischenproduktionen einführen
-		- Low Priority, da extrem viel Arbeit...
 - Spielbare Dörfer
 	- Dorfkasernen und Banditenzelte mit Rektutierungsoptionen
 		- Neue Entities, da vorhandene zu sehr gescripted

@@ -50,8 +50,8 @@ function Mission_FirstMapAction()
         Startup_Diplomacy()
         
         -- CP: Changed player colors to be more consistent
-        Logic.PlayerSetPlayerColor(4 , 22, -1, -1)  --Banditen: schwarz
-        Logic.PlayerSetPlayerColor(5 , 23, -1, -1)  --RP-Dudes: dark grey
+        Logic.PlayerSetPlayerColor(4 , g_ColorIndex["BanditsColor4"], -1, -1)  --Banditen: schwarz
+        Logic.PlayerSetPlayerColor(5 , g_ColorIndex["BanditsColor5"], -1, -1)  --RP-Dudes: dark grey
     end        
 
     -- create quests
