@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
+	<!--
 <string id="B_TradePost" MD5Hash="949F72045B54B3CAEC20692988CC3321" mod="20080123132529" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Trading Post]]></string>
 <string id="U_KnightSaraya" MD5Hash="8A1A7156879EE0B8B500D5F964C12D0B" mod="20071205163321" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Saraya]]></string>
 <string id="I_X_TradePostConstructionSite" MD5Hash="0544EA622D84C956D84184CF0F4EAEE1" mod="20080125115745" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Trading Post Site]]></string>
@@ -58,18 +59,7 @@
 <string id="U_KnightPraphat" MD5Hash="6D07B8E9A0E9BBAA403330C6226EA2B5" mod="20080125122041" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Praphat]]></string>
 <string id="U_KnightSarayaStanding" MD5Hash="8A1A7156879EE0B8B500D5F964C12D0B" mod="20080125122055" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Saraya]]></string>
 <string id="U_NPC_Castellan_AS" MD5Hash="2B8A17AAA65EEE7BEC4F6E23C797B6A8" mod="20080125122221" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Castellan]]></string>
-<!--<string id="U_MilitaryBandit_Melee_AS" MD5Hash="499006B1DC7CF75C0F9DF638C575904A" mod="20080125122112" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Swordsmen]]></string>
-<string id="U_MilitaryBandit_Ranged_AS" MD5Hash="E14F02B1AE9F3EDF3E54C608A6626662" mod="20080125122127" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bowmen]]></string>
-<string id="U_MilitaryBow_Khana" MD5Hash="E14F02B1AE9F3EDF3E54C608A6626662" mod="20080125122141" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bowmen]]></string>
-<string id="U_MilitarySword_Khana" MD5Hash="499006B1DC7CF75C0F9DF638C575904A" mod="20080125122151" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Swordsmen]]></string>
-<string id="U_NPC_Baker_AS" MD5Hash="654BE0C8CA53B779282A08825FBB80C7" mod="20080225145316" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Baker]]></string>
-<string id="U_NPC_Butcher_AS" MD5Hash="8029555CEFD09184E72B7A86DFDB876B" mod="20080225145422" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Butcher]]></string>
-<string id="U_NPC_DairyWorker_AS" MD5Hash="5F049D9F0EBA87965C23DC3C8D438C17" mod="20080125122232" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dairy Worker]]></string>
-<string id="U_NPC_Monk_AS" MD5Hash="12D78470B56D9FBE63BC7E03EE459F71" mod="20080125122246" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Monk]]></string>
-<string id="U_NPC_Monk_Khana" MD5Hash="12D78470B56D9FBE63BC7E03EE459F71" mod="20080125122253" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Monk]]></string>
-<string id="U_NPC_Pharmacist_AS" MD5Hash="CD5B7E8C456E1BCEB42FA60D4437E532" mod="20080306095945" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Pharmacist]]></string>
-<string id="U_NPC_SmokeHouseWorker_AS" MD5Hash="328F13F7A603B274F39F13F7F5E7F54B" mod="20080125122320" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Smoke House Worker]]></string>
-<string id="U_NPC_Villager01_AS" MD5Hash="4C2DC22C95AD9FC8FC8BF1EAE52C2CAD" mod="20080125123942" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Villager]]></string>-->
+
 <string id="I_X_ExcavationSite_Hut" MD5Hash="379EDD60D5201F1B1A269A4D6FD1E47A" mod="20080212094648" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Excavation Site]]></string>
 <string id="I_X_TigerCave" MD5Hash="26949CAB65D39580FD19AC66029891CB" mod="20080225145201" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Tigercave ]]></string>
 <string id="I_X_Holy_Cow" MD5Hash="" mod="20080228143620" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Holy Cow]]></string>
@@ -89,4 +79,5 @@
 <string id="B_Beautification_Waystone" MD5Hash="526B754DE470EF774EB37C78E058BB03" mod="20080212124958" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Waystone]]></string>
 <string id="B_Beautification_TriumphalArch" MD5Hash="50E3179098908C5B92F27EFCC9411F0A" mod="20080212130450" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Triumphal Arch]]></string>
 <string id="B_Beautification_VictoryColumn" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130520" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Victory Column]]></string>
+-->
 </root>

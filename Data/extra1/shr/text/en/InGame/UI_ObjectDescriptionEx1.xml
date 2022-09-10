@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
+	<!--
 <string id="Abilities_U_KnightSaraya" MD5Hash="081F560C7325427C9F5183B161DE8711" mod="20071205123258" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- receive tribute from nearby foreign Storehouses and Castles]]></string>
 <string id="AbilityTribute" MD5Hash="80CB1EC4FAF3367CECE66805C00059EF" mod="20071205123521" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- receive tribute from nearby foreign Storehouse or Castle]]></string>
 <string id="U_KnightSaraya" MD5Hash="0055D815AC3E445508C9F42176AAD579" mod="20080206075436" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Saraya is the daughter of Praphat, the Mogul of Hidun.  Her dexterity and fighting ability are legendary.{cr}{cr}Passive ability: {cr}Trading Post construction costs less. Gets better trade prices at the Trading Post.{cr}{cr}Active ability: {cr}Can force tribute from other players]]></string>
@@ -38,4 +39,5 @@
 	<string id="U_KnightKhana" MD5Hash="0055D815AC3E445508C9F42176AAD579" mod="20080206075412" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[-]]></string>
 	<string id="U_KnightPraphat" MD5Hash="0055D815AC3E445508C9F42176AAD579" mod="20080206075412" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[-]]></string>
 	<string id="U_NPC_Castellan_AS" MD5Hash="0055D815AC3E445508C9F42176AAD579" mod="20080206075412" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[A simple castellan of Hidun without special abilities.]]></string>
+-->
 </root>

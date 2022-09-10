@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
+	<!--
 <string id="Abilities_U_KnightSaraya" MD5Hash="8A1A7156879EE0B8B500D5F964C12D0B" mod="20071205123726" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Saraya]]></string>
 <string id="AbilityTribute" MD5Hash="7AECF10FC4C911BFC5B954ED5448A464" mod="20071205123806" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Saraya's Tribute]]></string>
 <string id="U_KnightSaraya" MD5Hash="8A1A7156879EE0B8B500D5F964C12D0B" mod="20071205163431" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Saraya]]></string>
@@ -55,4 +56,5 @@
 	<string id="Abilities_U_KnightPraphat" MD5Hash="6D07B8E9A0E9BBAA403330C6226EA2B5" mod="20080304151024" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Praphat]]></string>
 	<string id="Abilities_U_KnightKhana" MD5Hash="77D147AAA8852F941E356DCDBB345BCB" mod="20080304151126" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Khana]]></string>
 	<string id="Abilities_U_NPC_Castellan_AS" MD5Hash="0055D815AC3E445508C9F42176AAD579" mod="20080206075412" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Castellan]]></string>
+-->
 </root>

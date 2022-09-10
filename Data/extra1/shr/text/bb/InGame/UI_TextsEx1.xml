@@ -3,4 +3,16 @@
 	<string id="CampaignMenuBaseGame_center" MD5Hash="B1A57BE8AF4EF7FA176EA5B643BE3E1E" mod="20080305203709" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[{center}Rise of an Empire]]></string>
 	<string id="CampaignMenuAddOn_center" MD5Hash="B1A57BE8AF4EF7FA176EA5B643BE3E1E" mod="20080305203709" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[{center}The Eastern Realm]]></string>
 	<string id="CampaignMenuCP_center" MD5Hash="B1A57BE8AF4EF7FA176EA5B643BE3E1E" mod="20080305203709" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[{center}Custom]]></string>
+	<string id="MainMenuSelectFilter_colon" MD5Hash="D41D8CD98F00B204E9800998ECF8427E" mod="20080313163955" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Filter:]]></string>
+	<string id="MapType_All" MD5Hash="3D33F3AAB0B59B4F41D42A532F62E40F" mod="20070828185817" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[All Map Types]]></string>
+	<string id="MapSource_All" MD5Hash="3D33F3AAB0B59B4F41D42A532F62E40F" mod="20070828185817" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[All Map Sources]]></string>
+	<string id="MapSource_Default" MD5Hash="3D33F3AAB0B59B4F41D42A532F62E40F" mod="20070828185817" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Default Maps]]></string>
+	<string id="MapSource_Custom" MD5Hash="3D33F3AAB0B59B4F41D42A532F62E40F" mod="20070828185817" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Custom Maps]]></string>
+	<string id="MainMenu_NoMapSelected" MD5Hash="3D33F3AAB0B59B4F41D42A532F62E40F" mod="20070828185817" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[{center}-No Map selected-]]></string>
+	<string id="Multiplayer_MaxPlayerCount_All" MD5Hash="3D33F3AAB0B59B4F41D42A532F62E40F" mod="20070828185817" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Any number of players]]></string>
+	<string id="Multiplayer_MaxPlayerCount_Two" MD5Hash="3D33F3AAB0B59B4F41D42A532F62E40F" mod="20070828185817" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[2 players]]></string>
+	<string id="Multiplayer_MaxPlayerCount_Three" MD5Hash="3D33F3AAB0B59B4F41D42A532F62E40F" mod="20070828185817" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[3 players]]></string>
+	<string id="Multiplayer_MaxPlayerCount_Four" MD5Hash="3D33F3AAB0B59B4F41D42A532F62E40F" mod="20070828185817" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[4 players]]></string>
+	<string id="MainMenuSelectColor" MD5Hash="" mod="20070809132947" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Alternate player color]]></string>
+	<string id="MainMenuSelectColor_Tooltip" MD5Hash="" mod="20070809132947" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Enable or disable an alternate player color for single player mode.]]></string>
 </root>

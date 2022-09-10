@@ -27,8 +27,24 @@ function InitLocalOverwrite()
     -- CloseupView
     -----------------------------------------------------------------
     do
+        g_MilitaryFeedback.States["ExplicitAttackCommand"]				= "Attack"
+        g_MilitaryFeedback.States["HoldGroundCommand"]			        = "HoldPosition"
+        g_MilitaryFeedback.States["ShootCatapultCommand"] 				= "ShootCatapult"
+        g_MilitaryFeedback.States["OpenGateCommand"] 				    = "ForceOpenGate"
+        g_MilitaryFeedback.States["StealBuildingCommand"] 				= "StealBuilding"
+        
+        g_MilitaryFeedback.Variants["No"] 						= 5
+        g_MilitaryFeedback.Variants["Yes"] 						= 10
+        g_MilitaryFeedback.Variants["Attack"] 					= 10
+        g_MilitaryFeedback.Variants["HoldPosition"]				= 5
+        g_MilitaryFeedback.Variants["ShootCatapult"]			= 5
+        
+        g_MilitaryFeedback.Knights[Entities.U_KnightSabatta] 	         = "H_Knight_Sabatt"
+        g_MilitaryFeedback.Knights[Entities.U_KnightRedPrince] 	         = "H_Knight_RedPrince"
         g_MilitaryFeedback.Knights[Entities.U_KnightSaraya]              = "H_Knight_Saraya"
         
+        g_HeroAbilityFeedback.Knights[Entities.U_KnightSabatta] 	= "Sabatta"
+        g_HeroAbilityFeedback.Knights[Entities.U_KnightRedPrince] 	= "RedPrince"
         g_HeroAbilityFeedback.Knights[Entities.U_KnightSaraya] 		     = "Tribute"
         g_HeroAbilityFeedback.Knights[Entities.U_KnightPraphat] 		 = "Praphat"
         g_HeroAbilityFeedback.Knights[Entities.U_KnightKhana] 		     = "Khana"
@@ -36,11 +52,29 @@ function InitLocalOverwrite()
         g_MilitaryFeedback.Knights[Entities.U_KnightKhana]              = "H_Knight_Khana"
         g_MilitaryFeedback.Knights[Entities.U_KnightPraphat]              = "H_Knight_Praphat"
         
+        g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Melee_ME]		= "H_NPC_Mercenary_ME"
+        g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Melee_NA]		= "H_NPC_Mercenary_NA"
+        g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Melee_NE]		= "H_NPC_Mercenary_NE"
+        g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Melee_SE]		= "H_NPC_Mercenary_SE"
+        g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Ranged_ME]	= "H_NPC_Mercenary_ME"
+        g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Ranged_NA]	= "H_NPC_Mercenary_NA"
+        g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Ranged_NE]	= "H_NPC_Mercenary_NE"
+        g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Ranged_SE]	= "H_NPC_Mercenary_SE"
+        g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBow_RedPrince]		= "H_NPC_Mercenary_SE"
+        g_MilitaryFeedback.Soldiers[Entities.U_MilitarySword_RedPrince]		= "H_NPC_Mercenary_SE"
+        g_MilitaryFeedback.Soldiers[Entities.U_MilitarySpear]				= "H_NPC_Mercenary_NE"
+        g_MilitaryFeedback.Soldiers[Entities.U_Helbardier]				    = "H_NPC_Mercenary_NE"
         g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Melee_AS]		= "H_NPC_Mercenary_NA"
         g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Ranged_AS]	= "H_NPC_Mercenary_NA"
         g_MilitaryFeedback.Soldiers[Entities.U_MilitarySword_Khana]		= "H_NPC_Mercenary_ME"
         g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBow_Khana]	= "H_NPC_Mercenary_ME"
         
+        g_MilitaryFeedback.ThiefFeedbackVariants = {
+            "StealGold_rnd_01",
+            "StealInformation_rnd_02",
+            "StealInformation_rnd_04"
+        }
+
         g_MilitaryFeedback.Animals = {}
         g_MilitaryFeedback.Animals[Entities.U_Tiger] 			= "Tiger"
         g_MilitaryFeedback.Animals[Entities.U_Lion_Male] 		= "Lion"
@@ -111,6 +145,9 @@ function InitLocalOverwrite()
             OldInitTexturePositions()
             
             -- Goods
+            g_TexturePositions.Goods[Goods.G_Regalia] =  {16, 4}
+            g_TexturePositions.Goods[Goods.G_PoorSpear] =  {16, 12}
+            g_TexturePositions.Goods[Goods.G_Spear] =  {1, 16}
             g_TexturePositions.Goods[Goods.G_Gems] =  {1, 1, 1}
             g_TexturePositions.Goods[Goods.G_Olibanum] =  {1, 2, 1}
             g_TexturePositions.Goods[Goods.G_MusicalInstrument] =  {1, 3, 1}
@@ -126,6 +163,10 @@ function InitLocalOverwrite()
             g_TexturePositions.Entities[Entities.U_KnightSaraya] = {5, 4, 1}
             g_TexturePositions.Entities[Entities.U_KnightKhana] = {6, 1, 1}
             g_TexturePositions.Entities[Entities.U_KnightPraphat] = {5, 3, 1}
+            g_TexturePositions.Entities[Entities.U_NPC_Castellan_ME] = {7, 2, 1}
+            g_TexturePositions.Entities[Entities.U_NPC_Castellan_NE] = {7, 2, 1}
+            g_TexturePositions.Entities[Entities.U_NPC_Castellan_SE] = {7, 2, 1}
+            g_TexturePositions.Entities[Entities.U_NPC_Castellan_NA] = {7, 2, 1}
             g_TexturePositions.Entities[Entities.U_NPC_Castellan_AS] = {7, 2, 1}
             
             g_TexturePositions.Entities[Entities.U_MilitaryBandit_Melee_AS] = {9, 15}
@@ -146,9 +187,34 @@ function InitLocalOverwrite()
             g_TexturePositions.Entities[Entities.B_Beautification_TriumphalArch]    = {1, 5, 1}
             g_TexturePositions.Entities[Entities.B_Beautification_Vase]             = {5, 2, 1}
             g_TexturePositions.Entities[Entities.B_Beautification_VictoryColumn]    = {1, 6, 1}
+
+            g_TexturePositions.Entities[Entities.U_TrebuchetCart] = {9, 4}
+            g_TexturePositions.Entities[Entities.U_MilitaryTrebuchet] = {9, 1}
+            g_TexturePositions.Entities[Entities.U_MilitarySword_RedPrince] = {9, 1, 1}
+            g_TexturePositions.Entities[Entities.U_MilitaryBow_RedPrince] = {9, 2, 1}
+            g_TexturePositions.Entities[Entities.U_Bear]    = {13, 8}
+            g_TexturePositions.Entities[Entities.U_BlackBear]    = {13, 8}
+            g_TexturePositions.Entities[Entities.U_PolarBear]    = {13, 8}
+            g_TexturePositions.Entities[Entities.U_Wolf_Grey]    = {13, 8}
+            g_TexturePositions.Entities[Entities.U_Wolf_White]    = {13, 8}
+            g_TexturePositions.Entities[Entities.U_Wolf_Black]    = {13, 8}
+            g_TexturePositions.Entities[Entities.U_Wolf_Brown]    = {13, 8}
+            g_TexturePositions.Entities[Entities.U_Lion_Male]    = {13, 8}
+            g_TexturePositions.Entities[Entities.U_Lion_Female]    = {13, 8}
             g_TexturePositions.Entities[Entities.U_Tiger]    = {1, 8, 1}
+            g_TexturePositions.Entities[Entities.B_GuardTower_ME]    = {12, 3}
+            g_TexturePositions.Entities[Entities.B_GuardTower_NE]    = {12, 3}
+            g_TexturePositions.Entities[Entities.B_GuardTower_SE]    = {12, 3}
+            g_TexturePositions.Entities[Entities.B_GuardTower_NA]    = {12, 3}
             g_TexturePositions.Entities[Entities.B_GuardTower_AS]    = {12, 3}
+            g_TexturePositions.Entities[Entities.B_WatchTower_ME]    = {7, 6}
+            g_TexturePositions.Entities[Entities.B_WatchTower_NE]    = {7, 6}
+            g_TexturePositions.Entities[Entities.B_WatchTower_SE]    = {7, 6}
+            g_TexturePositions.Entities[Entities.B_WatchTower_NA]    = {7, 6}
             g_TexturePositions.Entities[Entities.B_WatchTower_AS]    = {7, 6}
+            g_TexturePositions.Entities[Entities.U_MilitarySpear] = {9, 1, 1}
+            g_TexturePositions.Entities[Entities.U_Helbardier] = {9, 1, 1}
+            g_TexturePositions.Entities[Entities.U_Dragon] = {7, 3}
             
             -- Quest Types
             g_TexturePositions.QuestTypes[Objective.Refill]                  = {5, 9}

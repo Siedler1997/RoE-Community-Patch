@@ -2464,6 +2464,50 @@
             <DefaultAnimID>Heads\H_NPC_Villager_AS</DefaultAnimID>
         </Model>   
 		
+		<!-- CP -->
+		
+		<Model id="Units\Military\U_MilitarySpear">
+			<SelectionRadius>100</SelectionRadius>
+			<!--<Effect>SettlerRimPlayerColorSpecular</Effect>-->
+			<SelectionTexture>Selection_Soldier</SelectionTexture>
+			<OcclusionReceiver>True</OcclusionReceiver>
+			<DefaultAnimID>Military\U_MilitaryPoleArm_Run</DefaultAnimID>
+		</Model>
+
+		<Model id="Units\U_Helbardier">
+			<SelectionRadius>100</SelectionRadius>
+			<!--<Effect>SettlerRimPlayerColorSpecular</Effect>-->
+			<SelectionTexture>Selection_Soldier</SelectionTexture>
+			<OcclusionReceiver>True</OcclusionReceiver>
+			<DefaultAnimID>U_Helbardier_Run</DefaultAnimID>
+		</Model>
+
+		<Model id="Doodads\D_X_Beautification_Dragon">
+			<CastShadow>True</CastShadow>
+			<ShareShadowRaster>True</ShareShadowRaster>
+			<!--<UseAlphaBlending>True</UseAlphaBlending>-->
+			<OcclusionCaster>True</OcclusionCaster>
+			<Effect>SimpleObjectMultiply</Effect>
+		</Model>
+
+		<Model id="Units\Military\U_Dragon">
+			<SelectionRadius>300</SelectionRadius>
+			<Effect>SettlerThroneRoom</Effect>
+			<SelectionTexture>Selection_Soldier</SelectionTexture>
+			<OcclusionReceiver>True</OcclusionReceiver>
+			<DefaultAnimID>Military\U_MilitaryPoleArm_Run</DefaultAnimID>
+		</Model>
+		
+		
+		<Model id="Goods\G_SpearSpearMaker01">
+			<Effect>SimpleObject</Effect>
+			<OcclusionCaster>False</OcclusionCaster>
+			<CastShadow>False</CastShadow>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+
+
+
 		<Model id="Buildings\B_Spicetrader_Buildingsite_1">
 			<Effect>SimpleObjectMultiply</Effect>
 			<CloseUpModeCulling>True</CloseUpModeCulling>
@@ -2479,7 +2523,6 @@
 			<CloseUpModeCulling>True</CloseUpModeCulling>
 			<OcclusionCaster>True</OcclusionCaster>
 		</Model>
-		<!--
 		<Model id="Buildings\B_Spicetrader_Yard_1">
 			<Effect>CityBuilding</Effect>
 			<OcclusionCaster>True</OcclusionCaster>
@@ -2495,7 +2538,6 @@
 			<OcclusionCaster>True</OcclusionCaster>
 			<CloseUpModeCulling>True</CloseUpModeCulling>
 		</Model>
-		-->
 		<Model id="Buildings\B_Spicetrader_Floor_1">
 			<SelectionTexture>Selection_Building</SelectionTexture>
 			<Effect>CityBuilding</Effect>
@@ -2560,12 +2602,12 @@
 			<TwoPassAlphaBlending>False</TwoPassAlphaBlending>
 			<CloseUpModeCulling>True</CloseUpModeCulling>
 		</Model>
-		<Model id="Buildings\B_Spicetrader_Rubble_2">
+		<Model id="Buildings\B_Spicetrader_Rubble_1">
 			<SelectionTexture>Selection_Building</SelectionTexture>
 			<CloseUpModeCulling>True</CloseUpModeCulling>
 			<OcclusionCaster>True</OcclusionCaster>
 		</Model>
-		<Model id="Buildings\B_Spicetrader_Rubble_3">
+		<Model id="Buildings\B_Spicetrader_Rubble_2">
 			<SelectionTexture>Selection_Building</SelectionTexture>
 			<CloseUpModeCulling>True</CloseUpModeCulling>
 			<OcclusionCaster>True</OcclusionCaster>
