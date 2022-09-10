@@ -152,5 +152,8 @@ end
 
 function SetAltPlayerColor()
     local newColor = Options.GetIntValue("Game", "AltPlayerColor", 0)
+    if newColor == 0 then
+        newColor = newColor + 1
+    end
     GUI.SendScriptCommand("PlayerChangePlayerColor2("..newColor..")")
 end

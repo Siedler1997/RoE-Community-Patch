@@ -229,6 +229,7 @@ Folgende Änderungen wurden vorgenommen:
 
 
 ## (Mögliche) ToDos
+- Falsche Burgflaggen-Textur, wenn Alternative Spielerfarbe als Property nicht in Options.ini hinterlegt
 - c00-m3: Falsche Nachricht am Anfang
 - Bonus-Ritterfähigkeit im Thronsaal ragt in Titelliste mit rein
 - Lanzenträger/Hellebardiere
