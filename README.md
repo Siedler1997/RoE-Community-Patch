@@ -245,8 +245,6 @@ Folgende Änderungen wurden vorgenommen:
 	- ME-Aussichtsturm: Schwarze Seite
 	- Wachtürme: Mit Schützen bemannbar statt mit Katapulten ausrüstbar?
 	- Eigene Button-Texturen für Aussichtsturm und Wachturm
-		- Wachturm: QuestInformation.Tower (mit Katapult), ...?
-		- Aussichtsturm: PB_Tower1, Alarm, ...?
 	- Generischer Außenposten, inkl. Katapult und Soldatenbemannung
 - Hidun-Turnier: Neue Zelte und andere Siedler
 	- Texturen für DEdK-Zelte gibt es schon
@@ -284,6 +282,7 @@ Folgende Änderungen wurden vorgenommen:
 	- Eigene Icon-Texturen
 	- Es dreht sich nicht richtig
 	- Begleitende Sodaten bewegen sich nach einem Move nicht mehr korrekt
+	- Ggf. nur NPC-Einheit, dafür Fokus auf Kanone
 - Sturm
 	- soll mal funktionieren
 	- Abwandlung: Schneesturm
