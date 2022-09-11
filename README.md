@@ -229,9 +229,7 @@ Folgende Änderungen wurden vorgenommen:
 
 
 ## (Mögliche) ToDos
-- Falsche Burgflaggen-Textur, wenn Alternative Spielerfarbe als Property nicht in Options.ini hinterlegt
 - c00-m3: Falsche Nachricht am Anfang
-- Bonus-Ritterfähigkeit im Thronsaal ragt in Titelliste mit rein
 - Lanzenträger/Hellebardiere
 	- Icon
 	- Audio-Feedback
@@ -246,7 +244,6 @@ Folgende Änderungen wurden vorgenommen:
 	- ME-Aussichtsturm: Schwarze Seite
 	- Wachtürme: Mit Schützen bemannbar statt mit Katapulten ausrüstbar?
 	- Eigene Button-Texturen für Aussichtsturm und Wachturm
-	- Generischer Außenposten, inkl. Katapult und Soldatenbemannung
 - Hidun-Turnier: Neue Zelte und andere Siedler
 	- Texturen für DEdK-Zelte gibt es schon
 - Default custom maps
@@ -277,7 +274,6 @@ Folgende Änderungen wurden vorgenommen:
 	- Format ändern, um das ganze Bild sehen zu können
 		- Beispiel: siehe "chapter3_Test.png"
 		- Ränder sollten noch etwas dekoriert werden
-	- AddOn-Kampagne-Loadscreens: Richtige Spielerfarben (per Bildbearbeitung)
 - Baubares Trebuchet
 	- Eigenes Karren-Modell
 	- Eigene Icon-Texturen
@@ -328,6 +324,8 @@ Folgende Änderungen wurden vorgenommen:
 	- SpiceTrader
 - Fremder Content
 	- DEdK-Soundtrack
+	- S4 Soundtrack
+	- Stronghold Soundtrack
 - Auf 4k-Auflösung kann nicht mehr per BorderScroll nach rechts gecrolled werden
 - Biom-spezifisches Retexturing für Kerngebäude
 	- Das oder neue Modelle

@@ -4,13 +4,13 @@
     "\\Data",
     "\\Data\\extra1",
     "\\Data\\extra1\\shr",
-    "\\Data\\extra1\\shr\\config",
     "\\Data\\extra1\\shr\\graphics",
-    "\\Data\\extra1\\shr\\Script",
-    "\\Data\\extra1\\shr\\Script\\Global",
-    "\\Data\\extra1\\shr\\Script\\Local",
-    "\\Data\\extra1\\shr\\Script\\Local\\Interface"
+    "\\Data\\extra1\\shr\\graphics\\Textures",
+    "\\Data\\extra1\\shr\\graphics\\Textures\\GUI_768",
+    "\\Data\\extra1\\shr\\graphics\\Textures\\GUI_768\\Loadscreens",
+    "\\Data\\extra1\\shr\\graphics\\Textures\\GUI_960",
+    "\\Data\\extra1\\shr\\graphics\\Textures\\GUI_960\\Loadscreens"
   ],
-  "SelectedNode": "\\Data\\extra1\\shr\\Script\\Local\\Interface\\Feedback.lua",
+  "SelectedNode": "\\Data\\extra1\\shr\\graphics\\Textures\\GUI_1200",
   "PreviewInSolutionExplorer": false
 }
