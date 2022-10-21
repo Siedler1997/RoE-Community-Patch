@@ -165,7 +165,7 @@ function GameCallback_GUI_SelectionChanged(_Source)
 
                 local AnchorInfoForBigX, AnchorInfoForBigY = XGUIEng.GetWidgetLocalPosition("/InGame/Root/Normal/AlignBottomRight/Selection/AnchorInfoForBig")
                 XGUIEng.SetWidgetLocalPosition("/InGame/Root/Normal/AlignBottomRight/Selection/Info", AnchorInfoForBigX, AnchorInfoForBigY)
-            elseif Logic.GetCathedral(PlayerID) == EntityID then
+            elseif Logic.GetCathedral(PlayerID) == EntityID or EntityType == Entities.B_Beautification_Cathedral then
                 XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/Selection/BGSmall",1)
                 XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/Selection/Cathedral",1)
                 XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/Building",1)

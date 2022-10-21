@@ -94,7 +94,7 @@ Folgende Änderungen wurden vorgenommen:
 		- Khana-Einheiten haben keine Overhead-Namen mehr
 	- "Neue" Einheiten
 		- Lanzenträger
-			- Inspiriert von den Streitkanzenträgern in DEdK
+			- Inspiriert von den Streitlanzenträgern in DEdK
 			- Statuswerte (im Vergleich zu Schwertkämpfern)
 				- Höhere Lebenspunkte (180 > 120)
 				- Weniger Schaden (15 < 20)
