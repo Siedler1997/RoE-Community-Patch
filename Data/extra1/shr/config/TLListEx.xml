@@ -6,4 +6,12 @@
     <TaskList>TL_GEOLOGIST_REFILL_STONE_MINE</TaskList>
     <TaskList>TL_GEOLOGIST_REFILL_IRON_MINE</TaskList>
     <TaskList>TL_DIGGER_IDLE</TaskList>
+
+
+	<!-- Community Patch -->
+
+	<TaskList>TL_KNIGHT_ABILITY_TRIBUTE</TaskList>
+	<TaskList>TL_SPEARMAKER_WORK01</TaskList>
+	<TaskList>TL_SPEARMAKER_WORK02</TaskList>
+	<TaskList>TL_SPEARMAKER_WORK03</TaskList>
 </root>

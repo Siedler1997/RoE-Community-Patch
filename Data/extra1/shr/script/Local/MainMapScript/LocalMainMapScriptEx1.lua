@@ -113,6 +113,22 @@ do
             Actor = "H_Knight_Praphat"
             
             return Actor
+        elseif _KnightEntityType == Entities.U_NPC_Castellan_ME then
+            Actor = "H_NPC_Castellan_ME"
+            
+            return Actor
+        elseif _KnightEntityType == Entities.U_NPC_Castellan_NE then
+            Actor = "H_NPC_Castellan_NE"
+            
+            return Actor
+        elseif _KnightEntityType == Entities.U_NPC_Castellan_NA then
+            Actor = "H_NPC_Castellan_NA"
+            
+            return Actor
+        elseif _KnightEntityType == Entities.U_NPC_Castellan_SE then
+            Actor = "H_NPC_Castellan_SE"
+            
+            return Actor
         elseif _KnightEntityType == Entities.U_NPC_Castellan_AS then
             Actor = "H_NPC_Castellan_AS"
             
@@ -133,3 +149,11 @@ function FixCameraPosition(_LookAtX, _LookAtY, _RotationAngle, _ZoomFactor)
     CameraAnimation.QueueAnimation( CameraAnimation.Stay ,  9999 )
 end
 
+
+function SetAltPlayerColor()
+    local newColor = Options.GetIntValue("Game", "AltPlayerColor", 0)
+    if newColor == 0 then
+        newColor = newColor + 1
+    end
+    GUI.SendScriptCommand("PlayerChangePlayerColor2("..newColor..")")
+end

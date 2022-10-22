@@ -961,8 +961,8 @@ function Mission_FirstMapAction()
         Startup_Diplomacy()
         
         -- CP: Changed player colors to be more consistent
-        Logic.PlayerSetPlayerColor(5 , 24, -1, -1)  --Khistangra: Dunkelbraun
-        Logic.PlayerSetPlayerColor(8 , 20, -1, -1)  --Praphat: Banditen-Orange
+        Logic.PlayerSetPlayerColor(5 , g_ColorIndex["TravelingSalesmanColor"], -1, -1)  --Khistangra: Dunkelbraun
+        Logic.PlayerSetPlayerColor(8 , g_ColorIndex["BanditsColor2"], -1, -1)  --Praphat: Banditen-Orange
     end        
 
     -- create quests

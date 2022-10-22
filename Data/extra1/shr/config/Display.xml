@@ -105,31 +105,6 @@
             <B>220</B>
         </MiniMapColor>
         <MiniMapColor>
-            <R>235</R> 
-            <G>255</G> 
-            <B>53</B> 
-        </MiniMapColor>
-        <MiniMapColor>
-            <R>252</R> 
-            <G>164</G> 
-            <B>39</B> 
-        </MiniMapColor>
-        <MiniMapColor>
-            <R>178</R>
-            <G>2</G>
-            <B>255</B>
-        </MiniMapColor>
-        <MiniMapColor>
-            <R>255</R> 
-            <G>150</G> 
-            <B>214</B> 
-        </MiniMapColor>
-        <MiniMapColor>
-            <R>111</R>
-            <G>5</G>
-            <B>41</B>
-        </MiniMapColor>
-        <MiniMapColor>
             <R>39</R>
             <G>62</G>
             <B>11</B>
@@ -143,11 +118,6 @@
             <R>28</R>
             <G>102</G>
             <B>103</B>
-        </MiniMapColor>
-        <MiniMapColor>
-            <R>139</R>
-            <G>223</G>
-            <B>255</B>
         </MiniMapColor>
         <MiniMapColor>
             <R>193</R>
@@ -165,16 +135,6 @@
 			<B>97</B>
 		</MiniMapColor>
 		<MiniMapColor>
-			<R>230</R>
-			<G>230</G>
-			<B>230</B>
-		</MiniMapColor>
-		<MiniMapColor>
-			<R>115</R>
-			<G>209</G>
-			<B>65</B>
-		</MiniMapColor>
-		<MiniMapColor>
 			<R>184</R>
 			<G>171</G>
 			<B>97</B>
@@ -190,6 +150,51 @@
 			<B>28</B>
 		</MiniMapColor>
 		<MiniMapColor>
+			<R>111</R>
+			<G>5</G>
+			<B>41</B>
+		</MiniMapColor>
+		<MiniMapColor>
+			<R>71</R>
+			<G>47</G>
+			<B>39</B>
+		</MiniMapColor>
+		<MiniMapColor>
+			<R>139</R>
+			<G>223</G>
+			<B>255</B>
+		</MiniMapColor>
+		<MiniMapColor>
+			<R>255</R>
+			<G>150</G>
+			<B>214</B>
+		</MiniMapColor>
+		<MiniMapColor>
+			<R>235</R>
+			<G>255</G>
+			<B>53</B>
+		</MiniMapColor>
+		<MiniMapColor>
+			<R>252</R>
+			<G>164</G>
+			<B>39</B>
+		</MiniMapColor>
+		<MiniMapColor>
+			<R>178</R>
+			<G>2</G>
+			<B>255</B>
+		</MiniMapColor>
+		<MiniMapColor>
+			<R>230</R>
+			<G>230</G>
+			<B>230</B>
+		</MiniMapColor>
+		<MiniMapColor>
+			<R>115</R>
+			<G>209</G>
+			<B>65</B>
+		</MiniMapColor>
+		<MiniMapColor>
 			<R>57</R>
 			<G>57</G>
 			<B>57</B>
@@ -198,11 +203,6 @@
 			<R>136</R>
 			<G>136</G>
 			<B>136</B>
-		</MiniMapColor>
-		<MiniMapColor>
-			<R>71</R>
-			<G>47</G>
-			<B>19</B>
 		</MiniMapColor>
     </MiniMapColors>
 

@@ -11,6 +11,10 @@
 		<MaxHealth> 200 </MaxHealth>
 		<NeedsPlayer>true</NeedsPlayer>
 		<ForceNoPlayer>false</ForceNoPlayer>
+		<EntityCategories>
+			<EntityCategory>Worker</EntityCategory>
+			<EntityCategory>Spouse</EntityCategory>
+		</EntityCategories>
 		<AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
 		<Exploration>0</Exploration>
 		<IdleTaskList>TL_NPC_SPOUSE_IDLE</IdleTaskList>

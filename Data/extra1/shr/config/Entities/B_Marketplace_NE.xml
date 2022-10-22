@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <!--Display classname="ED::CEntityProps">
+        <Class>ED::CDisplayBuilding</Class>
+        <Model>B_Marketplace_01</Model>
+        <Banner>Default</Banner>
+        <Anim></Anim>
+    </Display-->
+
+    <Display classname="ED::CReplaceUpgradeBuildingProps">
+        <Class>ED::CWell</Class>
+        <Model>Buildings\B_NE_Marketplace01</Model>
+
+        <Upgrade_1>Buildings\B_NE_Marketplace02</Upgrade_1>
+        <Upgrade_2>Buildings\B_NE_Marketplace03</Upgrade_2>
+        <Upgrade_3>Buildings\B_NE_Marketplace04</Upgrade_3>
+        <Upgrade_4>Buildings\B_NE_Marketplace04</Upgrade_4>
+
+        <OnScreenOffset>100</OnScreenOffset>
+
+        <BannersPerUpgrade>
+            <Banner classname="ED::CBannerProps">
+                <Model></Model>
+                <AnimationNoWind></AnimationNoWind>
+                <AnimationNormalWind></AnimationNormalWind>
+                <AnimationStrongWind></AnimationStrongWind>
+            </Banner>
+
+            <Banner classname="ED::CBannerProps">
+                <Model></Model>
+                <AnimationNoWind></AnimationNoWind>
+                <AnimationNormalWind></AnimationNormalWind>
+                <AnimationStrongWind></AnimationStrongWind>
+            </Banner>
+
+            <Banner classname="ED::CBannerProps">
+                <Model></Model>
+                <AnimationNoWind></AnimationNoWind>
+                <AnimationNormalWind></AnimationNormalWind>
+                <AnimationStrongWind></AnimationStrongWind>
+            </Banner>
+
+            <Banner classname="ED::CBannerProps">
+                <Model></Model>
+                <AnimationNoWind></AnimationNoWind>
+                <AnimationNormalWind></AnimationNormalWind>
+                <AnimationStrongWind></AnimationStrongWind>
+            </Banner>
+        </BannersPerUpgrade>
+        
+        <KnightModels>
+            <Mapping classname="ED::CKnightModelProps">
+                <Model>Buildings/B_Market_Healing</Model>
+                <KnightEntity>U_KnightHealing</KnightEntity>
+            </Mapping>
+            
+            <Mapping classname="ED::CKnightModelProps">
+                <Model>Buildings/B_Market_Chivalry</Model>
+                <KnightEntity>U_KnightChivalry</KnightEntity>
+            </Mapping>
+            
+            <Mapping classname="ED::CKnightModelProps">
+                <Model>Buildings/B_Market_Plunder</Model>
+                <KnightEntity>U_KnightPlunder</KnightEntity>
+            </Mapping>
+            
+            <Mapping classname="ED::CKnightModelProps">
+                <Model>Buildings/B_Market_Wisdom</Model>
+                <KnightEntity>U_KnightWisdom</KnightEntity>
+            </Mapping>
+            
+            <Mapping classname="ED::CKnightModelProps">
+                <Model>Buildings/B_Market_Song</Model>
+                <KnightEntity>U_KnightSong</KnightEntity>
+            </Mapping>
+            
+            <Mapping classname="ED::CKnightModelProps">
+                <Model>Buildings/B_Market_Trading</Model>
+                <KnightEntity>U_KnightTrading</KnightEntity>
+            </Mapping>
+            
+            <Mapping classname="ED::CKnightModelProps">
+                <Model>Buildings/B_Market_Sabatt</Model>
+                <KnightEntity>U_KnightSabatta</KnightEntity>
+            </Mapping>
+            
+            <Mapping classname="ED::CKnightModelProps">
+                <Model>Buildings/B_Market_RedPrince</Model>
+                <KnightEntity>U_KnightRedPrince</KnightEntity>
+            </Mapping>
+            
+            <Mapping classname="ED::CKnightModelProps">
+                <Model>Buildings/B_Market_Saraya</Model>
+                <KnightEntity>U_KnightSaraya</KnightEntity>
+            </Mapping>
+
+			<Mapping classname="ED::CKnightModelProps">
+				<Model>Buildings/B_Market_Soldier</Model>
+				<KnightEntity>U_KnightKhana</KnightEntity>
+			</Mapping>
+
+			<Mapping classname="ED::CKnightModelProps">
+				<Model>Buildings/B_Market_Soldier</Model>
+				<KnightEntity>U_KnightPraphat</KnightEntity>
+			</Mapping>
+
+			<Mapping classname="ED::CKnightModelProps">
+				<Model>Buildings/B_Market_Soldier</Model>
+				<KnightEntity>U_NPC_Castellan_ME</KnightEntity>
+			</Mapping>
+
+			<Mapping classname="ED::CKnightModelProps">
+				<Model>Buildings/B_Market_Soldier</Model>
+				<KnightEntity>U_NPC_Castellan_NE</KnightEntity>
+			</Mapping>
+
+			<Mapping classname="ED::CKnightModelProps">
+				<Model>Buildings/B_Market_Soldier</Model>
+				<KnightEntity>U_NPC_Castellan_SE</KnightEntity>
+			</Mapping>
+
+			<Mapping classname="ED::CKnightModelProps">
+				<Model>Buildings/B_Market_Soldier</Model>
+				<KnightEntity>U_NPC_Castellan_NA</KnightEntity>
+			</Mapping>
+
+			<Mapping classname="ED::CKnightModelProps">
+				<Model>Buildings/B_Market_Soldier</Model>
+				<KnightEntity>U_NPC_Castellan_AS</KnightEntity>
+			</Mapping>
+            
+            <Mapping classname="ED::CKnightModelProps">
+                <Model>Buildings/B_Market_Soldier</Model>
+                <KnightEntity></KnightEntity>
+            </Mapping>
+        </KnightModels>
+    </Display>
+
+    <Logic classname="EGL::CMarketplaceProps">
+        <Class>EGL::CMarketplace</Class>
+
+      <UpgradeCosts>
+            <UpgradeCost>
+                <GoodAmount>
+                    <GoodType>G_Stone</GoodType>
+                    <Amount>0</Amount>
+                </GoodAmount>
+            </UpgradeCost>
+            <UpgradeCost>
+                <GoodAmount>
+                    <GoodType>G_Stone</GoodType>
+                    <Amount>0</Amount>
+                </GoodAmount>
+            </UpgradeCost>
+
+            <UpgradeCost>
+                <GoodAmount>
+                    <GoodType>G_Stone</GoodType>
+                    <Amount>0</Amount>
+                </GoodAmount>
+            </UpgradeCost>
+        </UpgradeCosts>
+
+        <ProducedGood>
+            <GoodType>G_Water</GoodType>
+            <Amount>0</Amount>
+        </ProducedGood>
+        <OutStockCapacities>
+            <OutStockCapacity>15</OutStockCapacity>
+            <OutStockCapacity>30</OutStockCapacity>
+            <OutStockCapacity>70</OutStockCapacity>
+            <OutStockCapacity>120</OutStockCapacity>
+            <OutStockCapacity>180</OutStockCapacity>
+        </OutStockCapacities>
+
+        <MaxNumberOfUpgrades>3</MaxNumberOfUpgrades>
+        <SecondsToUpgrade>0</SecondsToUpgrade>
+
+        <CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim> <!-- Hack: City Buildings can buold everywhere -->
+        <FlattenOnBuild>true</FlattenOnBuild>
+	<IsHeightLocking>true</IsHeightLocking>
+	<MayRemoveEntities>true</MayRemoveEntities>
+        <AccessCategory>AccessCategoryBuilding</AccessCategory>
+        <NeedsPlayer>true</NeedsPlayer>
+        <ForceNoPlayer>false</ForceNoPlayer>
+        <MaxHealth>6000</MaxHealth>
+        <SlotType>B_Marketslot</SlotType>
+        <SlotPlacementRadius>500</SlotPlacementRadius>
+
+        <WellApproachDistances>
+            <WellApproachDistance>230</WellApproachDistance>
+            <WellApproachDistance>230</WellApproachDistance>
+            <WellApproachDistance>230</WellApproachDistance>
+            <WellApproachDistance>230</WellApproachDistance>
+        </WellApproachDistances>
+        <CanLeaveImmediately>true</CanLeaveImmediately>
+        <EntityCategories>
+            <EntityCategory>Marketplace</EntityCategory>
+            <EntityCategory>G_Water_Supplier</EntityCategory>
+            <EntityCategory>NonTorchable</EntityCategory>
+        </EntityCategories>
+        <RepairBuildingTL>TL_WORKER_REPAIR</RepairBuildingTL>
+
+        <ApproachPos>
+            <X>0</X>
+            <Y>0</Y>
+        </ApproachPos>
+        <ApproachR>400</ApproachR>
+        <DoorPos>
+            <X>0</X>
+            <Y>0</Y>
+        </DoorPos>
+        <BlockingAreas>
+            <BlockingArea>
+                <Blocked1>
+                    <X>200</X>
+                    <Y>200</Y>
+                </Blocked1>
+                <Blocked2>
+                    <X>-200</X>
+                    <Y>-200</Y>
+                </Blocked2>
+            </BlockingArea>
+        </BlockingAreas>
+        <BuildBlockingAreas>
+            <BuildBlockingArea>
+                <Blocked1>
+                    <X>-600</X>
+                    <Y>600</Y>
+                </Blocked1>
+                <Blocked2>
+                    <X>600</X>
+                    <Y>-600</Y>
+                </Blocked2>
+            </BuildBlockingArea>
+        </BuildBlockingAreas>
+        <Exploration>0</Exploration>
+
+	<RoadPoints>
+		<RoadPoint>
+			<X>-450</X>
+			<Y>1050</Y>
+		</RoadPoint>
+		<RoadPoint>
+			<X>450</X>
+			<Y>1050</Y>
+		</RoadPoint>
+		<RoadPoint>
+			<X>1050</X>
+			<Y>450</Y>
+		</RoadPoint>
+		<RoadPoint>
+			<X>1050</X>
+			<Y>-450</Y>
+		</RoadPoint>
+		<RoadPoint>
+			<X>450</X>
+			<Y>-1050</Y>
+		</RoadPoint>
+		<RoadPoint>
+			<X>-450</X>
+			<Y>-1050</Y>
+		</RoadPoint>
+		<RoadPoint>
+			<X>-1050</X>
+			<Y>-450</Y>
+		</RoadPoint>
+		<RoadPoint>
+			<X>-1050</X>
+			<Y>450</Y>
+		</RoadPoint>
+	</RoadPoints>
+    </Logic>
+
+    <Behaviors>
+        <Behavior>
+            <Logic classname="EGL::CWellBehaviorProps">
+                <Class>EGL::CWellBehavior</Class>
+                <WaterRefillRatePerSecond>0.01</WaterRefillRatePerSecond>
+                <AddRateRain>0.1</AddRateRain>
+                <WaterType>G_Water</WaterType>
+                <WarnIfWaterLow>true</WarnIfWaterLow>
+            </Logic>
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CWellBehavior</Class>
+            </Display>
+        </Behavior>
+        <Behavior>
+            <Logic classname="EGL::CStockBehaviorProps">
+                <Class>EGL::CStockOutBehavior</Class>
+                <MaxAmountOnStock>50</MaxAmountOnStock>
+                <GoodTypes>
+                    <GoodType>G_Water</GoodType>
+                </GoodTypes>
+            </Logic>
+        </Behavior>
+    </Behaviors>
+    <MapEditor>
+        <TreePosition>Buildings\City</TreePosition>
+        <ShowInTree>true</ShowInTree>
+        <Clime>NorthEurope</Clime>
+        <Scalable>false</Scalable>
+        <TemplateResistant>true</TemplateResistant>
+    </MapEditor>
+</root>

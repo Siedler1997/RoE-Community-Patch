@@ -13,9 +13,9 @@
 		<PlayerSectorType>PlayerSectorTypeMilitary</PlayerSectorType>
 		<MilMetaFormationMemberType>MilMetaFormationMemberTypeMelee</MilMetaFormationMemberType>
 		<CostsCanBeModified>true</CostsCanBeModified>
-		<MaxHealth>120</MaxHealth>
+		<MaxHealth>150</MaxHealth>
 		<HealingSeconds>10</HealingSeconds>
-		<HealingPoints>10</HealingPoints>
+		<HealingPoints>25</HealingPoints>
 
 		<NeedsPlayer>true</NeedsPlayer>
 		<ForceNoPlayer>false</ForceNoPlayer>
@@ -33,7 +33,7 @@
 				<Amount>15</Amount>
 			</GoodAmount>
 			<GoodAmount>
-				<GoodType>G_Sword</GoodType>
+				<GoodType>G_Spear</GoodType>
 				<Amount>1</Amount>
 			</GoodAmount>
 		</Cost>
@@ -48,7 +48,7 @@
 			<With>SheepPasture</With>
 			<With>CattlePasture</With>
 		</Familiar>
-		<SoundImpactType>Metal</SoundImpactType>
+		<SoundImpactType>Leather</SoundImpactType>
 		<SoundProjectileType>Lance</SoundProjectileType>
 
 		<!--        <OnScreenIcon>MinimapSword</OnScreenIcon>
@@ -76,7 +76,7 @@
 				<Class>EGL::CMilitarySoldierMovementBehavior</Class>
 				<StraightenPath>true</StraightenPath>
 				<EvasionPriority>140</EvasionPriority>
-				<Speed>420</Speed>
+				<Speed>450</Speed>
 				<RotationSpeed>500</RotationSpeed>
 				<MoveTaskList>TL_MILITARY_WALK</MoveTaskList>
 				<MoveIdleAnim>Military\U_MilitarySpear_Idle1</MoveIdleAnim>

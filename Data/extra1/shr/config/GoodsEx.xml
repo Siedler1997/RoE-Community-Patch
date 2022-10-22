@@ -59,5 +59,49 @@
 		  </Logic>
 		  <Display classname="ED::CDisplayGoodProps"></Display>
 	  </Good>
+
+	  <Good id="G_Spear">
+		  <Logic classname="EGL::CGoodProps">
+			  <GoodCategory>GC_Weapon</GoodCategory>
+			  <Value>0.2</Value>
+			  <Worth>10</Worth>
+			  <StandCarryAnimationCategory>StandCarryGood</StandCarryAnimationCategory>
+			  <WalkCarryAnimationCategory>WalkCarryGood</WalkCarryAnimationCategory>
+			  <RequiredResources>
+				  <Resource>
+					  <GoodAmount>
+						  <GoodType>G_PoorSpear</GoodType>
+						  <Amount>3</Amount>
+					  </GoodAmount>
+					  <ProviderCategory>G_Spear_Supplier</ProviderCategory>
+				  </Resource>
+			  </RequiredResources>
+		  </Logic>
+		  <Display classname="ED::CDisplayGoodProps">
+			  <Model>Goods\G_Spear</Model>
+		  </Display>
+	  </Good>
+
+	  <Good id="G_PoorSpear">
+		  <Logic classname="EGL::CGoodProps">
+			  <GoodCategory>GC_Weapon</GoodCategory>
+			  <Value>0.2</Value>
+			  <Worth>10</Worth>
+			  <StandCarryAnimationCategory>StandCarryBucket</StandCarryAnimationCategory>
+			  <WalkCarryAnimationCategory>WalkCarryBucket</WalkCarryAnimationCategory>
+			  <RequiredResources>
+				  <Resource>
+					  <GoodAmount>
+						  <GoodType>G_Iron</GoodType>
+						  <Amount>1</Amount>
+					  </GoodAmount>
+					  <ProviderCategory>G_Iron_Supplier</ProviderCategory>
+				  </Resource>
+			  </RequiredResources>
+		  </Logic>
+		  <Display classname="ED::CDisplayGoodProps">
+			  <Model>Goods\G_SpearSpearMaker01</Model>
+		  </Display>
+	  </Good>
   </Goods>
 </root>

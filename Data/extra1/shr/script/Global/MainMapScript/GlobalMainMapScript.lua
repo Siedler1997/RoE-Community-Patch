@@ -320,7 +320,7 @@ end
 
 function InitPlayerColorIndex()
     g_ColorIndex = {}
-
+    --[[
     g_ColorIndex["CityColor1"] = 1
     g_ColorIndex["CityColor2"] = 2
     g_ColorIndex["CityColor3"] = 3
@@ -350,10 +350,13 @@ function InitPlayerColorIndex()
     g_ColorIndex["BanditsColor5"] = 23  --Dark Grey
     
     g_ColorIndex["TravelingSalesmanColor"] = 24
+    --]]
     
+    g_ColorIndex["CityColor1"] = 1
+    g_ColorIndex["CityColor2"] = 2
+    g_ColorIndex["CityColor3"] = 3
+    g_ColorIndex["CityColor4"] = 4
     
-    
-    --[[
     g_ColorIndex["VillageColor1"] = 5
     g_ColorIndex["VillageColor2"] = 6
     g_ColorIndex["VillageColor3"] = 7
@@ -370,17 +373,18 @@ function InitPlayerColorIndex()
     
     g_ColorIndex["TravelingSalesmanColor"] = 15
     
+    --Normally unused
+    g_ColorIndex["VillageColor4"] = 16  --Light Blue
+    g_ColorIndex["CityColor8"] = 17     --Pink
+
     -- CP-Colors
     g_ColorIndex["CityColor5"] = 18     --Yellow
     g_ColorIndex["CityColor6"] = 19     --Orange
-    g_ColorIndex["CityColor7"] = 23     --Purple
-    g_ColorIndex["CityColor8"] = 17     --Pink
-    g_ColorIndex["VillageColor4"] = 16  --Light Blue
-    g_ColorIndex["CloisterColor4"] = 22 --White
-    g_ColorIndex["CloisterColor5"] = 24 --Light Green
-    g_ColorIndex["BanditsColor4"] = 21  --Black
-    g_ColorIndex["BanditsColor5"] = 20  --Dark Grey
-    --]]
+    g_ColorIndex["CityColor7"] = 20     --Purple
+    g_ColorIndex["CloisterColor4"] = 21 --White
+    g_ColorIndex["CloisterColor5"] = 22 --Light Green
+    g_ColorIndex["BanditsColor4"] = 23  --Black
+    g_ColorIndex["BanditsColor5"] = 24  --Dark Grey
 end
 
 

@@ -10,7 +10,14 @@ Extra1 findest du unter The `Settlers - Rise of an Empire - History Edition\Data
 2. Projekt über Code -> Download ZIP herunterladen
 3. Kopiere den `Data` Ordner in der Zip nach `Settlers - Rise of an Empire - History Edition` und bstätige das Überschreiben.
 4. Ändere die Starteinstellungen in Steam bzw. Uplay, sodass das Programm mit `-EXTRA1` als Parameter ausgeführt wird.
-5. Zocken
+3. Zocken
+
+## Deinstallation
+Mit folgenden Schritten lässt sich der Patch deinstallieren:
+1. Lösche `Settlers - Rise of an Empire - History Edition\Data\extra1`.
+2. Benenne die Sicherheitskopie von `extra1_orig` in `extra1` um.
+3. Entferne `-EXTRA1` aus den Startoptionen von Steam bzw. Uplay.
+4. Vanilla zocken
 
 ## Deinstallation
 Mit folgenden Schritten lässt sich der Patch deinstallieren:
@@ -24,6 +31,7 @@ Mit folgenden Schritten lässt sich der Patch deinstallieren:
 ## Features
 Folgende Änderungen wurden vorgenommen:
 - Ritter
+	- Haben nun je 3 "Fackeln", um Gebäude angreifen zu können
 	- "Alte" Ritter überarbeitet
 		- Allandra
 			- Passive Fähigkeiten: Bonusgold für Predigten erhöht (20% -> 40%)
@@ -51,7 +59,7 @@ Folgende Änderungen wurden vorgenommen:
 			- Passive Fähigkeit: Bessere Handelskonditionen (wie Elias)
 			- Bonus: Rekrutierung von Signatureinheiten in Kasernen
 		- Der Rote Prinz
-			- Aktive Fähigkeit: Tribut (im Hauptspiel nur Gold, im AddOn wie Saraya)
+			- Aktive Fähigkeit: Tribut (wie Saraya)
 			- Passive Fähigkeit: Höhere Steuern (wie Kestral)
 			- Bonus: Rekrutierung von Signatureinheiten in Kasernen
 			- Für Mapper: 
@@ -70,6 +78,7 @@ Folgende Änderungen wurden vorgenommen:
 			- Haben keine besonderen Fähigkeiten
 		- Varianz an Ladebildschirm-Bildern
 - Militär
+	- Einheiten können mittels Entlassen-Button ... entlassen werden
 	- Bogenschützen allgemein
 		- Fernkampf-Schaden deutlich reduziert (30 -> 20)
 		- Maximale Fernkampf-Reichweite leicht erhöht (24sm -> 25sm)
@@ -77,9 +86,11 @@ Folgende Änderungen wurden vorgenommen:
 	- Banditen 
 		- Können in Kasernen wieder aufgefüllt werden
 		- Haben ein eigenes Audio-Feedback
-		- Können effektiver Gebäude anzünden
-			- Schaden pro Fackel verdoppelt (5 -> 10)
-			- Jeder Bandit trägt eine Fackel mehr (1 -> 2)
+		- Haben etwas andere Statuswerte ggü. konventionellen Einheiten
+			- Weniger Lebenspunkte (-5)
+			- Höhere Bewegungsgeschwindigkeit (480 < 500)
+			- Höherer Schaden gegen Gebäude (5 -> 10)
+			- Eine Fackel mehr (1 -> 2)
 		- Fixes
 			- Südeuropäische Banditen-Schwertkämpfer greifen nicht mehr automatisch Gebäude an
 			- Asiatische Banditen haben keine Overhead-Namen mehr
@@ -87,17 +98,30 @@ Folgende Änderungen wurden vorgenommen:
 		- Können in Kasernen wieder aufgefüllt werden
 		- Haben ein anderes Audio-Feedback 
 			- Zurzeit noch das von Banditen...
+		- Haben etwas andere Statuswerte ggü. konventionellen Einheiten
+			- RP
+				- Weniger Lebenspunkte (-5)
+				- Höhere Bewegungsgeschwindigkeit (480 < 490)
+			- Khana
+				- Weniger Lebenspunkte (-10)
+				- Höhere Bewegungsgeschwindigkeit (480 < 500)
+				- Höherer Schaden gegen anderen Einheiten (20 < 22)
 		- RP-Einheiten haben eine eigene Button-Textur
 		- Khana-Einheiten haben keine Overhead-Namen mehr
 	- "Neue" Einheiten
-		- Hellebardiere
-			- Inspiriert von den Hellebardieren in DEdK
+		- Lanzenträger
+			- Inspiriert von den Streitlanzenträgern in DEdK
 			- Statuswerte (im Vergleich zu Schwertkämpfern)
-				- Höhere Lebenspunkte (150 > 120)
+				- Höhere Lebenspunkte (180 > 120)
 				- Weniger Schaden (15 < 20)
 				- Etwas höhere Reichweite (2sm > 1,5sm)
 				- Langsamere Bewegungsgeschwindigkeit (420 < 480)
-			- Zurzeit noch in Entwicklung
+		- Hellebardiere
+			- Basieren auf den Hellebardieren in DEdK
+			- Haben noch etwas bessere Stats als Streitlanzenträger
+			- Sind Einzelgänger
+			- NICHT rekrutierbar, aber kontrollierbar
+				- Für Mapper: Gut nutzbar als NPCs bzw. Dekoration
 		- Raubtiere als kontrollierbare Militäreinheiten verfügbar
 			- Konkret: Bären (3 Arten), Löwen (2 Arten), Wölfe (4 Arten), Tiger
 		- Trebuchet
@@ -117,6 +141,7 @@ Folgende Änderungen wurden vorgenommen:
 		- Diverse Anpassungen auf Basis des "neuen" Trebuchets
 	- Rammen können keine Mauern mehr angreifen
 	- (Turm-)Katapulte und Trebuchets können Militäreinheiten aktiv angreifen
+	- Overhead und SelectionMenu vom Gefängniskarren den anderen Karren angeglichen
 	- Mauerkatapulte abgeschwächt
 		- Kosten mehr Eisen (5 -> 10)
 		- Kosten mehr Gold (200 -> 300)
@@ -133,9 +158,12 @@ Folgende Änderungen wurden vorgenommen:
 	- Burg
 		- Soldatenlimit pro Ausbaustufe erhöht
 		- Eigenes Icon auf der Minimap
+		- Spielerwappen wird nicht mehr auf dem Banner am Eingang abgebildet
+			- Technisch leider zwecks Konsistenz zwischen alten und neuen Wappen notwendig
 	- Lagerhaus
 		- Lagerkapazität der 3. und 4. Ausbaustufe erhöht
 		- Eigenes Icon auf der Minimap
+	- Marktplatz: Generische Ritter-Statue bei Khana, Praphat und Kastellanen
 	- "Neue" Gebäude
 		- Wachturm
 			- Kostet 11 Steine
@@ -144,8 +172,16 @@ Folgende Änderungen wurden vorgenommen:
 			- Kostet 12 Steine
 			- Besitzt eine hohe Sichtweite
 			- Sieht einfach schick aus :)
-	- Ziergebäude der Special Edition im Hauptspiel verfügbar
+	- NPC-Gebäude
+		- RP-/Khana-Kasernen
+			- Funktionieren unter Spieler-Kontrolle wie normale Kasernen auch
+			- Ermöglichen, unabhängig vom Ritter, Rekrutierung von RP- bzw. Khana-Einheiten
+		- Alle NPC-Gebäude mit Menü
+			- Sollten nun einen Namens-String haben
+			- Zeigen die Ausbaustufe "1/1" an
+		- Hauptspiel-Marktplätze haben ein Mouseover
 	- Bienenstöcke haben weniger Lebenspunkte (10 -> 5)
+	- Handelsposten-Baubutton hat einen etwas verständlicheren Tooltip
 - Hauptmenü
 	- AddOn nutzt weitgehend Hauptspiel-Hintergrund und Soundtrack
 	- Hintergrund ist tageszeitabhängig
@@ -158,19 +194,24 @@ Folgende Änderungen wurden vorgenommen:
 			- Wenn dadurch keine ausgewählt ist wird Mapvorschau geleert und Starten-Button deaktiviert
 		- Im AddOn auch alle Hauptspiel-Karten auswählbar
 - Diverses
+	- Automatisches Schnellspeichern deaktiviert
+		- Für Mapper: Quicksave wurde über neue Funktion umgeleitet: KeyBindings_SaveGame_Neu()
 	- Teardown-Sound von Palisaden/Mauern etwas leiser
 	- Marcus wird nicht mehr als generischer Ritter gesetzt
 	- Ungenutztes Audio-Feedback von Rittern, Soldaten und Dieben wird nun verwendet
 	- Eisbären nutzen ihre richtige Sterbeanimation
 	- Maximale bzw. Standard-Kapazität von Stein- und Eisenminen etwas erhöht (250 -> 300)
-	- Geologeneinsätze kosten deutlich mehr Gold (250 -> 500)
+	- Geologeneinsätze 
+		- Kosten deutlich mehr Gold (250 -> 500)
+		- Haben einen verständlicheren Tooltip sowie einen eigenen Disabled-Tooltip
+		- Für Mapper: Können mit den neuen Technologien 'R_RefillStoneMine', 'R_RefillIronMine' und 'R_RefillCistern' verboten werden
 	- Steuern
 		- Maximale Anzahl an Steuereintreibern erhöht (6 -> 8)
 	- Bei Minimap-Benachrichtigung wird der auslösende Spieler erst entfernt, um Verwirrung zu vermeiden
 	- Neun "neue" Spielerfarben
 	- Wappen
 		- Textur ist im Beförderungs-Fenster nun richtig zentriert
-		- Neue, von Stronghold 2 und Stronghold Legends inspirierte Wappen
+		- Neue, von Stronghold 2 und Legends inspirierte Wappen
 	- Alternative Spielerfarbe: Gelb
 		- Ist in den Optionen (de-)aktivierbar
 		- Wirkt sich auch auf das gewählte Wappen aus
@@ -179,6 +220,7 @@ Folgende Änderungen wurden vorgenommen:
 		- Buttons haben nun alle einen Hover-Effekt
 		- Speichern der Profileinstellungen funktioniert nun zuverlässig
 	- Kampfmusik nach Klimazonen getrennt (als verschiedene Playlists)
+	- Baumenü: BeautificationMenu verschönert
 	- Unterschiedliche Festival-Musik, je nachdem, ob der Anlass eine Heldenbeförderung oder ein normales Fest ist
 	- Niederlagen-Kamerarotation deutlich verlangsamt
 	- Sieg und Niederlage haben jeweils eine Art "Jingle"
@@ -187,22 +229,27 @@ Folgende Änderungen wurden vorgenommen:
     - Arbeiter von Kasernen holen nur eine Ware per Zyklus
       (Soll nicht vollständig gefüllte Kasernen verhindern)
 - Kampagnen
+	- Hauptspiel-Kampagne auch im AddOn spielbar
 	- Bugs gefixt
 		- Verfrühte Meldungen von KI-Mitspielern (M05: Drengir, M09: Husran)
 		- Verstärkung für den Spieler spawnt jetzt (M15: Vestholm)
+		- KI verliert am Anfang der Mission keine Territorien mehr (M09: Husran)
+		- Unnütze Randterritorien in benachbarte eingegliedert (M14: Gueranna)
 	- KI-Spielerfarben
 		- Mehr Varianz bei Spielerfarben
 		- Konsistentere Spielerfarben im AddOn
-	- Thronsaal hat einen eigenen Soundtrack
+	- Thronsaal 
+		- Hat einen eigenen Soundtrack
+		- Tür wird von Hellebardieren bewacht
 	- Diverses
-		- M09: Husran: KI aggressiver
+		- M09: Husran: KI aggressiver und mit eigener Eisenmine
 		- AM05: Idukun: durch etwas mehr Startkapital etwas einfacher
 
 
 
-## (M�gliche) ToDos
-- SelectionNames und korrekte Menüs für NPC-Gebäude
-- Hellebardiere
+## (Mögliche) ToDos
+- c00-m3: Falsche Nachricht am Anfang
+- Lanzenträger/Hellebardiere
 	- Icon
 	- Audio-Feedback
 	- Rekrutierung
@@ -212,36 +259,21 @@ Folgende Änderungen wurden vorgenommen:
 		- ODER: Der Nahkämpferkaserne hinzufügen
 			- Neuer Button für die Kaserne
 			- "Schwertkämpfer***"-Strings zu "Nahkämpfer***" abändern
-- Ritter mit Fackeln
-- Bomben-Munition?
 - Außenposten/Aussichtsturm/Wachturm
 	- ME-Aussichtsturm: Schwarze Seite
-	- Aussichtstürme: Alarm?
+	- Wachtürme: Mit Schützen bemannbar statt mit Katapulten ausrüstbar?
 	- Eigene Button-Texturen für Aussichtsturm und Wachturm
-		- Wachturm: QuestInformation.Tower (mit Katapult), ...?
-		- Aussichtsturm: PB_Tower1, Alarm, ...?
-	- Generischer Außenposten, inkl. Katapult und Soldatenbemannung
-- Spielerfarben
-	- Minimap-Territorium-Farben weichen nach Neustart z.T. ab 
-		- z.B. Dorf-Dunkelgrün -> Stadt-Grün
-		- Beispiel: Der kalte Strom (Dorf)
-		- Ist ein Vanilla-Bug!
-	- KIs bekommen im MP die Spielerfarben ab Gelb (ValidPlayerColors property der Map vllt.?)
-- Neue Wappen 
-	- auf Ingame-Flaggen (statt Platzhalter) abbilden
 - Hidun-Turnier: Neue Zelte und andere Siedler
 	- Texturen für DEdK-Zelte gibt es schon
 - Default custom maps
-	- MP-Maps als Freibau-SP-Maps neu hinzufügen
-		- Ggf. nicht alle Maps, nur die "schönsten"
-		- Missionsziel ändern
-		- Konkurrenten entfernen
-		- Diplomatie setzen
-	- Hauptspiel-Kampagne im AddOn
-		- Zwischenmenü zur Auswahl der Kampagne
-		- Slot für Community-Kampagnen
-- Wikinger: Kontrollierter Ehefrauen-Raub
-- RPG-Sicht zum rumlaufen ("Heist")
+	- MP-Maps als Freibau-SP-Maps anpassen
+		- Städte als KI-Städte neu erstellen
+		- Diplomatie
+			- Standard: Handelsverträge zum Spieler
+			- Ggf. Option zur Kriegserklärung
+		- ggf. Mapbeschreibungen anpassen
+- Wikinger: Kontrollierter Ehefrauen-Raub ("Heist")
+- RPG-Sicht zum rumlaufen
 - Nutzbare (Tier-)Seuche, inkl. Musik
 	- Ruhige, aber bedrohliche Playlist
 	- Erst ab x% Betroffene, da sonst zu oft getriggert
@@ -257,29 +289,31 @@ Folgende Änderungen wurden vorgenommen:
 	- Ko-fi für GameTTS (als Schankedön)
 - Nachrichten-Stau
 - MP-Koop-Fixes
-- AddOn-Kampagne-Loadscreens: Richtige Spielerfarben (per Bildbearbeitung)
+- Loadscreens
+	- Format ändern, um das ganze Bild sehen zu können
+		- Beispiel: siehe "chapter3_Test.png"
+		- Ränder sollten noch etwas dekoriert werden
 - Baubares Trebuchet
 	- Eigenes Karren-Modell
 	- Eigene Icon-Texturen
 	- Es dreht sich nicht richtig
 	- Begleitende Sodaten bewegen sich nach einem Move nicht mehr korrekt
-- Zahme Tiere: MilitaryFeedback global statt lokal
+	- Ggf. nur NPC-Einheit, dafür Fokus auf Kanone
 - Sturm
 	- soll mal funktionieren
 	- Abwandlung: Schneesturm
 	- Eigene Playlist
 - Verbesserte/Glaubwürdigere KI (in der Kampagne)
+	- Ungenutzte Territorien nutzbar machen (zumindest für die KI)
 	- Allgemein: Konsequentere Nutzung von RP-/Khana-Einheiten sowie ggf. Söldner
 	- Narfang: Sabatta aggressiv, wenn ein Außenposten erobert/zerstört wird
-	- Husran: Eisenmine für Sabatta statt Eisen "frei Haus"
 	- M15: Vestholm: Sturm
 	- Idukun: Blizzard
 	- Speziell in den "Last-Stand"-Missionen
 	- Aktive KI-Ritter mit Fähigkeiten
-	- Nutzlose Rand-Territorien weg
-- Entlassen-Button
-- Söldner-Trupps
-	- Korrekte Fackelanzeige (auch im Base game)
+	- Exploits beseitigen sowie andere Optimierungen
+- Entlassen-Button im MP möglich machen (GUI.SendScriptCommand erforderlich)
+- Söldner-Trupps: Korrekte Fackelanzeige
 - Max. Zoom leicht erhöhen
 	- Winkel muss nach 0.5 anders kalkuliert werden
 - "Neue" Ritter 
@@ -299,18 +333,24 @@ Folgende Änderungen wurden vorgenommen:
 	- Maximale Anzahl Steuereintreiber erhöhen (ggf. nur, wenn neue Einheiten verfügbar)
 	- Soldatenlimit anheben (ggf. nur, wenn neue Einheiten verfügbar)
 	- Rebalancing insb. für MP
-	- Zwischenproduktionen einführen
-		- Low Priority, da extrem viel Arbeit...
-- Spielbare Dörfer?
-- MainMenu: RdO mit eigenen Tag/Nacht-Hintergrund
+- Spielbare Dörfer
+	- Dorfkasernen und Banditenzelte mit Rektutierungsoptionen
+		- Neue Entities, da vorhandene zu sehr gescripted
+	- Einnahmen?
+	- Burg-Ersatz?
 - Ungenutzte Gebäude
 	- Juwelier
-	- Supermarkt?
+	- SpiceTrader
 - Fremder Content
 	- DEdK-Soundtrack
+	- S4 Soundtrack
+	- Stronghold Soundtrack
 - Auf 4k-Auflösung kann nicht mehr per BorderScroll nach rechts gecrolled werden
 - Biom-spezifisches Retexturing für Kerngebäude
 	- Das oder neue Modelle
+	- ggf. auch für andere Gebäude
 - Kritische Cheats am Ende weitgehend deaktivieren
+	- "Hintertür" für Mapper offen lassen
+	- Andere zu regulären KeyBindings
 - ReadMe auf Englisch
 - Als bba gepackte Version für das Original

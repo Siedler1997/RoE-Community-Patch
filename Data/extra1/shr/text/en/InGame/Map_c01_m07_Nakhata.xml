@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
+	<!--
 <string id="MapName" MD5Hash="A5B091FB4BD5DAE3E1637DB793E735C3" mod="20080118150009" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Nakhata]]></string>
 <string id="MapDescription" MD5Hash="F0C4DE461E0C26F8FEEF5C769FD751B0" mod="20080121193317" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[We must destroy the cursed temples and capture Khana’s city. Allies from this region could prove helpful in our struggle against the false goddess.]]></string>
 <string id="PlayerName_Mahpur" MD5Hash="57BE32DA3C013A151AB8C5F334652210" mod="20080130145605" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[City of Mahpur]]></string>
@@ -47,4 +48,5 @@
 <string id="Q_20_Khana_KhanaWarning" MD5Hash="DE4C751EA9C736A650FE0F4CB696B8F6" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[We must protect our city from Khana's attack.]]></string>
 <string id="Q_20_Khana_KhanaWarning_Caption" MD5Hash="83EF6EC967887183B7DB7EEE6278AA37" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Khana's attack]]></string>
 <string id="Q_23_Amethi_StopTheSignals_Caption" MD5Hash="DB1D6E6F49EC2352669F4A3A92DD2A60" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Prevent Khana from asking for help]]></string>
+-->
 </root>

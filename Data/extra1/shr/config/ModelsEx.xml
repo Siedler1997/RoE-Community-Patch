@@ -1,0 +1,2616 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+    <Models>
+		
+		<!-- *************************        Buildings       ********************************* -->
+
+        <Model id="Buildings\B_Jewelry_Buildingsite_1">
+            <Effect>SimpleObjectMultiply</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings\B_Jewelry_Buildingsite_2">
+            <Effect>SimpleObjectMultiply</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings\B_Jewelry_Buildingsite_3">
+            <Effect>SimpleObjectMultiply</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+		
+        <Model id="Buildings\B_Jewelry_Yard_1">
+            <Effect>CityBuilding</Effect>
+            <OcclusionCaster>True</OcclusionCaster>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+        </Model>
+        <Model id="Buildings\B_Jewelry_Yard_2">
+            <Effect>CityBuilding</Effect>
+            <OcclusionCaster>True</OcclusionCaster>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+        </Model>
+        <Model id="Buildings\B_Jewelry_Yard_3">
+            <Effect>CityBuilding</Effect>
+            <OcclusionCaster>True</OcclusionCaster>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+        </Model>
+
+
+        <Model id="Buildings\B_Jewelry_Floor_1">
+            <SelectionTexture>Selection_Building</SelectionTexture>
+            <Effect>CityBuilding</Effect>
+            <OcclusionCaster>True</OcclusionCaster>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+        </Model>
+        <Model id="Buildings\B_Jewelry_Floor_2">
+            <Effect>CityBuilding</Effect>
+            <OcclusionCaster>True</OcclusionCaster>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+        </Model>
+        <Model id="Buildings\B_Jewelry_Floor_3">
+            <Effect>CityBuilding</Effect>
+            <OcclusionCaster>True</OcclusionCaster>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+        </Model>
+        <Model id="Buildings\B_Jewelry_Gable_1">
+            <Effect>CityBuilding</Effect>
+            <OcclusionCaster>True</OcclusionCaster>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+        </Model>
+        <Model id="Buildings\B_Jewelry_Gable_2">
+            <Effect>CityBuilding</Effect>
+            <OcclusionCaster>True</OcclusionCaster>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+        </Model>
+        <Model id="Buildings\B_Jewelry_Gable_3">
+            <Effect>CityBuilding</Effect>
+            <OcclusionCaster>True</OcclusionCaster>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+        </Model>
+        <Model id="Buildings\B_Jewelry_Roof_1">
+            <Effect>Roof</Effect>
+            <OcclusionCaster>True</OcclusionCaster>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+        </Model>
+        <Model id="Buildings\B_Jewelry_Roof_2">
+            <Effect>Roof</Effect>
+            <OcclusionCaster>True</OcclusionCaster>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+        </Model>
+        <Model id="Buildings\B_Jewelry_Roof_3">
+            <Effect>Roof</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+        <Model id="Buildings\B_Jewelry_Floor_1_Light">
+            <Effect>DecalAdditive</Effect>
+            <UseAlphaBlending>True</UseAlphaBlending>
+            <TwoPassAlphaBlending>False</TwoPassAlphaBlending>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+        </Model>
+        <Model id="Buildings\B_Jewelry_Floor_2_Light">
+            <Effect>DecalAdditive</Effect>
+            <UseAlphaBlending>True</UseAlphaBlending>
+            <TwoPassAlphaBlending>False</TwoPassAlphaBlending>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+        </Model>
+        <Model id="Buildings\B_Jewelry_Floor_3_Light">
+            <Effect>DecalAdditive</Effect>
+            <UseAlphaBlending>True</UseAlphaBlending>
+            <TwoPassAlphaBlending>False</TwoPassAlphaBlending>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+        </Model>
+        <Model id="Buildings\B_Jewelry_Rubble_1">
+            <SelectionTexture>Selection_Building</SelectionTexture>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+        <Model id="Buildings\B_Jewelry_Rubble_2">
+            <SelectionTexture>Selection_Building</SelectionTexture>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings\B_Cistern">
+            <Effect>SimpleObjectMultiply</Effect>
+            <SelectionTexture>Selection_Building</SelectionTexture>
+            <ShareShadowRaster>True</ShareShadowRaster>
+            <CastShadow>True</CastShadow>
+            <UseAlphaBlending>True</UseAlphaBlending>
+            <ForceAddToVisibileList>true</ForceAddToVisibileList>
+        </Model>
+		
+        <Model id="Buildings\B_Castle_AS_01">
+            <Effect>CityBuilding</Effect>
+            <SelectionTexture>Selection_Building</SelectionTexture>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+		
+        <Model id="Buildings\B_Castle_AS_02">
+            <Effect>CityBuilding</Effect>
+            <SelectionTexture>Selection_Building</SelectionTexture>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+		
+        <Model id="Buildings\B_Castle_AS_03">
+            <Effect>CityBuilding</Effect>
+            <SelectionTexture>Selection_Building</SelectionTexture>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+		
+        <Model id="Buildings\B_Castle_AS_04">
+            <Effect>CityBuilding</Effect>
+            <SelectionTexture>Selection_Building</SelectionTexture>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings\B_Castle_AS_Banner_01">
+            <Effect>Banner</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+
+        <Model id="Buildings\B_Castle_AS_Banner_02">
+            <Effect>Banner</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+
+        <Model id="Buildings\B_Castle_AS_Banner_03">
+            <Effect>Banner</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+
+        <Model id="Buildings\B_Castle_AS_Banner_04">
+            <Effect>Banner</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings\B_Castle_AS_Light_01">
+            <Effect>DecalAdditive</Effect>
+            <UseAlphaBlending>True</UseAlphaBlending>
+            <TwoPassAlphaBlending>False</TwoPassAlphaBlending>
+            <OcclusionCaster>False</OcclusionCaster>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+        </Model>
+
+        <Model id="Buildings\B_Castle_AS_Light_02">
+            <Effect>DecalAdditive</Effect>
+            <UseAlphaBlending>True</UseAlphaBlending>
+            <TwoPassAlphaBlending>False</TwoPassAlphaBlending>
+            <OcclusionCaster>False</OcclusionCaster>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+        </Model>
+
+        <Model id="Buildings\B_Castle_AS_Light_03">
+            <Effect>DecalAdditive</Effect>
+            <UseAlphaBlending>True</UseAlphaBlending>
+            <TwoPassAlphaBlending>False</TwoPassAlphaBlending>
+            <OcclusionCaster>False</OcclusionCaster>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+        </Model>
+
+        <Model id="Buildings\B_Castle_AS_Light_04">
+            <Effect>DecalAdditive</Effect>
+            <UseAlphaBlending>True</UseAlphaBlending>
+            <TwoPassAlphaBlending>False</TwoPassAlphaBlending>
+            <OcclusionCaster>False</OcclusionCaster>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+        </Model>
+
+
+        <Model id="Buildings\B_Castle_AS_BuildingSite01">
+            <Effect>SimpleObjectMultiply</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings\B_Castle_AS_BuildingSite02">
+            <Effect>SimpleObjectMultiply</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings\B_Castle_AS_BuildingSite03">
+            <Effect>SimpleObjectMultiply</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings\B_Castle_AS_BuildingSite04">
+            <Effect>SimpleObjectMultiply</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings\B_Castle_AS_Destroyed_01">
+            <Effect>CityBuilding</Effect>
+            <SelectionTexture>Selection_Building</SelectionTexture>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings\B_Castle_AS_Destroyed_02">
+            <Effect>CityBuilding</Effect>
+            <SelectionTexture>Selection_Building</SelectionTexture>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings\B_Castle_AS_Destroyed_03">
+            <Effect>CityBuilding</Effect>
+            <SelectionTexture>Selection_Building</SelectionTexture>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings\B_Castle_AS_Destroyed_04">
+            <Effect>CityBuilding</Effect>
+            <SelectionTexture>Selection_Building</SelectionTexture>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+
+        </Model>
+
+        <Model id="Buildings/B_WallTurret_AS">
+            <Effect>WallComponent</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings/B_WallGateTurret_AS">
+            <Effect>WallComponent</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings/B_WallGate_AS">
+            <Effect>WallComponent</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings/B_WallDoor_AS">
+            <Effect>Wall</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings/B_WallEndSegment02_AS">
+            <Effect>WallComponent</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings/B_WallEndSegment_AS">
+            <Effect>WallComponent</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings/B_WallSegment_AS_00">
+            <Effect>Wall</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings/B_WallSegment_AS_01">
+            <Effect>Wall</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings/B_WallSegment_AS_02">
+            <Effect>Wall</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings/B_WallSegment_AS_03">
+            <Effect>Wall</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings/B_WallSegment_AS_04">
+            <Effect>Wall</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings/B_WallSegment_AS_05">
+            <Effect>Wall</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings/B_WallSegment_AS_06">
+            <Effect>Wall</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings/B_WallSegment_BuildingSite_AS_00">
+            <OrnamentalItem>false</OrnamentalItem>
+            <Effect>Wall</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings/B_WallSegment_BuildingSite_AS_01">
+            <OrnamentalItem>false</OrnamentalItem>
+            <Effect>Wall</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings/B_WallSegment_BuildingSite_AS_02">
+            <OrnamentalItem>false</OrnamentalItem>
+            <Effect>Wall</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings/B_WallSegment_BuildingSite_AS_03">
+            <OrnamentalItem>false</OrnamentalItem>
+            <Effect>Wall</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings/B_WallSegment_BuildingSite_AS_04">
+            <OrnamentalItem>false</OrnamentalItem>
+            <Effect>Wall</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings/B_WallSegment_BuildingSite_AS_05">
+            <OrnamentalItem>false</OrnamentalItem>
+            <Effect>Wall</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings/B_WallSegment_BuildingSite_AS_06">
+            <OrnamentalItem>false</OrnamentalItem>
+            <Effect>Wall</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings/B_WallTurret_Buildingsite_AS">
+            <OrnamentalItem>false</OrnamentalItem>
+            <Effect>Wall</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings\B_Outpost_AS_01">
+            <Effect>CityBuilding</Effect>
+            <SelectionTexture>Selection_Building</SelectionTexture>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings\B_Outpost_AS_02">
+            <Effect>CityBuilding</Effect>
+            <SelectionTexture>Selection_Building</SelectionTexture>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings\B_Outpost_AS_Decal">
+            <Effect>BuildingDecalWithSnowMasked</Effect>
+        </Model>
+
+        <Model id="Buildings\B_Outpost_AS_Light_01">
+            <Effect>DecalAdditive</Effect>
+            <UseAlphaBlending>True</UseAlphaBlending>
+            <TwoPassAlphaBlending>False</TwoPassAlphaBlending>
+            <OcclusionCaster>False</OcclusionCaster>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+        </Model>
+
+        <Model id="Buildings\B_Outpost_AS_Light_02">
+            <Effect>DecalAdditive</Effect>
+            <UseAlphaBlending>True</UseAlphaBlending>
+            <TwoPassAlphaBlending>False</TwoPassAlphaBlending>
+            <OcclusionCaster>False</OcclusionCaster>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+        </Model>
+
+        <Model id="Buildings\B_Outpost_AS_Rubble_01">
+            <Effect>CityBuilding</Effect>
+            <SelectionTexture>Selection_Building</SelectionTexture>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings\B_Outpost_AS_Rubble_02">
+            <Effect>CityBuilding</Effect>
+            <SelectionTexture>Selection_Building</SelectionTexture>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings\B_Outpost_AS_Banner_01">
+            <Effect>Banner</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings\B_Outpost_AS_Banner_02">
+            <Effect>Banner</Effect>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings\B_Outpost_AS_Buildingsite_01">
+            <Effect>SimpleObjectMultiply</Effect>
+            <SelectionTexture>Selection_Building</SelectionTexture>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings\B_Outpost_AS_Buildingsite_02">
+            <Effect>SimpleObjectMultiply</Effect>
+            <SelectionTexture>Selection_Building</SelectionTexture>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings\B_NPC_Cloister_AS">
+            <Effect>CityBuilding</Effect>
+            <SelectionTexture>Selection_Building</SelectionTexture>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings\B_NPC_Cloister_AS_Light">
+            <Effect>DecalAdditive</Effect>
+            <UseAlphaBlending>True</UseAlphaBlending>
+            <TwoPassAlphaBlending>False</TwoPassAlphaBlending>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+        </Model>
+
+        <Model id="Buildings\B_NPC_StoreHouse_AS">
+            <Effect>CityBuilding</Effect>
+            <SelectionTexture>Selection_Building</SelectionTexture>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings\B_NPC_StoreHouse_AS_Light">
+            <Effect>DecalAdditive</Effect>
+            <UseAlphaBlending>True</UseAlphaBlending>
+            <TwoPassAlphaBlending>False</TwoPassAlphaBlending>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+        </Model>
+
+
+        <Model id="Buildings\B_NPC_HutBig_AS">
+            <Effect>CityBuilding</Effect>
+            <SelectionTexture>Selection_Building</SelectionTexture>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings\B_NPC_HutBig_AS_Light">
+            <Effect>DecalAdditive</Effect>
+            <UseAlphaBlending>True</UseAlphaBlending>
+            <TwoPassAlphaBlending>False</TwoPassAlphaBlending>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+        </Model>
+
+        <Model id="Buildings\B_NPC_HutMiddle_AS">
+            <Effect>CityBuilding</Effect>
+            <SelectionTexture>Selection_Building</SelectionTexture>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings\B_NPC_HutMiddle_AS_Light">
+            <Effect>DecalAdditive</Effect>
+            <UseAlphaBlending>True</UseAlphaBlending>
+            <TwoPassAlphaBlending>False</TwoPassAlphaBlending>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+        </Model>
+
+        <Model id="Buildings\B_NPC_HutSmall_AS">
+            <Effect>CityBuilding</Effect>
+            <SelectionTexture>Selection_Building</SelectionTexture>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings\B_NPC_HutSmall_AS_Light">
+            <Effect>DecalAdditive</Effect>
+            <UseAlphaBlending>True</UseAlphaBlending>
+            <TwoPassAlphaBlending>False</TwoPassAlphaBlending>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+        </Model>
+
+        <Model id="Buildings\B_NPC_MercenaryBig_AS">
+            <Effect>CityBuilding</Effect>
+            <SelectionTexture>Selection_Building</SelectionTexture>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+        <Model id="Buildings\B_NPC_MercenaryBig_Light_AS">
+            <Effect>DecalAdditive</Effect>
+            <UseAlphaBlending>True</UseAlphaBlending>
+            <TwoPassAlphaBlending>False</TwoPassAlphaBlending>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+        </Model>
+
+        <Model id="Buildings\B_NPC_MercenaryMedium_AS">
+            <Effect>CityBuilding</Effect>
+            <SelectionTexture>Selection_Building</SelectionTexture>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+        
+        <Model id="Buildings\B_NPC_MercenarySmall_AS">
+            <Effect>CityBuilding</Effect>
+            <SelectionTexture>Selection_Building</SelectionTexture>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+
+        <Model id="Buildings\B_Tradingpost">
+            <Effect>CityBuilding</Effect>
+            <SelectionTexture>Selection_Building</SelectionTexture>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings\B_Tradingpost_Decal">
+            <Effect>BuildingDecalWithSnowMasked</Effect>
+        </Model>
+
+        <Model id="Buildings\B_Tradingpost_Light">
+            <Effect>DecalAdditive</Effect>
+            <UseAlphaBlending>True</UseAlphaBlending>
+            <TwoPassAlphaBlending>False</TwoPassAlphaBlending>
+            <OcclusionCaster>False</OcclusionCaster>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+        </Model>
+
+        <Model id="Buildings\B_KhanaTemple">
+            <Effect>CityBuilding</Effect>
+            <SelectionTexture>Selection_Building</SelectionTexture>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <Model id="Buildings\B_KhanaTemple_Destroyed">
+            <Effect>CityBuilding</Effect>
+            <SelectionTexture>Selection_Building</SelectionTexture>
+            <CloseUpModeCulling>True</CloseUpModeCulling>
+            <OcclusionCaster>True</OcclusionCaster>
+        </Model>
+
+        <!-- *************************        Trees and Plants       ********************************* -->
+		
+            <Model id="Trees\R_AS_Tree_KingPalm_01">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedFirTrees</OrnamentalItemEffect>
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>True</UseAlphaBlending>
+                <Effect>DoodadMovementHorizontalSlightly</Effect>
+            </Model>
+		
+            <Model id="Trees\R_AS_Tree_KingPalm_02">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedFirTrees</OrnamentalItemEffect>
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>True</UseAlphaBlending>
+                <Effect>DoodadMovementHorizontalSlightly</Effect>
+            </Model>
+		
+            <Model id="Trees\R_AS_Tree_KingPalm_03">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedFirTrees</OrnamentalItemEffect>
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>True</UseAlphaBlending>
+                <Effect>DoodadMovementHorizontalSlightly</Effect>
+            </Model>
+		
+            <Model id="Trees\R_AS_Tree_KingPalm_04">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedFirTrees</OrnamentalItemEffect>
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>True</UseAlphaBlending>
+                <Effect>DoodadMovementHorizontalSlightly</Effect>
+            </Model>
+		
+            <Model id="Trees\R_AS_Tree_FanPalm_01">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedFirTrees</OrnamentalItemEffect>
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>True</UseAlphaBlending>
+                <Effect>DoodadMovementHorizontalSlightly</Effect>
+            </Model>
+		
+            <Model id="Trees\R_AS_Tree_FanPalm_02">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedFirTrees</OrnamentalItemEffect>
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>True</UseAlphaBlending>
+                <Effect>DoodadMovementHorizontalSlightly</Effect>
+            </Model>
+		
+            <Model id="Trees\R_AS_Tree_FanPalm_03">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedFirTrees</OrnamentalItemEffect>
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>True</UseAlphaBlending>
+                <Effect>DoodadMovementHorizontalSlightly</Effect>
+            </Model>
+		
+            <Model id="Trees\R_AS_Tree_FanPalm_04">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedFirTrees</OrnamentalItemEffect>
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>True</UseAlphaBlending>
+                <Effect>DoodadMovementHorizontalSlightly</Effect>
+            </Model>
+		
+            <Model id="Trees\R_AS_Tree_VinesTree_01">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedFirTrees</OrnamentalItemEffect>
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>True</UseAlphaBlending>
+                <Effect>DoodadMovementHorizontalSlightly</Effect>
+            </Model>
+		
+            <Model id="Trees\R_AS_Tree_VinesTree_02">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedFirTrees</OrnamentalItemEffect>
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>True</UseAlphaBlending>
+                <Effect>DoodadMovementHorizontalSlightly</Effect>
+            </Model>
+		
+            <Model id="Trees\R_AS_Tree_VinesTree_03">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedFirTrees</OrnamentalItemEffect>
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>True</UseAlphaBlending>
+                <Effect>DoodadMovementHorizontalSlightly</Effect>
+            </Model>
+		
+            <Model id="Trees\R_AS_Tree_VinesTree_04">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedFirTrees</OrnamentalItemEffect>
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>True</UseAlphaBlending>
+                <Effect>DoodadMovementHorizontalSlightly</Effect>
+            </Model>
+		
+            <Model id="Trees\R_AS_Tree_VinesTree_Dead_01">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedFirTrees</OrnamentalItemEffect>
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>True</UseAlphaBlending>
+                <Effect>DoodadMovementHorizontalSlightly</Effect>
+            </Model>
+		
+            <Model id="Trees\R_AS_Tree_VinesTree_Dead_02">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedFirTrees</OrnamentalItemEffect>
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>True</UseAlphaBlending>
+                <Effect>DoodadMovementHorizontalSlightly</Effect>
+            </Model>
+		
+            <Model id="Trees\R_AS_Tree_VinesTree_Dead_03">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedFirTrees</OrnamentalItemEffect>
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>True</UseAlphaBlending>
+                <Effect>DoodadMovementHorizontalSlightly</Effect>
+            </Model>
+		
+            <Model id="Trees\R_AS_Tree_VinesTree_Dead_04">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedFirTrees</OrnamentalItemEffect>
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>True</UseAlphaBlending>
+                <Effect>DoodadMovementHorizontal</Effect>
+            </Model>
+		
+            <Model id="Plants\P_AS_TreeFern_01">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedFirTrees</OrnamentalItemEffect>
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>True</UseAlphaBlending>
+                <Effect>DoodadMovementHorizontalSlightly</Effect>
+            </Model>
+		
+            <Model id="Plants\P_AS_TreeFern_02">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedFirTrees</OrnamentalItemEffect>
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>True</UseAlphaBlending>
+                <Effect>DoodadMovementHorizontalSlightly</Effect>
+            </Model>
+		
+            <Model id="Plants\P_AS_TreeFern_03">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedFirTrees</OrnamentalItemEffect>
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>True</UseAlphaBlending>
+                <Effect>DoodadMovementHorizontalSlightly</Effect>
+            </Model>
+		
+            <Model id="Plants\P_AS_LaceFern_01">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>OrnamentalItemMovementHorizontal</OrnamentalItemEffect>
+                <UseSurfaceHeight>False</UseSurfaceHeight>
+                <Effect>DoodadMovementHorizontal</Effect>
+                <CastShadow>True</CastShadow>
+                <UseAlphaBlending>True</UseAlphaBlending>
+                <AlignToTerrain>true</AlignToTerrain>
+            </Model>
+		
+            <Model id="Plants\P_AS_LaceFern_02">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>OrnamentalItemMovementHorizontal</OrnamentalItemEffect>
+                <UseSurfaceHeight>False</UseSurfaceHeight>
+                <Effect>DoodadMovementHorizontal</Effect>
+                <CastShadow>True</CastShadow>
+                <UseAlphaBlending>True</UseAlphaBlending>
+                <AlignToTerrain>true</AlignToTerrain>
+            </Model>
+		
+            <Model id="Plants\P_AS_LaceFern_03">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>OrnamentalItemMovementHorizontal</OrnamentalItemEffect>
+                <UseSurfaceHeight>False</UseSurfaceHeight>
+                <Effect>DoodadMovementHorizontal</Effect>
+                <CastShadow>True</CastShadow>
+                <UseAlphaBlending>True</UseAlphaBlending>
+                <AlignToTerrain>true</AlignToTerrain>
+            </Model>
+		
+            <Model id="Plants\P_AS_BeechFern_01">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>OrnamentalItemMovementHorizontal</OrnamentalItemEffect>
+                <UseSurfaceHeight>False</UseSurfaceHeight>
+                <Effect>DoodadMovementHorizontal</Effect>
+                <CastShadow>True</CastShadow>
+                <UseAlphaBlending>True</UseAlphaBlending>
+                <AlignToTerrain>true</AlignToTerrain>
+            </Model>
+		
+            <Model id="Plants\P_AS_BeechFern_02">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>OrnamentalItemMovementHorizontal</OrnamentalItemEffect>
+                <UseSurfaceHeight>False</UseSurfaceHeight>
+                <Effect>DoodadMovementHorizontal</Effect>
+                <CastShadow>True</CastShadow>
+                <UseAlphaBlending>True</UseAlphaBlending>
+                <AlignToTerrain>true</AlignToTerrain>
+            </Model>
+		
+            <Model id="Plants\P_AS_BeechFern_03">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>OrnamentalItemMovementHorizontal</OrnamentalItemEffect>
+                <UseSurfaceHeight>False</UseSurfaceHeight>
+                <Effect>DoodadMovementHorizontal</Effect>
+                <CastShadow>True</CastShadow>
+                <UseAlphaBlending>True</UseAlphaBlending>
+                <AlignToTerrain>true</AlignToTerrain>
+            </Model>
+		
+            <Model id="Plants\P_AS_BananaPlant_01">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedFirTrees</OrnamentalItemEffect>
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>True</UseAlphaBlending>
+                <Effect>DoodadMovementHorizontalSlightly</Effect>
+            </Model>
+		
+            <Model id="Plants\P_AS_BananaPlant_02">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedFirTrees</OrnamentalItemEffect>
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>True</UseAlphaBlending>
+                <Effect>DoodadMovementHorizontalSlightly</Effect>
+            </Model>
+		
+            <Model id="Plants\P_AS_BananaPlant_03">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedFirTrees</OrnamentalItemEffect>
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>True</UseAlphaBlending>
+                <Effect>DoodadMovementHorizontalSlightly</Effect>
+            </Model>
+		
+            <Model id="Plants\P_AS_BananaPlant_04">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedFirTrees</OrnamentalItemEffect>
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>True</UseAlphaBlending>
+                <Effect>DoodadMovementHorizontalSlightly</Effect>
+            </Model>
+		
+            <Model id="Plants\P_AS_Palmetto_01">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedFirTrees</OrnamentalItemEffect>
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>True</UseAlphaBlending>
+                <Effect>DoodadMovementHorizontalSlightly</Effect>
+            </Model>
+		
+            <Model id="Plants\P_AS_Palmetto_02">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedFirTrees</OrnamentalItemEffect>
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>True</UseAlphaBlending>
+                <Effect>DoodadMovementHorizontalSlightly</Effect>
+            </Model>
+		
+            <Model id="Plants\P_AS_Palmetto_03">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedFirTrees</OrnamentalItemEffect>
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>True</UseAlphaBlending>
+                <Effect>DoodadMovementHorizontalSlightly</Effect>
+            </Model>
+		
+            <Model id="Plants\P_AS_UnderWaterPlant_01">
+                <Effect>DoodadMovementHorizontal</Effect>
+                <CastShadow>false</CastShadow>
+                <UseAlphaBlending>false</UseAlphaBlending>
+                <SeasonVisibility>WinterSpringSummerFall</SeasonVisibility>
+            </Model>
+		
+            <Model id="Plants\P_AS_UnderWaterPlant_02">
+                <Effect>DoodadMovementHorizontal</Effect>
+                <CastShadow>false</CastShadow>
+                <UseAlphaBlending>false</UseAlphaBlending>
+                <SeasonVisibility>WinterSpringSummerFall</SeasonVisibility>
+            </Model>
+		
+            <Model id="Plants\P_AS_UnderWaterPlant_03">
+                <Effect>DoodadMovementHorizontal</Effect>
+                <CastShadow>false</CastShadow>
+                <UseAlphaBlending>false</UseAlphaBlending>
+                <SeasonVisibility>WinterSpringSummerFall</SeasonVisibility>
+            </Model>
+		
+            <Model id="Plants\P_AS_UnderWaterPlant_04">
+                <Effect>DoodadMovementHorizontal</Effect>
+                <CastShadow>false</CastShadow>
+                <UseAlphaBlending>false</UseAlphaBlending>
+                <SeasonVisibility>WinterSpringSummerFall</SeasonVisibility>
+            </Model>
+		
+            <Model id="Plants\P_AS_UnderWaterPlant_05">
+                <Effect>DoodadMovementHorizontal</Effect>
+                <CastShadow>false</CastShadow>
+                <UseAlphaBlending>false</UseAlphaBlending>
+                <SeasonVisibility>WinterSpringSummerFall</SeasonVisibility>
+            </Model>
+		
+            <Model id="Plants\P_AS_UnderWaterPlant_06">
+                <Effect>DoodadMovementHorizontal</Effect>
+                <CastShadow>false</CastShadow>
+                <UseAlphaBlending>false</UseAlphaBlending>
+                <SeasonVisibility>WinterSpringSummerFall</SeasonVisibility>
+            </Model>
+		
+            <Model id="Plants\P_AS_WaterLilly_01">
+                <UseSurfaceHeight>True</UseSurfaceHeight>
+                <UseAlphaBlending>False</UseAlphaBlending>
+                <Effect>DoodadMovementHorizontal</Effect>
+                <CastShadow>True</CastShadow>
+            </Model>
+		
+            <Model id="Plants\P_AS_WaterLilly_02">
+                <UseSurfaceHeight>True</UseSurfaceHeight>
+                <Effect>DoodadMovementWaterLily</Effect>
+                <CastShadow>False</CastShadow>
+                <UseAlphaBlending>False</UseAlphaBlending>
+                <SeasonVisibility>WinterSpringSummerFall</SeasonVisibility>
+            </Model>
+		
+            <Model id="Plants\P_AS_WaterLilly_03">
+                <UseSurfaceHeight>True</UseSurfaceHeight>
+                <Effect>DoodadMovementWaterLily</Effect>
+                <CastShadow>False</CastShadow>
+                <UseAlphaBlending>False</UseAlphaBlending>
+                <SeasonVisibility>WinterSpringSummerFall</SeasonVisibility>
+            </Model>
+		
+            <Model id="Plants\P_AS_WaterLilly_04">
+                <UseSurfaceHeight>True</UseSurfaceHeight>
+                <Effect>DoodadMovementWaterLily</Effect>
+                <CastShadow>False</CastShadow>
+                <UseAlphaBlending>False</UseAlphaBlending>
+                <SeasonVisibility>WinterSpringSummerFall</SeasonVisibility>
+            </Model>
+		
+            <Model id="Plants\P_AS_WaterLilly_05">
+                <UseSurfaceHeight>True</UseSurfaceHeight>
+                <Effect>DoodadMovementWaterLily</Effect>
+                <CastShadow>False</CastShadow>
+                <UseAlphaBlending>False</UseAlphaBlending>
+                <SeasonVisibility>WinterSpringSummerFall</SeasonVisibility>
+            </Model>
+		
+            <Model id="Plants\P_AS_Flowers_01">
+                <Effect>SimpleObject</Effect>
+                <CastShadow>False</CastShadow>
+                <UseAlphaBlending>true</UseAlphaBlending>
+                <AlignToTerrain>true</AlignToTerrain>
+                <SeasonVisibility>WinterSpringSummerFall</SeasonVisibility>
+            </Model>
+		
+            <Model id="Plants\P_AS_Flowers_02">
+                <Effect>SimpleObject</Effect>
+                <CastShadow>False</CastShadow>
+                <UseAlphaBlending>true</UseAlphaBlending>
+                <AlignToTerrain>true</AlignToTerrain>
+                <SeasonVisibility>WinterSpringSummerFall</SeasonVisibility>
+            </Model>
+		
+            <Model id="Plants\P_AS_Flowers_03">
+                <Effect>SimpleObject</Effect>
+                <CastShadow>False</CastShadow>
+                <UseAlphaBlending>true</UseAlphaBlending>
+                <AlignToTerrain>true</AlignToTerrain>
+                <SeasonVisibility>WinterSpringSummerFall</SeasonVisibility>
+            </Model>
+		
+            <Model id="Plants\P_AS_Flowers_04">
+                <Effect>SimpleObject</Effect>
+                <CastShadow>False</CastShadow>
+                <UseAlphaBlending>true</UseAlphaBlending>
+                <AlignToTerrain>true</AlignToTerrain>
+            </Model>
+		
+            <Model id="Plants\P_AS_Flowers_05">
+                <Effect>SimpleObject</Effect>
+                <CastShadow>False</CastShadow>
+                <UseAlphaBlending>true</UseAlphaBlending>
+                <AlignToTerrain>true</AlignToTerrain>
+            </Model>
+		
+            <Model id="Plants\P_AS_Flowers_06">
+                <Effect>SimpleObject</Effect>
+                <CastShadow>False</CastShadow>
+                <UseAlphaBlending>true</UseAlphaBlending>
+                <AlignToTerrain>true</AlignToTerrain>
+            </Model>
+		
+            <Model id="Plants\P_AS_Flowers_07">
+                <Effect>SimpleObject</Effect>
+                <CastShadow>False</CastShadow>
+                <UseAlphaBlending>true</UseAlphaBlending>
+                <AlignToTerrain>true</AlignToTerrain>
+            </Model>
+		
+            <Model id="Plants\P_AS_Flowers_08">
+                <Effect>SimpleObject</Effect>
+                <CastShadow>False</CastShadow>
+                <UseAlphaBlending>true</UseAlphaBlending>
+                <AlignToTerrain>true</AlignToTerrain>
+            </Model>
+		
+            <Model id="Plants\P_AS_Flowers_09">
+                <Effect>SimpleObject</Effect>
+                <CastShadow>False</CastShadow>
+                <UseAlphaBlending>true</UseAlphaBlending>
+                <AlignToTerrain>true</AlignToTerrain>
+            </Model>
+		
+            <Model id="Plants\P_AS_Flowers_01_Group">
+                <Effect>SimpleObject</Effect>
+                <CastShadow>False</CastShadow>
+                <UseAlphaBlending>true</UseAlphaBlending>
+                <AlignToTerrain>true</AlignToTerrain>
+            </Model>
+		
+            <Model id="Plants\P_AS_Flowers_02_Group">
+                <Effect>SimpleObject</Effect>
+                <CastShadow>False</CastShadow>
+                <UseAlphaBlending>true</UseAlphaBlending>
+                <AlignToTerrain>true</AlignToTerrain>
+            </Model>
+		
+            <Model id="Plants\P_AS_Flowers_03_Group">
+                <Effect>SimpleObject</Effect>
+                <CastShadow>False</CastShadow>
+                <UseAlphaBlending>true</UseAlphaBlending>
+                <AlignToTerrain>true</AlignToTerrain>
+            </Model>
+		
+            <Model id="Plants\P_AS_Flowers_04_Group">
+                <Effect>SimpleObject</Effect>
+                <CastShadow>False</CastShadow>
+                <UseAlphaBlending>true</UseAlphaBlending>
+                <AlignToTerrain>true</AlignToTerrain>
+            </Model>
+		
+            <Model id="Plants\P_AS_Flowers_05_Group">
+                <Effect>SimpleObject</Effect>
+                <CastShadow>False</CastShadow>
+                <UseAlphaBlending>true</UseAlphaBlending>
+                <AlignToTerrain>true</AlignToTerrain>
+            </Model>
+		
+            <Model id="Plants\P_AS_Flowers_06_Group">
+                <Effect>SimpleObject</Effect>
+                <CastShadow>False</CastShadow>
+                <UseAlphaBlending>true</UseAlphaBlending>
+                <AlignToTerrain>true</AlignToTerrain>
+            </Model>
+		
+            <Model id="Plants\P_AS_Flowers_07_Group">
+                <Effect>SimpleObject</Effect>
+                <CastShadow>False</CastShadow>
+                <UseAlphaBlending>true</UseAlphaBlending>
+                <AlignToTerrain>true</AlignToTerrain>
+            </Model>
+		
+            <Model id="Plants\P_AS_Flowers_08_Group">
+                <Effect>SimpleObject</Effect>
+                <CastShadow>False</CastShadow>
+                <UseAlphaBlending>true</UseAlphaBlending>
+                <AlignToTerrain>true</AlignToTerrain>
+            </Model>
+
+		<Model id="Plants\P_AS_Flowers_09_Group">
+			<Effect>SimpleObject</Effect>
+            <CastShadow>False</CastShadow>
+            <UseAlphaBlending>true</UseAlphaBlending>
+            <AlignToTerrain>true</AlignToTerrain>
+		</Model>
+
+		<Model id="Plants\D_AS_Mushrooms_01">
+            <Effect>SimpleObject</Effect>
+            <CastShadow>False</CastShadow>
+            <UseAlphaBlending>true</UseAlphaBlending>
+            <AlignToTerrain>true</AlignToTerrain>
+        </Model>
+		
+		<Model id="Plants\P_AS_Roots_01">
+            <OrnamentalItem>true</OrnamentalItem>
+            <OrnamentalItemEffect>OrnamentalItemMovementHorizontal</OrnamentalItemEffect>
+            <UseSurfaceHeight>True</UseSurfaceHeight>
+            <Effect>DoodadMovementHorizontalSlightly</Effect>
+            <CastShadow>True</CastShadow>
+            <UseAlphaBlending>True</UseAlphaBlending>
+        </Model>
+		
+		<Model id="Plants\P_AS_Roots_02">
+            <OrnamentalItem>true</OrnamentalItem>
+            <OrnamentalItemEffect>OrnamentalItemMovementHorizontal</OrnamentalItemEffect>
+            <UseSurfaceHeight>True</UseSurfaceHeight>
+            <Effect>DoodadMovementHorizontalSlightly</Effect>
+            <CastShadow>True</CastShadow>
+            <UseAlphaBlending>True</UseAlphaBlending>
+        </Model>
+		
+		<Model id="Plants\P_AS_Roots_03">
+            <OrnamentalItem>true</OrnamentalItem>
+            <OrnamentalItemEffect>OrnamentalItemMovementHorizontal</OrnamentalItemEffect>
+            <UseSurfaceHeight>True</UseSurfaceHeight>
+            <Effect>DoodadMovementHorizontalSlightly</Effect>
+            <CastShadow>True</CastShadow>
+            <UseAlphaBlending>True</UseAlphaBlending>
+        </Model>
+	
+
+		
+		
+		<!-- *************************        Cliffs and Rocks       ********************************* -->
+		
+          	<Model id="Doodads\D_AS_CaveEntrance">
+            	<Effect>SimpleObjectWithNormalMap</Effect>
+           	 	<CastShadow>false</CastShadow>
+       			</Model>
+            <Model id="Doodads\D_AS_Cliff_Inbound01">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Outbound01">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Big01">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Bridge01">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Bridge02">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Bridge03">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Bridge04">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Crack01">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Crack02">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Crack03">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Crack04">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Deco01">
+                <Effect>Cliff</Effect>
+                <IsEmbedded>false</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Deco02">
+                <Effect>Cliff</Effect>
+                <IsEmbedded>false</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Deco03">
+                <Effect>Cliff</Effect>
+                <IsEmbedded>false</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Deco04">
+                <Effect>Cliff</Effect>
+                <IsEmbedded>false</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Deco05">
+                <Effect>Cliff</Effect>
+                <IsEmbedded>false</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Deco06">
+                <Effect>Cliff</Effect>
+                <IsEmbedded>false</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Deco07">
+                <Effect>Cliff</Effect>
+                <IsEmbedded>false</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Deco08">
+                <Effect>Cliff</Effect>
+                <IsEmbedded>false</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Deco09">
+                <Effect>Cliff</Effect>
+                <IsEmbedded>false</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Deco10">
+                <Effect>Cliff</Effect>
+                <IsEmbedded>false</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Deco11">
+                <Effect>Cliff</Effect>
+                <IsEmbedded>false</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Deco12">
+                <Effect>Cliff</Effect>
+                <IsEmbedded>false</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Deco13">
+                <Effect>Cliff</Effect>
+                <IsEmbedded>false</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Deco14">
+                <Effect>Cliff</Effect>
+                <IsEmbedded>false</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Deco15">
+                <Effect>Cliff</Effect>
+                <IsEmbedded>false</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Deco16">
+                <Effect>Cliff</Effect>
+                <IsEmbedded>false</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Deco17">
+                <Effect>Cliff</Effect>
+                <IsEmbedded>false</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Deco18">
+                <Effect>Cliff</Effect>
+                <IsEmbedded>false</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Deco19">
+                <Effect>Cliff</Effect>
+                <IsEmbedded>false</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Deco20">
+                <Effect>Cliff</Effect>
+                <IsEmbedded>false</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Deco21">
+                <Effect>Cliff</Effect>
+                <IsEmbedded>false</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Deco22">
+                <Effect>Cliff</Effect>
+                <IsEmbedded>false</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_F_Big01">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_F_Medium01">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_F_Medium02">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_F_Medium03">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_F_Medium04">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_F_Medium05">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_F_Medium06">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_F_Medium07">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_M_Inbound01">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_M_MapEnd_L">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_M_MapEnd_R">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_M_Outbound01">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_M_RampL01">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_M_RampR01">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_M_Straight01">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_M_Straight02">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_M_Straight03">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_M_Straight04">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_M_Straight05">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_M_Waterfall01">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Medium01">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Medium02">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Medium03">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Medium04">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Medium05">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Medium06">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_Medium07">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_MM_Inbound01">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_MM_MapEnd_L">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_MM_MapEnd_R">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_MM_Outbound01">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_MM_RampL01">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_MM_RampR01">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_MM_Straight01">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_MM_Straight02">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_MM_Straight03">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_MM_Straight04">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_MM_Straight05">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_MM_Waterfall01">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_MS_Inbound01">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_MS_Outbound01">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_MS_RampL01">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_MS_RampR01">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_MS_Straight01">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_MS_Straight02">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_MS_Straight03">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_MS_Straight04">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Set01_MS_Straight05">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Straight01">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Straight02">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Cliff_Straight03">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Rock01">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Rock02">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Rock03">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Rock04">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Rock05">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Rock06">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Rock07">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Rock08">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Rock09">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Rock10">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Rock11">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Rock12">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Rock13">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Rock_Set01_B_01">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Rock_Set01_B_02">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Rock_Set01_B_03">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Rock_Set01_B_04">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Rock_Set01_B_05">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Rock_Set01_B_06">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Rock_Set01_B_07">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Rock_Set01_B_08">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Rock_Set01_B_09">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Rock_Set01_M_01">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Rock_Set01_M_02">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Rock_Set01_M_03">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Rock_Set01_M_04">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Rock_Set01_M_05">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Rock_Set01_M_06">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Rock_Set01_M_07">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Rock_Set01_S_01">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Rock_Set01_S_02">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Rock_Set01_S_03">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Rock_Set01_S_04">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Rock_Set01_S_05">
+                <OrnamentalItem>true</OrnamentalItem>
+                <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Waterfall01">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Waterfall_Small">
+                <Effect>EmbeddedCliff</Effect>
+                <IsEmbedded>true</IsEmbedded>
+            </Model>
+		
+		<!-- *************************        Doodads       ********************************* -->
+
+
+
+            <Model id="Doodads\D_AS_Ruins_BigPillarFlatStuffed">
+                <Effect>SimpleObject</Effect>
+                <CastShadow>true</CastShadow>
+                <UseAlphaBlending>true</UseAlphaBlending>
+                <AlignToTerrain>true</AlignToTerrain>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Ruins_BigPillarFlatTwisted">
+                <Effect>SimpleObject</Effect>
+                <CastShadow>true</CastShadow>
+                <UseAlphaBlending>true</UseAlphaBlending>
+                <AlignToTerrain>true</AlignToTerrain>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Ruins_BigPillarsCollapsed">
+                <Effect>SimpleObject</Effect>
+                <CastShadow>true</CastShadow>
+                <UseAlphaBlending>true</UseAlphaBlending>
+                <AlignToTerrain>true</AlignToTerrain>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Ruins_BigPillarUpright">
+                <Effect>SimpleObject</Effect>
+                <CastShadow>true</CastShadow>
+                <UseAlphaBlending>true</UseAlphaBlending>
+                <AlignToTerrain>true</AlignToTerrain>
+            </Model>
+		
+            <Model id="Doodads\D_AS_Ruins_GoldPillarFlat">
+                <Effect>SimpleObject</Effect>
+                <CastShadow>true</CastShadow>
+                <UseAlphaBlending>true</UseAlphaBlending>
+                <AlignToTerrain>true</AlignToTerrain>
+            </Model>
+            <Model id="Doodads\D_AS_Ruins_GoldPillar">
+                <Effect>SimpleObject</Effect>
+                <CastShadow>true</CastShadow>
+                <UseAlphaBlending>true</UseAlphaBlending>
+                <AlignToTerrain>true</AlignToTerrain>
+            </Model>
+
+            <Model id="Doodads\D_AS_Ruins_HolyCowDestroyed">
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>False</UseAlphaBlending>
+                <UseSurfaceHeight>True</UseSurfaceHeight>
+                <Effect>SimpleObjectMultiply</Effect>
+            </Model>
+
+            <Model id="Doodads\D_AS_Ruins_SmallPillarCollapsed">
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>False</UseAlphaBlending>
+                <UseSurfaceHeight>True</UseSurfaceHeight>
+                <Effect>SimpleObjectMultiply</Effect>
+            </Model>
+
+            <Model id="Doodads\D_AS_Ruins_SmallPillarsCorner">
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>False</UseAlphaBlending>
+                <UseSurfaceHeight>True</UseSurfaceHeight>
+                <Effect>SimpleObjectMultiply</Effect>
+            </Model>
+            
+            <Model id="Doodads\D_AS_Ruins_SmallPillarFlatWithTop">
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>False</UseAlphaBlending>
+                <UseSurfaceHeight>True</UseSurfaceHeight>
+                <Effect>SimpleObjectMultiply</Effect>
+            </Model>
+            
+            <Model id="Doodads\D_AS_Ruins_SmallWallCornerConstruct">
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>False</UseAlphaBlending>
+                <UseSurfaceHeight>True</UseSurfaceHeight>
+                <Effect>SimpleObjectMultiply</Effect>
+            </Model>
+            
+            <Model id="Doodads\D_AS_Ruins_SmallWallCorner">
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>False</UseAlphaBlending>
+                <UseSurfaceHeight>True</UseSurfaceHeight>
+                <Effect>SimpleObjectMultiply</Effect>
+            </Model>	
+
+            <Model id="Doodads\D_AS_Ruins_SmallWallDark">
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>False</UseAlphaBlending>
+                <UseSurfaceHeight>True</UseSurfaceHeight>
+                <Effect>SimpleObjectMultiply</Effect>
+            </Model>
+
+            <Model id="Doodads\D_AS_Ruins_SmallWallDouble">
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>False</UseAlphaBlending>
+                <UseSurfaceHeight>True</UseSurfaceHeight>
+                <Effect>SimpleObjectMultiply</Effect>
+            </Model>
+            
+            <Model id="Doodads\D_AS_Ruins_TeethFlat">
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>False</UseAlphaBlending>
+                <UseSurfaceHeight>True</UseSurfaceHeight>
+                <Effect>SimpleObjectMultiply</Effect>
+            </Model>
+            
+            <Model id="Doodads\D_AS_Ruins_TowerDestroyed">
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>False</UseAlphaBlending>
+                <UseSurfaceHeight>True</UseSurfaceHeight>
+                <Effect>SimpleObjectMultiply</Effect>
+            </Model>
+            
+            <Model id="Doodads\D_AS_Ruins_VaseFat">
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>False</UseAlphaBlending>
+                <UseSurfaceHeight>True</UseSurfaceHeight>
+                <Effect>SimpleObjectMultiply</Effect>
+            </Model>
+
+            <Model id="Doodads\D_AS_Ruins_VaseFatBroken">
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>False</UseAlphaBlending>
+                <UseSurfaceHeight>True</UseSurfaceHeight>
+                <Effect>SimpleObjectMultiply</Effect>
+            </Model>
+            
+            <Model id="Doodads\D_AS_Ruins_VaseTall">
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>False</UseAlphaBlending>
+                <UseSurfaceHeight>True</UseSurfaceHeight>
+                <Effect>SimpleObjectMultiply</Effect>
+            </Model>
+            
+            <Model id="Doodads\D_AS_Ruins_VaseTallBroken">
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>False</UseAlphaBlending>
+                <UseSurfaceHeight>True</UseSurfaceHeight>
+                <Effect>SimpleObjectMultiply</Effect>
+            </Model>
+            
+            <Model id="Doodads\D_AS_Ruins_WallCorner">
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>False</UseAlphaBlending>
+                <UseSurfaceHeight>True</UseSurfaceHeight>
+                <Effect>SimpleObjectMultiply</Effect>
+            </Model>
+
+            <Model id="Doodads\D_AS_Ruins_WallStraight">
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>False</UseAlphaBlending>
+                <UseSurfaceHeight>True</UseSurfaceHeight>
+                <Effect>SimpleObjectMultiply</Effect>
+            </Model>
+            
+            <Model id="Doodads\D_AS_Ruins_WoodenConstruct">
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>False</UseAlphaBlending>
+                <UseSurfaceHeight>True</UseSurfaceHeight>
+                <Effect>SimpleObjectMultiply</Effect>
+            </Model>
+
+            <Model id="Doodads\D_AS_Brazier">
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>False</UseAlphaBlending>
+                <UseSurfaceHeight>True</UseSurfaceHeight>
+                <Effect>SimpleObjectMultiply</Effect>
+            </Model>
+	
+            <Model id="Doodads\D_AS_Flowerpots_Round">
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>False</UseAlphaBlending>
+                <UseSurfaceHeight>True</UseSurfaceHeight>
+                <Effect>SimpleObjectMultiply</Effect>
+            </Model>
+	
+            <Model id="Doodads\D_AS_Flowerpots_Square">
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>False</UseAlphaBlending>
+                <UseSurfaceHeight>True</UseSurfaceHeight>
+                <Effect>SimpleObjectMultiply</Effect>
+            </Model>
+
+            <Model id="Doodads\D_AS_Lantern">
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>False</UseAlphaBlending>
+                <UseSurfaceHeight>True</UseSurfaceHeight>
+                <Effect>SimpleObjectMultiply</Effect>
+            </Model>
+	
+            <Model id="Doodads\D_AS_Pillar">
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>False</UseAlphaBlending>
+                <UseSurfaceHeight>True</UseSurfaceHeight>
+                <Effect>SimpleObjectMultiply</Effect>
+            </Model>
+	
+            <Model id="Doodads\D_AS_Shrine">
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>False</UseAlphaBlending>
+                <UseSurfaceHeight>True</UseSurfaceHeight>
+                <Effect>SimpleObjectMultiply</Effect>
+            </Model>
+	
+            <Model id="Doodads\D_AS_StoneBench">
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>False</UseAlphaBlending>
+                <UseSurfaceHeight>True</UseSurfaceHeight>
+                <Effect>SimpleObjectMultiply</Effect>
+            </Model>
+	
+            <Model id="Doodads\D_AS_Sundial">
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>False</UseAlphaBlending>
+                <UseSurfaceHeight>True</UseSurfaceHeight>
+                <Effect>SimpleObjectMultiply</Effect>
+            </Model>
+	
+            <Model id="Doodads\D_AS_Vase">
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>False</UseAlphaBlending>
+                <UseSurfaceHeight>True</UseSurfaceHeight>
+                <Effect>SimpleObjectMultiply</Effect>
+            </Model>
+	
+            <Model id="Doodads\D_AS_Waystone">
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>False</UseAlphaBlending>
+                <UseSurfaceHeight>True</UseSurfaceHeight>
+                <Effect>SimpleObjectMultiply</Effect>
+            </Model>
+
+            <Model id="Doodads\D_AS_TriumphalArch">
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>False</UseAlphaBlending>
+                <UseSurfaceHeight>True</UseSurfaceHeight>
+                <Effect>SimpleObjectMultiply</Effect>
+            </Model>
+            
+            <Model id="Doodads\D_AS_VictoryColumn">
+                <CastShadow>True</CastShadow>
+                <ShareShadowRaster>True</ShareShadowRaster>
+                <UseAlphaBlending>False</UseAlphaBlending>
+                <UseSurfaceHeight>True</UseSurfaceHeight>
+                <Effect>SimpleObjectMultiply</Effect>
+            </Model>
+
+            <Model id="Doodads\D_AS_RockBarrier_Empty">
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+            <Model id="Doodads\D_AS_RockBarrier_Full">
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+            
+            <Model id="Doodads\D_AS_RockBarrier_Final">
+                <Effect>SimpleObjectWithNormalMap</Effect>
+            </Model>
+	
+        <Model id="Doodads\D_AS_Den01">
+            <Effect>EmbeddedCliff</Effect>
+            <IsEmbedded>true</IsEmbedded>
+            <CastShadow>False</CastShadow>
+        </Model>
+         <Model id="Doodads\D_AS_Den02">
+            <OrnamentalItem>true</OrnamentalItem>
+            <OrnamentalItemEffect>BatchedItemWithNormalMap</OrnamentalItemEffect>
+            <Effect>SimpleObjectWithNormalMap</Effect>         
+            <CastShadow>true</CastShadow>
+        </Model>	
+	
+	
+	    <Model id="Doodads\D_AS_MonsoonDecalTop01">
+            <Effect>WaterfallSeason</Effect>
+            <UseSurfaceHeight>True</UseSurfaceHeight>
+            <TwoPassAlphaBlending>False</TwoPassAlphaBlending>
+            <UseAlphaBlending>True</UseAlphaBlending>
+        </Model>
+
+	    <Model id="Doodads\D_AS_MonsoonDecalTop02">
+            <Effect>WaterfallSeason</Effect>
+            <UseSurfaceHeight>True</UseSurfaceHeight>
+            <TwoPassAlphaBlending>False</TwoPassAlphaBlending>
+            <UseAlphaBlending>True</UseAlphaBlending>
+        </Model>
+        
+	    <Model id="Doodads\D_AS_MonsoonDecalTop03">
+            <Effect>WaterfallSeason</Effect>
+            <UseSurfaceHeight>True</UseSurfaceHeight>
+            <TwoPassAlphaBlending>False</TwoPassAlphaBlending>
+            <UseAlphaBlending>True</UseAlphaBlending>
+        </Model>
+        
+	    <Model id="Doodads\D_AS_MonsoonDecalTop04">
+            <Effect>WaterfallSeason</Effect>
+            <UseSurfaceHeight>True</UseSurfaceHeight>
+            <TwoPassAlphaBlending>False</TwoPassAlphaBlending>
+            <UseAlphaBlending>True</UseAlphaBlending>
+        </Model>
+        
+        <Model id="Buildings/B_Market_Saraya">
+            <Effect>SimpleObjectMultiply</Effect>
+            <UseAlphaBlending>True</UseAlphaBlending>
+        </Model>
+		<!-- *************************        Animals       ********************************* -->
+		
+        <Model id="Animals\A_AS_Elephant_Male">
+            <Effect>SkinnedObject</Effect>
+            <CastShadow>True</CastShadow>
+            <ShareShadowRaster>True</ShareShadowRaster>
+            <UseSurfaceHeight>True</UseSurfaceHeight>
+            <DefaultAnimID>Animal\A_NA_Elephant_Male_Walk</DefaultAnimID>
+            <AlignToTerrain>true</AlignToTerrain>
+            <AlwaysUpright>true</AlwaysUpright>
+        </Model>
+			
+        <Model id="Animals\A_AS_Elephant_FeMale">
+            <Effect>SkinnedObject</Effect>
+            <CastShadow>True</CastShadow>
+            <ShareShadowRaster>True</ShareShadowRaster>
+            <UseSurfaceHeight>True</UseSurfaceHeight>
+            <DefaultAnimID>Animal\A_NA_Elephant_Male_Walk</DefaultAnimID>
+            <AlignToTerrain>true</AlignToTerrain>
+            <AlwaysUpright>true</AlwaysUpright>
+        </Model>
+
+        <Model id="Animals\A_AS_Tiger">
+            <Effect>SkinnedObject</Effect>
+            <CastShadow>True</CastShadow>
+            <ShareShadowRaster>True</ShareShadowRaster>
+            <UseSurfaceHeight>True</UseSurfaceHeight>
+            <DefaultAnimID>Animal\A_NA_Lion_Male_Run</DefaultAnimID>
+            <AlignToTerrain>true</AlignToTerrain>
+            <AlwaysUpright>true</AlwaysUpright>
+        </Model>
+
+        <Model id="Animals\A_AS_HolyCow">
+            <Effect>SkinnedUnitAlphaTest</Effect>
+            <CastShadow>True</CastShadow>
+            <ShareShadowRaster>True</ShareShadowRaster>
+            <UseSurfaceHeight>True</UseSurfaceHeight>
+            <DefaultAnimID>Animal\A_X_Cow_Walk</DefaultAnimID>
+            <AlignToTerrain>true</AlignToTerrain>
+            <AlwaysUpright>true</AlwaysUpright>
+        </Model>
+
+        <Model id="Animals\A_AS_Porcupine">
+            <Effect>SkinnedUnitAlphaTest</Effect>
+            <CastShadow>True</CastShadow>
+            <ShareShadowRaster>True</ShareShadowRaster>
+            <UseSurfaceHeight>True</UseSurfaceHeight>
+            <DefaultAnimID>Animal\A_ME_Marmot_Run</DefaultAnimID>
+            <AlignToTerrain>true</AlignToTerrain>
+            <AlwaysUpright>true</AlwaysUpright>
+        </Model>
+        
+        <Model id="Animals\A_AS_Mongoose">
+            <Effect>SkinnedObject</Effect>
+            <CastShadow>True</CastShadow>
+            <ShareShadowRaster>True</ShareShadowRaster>
+            <UseSurfaceHeight>True</UseSurfaceHeight>
+            <DefaultAnimID>Animal\A_ME_Marmot_Run</DefaultAnimID>
+            <AlignToTerrain>true</AlignToTerrain>
+            <AlwaysUpright>true</AlwaysUpright>
+        </Model>
+
+        <Model id="Animals\A_AS_BearBlack">
+            <Effect>SkinnedObject</Effect>
+            <CastShadow>True</CastShadow>
+            <ShareShadowRaster>True</ShareShadowRaster>
+            <UseSurfaceHeight>True</UseSurfaceHeight>
+            <DefaultAnimID>Animal\A_ME_Bear_Run</DefaultAnimID>
+            <AlignToTerrain>true</AlignToTerrain>
+            <AlwaysUpright>true</AlwaysUpright>
+        </Model>
+
+        <Model id="Animals\A_AS_AxisDeer_Female">
+            <Effect>SkinnedObject</Effect>
+            <CastShadow>True</CastShadow>
+            <ShareShadowRaster>True</ShareShadowRaster>
+            <UseSurfaceHeight>True</UseSurfaceHeight>
+            <DefaultAnimID>Animal\A_SE_FallowDeer_Female_Run</DefaultAnimID>
+            <AlignToTerrain>true</AlignToTerrain>
+            <AlwaysUpright>true</AlwaysUpright>
+        </Model>
+			
+        <Model id="Animals\A_AS_AxisDeer_Male">
+            <Effect>SkinnedObject</Effect>
+            <CastShadow>True</CastShadow>
+            <ShareShadowRaster>True</ShareShadowRaster>
+            <UseSurfaceHeight>True</UseSurfaceHeight>
+            <DefaultAnimID>Animal\A_SE_FallowDeer_Male_Run</DefaultAnimID>
+            <AlignToTerrain>true</AlignToTerrain>
+            <AlwaysUpright>true</AlwaysUpright>
+        </Model>
+
+		<!-- *************************        ThroneRoom       ********************************* -->
+
+        <Model id="AS_ThroneRoom_Cube">
+           <Effect>ThroneRoomBackground</Effect>
+           <CastShadow>False</CastShadow>
+        </Model>
+
+        
+		<!-- *************************        Units       ********************************* -->
+
+        <Model id="Units\Misc_Unit\U_NPC_Villager01_AS">
+            <Effect>SkinnedUnitAlphaTest</Effect>
+            <SelectionRadius>65</SelectionRadius>
+            <SelectionTexture>Selection_civilian</SelectionTexture>
+            <DoNotDestroyHierarchy>true</DoNotDestroyHierarchy>
+            <DefaultAnimID>Thin\U_Thin_Normal_Stand</DefaultAnimID>
+        </Model>
+
+        <Model id="Units\Military\U_NPC_Swordsman_AS">
+            <SelectionRadius>100</SelectionRadius>
+            <Effect>SettlerRimPlayerColorSpecular</Effect>
+            <SelectionTexture>Selection_Soldier</SelectionTexture>
+            <OcclusionReceiver>True</OcclusionReceiver>
+            <DefaultAnimID>Military\U_MilitarySword_Stand</DefaultAnimID>
+        </Model>
+
+        <Model id="Units\Military\U_NPC_Bowman_AS">
+            <SelectionRadius>100</SelectionRadius>
+            <Effect>SettlerRimPlayerColorSpecular</Effect>
+            <SelectionTexture>Selection_Soldier</SelectionTexture>
+            <OcclusionReceiver>True</OcclusionReceiver>
+            <DefaultAnimID>Military\U_MilitaryBow_Stand</DefaultAnimID>
+        </Model>
+
+        <Model id="Units\Military\U_MilitarySword_Khana">
+            <SelectionRadius>100</SelectionRadius>
+            <Effect>SettlerRimPlayerColorSpecular</Effect>
+            <SelectionTexture>Selection_Soldier</SelectionTexture>
+            <OcclusionReceiver>True</OcclusionReceiver>
+            <DefaultAnimID>Military\U_MilitaryBandit_Melee_NA_Stand</DefaultAnimID>
+        </Model>
+        
+        <Model id="Units\Military\U_MilitaryBow_Khana">
+            <SelectionRadius>100</SelectionRadius>
+            <Effect>SettlerRimPlayerColorSpecular</Effect>
+            <SelectionTexture>Selection_Soldier</SelectionTexture>
+            <OcclusionReceiver>True</OcclusionReceiver>
+            <DefaultAnimID>Military\U_MilitaryBow_Stand</DefaultAnimID>
+        </Model>
+
+        <Model id="Units\Misc_Unit\U_NPC_Monk_AS">
+            <Effect>SkinnedUnitAlphaTest</Effect>
+            <SelectionRadius>65</SelectionRadius>
+            <SelectionTexture>Selection_civilian</SelectionTexture>
+            <DoNotDestroyHierarchy>true</DoNotDestroyHierarchy>
+            <DefaultAnimID>Thin\U_Thin_Normal_Stand</DefaultAnimID>
+        </Model>
+
+        <Model id="Units\Misc_Unit\U_NPC_Monk_AS_Driver">
+            <Effect>SkinnedUnitAlphaTest</Effect>
+            <SelectionRadius>130</SelectionRadius>
+            <SelectionTexture>Selection_civilian</SelectionTexture>
+            <DoNotDestroyHierarchy>true</DoNotDestroyHierarchy>
+            <AlignToTerrain>true</AlignToTerrain>
+            <DefaultAnimID>Misc_Unit\U_NPC_Monk_AS_Driver_Walk</DefaultAnimID>
+        </Model>
+
+        <Model id="Units\Misc_Unit\U_NPC_Monk_Khana">
+            <Effect>SkinnedUnitAlphaTest</Effect>
+            <SelectionRadius>65</SelectionRadius>
+            <SelectionTexture>Selection_civilian</SelectionTexture>
+            <DoNotDestroyHierarchy>true</DoNotDestroyHierarchy>
+            <DefaultAnimID>Thin\U_Thin_Normal_Stand</DefaultAnimID>
+        </Model>
+        
+        <Model id="Units\U_Knight_Saraya">
+            <Effect>SettlerRimPlayerColorSpecular</Effect>
+            <OcclusionReceiver>True</OcclusionReceiver>
+            <SelectionRadius>200</SelectionRadius>
+            <SelectionTexture>Selection_Hero</SelectionTexture>
+            <DoNotDestroyHierarchy>true</DoNotDestroyHierarchy>
+            <AlignToTerrain>true</AlignToTerrain>
+            <AlwaysUpright>true</AlwaysUpright>
+            <DefaultAnimID>U_Knight_Healing_Stand</DefaultAnimID>
+        </Model>
+        
+        <Model id="Units\U_Horse_Saraya">
+            <Effect>SettlerRimPlayerColorSpecular</Effect>
+            <OcclusionReceiver>True</OcclusionReceiver>
+            <SelectionRadius>200</SelectionRadius>
+            <SelectionTexture>Selection_Hero</SelectionTexture>
+            <DoNotDestroyHierarchy>true</DoNotDestroyHierarchy>
+            <AlignToTerrain>true</AlignToTerrain>
+            <AlwaysUpright>true</AlwaysUpright>
+            <DefaultAnimID>U_Horse_Healing_Stand</DefaultAnimID>
+        </Model>
+        
+        <Model id="Units\U_Knight_Praphat">
+            <Effect>SettlerRimPlayerColorSpecular</Effect>
+            <OcclusionReceiver>True</OcclusionReceiver>
+            <SelectionRadius>200</SelectionRadius>
+            <SelectionTexture>Selection_Hero</SelectionTexture>
+            <DoNotDestroyHierarchy>true</DoNotDestroyHierarchy>
+            <AlignToTerrain>true</AlignToTerrain>
+            <AlwaysUpright>true</AlwaysUpright>
+            <DefaultAnimID>U_Knight_Wisdom_Stand</DefaultAnimID>
+        </Model>
+        
+        <Model id="Units\U_Horse_Praphat">
+            <Effect>SettlerRimPlayerColorSpecular</Effect>
+            <OcclusionReceiver>True</OcclusionReceiver>
+            <SelectionRadius>200</SelectionRadius>
+            <SelectionTexture>Selection_Hero</SelectionTexture>
+            <DoNotDestroyHierarchy>true</DoNotDestroyHierarchy>
+            <AlignToTerrain>true</AlignToTerrain>
+            <AlwaysUpright>true</AlwaysUpright>
+            <DefaultAnimID>U_Horse_Wisdom_Stand</DefaultAnimID>
+        </Model>
+        
+        <Model id="Units\U_Knight_Khana">
+            <Effect>SettlerRimPlayerColorSpecular</Effect>
+            <OcclusionReceiver>True</OcclusionReceiver>
+            <SelectionRadius>200</SelectionRadius>
+            <SelectionTexture>Selection_Hero</SelectionTexture>
+            <DoNotDestroyHierarchy>true</DoNotDestroyHierarchy>
+            <AlignToTerrain>true</AlignToTerrain>
+            <AlwaysUpright>true</AlwaysUpright>
+            <DefaultAnimID>U_Crimson_Sabatta_Stand</DefaultAnimID>
+        </Model>
+        
+        <Model id="Units\U_Horse_Khana">
+            <Effect>SettlerRimPlayerColorSpecular</Effect>
+            <OcclusionReceiver>True</OcclusionReceiver>
+            <SelectionRadius>200</SelectionRadius>
+            <SelectionTexture>Selection_Hero</SelectionTexture>
+            <DoNotDestroyHierarchy>true</DoNotDestroyHierarchy>
+            <AlignToTerrain>true</AlignToTerrain>
+            <AlwaysUpright>true</AlwaysUpright>
+            <DefaultAnimID>U_Horse_Sabatta_Stand</DefaultAnimID>
+        </Model>
+        
+        <Model id="Units\Misc_Unit\U_NPC_Geologist">
+            <Effect>SkinnedUnitAlphaTest</Effect>
+            <SelectionRadius>65</SelectionRadius>
+            <SelectionTexture>Selection_civilian</SelectionTexture>
+            <DoNotDestroyHierarchy>true</DoNotDestroyHierarchy>
+            <DefaultAnimID>Thin\U_Thin_Normal_Stand</DefaultAnimID>
+        </Model>
+        
+        <Model id="Units\Misc_Unit\U_NPC_Geologist_HandCart_Master">
+            <Effect>SkinnedUnitAlphaTest</Effect>
+            <SelectionRadius>130</SelectionRadius>
+            <SelectionTexture>Selection_civilian</SelectionTexture>
+
+            <DoNotDestroyHierarchy>true</DoNotDestroyHierarchy>
+            <AlignToTerrain>true</AlignToTerrain>
+            <DefaultAnimID>Thin\U_Thin_HandCart_Stand</DefaultAnimID>
+        </Model>
+        <Model id="Units\U_Knight_Saraya_TR">
+            <Effect>SettlerThroneRoom</Effect>
+            <SelectionRadius>200</SelectionRadius>
+            <SelectionTexture>Selection_Hero</SelectionTexture>
+            <DoNotDestroyHierarchy>true</DoNotDestroyHierarchy>
+            <AlignToTerrain>true</AlignToTerrain>
+            <AlwaysUpright>true</AlwaysUpright>
+            <DefaultAnimID>U_Knight_Healing_TR_Stand</DefaultAnimID>
+        </Model>
+       <Model id="Units\Misc_Unit\U_Horse_Castellan_AS">
+            <Effect>SettlerRimPlayerColorSpecular</Effect>
+            <Effect>SkinnedUnitAlphaTest</Effect>
+            <OcclusionReceiver>True</OcclusionReceiver>
+            <SelectionRadius>200</SelectionRadius>
+            <SelectionTexture>Selection_Hero</SelectionTexture>
+            <DoNotDestroyHierarchy>true</DoNotDestroyHierarchy>
+            <AlignToTerrain>true</AlignToTerrain>
+            <AlwaysUpright>true</AlwaysUpright>
+            <DefaultAnimID>Misc_Unit\U_Horse_Castellan_Stand</DefaultAnimID>
+        </Model>
+        <Model id="Units\Misc_Unit\U_NPC_Castellan_AS">
+            <Effect>SettlerRimPlayerColorSpecular</Effect>
+            <Effect>SkinnedUnitAlphaTest</Effect>
+            <OcclusionReceiver>True</OcclusionReceiver>
+            <SelectionRadius>200</SelectionRadius>
+            <SelectionTexture>Selection_Hero</SelectionTexture>
+            <DoNotDestroyHierarchy>true</DoNotDestroyHierarchy>
+            <AlignToTerrain>true</AlignToTerrain>
+            <AlwaysUpright>true</AlwaysUpright>
+            <DefaultAnimID>Misc_Unit\U_NPC_Castellan_Stand</DefaultAnimID>
+        </Model>
+        
+        <Model id="Units\Misc_Unit\U_NPC_Digger01">
+            <Effect>SkinnedUnitAlphaTest</Effect>
+            <SelectionRadius>65</SelectionRadius>
+            <SelectionTexture>Selection_civilian</SelectionTexture>
+            <DoNotDestroyHierarchy>true</DoNotDestroyHierarchy>
+            <DefaultAnimID>Misc_Unit\U_NPC_Digger_Dig</DefaultAnimID>
+        </Model>
+        
+        <!-- *************************        Heads     ********************************* -->
+
+        <Model id="Heads\H_Knight_Khana">
+            <DoNotDestroyHierarchy>true</DoNotDestroyHierarchy>
+            <Effect>SkinnedUnitAlphaTest</Effect>
+            <DefaultAnimID>Heads\H_Knight_Khana</DefaultAnimID>
+        </Model>
+        <Model id="Heads\H_Knight_Praphat">
+            <DoNotDestroyHierarchy>true</DoNotDestroyHierarchy>
+            <Effect>SkinnedUnitAlphaTest</Effect>
+            <DefaultAnimID>Heads\H_Knight_Praphat</DefaultAnimID>
+        </Model>
+        <Model id="Heads\H_Knight_Saraya">
+            <DoNotDestroyHierarchy>true</DoNotDestroyHierarchy>
+            <Effect>SkinnedUnitAlphaTest</Effect>
+            <DefaultAnimID>Heads\H_Knight_Saraya</DefaultAnimID>
+        </Model>  
+        <Model id="Heads\H_Knight_Saraya_TR">
+            <DoNotDestroyHierarchy>true</DoNotDestroyHierarchy>
+            <Effect>SettlerThroneRoom</Effect>
+            <DefaultAnimID>Heads\H_Knight_Saraya_TR</DefaultAnimID>
+        </Model>      
+        <Model id="Heads\H_NPC_Castellan_AS">
+            <DoNotDestroyHierarchy>true</DoNotDestroyHierarchy>
+            <Effect>SkinnedUnitAlphaTest</Effect>
+            <DefaultAnimID>Heads\H_NPC_Castellan_AS</DefaultAnimID>
+        </Model>
+        <Model id="Heads\H_NPC_Mercenary_AS">
+            <DoNotDestroyHierarchy>true</DoNotDestroyHierarchy>
+            <Effect>SkinnedUnitAlphaTest</Effect>
+            <DefaultAnimID>Heads\H_NPC_Mercenary_AS</DefaultAnimID>
+        </Model>
+        <Model id="Heads\H_NPC_Monk_AS">
+            <DoNotDestroyHierarchy>true</DoNotDestroyHierarchy>
+            <Effect>SkinnedUnitAlphaTest</Effect>
+            <DefaultAnimID>Heads\H_NPC_Monk_AS</DefaultAnimID>
+        </Model>
+        <Model id="Heads\H_NPC_Monk_Old_AS">
+            <DoNotDestroyHierarchy>true</DoNotDestroyHierarchy>
+            <Effect>SkinnedUnitAlphaTest</Effect>
+            <DefaultAnimID>Heads\H_NPC_Monk_Old_AS</DefaultAnimID>
+        </Model>
+        <Model id="Heads\H_NPC_Monk_Khana">
+            <DoNotDestroyHierarchy>true</DoNotDestroyHierarchy>
+            <Effect>SkinnedUnitAlphaTest</Effect>
+            <DefaultAnimID>Heads\H_NPC_Monk_Khana</DefaultAnimID>
+        </Model>
+        <Model id="Heads\H_NPC_Villager_AS">
+            <DoNotDestroyHierarchy>true</DoNotDestroyHierarchy>
+            <Effect>SkinnedUnitAlphaTest</Effect>
+            <DefaultAnimID>Heads\H_NPC_Villager_AS</DefaultAnimID>
+        </Model>   
+		
+		<!-- CP -->
+		
+		<Model id="Units\Military\U_MilitarySpear">
+			<SelectionRadius>100</SelectionRadius>
+			<!--<Effect>SettlerRimPlayerColorSpecular</Effect>-->
+			<SelectionTexture>Selection_Soldier</SelectionTexture>
+			<OcclusionReceiver>True</OcclusionReceiver>
+			<DefaultAnimID>Military\U_MilitarySpear_Run</DefaultAnimID>
+		</Model>
+
+		<Model id="Units\U_Helbardier">
+			<SelectionRadius>100</SelectionRadius>
+			<!--<Effect>SettlerRimPlayerColorSpecular</Effect>-->
+			<SelectionTexture>Selection_Soldier</SelectionTexture>
+			<OcclusionReceiver>True</OcclusionReceiver>
+			<DefaultAnimID>U_Helbardier_Run</DefaultAnimID>
+		</Model>
+
+		<Model id="Doodads\D_X_Beautification_Dragon">
+			<CastShadow>True</CastShadow>
+			<ShareShadowRaster>True</ShareShadowRaster>
+			<!--<UseAlphaBlending>True</UseAlphaBlending>-->
+			<OcclusionCaster>True</OcclusionCaster>
+			<Effect>SimpleObjectMultiply</Effect>
+		</Model>
+
+		<Model id="Units\Military\U_Dragon">
+			<SelectionRadius>300</SelectionRadius>
+			<Effect>SettlerThroneRoom</Effect>
+			<SelectionTexture>Selection_Soldier</SelectionTexture>
+			<OcclusionReceiver>True</OcclusionReceiver>
+			<DefaultAnimID>Military\U_MilitarySpear_Run</DefaultAnimID>
+		</Model>
+		
+		
+		<Model id="Goods\G_SpearSpearMaker01">
+			<Effect>SimpleObject</Effect>
+			<OcclusionCaster>False</OcclusionCaster>
+			<CastShadow>False</CastShadow>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+
+
+
+		<Model id="Buildings\B_Spicetrader_Buildingsite_1">
+			<Effect>SimpleObjectMultiply</Effect>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+			<OcclusionCaster>True</OcclusionCaster>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Buildingsite_2">
+			<Effect>SimpleObjectMultiply</Effect>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+			<OcclusionCaster>True</OcclusionCaster>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Buildingsite_3">
+			<Effect>SimpleObjectMultiply</Effect>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+			<OcclusionCaster>True</OcclusionCaster>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Yard_1">
+			<Effect>CityBuilding</Effect>
+			<OcclusionCaster>True</OcclusionCaster>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Yard_2">
+			<Effect>CityBuilding</Effect>
+			<OcclusionCaster>True</OcclusionCaster>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Yard_3">
+			<Effect>CityBuilding</Effect>
+			<OcclusionCaster>True</OcclusionCaster>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Floor_1">
+			<SelectionTexture>Selection_Building</SelectionTexture>
+			<Effect>CityBuilding</Effect>
+			<OcclusionCaster>True</OcclusionCaster>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Floor_2">
+			<Effect>CityBuilding</Effect>
+			<OcclusionCaster>True</OcclusionCaster>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Floor_3">
+			<Effect>CityBuilding</Effect>
+			<OcclusionCaster>True</OcclusionCaster>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Gable_1">
+			<Effect>CityBuilding</Effect>
+			<OcclusionCaster>True</OcclusionCaster>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Gable_2">
+			<Effect>CityBuilding</Effect>
+			<OcclusionCaster>True</OcclusionCaster>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Gable_3">
+			<Effect>CityBuilding</Effect>
+			<OcclusionCaster>True</OcclusionCaster>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Roof_1">
+			<Effect>Roof</Effect>
+			<OcclusionCaster>True</OcclusionCaster>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Roof_2">
+			<Effect>Roof</Effect>
+			<OcclusionCaster>True</OcclusionCaster>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Roof_3">
+			<Effect>Roof</Effect>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+			<OcclusionCaster>True</OcclusionCaster>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Floor_1_Light">
+			<Effect>DecalAdditive</Effect>
+			<UseAlphaBlending>True</UseAlphaBlending>
+			<TwoPassAlphaBlending>False</TwoPassAlphaBlending>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Floor_2_Light">
+			<Effect>DecalAdditive</Effect>
+			<UseAlphaBlending>True</UseAlphaBlending>
+			<TwoPassAlphaBlending>False</TwoPassAlphaBlending>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Floor_3_Light">
+			<Effect>DecalAdditive</Effect>
+			<UseAlphaBlending>True</UseAlphaBlending>
+			<TwoPassAlphaBlending>False</TwoPassAlphaBlending>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Rubble_1">
+			<SelectionTexture>Selection_Building</SelectionTexture>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+			<OcclusionCaster>True</OcclusionCaster>
+		</Model>
+		<Model id="Buildings\B_Spicetrader_Rubble_2">
+			<SelectionTexture>Selection_Building</SelectionTexture>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+			<OcclusionCaster>True</OcclusionCaster>
+		</Model>
+   </Models>
+</root>

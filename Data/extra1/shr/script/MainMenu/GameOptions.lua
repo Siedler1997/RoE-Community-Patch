@@ -110,7 +110,7 @@ function g_GameOptions:OnOK()
     do
         local WidgetID = XGUIEng.GetWidgetID("/InGame/GameOptionsMain/RightContainer/PlayerColor/CheckBox")          
         if (XGUIEng.CheckBoxIsChecked(WidgetID) == true) then        
-            Options.SetFloatValue("Game", "AltPlayerColor", 5)     
+            Options.SetFloatValue("Game", "AltPlayerColor", 18)     
         else 
             Options.SetFloatValue("Game", "AltPlayerColor", g_DefaultPlayerColor)     
         end 

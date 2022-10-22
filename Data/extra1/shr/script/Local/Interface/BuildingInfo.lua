@@ -383,6 +383,8 @@ function GUI_BuildingInfo.UpgradeUpdate()
 
     if UpgradeLimit ~= 0 then
         Text = "{center}" .. Text .. " " .. UpgradeLevel+1 .."/" .. UpgradeLimit+1
+    else
+        Text = "{center}" .. Text .. " 1/1"
     end
 
     if Logic.IsSettler(GUI.GetSelectedEntity()) == 1 then

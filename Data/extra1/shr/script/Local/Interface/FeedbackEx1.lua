@@ -28,11 +28,71 @@ do
     end        
 end
 
+-- ----------------------------------------------------------------------
+-- GameCallback_Feedback_NewCouplesAfterFestival
+-- ----------------------------------------------------------------------
+
+function GameCallback_Feedback_NewCouplesAfterFestival(_PlayerID, _NewCouples, _FestivalAbilityIsActive,_NewCouplesByThordal)
+
+    -- stop the event music
+    local PlayerID = GUI.GetPlayerID()
+    StopEventMusic(MusicSystem.EventFestivalMusic, PlayerID)
+    StopEventMusic(MusicSystem.EventPromotionMusic, PlayerID)
+    StopEventMusic(MusicSystem.EventPromotion2Music, PlayerID)
+
+    -- feedback for new couples
+    
+    if 		_PlayerID == GUI.GetPlayerID()
+    	and Logic.GetCurrentTurn() > 10
+    	and _NewCouples > 0 then
+    	
+        GUI_FeedbackWidgets.CityAdd(_NewCouples - _NewCouplesByThordal, nil, {4, 15})
+    
+    	if _NewCouplesByThordal > 0 then  -- output the additional amount always, when thordal is the selected knight?
+    	
+    		GUI_FeedbackWidgets.CityAdd(_NewCouplesByThordal, nil, {6, 7})
+    		
+    	end
+        
+    end
+end
+
+-- ----------------------------------------------------------------------
+-- GameCallback_Feedback_TaxCollectionFinished
+-- ----------------------------------------------------------------------
+
+function GameCallback_Feedback_TaxCollectionFinished(_PlayerID, _TotalTaxAmountCollected, _AdditionalTaxesByAbility)
+
+    if _PlayerID == GUI.GetPlayerID() then
+
+        if  Logic.GetCurrentTurn() > 10 then
+
+            if _TotalTaxAmountCollected > 0 then
+                local AmountWithoutAdditional = _TotalTaxAmountCollected - _AdditionalTaxesByAbility
+
+                GUI_FeedbackWidgets.GoldAdd(AmountWithoutAdditional, nil)
+
+                if _AdditionalTaxesByAbility > 0 then
+                    GUI_FeedbackWidgets.GoldAdd(_AdditionalTaxesByAbility, Logic.GetKnightID(_PlayerID))
+                    StartKnightVoiceForPermanentSpecialAbility(Entities.U_KnightPlunder)
+                    StartKnightVoiceForPermanentSpecialAbility(Entities.U_KnightRedPrince)
+                end
+            end
+
+            local SoldierAmount = Logic.GetCurrentSoldierCount(_PlayerID)
+            local PayPerSoldier = SoldierPay[PlayerSoldierPaymentLevel[_PlayerID]]
+            local AmountToPay = SoldierAmount * PayPerSoldier
+
+            if AmountToPay > 0 then
+                AmountToPay = AmountToPay * -1
+                GUI_FeedbackWidgets.GoldAdd(AmountToPay, nil, {1, 7})
+            end
+        end
+    end
+end
 
 
-function GameCallback_Feedback_EntityHurt(_HurtPlayerID, _HurtEntityID,
-                                          _HurtingPlayerID, _HurtingEntityID,
-                                          _DamageReceived, _DamageDealt)
+function GameCallback_Feedback_EntityHurt(_HurtPlayerID, _HurtEntityID, _HurtingPlayerID, _HurtingEntityID, _DamageReceived, _DamageDealt)
 
     local HurtEntityType = Logic.GetEntityType(_HurtEntityID)
 
@@ -44,11 +104,10 @@ function GameCallback_Feedback_EntityHurt(_HurtPlayerID, _HurtEntityID,
     local PlayerID = GUI.GetPlayerID()
 
     -- tell player once about the action special ability of wisdom and marcus
-    if Logic.GetEntityType(_HurtingEntityID) == Entities.U_KnightWisdom
-    or Logic.GetEntityType(_HurtingEntityID) == Entities.U_KnightChivalry
-    or Logic.GetEntityType(_HurtingEntityID) == Entities.U_KnightSabatta
-    or Logic.GetEntityType(_HurtingEntityID) == Entities.U_KnightRedPrince
-    or Logic.GetEntityType(_HurtingEntityID) == Entities.U_KnightKhana then
+    if (Logic.GetEntityType(_HurtingEntityID) == Entities.U_KnightWisdom
+    or Logic.GetEntityType(_HurtingEntityID) == Entities.U_KnightSabatta) and Logic.IsBuilding(_HurtEntityID) == 0
+    or (Logic.GetEntityType(_HurtingEntityID) == Entities.U_KnightChivalry
+    or Logic.GetEntityType(_HurtingEntityID) == Entities.U_KnightKhana) and Logic.IsBuilding(_HurtEntityID) == 1 then
         
         if Logic.GetHeadquarters(_HurtPlayerID) ~= 0 then
             StartKnightVoiceForActionSpecialAbility(Logic.GetEntityType(_HurtingEntityID))

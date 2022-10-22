@@ -77,6 +77,7 @@
 
 	<!-- CP -->
 	<AnimSet>SET_MILITARYSPEAR</AnimSet>
-	<AnimSet>SET_MILITARYCAVALRY</AnimSet>
+	<AnimSet>SET_HELBARDIER</AnimSet>
 	<AnimSet>SET_DRAGON</AnimSet>
+	<AnimSet>SET_MILITARYCAVALRY</AnimSet>
 </root>

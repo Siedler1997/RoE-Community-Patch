@@ -27,8 +27,24 @@ function InitLocalOverwrite()
     -- CloseupView
     -----------------------------------------------------------------
     do
+        g_MilitaryFeedback.States["ExplicitAttackCommand"]				= "Attack"
+        g_MilitaryFeedback.States["HoldGroundCommand"]			        = "HoldPosition"
+        g_MilitaryFeedback.States["ShootCatapultCommand"] 				= "ShootCatapult"
+        g_MilitaryFeedback.States["OpenGateCommand"] 				    = "ForceOpenGate"
+        g_MilitaryFeedback.States["StealBuildingCommand"] 				= "StealBuilding"
+        
+        g_MilitaryFeedback.Variants["No"] 						= 5
+        g_MilitaryFeedback.Variants["Yes"] 						= 10
+        g_MilitaryFeedback.Variants["Attack"] 					= 10
+        g_MilitaryFeedback.Variants["HoldPosition"]				= 5
+        g_MilitaryFeedback.Variants["ShootCatapult"]			= 5
+        
+        g_MilitaryFeedback.Knights[Entities.U_KnightSabatta] 	         = "H_Knight_Sabatt"
+        g_MilitaryFeedback.Knights[Entities.U_KnightRedPrince] 	         = "H_Knight_RedPrince"
         g_MilitaryFeedback.Knights[Entities.U_KnightSaraya]              = "H_Knight_Saraya"
         
+        g_HeroAbilityFeedback.Knights[Entities.U_KnightSabatta] 	= "Sabatta"
+        g_HeroAbilityFeedback.Knights[Entities.U_KnightRedPrince] 	= "RedPrince"
         g_HeroAbilityFeedback.Knights[Entities.U_KnightSaraya] 		     = "Tribute"
         g_HeroAbilityFeedback.Knights[Entities.U_KnightPraphat] 		 = "Praphat"
         g_HeroAbilityFeedback.Knights[Entities.U_KnightKhana] 		     = "Khana"
@@ -36,12 +52,41 @@ function InitLocalOverwrite()
         g_MilitaryFeedback.Knights[Entities.U_KnightKhana]              = "H_Knight_Khana"
         g_MilitaryFeedback.Knights[Entities.U_KnightPraphat]              = "H_Knight_Praphat"
         
+        g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Melee_ME]		= "H_NPC_Mercenary_ME"
+        g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Melee_NA]		= "H_NPC_Mercenary_NA"
+        g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Melee_NE]		= "H_NPC_Mercenary_NE"
+        g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Melee_SE]		= "H_NPC_Mercenary_SE"
+        g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Ranged_ME]	= "H_NPC_Mercenary_ME"
+        g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Ranged_NA]	= "H_NPC_Mercenary_NA"
+        g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Ranged_NE]	= "H_NPC_Mercenary_NE"
+        g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Ranged_SE]	= "H_NPC_Mercenary_SE"
+        g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBow_RedPrince]		= "H_NPC_Mercenary_SE"
+        g_MilitaryFeedback.Soldiers[Entities.U_MilitarySword_RedPrince]		= "H_NPC_Mercenary_SE"
+        g_MilitaryFeedback.Soldiers[Entities.U_MilitarySpear]				= "H_NPC_Mercenary_NE"
+        g_MilitaryFeedback.Soldiers[Entities.U_Helbardier]				    = "H_NPC_Mercenary_NE"
         g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Melee_AS]		= "H_NPC_Mercenary_NA"
         g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Ranged_AS]	= "H_NPC_Mercenary_NA"
         g_MilitaryFeedback.Soldiers[Entities.U_MilitarySword_Khana]		= "H_NPC_Mercenary_ME"
         g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBow_Khana]	= "H_NPC_Mercenary_ME"
+        g_MilitaryFeedback.Soldiers[Entities.U_MilitaryCavalry]	= "H_Knight_Chivalry"
         
-        
+        g_MilitaryFeedback.ThiefFeedbackVariants = {
+            "StealGold_rnd_01",
+            "StealInformation_rnd_02",
+            "StealInformation_rnd_04"
+        }
+
+        g_MilitaryFeedback.Animals = {}
+        g_MilitaryFeedback.Animals[Entities.U_Tiger] 			= "Tiger"
+        g_MilitaryFeedback.Animals[Entities.U_Lion_Male] 		= "Lion"
+        g_MilitaryFeedback.Animals[Entities.U_Lion_Female] 		= "Lion"
+        g_MilitaryFeedback.Animals[Entities.U_Bear] 		    = "Bear"
+        g_MilitaryFeedback.Animals[Entities.U_BlackBear] 		= "Bear"
+        g_MilitaryFeedback.Animals[Entities.U_PolarBear] 		= "Bear"
+        g_MilitaryFeedback.Animals[Entities.U_Wolf_Grey] 		= "Wolf"
+        g_MilitaryFeedback.Animals[Entities.U_Wolf_White] 		= "Wolf"
+        g_MilitaryFeedback.Animals[Entities.U_Wolf_Black] 		= "Wolf"
+        g_MilitaryFeedback.Animals[Entities.U_Wolf_Brown] 		= "Wolf"
     end      
 
     -----------------------------------------------------------------
@@ -105,6 +150,11 @@ function InitLocalOverwrite()
             g_TexturePositions.Goods[Goods.G_Dye] =  {2, 1, 1}
             g_TexturePositions.Goods[Goods.G_Gems] =  {1, 2, 1}
             g_TexturePositions.Goods[Goods.G_Olibanum] =  {2, 2, 1}
+            g_TexturePositions.Goods[Goods.G_Regalia] =  {16, 4}
+            g_TexturePositions.Goods[Goods.G_PoorSpear] =  {16, 12}
+            g_TexturePositions.Goods[Goods.G_Spear] =  {1, 16}
+            g_TexturePositions.Goods[Goods.G_Gems] =  {1, 1, 1}
+            g_TexturePositions.Goods[Goods.G_Olibanum] =  {1, 2, 1}
             g_TexturePositions.Goods[Goods.G_MusicalInstrument] =  {1, 3, 1}
             
             -- Entity Types
@@ -118,6 +168,10 @@ function InitLocalOverwrite()
             g_TexturePositions.Entities[Entities.U_KnightSaraya] = {5, 4, 1}
             g_TexturePositions.Entities[Entities.U_KnightKhana] = {6, 1, 1}
             g_TexturePositions.Entities[Entities.U_KnightPraphat] = {5, 3, 1}
+            g_TexturePositions.Entities[Entities.U_NPC_Castellan_ME] = {7, 2, 1}
+            g_TexturePositions.Entities[Entities.U_NPC_Castellan_NE] = {7, 2, 1}
+            g_TexturePositions.Entities[Entities.U_NPC_Castellan_SE] = {7, 2, 1}
+            g_TexturePositions.Entities[Entities.U_NPC_Castellan_NA] = {7, 2, 1}
             g_TexturePositions.Entities[Entities.U_NPC_Castellan_AS] = {7, 2, 1}
             
             g_TexturePositions.Entities[Entities.U_MilitaryBandit_Melee_AS] = {9, 15}
@@ -138,9 +192,35 @@ function InitLocalOverwrite()
             g_TexturePositions.Entities[Entities.B_Beautification_TriumphalArch]    = {1, 5, 1}
             g_TexturePositions.Entities[Entities.B_Beautification_Vase]             = {5, 2, 1}
             g_TexturePositions.Entities[Entities.B_Beautification_VictoryColumn]    = {1, 6, 1}
+
+            g_TexturePositions.Entities[Entities.U_TrebuchetCart] = {9, 4}
+            g_TexturePositions.Entities[Entities.U_MilitaryTrebuchet] = {9, 1}
+            g_TexturePositions.Entities[Entities.U_MilitarySword_RedPrince] = {9, 1, 1}
+            g_TexturePositions.Entities[Entities.U_MilitaryBow_RedPrince] = {9, 2, 1}
+            g_TexturePositions.Entities[Entities.U_Bear]    = {13, 8}
+            g_TexturePositions.Entities[Entities.U_BlackBear]    = {13, 8}
+            g_TexturePositions.Entities[Entities.U_PolarBear]    = {13, 8}
+            g_TexturePositions.Entities[Entities.U_Wolf_Grey]    = {13, 8}
+            g_TexturePositions.Entities[Entities.U_Wolf_White]    = {13, 8}
+            g_TexturePositions.Entities[Entities.U_Wolf_Black]    = {13, 8}
+            g_TexturePositions.Entities[Entities.U_Wolf_Brown]    = {13, 8}
+            g_TexturePositions.Entities[Entities.U_Lion_Male]    = {13, 8}
+            g_TexturePositions.Entities[Entities.U_Lion_Female]    = {13, 8}
             g_TexturePositions.Entities[Entities.U_Tiger]    = {1, 8, 1}
+            g_TexturePositions.Entities[Entities.B_GuardTower_ME]    = {12, 3}
+            g_TexturePositions.Entities[Entities.B_GuardTower_NE]    = {12, 3}
+            g_TexturePositions.Entities[Entities.B_GuardTower_SE]    = {12, 3}
+            g_TexturePositions.Entities[Entities.B_GuardTower_NA]    = {12, 3}
             g_TexturePositions.Entities[Entities.B_GuardTower_AS]    = {12, 3}
+            g_TexturePositions.Entities[Entities.B_WatchTower_ME]    = {7, 6}
+            g_TexturePositions.Entities[Entities.B_WatchTower_NE]    = {7, 6}
+            g_TexturePositions.Entities[Entities.B_WatchTower_SE]    = {7, 6}
+            g_TexturePositions.Entities[Entities.B_WatchTower_NA]    = {7, 6}
             g_TexturePositions.Entities[Entities.B_WatchTower_AS]    = {7, 6}
+            g_TexturePositions.Entities[Entities.U_MilitarySpear] = {9, 1, 1}
+            g_TexturePositions.Entities[Entities.U_Helbardier] = {9, 1, 1}
+            g_TexturePositions.Entities[Entities.U_MilitaryCavalry] = {9, 7}
+            g_TexturePositions.Entities[Entities.U_Dragon] = {7, 3}
             
             -- Quest Types
             g_TexturePositions.QuestTypes[Objective.Refill]                  = {5, 9}
@@ -196,74 +276,178 @@ function InitLocalOverwrite()
     end
 end
 
-function MilitaryFeedback(_EntityID,_Key)
-    local EntityType = Logic.GetEntityType(_EntityID)
+function MilitaryFeedback_GetSpeaker(_EntityID)
+
+	local type = Logic.GetEntityType(_EntityID)
+
+	if type == Entities.U_Thief then
+	
+		return g_MilitaryFeedback.Thiefs[Entities.U_Thief]
+
+	end		
     
-	if EntityType == Entities.U_Bear or EntityType == Entities.U_BlackBear or EntityType == Entities.U_PolarBear then
-        --local rand = Logic.GetRandom(2)+1
-        --Sound.FXPlay2DSound("Misc\\earth_quake")
-        --Sound.FXPlaySound("Animals\bear_attack")
-        local x, y = Logic.GetEntityPosition(_EntityID)
-        local z = 0
-
-        Sound.FXPlay3DSound("animals\\bear_attack", x, y, z)
-        --Sound.FXPlay2DSound("animals\\bear_attack")
-    elseif EntityType == Entities.U_Wolf_Grey or EntityType == Entities.U_Wolf_White or EntityType == Entities.U_Wolf_Black or EntityType == Entities.U_Wolf_Brown then
-        --local rand = Logic.GetRandom(2)+1
-        --Sound.FXPlay2DSound("Misc\\earth_quake")
-        --Sound.FXPlaySound("Animals\bear_attack")
-        local x, y = Logic.GetEntityPosition(_EntityID)
-        local z = 0
-
-        Sound.FXPlay3DSound("animals\\wolf_attack", x, y, z)
-        --Sound.FXPlay2DSound("animals\\bear_attack")
-    elseif EntityType == Entities.U_Lion_Male or EntityType == Entities.U_Lion_Female then
-        --local rand = Logic.GetRandom(2)+1
-        --Sound.FXPlay2DSound("Misc\\earth_quake")
-        --Sound.FXPlaySound("Animals\bear_attack")
-        local x, y = Logic.GetEntityPosition(_EntityID)
-        local z = 0
-
-        Sound.FXPlay3DSound("animals\\lion_attack", x, y, z)
-        --Sound.FXPlay2DSound("animals\\bear_attack")
-    elseif EntityType == Entities.U_Tiger then
-        --local rand = Logic.GetRandom(2)+1
-        --Sound.FXPlay2DSound("Misc\\earth_quake")
-        --Sound.FXPlaySound("Animals\bear_attack")
-        local x, y = Logic.GetEntityPosition(_EntityID)
-        local z = 0
-
-        Sound.FXPlay3DSound("misc\\animal_tiger_attack", x, y, z)
-        --Sound.FXPlay2DSound("animals\\bear_attack")
-    else
-	    local folder = "Voices"
-
-	    local type = MilitaryFeedback_GetType(_EntityID)
-
-	    local speaker = MilitaryFeedback_GetSpeaker(_EntityID)
-	
-	    local state
-
-        if EntityType == Entities.U_MilitarySiegeTower and _Key == "AttackCommand" then
-            state = MilitaryFeedback_GetState("MountWallCommand")
-        else
-            state = MilitaryFeedback_GetState(_Key)
-        end
-        --Message("_Key = " .. _Key)
-
-	    if speaker == "" or state == "" then
-	
-		    return
-		
-	    end
-
-	    if speaker == nil or state == nil then
-	
-		    return
-		
-	    end
-	    Sound.PlayVoice("SettlersFeedbackVoice", folder.."/"..speaker.."/"..type.."_"..state..".mp3")
+    if type == Entities.U_Bear or type == Entities.U_BlackBear or type == Entities.U_PolarBear
+        or type == Entities.U_Wolf_Grey or type == Entities.U_Wolf_White or type == Entities.U_Wolf_Black or type == Entities.U_Wolf_Brown
+        or type == Entities.U_Lion_Male or type == Entities.U_Lion_Female or type == Entities.U_Tiger then
+	    return "Animals"
     end
+
+	if type == Entities.U_MilitaryCatapult
+     or type == Entities.U_MilitarySiegeTower
+     or type == Entities.U_MilitaryBatteringRam
+     or type == Entities.U_CatapultCart
+     or type == Entities.U_SiegeTowerCart
+     or type == Entities.U_BatteringRamCart
+     or type == Entities.U_AmmunitionCart
+     or type == Entities.U_MilitaryTrebuchet
+     or type == Entities.U_TrebuchetCart then
+	
+		local leader = Logic.GetGuardianEntityID(_EntityID)
+		
+		local type = Logic.LeaderGetSoldiersType(leader)
+
+		if g_MilitaryFeedback.Soldiers[type] ~= nil then
+			return g_MilitaryFeedback.Soldiers[type]
+		end
+	end
+
+	if Logic.IsKnight(_EntityID) then
+	
+		return g_MilitaryFeedback.Knights[type]
+
+	elseif type == Entities.U_Helbardier then
+	
+		return g_MilitaryFeedback.Soldiers[type]
+
+	else
+	
+		if Logic.IsLeader(_EntityID) then
+
+	 		local soldiers = {Logic.GetSoldiersAttachedToLeader(_EntityID)}
+
+			if soldiers[1] == 0 then
+			
+				return ""
+				
+			end
+
+			local EntityID = soldiers[2]
+	
+			type = Logic.GetEntityType(EntityID)
+	
+			if g_MilitaryFeedback.Soldiers[type] == nil then
+			
+				return ""
+				
+			end
+			
+			return g_MilitaryFeedback.Soldiers[type]
+		
+		else
+		
+			return ""
+			
+		end
+
+	end	
+
+	return ""
+	
+end
+
+function MilitaryFeedback_GetType(_EntityID)
+	local type = Logic.GetEntityType(_EntityID)
+
+	if type == Entities.U_Thief then
+		return "VoiceThief_speech"
+	elseif type == Entities.U_Bear or type == Entities.U_BlackBear or type == Entities.U_PolarBear
+            or type == Entities.U_Wolf_Grey or type == Entities.U_Wolf_White or type == Entities.U_Wolf_Black or type == Entities.U_Wolf_Brown
+            or type == Entities.U_Lion_Male or type == Entities.U_Lion_Female or type == Entities.U_Tiger then
+		return "VoicesAnimals_" .. g_MilitaryFeedback.Animals[type]
+    else
+		return "VoiceMilitary_speech"
+	end
+end
+
+function MilitaryFeedback_GetState(_EntityID, _Key)
+
+	local state = g_MilitaryFeedback.States[_Key]
+
+	if state == nil then
+	
+		return ""
+		
+	end 
+    
+	local type = Logic.GetEntityType(_EntityID)
+
+    if type == Entities.U_Bear or type == Entities.U_BlackBear or type == Entities.U_PolarBear
+        or type == Entities.U_Wolf_Grey or type == Entities.U_Wolf_White or type == Entities.U_Wolf_Black or type == Entities.U_Wolf_Brown
+        or type == Entities.U_Lion_Male or type == Entities.U_Lion_Female or type == Entities.U_Tiger then
+        
+	    local variant = 1
+	    if state == "Attack" then
+	        variant = 1 + XGUIEng.GetRandom(1)
+        end
+		return state .. "_rnd_0" .. variant
+    else
+
+	    local variants = -1
+
+	    if g_MilitaryFeedback.Variants[state] ~= nil then
+	
+		    variants = g_MilitaryFeedback.Variants[state]
+		
+	    end 
+        --Message("_Key = " .. _Key)
+	    if variants ~= -1 then
+            local text = state .. "_rnd_"
+            local variant = 1 + XGUIEng.GetRandom(variants -1)
+		    if variant < 10 then  
+			    text = text .. "0"
+		    end
+		    return text .. variant
+	    else
+	        if _Key == "StealBuildingCommand" then
+                return g_MilitaryFeedback.ThiefFeedbackVariants[(1 + XGUIEng.GetRandom(2))]
+            else
+		        return state
+	        end
+	    end
+    end
+
+end
+
+function MilitaryFeedback(_EntityID, _Key)
+    local EntityType = Logic.GetEntityType(_EntityID)
+	
+	local folder = "Voices"
+
+	local type = MilitaryFeedback_GetType(_EntityID)
+
+	local speaker = MilitaryFeedback_GetSpeaker(_EntityID)
+	
+	local state
+
+    if EntityType == Entities.U_MilitarySiegeTower and _Key == "AttackCommand" then
+        state = MilitaryFeedback_GetState(_EntityID, "MountWallCommand")
+    else
+        state = MilitaryFeedback_GetState(_EntityID, _Key)
+    end
+
+	if speaker == "" or state == "" then
+	
+		return
+		
+	end
+
+	if speaker == nil or state == nil then
+	
+		return
+		
+	end
+    --Message(folder.."/"..speaker.."/"..type.."_"..state..".mp3")
+	Sound.PlayVoice("SettlersFeedbackVoice", folder.."/"..speaker.."/"..type.."_"..state..".mp3")
 end
 
 function EndStatistic_SettlerSpawned( _EntityID )

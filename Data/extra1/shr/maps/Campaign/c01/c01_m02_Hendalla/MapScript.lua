@@ -170,9 +170,9 @@ function Mission_FirstMapAction()
         Startup_Diplomacy()  
         
         -- CP: Changed player colors to be more consistent
-        Logic.PlayerSetPlayerColor(3 , 12, -1, -1)  --Haoshia: Dorf-Grün
-        Logic.PlayerSetPlayerColor(6 , 18, -1, -1)  --Kultisten: Hellgrün
-        Logic.PlayerSetPlayerColor(7 , 20, -1, -1)  --Praphat: Banditen-Orange
+        Logic.PlayerSetPlayerColor(3 , g_ColorIndex["VillageColor3"], -1, -1)  --Haoshia: Dorf-Grün
+        Logic.PlayerSetPlayerColor(6 , g_ColorIndex["CloisterColor5"], -1, -1)  --Kultisten: Hellgrün
+        Logic.PlayerSetPlayerColor(7 , g_ColorIndex["BanditsColor2"], -1, -1)  --Praphat: Banditen-Orange
     end        
     do
         local MapName = Framework.GetCurrentMapName()

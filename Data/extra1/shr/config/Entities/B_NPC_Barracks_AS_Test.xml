@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+
+  <Display classname="ED::CBuildingProps">
+        <Class>ED::CDisplayBuilding</Class>
+        <Banner>Default</Banner>
+        <Model>Buildings\B_NPC_Barracks_NA</Model>
+        <Model2>Buildings\B_NPC_Barracks_NA_Light</Model2>
+        <FireNodeCount>15</FireNodeCount>
+    </Display>
+
+	<Logic classname="EGL::CBarracksBuildingProps">
+		<Class>EGL::CBarracksBuilding</Class>
+
+		<!-- NEED related tags -->
+
+		<CriticalThresholdSatisfaction>0.2</CriticalThresholdSatisfaction>
+
+		<InitialNutritionState>0.8</InitialNutritionState>
+		<AttentionThresholdNutrition>0.51</AttentionThresholdNutrition>
+		<CriticalThresholdNutrition>0.31</CriticalThresholdNutrition>
+
+		<InitialClothingState>0.6</InitialClothingState>
+		<AttentionThresholdClothing>0.51</AttentionThresholdClothing>
+		<CriticalThresholdClothing>0.31</CriticalThresholdClothing>
+
+		<InitialHygieneState>0.6</InitialHygieneState>
+		<AttentionThresholdHygiene>0.51</AttentionThresholdHygiene>
+		<CriticalThresholdHygiene>0.31</CriticalThresholdHygiene>
+		<HygieneCriticalSwarmEffect>FX_Flys</HygieneCriticalSwarmEffect>
+		<HygieneCriticalSmokeEffect>E_SickBuilding</HygieneCriticalSmokeEffect>
+
+		<InitialEntertainmentState>0.6</InitialEntertainmentState>
+		<AttentionThresholdEntertainment>0.51</AttentionThresholdEntertainment>
+		<CriticalThresholdEntertainment>0.31</CriticalThresholdEntertainment>
+
+		<InitialSecurityState>0</InitialSecurityState>
+		<AttentionThresholdSecurity>0</AttentionThresholdSecurity>
+		<CriticalThresholdSecurity>0</CriticalThresholdSecurity>
+
+		<InitialWealthState>0</InitialWealthState>
+		<AttentionThresholdWealth>0</AttentionThresholdWealth>
+		<CriticalThresholdWealth>-1</CriticalThresholdWealth>
+
+		<Cost>
+		</Cost>
+		<UpgradeCosts>
+		</UpgradeCosts>
+
+		<!-- Produced Goods -->
+		<ProducedGood>
+			<GoodType>G_Sword</GoodType>
+			<Amount>3</Amount>
+		</ProducedGood>
+
+		<IsAutomaticallyUpgradable>false</IsAutomaticallyUpgradable>
+
+		<!-- chance to get a spouse at the festival (0-1). 0 means that the workers don't go to the festival at all -->
+		<SpouseProbabilityFactor>0.3</SpouseProbabilityFactor>
+
+		<OutStockCapacities>
+			<OutStockCapacity>9</OutStockCapacity>
+		</OutStockCapacities>
+
+		<CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim>
+		<FlattenOnBuild>true</FlattenOnBuild>
+		<IsHeightLocking>true</IsHeightLocking>
+
+		<MaxFloorFireSize>15</MaxFloorFireSize>
+		<MaxHealth>200</MaxHealth>
+
+		<AccessCategory>AccessCategoryBuilding</AccessCategory>
+		<NeedsPlayer>true</NeedsPlayer>
+		<ForceNoPlayer>false</ForceNoPlayer>
+		<CanBeKnockedDown>true</CanBeKnockedDown>
+		<Worker>U_Armourer</Worker>
+		<MaxWorkers>3</MaxWorkers>
+
+		<WorkTaskLists>
+			<WorkTaskList>TL_PROCESSOR_WORK</WorkTaskList>
+		</WorkTaskLists>
+		<SpouseWorkTaskLists>
+			<SpouseWorkTaskList>TL_SPOUSE_WORK</SpouseWorkTaskList>
+			<SpouseWorkTaskList>TL_SPOUSE_WORK</SpouseWorkTaskList>
+			<SpouseWorkTaskList>TL_SPOUSE_WORK</SpouseWorkTaskList>
+		</SpouseWorkTaskLists>
+		<RepairBuildingTL>TL_WORKER_REPAIR</RepairBuildingTL>
+		<Exploration>0</Exploration>
+		<EntityCategories>
+			<EntityCategory>GC_Weapon_Supplier</EntityCategory>
+			<EntityCategory>CityBuilding</EntityCategory>
+			<EntityCategory>AttackableBuilding</EntityCategory>
+		</EntityCategories>
+		<ApproachPos>
+			<X>200</X>
+			<Y>-300</Y>
+		</ApproachPos>
+		<ApproachR>0</ApproachR>
+		<DoorPos>
+			<X>100</X>
+			<Y>0</Y>
+		</DoorPos>
+		<BlockingAreas>
+			<BlockingArea>
+				<Blocked1>
+					<X>-400</X>
+					<Y>300</Y>
+				</Blocked1>
+				<Blocked2>
+					<X>400</X>
+					<Y>-200</Y>
+				</Blocked2>
+			</BlockingArea>
+		</BlockingAreas>
+		<BuildBlockingAreas>
+			<BuildBlockingArea>
+				<Blocked1>
+					<X>-400</X>
+					<Y>300</Y>
+				</Blocked1>
+				<Blocked2>
+					<X>400</X>
+					<Y>-350</Y>
+				</Blocked2>
+			</BuildBlockingArea>
+		</BuildBlockingAreas>
+
+		<IdlePos>
+			<X>100</X>
+			<Y>-300</Y>
+		</IdlePos>
+		<OutstockPos>
+			<X>-100</X>
+			<Y>-300</Y>
+		</OutstockPos>
+
+		<ConstructionInfo>
+			<Time>18</Time>
+
+			<BuilderSlots>
+				<BuilderSlot>
+					<Position>
+						<X>-500</X>
+						<Y>400</Y>
+					</Position>
+					<Orientation>0</Orientation>
+				</BuilderSlot>
+			</BuilderSlots>
+			<ConstructionSite>B_BuildingPlot_8x8</ConstructionSite>
+		</ConstructionInfo>
+
+		<SoundImpactType>Stone_Wood</SoundImpactType>
+
+		<BattalionSize>3</BattalionSize>
+
+		<ProducedUnitTypeList>
+			<ProducedUnitType>U_MilitaryBandit_Melee_AS</ProducedUnitType>
+			<ProducedUnitType>U_MilitaryBandit_Ranged_AS</ProducedUnitType>
+		</ProducedUnitTypeList>
+
+		<ProduceBattalion>true</ProduceBattalion>
+
+		<DefaultRallyPoint>
+			<X>0</X>
+			<Y>-1000</Y>
+		</DefaultRallyPoint>
+		
+		<ResourceIcon>Icon64Iron</ResourceIcon>
+	</Logic>
+	<Behaviors>
+		<Behavior>
+			<Logic classname="EGL::CStockBehaviorProps">
+				<Class>EGL::CStockOutBehavior</Class>
+				<MaxAmountOnStock>9</MaxAmountOnStock>
+				<GoodTypes>
+					<GoodType>G_Sword</GoodType>
+				</GoodTypes>
+			</Logic>
+			<!--Display classname="ED::COutStockBehaviorProps">
+        <Class>ED::COutStockBehavior</Class>
+        <StockModel>Goods\G_SausageButcher01</StockModel>
+      </Display-->
+		</Behavior>
+
+		<Behavior>
+			<Logic classname="EGL::CBehaviorProps">
+				<Class>EGL::CParticleEffectSwitchBehavior</Class>
+			</Logic>
+			<Display classname="ED::CBehaviorProps">
+				<Class>ED::CParticleEffectSwitchBehavior</Class>
+			</Display>
+		</Behavior>
+
+		<Behavior>
+			<Logic classname="EGL::CStockBehaviorProps">
+				<Class>EGL::CStockInBehavior</Class>
+				<MaxAmountOnStock>10</MaxAmountOnStock>
+				<GoodTypes>
+					<GoodType>G_Iron</GoodType>
+				</GoodTypes>
+			</Logic>
+		</Behavior>
+
+
+		<Behavior>
+			<Logic classname="EGL::CBattalionFillerBehaviorProps">
+				<Class>EGL::CBattalionFillerBehavior</Class>
+				<RefillingRange>2000</RefillingRange>
+				<UnitTypes>
+					<UnitType>
+						<EntityType>U_MilitaryBandit_Melee_ME</EntityType>
+						<Cost>
+							<GoodAmount>
+								<GoodType>G_Gold</GoodType>
+								<Amount>30</Amount>
+							</GoodAmount>
+						</Cost>
+					</UnitType>
+					<UnitType>
+						<EntityType>U_MilitaryBandit_Melee_NA</EntityType>
+						<Cost>
+							<GoodAmount>
+								<GoodType>G_Gold</GoodType>
+								<Amount>30</Amount>
+							</GoodAmount>
+						</Cost>
+					</UnitType>
+					<UnitType>
+						<EntityType>U_MilitaryBandit_Melee_NE</EntityType>
+						<Cost>
+							<GoodAmount>
+								<GoodType>G_Gold</GoodType>
+								<Amount>30</Amount>
+							</GoodAmount>
+						</Cost>
+					</UnitType>
+					<UnitType>
+						<EntityType>U_MilitaryBandit_Melee_SE</EntityType>
+						<Cost>
+							<GoodAmount>
+								<GoodType>G_Gold</GoodType>
+								<Amount>30</Amount>
+							</GoodAmount>
+						</Cost>
+					</UnitType>
+					<UnitType>
+						<EntityType>U_MilitaryBandit_Melee_AS</EntityType>
+						<Cost>
+							<GoodAmount>
+								<GoodType>G_Gold</GoodType>
+								<Amount>30</Amount>
+							</GoodAmount>
+						</Cost>
+					</UnitType>
+					<UnitType>
+						<EntityType>U_MilitaryBandit_Ranged_ME</EntityType>
+						<Cost>
+							<GoodAmount>
+								<GoodType>G_Gold</GoodType>
+								<Amount>30</Amount>
+							</GoodAmount>
+						</Cost>
+					</UnitType>
+					<UnitType>
+						<EntityType>U_MilitaryBandit_Ranged_NA</EntityType>
+						<Cost>
+							<GoodAmount>
+								<GoodType>G_Gold</GoodType>
+								<Amount>30</Amount>
+							</GoodAmount>
+						</Cost>
+					</UnitType>
+					<UnitType>
+						<EntityType>U_MilitaryBandit_Ranged_NE</EntityType>
+						<Cost>
+							<GoodAmount>
+								<GoodType>G_Gold</GoodType>
+								<Amount>30</Amount>
+							</GoodAmount>
+						</Cost>
+					</UnitType>
+					<UnitType>
+						<EntityType>U_MilitaryBandit_Ranged_SE</EntityType>
+						<Cost>
+							<GoodAmount>
+								<GoodType>G_Gold</GoodType>
+								<Amount>30</Amount>
+							</GoodAmount>
+						</Cost>
+					</UnitType>
+					<UnitType>
+						<EntityType>U_MilitaryBandit_Ranged_AS</EntityType>
+						<Cost>
+							<GoodAmount>
+								<GoodType>G_Gold</GoodType>
+								<Amount>30</Amount>
+							</GoodAmount>
+						</Cost>
+					</UnitType>
+				</UnitTypes>
+			</Logic>
+		</Behavior>
+
+		<Behavior>
+			<Logic classname="EGL::CAmmunitionFillerBehaviorProps">
+				<Class>EGL::CAmmunitionFillerBehavior</Class>
+				<TargetCategory>Soldier</TargetCategory>
+				<AmmunitionType>G_TorchAmmunition</AmmunitionType>
+				<CooldownTurns>2000</CooldownTurns>
+				<RefillingRange>2000</RefillingRange>
+			</Logic>
+		</Behavior>
+
+		<Behavior>
+			<Logic classname="EGL::CRespawnResourceEntityBehaviorProps">
+				<Class>EGL::CRespawnResourceEntityBehavior</Class>
+				<SpawnBattalion>true</SpawnBattalion>
+				<MaxCapacity>4</MaxCapacity>
+				<MinSpawn>0</MinSpawn>
+				<MaxSpawn>0</MaxSpawn>
+				<MaxSpawnCapacity>1</MaxSpawnCapacity>
+				<SpawnRange>800</SpawnRange>
+				<MinScale>1</MinScale>
+				<MaxScale>1</MaxScale>
+				<SpawnTypes>
+					<SpawnType>U_MilitaryBandit_Melee_AS</SpawnType>
+					<SpawnType>U_MilitaryBandit_Ranged_AS</SpawnType>
+				</SpawnTypes>
+			</Logic>
+		</Behavior>
+	</Behaviors>
+	
+  <MapEditor>
+    <TreePosition>Buildings\Village</TreePosition>
+    <ShowInTree>true</ShowInTree>
+    <Clime>Asia</Clime>
+    <Scalable>false</Scalable>
+    <TemplateResistant>true</TemplateResistant>
+  </MapEditor>
+</root>

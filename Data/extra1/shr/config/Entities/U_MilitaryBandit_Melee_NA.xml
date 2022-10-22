@@ -12,9 +12,9 @@
         <AccessCategory>AccessCategorySoldier</AccessCategory>
         <PlayerSectorType>PlayerSectorTypeMilitary</PlayerSectorType>
         <MilMetaFormationMemberType>MilMetaFormationMemberTypeMelee</MilMetaFormationMemberType>
-        <MaxHealth>150</MaxHealth>
+        <MaxHealth>115</MaxHealth>
         <HealingSeconds>10</HealingSeconds>
-        <HealingPoints>20</HealingPoints>
+        <HealingPoints>19</HealingPoints>
 
         <NeedsPlayer>true</NeedsPlayer>
         <ForceNoPlayer>false</ForceNoPlayer>
@@ -72,7 +72,7 @@
                 <Class>EGL::CMilitarySoldierMovementBehavior</Class>
                 <StraightenPath>true</StraightenPath>
                 <EvasionPriority>140</EvasionPriority>
-                <Speed>480</Speed>
+                <Speed>500</Speed>
                 <RotationSpeed>500</RotationSpeed>
                 <MoveTaskList>TL_MILITARY_WALK</MoveTaskList>
                 <MoveIdleAnim>Military\U_MilitaryBandit_Melee_NA_Stand</MoveIdleAnim>

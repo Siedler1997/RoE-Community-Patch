@@ -103,6 +103,14 @@
                         <Master>U_Horse_Plunder_BattleIdle</Master>
                         <Slave>U_Knight_Plunder_BattleIdle</Slave>
                     </Mapping>
+                    <Mapping>
+                        <Master>U_Horse_Plunder_Plunder</Master>
+                        <Slave>U_Knight_Plunder_Plunder</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>U_Horse_Plunder_BattleIdle</Master>
+                        <Slave>U_Knight_Plunder_BattleIdle</Slave>
+                    </Mapping>
                 </SlaveAnimation>
             </Display>
         </Behavior>
@@ -168,6 +176,9 @@
                 <DefendRange>2700</DefendRange>
                 <AttackMoveRange>2700</AttackMoveRange>
                 <IdleWhileDefended>false</IdleWhileDefended>
+
+				<AmmunitionType>G_TorchAmmunition</AmmunitionType>
+				<AmmunitionLimit>3</AmmunitionLimit>
                 <TargetCategoryList>
 
                     <TargetCategory>
@@ -198,6 +209,44 @@
                             </AttackMode>
                         </AttackModeList>
                     </TargetCategory>
+
+					<!-- Torching buildings -->
+					<TargetCategory>
+						<DisableAutoAttack>true</DisableAutoAttack>
+
+						<!-- don't remove  the empty tags, otherwise the data isn't shown correctly in the XML balancer! -->
+						<EntityCategoryList>
+							<EntityCategory/>
+							<EntityCategory/>
+							<EntityCategory/>
+							<EntityCategory>AttackableBuilding</EntityCategory>
+							<EntityCategory>PalisadeSegment</EntityCategory>
+							<EntityCategory>SpecialBuilding</EntityCategory>
+						</EntityCategoryList>
+
+						<AttackModeList>
+							<AttackMode>
+								<BattleTL>TL_BATTLE_MELEE</BattleTL>
+								<!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
+								<ApplyDamageModifiers>false</ApplyDamageModifiers>
+
+								<MinRange>0</MinRange>
+								<MaxRange>800</MaxRange>
+								<ProjectileEffect>FXBomb</ProjectileEffect>
+								<MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
+								<CanAttackOverWalls>false</CanAttackOverWalls>
+								<CooldownThousandths>6000</CooldownThousandths>
+								<Damage>
+									<DiceCount>0</DiceCount>
+									<FaceCount>0</FaceCount>
+									<BaseValue>15</BaseValue>
+								</Damage>
+								<BuildingFireSize>10</BuildingFireSize>
+
+								<ConsumeAmmunition>true</ConsumeAmmunition>
+							</AttackMode>
+						</AttackModeList>
+					</TargetCategory>
 
                     <!-- This category is only used to disable auto-attack for carnivores  -->
                     <TargetCategory>

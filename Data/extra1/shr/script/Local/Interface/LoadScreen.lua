@@ -124,8 +124,8 @@ function InitLoadScreen(Throneroom, MapType, MapName, Campaign, KnightID)
     end
     
     if Throneroom == true then
-        if Framework.GetCampaignMap() == "c00_m01_Vestholm" then
-            XGUIEng.SetMaterialTexture("/LoadScreen/LoadScreen/LoadScreenBgd", 0, "loadscreens\\Throneroom.png")
+        if MapName == "c00_m01_vestholm" then
+            XGUIEng.SetMaterialTexture("/LoadScreen/LoadScreen/LoadScreenBgd", 0, "loadscreens\\chapter1.png")
             XGUIEng.ShowWidget("/LoadScreen/LoadScreen/ContainerDescription/MapName", 0)        
             Sound.PlayVoice("ImportantStuff", "voices/judgment_father/intro_speech_campaignintro.mp3")
             XGUIEng.ShowWidget("/LoadScreen/LoadScreen/ContainerDescription/LoadScreenReadMe", 1)
@@ -135,14 +135,18 @@ function InitLoadScreen(Throneroom, MapType, MapName, Campaign, KnightID)
             local text = XGUIEng.GetStringTableText("Intro_Speech/CampaignIntro")
             XGUIEng.SetText("/LoadScreen/LoadScreen/ContainerDescription/LoadScreenReadMe", text)
             XGUIEng.SetText("/LoadScreen/LoadScreen/ContainerDescription/MapName", title)
-            Framework.SetLoadScreenProps("loadscreens\\Throneroom.png", text, title)
-        elseif not Mission_TellStory or not Mission_TellStory() then        
-            XGUIEng.SetMaterialTexture("/LoadScreen/LoadScreen/LoadScreenBgd", 0, "loadscreens\\Throneroom.png")
+            Framework.SetLoadScreenProps("loadscreens\\chapter1.png", text, title)
+        elseif not Mission_TellStory or not Mission_TellStory(MapName) then        
+            local throneTex = "Throneroom"
+            if Framework.GetCampaignName() ~= "c01" then
+                throneTex = throneTex .. "_old"
+            end
+            XGUIEng.SetMaterialTexture("/LoadScreen/LoadScreen/LoadScreenBgd", 0, "loadscreens\\" .. throneTex .. ".png")
             XGUIEng.ShowWidget("/LoadScreen/LoadScreen/ContainerDescription/MapName", 0)        
             XGUIEng.ShowWidget("/LoadScreen/LoadScreen/ContainerDescription/MapName", 0)
             XGUIEng.ShowWidget("/LoadScreen/LoadScreen/ContainerDescription/LoadScreenReadMe", 0)
             XGUIEng.ShowWidget("/LoadScreen/LoadScreen/ContainerDescription/LoadScreenReadmeBG", 0)
-            Framework.SetLoadScreenProps("loadscreens\\Throneroom.png", "", "")
+            Framework.SetLoadScreenProps("loadscreens\\" .. throneTex .. ".png", "", "")
         end
         return
     else

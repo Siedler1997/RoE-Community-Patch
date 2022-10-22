@@ -33,6 +33,7 @@
     <Id>GC_Weapon_Supplier</Id>
     <Id>GC_Clothes_Supplier</Id>
 
+
     <Id>HuntableMeat</Id>
 
     <Id>AttackableBuilding</Id>
@@ -62,7 +63,7 @@
     <Id>Catapult</Id>
     <Id>Balista</Id>
     <Id>Cannon</Id>
-    
+	<Id>G_Spear_Supplier</Id>
 	<Id>Dragon</Id>
     
 </EntityCategories>

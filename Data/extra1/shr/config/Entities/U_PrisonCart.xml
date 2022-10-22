@@ -119,6 +119,23 @@
         </Behavior>
 
         <Behavior>
+            <Logic classname="EGL::CResourceMerchantBehaviorProps">
+              <Class>EGL::CResourceMerchantBehavior</Class>
+              <TaskList>TL_GOLD_MERCHANT</TaskList>
+              <DefendedTaskList>TL_MERCHANT_DEFENDED</DefendedTaskList>
+              <DeliverToBanditsTaskList>TL_RESOURCE_MERCHANT_VANISH_IN_STOREHOUSE</DeliverToBanditsTaskList>
+              <DeliverToObjectTaskList>TL_RESOURCE_MERCHANT_DELIVER_TO_OBJECT</DeliverToObjectTaskList>
+              <FetchFromObjectTaskList>TL_GOLD_CART_FETCH_FROM_OBJECT</FetchFromObjectTaskList>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::CWaitForStorageCapacityBehavior</Class>
+            </Logic>
+        </Behavior>
+		
+        <Behavior>
             <Logic classname="EGL::CCapturableBehaviorProps">
                 <Class>EGL::CCapturableBehavior</Class>
             </Logic>

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
+	<string id="AbilityPlagueRedPrince" MD5Hash="" mod="20070615093353" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[No foreign Storehouse or Castle nearby.]]></string>
+	<string id="NotInMultiplayer" MD5Hash="F32C6039B6FA24A8081219DFB458B3C5" mod="20080214083327" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Not available in multiplayer]]></string>
+	<string id="Suspend" MD5Hash="CE924F7FD4BD87A01F76258CF6E6A3A3" mod="20070829104330" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Not ready yet]]></string>
 	<string id="AbilityTribute" MD5Hash="F99B2471F14214AF2BF3FCE0B0DA2F93" mod="20071205122902" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[No foreign Storehouse or Castle nearby.]]></string>
 	<string id="AbilityTorchKhana" MD5Hash="" mod="20070801135457" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[No Soldiers without Torches nearby]]></string>
 	<string id="AbilityTributePraphat" MD5Hash="F99B2471F14214AF2BF3FCE0B0DA2F93" mod="20071205122902" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[No foreign Storehouse or Castle nearby.]]></string>
+	<string id="InteractiveObjectGeologist" MD5Hash="CE924F7FD4BD87A01F76258CF6E6A3A3" mod="20070829104330" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Can't be used in this mission yet.]]></string>
 </root>

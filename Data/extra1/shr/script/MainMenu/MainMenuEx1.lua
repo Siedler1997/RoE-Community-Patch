@@ -2,6 +2,7 @@
 -- Globals
 ---------------------------------------------------------------------------------------------------
 Script.Load("Script\\MainMenu\\MainMenu.lua" )
+Script.Load("Script\\MainMenu\\CampaignMenu.lua" )
 
 
 ----------------------------------------------------------------------------------------------------
@@ -28,15 +29,17 @@ g_MapAndHeroPreview.KnightTypes = CustomGame.KnightTypes
 MPDefaultKnightNames = CustomGame.KnightTypes
 
 function RemapKnightID( _ID )
-    local Mapping = { [0] = 0, [1] = 7, [2] = 1, [3] = 3, [4] = 4, [5] = 2, [6] = 5, [7] = 6, [8] = 8, [9] = 9, [10] = 10, [11] = 11, [12] = 0, [13] = 0 , [14] = 0 , [15] = 0 , [16] = 0  }
+    local Mapping = { [0] = 0, [1] = 7, [2] = 1, [3] = 3, [4] = 4, [5] = 2, [6] = 5, [7] = 6, [8] = 8, [9] = 9, [10] = 11, [11] = 10, [12] = 0, [13] = 0 , [14] = 0 , [15] = 0 , [16] = 0  }
     return Mapping[_ID]
 end
 
 function GetLoadScreen(_remappedKnightId, _tex)
     local filename
+
     if _remappedKnightId == 0 then
         filename = "loadscreens\\" .. _tex .. "_old.png"
     else
+        --[[
         if _remappedKnightId >= 8 then
             if _remappedKnightId == 11 then  --Khana
                 filename = "loadscreens\\chapter3.png"
@@ -48,7 +51,10 @@ function GetLoadScreen(_remappedKnightId, _tex)
         else
             filename = "loadscreens\\" .. _tex .. _remappedKnightId .. ".png"
         end
+        --]]
+        filename = "loadscreens\\" .. _tex .. _remappedKnightId .. ".png"
     end
+
     return filename
 end
 
@@ -115,7 +121,7 @@ do
     end
 end
 
-function Mission_TellStory()
+function Mission_TellStory(_mapName)
 
     local StoryMaps = {
         ["c01_m01_basrima"] = { ["MapKey"] = "Map_c01_m01_Basrima", ["SpeechKey"] = "c01m01_Chapter1LoadScreen", ["LoadScreen"] = "chapter1" },
@@ -123,7 +129,7 @@ function Mission_TellStory()
         ["c01_m06_praphatstan"] = { ["MapKey"] = "Map_c01_m06_Praphatstan", ["SpeechKey"] = "c01m06_Chapter3LoadScreen", ["LoadScreen"] = "chapter3" }
     }
     
-    local MapName = string.lower(Framework.GetCampaignMap())    
+    local MapName = string.lower(_mapName)    
     
     local StoryMapTable = StoryMaps[MapName]
 
