@@ -5099,7 +5099,7 @@
                     <LuaCommand></LuaCommand>
                    </OnBlur>
                    <UpdateFunction>
-                    <LuaCommand></LuaCommand>
+                    <LuaCommand>GUI_BuildingInfo.StartStopHuntUpdate(2)</LuaCommand>
                    </UpdateFunction>
                    <UpdateFunctionTurnBased>
                     <LuaCommand></LuaCommand>
@@ -6498,286 +6498,7 @@
                  </WidgetList>
                 </SubWidgets>
                </Widget>
-				<Widget classname="EGUIX::CContainerWidget">
-					<IsShown>false</IsShown>
-					<UpdateManualFlag>false</UpdateManualFlag>
-					<EventHandling>true</EventHandling>
-					<ZPriority>100.</ZPriority>
-					<ForceToHandleMouseEventsFlag>false</ForceToHandleMouseEventsFlag>
-					<ForceToHandleKeyboardEventsFlag>false</ForceToHandleKeyboardEventsFlag>
-					<PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
-					<TabIndex>0</TabIndex>
-					<Rectangle>
-						<X>218.</X>
-						<Y>100.</Y>
-						<W>62.</W>
-						<H>62.</H>
-						<KeepAspectRatio>true</KeepAspectRatio>
-						<CirclePointTest>false</CirclePointTest>
-						<FixedTextureSetSize>false</FixedTextureSetSize>
-						<AlignmentX>0</AlignmentX>
-						<AlignmentY>0</AlignmentY>
-						<AnchorX>0</AnchorX>
-						<AnchorY>0</AnchorY>
-					</Rectangle>
-					<OnPushToStack>
-						<LuaCommand></LuaCommand>
-					</OnPushToStack>
-					<OnMouseOver>
-						<LuaCommand></LuaCommand>
-					</OnMouseOver>
-					<OnMouseOut>
-						<LuaCommand></LuaCommand>
-					</OnMouseOut>
-					<OnRightClick>
-						<LuaCommand></LuaCommand>
-					</OnRightClick>
-					<OnLeftClick>
-						<LuaCommand></LuaCommand>
-					</OnLeftClick>
-					<OnKeyPress>
-						<LuaCommand></LuaCommand>
-					</OnKeyPress>
-					<OnFocus>
-						<LuaCommand></LuaCommand>
-					</OnFocus>
-					<OnBlur>
-						<LuaCommand></LuaCommand>
-					</OnBlur>
-					<UpdateFunction>
-						<LuaCommand></LuaCommand>
-					</UpdateFunction>
-					<UpdateFunctionTurnBased>
-						<LuaCommand></LuaCommand>
-					</UpdateFunctionTurnBased>
-					<UpdateFunctionSecondBased>
-						<LuaCommand></LuaCommand>
-					</UpdateFunctionSecondBased>
-					<ToolTipHelper>
-						<ToolTipEnabledFlag>true</ToolTipEnabledFlag>
-						<ControlTargetVisibility>true</ControlTargetVisibility>
-						<ToolTipUpdateFunction>
-							<LuaCommand></LuaCommand>
-						</ToolTipUpdateFunction>
-						<RawString></RawString>
-						<StringTableKey></StringTableKey>
-						<TargetWidget01></TargetWidget01>
-						<TargetWidget02></TargetWidget02>
-						<TargetWidget03></TargetWidget03>
-						<TargetWidget04></TargetWidget04>
-						<TargetWidget05></TargetWidget05>
-					</ToolTipHelper>
-					<Group></Group>
-					<MotherID>/InGame/Root/Normal/AlignBottomRight/DialogButtons</MotherID>
-					<Name>SuspendUnit</Name>
-					<SubWidgets>
-						<WidgetList>
-							<Widget classname="EGUIX::CGfxButtonWidget">
-								<IsShown>true</IsShown>
-								<UpdateManualFlag>false</UpdateManualFlag>
-								<EventHandling>true</EventHandling>
-								<ZPriority>100.</ZPriority>
-								<ForceToHandleMouseEventsFlag>false</ForceToHandleMouseEventsFlag>
-								<ForceToHandleKeyboardEventsFlag>false</ForceToHandleKeyboardEventsFlag>
-								<PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
-								<TabIndex>0</TabIndex>
-								<Rectangle>
-									<X>0.</X>
-									<Y>0.</Y>
-									<W>62.</W>
-									<H>62.</H>
-									<KeepAspectRatio>true</KeepAspectRatio>
-									<CirclePointTest>true</CirclePointTest>
-									<FixedTextureSetSize>true</FixedTextureSetSize>
-									<AlignmentX>0</AlignmentX>
-									<AlignmentY>0</AlignmentY>
-									<AnchorX>0</AnchorX>
-									<AnchorY>0</AnchorY>
-								</Rectangle>
-								<OnPushToStack>
-									<LuaCommand></LuaCommand>
-								</OnPushToStack>
-								<OnMouseOver>
-									<LuaCommand></LuaCommand>
-								</OnMouseOver>
-								<OnMouseOut>
-									<LuaCommand></LuaCommand>
-								</OnMouseOut>
-								<OnRightClick>
-									<LuaCommand></LuaCommand>
-								</OnRightClick>
-								<OnLeftClick>
-									<LuaCommand></LuaCommand>
-								</OnLeftClick>
-								<OnKeyPress>
-									<LuaCommand></LuaCommand>
-								</OnKeyPress>
-								<OnFocus>
-									<LuaCommand></LuaCommand>
-								</OnFocus>
-								<OnBlur>
-									<LuaCommand></LuaCommand>
-								</OnBlur>
-								<UpdateFunction>
-									<LuaCommand>GUI_Military.SuspendUpdate()</LuaCommand>
-								</UpdateFunction>
-								<UpdateFunctionTurnBased>
-									<LuaCommand></LuaCommand>
-								</UpdateFunctionTurnBased>
-								<UpdateFunctionSecondBased>
-									<LuaCommand></LuaCommand>
-								</UpdateFunctionSecondBased>
-								<ToolTipHelper>
-									<ToolTipEnabledFlag>true</ToolTipEnabledFlag>
-									<ControlTargetVisibility>true</ControlTargetVisibility>
-									<ToolTipUpdateFunction>
-										<LuaCommand>GUI_Military.SuspendMouseOver()</LuaCommand>
-									</ToolTipUpdateFunction>
-									<RawString></RawString>
-									<StringTableKey></StringTableKey>
-									<TargetWidget01>/InGame/Root/Normal/TooltipNormal</TargetWidget01>
-									<TargetWidget02></TargetWidget02>
-									<TargetWidget03></TargetWidget03>
-									<TargetWidget04></TargetWidget04>
-									<TargetWidget05></TargetWidget05>
-								</ToolTipHelper>
-								<Group></Group>
-								<MotherID>/InGame/Root/Normal/AlignBottomRight/DialogButtons/SuspendUnit</MotherID>
-								<Name>Suspend</Name>
-								<FullScreenBackground>false</FullScreenBackground>
-								<AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
-								<BackgroundMaterial>
-									<Texture></Texture>
-									<TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
-									<TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
-									<TextureCoordinatesMxU>62.</TextureCoordinatesMxU>
-									<TextureCoordinatesMxV>62.</TextureCoordinatesMxV>
-									<TextureFixedSizeX>0.</TextureFixedSizeX>
-									<TextureFixedSizeY>0.</TextureFixedSizeY>
-									<Color>
-										<Red>255</Red>
-										<Green>255</Green>
-										<Blue>255</Blue>
-										<Alpha>0</Alpha>
-									</Color>
-								</BackgroundMaterial>
-								<ActionFunction>
-									<LuaCommand>GUI_Military.SuspendClicked()</LuaCommand>
-								</ActionFunction>
-								<GenerateMaterialsFromNormal>false</GenerateMaterialsFromNormal>
-								<ShortCutKey></ShortCutKey>
-								<ShortCutKeyStringTableKey></ShortCutKeyStringTableKey>
-								<AllowRightMouseButton>false</AllowRightMouseButton>
-								<AllowDoubleClick>false</AllowDoubleClick>
-								<Disabled>false</Disabled>
-								<Highlighted>false</Highlighted>
-								<MaterialBaseNormal classname="EGUIX::CMaterial">
-									<Texture>buttons.png</Texture>
-									<TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
-									<TextureCoordinatesMinV>64.</TextureCoordinatesMinV>
-									<TextureCoordinatesMxU>62.</TextureCoordinatesMxU>
-									<TextureCoordinatesMxV>126.</TextureCoordinatesMxV>
-									<TextureFixedSizeX>0.</TextureFixedSizeX>
-									<TextureFixedSizeY>0.</TextureFixedSizeY>
-									<Color>
-										<Red>255</Red>
-										<Green>255</Green>
-										<Blue>255</Blue>
-										<Alpha>255</Alpha>
-									</Color>
-								</MaterialBaseNormal>
-								<MaterialDisabled classname="EGUIX::CMaterial">
-									<Texture></Texture>
-									<TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
-									<TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
-									<TextureCoordinatesMxU>62.</TextureCoordinatesMxU>
-									<TextureCoordinatesMxV>62.</TextureCoordinatesMxV>
-									<TextureFixedSizeX>0.</TextureFixedSizeX>
-									<TextureFixedSizeY>0.</TextureFixedSizeY>
-									<Color>
-										<Red>255</Red>
-										<Green>255</Green>
-										<Blue>255</Blue>
-										<Alpha>255</Alpha>
-									</Color>
-								</MaterialDisabled>
-								<MaterialHighlight classname="EGUIX::CMaterial">
-									<Texture>buttons.png</Texture>
-									<TextureCoordinatesMinU>192.</TextureCoordinatesMinU>
-									<TextureCoordinatesMinV>64.</TextureCoordinatesMinV>
-									<TextureCoordinatesMxU>254.</TextureCoordinatesMxU>
-									<TextureCoordinatesMxV>126.</TextureCoordinatesMxV>
-									<TextureFixedSizeX>0.</TextureFixedSizeX>
-									<TextureFixedSizeY>0.</TextureFixedSizeY>
-									<Color>
-										<Red>255</Red>
-										<Green>255</Green>
-										<Blue>255</Blue>
-										<Alpha>255</Alpha>
-									</Color>
-								</MaterialHighlight>
-								<MaterialMouseOver classname="EGUIX::CMaterial">
-									<Texture>buttons.png</Texture>
-									<TextureCoordinatesMinU>128.</TextureCoordinatesMinU>
-									<TextureCoordinatesMinV>64.</TextureCoordinatesMinV>
-									<TextureCoordinatesMxU>190.</TextureCoordinatesMxU>
-									<TextureCoordinatesMxV>126.</TextureCoordinatesMxV>
-									<TextureFixedSizeX>0.</TextureFixedSizeX>
-									<TextureFixedSizeY>0.</TextureFixedSizeY>
-									<Color>
-										<Red>255</Red>
-										<Green>255</Green>
-										<Blue>255</Blue>
-										<Alpha>255</Alpha>
-									</Color>
-								</MaterialMouseOver>
-								<MaterialPressed classname="EGUIX::CMaterial">
-									<Texture>buttons.png</Texture>
-									<TextureCoordinatesMinU>320.</TextureCoordinatesMinU>
-									<TextureCoordinatesMinV>64.</TextureCoordinatesMinV>
-									<TextureCoordinatesMxU>382.</TextureCoordinatesMxU>
-									<TextureCoordinatesMxV>126.</TextureCoordinatesMxV>
-									<TextureFixedSizeX>0.</TextureFixedSizeX>
-									<TextureFixedSizeY>0.</TextureFixedSizeY>
-									<Color>
-										<Red>255</Red>
-										<Green>255</Green>
-										<Blue>255</Blue>
-										<Alpha>255</Alpha>
-									</Color>
-								</MaterialPressed>
-								<IconMaterial>
-									<Texture>iconsbig.png</Texture>
-									<TextureCoordinatesMinU>834.</TextureCoordinatesMinU>
-									<TextureCoordinatesMinV>702.</TextureCoordinatesMinV>
-									<TextureCoordinatesMxU>898.</TextureCoordinatesMxU>
-									<TextureCoordinatesMxV>766.</TextureCoordinatesMxV>
-									<TextureFixedSizeX>0.</TextureFixedSizeX>
-									<TextureFixedSizeY>0.</TextureFixedSizeY>
-									<Color>
-										<Red>255</Red>
-										<Green>255</Green>
-										<Blue>255</Blue>
-										<Alpha>255</Alpha>
-									</Color>
-								</IconMaterial>
-								<IconOffsetWhilePressed>2</IconOffsetWhilePressed>
-								<IconColorWhileDisabled>
-									<Red>150</Red>
-									<Green>150</Green>
-									<Blue>150</Blue>
-									<Alpha>200</Alpha>
-								</IconColorWhileDisabled>
-								<PulseHighlightDuration>0.</PulseHighlightDuration>
-								<PulseHighlightMinAlpha>0.25</PulseHighlightMinAlpha>
-								<PulseMouseoverDuration>0.</PulseMouseoverDuration>
-								<PulseMouseoverMinAlpha>0.25</PulseMouseoverMinAlpha>
-								<ShowHighlightedAsPressed>false</ShowHighlightedAsPressed>
-							</Widget>
-						</WidgetList>
-					</SubWidgets>
-				</Widget>
-			  </WidgetList>
+              </WidgetList>
              </SubWidgets>
             </Widget>
             <Widget classname="EGUIX::CStaticTextWidget">
@@ -46289,10 +46010,10 @@
                          <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
                          <TabIndex>0</TabIndex>
                          <Rectangle>
-                          <X>50.</X>
-                          <Y>30.</Y>
-                          <W>73.</W>
-                          <H>41.</H>
+                          <X>81.</X>
+                          <Y>34.</Y>
+                          <W>46.</W>
+                          <H>32.</H>
                           <KeepAspectRatio>true</KeepAspectRatio>
                           <CirclePointTest>false</CirclePointTest>
                           <FixedTextureSetSize>false</FixedTextureSetSize>
@@ -46382,8 +46103,8 @@
                       <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
                       <TabIndex>0</TabIndex>
                       <Rectangle>
-                       <X>40.</X>
-                       <Y>75.</Y>
+                       <X>55.</X>
+                       <Y>65.</Y>
                        <W>180.</W>
                        <H>180.</H>
                        <KeepAspectRatio>true</KeepAspectRatio>
@@ -46458,8 +46179,8 @@
                          <Rectangle>
                           <X>0.</X>
                           <Y>60.</Y>
-                          <W>50.</W>
-                          <H>50.</H>
+                          <W>40.</W>
+                          <H>40.</H>
                           <KeepAspectRatio>true</KeepAspectRatio>
                           <CirclePointTest>false</CirclePointTest>
                           <FixedTextureSetSize>false</FixedTextureSetSize>
@@ -47151,7 +46872,7 @@
                       <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
                       <TabIndex>0</TabIndex>
                       <Rectangle>
-                       <X>30.</X>
+                       <X>25.</X>
                        <Y>65.</Y>
                        <W>180.</W>
                        <H>180.</H>
@@ -47227,8 +46948,8 @@
                          <Rectangle>
                           <X>0.</X>
                           <Y>60.</Y>
-                          <W>50.</W>
-                          <H>50.</H>
+                          <W>40.</W>
+                          <H>40.</H>
                           <KeepAspectRatio>true</KeepAspectRatio>
                           <CirclePointTest>false</CirclePointTest>
                           <FixedTextureSetSize>false</FixedTextureSetSize>
@@ -47423,7 +47144,7 @@
                       <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
                       <TabIndex>0</TabIndex>
                       <Rectangle>
-                       <X>30.</X>
+                       <X>35.</X>
                        <Y>65.</Y>
                        <W>180.</W>
                        <H>180.</H>
@@ -47497,7 +47218,7 @@
                          <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
                          <TabIndex>0</TabIndex>
                          <Rectangle>
-                          <X>114.</X>
+                          <X>120.</X>
                           <Y>85.</Y>
                           <W>65.</W>
                           <H>30.</H>
@@ -47669,9 +47390,9 @@
                          <BackgroundMaterial>
                           <Texture>iconsbig.png</Texture>
                           <TextureCoordinatesMinU>64.</TextureCoordinatesMinU>
-                          <TextureCoordinatesMinV>320.</TextureCoordinatesMinV>
-                          <TextureCoordinatesMxU>128.</TextureCoordinatesMxU>
-                          <TextureCoordinatesMxV>384.</TextureCoordinatesMxV>
+                          <TextureCoordinatesMinV>1024.</TextureCoordinatesMinV>
+                          <TextureCoordinatesMxU>1024.</TextureCoordinatesMxU>
+                          <TextureCoordinatesMxV>1088.</TextureCoordinatesMxV>
                           <TextureFixedSizeX>0.</TextureFixedSizeX>
                           <TextureFixedSizeY>0.</TextureFixedSizeY>
                           <Color>
@@ -53545,9 +53266,9 @@
                 <TabIndex>0</TabIndex>
                 <Rectangle>
                  <X>838.</X>
-                 <Y>253.</Y>
-                 <W>85.</W>
-                 <H>347.</H>
+                 <Y>321.</Y>
+                 <W>78.</W>
+                 <H>279.</H>
                  <KeepAspectRatio>true</KeepAspectRatio>
                  <CirclePointTest>false</CirclePointTest>
                  <FixedTextureSetSize>false</FixedTextureSetSize>
@@ -53612,8 +53333,8 @@
                  <Texture>frames.png</Texture>
                  <TextureCoordinatesMinU>1896.</TextureCoordinatesMinU>
                  <TextureCoordinatesMinV>272.</TextureCoordinatesMinV>
-                 <TextureCoordinatesMxU>1981.</TextureCoordinatesMxU>
-                 <TextureCoordinatesMxV>619.</TextureCoordinatesMxV>
+                 <TextureCoordinatesMxU>1974.</TextureCoordinatesMxU>
+                 <TextureCoordinatesMxV>551.</TextureCoordinatesMxV>
                  <TextureFixedSizeX>0.</TextureFixedSizeX>
                  <TextureFixedSizeY>0.</TextureFixedSizeY>
                  <Color>
