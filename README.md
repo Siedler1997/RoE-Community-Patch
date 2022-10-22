@@ -325,6 +325,25 @@ Folgende Änderungen wurden vorgenommen:
 		- Audio-Feedback (TTS)
 	- Bei Basegame-Rittern AddOn-Comments ergänzen (TTS)
 	- RP: Seuchen-Fähigkeit umsetzen, falls GUI.SendScriptCommand irgendwann wieder laufen sollte
+- Regionaler Alkohol
+	- ME: Bier = Getreide + Kräuter (Am aufwendigsten, aber durch idR. viel Farmland und reichlich Kräutervorkommen vertretbar)
+	- NE: Met = Honig (Vanilla, da der Norden durch lange Winter eh schon gebeutelt ist, aber genug Farmland für Bienenstöcke da ist.)
+	- SE: Wein = ? (Neue Weinreben? Wäre aufwendig, da neu, aber zumindest logisch)
+	- NA: Raki = Kräuter (Mangels Farmland sehr simpel gehalten)
+	- AS: Kräutermet = Honig + Kräuter (Wird in der AddOn-Kampagne im Rahmen eines Auftrags erwähnt/gefordert, also gibts eine Referenz dazu)
+- Signatureinheiten für alle Ritter
+	- Dabei auch jeder etwas andere Stats geben, damit es sich lohnt
+	- Marcus		= Hellebardiere ("Garde")
+	- Allandra	= Berittene Streitaxtkämpfer ("Paladine")
+	- Elias		= Banditen (SE, 6er, "Händler-Miliz")
+	- Kestral		= Banditen (ME, 6er)
+	- Hakim		= Banditen (NA, 6er)
+	- Thordal		= Banditen (NE, 6er)
+	- Sabattata	= RP-Soldaten
+	- Roter Prinz	= RP-Soldaten
+	- Saraya		= Banditen (AS, 6er)
+	- Praphat		= Große Kanonen
+	- Khana		= Khana-Soldaten
 - Audio-Feedback für Ochsen
 - Rebalancing
 	- Neue (sinnvollere) Aufstiegsbedingungen
