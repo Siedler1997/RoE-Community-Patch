@@ -56,7 +56,7 @@
 				<Speed>420</Speed>
 				<RotationSpeed>500</RotationSpeed>
 				<MoveTaskList>TL_MILITARY_WALK</MoveTaskList>
-				<MoveIdleAnim>Military\U_MilitaryPoleArm_Idle1</MoveIdleAnim>
+				<MoveIdleAnim>U_Helbardier_Idle1</MoveIdleAnim>
 			</Logic>
 			<Display classname="ED::CBehaviorProps">
 				<Class>ED::CDisplayBehaviorMovement</Class>

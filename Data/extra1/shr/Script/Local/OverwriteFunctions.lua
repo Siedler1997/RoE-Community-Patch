@@ -68,6 +68,7 @@ function InitLocalOverwrite()
         g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Ranged_AS]	= "H_NPC_Mercenary_NA"
         g_MilitaryFeedback.Soldiers[Entities.U_MilitarySword_Khana]		= "H_NPC_Mercenary_ME"
         g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBow_Khana]	= "H_NPC_Mercenary_ME"
+        g_MilitaryFeedback.Soldiers[Entities.U_MilitaryCavalry]	= "H_Knight_Chivalry"
         
         g_MilitaryFeedback.ThiefFeedbackVariants = {
             "StealGold_rnd_01",
@@ -214,6 +215,7 @@ function InitLocalOverwrite()
             g_TexturePositions.Entities[Entities.B_WatchTower_AS]    = {7, 6}
             g_TexturePositions.Entities[Entities.U_MilitarySpear] = {9, 1, 1}
             g_TexturePositions.Entities[Entities.U_Helbardier] = {9, 1, 1}
+            g_TexturePositions.Entities[Entities.U_MilitaryCavalry] = {9, 7}
             g_TexturePositions.Entities[Entities.U_Dragon] = {7, 3}
             
             -- Quest Types

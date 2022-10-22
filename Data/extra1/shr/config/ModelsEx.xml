@@ -2471,7 +2471,7 @@
 			<!--<Effect>SettlerRimPlayerColorSpecular</Effect>-->
 			<SelectionTexture>Selection_Soldier</SelectionTexture>
 			<OcclusionReceiver>True</OcclusionReceiver>
-			<DefaultAnimID>Military\U_MilitaryPoleArm_Run</DefaultAnimID>
+			<DefaultAnimID>Military\U_MilitarySpear_Run</DefaultAnimID>
 		</Model>
 
 		<Model id="Units\U_Helbardier">
@@ -2495,7 +2495,7 @@
 			<Effect>SettlerThroneRoom</Effect>
 			<SelectionTexture>Selection_Soldier</SelectionTexture>
 			<OcclusionReceiver>True</OcclusionReceiver>
-			<DefaultAnimID>Military\U_MilitaryPoleArm_Run</DefaultAnimID>
+			<DefaultAnimID>Military\U_MilitarySpear_Run</DefaultAnimID>
 		</Model>
 		
 		

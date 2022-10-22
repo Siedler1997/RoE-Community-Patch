@@ -61,7 +61,7 @@
 		<Behavior>
 			<Logic classname="EGL::CAnimationBehaviorExProps">
 				<Class>EGL::CBehaviorAnimationEx</Class>
-				<DefaultAnimation>Military\U_MilitaryPoleArm_Idle1</DefaultAnimation>
+				<DefaultAnimation>Military\U_MilitarySpear_Idle1</DefaultAnimation>
 				<AnimSet>SET_MILITARYSPEAR</AnimSet>
 			</Logic>
 
@@ -79,7 +79,7 @@
 				<Speed>450</Speed>
 				<RotationSpeed>500</RotationSpeed>
 				<MoveTaskList>TL_MILITARY_WALK</MoveTaskList>
-				<MoveIdleAnim>Military\U_MilitaryPoleArm_Idle1</MoveIdleAnim>
+				<MoveIdleAnim>Military\U_MilitarySpear_Idle1</MoveIdleAnim>
 			</Logic>
 			<Display classname="ED::CBehaviorProps">
 				<Class>ED::CDisplayBehaviorMovement</Class>
