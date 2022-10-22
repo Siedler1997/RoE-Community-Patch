@@ -144,7 +144,7 @@
         <Behavior>
             <Logic classname="EGL::CHeroBehaviorProps">
                 <Class>EGL::CHeroBehavior</Class>
-	       <TradeParameter>1.4</TradeParameter>
+	       <TradeParameter>1.6</TradeParameter> <!-- 1.2 -->
 	   </Logic>
         </Behavior>
 

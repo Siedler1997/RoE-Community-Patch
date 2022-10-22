@@ -11088,6 +11088,13 @@
   <FileLength>4172</FileLength>
   <AnimationDuration>1.3333333730697632</AnimationDuration>
  </Animation>
+
+
+ 
+	<Animation>
+    <Animation>
+		<FileName>military\u_militarypolearm_battleidle</FileName>
+=========
 	<Animation>
 		<FileName>military\u_militaryspear_battleidle</FileName>
 		<Timestamp>128208607970000000</Timestamp>
@@ -11162,10 +11169,6 @@
 	</Animation>
 	<Animation>
 		<FileName>military\u_militaryspear_walk</FileName>
-		<Timestamp>128178463530000000</Timestamp>
-		<FileLength>53164</FileLength>
-		<AnimationDuration>0.8</AnimationDuration>
-	</Animation>
 
 	<Animation>
 		<FileName>u_helbardier_battleidle</FileName>
@@ -11245,6 +11248,10 @@
 		<FileLength>53164</FileLength>
 		<AnimationDuration>0.8</AnimationDuration>
 	</Animation>
+		<FileLength>53164</FileLength>
+		<AnimationDuration>0.8</AnimationDuration>
+	</Animation>
+<<<<<<<<< Temporary merge branch 1
 
 
     <Animation>

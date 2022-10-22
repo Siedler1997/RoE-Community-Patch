@@ -12,6 +12,12 @@ Extra1 findest du unter The `Settlers - Rise of an Empire - History Edition\Data
 4. Ändere die Starteinstellungen in Steam bzw. Uplay, sodass das Programm mit `-EXTRA1` als Parameter ausgeführt wird.
 3. Zocken
 
+## Deinstallation
+Mit folgenden Schritten lässt sich der Patch deinstallieren:
+1. Lösche `Settlers - Rise of an Empire - History Edition\Data\extra1`.
+2. Benenne die Sicherheitskopie von `extra1_orig` in `extra1` um.
+3. Entferne `-EXTRA1` aus den Startoptionen von Steam bzw. Uplay.
+4. Vanilla zocken
 
 ## Deinstallation
 Mit folgenden Schritten lässt sich der Patch deinstallieren:
@@ -123,7 +129,7 @@ Folgende Änderungen wurden vorgenommen:
 				- Höhere Maximalreichweite (32sm > 24sm)
 				- Höhere Mindestreichweite (18sm > 10sm)
 				- Höherer Schaden (100 > 50)
-				- Geringere Feuerrate (8 Sek. > 5 Sek.)
+				- Geringere Feuerrate (7.5 Sek. > 5 Sek.)
 				- Braucht länger zum Auf- und Abbau (8 Sek. > 5 Sek.)
 			- Kann sich in aufgebauter Form nicht fortbewegen
 			- Muss nicht von Soldaten bedient werden

@@ -763,6 +763,13 @@
                         </GoodAmount>
                         <ProviderCategory>G_Iron_Supplier</ProviderCategory>
                     </Resource>
+                    <Resource>
+                        <GoodAmount>
+                            <GoodType>G_Wool</GoodType>
+                            <Amount>1</Amount>
+                        </GoodAmount>
+                        <ProviderCategory>G_Wool_Supplier</ProviderCategory>
+                    </Resource>
                 </RequiredResources>
             </Logic>
             <Display classname="ED::CDisplayGoodProps">
@@ -2291,5 +2298,50 @@
             </Display>
         </Good>
 
+        <!-- COMMUNITY PATCH GOODS -->
+
+        <Good id="G_LeatherArmor">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Weapon</GoodCategory>
+                <Value>0.8</Value>
+                <Worth>10</Worth>
+                    <StandCarryAnimationCategory>StandCarryChest</StandCarryAnimationCategory>
+                    <WalkCarryAnimationCategory>WalkCarryChest</WalkCarryAnimationCategory>
+                <RequiredResources>
+                    <Resource>
+                        <GoodAmount>
+                            <GoodType>G_Carcass</GoodType>
+                            <Amount>1</Amount>
+                        </GoodAmount>
+                        <ProviderCategory>G_Carcass_Supplier</ProviderCategory>
+                    </Resource>
+                </RequiredResources>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Goods\G_Leather</Model>
+            </Display>
+        </Good>
+
+        <Good id="G_PlateArmor">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Weapon</GoodCategory>
+                <Value>0.8</Value>
+                <Worth>10</Worth>
+                    <StandCarryAnimationCategory>StandCarryChest</StandCarryAnimationCategory>
+                    <WalkCarryAnimationCategory>WalkCarryChest</WalkCarryAnimationCategory>
+                <RequiredResources>
+                    <Resource>
+                        <GoodAmount>
+                            <GoodType>G_Iron</GoodType>
+                            <Amount>1</Amount>
+                        </GoodAmount>
+                        <ProviderCategory>G_Iron_Supplier</ProviderCategory>
+                    </Resource>
+                </RequiredResources>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Goods\G_OrnamentBlacksmith_01</Model>
+            </Display>
+        </Good>
     </Goods>
 </root>

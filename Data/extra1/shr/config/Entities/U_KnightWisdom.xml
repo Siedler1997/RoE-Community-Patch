@@ -131,16 +131,16 @@
         <Behavior>
             <Logic classname="EGL::CHeroBehaviorProps">
                 <Class>EGL::CHeroBehavior</Class>
-	       <UpgradeParameter>0.8</UpgradeParameter>
+	       <UpgradeParameter>0.9</UpgradeParameter> <!-- 0.8 -->
 	   </Logic>
         </Behavior>
 
-	<!-- Personal Ability: A hostile battalion (Swordmen or Bowmen) in range switches player ID -->
+	<!-- Personal Ability: A hostile battalion in range switches player ID -->
 	<Behavior>
 		<Logic classname="EGL::CKnightMiscAbilityProps">
 			<Class>EGL::CKnightMiscAbility</Class>
 			<Ability>AbilityConvert</Ability>
-			<RechargeTimeSeconds>480</RechargeTimeSeconds>
+			<RechargeTimeSeconds>540</RechargeTimeSeconds> <!-- 480 -->
 			<SearchRadius>1000</SearchRadius>
 			<TaskList>TL_KNIGHT_ABILITY_CONVERT</TaskList>
 			<Effect>E_Knight_Wisdom_Aura</Effect>

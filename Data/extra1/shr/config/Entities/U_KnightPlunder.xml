@@ -103,6 +103,14 @@
                         <Master>U_Horse_Plunder_BattleIdle</Master>
                         <Slave>U_Knight_Plunder_BattleIdle</Slave>
                     </Mapping>
+                    <Mapping>
+                        <Master>U_Horse_Plunder_Plunder</Master>
+                        <Slave>U_Knight_Plunder_Plunder</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>U_Horse_Plunder_BattleIdle</Master>
+                        <Slave>U_Knight_Plunder_BattleIdle</Slave>
+                    </Mapping>
                 </SlaveAnimation>
             </Display>
         </Behavior>
@@ -135,7 +143,7 @@
         <Behavior>
             <Logic classname="EGL::CHeroBehaviorProps">
                 <Class>EGL::CHeroBehavior</Class>
-	       <TaxParameter>1.2</TaxParameter>
+	       <TaxParameter>1.6</TaxParameter> <!-- 1.2 -->
             </Logic>
         </Behavior>
 

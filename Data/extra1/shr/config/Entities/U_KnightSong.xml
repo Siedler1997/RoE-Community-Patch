@@ -137,7 +137,7 @@
 		<Behavior>
 			<Logic classname="EGL::CHeroBehaviorProps">
 				<Class>EGL::CHeroBehavior</Class>
-				<FestivalParameter>0.5</FestivalParameter>
+				<FestivalParameter>0.7</FestivalParameter>
 				<!-- If the first diceroll using "SpouseProbabilityFactor" didn't generate a spouse, "FestivalParameter" is used for a second diceroll -->
 			</Logic>
 		</Behavior>
