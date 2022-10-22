@@ -402,8 +402,12 @@
 	<Entity>B_WatchTower_NA</Entity>
 	<Entity>B_WatchTower_AS</Entity>
 	<Entity>B_SpearMaker</Entity>
-	<Entity>U_SpearMaker</Entity>
+	<Entity>B_ArmorMaker</Entity>
+	<Entity>B_ArmorSmith</Entity>
+	<Entity>B_Beautification_Dragon</Entity>
+	<Entity>B_Beautification_Cathedral</Entity>
 	
+	<Entity>U_SpearMaker</Entity>
 	<Entity>U_Bear</Entity>
 	<Entity>U_BlackBear</Entity>
 	<Entity>U_PolarBear</Entity>
@@ -413,22 +417,21 @@
 	<Entity>U_Wolf_Brown</Entity>
 	<Entity>U_Lion_Male</Entity>
 	<Entity>U_Lion_Female</Entity>
-
 	<Entity>U_MilitaryTrebuchet</Entity>
 	<Entity>U_TrebuchetCart</Entity>
 	<Entity>U_TrebuchetCart_Collapse</Entity>
 	<Entity>U_MilitarySpear</Entity>
 	<Entity>U_Helbardier</Entity>
 	<Entity>U_MilitaryCavalry</Entity>
-	<Entity>B_Beautification_Dragon</Entity>
 	<Entity>U_Dragon</Entity>
-	<Entity>B_Beautification_Cathedral</Entity>
-
 	<Entity>U_Marketer_Mission</Entity>
 	<Entity>U_Medicus_Mission</Entity>
 	<Entity>U_Noblemen_Cart_Mission</Entity>
 	<Entity>U_RegaliaCart_Mission</Entity>
 	<Entity>U_ResourceMerchant_Mission</Entity>
 	<Entity>U_ThiefCart_Mission</Entity>
+	<Entity>U_ArmorMaker</Entity>
+	<Entity>U_ArmorSmith</Entity>
+
 </root>
 
