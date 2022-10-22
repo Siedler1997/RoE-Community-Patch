@@ -19,13 +19,6 @@ Mit folgenden Schritten lässt sich der Patch deinstallieren:
 3. Entferne `-EXTRA1` aus den Startoptionen von Steam bzw. Uplay.
 4. Vanilla zocken
 
-## Deinstallation
-Mit folgenden Schritten lässt sich der Patch deinstallieren:
-1. Lösche `Settlers - Rise of an Empire - History Edition\Data\extra1`.
-2. Benenne die Sicherheitskopie von `extra1_orig` in `extra1` um.
-3. Entferne `-EXTRA1` aus den Startoptionen von Steam bzw. Uplay.
-4. Vanilla zocken
-
 
 
 ## Features
@@ -226,8 +219,7 @@ Folgende Änderungen wurden vorgenommen:
 	- Sieg und Niederlage haben jeweils eine Art "Jingle"
 	- Spielerfarben auf der Minimap sind nun (meistens) korrekt
     - NPC Charaktere können nicht mehr Spieler 0 angehören
-    - Arbeiter von Kasernen holen nur eine Ware per Zyklus
-      (Soll nicht vollständig gefüllte Kasernen verhindern)
+    - Arbeiter von Kasernen holen nur eine Ware per Zyklus (Soll nicht vollständig gefüllte Kasernen verhindern)
 - Kampagnen
 	- Hauptspiel-Kampagne auch im AddOn spielbar
 	- Bugs gefixt

@@ -249,6 +249,21 @@
 									<BaseValue>15</BaseValue>
 								</Damage>
 								<BuildingFireSize>10</BuildingFireSize>
+								<DamageRadiusList>
+									<!-- Must be sorted from inner to outer. -->
+									<DamageRadius>
+										<Radius>150</Radius>
+										<Percentage>100</Percentage>
+									</DamageRadius>
+									<DamageRadius>
+										<Radius>300</Radius>
+										<Percentage> 50</Percentage>
+									</DamageRadius>
+									<DamageRadius>
+										<Radius>450</Radius>
+										<Percentage> 25</Percentage>
+									</DamageRadius>
+								</DamageRadiusList>
 
 								<ConsumeAmmunition>true</ConsumeAmmunition>
 							</AttackMode>
