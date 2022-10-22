@@ -19,6 +19,7 @@
         <EntityCategories>
             <EntityCategory>Military</EntityCategory>
             <EntityCategory>HeavyWeapon</EntityCategory>
+            <EntityCategory>Catapult</EntityCategory>
         </EntityCategories>
         <AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
         <Exploration>0</Exploration>

@@ -50,7 +50,16 @@
     <Id>GathererBuilding</Id>
     <Id>FarmerBuilding</Id>
     <Id>Spouse</Id>
-	
+
+    <!-- Community Patch -->
+
+    <Id>Sword</Id>
+    <Id>Bow</Id>
+    <Id>Spear</Id>
+    <Id>Cavalry</Id>
+    <Id>Catapult</Id>
+    <Id>Balista</Id>
+    <Id>Cannon</Id>
 	<Id>G_Spear_Supplier</Id>
 	<Id>Dragon</Id>
     

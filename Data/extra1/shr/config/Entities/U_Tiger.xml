@@ -31,6 +31,7 @@
 			<EntityCategory>Military</EntityCategory>
 			<EntityCategory>AttackableSettler</EntityCategory>
 			<EntityCategory>Melee</EntityCategory>
+            <EntityCategory>Sword</EntityCategory>
         </EntityCategories>
 		<SoundImpactType>Leather</SoundImpactType>                
 	</Logic>

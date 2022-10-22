@@ -42,6 +42,7 @@
 			<EntityCategory>Military</EntityCategory>
 			<EntityCategory>Soldier</EntityCategory>
 			<EntityCategory>Melee</EntityCategory>
+            <EntityCategory>Spear</EntityCategory>
 		</EntityCategories>
 		<Familiar>
 			<With>SheepPasture</With>
@@ -115,12 +116,12 @@
 				<AmmunitionLimit>1</AmmunitionLimit>
 
 				<TargetCategoryList>
-					<!-- Bonus damage against knight -->
+					<!-- Bonus damage -->
 					<TargetCategory>
 						<!-- don't remove  the empty tags, otherwise the data isn't shown correctly in the XML balancer! -->
 						<EntityCategoryList>
 							<EntityCategory>Hero</EntityCategory>
-							<EntityCategory/>
+							<EntityCategory>Cavalry</EntityCategory>
 							<EntityCategory/>
 							<EntityCategory/>
 							<EntityCategory/>
@@ -141,7 +142,7 @@
 								<Damage>
 									<DiceCount>0</DiceCount>
 									<FaceCount>0</FaceCount>
-									<BaseValue>30</BaseValue>
+									<BaseValue>45</BaseValue>
 								</Damage>
 							</AttackMode>
 

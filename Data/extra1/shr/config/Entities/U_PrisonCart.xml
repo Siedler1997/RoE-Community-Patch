@@ -11,7 +11,7 @@
     <Logic classname="EGL::CSettlerProps">
         <Class>EGL::CSettler</Class>
         <AccessCategory>AccessCategoryAttackableSettler</AccessCategory>
-        <PlayerSectorType>PlayerSectorTypeCivil</PlayerSectorType>&gt;
+        <PlayerSectorType>PlayerSectorTypeThief</PlayerSectorType>&gt;
         <MaxHealth>100</MaxHealth>
         <NeedsPlayer>true</NeedsPlayer>
         <ForceNoPlayer>false</ForceNoPlayer>
@@ -87,7 +87,7 @@
         <!-- We abuse the fight behavior to drive the movement.
              This allows the script to move the unit, while rejecting
              move commands given by the user -->
-        <!--Behavior>
+        <Behavior>
             <Logic classname="EGL::CFightBehaviorProps">
                 <Class>EGL::CFightBehavior</Class>
                 <DefendTL>TL_MILITARY_DEFEND</DefendTL>
@@ -95,7 +95,7 @@
                 <DefendRange>0</DefendRange>
                 <AttackMoveRange>0</AttackMoveRange>
             </Logic>
-        </Behavior-->
+        </Behavior>
 
         <Behavior>
             <Logic classname="EGL::CGuardableBehaviorProps">

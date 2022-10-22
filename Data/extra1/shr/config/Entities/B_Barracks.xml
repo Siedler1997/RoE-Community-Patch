@@ -110,7 +110,7 @@
 
         <ProducedGood>
             <GoodType>G_Sword</GoodType>
-            <Amount>3</Amount>
+            <Amount>1</Amount>
         </ProducedGood>
         
         <BattalionSize>6</BattalionSize>
@@ -181,6 +181,8 @@
             <ProducedUnitType>U_MilitarySword</ProducedUnitType>
 			<ProducedUnitType>U_MilitarySword_RedPrince</ProducedUnitType>
 			<ProducedUnitType>U_MilitarySword_Khana</ProducedUnitType>
+			<ProducedUnitType>U_MilitaryPoleArm</ProducedUnitType>
+			<ProducedUnitType>U_MilitaryCavalry</ProducedUnitType>
 			<ProducedUnitType>U_MilitaryBandit_Melee_ME</ProducedUnitType>
 			<ProducedUnitType>U_MilitaryBandit_Melee_NE</ProducedUnitType>
 			<ProducedUnitType>U_MilitaryBandit_Melee_NA</ProducedUnitType>
@@ -340,6 +342,32 @@
 			</UnitType>
 			<UnitType>
 				<EntityType>U_MilitarySword_Khana</EntityType>
+				<Cost>
+					<GoodAmount>
+						<GoodType>G_Gold</GoodType>
+						<Amount>15</Amount>
+					</GoodAmount>
+					<GoodAmount>
+						<GoodType>G_Sword</GoodType>
+						<Amount>1</Amount>
+					</GoodAmount>
+				</Cost>
+			</UnitType>
+			<UnitType>
+				<EntityType>U_MilitaryPoleArm</EntityType>
+				<Cost>
+					<GoodAmount>
+						<GoodType>G_Gold</GoodType>
+						<Amount>15</Amount>
+					</GoodAmount>
+					<GoodAmount>
+						<GoodType>G_Sword</GoodType>
+						<Amount>1</Amount>
+					</GoodAmount>
+				</Cost>
+			</UnitType>
+			<UnitType>
+				<EntityType>U_MilitaryCavalry</EntityType>
 				<Cost>
 					<GoodAmount>
 						<GoodType>G_Gold</GoodType>

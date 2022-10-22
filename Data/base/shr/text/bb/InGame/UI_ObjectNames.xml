@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+<string id="B_Castle_ME" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Castle]]></string>
+<string id="B_Castle_NE" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Castle]]></string>
+<string id="B_Castle_NA" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Castle]]></string>
+<string id="B_Castle_SE" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Castle]]></string>
+<string id="B_Cathedral" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cathedral]]></string>
+<string id="B_StoreHouse" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Storehouse]]></string>
+<string id="B_Marketplace_ME" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Marketplace]]></string>
+<string id="B_Marketplace_NE" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Marketplace]]></string>
+<string id="B_Marketplace_SE" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Marketplace]]></string>
+<string id="B_Marketplace_NA" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Marketplace]]></string>
+<string id="B_Outpost_ME" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Outpost]]></string>
+<string id="B_Outpost_NE" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Outpost]]></string>
+<string id="B_Outpost_SE" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Outpost]]></string>
+<string id="B_Outpost_NA" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Outpost]]></string>
+<string id="B_Bakery" MD5Hash="" mod="20060111162922" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bakery]]></string>
+<string id="B_Dairy" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dairy]]></string>
+<string id="B_SmokeHouse" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Smokehouse]]></string>
+<string id="B_Butcher" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Butcher's Shop]]></string>
+<string id="B_Soapmaker" MD5Hash="" mod="20070614111908" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Soap Maker]]></string>
+<string id="B_BroomMaker" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Broom Maker]]></string>
+<string id="B_Pharmacy" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Pharmacy]]></string>
+<string id="B_Baths" MD5Hash="" mod="20060111162928" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Baths]]></string>
+<string id="B_Tavern" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Tavern]]></string>
+<string id="B_Theatre" MD5Hash="" mod="20070809125431" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Theatre]]></string>
+<string id="B_Weaver" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Weaver]]></string>
+<string id="B_Tanner" MD5Hash="" mod="20070716091452" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Tannery]]></string>
+<string id="B_BannerMaker" MD5Hash="" mod="20070614111347" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Banner Maker]]></string>
+<string id="B_Blacksmith" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Blacksmith]]></string>
+<string id="B_Carpenter" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Carpenter]]></string>
+<string id="B_Candlemaker" MD5Hash="" mod="20070614111521" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Candle Maker]]></string>
+<string id="B_CattleFarm" MD5Hash="" mod="20070614141141" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: all gatherer buildings are either a &quot;Hut&quot; or a &quot;Farm&quot;"><![CDATA[Cattle Farm]]></string>
+<string id="B_SheepFarm" MD5Hash="" mod="20070614141237" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: all gatherer buildings are either a &quot;Hut&quot; or a &quot;Farm&quot;"><![CDATA[Sheep Farm]]></string>
+<string id="B_GrainFarm" MD5Hash="" mod="20070614141159" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: all gatherer buildings are either a &quot;Hut&quot; or a &quot;Farm&quot;"><![CDATA[Grain Farm]]></string>
+<string id="B_Beekeeper" MD5Hash="" mod="20070614141133" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: all gatherer buildings are either a &quot;Hut&quot; or a &quot;Farm&quot;"><![CDATA[Beekeeper's Hut]]></string>
+<string id="B_GrainField_ME" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Grain Field]]></string>
+<string id="B_GrainField_NE" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Grain Field]]></string>
+<string id="B_GrainField_SE" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Grain Field]]></string>
+<string id="B_GrainField_NA" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Grain Field]]></string>
+<string id="B_Beehive" MD5Hash="" mod="20060111162932" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Beehive]]></string>
+<string id="B_CattlePasture" MD5Hash="" mod="20060111162932" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cattle Pasture]]></string>
+<string id="B_SheepPasture" MD5Hash="" mod="20060111162932" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Sheep Pasture]]></string>
+<string id="B_HerbGatherer" MD5Hash="" mod="20070614141208" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: all gatherer buildings are either a &quot;Hut&quot; or a &quot;Farm&quot;"><![CDATA[Herb Gatherer's Hut]]></string>
+<string id="B_Woodcutter" MD5Hash="" mod="20070614141257" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: all gatherer buildings are either a &quot;Hut&quot; or a &quot;Farm&quot;"><![CDATA[Woodcutter's Hut]]></string>
+<string id="B_HuntersHut" MD5Hash="" mod="20070614141213" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: all gatherer buildings are either a &quot;Hut&quot; or a &quot;Farm&quot;"><![CDATA[Hunter's Hut]]></string>
+<string id="B_FishingHut" MD5Hash="" mod="20070614141152" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: all gatherer buildings are either a &quot;Hut&quot; or a &quot;Farm&quot;"><![CDATA[Fishing Hut]]></string>
+<string id="B_StoneQuarry" MD5Hash="" mod="20070614141246" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: all gatherer buildings are either a &quot;Hut&quot; or a &quot;Farm&quot;{cr}KoBo: resources are &quot;Iron Mine&quot; and &quot;Stone Quarry&quot;, gatherer buildings are &quot;Iron Miner&apos;s Hut&quot; and &quot;Stonecutter&apos;s Hut&quot;"><![CDATA[Stonecutter's Hut]]></string>
+<string id="B_IronMine" MD5Hash="" mod="20070614141217" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: all gatherer buildings are either a &quot;Hut&quot; or a &quot;Farm&quot;{cr}KoBo: resources are &quot;Iron Mine&quot; and &quot;Stone Quarry&quot;, gatherer buildings are &quot;Iron Miner&apos;s Hut&quot; and Stonecutter&apos;s Hut&quot;"><![CDATA[Iron Miner's Hut]]></string>
+<string id="B_SwordSmith" MD5Hash="" mod="20070801141804" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Swordsmith]]></string>
+<string id="B_BowMaker" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bow Maker]]></string>
+<string id="B_Barracks" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Swordsmen Barracks]]></string>
+<string id="B_BarracksArchers" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bowmen Barracks]]></string>
+<string id="B_SiegeEngineWorkshop" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Siege Engine Workshop]]></string>
+<string id="B_WallSegment" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Wall]]></string>
+<string id="B_PalisadeSegment" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Palisade]]></string>
+<string id="B_NPC_StoreHouse_NE" MD5Hash="" mod="20070801141728" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Storehouse]]></string>
+<string id="B_NPC_StoreHouse_ME" MD5Hash="" mod="20070801141725" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Storehouse]]></string>
+<string id="B_NPC_StoreHouse_SE" MD5Hash="" mod="20070801141730" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Storehouse]]></string>
+<string id="B_NPC_StoreHouse_NA" MD5Hash="" mod="20070801141722" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Storehouse]]></string>
+<string id="B_NPC_ShipsStorehouse" MD5Hash="" mod="20070801141457" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Harbour]]></string>
+<string id="B_NPC_HolyIslandGrandmothers_NE" MD5Hash="" mod="20070604073651" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Grandmother's Home]]></string>
+<string id="B_NPC_Cloister_NE" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cloister]]></string>
+<string id="B_NPC_Cloister_ME" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cloister]]></string>
+<string id="B_NPC_Cloister_SE" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cloister]]></string>
+<string id="B_NPC_Cloister_NA" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cloister]]></string>
+<string id="B_NPC_BanditsHQ_ME" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bandit Camp]]></string>
+<string id="B_NPC_BanditsHQ_NE" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bandit Camp]]></string>
+<string id="B_NPC_BanditsHQ_SE" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bandit Camp]]></string>
+<string id="B_NPC_BanditsHQ_NA" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bandit Camp]]></string>
+<string id="B_NPC_BanditsHutBig_ME" MD5Hash="" mod="20070607111121" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bandit Tent]]></string>
+<string id="B_NPC_BanditsHutBig_NE" MD5Hash="" mod="20070607111133" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bandit Tent]]></string>
+<string id="B_NPC_BanditsHutBig_SE" MD5Hash="" mod="20070607111137" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bandit Tent]]></string>
+<string id="B_NPC_BanditsHutBig_NA" MD5Hash="" mod="20070607111130" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bandit Tent]]></string>
+<string id="B_NPC_BanditsHutSmall_ME" MD5Hash="" mod="20070607111141" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bandit Tent]]></string>
+<string id="B_NPC_BanditsHutSmall_NE" MD5Hash="" mod="20070607111147" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bandit Tent]]></string>
+<string id="B_NPC_BanditsHutSmall_SE" MD5Hash="" mod="20070607111151" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bandit Tent]]></string>
+<string id="B_NPC_BanditsHutSmall_NA" MD5Hash="" mod="20070607111144" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bandit Tent]]></string>
+<string id="B_NPC_Marketplace_NE" MD5Hash="" mod="20070801140827" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Marketplace]]></string>
+<string id="B_NPC_Marketplace_ME" MD5Hash="" mod="20070801140823" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Marketplace]]></string>
+<string id="B_NPC_Marketplace_SE" MD5Hash="" mod="20070801140830" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Marketplace]]></string>
+<string id="B_NPC_Marketplace_NA" MD5Hash="" mod="20070801140825" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Marketplace]]></string>
+<string id="B_NPC_Bakery_ME" MD5Hash="" mod="20070801140956" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bakery]]></string>
+<string id="B_NPC_Butcher_ME" MD5Hash="" mod="20070801141029" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Butcher's Shop]]></string>
+<string id="B_NPC_Dairy_ME" MD5Hash="" mod="20070801141419" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dairy]]></string>
+<string id="B_NPC_SmokeHouse_ME" MD5Hash="" mod="20070801141501" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Smokehouse]]></string>
+<string id="B_NPC_Bakery_SE" MD5Hash="" mod="20070801141003" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bakery]]></string>
+<string id="B_NPC_Butcher_SE" MD5Hash="" mod="20070801141035" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Butcher's Shop]]></string>
+<string id="B_NPC_Dairy_SE" MD5Hash="" mod="20070801141427" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dairy]]></string>
+<string id="B_NPC_SmokeHouse_SE" MD5Hash="" mod="20070801141507" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Smokehouse]]></string>
+<string id="B_NPC_Bakery_NE" MD5Hash="" mod="20070801141000" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bakery]]></string>
+<string id="B_NPC_Butcher_NE" MD5Hash="" mod="20070801141033" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Butcher's Shop]]></string>
+<string id="B_NPC_Dairy_NE" MD5Hash="" mod="20070801141425" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dairy]]></string>
+<string id="B_NPC_SmokeHouse_NE" MD5Hash="" mod="20070801141505" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Smokehouse]]></string>
+<string id="B_NPC_Bakery_NA" MD5Hash="" mod="20070801140958" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bakery]]></string>
+<string id="B_NPC_Butcher_NA" MD5Hash="" mod="20070801141031" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Butcher's Shop]]></string>
+<string id="B_NPC_Dairy_NA" MD5Hash="" mod="20070801141423" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dairy]]></string>
+<string id="B_NPC_SmokeHouse_NA" MD5Hash="" mod="20070801141503" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Smokehouse]]></string>
+<string id="B_NPC_Cloister_Bakery_ME" MD5Hash="" mod="20070801141056" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bakery]]></string>
+<string id="B_NPC_Cloister_Bakery_NE" MD5Hash="" mod="20070801141059" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bakery]]></string>
+<string id="B_NPC_Cloister_Bakery_SE" MD5Hash="" mod="20070801141101" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bakery]]></string>
+<string id="B_NPC_Cloister_Bakery_NA" MD5Hash="" mod="20070801141057" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bakery]]></string>
+<string id="B_NPC_Cloister_Pharmacy_ME" MD5Hash="" mod="20070801141346" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Pharmacy]]></string>
+<string id="B_NPC_Cloister_Pharmacy_NE" MD5Hash="" mod="20070801141350" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Pharmacy]]></string>
+<string id="B_NPC_Cloister_Pharmacy_SE" MD5Hash="" mod="20070801141353" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Pharmacy]]></string>
+<string id="B_NPC_Cloister_Pharmacy_NA" MD5Hash="" mod="20070801141348" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Pharmacy]]></string>
+<string id="B_NPC_Cloister_Dairy_ME" MD5Hash="" mod="20070801141319" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dairy]]></string>
+<string id="B_NPC_Cloister_Dairy_NE" MD5Hash="" mod="20070801141323" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dairy]]></string>
+<string id="B_NPC_Cloister_Dairy_SE" MD5Hash="" mod="20070801141324" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dairy]]></string>
+<string id="B_NPC_Cloister_Dairy_NA" MD5Hash="" mod="20070801141321" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dairy]]></string>
+<string id="B_NPC_Cloister_Butcher_ME" MD5Hash="" mod="20070801141254" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Butcher's Shop]]></string>
+<string id="B_NPC_Cloister_Butcher_NE" MD5Hash="" mod="20070801141259" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Butcher's Shop]]></string>
+<string id="B_NPC_Cloister_Butcher_SE" MD5Hash="" mod="20070801141301" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Butcher's Shop]]></string>
+<string id="B_NPC_Cloister_Butcher_NA" MD5Hash="" mod="20070801141257" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Butcher's Shop]]></string>
+<string id="Trail" MD5Hash="" mod="20060117104910" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Trail]]></string>
+<string id="Street" MD5Hash="" mod="20070819185653" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Road]]></string>
+<string id="KnockDown" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Knock Down]]></string>
+<string id="ContinueWall" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Continue Wall]]></string>
+<string id="ContinuePalisade" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Continue Palisade]]></string>
+<string id="Wall" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[City Wall]]></string>
+<string id="B_WallGate" MD5Hash="" mod="20070614112137" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Wall Gate]]></string>
+<string id="Palisade" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Palisade]]></string>
+<string id="B_PalisadeGate" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Palisade Gate]]></string>
+<string id="Food" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Food Buildings]]></string>
+<string id="Cleanliness" MD5Hash="" mod="20070812115132" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="Medicine is included in the same menu, which is not a Cleanliness Good."><![CDATA[Cleanliness and Medicine]]></string>
+<string id="Entertainment" MD5Hash="" mod="20070614152215" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Entertainment Buildings]]></string>
+<string id="Construction" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Infrastructure]]></string>
+<string id="Security" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Military Buildings]]></string>
+<string id="Gatherer" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Gatherer Buildings]]></string>
+<string id="Wealth" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Decoration Buildings]]></string>
+<string id="Clothes" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Clothes Buildings]]></string>
+<string id="G_Gold" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Gold]]></string>
+<string id="G_Wood" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Wood]]></string>
+<string id="G_Stone" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Stone]]></string>
+<string id="G_Iron" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Iron]]></string>
+<string id="G_Wool" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Wool]]></string>
+<string id="G_Grain" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Grain]]></string>
+<string id="G_Milk" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Milk]]></string>
+<string id="G_Carcass" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Carcass]]></string>
+<string id="G_RawFish" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Raw Fish]]></string>
+<string id="G_Honeycomb" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Honeycomb]]></string>
+<string id="G_Herb" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Herbs]]></string>
+<string id="G_Water" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Water]]></string>
+<string id="G_Dye" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dye]]></string>
+<string id="G_Salt" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Salt]]></string>
+<string id="G_Bread" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bread]]></string>
+<string id="G_Cheese" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cheese]]></string>
+<string id="G_Sausage" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Sausage]]></string>
+<string id="G_SmokedFish" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Smoked Fish]]></string>
+<string id="G_Soap" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Soap]]></string>
+<string id="G_Broom" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Broom]]></string>
+<string id="G_Medicine" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Medicine]]></string>
+<string id="G_Clothes" MD5Hash="" mod="20070809125610" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Woollen Clothes]]></string>
+<string id="G_Leather" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Leather Clothes]]></string>
+<string id="G_EntBaths" MD5Hash="" mod="20070614113222" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Relaxing Bath]]></string>
+<string id="G_EntTheatre" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Play]]></string>
+<string id="G_PlayMaterial" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Props]]></string>
+<string id="G_EntertainmentBard" MD5Hash="" mod="20070809125558" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Thordal, Lord of Song]]></string>
+<string id="G_Beer" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Mead]]></string>
+<string id="G_Ornament" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Roof Ornament]]></string>
+<string id="G_Sign" MD5Hash="" mod="20070718122705" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: Yes this is a Bench, not a Sign. The GoodType wasn&apos;t renamed internally. Ignore the textkeys."><![CDATA[Bench]]></string>
+<string id="G_Banner" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Banner]]></string>
+<string id="G_Candle" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Candle]]></string>
+<string id="G_PoorSword" MD5Hash="" mod="20070614113304" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Sword]]></string>
+<string id="G_Sword" MD5Hash="" mod="20070614145253" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Swordsmen Gear]]></string>
+<string id="G_PoorBow" MD5Hash="" mod="20070614113303" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bow]]></string>
+<string id="G_Bow" MD5Hash="" mod="20070614145257" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bowmen Gear]]></string>
+<string id="G_SiegeEnginePart" MD5Hash="" mod="20070614113342" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Siege Engine Part]]></string>
+<string id="G_Cow" MD5Hash="" mod="20070614113145" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cow]]></string>
+<string id="G_Sheep" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Sheep]]></string>
+<string id="StopBuilding" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Stop Production]]></string>
+<string id="StartBuilding" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Resume Production]]></string>
+<string id="StartRepairAlarm" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Start Repair Alarm]]></string>
+<string id="StopRepairAlarm" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Stop Repair Alarm]]></string>
+<string id="StartFireAlarm" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Start Fire Alarm]]></string>
+<string id="StopFireAlarm" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Stop Fire Alarm]]></string>
+<string id="UpgradeCity" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Upgrade City Building]]></string>
+<string id="UpgradeCityCancel" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cancel Upgrade]]></string>
+<string id="UpgradeOuterRim" MD5Hash="" mod="20070614141334" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Upgrade Gatherer Building]]></string>
+<string id="UpgradeOuterRimCancel" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cancel Upgrade]]></string>
+<string id="UpgradeOutpost" MD5Hash="" mod="20060117105147" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Upgrade Outpost]]></string>
+<string id="UpgradeOutpostCancel" MD5Hash="" mod="20060117105147" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cancel Upgrade]]></string>
+<string id="UpgradeTurret" MD5Hash="" mod="20070614115628" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Mounted Catapult]]></string>
+<string id="BuildStoneTrap" MD5Hash="" mod="20070614112250" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Stone Trap]]></string>
+<string id="UpgradeCathedral" MD5Hash="" mod="20060117105147" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Upgrade Cathedral]]></string>
+<string id="UpgradeCastle" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Upgrade Castle]]></string>
+<string id="UpgradeStorehouse" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Upgrade Storehouse]]></string>
+<string id="PlaceGrainField" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Grain Field]]></string>
+<string id="PlaceCattlePasture" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cattle Pasture]]></string>
+<string id="PlaceSheepPasture" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Sheep Pasture]]></string>
+<string id="PlaceBeehive" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Beehive]]></string>
+<string id="BuySwordfighters" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Swordsmen]]></string>
+<string id="BuyBowmen" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bowmen]]></string>
+<string id="BuyThief" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Thief]]></string>
+<string id="BuyCatapultCart" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Catapult Cart]]></string>
+<string id="BuyBatteringRamCart" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Battering Ram Cart]]></string>
+<string id="BuyAmmunitionCart" MD5Hash="" mod="20070712132948" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Ammo Cart]]></string>
+<string id="BuySiegeTowerCart" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Siege Tower Cart]]></string>
+<string id="ErectCatapult" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Erect Catapult]]></string>
+<string id="ErectBatteringRam" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Erect Battering Ram]]></string>
+<string id="ErectSiegeTower" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Erect Siege Tower]]></string>
+<string id="SendBack" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Send Back Merchant]]></string>
+<string id="StartSermon" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Start Sermon]]></string>
+<string id="StartFestival" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Start Festival]]></string>
+<string id="StartTheatrePlay" MD5Hash="" mod="20070809125741" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Start Theatre Play]]></string>
+<string id="TrapTrigger" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Trigger Stone Trap]]></string>
+<string id="ClaimTerritory" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Claim Territory]]></string>
+<string id="AbilityFood" MD5Hash="" mod="20070613045646" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Elias's Feast]]></string>
+<string id="AbilityHeal" MD5Hash="" mod="20070613045654" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Alandra's Healing]]></string>
+<string id="AbilityTorch" MD5Hash="" mod="20070801080004" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Marcus's Torches]]></string>
+<string id="AbilityConvert" MD5Hash="" mod="20070615092805" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Hakim's Conversion]]></string>
+<string id="AbilityBard" MD5Hash="" mod="20070613045627" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Thordal's Song]]></string>
+<string id="AbilityPlunder" MD5Hash="" mod="20070613045659" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Kestral's Plunder]]></string>
+<string id="KnightButton" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Select Knight]]></string>
+<string id="BattalionButton" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Select Military]]></string>
+<string id="JumpToBuilding" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Jump to Building]]></string>
+<string id="JumpToWorker" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Jump to Settler]]></string>
+<string id="OverviewMenuButton" MD5Hash="" mod="20070724163533" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Overview Menu]]></string>
+<string id="DestroyGoods" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Destroy Resources]]></string>
+<string id="MinimapButton" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Minimap Mode]]></string>
+<string id="Attack" MD5Hash="" mod="20070819155216" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="&quot;attack move&quot; order"><![CDATA[Attack Move]]></string>
+<string id="StandGround" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Stand Ground]]></string>
+<string id="Dismount" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dismount]]></string>
+<string id="Refill" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Reinforce]]></string>
+<string id="Disassemble" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Disassemble]]></string>
+<string id="ThiefDeliver" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Deliver]]></string>
+<string id="ThiefDeliverInformation" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Deliver Information]]></string>
+<string id="ThiefDeliverEarnings" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Deliver Earnings]]></string>
+<string id="NutritionTooltip" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Food Need]]></string>
+<string id="CleanlinessTooltip" MD5Hash="" mod="20070819150223" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="Medicine is included in the same menu, which is not a Cleanliness Good."><![CDATA[Cleanliness Need]]></string>
+<string id="ClothesTooltip" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Clothes Need]]></string>
+<string id="EntertainmentTooltip" MD5Hash="" mod="20070614152222" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Entertainment Need]]></string>
+<string id="DecorationTooltip" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Decoration Wish]]></string>
+<string id="ProsperityTooltip" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Prosperity Wish]]></string>
+<string id="MilitaryTooltip" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Military Production]]></string>
+<string id="Storage" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Storehouse Capacity]]></string>
+<string id="CityInfoButton" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[City Information]]></string>
+<string id="TerritoryTooltip" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Territory]]></string>
+<string id="WeatherMonthTooltip1" MD5Hash="" mod="20070725092712" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="use in the wether menu - same for the 12 names but different in the description"><![CDATA[Current Month]]></string>
+<string id="SettlersIcon" MD5Hash="" mod="20070709154207" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Settlers Limit]]></string>
+<string id="SpousesIcon" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Spouses]]></string>
+<string id="BattalionsIcon" MD5Hash="" mod="20070709160003" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Soldiers Limit]]></string>
+<string id="TaxesSlider" MD5Hash="" mod="20070819162158" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Taxes]]></string>
+<string id="PaymentSlider" MD5Hash="" mod="20070819125745" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Soldiers' Pay]]></string>
+<string id="StartStopHuntCows" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Hunt Cows]]></string>
+<string id="StartStopHuntSheeps" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Hunt Sheep]]></string>
+<string id="CityBuildingsNumber" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[City Buildings]]></string>
+<string id="DecorationG_Ornament" MD5Hash="" mod="20070801143040" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Roof Ornaments]]></string>
+<string id="DecorationG_Sign" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Benches]]></string>
+<string id="DecorationG_Banner" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Banners]]></string>
+<string id="DecorationG_Candle" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Candles]]></string>
+<string id="PoorAmountTooltip" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Poor City Buildings]]></string>
+<string id="RichAmountTooltip" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Rich City Buildings]]></string>
+<string id="CityReputationBG" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[City Reputation]]></string>
+<string id="ReputationIcon" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[City Reputation]]></string>
+<string id="ResourcesButton" MD5Hash="" mod="20060117185014" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Resources]]></string>
+<string id="HireEntertainer" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Entertainer]]></string>
+<string id="HireMercenaries" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Mercenaries]]></string>
+<string id="JumpToEntityQuestTargets" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Jump to Targets]]></string>
+<string id="JumpToEntitySentCart" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Jump to Cart]]></string>
+<string id="JumpToSender" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Jump to Faction]]></string>
+<string id="TutorialNextButton" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Next Step]]></string>
+<string id="Logo" MD5Hash="" mod="20070820073258" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="Crest symbol of Questgiver is shown next to the Quest-Info button"><![CDATA[Questgiver]]></string>
+<string id="TimerButtonDisplay" MD5Hash="" mod="20070802162338" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Display Quest Message]]></string>
+<string id="TimerButtonMinimize" MD5Hash="" mod="20070809125915" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Minimise Quest Message]]></string>
+<string id="TradeNothingSelected" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Select Good]]></string>
+<string id="TradeHostile" MD5Hash="" mod="20070614114203" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Enemy Faction]]></string>
+<string id="TradeSell" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Sell Goods]]></string>
+<string id="TradeSend" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Send Goods]]></string>
+<string id="U_MilitaryBow_RedPrince" MD5Hash="" mod="20060117094034" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bowmen]]></string>
+<string id="U_MilitaryBow" MD5Hash="" mod="20060117094034" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bowmen]]></string>
+<string id="U_MilitarySword" MD5Hash="" mod="20060117094034" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Swordsmen]]></string>
+<string id="U_MilitarySword_RedPrince" MD5Hash="" mod="20070822094034" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Swordsmen]]></string>
+<string id="U_Thief" MD5Hash="" mod="20060117094034" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Thief]]></string>
+<string id="U_Baker" MD5Hash="" mod="20060117093549" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Baker]]></string>
+<string id="U_BathWorker" MD5Hash="" mod="20060117093625" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Baths Worker]]></string>
+<string id="U_DairyWorker" MD5Hash="" mod="20060117093714" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dairy Worker]]></string>
+<string id="U_HerbGatherer" MD5Hash="" mod="20060117093816" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Herb Gatherer]]></string>
+<string id="U_GrainFarmer" MD5Hash="" mod="20070614115032" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: changed Farmer to Grain Farmer"><![CDATA[Grain Farmer]]></string>
+<string id="U_CattleFarmer" MD5Hash="" mod="20070614114641" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: changed Herdsman back to Cattle Farmer"><![CDATA[Cattle Farmer]]></string>
+<string id="U_Woodcutter" MD5Hash="" mod="20060117094119" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Woodcutter]]></string>
+<string id="U_SheepFarmer" MD5Hash="" mod="20070614115323" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: changed Shepherd back to Sheep Farmer"><![CDATA[Sheep Farmer]]></string>
+<string id="U_Beekeeper" MD5Hash="" mod="20060117093632" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Beekeeper]]></string>
+<string id="U_Barkeeper" MD5Hash="" mod="20070801154150" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Tavernkeeper]]></string>
+<string id="U_IronMiner" MD5Hash="" mod="20070614115049" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: changed Miner to Iron Miner"><![CDATA[Iron Miner]]></string>
+<string id="U_Stonecutter" MD5Hash="" mod="20060117094020" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Stonecutter]]></string>
+<string id="U_Fisher" MD5Hash="" mod="20060117093802" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Fisherman]]></string>
+<string id="U_Hunter" MD5Hash="" mod="20060117093821" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Hunter]]></string>
+<string id="U_SmokeHouseWorker" MD5Hash="" mod="20060117093936" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Smokehouse Worker]]></string>
+<string id="U_Butcher" MD5Hash="" mod="20060117093642" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Butcher]]></string>
+<string id="U_Pharmacist" MD5Hash="" mod="20060117093909" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Pharmacist]]></string>
+<string id="U_Soapmaker" MD5Hash="" mod="20070614115335" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Soap Maker]]></string>
+<string id="U_BroomMaker" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Broom Maker]]></string>
+<string id="U_Tanner" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Tanner]]></string>
+<string id="U_Weaver" MD5Hash="" mod="20060117094105" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Weaver]]></string>
+<string id="U_Blacksmith" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Blacksmith]]></string>
+<string id="U_Carpenter" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Carpenter]]></string>
+<string id="U_BannerMaker" MD5Hash="" mod="20070614114536" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Banner Maker]]></string>
+<string id="U_CandleMaker" MD5Hash="" mod="20070614114548" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Candle Maker]]></string>
+<string id="U_TheatreWorker" MD5Hash="" mod="20070809130112" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Theatre Worker]]></string>
+<string id="U_Actor" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Actor]]></string>
+<string id="U_Priest" MD5Hash="" mod="20060117093915" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Priest]]></string>
+<string id="U_TaxCollector" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Tax Collector]]></string>
+<string id="U_WallConstructionWorker" MD5Hash="" mod="20070826105238" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Builder]]></string>
+<string id="U_OutpostConstructionWorker" MD5Hash="" mod="20070826105224" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Builder]]></string>
+<string id="U_BowMaker" MD5Hash="" mod="20060117093915" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bow Maker]]></string>
+<string id="U_SwordSmith" MD5Hash="" mod="20070613050531" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Swordsmith]]></string>
+<string id="U_Armourer" MD5Hash="" mod="20070809130000" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="This is the worker in the Swordsmen Barracks"><![CDATA[Swordsmen Armourer]]></string>
+<string id="U_BowArmourer" MD5Hash="" mod="20070809130025" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="This is the worker in the Bowmen Barracks"><![CDATA[Bowmen Armourer]]></string>
+<string id="U_SiegeEngineBuilder" MD5Hash="" mod="20060117093915" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Siege Engine Builder]]></string>
+<string id="U_SiegeEngineCart" MD5Hash="" mod="20060117093915" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Siege Engine Cart]]></string>
+<string id="U_MilitaryCatapult" MD5Hash="" mod="20060117094034" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Catapult]]></string>
+<string id="U_MilitaryBallista" MD5Hash="" mod="20070608151203" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Mounted Catapult]]></string>
+<string id="U_MilitarySiegeTower" MD5Hash="" mod="20060117094034" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Siege Tower]]></string>
+<string id="U_SpouseS01" MD5Hash="" mod="20060117094006" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Spouse]]></string>
+<string id="U_SpouseS02" MD5Hash="" mod="20060117094011" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Spouse]]></string>
+<string id="U_SpouseS03" MD5Hash="" mod="20060117094015" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Spouse]]></string>
+<string id="U_SpouseF01" MD5Hash="" mod="20060117094006" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Spouse]]></string>
+<string id="U_SpouseF02" MD5Hash="" mod="20060117094011" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Spouse]]></string>
+<string id="U_SpouseF03" MD5Hash="" mod="20060117094015" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Spouse]]></string>
+<string id="U_Villager" MD5Hash="" mod="20060117093852" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Merchant]]></string>
+<string id="U_Mercenary" MD5Hash="" mod="20060117093852" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Mercenary]]></string>
+<string id="U_NPC_Trader" MD5Hash="" mod="20060117093852" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Trader]]></string>
+<string id="U_Marketer" MD5Hash="" mod="20060117093852" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Merchant]]></string>
+<string id="U_ResourceMerchant" MD5Hash="" mod="20060117093852" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Resource Merchant]]></string>
+<string id="U_TradeGatherer" MD5Hash="" mod="20070630093852" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Trade Gatherer]]></string>
+<string id="U_GoldCart" MD5Hash="" mod="20060117093852" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Gold Cart]]></string>
+<string id="U_FireEater" MD5Hash="" mod="20060117093852" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Fire Eater]]></string>
+<string id="U_KnightTrading" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Elias]]></string>
+<string id="U_KnightHealing" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Alandra]]></string>
+<string id="U_KnightChivalry" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Marcus]]></string>
+<string id="U_KnightWisdom" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Hakim]]></string>
+<string id="U_KnightPlunder" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Kestral]]></string>
+<string id="U_KnightSong" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Thordal]]></string>
+<string id="Buff_NoPayment" MD5Hash="" mod="20070819125357" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[No Soldiers' Pay]]></string>
+<string id="Buff_ExtraPayment" MD5Hash="" mod="20070819125406" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[High Soldiers' Pay]]></string>
+<string id="Buff_Sermon" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Sermon]]></string>
+<string id="Buff_Colour" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dyes]]></string>
+<string id="Buff_Entertainers" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Entertainer]]></string>
+<string id="Buff_Festival" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Festival]]></string>
+<string id="Buff_Spice" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Salt]]></string>
+<string id="Buff_HighTaxes" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[High Taxes]]></string>
+<string id="Buff_NoTaxes" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[No Taxes]]></string>
+<string id="Buff_SmallThieves" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Thieves]]></string>
+<string id="Buff_SomeEnemySoldiersInCity" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Some Enemies in City]]></string>
+<string id="Buff_MoreEnemySoldiersInCity" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Many Enemies in City]]></string>
+<string id="Buff_ManyEnemySoldiersInCity" MD5Hash="" mod="20070919081948" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Enemy Invasion]]></string>
+<string id="InteractiveObjectAvailable" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Interaction]]></string>
+<string id="InteractiveObjectNotAvailable" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Interaction]]></string>
+<string id="R_Gathering" MD5Hash="" mod="20070614141354" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Gatherer Buildings]]></string>
+<string id="R_Nutrition" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Food Buildings]]></string>
+<string id="R_Clothes" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Clothes Buildings]]></string>
+<string id="R_Wall" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Wall]]></string>
+<string id="R_Pallisade" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Palisade]]></string>
+<string id="R_Hygiene" MD5Hash="" mod="20070613050201" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cleanliness Buildings]]></string>
+<string id="R_Swordfighter" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Swordsmith and Barracks]]></string>
+<string id="R_Festival" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Festival]]></string>
+<string id="R_Medicine" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Pharmacy]]></string>
+<string id="R_Tavern" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Tavern]]></string>
+<string id="R_Street" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Streets]]></string>
+<string id="R_Sermon" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Sermon]]></string>
+<string id="R_Entertainment" MD5Hash="" mod="20070614152523" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Entertainment Buildings]]></string>
+<string id="R_BatteringRam" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Battering Ram]]></string>
+<string id="R_HeavyWeapons" MD5Hash="" mod="20070819125915" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Siege Engines]]></string>
+<string id="R_Ballista" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Mounted Catapult]]></string>
+<string id="R_Prosperity" MD5Hash="" mod="20070819131155" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="??? unused"><![CDATA[Ability to adjust Taxes]]></string>
+<string id="R_BannerMaker" MD5Hash="" mod="20070614113638" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Banner Maker]]></string>
+<string id="R_Bowfighter" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bow Maker and Barracks]]></string>
+<string id="R_SiegeEngineWorkshop" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Siege Engine Workshop]]></string>
+<string id="R_SiegeTower" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Siege Tower]]></string>
+<string id="R_Catapult" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Catapult]]></string>
+<string id="R_Thieves" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Thieves]]></string>
+<string id="R_Theater" MD5Hash="" mod="20070809125725" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Theatre]]></string>
+<string id="R_Baths" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Baths]]></string>
+<string id="R_Carpenter" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Carpenter]]></string>
+<string id="R_Blacksmith" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Blacksmith]]></string>
+<string id="R_CandleMaker" MD5Hash="" mod="20070614113650" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Candle Maker]]></string>
+<string id="R_Victory" MD5Hash="" mod="20070627112914" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Victory]]></string>
+<string id="NeededClothes" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Needed Clothes]]></string>
+<string id="NeededHygiene" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Needed Cleaning Goods]]></string>
+<string id="NeededEntertainment" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Needed Mead]]></string>
+<string id="NeededDecorationObjects" MD5Hash="" mod="20070808141637" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="The requirement is:{cr}X buildings with all four Decoration objects."><![CDATA[Fully Decorated Buildings]]></string>
+<string id="Title_Knight_male" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Knight]]></string>
+<string id="Title_Mayor_male" MD5Hash="" mod="20070629080850" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Sheriff]]></string>
+<string id="Title_Baron_male" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Baron]]></string>
+<string id="Title_Earl_male" MD5Hash="" mod="20070629080744" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Count]]></string>
+<string id="Title_Marquees_male" MD5Hash="" mod="20070613050256" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Marquis]]></string>
+<string id="Title_Duke_male" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Duke]]></string>
+<string id="Title_Archduke_male" MD5Hash="" mod="20070622094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Archduke]]></string>
+<string id="Title_Knight_female" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Lady]]></string>
+<string id="Title_Mayor_female" MD5Hash="" mod="20070629080846" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Sheriff]]></string>
+<string id="Title_Baron_female" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Baroness]]></string>
+<string id="Title_Earl_female" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Countess]]></string>
+<string id="Title_Marquees_female" MD5Hash="" mod="20070629080859" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Marquise]]></string>
+<string id="Title_Duke_female" MD5Hash="" mod="20060117094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Duchess]]></string>
+<string id="Title_Archduke_female" MD5Hash="" mod="20070622094139" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Archduchess]]></string>
+<string id="FeedbackSpeechButton" MD5Hash="" mod="20070608164442" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Jump to Message Target]]></string>
+<string id="PromoteKnight" MD5Hash="" mod="20070611070101" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Promote Knight]]></string>
+<string id="SendGoods" MD5Hash="" mod="20070611121811" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Send Goods]]></string>
+<string id="MissionSpecific_Bless" MD5Hash="" mod="20070613091718" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Blessing]]></string>
+<string id="MissionSpecific_StartAttack" MD5Hash="" mod="20070613091714" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Attack]]></string>
+<string id="MissionSpecific_Trebuchet" MD5Hash="" mod="20070613091700" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Trebuchets]]></string>
+<string id="G_MedicinLadyHealing" MD5Hash="" mod="20070809125627" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Alandra, Lady of Healing]]></string>
+<string id="AbilityConvertCrimsonSabatt" MD5Hash="" mod="20070615092812" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Crimson Sabatt's Conversion]]></string>
+<string id="AbilityPlagueRedPrince" MD5Hash="" mod="20070615092816" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Red Prince's Tribute]]></string>
+<!--<string id="AbilityPlagueRedPrince" MD5Hash="" mod="20070615092816" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Red Prince's Plague]]></string>-->
+<string id="OfferAmount" MD5Hash="" mod="20070626090946" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: how often you can buy this offer."><![CDATA[Offers]]></string>
+<string id="OfferGoodAmount" MD5Hash="" mod="20070626090956" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: this can refer to different offers like &quot;10 Wood&quot;, &quot;5 Sheep&quot;, &quot;1 Entertainer&quot;, &quot;3 Mercenaries&quot;."><![CDATA[Amount]]></string>
+<string id="CausingPlayerIcon" MD5Hash="" mod="20070628093750" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Causing Faction]]></string>
+<string id="NextTitleWish" MD5Hash="" mod="20070629153317" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Upcoming Wish]]></string>
+<string id="NextTitleNeed" MD5Hash="" mod="20070629160326" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Upcoming Need]]></string>
+<string id="Sales" MD5Hash="" mod="20070709115442" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Sales]]></string>
+<string id="R_AmmunitionCart" MD5Hash="" mod="20070712132956" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Ammo Cart]]></string>
+<string id="R_Taxes" MD5Hash="" mod="20070819130409" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Adjust Taxation Level]]></string>
+<string id="WeatherMenuButton" MD5Hash="" mod="20070726100226" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Weather Menu]]></string>
+<string id="WeatherTooltipRain" MD5Hash="" mod="20070725092252" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="use in the weather in game menu"><![CDATA[Current Weather]]></string>
+<string id="Taxes" MD5Hash="" mod="20070718113909" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Taxes]]></string>
+<string id="Earnings" MD5Hash="" mod="20070718114854" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Earnings]]></string>
+<string id="NeedFulfillmentBar" MD5Hash="" mod="20070718123101" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: This is the Bar underneath a Need Icon in a Building Selection Menu, e.g. the Dairy&apos;s Menu. It shows how much longer the inhabitants will work before getting a{cr}Good for this Need."><![CDATA[Need Fulfillment]]></string>
+<string id="DiplomacyStateAllied" MD5Hash="" mod="20070718130934" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: Diplomacy States are, from worst to best: Enemy, Undecided, EstablishedContact, TradeContact, Allied."><![CDATA[Allied Faction]]></string>
+<string id="DiplomacyStateEnemy" MD5Hash="" mod="20070718130936" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: Diplomacy States are, from worst to best: Enemy, Undecided, EstablishedContact, TradeContact, Allied."><![CDATA[Enemy Faction]]></string>
+<string id="DiplomacyStateEstablishedContact" MD5Hash="" mod="20070718130937" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: Diplomacy States are, from worst to best: Enemy, Undecided, EstablishedContact, TradeContact, Allied."><![CDATA[Established Contact]]></string>
+<string id="DiplomacyStateTradeContact" MD5Hash="" mod="20070718130938" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: Diplomacy States are, from worst to best: Enemy, Undecided, EstablishedContact, TradeContact, Allied."><![CDATA[Trade Contact]]></string>
+<string id="DiplomacyStateUndecided" MD5Hash="" mod="20070718130939" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: Diplomacy States are, from worst to best: Enemy, Undecided, EstablishedContact, TradeContact, Allied."><![CDATA[Undecided Faction]]></string>
+<string id="FeedbackWidgetsGold" MD5Hash="" mod="20070718132951" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: This is used for the pop-up widgets that appear beneath the Gold counter when the Tax Collector returns, Soldier Payment is paid, a {cr}Trade Cart with Gold arrives, a Trade Cart with Gold is robbed, etc."><![CDATA[Gold Income and Outcome]]></string>
+<string id="FeedbackWidgetsSpouses" MD5Hash="" mod="20070718133119" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: This is used for the pop-up widgets that appear beneath the City Reputation bar when there are new Spouses after a festival, and when Spouses are robbed by{cr}vikings."><![CDATA[Spouses]]></string>
+<string id="BanditsCamp_MiddleEurope" MD5Hash="" mod="20070719144000" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bandits]]></string>
+<string id="BanditsCamp_NorthEurope" MD5Hash="" mod="20070719144011" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Vikings]]></string>
+<string id="BanditsCamp_SouthEurope" MD5Hash="" mod="20070719144016" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Robbers]]></string>
+<string id="BanditsCamp_NorthAfrica" MD5Hash="" mod="20070719144007" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Desert Raiders]]></string>
+<string id="PlayerCategory_Cloister" MD5Hash="" mod="20070719144026" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cloister]]></string>
+<string id="PlayerCategory_Village" MD5Hash="" mod="20070719144030" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Village]]></string>
+<string id="SpeechStartAgainOrStop" MD5Hash="" mod="20070802173825" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: Used to Start a Quest speech again. No Stop functionality, actually."><![CDATA[Start Speech]]></string>
+<string id="Title_Menu_Archduke_female" MD5Hash="" mod="20070724170253" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Promotion Menu]]></string>
+<string id="Title_Menu_Archduke_male" MD5Hash="" mod="20070724164557" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Promotion Menu]]></string>
+<string id="Title_Menu_Baron_female" MD5Hash="" mod="20070724164600" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Promotion Menu]]></string>
+<string id="Title_Menu_Baron_male" MD5Hash="" mod="20070724164602" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Promotion Menu]]></string>
+<string id="Title_Menu_Duke_female" MD5Hash="" mod="20070724164603" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Promotion Menu]]></string>
+<string id="Title_Menu_Duke_male" MD5Hash="" mod="20070724164604" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Promotion Menu]]></string>
+<string id="Title_Menu_Earl_female" MD5Hash="" mod="20070724164604" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Promotion Menu]]></string>
+<string id="Title_Menu_Earl_male" MD5Hash="" mod="20070724164605" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Promotion Menu]]></string>
+<string id="Title_Menu_Marquees_female" MD5Hash="" mod="20070724164606" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Promotion Menu]]></string>
+<string id="Title_Menu_Marquees_male" MD5Hash="" mod="20070724164607" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Promotion Menu]]></string>
+<string id="Title_Menu_Mayor_female" MD5Hash="" mod="20070724164608" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Promotion Menu]]></string>
+<string id="Title_Menu_Mayor_male" MD5Hash="" mod="20070724164608" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Promotion Menu]]></string>
+<string id="Title_Menu_Knight_female" MD5Hash="" mod="20070724164605" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Promotion Menu]]></string>
+<string id="Title_Menu_Knight_male" MD5Hash="" mod="20070724164606" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Promotion Menu]]></string>
+<string id="Title_MenuFinal_Archduke_female" MD5Hash="" mod="20070724170202" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: The maximum Title that can be achieved on this map. It&apos;s Archduke in standard Singleplayer and Multiplayer maps; it&apos;s variable on Campaign maps."><![CDATA[Final Title]]></string>
+<string id="Title_MenuFinal_Archduke_male" MD5Hash="" mod="20070724170203" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: The maximum Title that can be achieved on this map. It&apos;s Archduke in standard Singleplayer and Multiplayer maps; it&apos;s variable on Campaign maps."><![CDATA[Final Title]]></string>
+<string id="Title_MenuFinal_Baron_female" MD5Hash="" mod="20070724170205" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: The maximum Title that can be achieved on this map. It&apos;s Archduke in standard Singleplayer and Multiplayer maps; it&apos;s variable on Campaign maps."><![CDATA[Final Title]]></string>
+<string id="Title_MenuFinal_Baron_male" MD5Hash="" mod="20070724170206" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: The maximum Title that can be achieved on this map. It&apos;s Archduke in standard Singleplayer and Multiplayer maps; it&apos;s variable on Campaign maps."><![CDATA[Final Title]]></string>
+<string id="Title_MenuFinal_Duke_female" MD5Hash="" mod="20070724170209" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: The maximum Title that can be achieved on this map. It&apos;s Archduke in standard Singleplayer and Multiplayer maps; it&apos;s variable on Campaign maps."><![CDATA[Final Title]]></string>
+<string id="Title_MenuFinal_Duke_male" MD5Hash="" mod="20070724170210" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: The maximum Title that can be achieved on this map. It&apos;s Archduke in standard Singleplayer and Multiplayer maps; it&apos;s variable on Campaign maps."><![CDATA[Final Title]]></string>
+<string id="Title_MenuFinal_Earl_female" MD5Hash="" mod="20070724170211" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: The maximum Title that can be achieved on this map. It&apos;s Archduke in standard Singleplayer and Multiplayer maps; it&apos;s variable on Campaign maps."><![CDATA[Final Title]]></string>
+<string id="Title_MenuFinal_Earl_male" MD5Hash="" mod="20070724170212" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: The maximum Title that can be achieved on this map. It&apos;s Archduke in standard Singleplayer and Multiplayer maps; it&apos;s variable on Campaign maps."><![CDATA[Final Title]]></string>
+<string id="Title_MenuFinal_Marquees_female" MD5Hash="" mod="20070724170214" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: The maximum Title that can be achieved on this map. It&apos;s Archduke in standard Singleplayer and Multiplayer maps; it&apos;s variable on Campaign maps."><![CDATA[Final Title]]></string>
+<string id="Title_MenuFinal_Marquees_male" MD5Hash="" mod="20070724170214" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: The maximum Title that can be achieved on this map. It&apos;s Archduke in standard Singleplayer and Multiplayer maps; it&apos;s variable on Campaign maps."><![CDATA[Final Title]]></string>
+<string id="Title_MenuFinal_Mayor_female" MD5Hash="" mod="20070724170215" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: The maximum Title that can be achieved on this map. It&apos;s Archduke in standard Singleplayer and Multiplayer maps; it&apos;s variable on Campaign maps."><![CDATA[Final Title]]></string>
+<string id="Title_MenuFinal_Mayor_male" MD5Hash="" mod="20070724170216" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: The maximum Title that can be achieved on this map. It&apos;s Archduke in standard Singleplayer and Multiplayer maps; it&apos;s variable on Campaign maps."><![CDATA[Final Title]]></string>
+<string id="Title_MenuFinal_Knight_female" MD5Hash="" mod="20070724170212" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: The maximum Title that can be achieved on this map. It&apos;s Archduke in standard Singleplayer and Multiplayer maps; it&apos;s variable on Campaign maps."><![CDATA[Final Title]]></string>
+<string id="Title_MenuFinal_Knight_male" MD5Hash="" mod="20070724170159" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: The maximum Title that can be achieved on this map. It&apos;s Archduke in standard Singleplayer and Multiplayer maps; it&apos;s variable on Campaign maps."><![CDATA[Final Title]]></string>
+<string id="WeatherTooltipSun" MD5Hash="" mod="20070725092426" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Current Weather]]></string>
+<string id="WeatherTooltipSnow" MD5Hash="" mod="20070725092425" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Current Weather]]></string>
+<string id="WeatherMonthTooltip2" MD5Hash="" mod="20070725092722" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="use in the wether menu - same for the 12 names but different in the description"><![CDATA[Current Month]]></string>
+<string id="WeatherMonthTooltip3" MD5Hash="" mod="20070725092723" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="use in the wether menu - same for the 12 names but different in the description"><![CDATA[Current Month]]></string>
+<string id="WeatherMonthTooltip4" MD5Hash="" mod="20070725092726" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="use in the wether menu - same for the 12 names but different in the description"><![CDATA[Current Month]]></string>
+<string id="WeatherMonthTooltip5" MD5Hash="" mod="20070725092728" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="use in the wether menu - same for the 12 names but different in the description"><![CDATA[Current Month]]></string>
+<string id="WeatherMonthTooltip6" MD5Hash="" mod="20070725092729" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="use in the wether menu - same for the 12 names but different in the description"><![CDATA[Current Month]]></string>
+<string id="WeatherMonthTooltip7" MD5Hash="" mod="20070725092731" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="use in the wether menu - same for the 12 names but different in the description"><![CDATA[Current Month]]></string>
+<string id="WeatherMonthTooltip8" MD5Hash="" mod="20070725092732" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="use in the wether menu - same for the 12 names but different in the description"><![CDATA[Current Month]]></string>
+<string id="WeatherMonthTooltip9" MD5Hash="" mod="20070725092734" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="use in the wether menu - same for the 12 names but different in the description"><![CDATA[Current Month]]></string>
+<string id="WeatherMonthTooltip10" MD5Hash="" mod="20070725092717" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="use in the wether menu - same for the 12 names but different in the description"><![CDATA[Current Month]]></string>
+<string id="WeatherMonthTooltip11" MD5Hash="" mod="20070725092719" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="use in the wether menu - same for the 12 names but different in the description"><![CDATA[Current Month]]></string>
+<string id="WeatherMonthTooltip12" MD5Hash="" mod="20070725092720" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="use in the wether menu - same for the 12 names but different in the description"><![CDATA[Current Month]]></string>
+<string id="WeatherConsequencesTooltip" MD5Hash="" mod="20070725092839" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Weather Consequences]]></string>
+<string id="WeatherFishingYes" MD5Hash="" mod="20070725093750" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Fishing]]></string>
+<string id="WeatherFishingNo" MD5Hash="" mod="20070725093746" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Fishing]]></string>
+<string id="WeatherGrainYes" MD5Hash="" mod="20070725093756" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Grain]]></string>
+<string id="WeatherGrainNo" MD5Hash="" mod="20070725093753" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Grain]]></string>
+<string id="WeatherBeehivesYes" MD5Hash="" mod="20070725093807" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Beehives]]></string>
+<string id="WeatherBeehivesNo" MD5Hash="" mod="20070725093801" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Beehives]]></string>
+<string id="Temperature" MD5Hash="" mod="20070726112202" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="use as tooltip in weather in-game menu"><![CDATA[Temperature]]></string>
+<string id="PlayerCategory_City" MD5Hash="" mod="20070726131144" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[City]]></string>
+<string id="ClimateZone_MiddleEurope" MD5Hash="" mod="20070731093337" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Mild]]></string>
+<string id="ClimateZone_NorthEurope" MD5Hash="" mod="20070731093347" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cold]]></string>
+<string id="ClimateZone_SouthEurope" MD5Hash="" mod="20070731093351" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Warm]]></string>
+<string id="ClimateZone_NorthAfrica" MD5Hash="" mod="20070731093342" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Hot]]></string>
+<string id="OutstockAmount" MD5Hash="" mod="20070726131454" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Produced Goods]]></string>
+<string id="U_PrisonCart" MD5Hash="" mod="20070731183844" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Prison Cart]]></string>
+<string id="GoldMessagesTooltip" MD5Hash="" mod="20070731121134" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Gold Flow]]></string>
+<string id="CityMessagesTooltip" MD5Hash="" mod="20070731121127" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Spouses]]></string>
+<string id="MissionCounterTooltip" MD5Hash="" mod="20070731130355" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: Refers to a counter that can count either Goods or Entities."><![CDATA[Counter]]></string>
+<string id="MissionTimerTooltip" MD5Hash="" mod="20070731130335" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Timer]]></string>
+<string id="Abilities_U_MilitarySword" MD5Hash="" mod="20070801111643" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: Check for intentionally identical texts:{cr}in the text key without &quot;Abilities_&quot; in this same section. E.g. for &quot;Abilities_U_MilitarySword&quot; check &quot;U_MilitarySword&quot;.{cr}Also in &quot;Buy...&quot;, e.g. &quot;BuySwordfighters&quot;."><![CDATA[Swordsmen]]></string>
+<string id="Abilities_U_MilitarySword_RedPrince" MD5Hash="" mod="20070822111643" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: Check for intentionally identical texts:{cr}in the text key without &quot;Abilities_&quot; in this same section. E.g. for &quot;Abilities_U_MilitarySword&quot; check &quot;U_MilitarySword&quot;.{cr}Also in &quot;Buy...&quot;, e.g. &quot;BuySwordfighters&quot;."><![CDATA[Swordsmen]]></string>
+<string id="Abilities_U_MilitaryBow" MD5Hash="" mod="20070801124051" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: Check for intentionally identical texts:{cr}in the text key without &quot;Abilities_&quot; in this same section. E.g. for &quot;Abilities_U_MilitarySword&quot; check &quot;U_MilitarySword&quot;.{cr}Also in &quot;Buy...&quot;, e.g. &quot;BuySwordfighters&quot;."><![CDATA[Bowmen]]></string>
+<string id="Abilities_U_MilitaryBow_RedPrince" MD5Hash="" mod="20070822124051" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: Check for intentionally identical texts:{cr}in the text key without &quot;Abilities_&quot; in this same section. E.g. for &quot;Abilities_U_MilitarySword&quot; check &quot;U_MilitarySword&quot;.{cr}Also in &quot;Buy...&quot;, e.g. &quot;BuySwordfighters&quot;."><![CDATA[Bowmen]]></string>
+<string id="Abilities_U_Thief" MD5Hash="" mod="20070801124059" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: Check for intentionally identical texts:{cr}in the text key without &quot;Abilities_&quot; in this same section. E.g. for &quot;Abilities_U_MilitarySword&quot; check &quot;U_MilitarySword&quot;.{cr}Also in &quot;Buy...&quot;, e.g. &quot;BuySwordfighters&quot;."><![CDATA[Thief]]></string>
+<string id="Abilities_U_AmmunitionCart" MD5Hash="" mod="20070801124039" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: Check for intentionally identical texts:{cr}in the text key without &quot;Abilities_&quot; in this same section. E.g. for &quot;Abilities_U_MilitarySword&quot; check &quot;U_MilitarySword&quot;.{cr}Also in &quot;Buy...&quot;, e.g. &quot;BuySwordfighters&quot;."><![CDATA[Ammo Cart]]></string>
+<string id="Abilities_U_SiegeTowerCart" MD5Hash="" mod="20070801124058" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: Check for intentionally identical texts:{cr}in the text key without &quot;Abilities_&quot; in this same section. E.g. for &quot;Abilities_U_MilitarySword&quot; check &quot;U_MilitarySword&quot;.{cr}Also in &quot;Buy...&quot;, e.g. &quot;BuySwordfighters&quot;."><![CDATA[Siege Tower Cart]]></string>
+<string id="Abilities_U_BatteringRamCart" MD5Hash="" mod="20070801124041" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: Check for intentionally identical texts:{cr}in the text key without &quot;Abilities_&quot; in this same section. E.g. for &quot;Abilities_U_MilitarySword&quot; check &quot;U_MilitarySword&quot;.{cr}Also in &quot;Buy...&quot;, e.g. &quot;BuySwordfighters&quot;."><![CDATA[Battering Ram Cart]]></string>
+<string id="Abilities_U_CatapultCart" MD5Hash="" mod="20070801124042" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: Check for intentionally identical texts:{cr}in the text key without &quot;Abilities_&quot; in this same section. E.g. for &quot;Abilities_U_MilitarySword&quot; check &quot;U_MilitarySword&quot;.{cr}Also in &quot;Buy...&quot;, e.g. &quot;BuySwordfighters&quot;."><![CDATA[Catapult Cart]]></string>
+<string id="Abilities_U_MilitaryBallista" MD5Hash="" mod="20070801124044" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: Check for intentionally identical texts:{cr}in the text key without &quot;Abilities_&quot; in this same section. E.g. for &quot;Abilities_U_MilitarySword&quot; check &quot;U_MilitarySword&quot;.{cr}Also in &quot;Buy...&quot;, e.g. &quot;BuySwordfighters&quot;."><![CDATA[Mounted Catapult]]></string>
+<string id="Abilities_U_MilitaryCatapult" MD5Hash="" mod="20070801124053" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: Check for intentionally identical texts:{cr}in the text key without &quot;Abilities_&quot; in this same section. E.g. for &quot;Abilities_U_MilitarySword&quot; check &quot;U_MilitarySword&quot;.{cr}Also in &quot;Buy...&quot;, e.g. &quot;BuySwordfighters&quot;."><![CDATA[Catapult]]></string>
+<string id="Abilities_U_MilitarySiegeTower" MD5Hash="" mod="20070801124055" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: Check for intentionally identical texts:{cr}in the text key without &quot;Abilities_&quot; in this same section. E.g. for &quot;Abilities_U_MilitarySword&quot; check &quot;U_MilitarySword&quot;.{cr}Also in &quot;Buy...&quot;, e.g. &quot;BuySwordfighters&quot;."><![CDATA[Siege Tower]]></string>
+<string id="Abilities_U_MilitaryBatteringRam" MD5Hash="" mod="20070801124045" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: Check for intentionally identical texts:{cr}in the text key without &quot;Abilities_&quot; in this same section. E.g. for &quot;Abilities_U_MilitarySword&quot; check &quot;U_MilitarySword&quot;.{cr}Also in &quot;Buy...&quot;, e.g. &quot;BuySwordfighters&quot;."><![CDATA[Battering Ram]]></string>
+<string id="Abilities_U_MilitaryCatapult_NoSoldiersAttached" MD5Hash="" mod="20070801124054" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: Check for intentionally identical texts:{cr}in the text key without &quot;Abilities_&quot; in this same section. E.g. for &quot;Abilities_U_MilitarySword&quot; check &quot;U_MilitarySword&quot;.{cr}Also in &quot;Buy...&quot;, e.g. &quot;BuySwordfighters&quot;."><![CDATA[Unmanned Catapult]]></string>
+<string id="Abilities_U_MilitaryBatteringRam_NoSoldiersAttached" MD5Hash="" mod="20070801124046" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: Check for intentionally identical texts:{cr}in the text key without &quot;Abilities_&quot; in this same section. E.g. for &quot;Abilities_U_MilitarySword&quot; check &quot;U_MilitarySword&quot;.{cr}Also in &quot;Buy...&quot;, e.g. &quot;BuySwordfighters&quot;."><![CDATA[Unmanned Battering Ram]]></string>
+<string id="Abilities_U_MilitarySiegeTower_NoSoldiersAttached" MD5Hash="" mod="20070801124055" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: Check for intentionally identical texts:{cr}in the text key without &quot;Abilities_&quot; in this same section. E.g. for &quot;Abilities_U_MilitarySword&quot; check &quot;U_MilitarySword&quot;.{cr}Also in &quot;Buy...&quot;, e.g. &quot;BuySwordfighters&quot;."><![CDATA[Unmanned Siege Tower]]></string>
+<string id="Abilities_U_KnightChivalry" MD5Hash="" mod="20070801133846" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Marcus]]></string>
+<string id="Abilities_U_KnightHealing" MD5Hash="" mod="20070801133850" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Alandra]]></string>
+<string id="Abilities_U_KnightPlunder" MD5Hash="" mod="20070801133947" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Kestral]]></string>
+<string id="Abilities_U_KnightSong" MD5Hash="" mod="20070801134010" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Thordal]]></string>
+<string id="Abilities_U_KnightRedPrince" MD5Hash="" mod="20070801133953" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Red Prince]]></string>
+<string id="Abilities_U_KnightWisdom" MD5Hash="" mod="20070801134017" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Hakim]]></string>
+<string id="Abilities_U_KnightTrading" MD5Hash="" mod="20070801134013" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Elias]]></string>
+<string id="Abilities_U_KnightSabatta" MD5Hash="" mod="20070801133958" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Crimson Sabatt]]></string>
+<string id="Abilities_U_MilitaryBandit_Melee_ME" MD5Hash="" mod="20070809124856" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Mercenary Swordsmen]]></string>
+<string id="Abilities_U_MilitaryBandit_Melee_NE" MD5Hash="" mod="20070809125124" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Mercenary Axemen]]></string>
+<string id="Abilities_U_MilitaryBandit_Melee_NA" MD5Hash="" mod="20070809124859" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Mercenary Swordsmen]]></string>
+<string id="Abilities_U_MilitaryBandit_Melee_SE" MD5Hash="" mod="20070809124904" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Mercenary Swordsmen]]></string>
+<string id="Abilities_U_MilitaryBandit_Ranged_ME" MD5Hash="" mod="20070809124940" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Mercenary Bowmen]]></string>
+<string id="Abilities_U_MilitaryBandit_Ranged_NE" MD5Hash="" mod="20070809125204" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Mercenary Axethrower]]></string>
+<string id="Abilities_U_MilitaryBandit_Ranged_SE" MD5Hash="" mod="20070809124948" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Mercenary Bowmen]]></string>
+<string id="Abilities_U_MilitaryBandit_Ranged_NA" MD5Hash="" mod="20070809124943" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Mercenary Bowmen]]></string>
+<string id="SoldierStrengthIcon" MD5Hash="" mod="20070801180651" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Soldiers Strength]]></string>
+<string id="ThiefCityReputation" MD5Hash="" mod="20070801190113" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: The Thief has the ability to find out what City Reputation the player has who owns the territory the Thief is standing on."><![CDATA[Faction's City Reputation]]></string>
+<string id="ThiefCityReputationPlayerIcon" MD5Hash="" mod="20070802102350" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments="KoBo: The Thief has the ability to find out what City Reputation the player has who owns the territory the Thief is standing on."><![CDATA[Faction]]></string>
+<string id="ProductionMenuButton" MD5Hash="" mod="20070803193641" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Production Menu]]></string>
+<string id="DiplomacyMenuButton" MD5Hash="" mod="20070806135754" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Diplomacy Menu]]></string>
+<string id="HouseMenuButton" MD5Hash="" mod="20070806142236" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Buildings Menu]]></string>
+<string id="SpecialEdition" MD5Hash="" mod="20070807085604" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="Refers to the special edition statues, pillar, pavilion."><![CDATA[Embellishments]]></string>
+<string id="B_SpecialEdition_Column" MD5Hash="" mod="20070817173704" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Column]]></string>
+<string id="B_SpecialEdition_Pavilion" MD5Hash="" mod="20070806154517" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Pavilion]]></string>
+<string id="B_SpecialEdition_StatueDario" MD5Hash="" mod="20070806154536" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dario Statue]]></string>
+<string id="B_SpecialEdition_StatueFamily" MD5Hash="" mod="20070806154544" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Family Statue]]></string>
+<string id="B_SpecialEdition_StatueProduction" MD5Hash="" mod="20070806154745" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Hunter Statue]]></string>
+<string id="B_SpecialEdition_StatueSettler" MD5Hash="" mod="20070806154558" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Settler Statue]]></string>
+<string id="MultiselectionTooltip" MD5Hash="" mod="20070807120010" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments="Name of the GUI feature to select and control multiple units."><![CDATA[Multiselection]]></string>
+<string id="MultiselectionSelectAllAgain" MD5Hash="" mod="20070807115853" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments="Refers to selecting all the units of the multiselection buttons."><![CDATA[Select All]]></string>
+<string id="BuildingsMenuStopProduction" MD5Hash="" mod="20070807191132" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments="Button to stop production in all buildings of the selected type."><![CDATA[Stop Production]]></string>
+<string id="BuildingsMenuResumeProduction" MD5Hash="" mod="20070807191217" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments="Button to resume production in all buildings of the selected type."><![CDATA[Resume Production]]></string>
+<string id="BuildingsMenuStopConsumption" MD5Hash="" mod="20070820162029" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments="Button to reserve produced goods of the selected building type."><![CDATA[Lock produced Goods]]></string>
+<string id="BuildingsMenuResumeConsumption" MD5Hash="" mod="20070820162045" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments="Button to resume consumption of the Goodtype of the selected building type."><![CDATA[Unlock produced Goods]]></string>
+<string id="SpecialAndMilitaryBuildings" MD5Hash="" mod="20070807203208" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments="In this case, this refers to Castle, Storehouse, Cathedral, Military buildings and Outposts."><![CDATA[Special and Military]]></string>
+<string id="NeededDecorationBanners" MD5Hash="" mod="20070808141406" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Needed Banners]]></string>
+<string id="BuildingsMenuGatherer" MD5Hash="" mod="20070817122151" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments="This one is used in the Buildings Menu (&quot;Production Menu&quot;)"><![CDATA[Gatherer Buildings]]></string>
+<string id="CityBuildings" MD5Hash="" mod="20070817122142" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments="This one is used in the Buildings Menu (&quot;Production Menu&quot;)"><![CDATA[City Buildings]]></string>
+<string id="QuestLog_Tooltip" MD5Hash="" mod="20070824125340" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments="used for the quest Log buttons"><![CDATA[Quest Log]]></string>
+<string id="Buff_ClothesDiversity" MD5Hash="" mod="20070826151343" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Clothes Diversity]]></string>
+<string id="Buff_FoodDiversity" MD5Hash="" mod="20070826151429" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Food Diversity]]></string>
+<string id="Buff_HygieneDiversity" MD5Hash="" mod="20070826151405" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cleaning Goods Diversity]]></string>
+<string id="Buff_EntertainmentDiversity" MD5Hash="" mod="20070826155138" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Entertainment Diversity]]></string>
+<string id="U_KnightSabatta" MD5Hash="" mod="20070830093452" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Crimson Sabatt]]></string>
+<string id="U_KnightRedPrince" MD5Hash="" mod="20070830093525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Red Prince]]></string>
+<string id="U_Trebuchet" MD5Hash="" mod="20070907124255" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Trebuchet]]></string>
+<string id="SpeedToggleButton" MD5Hash="" mod="20070917131550" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Adjust game speed]]></string>
+<string id="I_X_PortalTomb01_ME" MD5Hash="" mod="20080421120414" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dolmen]]></string>
+<string id="I_X_PortalTomb02_ME" MD5Hash="" mod="20080421120429" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dolmen]]></string>
+<string id="I_X_PortalTomb03_ME" MD5Hash="" mod="20080421120442" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dolmen]]></string>
+	<string id="ErectTrebuchet" MD5Hash="71FD008E955D82637A6A67362AEAA055" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Erect Trebuchet]]></string>
+	<string id="Abilities_U_TrebuchetCart" MD5Hash="6B56AC83972DB805D22C4EAA79C5769D" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Trebuchet Cart]]></string>
+	<string id="Abilities_U_MilitaryTrebuchet" MD5Hash="2A6A9144EAF0CAE75DDED46B10DFDC73" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Trebuchet]]></string>
+	<string id="Abilities_U_MilitaryTrebuchet_NoSoldiersAttached" MD5Hash="9CFCD9E906978EB79A57A0DE18C2DC9E" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Unmanned Trebuchet]]></string>
+	<string id="Abilities_U_Bear" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bear]]></string>
+	<string id="Abilities_U_PolarBear" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Polar Bear]]></string>
+	<string id="Abilities_U_BlackBear" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Black Bear]]></string>
+	<string id="Abilities_U_Lion_Male" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Lion]]></string>
+	<string id="Abilities_U_Lion_Female" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Lioness]]></string>
+	<string id="Abilities_U_Wolf_Grey" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Wolf]]></string>
+	<string id="Abilities_U_Wolf_White" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Wolf]]></string>
+	<string id="Abilities_U_Wolf_Black" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Wolf]]></string>
+	<string id="Abilities_U_Wolf_Brown" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Wolf]]></string>
+	<string id="Abilities_U_NPC_Castellan_ME" MD5Hash="0055D815AC3E445508C9F42176AAD579" mod="20080206075412" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Castellan]]></string>
+	<string id="Abilities_U_NPC_Castellan_NE" MD5Hash="0055D815AC3E445508C9F42176AAD579" mod="20080206075412" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Castellan]]></string>
+	<string id="Abilities_U_NPC_Castellan_NA" MD5Hash="0055D815AC3E445508C9F42176AAD579" mod="20080206075412" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Castellan]]></string>
+	<string id="Abilities_U_NPC_Castellan_SE" MD5Hash="0055D815AC3E445508C9F42176AAD579" mod="20080206075412" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Castellan]]></string>
+	<string id="U_NPC_Castellan_ME" MD5Hash="0055D815AC3E445508C9F42176AAD579" mod="20080206075412" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Castellan]]></string>
+	<string id="U_NPC_Castellan_NE" MD5Hash="0055D815AC3E445508C9F42176AAD579" mod="20080206075412" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Castellan]]></string>
+	<string id="U_NPC_Castellan_NA" MD5Hash="0055D815AC3E445508C9F42176AAD579" mod="20080206075412" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Castellan]]></string>
+	<string id="U_NPC_Castellan_SE" MD5Hash="0055D815AC3E445508C9F42176AAD579" mod="20080206075412" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Castellan]]></string>
+	<string id="B_GuardTower" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Guard Tower]]></string>
+	<string id="B_WatchTower" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Lookout Tower]]></string>
+	<string id="BuySpearfighters" MD5Hash="499006B1DC7CF75C0F9DF638C575904A" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Halberdier]]></string>
+	<string id="U_MilitarySword" MD5Hash="499006B1DC7CF75C0F9DF638C575904A" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Halberdier]]></string>
+	<string id="Abilities_U_MilitaryPoleArm" MD5Hash="499006B1DC7CF75C0F9DF638C575904A" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Halberdier]]></string>
+    <string id="Abilities_U_MilitaryCavalry" MD5Hash="377AE3ADBBD33D16DDFCC04584058269" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cavalry]]></string>
+</root>
