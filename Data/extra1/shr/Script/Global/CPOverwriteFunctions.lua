@@ -1,0 +1,4 @@
+function InitGlobalOverwriteCP()
+
+end
+

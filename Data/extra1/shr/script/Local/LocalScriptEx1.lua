@@ -34,8 +34,15 @@ do
         
         Script.Load("Script\\Shared\\OverwriteShared.lua" )
         InitSharedOverwrite()
-        
-        
+
+
+
+        -- Community Patch Local Overwrite
+        Script.Load("Script\\Local\\CPOverwriteFunctions.lua")
+        InitLocalOverwriteCP()
+        -- Community Patch Shared Overwrite
+        Script.Load("Script\\Shared\\CPOverwriteFunctions.lua")
+        InitSharedOverwriteCP()
     end
 end
 

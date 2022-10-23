@@ -1,17 +1,19 @@
 
 function InitSharedOverwrite()
 -- be careful, this table must have the same order like the "CustomGame.KnightTypes"-table *really ugly*
-    MPDefaultKnightNames = {"U_KnightSaraya",
-    "U_KnightTrading",
-    "U_KnightChivalry",
-    "U_KnightWisdom",
-    "U_KnightHealing",
-    "U_KnightPlunder",
-    "U_KnightSong",
-    "U_KnightSabatta",
-    "U_KnightRedPrince",
-    "U_KnightPraphat",
-    "U_KnightKhana" }
+    MPDefaultKnightNames = {
+        "U_KnightSaraya",
+        "U_KnightTrading",
+        "U_KnightChivalry",
+        "U_KnightWisdom",
+        "U_KnightHealing",
+        "U_KnightPlunder",
+        "U_KnightSong",
+        "U_KnightSabatta",
+        "U_KnightRedPrince",
+        "U_KnightPraphat",
+        "U_KnightKhana"
+    }
 
     
     -- InitKnightTitleTables

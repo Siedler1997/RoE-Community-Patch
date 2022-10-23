@@ -64,7 +64,6 @@ end
 
 
 function SetIcon(_Widget, _Coordinates, _OptionalIconSize )
-
     if _Coordinates == nil then
 
         if Debug_EnableDebugOutput then
@@ -96,24 +95,47 @@ function SetIcon(_Widget, _Coordinates, _OptionalIconSize )
     if _Coordinates[1] == 16 and _Coordinates[2]==16 then
         XGUIEng.SetMaterialAlpha(_Widget, WidgetState, 0)
     else
-        if _OptionalIconSize == nil
-        or _OptionalIconSize == 64 then
-            IconSize = 64
-            XGUIEng.SetMaterialTexture(_Widget, WidgetState, "IconsBig.png")
-        elseif _OptionalIconSize == 44 then
-            IconSize = 44
-            XGUIEng.SetMaterialTexture(_Widget, WidgetState, "Icons.png")
-        elseif _OptionalIconSize == 128 then
-            IconSize = 128
-            XGUIEng.SetMaterialTexture(_Widget, WidgetState, "IconsVeryBig.png")
-        end
+        XGUIEng.SetMaterialAlpha(_Widget, WidgetState, 255)
+        
+        if _Coordinates[3] == nil
+        or _Coordinates[3] == 0 then
+		        if _OptionalIconSize == nil
+		        or _OptionalIconSize == 64 then
+		            IconSize = 64
+		            XGUIEng.SetMaterialTexture(_Widget, WidgetState, "IconsBig.png")
+		        elseif _OptionalIconSize == 44 then
+		            IconSize = 44
+		            XGUIEng.SetMaterialTexture(_Widget, WidgetState, "Icons.png")
+		        elseif _OptionalIconSize == 128 then
+		            IconSize = 128
+		            XGUIEng.SetMaterialTexture(_Widget, WidgetState, "IconsVeryBig.png")
+		        end
+		    else
+		        if _OptionalIconSize == nil
+		        or _OptionalIconSize == 64 then
+		            IconSize = 64
+		            XGUIEng.SetMaterialTexture(_Widget, WidgetState, "IconsBig2.png")
+		        elseif _OptionalIconSize == 44 then
+		            IconSize = 44
+		            XGUIEng.SetMaterialTexture(_Widget, WidgetState, "Icons2.png")
+		        elseif _OptionalIconSize == 128 then
+                    --TODO HeAc: Create IconsVeryBig2 then uncomment
+                    
+                    --IconSize = 128
+		            --XGUIEng.SetMaterialTexture(_Widget, WidgetState, "IconsVeryBig.png") -- TODO: veryBig2 not implemented yet
+                    IconSize = 64
+                    XGUIEng.SetMaterialTexture(_Widget, WidgetState, "IconsBig2.png")
+		        end
+		    end
+
+
         local u0 = (_Coordinates[1] - 1) * IconSize
         local v0 = (_Coordinates[2] - 1) * IconSize
         local u1 = _Coordinates[1] * IconSize
         local v1 = _Coordinates[2] * IconSize
+
         XGUIEng.SetMaterialUV(_Widget, WidgetState, u0, v0, u1, v1)
     end
-
 end
 
 
