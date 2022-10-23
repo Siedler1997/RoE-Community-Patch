@@ -257,6 +257,8 @@ function GUI_BuildingButtons.BuyBattalionClicked(_IsSpecial)
         else
             EntityType = Entities.U_MilitaryBow
         end
+    elseif BarrackEntityType == Entities.B_BarracksSpearmen then
+        EntityType = Entities.U_MilitarySpear
     elseif Logic.IsEntityInCategory(BarrackID, EntityCategories.Headquarters) == 1 then
         EntityType = Entities.U_Thief
     else
@@ -347,6 +349,10 @@ function GUI_BuildingButtons.BuyBattalionMouseOver(_IsSpecial)
         end
         TooltipString = "BuyBowmen"
         TechnologyType = Technologies.R_BarracksArchers
+    elseif BarrackEntityType == Entities.B_BarracksSpearmen then
+        EntityType = Entities.U_MilitarySpear
+        TooltipString = "BuySpearmen"
+        TechnologyType = Technologies.R_BarracksSpearmen
     elseif BarrackEntityType == Entities.B_StoreHouse then
         EntityType = Entities.U_AmmunitionCart
         TooltipString = "BuyAmmunitionCart"
@@ -450,6 +456,11 @@ function GUI_BuildingButtons.BuyBattalionUpdate(_IsSpecial)
         else
             SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitaryBow])
         end
+    elseif BarrackEntityType == Entities.B_BarracksSpearmen then
+        SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitarySpear])
+        if _IsSpecial == true then
+            doShow = 0
+        end
     elseif Logic.IsEntityInCategory(BarrackID, EntityCategories.Headquarters) == 1 then
         SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_Thief])
         if _IsSpecial == true then
@@ -489,6 +500,7 @@ function GUI_BuildingButtons.BuyBattalionUpdate(_IsSpecial)
     or BarrackEntityType == Entities.B_BarracksArchers_Redprince
     or BarrackEntityType == Entities.B_Barracks_Khana
     or BarrackEntityType == Entities.B_BarracksArchers_Khana
+    or BarrackEntityType == Entities.B_BarracksSpearmen
     --[[
     or BarrackEntityType == Entities.B_NPC_Barracks_ME
     or BarrackEntityType == Entities.B_NPC_Barracks_NE

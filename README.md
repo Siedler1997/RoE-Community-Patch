@@ -240,6 +240,8 @@ Folgende Änderungen wurden vorgenommen:
 
 
 ## (Mögliche) ToDos
+- (OnSreen) Button-Texturen leicht versetzt
+	- vmtl. Folge des Merges
 - c00-m3: Falsche Nachricht am Anfang
 - Lanzenträger/Hellebardiere
 	- Icon

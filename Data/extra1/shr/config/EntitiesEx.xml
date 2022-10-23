@@ -432,6 +432,7 @@
 	<Entity>U_ThiefCart_Mission</Entity>
 	<Entity>U_ArmorMaker</Entity>
 	<Entity>U_ArmorSmith</Entity>
-
+	<Entity>B_BarracksSpearmen</Entity>
+	<Entity>U_SpearArmourer</Entity>
 </root>
 

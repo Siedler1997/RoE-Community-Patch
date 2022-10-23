@@ -1973,7 +1973,7 @@
 		<V2>1</V2>
 		<Size>64</Size>
 		<Row>11</Row>
-		<Col>13</Col>
+		<Col>1</Col>
 	</Icon>
 
 	<Icon classname="GGUI::COnScreenIconProps">
@@ -1986,7 +1986,7 @@
 		<V2>1</V2>
 		<Size>44</Size>
 		<Row>11</Row>
-		<Col>13</Col>
+		<Col>1</Col>
 	</Icon>
 
 	<Icon classname="GGUI::COnScreenIconProps">
@@ -2023,8 +2023,8 @@
 		<U2>1</U2>
 		<V2>1</V2>
 		<Size>44</Size>
-		<Row>15</Row>
-		<Col>0</Col>
+		<Row>4</Row>
+		<Col>4</Col>
 	</Icon>
 
 </OnScreenIcons>

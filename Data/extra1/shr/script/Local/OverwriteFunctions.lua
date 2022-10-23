@@ -151,8 +151,8 @@ function InitLocalOverwrite()
             g_TexturePositions.Goods[Goods.G_Gems] =  {1, 2, 1}
             g_TexturePositions.Goods[Goods.G_Olibanum] =  {2, 2, 1}
             g_TexturePositions.Goods[Goods.G_Regalia] =  {16, 4}
-            g_TexturePositions.Goods[Goods.G_PoorSpear] =  {16, 12}
-            g_TexturePositions.Goods[Goods.G_Spear] =  {1, 16}
+            g_TexturePositions.Goods[Goods.G_PoorSpear] =  {2, 12}
+            g_TexturePositions.Goods[Goods.G_Spear] =  {5, 5}
             g_TexturePositions.Goods[Goods.G_Gems] =  {1, 1, 1}
             g_TexturePositions.Goods[Goods.G_Olibanum] =  {1, 2, 1}
             g_TexturePositions.Goods[Goods.G_MusicalInstrument] =  {1, 3, 1}
