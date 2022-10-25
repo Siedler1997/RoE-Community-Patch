@@ -171,103 +171,30 @@ end
 --------------------------------------------------------------------------------
 -- Barracks
 
-function GUI_BuildingButtons.BuyBattalionClicked(_IsSpecial)
+-- BuyBattalion for first tier units and their special deviants
+function GUI_BuildingButtons.BuyBattalionClicked(_tier, _special)
 
     local PlayerID  = GUI.GetPlayerID()
     local BarrackID = GUI.GetSelectedEntity()
     local BarrackEntityType = Logic.GetEntityType(BarrackID)
-    local KnightType = Logic.GetEntityType(Logic.GetKnightID(GUI.GetPlayerID()))
-    local MapName = Framework.GetCurrentMapName()
-    local MapType, Campaign = Framework.GetCurrentMapTypeAndCampaignName()
-    local ClimateZoneName = Framework.GetMapClimateZone(MapName, MapType, Campaign)
+    local KnightId = Logic.GetKnightID(GUI.GetPlayerID())
+    local specialUnitType = GetKnightSpecialBattalionType(KnightId, BarrackID, _tier, _special)
     local EntityType
-
-    if BarrackEntityType == Entities.B_NPC_Barracks_ME or BarrackEntityType == Entities.B_NPC_Barracks_NE or BarrackEntityType == Entities.B_NPC_Barracks_SE 
-        or BarrackEntityType == Entities.B_NPC_Barracks_NA or BarrackEntityType == Entities.B_NPC_Barracks_AS then
-        if _IsSpecial == true then
-            if BarrackEntityType == Entities.B_NPC_Barracks_ME then
-                EntityType = Entities.U_MilitaryBandit_Ranged_ME
-            elseif BarrackEntityType == Entities.B_NPC_Barracks_NE then
-                EntityType = Entities.U_MilitaryBandit_Ranged_NE
-            elseif BarrackEntityType == Entities.B_NPC_Barracks_SE then
-                EntityType = Entities.U_MilitaryBandit_Ranged_SE
-            elseif BarrackEntityType == Entities.B_NPC_Barracks_NA then
-                EntityType = Entities.U_MilitaryBandit_Ranged_NA
-            elseif BarrackEntityType == Entities.B_NPC_Barracks_AS then
-                EntityType = Entities.U_MilitaryBandit_Ranged_AS
-            end
-        else
-            if BarrackEntityType == Entities.B_NPC_Barracks_ME then
-                EntityType = Entities.U_MilitaryBandit_Melee_ME
-            elseif BarrackEntityType == Entities.B_NPC_Barracks_NE then
-                EntityType = Entities.U_MilitaryBandit_Melee_NE
-            elseif BarrackEntityType == Entities.B_NPC_Barracks_SE then
-                EntityType = Entities.U_MilitaryBandit_Melee_SE
-            elseif BarrackEntityType == Entities.B_NPC_Barracks_NA then
-                EntityType = Entities.U_MilitaryBandit_Melee_NA
-            elseif BarrackEntityType == Entities.B_NPC_Barracks_AS then
-                EntityType = Entities.U_MilitaryBandit_Melee_AS
-            end
-        end
-    elseif BarrackEntityType == Entities.B_Barracks or BarrackEntityType == Entities.B_Barracks_RedPrince or BarrackEntityType == Entities.B_Barracks_Khana then
-        if _IsSpecial == true then
-            if KnightType == Entities.U_KnightSabatta or KnightType == Entities.U_KnightRedPrince or BarrackEntityType == Entities.B_Barracks_RedPrince then
-                EntityType = Entities.U_MilitarySword_RedPrince
-            elseif KnightType == Entities.U_KnightPlunder then
-                if ClimateZoneName == "NorthEurope" then
-                    EntityType = Entities.U_MilitaryBandit_Melee_NE
-                elseif ClimateZoneName == "SouthEurope" then
-                    EntityType = Entities.U_MilitaryBandit_Melee_SE
-                elseif ClimateZoneName == "NorthAfrica" then
-                    EntityType = Entities.U_MilitaryBandit_Melee_NA
-                elseif ClimateZoneName == "Asia" then
-                    EntityType = Entities.U_MilitaryBandit_Melee_AS
-                else
-                    EntityType = Entities.U_MilitaryBandit_Melee_ME
-                end
-            elseif KnightType == Entities.U_KnightSong then
-                EntityType = Entities.U_MilitaryBandit_Melee_NE
-            elseif KnightType == Entities.U_KnightKhana or BarrackEntityType == Entities.B_Barracks_Khana then
-                EntityType = Entities.U_MilitarySword_Khana
-            end
-        else
-            EntityType = Entities.U_MilitarySword
-        end
-    elseif BarrackEntityType == Entities.B_BarracksArchers or BarrackEntityType == Entities.B_BarracksArchers_Redprince or BarrackEntityType == Entities.B_BarracksArchers_Khana then
-        if _IsSpecial == true then
-            if KnightType == Entities.U_KnightSabatta or KnightType == Entities.U_KnightRedPrince or BarrackEntityType == Entities.B_BarracksArchers_Redprince then
-                EntityType = Entities.U_MilitaryBow_RedPrince
-            elseif KnightType == Entities.U_KnightPlunder then
-                if ClimateZoneName == "NorthEurope" then
-                    EntityType = Entities.U_MilitaryBandit_Ranged_NE
-                elseif ClimateZoneName == "SouthEurope" then
-                    EntityType = Entities.U_MilitaryBandit_Ranged_SE
-                elseif ClimateZoneName == "NorthAfrica" then
-                    EntityType = Entities.U_MilitaryBandit_Ranged_NA
-                elseif ClimateZoneName == "Asia" then
-                    EntityType = Entities.U_MilitaryBandit_Ranged_AS
-                else
-                    EntityType = Entities.U_MilitaryBandit_Ranged_ME
-                end
-            elseif KnightType == Entities.U_KnightSong then
-                EntityType = Entities.U_MilitaryBandit_Ranged_NE
-            elseif KnightType == Entities.U_KnightKhana or BarrackEntityType == Entities.B_BarracksArchers_Khana then
-                EntityType = Entities.U_MilitaryBow_Khana
-            end
-        else
-            EntityType = Entities.U_MilitaryBow
-        end
-    elseif BarrackEntityType == Entities.B_BarracksSpearmen then
-        EntityType = Entities.U_MilitarySpear
-    elseif Logic.IsEntityInCategory(BarrackID, EntityCategories.Headquarters) == 1 then
-        EntityType = Entities.U_Thief
+    
+    if _special == true and specialUnitType > 0 then
+        EntityType = specialUnitType
     else
-        return
-    end
-
-    if GUI_BuildingButtons.GetLimitReached(EntityType) then
-        Message(XGUIEng.GetStringTableText("Feedback_TextLines/TextLine_EntityLimitReached"))
-        return
+        if BarrackEntityType == Entities.B_Barracks or BarrackEntityType == Entities.B_Barracks_RedPrince or BarrackEntityType == Entities.B_Barracks_Khana then
+            EntityType = Entities.U_MilitarySword
+        elseif BarrackEntityType == Entities.B_BarracksArchers or BarrackEntityType == Entities.B_BarracksArchers_Redprince or BarrackEntityType == Entities.B_BarracksArchers_Khana then
+            EntityType = Entities.U_MilitaryBow
+        elseif BarrackEntityType == Entities.B_BarracksSpearmen then
+            EntityType = Entities.U_MilitarySpear
+        elseif Logic.IsEntityInCategory(BarrackID, EntityCategories.Headquarters) == 1 then
+            EntityType = Entities.U_Thief
+        else
+            return
+        end
     end
 
     local Costs = {Logic.GetUnitCost(BarrackID, EntityType)}
@@ -276,8 +203,7 @@ function GUI_BuildingButtons.BuyBattalionClicked(_IsSpecial)
 
     local CanProduce = Logic.CanProduceUnits(BarrackID, EntityType)
 
-    if CanBuyBoolean == true
-    and CanProduce == false then
+    if CanBuyBoolean == true and CanProduce == false then
         CanBuyBoolean = false
         CanNotBuyString = XGUIEng.GetStringTableText("Feedback_TextLines/TextLine_NotEnoughRoomToBuyMilitary")
     end
@@ -292,7 +218,7 @@ function GUI_BuildingButtons.BuyBattalionClicked(_IsSpecial)
         SoldierSize = Logic.GetBattalionSize(BarrackID)
     end
 
-    if (CurrentSoldierCount + 3) > CurrentSoldierLimit then
+    if (CurrentSoldierCount + SoldierSize) > CurrentSoldierLimit then
         CanBuyBoolean = false
         CanNotBuyString = XGUIEng.GetStringTableText("Feedback_TextLines/TextLine_SoldierLimitReached")
     end
@@ -311,61 +237,36 @@ function GUI_BuildingButtons.BuyBattalionClicked(_IsSpecial)
     end
 end
 
-
-function GUI_BuildingButtons.BuyBattalionMouseOver(_IsSpecial)
-    local PlayerID  = GUI.GetPlayerID()
+function GUI_BuildingButtons.BuyBattalionMouseOver(_tier, _special)
     local CurrentWidgetID = XGUIEng.GetCurrentWidgetID()
     local BarrackID = GUI.GetSelectedEntity()
     local BarrackEntityType = Logic.GetEntityType(BarrackID)
-    local KnightType = Logic.GetEntityType(Logic.GetKnightID(GUI.GetPlayerID()))
-    local EntityType
+    local KnightId = Logic.GetKnightID(GUI.GetPlayerID())
+    local EntityType = GetKnightSpecialBattalionType(KnightId, BarrackID, _tier, _special)
     local TooltipString
     local TechnologyType
 
-    if BarrackEntityType == Entities.B_NPC_Barracks_ME or BarrackEntityType == Entities.B_NPC_Barracks_NE or BarrackEntityType == Entities.B_NPC_Barracks_SE 
-        or BarrackEntityType == Entities.B_NPC_Barracks_NA or BarrackEntityType == Entities.B_NPC_Barracks_AS then
-        if _IsSpecial == true then
-            EntityType = Entities.U_MilitaryBandit_Ranged_ME
-            TooltipString = "BuyBowmen"
-            TechnologyType = Technologies.R_BarracksArchers
-        else
-            EntityType = Entities.U_MilitaryBandit_Melee_ME
-            TooltipString = "BuySwordfighters"
-            TechnologyType = Technologies.R_Barracks
-        end
-    elseif BarrackEntityType == Entities.B_Barracks or BarrackEntityType == Entities.B_Barracks_RedPrince or BarrackEntityType == Entities.B_Barracks_Khana then
-        if _IsSpecial == true and (KnightType == Entities.U_KnightPlunder or KnightType == Entities.U_KnightSong) then
-            EntityType = Entities.U_MilitaryBandit_Melee_ME
-        else
-            EntityType = Entities.U_MilitarySword
-        end
-        TooltipString = "BuySwordfighters"
+    if BarrackEntityType == Entities.B_Barracks or BarrackEntityType == Entities.B_Barracks_RedPrince or BarrackEntityType == Entities.B_Barracks_Khana then
+        --EntityType = Entities.U_MilitarySword
         TechnologyType = Technologies.R_Barracks
     elseif BarrackEntityType == Entities.B_BarracksArchers or BarrackEntityType == Entities.B_BarracksArchers_Redprince or BarrackEntityType == Entities.B_BarracksArchers_Khana then
-        if _IsSpecial == true and (KnightType == Entities.U_KnightPlunder or KnightType == Entities.U_KnightSong) then
-            EntityType = Entities.U_MilitaryBandit_Ranged_ME
-        else
-            EntityType = Entities.U_MilitaryBow
-        end
-        TooltipString = "BuyBowmen"
+        --EntityType = Entities.U_MilitaryBow
         TechnologyType = Technologies.R_BarracksArchers
     elseif BarrackEntityType == Entities.B_BarracksSpearmen then
-        EntityType = Entities.U_MilitarySpear
-        TooltipString = "BuySpearmen"
+        --EntityType = Entities.U_MilitarySpear
         TechnologyType = Technologies.R_BarracksSpearmen
     elseif BarrackEntityType == Entities.B_StoreHouse then
-        EntityType = Entities.U_AmmunitionCart
-        TooltipString = "BuyAmmunitionCart"
+        --EntityType = Entities.U_AmmunitionCart
         TechnologyType = Technologies.R_AmmunitionCart
     elseif Logic.IsEntityInCategory(BarrackID, EntityCategories.Headquarters) == 1 then
-        EntityType = Entities.U_Thief
+        --EntityType = Entities.U_Thief
         TechnologyType = Technologies.R_Thieves
-        TooltipString = "BuyThief"
     else
         return
     end
 
-    local EntityLimitString = GUI_BuildingButtons.GetLimitString(EntityType)
+    TooltipString = GetBattalionBuyTooltipString(EntityType)
+
     local Costs = {Logic.GetUnitCost(BarrackID, EntityType)}
 
     --Marcus buys these for less Gold
@@ -383,133 +284,26 @@ function GUI_BuildingButtons.BuyBattalionMouseOver(_IsSpecial)
 
     local TooltipStringDisabled
 
-    if XGUIEng.IsButtonDisabled(CurrentWidgetID) == 1
-    and EntityType == Entities.U_Thief then
+    if XGUIEng.IsButtonDisabled(CurrentWidgetID) == 1 and EntityType == Entities.U_Thief then
         TooltipStringDisabled = "BuyThief"
     end
 
-    GUI_Tooltip.TooltipBuy(Costs, TooltipString, TooltipStringDisabled, TechnologyType, nil, nil, EntityLimitString)
+    GUI_Tooltip.TooltipBuy(Costs, TooltipString, TooltipStringDisabled, TechnologyType )
 end
 
-
-function GUI_BuildingButtons.BuyBattalionUpdate(_IsSpecial)
+function GUI_BuildingButtons.BuyBattalionUpdate(_tier, _special)
 
     local CurrentWidgetID = XGUIEng.GetCurrentWidgetID()
     local BarrackID = GUI.GetSelectedEntity()
     local BarrackEntityType = Logic.GetEntityType(BarrackID)
-    local KnightType = Logic.GetEntityType(Logic.GetKnightID(GUI.GetPlayerID()))
-    local MapName = Framework.GetCurrentMapName()
-    local MapType, Campaign = Framework.GetCurrentMapTypeAndCampaignName()
-    local ClimateZoneName = Framework.GetMapClimateZone(MapName, MapType, Campaign)
+    local KnightId = Logic.GetKnightID(GUI.GetPlayerID())
+    local battalionType = GetKnightSpecialBattalionType(KnightId, BarrackID, _tier, _special)
     local doShow = 1
+    
+    SetIcon(CurrentWidgetID, g_TexturePositions.Entities[battalionType])
 
-    if BarrackEntityType == Entities.B_NPC_Barracks_ME or BarrackEntityType == Entities.B_NPC_Barracks_NE or BarrackEntityType == Entities.B_NPC_Barracks_SE 
-        or BarrackEntityType == Entities.B_NPC_Barracks_NA or BarrackEntityType == Entities.B_NPC_Barracks_AS then
-        if _IsSpecial == true then
-            if BarrackEntityType == Entities.B_NPC_Barracks_ME then
-                SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitaryBandit_Ranged_ME])
-            elseif BarrackEntityType == Entities.B_NPC_Barracks_NE then
-                SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitaryBandit_Ranged_NE])
-            elseif BarrackEntityType == Entities.B_NPC_Barracks_SE then
-                SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitaryBandit_Ranged_SE])
-            elseif BarrackEntityType == Entities.B_NPC_Barracks_NA then
-                SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitaryBandit_Ranged_NA])
-            elseif BarrackEntityType == Entities.B_NPC_Barracks_AS then
-                SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitaryBandit_Ranged_AS])
-            end
-        else
-            if BarrackEntityType == Entities.B_NPC_Barracks_ME then
-                SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitaryBandit_Melee_ME])
-            elseif BarrackEntityType == Entities.B_NPC_Barracks_NE then
-                SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitaryBandit_Melee_NE])
-            elseif BarrackEntityType == Entities.B_NPC_Barracks_SE then
-                SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitaryBandit_Melee_SE])
-            elseif BarrackEntityType == Entities.B_NPC_Barracks_NA then
-                SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitaryBandit_Melee_NA])
-            elseif BarrackEntityType == Entities.B_NPC_Barracks_AS then
-                SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitaryBandit_Melee_AS])
-            end
-        end
-    elseif BarrackEntityType == Entities.B_BarracksArchers or BarrackEntityType == Entities.B_BarracksArchers_Redprince or BarrackEntityType == Entities.B_BarracksArchers_Khana then
-        if _IsSpecial == true then
-            if KnightType == Entities.U_KnightSabatta or KnightType == Entities.U_KnightRedPrince or BarrackEntityType == Entities.B_BarracksArchers_Redprince then
-                SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitaryBow_RedPrince])
-            elseif KnightType == Entities.U_KnightPlunder then
-                if ClimateZoneName == "NorthEurope" then
-                    SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitaryBandit_Ranged_NE])
-                elseif ClimateZoneName == "SouthEurope" then
-                    SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitaryBandit_Ranged_SE])
-                elseif ClimateZoneName == "NorthAfrica" then
-                    SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitaryBandit_Ranged_NA])
-                elseif ClimateZoneName == "Asia" then
-                    SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitaryBandit_Ranged_AS])
-                else
-                    SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitaryBandit_Ranged_ME])
-                end
-            elseif KnightType == Entities.U_KnightSong then
-                SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitaryBandit_Ranged_NE])
-            elseif KnightType == Entities.U_KnightKhana or BarrackEntityType == Entities.B_BarracksArchers_Khana then
-                SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitaryBow_Khana])
-            else
-                doShow = 0
-            end
-        else
-            SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitaryBow])
-        end
-    elseif BarrackEntityType == Entities.B_BarracksSpearmen then
-        SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitarySpear])
-        if _IsSpecial == true then
-            doShow = 0
-        end
-    elseif Logic.IsEntityInCategory(BarrackID, EntityCategories.Headquarters) == 1 then
-        SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_Thief])
-        if _IsSpecial == true then
-            doShow = 0
-        end
-    else
-        if _IsSpecial == true then
-            if KnightType == Entities.U_KnightSabatta or KnightType == Entities.U_KnightRedPrince or BarrackEntityType == Entities.B_Barracks_RedPrince then
-                SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitarySword_RedPrince])
-            elseif KnightType == Entities.U_KnightPlunder then
-                if ClimateZoneName == "NorthEurope" then
-                    SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitaryBandit_Melee_NE])
-                elseif ClimateZoneName == "SouthEurope" then
-                    SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitaryBandit_Melee_SE])
-                elseif ClimateZoneName == "NorthAfrica" then
-                    SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitaryBandit_Melee_NA])
-                elseif ClimateZoneName == "Asia" then
-                    SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitaryBandit_Melee_AS])
-                else
-                    SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitaryBandit_Melee_ME])
-                end
-            elseif KnightType == Entities.U_KnightSong then
-                SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitaryBandit_Melee_NE])
-            elseif KnightType == Entities.U_KnightKhana or BarrackEntityType == Entities.B_Barracks_Khana then
-                SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitarySword_Khana])
-            else
-                doShow = 0
-            end
-        else
-            SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitarySword])
-        end
-    end
-
-    if BarrackEntityType == Entities.B_Barracks
-    or BarrackEntityType == Entities.B_BarracksArchers
-    or BarrackEntityType == Entities.B_Barracks_RedPrince
-    or BarrackEntityType == Entities.B_BarracksArchers_Redprince
-    or BarrackEntityType == Entities.B_Barracks_Khana
-    or BarrackEntityType == Entities.B_BarracksArchers_Khana
-    or BarrackEntityType == Entities.B_BarracksSpearmen
-    --[[
-    or BarrackEntityType == Entities.B_NPC_Barracks_ME
-    or BarrackEntityType == Entities.B_NPC_Barracks_NE
-    or BarrackEntityType == Entities.B_NPC_Barracks_SE
-    or BarrackEntityType == Entities.B_NPC_Barracks_NA
-    or BarrackEntityType == Entities.B_NPC_Barracks_AS
-    --]]
-    or Logic.IsEntityInCategory(BarrackID, EntityCategories.Headquarters) == 1 then
-        XGUIEng.ShowWidget(CurrentWidgetID,doShow)
+    if battalionType > 0 then
+        XGUIEng.ShowWidget(CurrentWidgetID,1)
     else
         XGUIEng.ShowWidget(CurrentWidgetID,0)
         return
@@ -523,11 +317,6 @@ function GUI_BuildingButtons.BuyBattalionUpdate(_IsSpecial)
     if Logic.IsEntityInCategory(BarrackID, EntityCategories.Headquarters) == 1 then
         local PlayerID = GUI.GetPlayerID()
         local TechnologyState = Logic.TechnologyGetState(PlayerID, Technologies.R_Thieves)
-        
-        if GUI_BuildingButtons.GetLimitReached(Entities.U_Thief) then
-            XGUIEng.DisableButton(CurrentWidgetID, 1)
-            return
-        end
 
         if EnableRights == nil or EnableRights == false then
             XGUIEng.DisableButton(CurrentWidgetID,0)
@@ -547,6 +336,8 @@ function GUI_BuildingButtons.BuyBattalionUpdate(_IsSpecial)
         XGUIEng.DisableButton(CurrentWidgetID,0)
     end
 end
+
+
 
 function GUI_BuildingButtons.UpgradeClicked()
 

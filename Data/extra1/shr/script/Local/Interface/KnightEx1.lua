@@ -284,3 +284,138 @@ function GetNearbyEnemyMarketplace(_KnightID)
     end
     return marketplace
 end
+
+-- Gibt den Spezialeinheiten-Typ einer bestimmten Ritters-Gebäudes-Kombination zurück
+function GetKnightSpecialBattalionType(_knightId, _buildingId, _tier, _special)
+    local KnightType = Logic.GetEntityType(_knightId)
+    local BuildingType = Logic.GetEntityType(_buildingId)
+    local BattalionType = 0
+    
+    if BuildingType == Entities.B_Barracks or BuildingType == Entities.B_Barracks_RedPrince or BuildingType == Entities.B_Barracks_Khana then
+        if _tier == 1 then
+            if _special == true then 
+                if KnightType == Entities.U_KnightTrading then
+                    BattalionType = Entities.U_MilitaryBandit_Ranged_SE     --U_Military_TradeMilitia_Range
+                elseif KnightType == Entities.U_KnightPlunder then
+                    BattalionType = Entities.U_MilitaryBandit_Ranged_ME     --U_Military_Outlaw_Range
+                elseif KnightType == Entities.U_KnightWisdom then
+                    BattalionType = Entities.U_MilitaryBandit_Ranged_NA     --U_Military_Nomad_Range
+                elseif KnightType == Entities.U_KnightSong then
+                    BattalionType = Entities.U_MilitaryBandit_Ranged_NE     --U_Military_Viking_Range
+                elseif KnightType == Entities.U_KnightRedPrince then
+                    BattalionType = Entities.U_MilitaryBow_RedPrince
+                elseif KnightType == Entities.U_KnightSaraya then
+                    BattalionType = Entities.U_MilitaryBandit_Ranged_AS     --U_Military_Exile_Range
+                elseif KnightType == Entities.U_KnightKhana then
+                    BattalionType = Entities.U_MilitaryBow_Khana
+                end
+            else
+                BattalionType = Entities.U_MilitarySword
+            end
+        elseif _tier == 2 then
+            if _special == true then 
+                if KnightType == Entities.U_KnightHealing then
+                    BattalionType = Entities.U_MilitaryCavalry      --U_Military_Paladin
+                end
+            else
+                BattalionType = Entities.U_MilitaryCavalry
+            end
+        end
+    elseif (BuildingType == Entities.B_BarracksArchers or BuildingType == Entities.B_BarracksArchers_Redprince or BuildingType == Entities.B_BarracksArchers_Khana) and _tier == 1 then
+        if _special == true then 
+            if KnightType == Entities.U_KnightTrading then
+                BattalionType = Entities.U_MilitaryBandit_Melee_SE     --U_Military_TradeMilitia_Range
+            elseif KnightType == Entities.U_KnightPlunder then
+                BattalionType = Entities.U_MilitaryBandit_Melee_ME     --U_Military_Outlaw_Range
+            elseif KnightType == Entities.U_KnightWisdom then
+                BattalionType = Entities.U_MilitaryBandit_Melee_NA     --U_Military_Nomad_Range
+            elseif KnightType == Entities.U_KnightSong then
+                BattalionType = Entities.U_MilitaryBandit_Melee_NE     --U_Military_Viking_Range
+            elseif KnightType == Entities.U_KnightRedPrince then
+                BattalionType = Entities.U_MilitarySword_RedPrince
+            elseif KnightType == Entities.U_KnightSaraya then
+                BattalionType = Entities.U_MilitaryBandit_Melee_AS     --U_Military_Exile_Range
+            elseif KnightType == Entities.U_KnightKhana then
+                BattalionType = Entities.U_MilitarySword_Khana
+            end
+        else
+            BattalionType = Entities.U_MilitaryBow
+        end
+    elseif BuildingType == Entities.B_BarracksSpearmen and _tier == 1 then
+        if _special == true then 
+            if KnightType == Entities.U_KnightChivalry then
+                BattalionType = Entities.U_MilitarySpear    --U_Military_Helbardier
+            end
+        else
+            BattalionType = Entities.U_MilitarySpear
+        end
+    elseif BuildingType == Entities.B_StoreHouse and _tier == 1 and _special == false then
+        BattalionType = Entities.U_AmmunitionCart
+    elseif Logic.IsEntityInCategory(_buildingId, EntityCategories.Headquarters) == 1 and _tier == 1 then
+        if _special == true then
+            if KnightType == Entities.U_KnightSabatta then
+                BattalionType = Entities.U_Thief    --U_Assassin
+            end
+        else
+            BattalionType = Entities.U_Thief
+        end
+    end
+
+    return BattalionType
+end
+
+function GetBattalionBuyTooltipString(_BattalionType)
+    local TooltipString
+
+    if _BattalionType == Entities.U_MilitarySword then
+        TooltipString = "BuySwordfighters"
+    elseif _BattalionType == Entities.U_MilitaryBow then
+        TooltipString = "BuyBowmen"
+    elseif _BattalionType == Entities.U_MilitarySpear then
+        TooltipString = "BuySpearmen"
+    elseif _BattalionType == Entities.U_MilitaryCavalry then
+        TooltipString = "BuyCavalry"
+    elseif _BattalionType == Entities.U_AmmunitionCart then
+        TooltipString = "BuyAmmunitionCart"
+    elseif _BattalionType == Entities.U_Thief then
+        TooltipString = "BuyThief"
+    elseif _BattalionType == Entities.U_Military_Helbardier then
+        TooltipString = "BuyHelbardier"
+    elseif _BattalionType == Entities.U_Military_Paladin then
+        TooltipString = "BuyPaladin"
+    elseif _BattalionType == Entities.U_Military_TradeMilitia_Melee then
+        TooltipString = "BuyTradeMilitiaMelee"
+    elseif _BattalionType == Entities.U_Military_TradeMilitia_Range then
+        TooltipString = "BuyTradeMilitiaRange"
+    elseif _BattalionType == Entities.U_Military_Outlaw_Melee then
+        TooltipString = "BuyOutlawMelee"
+    elseif _BattalionType == Entities.U_Military_Outlaw_Range then
+        TooltipString = "BuyOutlawRange"
+    elseif _BattalionType == Entities.U_Military_Nomad_Melee then
+        TooltipString = "BuyNomadMelee"
+    elseif _BattalionType == Entities.U_Military_Nomad_Range then
+        TooltipString = "BuyNomadRange"
+    elseif _BattalionType == Entities.U_Military_Viking_Melee then
+        TooltipString = "BuyVikingMelee"
+    elseif _BattalionType == Entities.U_Military_Viking_Range then
+        TooltipString = "BuyVikingRange"
+    elseif _BattalionType == Entities.U_Assassin then
+        TooltipString = "BuyAssassin"
+    elseif _BattalionType == Entities.U_MilitarySword_RedPrince then
+        TooltipString = "BuyGuardMelee"
+    elseif _BattalionType == Entities.U_MilitaryBow_RedPrince then
+        TooltipString = "BuyGuardRange"
+    elseif _BattalionType == Entities.U_Military_Exile_Melee then
+        TooltipString = "BuyExileMelee"
+    elseif _BattalionType == Entities.U_Military_Exile_Range then
+        TooltipString = "BuyExileRange"
+    elseif _BattalionType == Entities.U_Military_Cannon then
+        TooltipString = "BuyCannon"
+    elseif _BattalionType == Entities.U_MilitarySword_Khana then
+        TooltipString = "BuyFanaticMelee"
+    elseif _BattalionType == Entities.U_MilitaryBow_Khana then
+        TooltipString = "BuyFanaticRange"
+    end
+
+    return TooltipString
+end

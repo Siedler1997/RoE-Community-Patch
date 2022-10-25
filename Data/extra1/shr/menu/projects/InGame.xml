@@ -42690,7 +42690,7 @@
               <LuaCommand></LuaCommand>
              </OnBlur>
              <UpdateFunction>
-              <LuaCommand>GUI_BuildingButtons.BuyBattalionUpdate()</LuaCommand>
+              <LuaCommand>GUI_BuildingButtons.BuyBattalionUpdate(1, false)</LuaCommand>
              </UpdateFunction>
              <UpdateFunctionTurnBased>
               <LuaCommand></LuaCommand>
@@ -42702,7 +42702,7 @@
               <ToolTipEnabledFlag>true</ToolTipEnabledFlag>
               <ControlTargetVisibility>true</ControlTargetVisibility>
               <ToolTipUpdateFunction>
-               <LuaCommand>GUI_BuildingButtons.BuyBattalionMouseOver()</LuaCommand>
+               <LuaCommand>GUI_BuildingButtons.BuyBattalionMouseOver(1, false)</LuaCommand>
               </ToolTipUpdateFunction>
               <RawString></RawString>
               <StringTableKey></StringTableKey>
@@ -42733,7 +42733,7 @@
               </Color>
              </BackgroundMaterial>
              <ActionFunction>
-              <LuaCommand>GUI_BuildingButtons.BuyBattalionClicked()</LuaCommand>
+              <LuaCommand>GUI_BuildingButtons.BuyBattalionClicked(1, false)</LuaCommand>
              </ActionFunction>
              <GenerateMaterialsFromNormal>false</GenerateMaterialsFromNormal>
              <ShortCutKey></ShortCutKey>
@@ -42855,6 +42855,208 @@
 				<PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
 				<TabIndex>1</TabIndex>
 				<Rectangle>
+					<X>292.</X>
+					<Y>168.</Y>
+					<W>64.</W>
+					<H>64.</H>
+					<KeepAspectRatio>true</KeepAspectRatio>
+					<CirclePointTest>false</CirclePointTest>
+					<FixedTextureSetSize>false</FixedTextureSetSize>
+					<AlignmentX>0</AlignmentX>
+					<AlignmentY>0</AlignmentY>
+					<AnchorX>0</AnchorX>
+					<AnchorY>0</AnchorY>
+				</Rectangle>
+				<OnPushToStack>
+					<LuaCommand></LuaCommand>
+				</OnPushToStack>
+				<OnMouseOver>
+					<LuaCommand></LuaCommand>
+				</OnMouseOver>
+				<OnMouseOut>
+					<LuaCommand></LuaCommand>
+				</OnMouseOut>
+				<OnRightClick>
+					<LuaCommand></LuaCommand>
+				</OnRightClick>
+				<OnLeftClick>
+					<LuaCommand></LuaCommand>
+				</OnLeftClick>
+				<OnKeyPress>
+					<LuaCommand></LuaCommand>
+				</OnKeyPress>
+				<OnFocus>
+					<LuaCommand></LuaCommand>
+				</OnFocus>
+				<OnBlur>
+					<LuaCommand></LuaCommand>
+				</OnBlur>
+				<UpdateFunction>
+					<LuaCommand>GUI_BuildingButtons.BuyBattalionUpdate(1, true)</LuaCommand>
+				</UpdateFunction>
+				<UpdateFunctionTurnBased>
+					<LuaCommand></LuaCommand>
+				</UpdateFunctionTurnBased>
+				<UpdateFunctionSecondBased>
+					<LuaCommand></LuaCommand>
+				</UpdateFunctionSecondBased>
+				<ToolTipHelper>
+					<ToolTipEnabledFlag>true</ToolTipEnabledFlag>
+					<ControlTargetVisibility>true</ControlTargetVisibility>
+					<ToolTipUpdateFunction>
+						<LuaCommand>GUI_BuildingButtons.BuyBattalionMouseOver(1, true)</LuaCommand>
+					</ToolTipUpdateFunction>
+					<RawString></RawString>
+					<StringTableKey></StringTableKey>
+					<TargetWidget01>/InGame/Root/Normal/TooltipBuy</TargetWidget01>
+					<TargetWidget02></TargetWidget02>
+					<TargetWidget03></TargetWidget03>
+					<TargetWidget04></TargetWidget04>
+					<TargetWidget05></TargetWidget05>
+				</ToolTipHelper>
+				<Group></Group>
+				<MotherID>/InGame/Root/Normal/BuildingButtons</MotherID>
+				<Name>BuyBattallionSpecial</Name>
+				<FullScreenBackground>false</FullScreenBackground>
+				<AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
+				<BackgroundMaterial>
+					<Texture></Texture>
+					<TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
+					<TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
+					<TextureCoordinatesMxU>64.</TextureCoordinatesMxU>
+					<TextureCoordinatesMxV>64.</TextureCoordinatesMxV>
+					<TextureFixedSizeX>0.</TextureFixedSizeX>
+					<TextureFixedSizeY>0.</TextureFixedSizeY>
+					<Color>
+						<Red>255</Red>
+						<Green>255</Green>
+						<Blue>255</Blue>
+						<Alpha>0</Alpha>
+					</Color>
+				</BackgroundMaterial>
+				<ActionFunction>
+					<LuaCommand>GUI_BuildingButtons.BuyBattalionClicked(1, true)</LuaCommand>
+				</ActionFunction>
+				<GenerateMaterialsFromNormal>false</GenerateMaterialsFromNormal>
+				<ShortCutKey></ShortCutKey>
+				<ShortCutKeyStringTableKey></ShortCutKeyStringTableKey>
+				<AllowRightMouseButton>false</AllowRightMouseButton>
+				<AllowDoubleClick>false</AllowDoubleClick>
+				<Disabled>false</Disabled>
+				<Highlighted>false</Highlighted>
+				<MaterialBaseNormal classname="EGUIX::CMaterial">
+					<Texture>buttons.png</Texture>
+					<TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
+					<TextureCoordinatesMinV>64.</TextureCoordinatesMinV>
+					<TextureCoordinatesMxU>64.</TextureCoordinatesMxU>
+					<TextureCoordinatesMxV>128.</TextureCoordinatesMxV>
+					<TextureFixedSizeX>0.</TextureFixedSizeX>
+					<TextureFixedSizeY>0.</TextureFixedSizeY>
+					<Color>
+						<Red>255</Red>
+						<Green>255</Green>
+						<Blue>255</Blue>
+						<Alpha>255</Alpha>
+					</Color>
+				</MaterialBaseNormal>
+				<MaterialDisabled classname="EGUIX::CMaterial">
+					<Texture></Texture>
+					<TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
+					<TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
+					<TextureCoordinatesMxU>64.</TextureCoordinatesMxU>
+					<TextureCoordinatesMxV>64.</TextureCoordinatesMxV>
+					<TextureFixedSizeX>0.</TextureFixedSizeX>
+					<TextureFixedSizeY>0.</TextureFixedSizeY>
+					<Color>
+						<Red>255</Red>
+						<Green>255</Green>
+						<Blue>255</Blue>
+						<Alpha>0</Alpha>
+					</Color>
+				</MaterialDisabled>
+				<MaterialHighlight classname="EGUIX::CMaterial">
+					<Texture>buttons.png</Texture>
+					<TextureCoordinatesMinU>192.</TextureCoordinatesMinU>
+					<TextureCoordinatesMinV>64.</TextureCoordinatesMinV>
+					<TextureCoordinatesMxU>256.</TextureCoordinatesMxU>
+					<TextureCoordinatesMxV>128.</TextureCoordinatesMxV>
+					<TextureFixedSizeX>0.</TextureFixedSizeX>
+					<TextureFixedSizeY>0.</TextureFixedSizeY>
+					<Color>
+						<Red>255</Red>
+						<Green>255</Green>
+						<Blue>255</Blue>
+						<Alpha>255</Alpha>
+					</Color>
+				</MaterialHighlight>
+				<MaterialMouseOver classname="EGUIX::CMaterial">
+					<Texture>buttons.png</Texture>
+					<TextureCoordinatesMinU>128.</TextureCoordinatesMinU>
+					<TextureCoordinatesMinV>64.</TextureCoordinatesMinV>
+					<TextureCoordinatesMxU>192.</TextureCoordinatesMxU>
+					<TextureCoordinatesMxV>128.</TextureCoordinatesMxV>
+					<TextureFixedSizeX>0.</TextureFixedSizeX>
+					<TextureFixedSizeY>0.</TextureFixedSizeY>
+					<Color>
+						<Red>255</Red>
+						<Green>255</Green>
+						<Blue>255</Blue>
+						<Alpha>255</Alpha>
+					</Color>
+				</MaterialMouseOver>
+				<MaterialPressed classname="EGUIX::CMaterial">
+					<Texture>buttons.png</Texture>
+					<TextureCoordinatesMinU>320.</TextureCoordinatesMinU>
+					<TextureCoordinatesMinV>64.</TextureCoordinatesMinV>
+					<TextureCoordinatesMxU>384.</TextureCoordinatesMxU>
+					<TextureCoordinatesMxV>128.</TextureCoordinatesMxV>
+					<TextureFixedSizeX>0.</TextureFixedSizeX>
+					<TextureFixedSizeY>0.</TextureFixedSizeY>
+					<Color>
+						<Red>255</Red>
+						<Green>255</Green>
+						<Blue>255</Blue>
+						<Alpha>255</Alpha>
+					</Color>
+				</MaterialPressed>
+				<IconMaterial>
+					<Texture>iconsbig.png</Texture>
+					<TextureCoordinatesMinU>382.</TextureCoordinatesMinU>
+					<TextureCoordinatesMinV>700.</TextureCoordinatesMinV>
+					<TextureCoordinatesMxU>446.</TextureCoordinatesMxU>
+					<TextureCoordinatesMxV>764.</TextureCoordinatesMxV>
+					<TextureFixedSizeX>0.</TextureFixedSizeX>
+					<TextureFixedSizeY>0.</TextureFixedSizeY>
+					<Color>
+						<Red>255</Red>
+						<Green>255</Green>
+						<Blue>255</Blue>
+						<Alpha>255</Alpha>
+					</Color>
+				</IconMaterial>
+				<IconOffsetWhilePressed>2</IconOffsetWhilePressed>
+				<IconColorWhileDisabled>
+					<Red>150</Red>
+					<Green>150</Green>
+					<Blue>150</Blue>
+					<Alpha>200</Alpha>
+				</IconColorWhileDisabled>
+				<PulseHighlightDuration>0.</PulseHighlightDuration>
+				<PulseHighlightMinAlpha>0.25</PulseHighlightMinAlpha>
+				<PulseMouseoverDuration>0.</PulseMouseoverDuration>
+				<PulseMouseoverMinAlpha>0.25</PulseMouseoverMinAlpha>
+				<ShowHighlightedAsPressed>false</ShowHighlightedAsPressed>
+			</Widget>
+			<Widget classname="EGUIX::CGfxButtonWidget">
+				<IsShown>true</IsShown>
+				<UpdateManualFlag>false</UpdateManualFlag>
+				<EventHandling>true</EventHandling>
+				<ZPriority>100.</ZPriority>
+				<ForceToHandleMouseEventsFlag>false</ForceToHandleMouseEventsFlag>
+				<ForceToHandleKeyboardEventsFlag>false</ForceToHandleKeyboardEventsFlag>
+				<PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
+				<TabIndex>1</TabIndex>
+				<Rectangle>
 					<X>228.</X>
 					<Y>232.</Y>
 					<W>64.</W>
@@ -42892,7 +43094,7 @@
 					<LuaCommand></LuaCommand>
 				</OnBlur>
 				<UpdateFunction>
-					<LuaCommand>GUI_BuildingButtons.BuyBattalionUpdate(true)</LuaCommand>
+					<LuaCommand>GUI_BuildingButtons.BuyBattalionUpdate(2, false)</LuaCommand>
 				</UpdateFunction>
 				<UpdateFunctionTurnBased>
 					<LuaCommand></LuaCommand>
@@ -42904,7 +43106,7 @@
 					<ToolTipEnabledFlag>true</ToolTipEnabledFlag>
 					<ControlTargetVisibility>true</ControlTargetVisibility>
 					<ToolTipUpdateFunction>
-						<LuaCommand>GUI_BuildingButtons.BuyBattalionMouseOver(true)</LuaCommand>
+						<LuaCommand>GUI_BuildingButtons.BuyBattalionMouseOver(2, false)</LuaCommand>
 					</ToolTipUpdateFunction>
 					<RawString></RawString>
 					<StringTableKey></StringTableKey>
@@ -42916,7 +43118,7 @@
 				</ToolTipHelper>
 				<Group></Group>
 				<MotherID>/InGame/Root/Normal/BuildingButtons</MotherID>
-				<Name>BuyBattallionSpecial</Name>
+				<Name>BuyBattallion2</Name>
 				<FullScreenBackground>false</FullScreenBackground>
 				<AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
 				<BackgroundMaterial>
@@ -42935,7 +43137,209 @@
 					</Color>
 				</BackgroundMaterial>
 				<ActionFunction>
-					<LuaCommand>GUI_BuildingButtons.BuyBattalionClicked(true)</LuaCommand>
+					<LuaCommand>GUI_BuildingButtons.BuyBattalionClicked(2, false)</LuaCommand>
+				</ActionFunction>
+				<GenerateMaterialsFromNormal>false</GenerateMaterialsFromNormal>
+				<ShortCutKey></ShortCutKey>
+				<ShortCutKeyStringTableKey></ShortCutKeyStringTableKey>
+				<AllowRightMouseButton>false</AllowRightMouseButton>
+				<AllowDoubleClick>false</AllowDoubleClick>
+				<Disabled>false</Disabled>
+				<Highlighted>false</Highlighted>
+				<MaterialBaseNormal classname="EGUIX::CMaterial">
+					<Texture>buttons.png</Texture>
+					<TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
+					<TextureCoordinatesMinV>64.</TextureCoordinatesMinV>
+					<TextureCoordinatesMxU>64.</TextureCoordinatesMxU>
+					<TextureCoordinatesMxV>128.</TextureCoordinatesMxV>
+					<TextureFixedSizeX>0.</TextureFixedSizeX>
+					<TextureFixedSizeY>0.</TextureFixedSizeY>
+					<Color>
+						<Red>255</Red>
+						<Green>255</Green>
+						<Blue>255</Blue>
+						<Alpha>255</Alpha>
+					</Color>
+				</MaterialBaseNormal>
+				<MaterialDisabled classname="EGUIX::CMaterial">
+					<Texture></Texture>
+					<TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
+					<TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
+					<TextureCoordinatesMxU>64.</TextureCoordinatesMxU>
+					<TextureCoordinatesMxV>64.</TextureCoordinatesMxV>
+					<TextureFixedSizeX>0.</TextureFixedSizeX>
+					<TextureFixedSizeY>0.</TextureFixedSizeY>
+					<Color>
+						<Red>255</Red>
+						<Green>255</Green>
+						<Blue>255</Blue>
+						<Alpha>0</Alpha>
+					</Color>
+				</MaterialDisabled>
+				<MaterialHighlight classname="EGUIX::CMaterial">
+					<Texture>buttons.png</Texture>
+					<TextureCoordinatesMinU>192.</TextureCoordinatesMinU>
+					<TextureCoordinatesMinV>64.</TextureCoordinatesMinV>
+					<TextureCoordinatesMxU>256.</TextureCoordinatesMxU>
+					<TextureCoordinatesMxV>128.</TextureCoordinatesMxV>
+					<TextureFixedSizeX>0.</TextureFixedSizeX>
+					<TextureFixedSizeY>0.</TextureFixedSizeY>
+					<Color>
+						<Red>255</Red>
+						<Green>255</Green>
+						<Blue>255</Blue>
+						<Alpha>255</Alpha>
+					</Color>
+				</MaterialHighlight>
+				<MaterialMouseOver classname="EGUIX::CMaterial">
+					<Texture>buttons.png</Texture>
+					<TextureCoordinatesMinU>128.</TextureCoordinatesMinU>
+					<TextureCoordinatesMinV>64.</TextureCoordinatesMinV>
+					<TextureCoordinatesMxU>192.</TextureCoordinatesMxU>
+					<TextureCoordinatesMxV>128.</TextureCoordinatesMxV>
+					<TextureFixedSizeX>0.</TextureFixedSizeX>
+					<TextureFixedSizeY>0.</TextureFixedSizeY>
+					<Color>
+						<Red>255</Red>
+						<Green>255</Green>
+						<Blue>255</Blue>
+						<Alpha>255</Alpha>
+					</Color>
+				</MaterialMouseOver>
+				<MaterialPressed classname="EGUIX::CMaterial">
+					<Texture>buttons.png</Texture>
+					<TextureCoordinatesMinU>320.</TextureCoordinatesMinU>
+					<TextureCoordinatesMinV>64.</TextureCoordinatesMinV>
+					<TextureCoordinatesMxU>384.</TextureCoordinatesMxU>
+					<TextureCoordinatesMxV>128.</TextureCoordinatesMxV>
+					<TextureFixedSizeX>0.</TextureFixedSizeX>
+					<TextureFixedSizeY>0.</TextureFixedSizeY>
+					<Color>
+						<Red>255</Red>
+						<Green>255</Green>
+						<Blue>255</Blue>
+						<Alpha>255</Alpha>
+					</Color>
+				</MaterialPressed>
+				<IconMaterial>
+					<Texture>iconsbig2.png</Texture>
+					<TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
+					<TextureCoordinatesMinV>64.</TextureCoordinatesMinV>
+					<TextureCoordinatesMxU>64.</TextureCoordinatesMxU>
+					<TextureCoordinatesMxV>128.</TextureCoordinatesMxV>
+					<TextureFixedSizeX>0.</TextureFixedSizeX>
+					<TextureFixedSizeY>0.</TextureFixedSizeY>
+					<Color>
+						<Red>255</Red>
+						<Green>255</Green>
+						<Blue>255</Blue>
+						<Alpha>255</Alpha>
+					</Color>
+				</IconMaterial>
+				<IconOffsetWhilePressed>2</IconOffsetWhilePressed>
+				<IconColorWhileDisabled>
+					<Red>150</Red>
+					<Green>150</Green>
+					<Blue>150</Blue>
+					<Alpha>200</Alpha>
+				</IconColorWhileDisabled>
+				<PulseHighlightDuration>0.</PulseHighlightDuration>
+				<PulseHighlightMinAlpha>0.25</PulseHighlightMinAlpha>
+				<PulseMouseoverDuration>0.</PulseMouseoverDuration>
+				<PulseMouseoverMinAlpha>0.25</PulseMouseoverMinAlpha>
+				<ShowHighlightedAsPressed>false</ShowHighlightedAsPressed>
+			</Widget>
+			<Widget classname="EGUIX::CGfxButtonWidget">
+				<IsShown>true</IsShown>
+				<UpdateManualFlag>false</UpdateManualFlag>
+				<EventHandling>true</EventHandling>
+				<ZPriority>100.</ZPriority>
+				<ForceToHandleMouseEventsFlag>false</ForceToHandleMouseEventsFlag>
+				<ForceToHandleKeyboardEventsFlag>false</ForceToHandleKeyboardEventsFlag>
+				<PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
+				<TabIndex>1</TabIndex>
+				<Rectangle>
+					<X>292.</X>
+					<Y>232.</Y>
+					<W>64.</W>
+					<H>64.</H>
+					<KeepAspectRatio>true</KeepAspectRatio>
+					<CirclePointTest>false</CirclePointTest>
+					<FixedTextureSetSize>false</FixedTextureSetSize>
+					<AlignmentX>0</AlignmentX>
+					<AlignmentY>0</AlignmentY>
+					<AnchorX>0</AnchorX>
+					<AnchorY>0</AnchorY>
+				</Rectangle>
+				<OnPushToStack>
+					<LuaCommand></LuaCommand>
+				</OnPushToStack>
+				<OnMouseOver>
+					<LuaCommand></LuaCommand>
+				</OnMouseOver>
+				<OnMouseOut>
+					<LuaCommand></LuaCommand>
+				</OnMouseOut>
+				<OnRightClick>
+					<LuaCommand></LuaCommand>
+				</OnRightClick>
+				<OnLeftClick>
+					<LuaCommand></LuaCommand>
+				</OnLeftClick>
+				<OnKeyPress>
+					<LuaCommand></LuaCommand>
+				</OnKeyPress>
+				<OnFocus>
+					<LuaCommand></LuaCommand>
+				</OnFocus>
+				<OnBlur>
+					<LuaCommand></LuaCommand>
+				</OnBlur>
+				<UpdateFunction>
+					<LuaCommand>GUI_BuildingButtons.BuyBattalionUpdate(2, true)</LuaCommand>
+				</UpdateFunction>
+				<UpdateFunctionTurnBased>
+					<LuaCommand></LuaCommand>
+				</UpdateFunctionTurnBased>
+				<UpdateFunctionSecondBased>
+					<LuaCommand></LuaCommand>
+				</UpdateFunctionSecondBased>
+				<ToolTipHelper>
+					<ToolTipEnabledFlag>true</ToolTipEnabledFlag>
+					<ControlTargetVisibility>true</ControlTargetVisibility>
+					<ToolTipUpdateFunction>
+						<LuaCommand>GUI_BuildingButtons.BuyBattalionMouseOver(2, true)</LuaCommand>
+					</ToolTipUpdateFunction>
+					<RawString></RawString>
+					<StringTableKey></StringTableKey>
+					<TargetWidget01>/InGame/Root/Normal/TooltipBuy</TargetWidget01>
+					<TargetWidget02></TargetWidget02>
+					<TargetWidget03></TargetWidget03>
+					<TargetWidget04></TargetWidget04>
+					<TargetWidget05></TargetWidget05>
+				</ToolTipHelper>
+				<Group></Group>
+				<MotherID>/InGame/Root/Normal/BuildingButtons</MotherID>
+				<Name>BuyBattallion2Special</Name>
+				<FullScreenBackground>false</FullScreenBackground>
+				<AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
+				<BackgroundMaterial>
+					<Texture></Texture>
+					<TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
+					<TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
+					<TextureCoordinatesMxU>64.</TextureCoordinatesMxU>
+					<TextureCoordinatesMxV>64.</TextureCoordinatesMxV>
+					<TextureFixedSizeX>0.</TextureFixedSizeX>
+					<TextureFixedSizeY>0.</TextureFixedSizeY>
+					<Color>
+						<Red>255</Red>
+						<Green>255</Green>
+						<Blue>255</Blue>
+						<Alpha>0</Alpha>
+					</Color>
+				</BackgroundMaterial>
+				<ActionFunction>
+					<LuaCommand>GUI_BuildingButtons.BuyBattalionClicked(2, true)</LuaCommand>
 				</ActionFunction>
 				<GenerateMaterialsFromNormal>false</GenerateMaterialsFromNormal>
 				<ShortCutKey></ShortCutKey>
