@@ -75,7 +75,6 @@
 	<Entity>U_NPC_Digger01</Entity>
 	<Entity>U_NPC_Monk_AS_Cart_Mission</Entity>
 	<Entity>U_NPC_Resource_Monk_AS</Entity>
-	<Entity>U_Tiger</Entity>
 
 <!-- *************************        Animals       ********************************* -->
 	<Entity>S_TigerPack_AS</Entity>
@@ -418,6 +417,9 @@
 	<Entity>U_Wolf_Brown</Entity>
 	<Entity>U_Lion_Male</Entity>
 	<Entity>U_Lion_Female</Entity>
+	<Entity>U_Tiger</Entity>
+	<Entity>U_Tiger_White</Entity>
+	<Entity>A_AS_Tiger_White</Entity>
 	<Entity>U_MagicOx</Entity>
 
 	<Entity>U_MilitaryTrebuchet</Entity>
