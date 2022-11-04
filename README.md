@@ -116,7 +116,7 @@ Folgende Änderungen wurden vorgenommen:
 			- NICHT rekrutierbar, aber kontrollierbar
 				- Für Mapper: Gut nutzbar als NPCs bzw. Dekoration
 		- Raubtiere als kontrollierbare Militäreinheiten verfügbar
-			- Konkret: Bären (3 Arten), Löwen (2 Arten), Wölfe (4 Arten), Tiger
+			- Konkret: Bären (3 Arten), Löwen (2 Arten), Wölfe (4 Arten), Tiger (2 Arten)
 		- Trebuchet
 			- Funktioniert ähnlich wie ein Katapult
 				- Höhere Maximalreichweite (32sm > 24sm)
@@ -220,6 +220,7 @@ Folgende Änderungen wurden vorgenommen:
 	- Spielerfarben auf der Minimap sind nun (meistens) korrekt
     - NPC Charaktere können nicht mehr Spieler 0 angehören
     - Arbeiter von Kasernen holen nur eine Ware per Zyklus (Soll nicht vollständig gefüllte Kasernen verhindern)
+	- Neue Tiger-Unterart: Weißer Tiger
 - Kampagnen
 	- Hauptspiel-Kampagne auch im AddOn spielbar
 	- Bugs gefixt
@@ -240,19 +241,15 @@ Folgende Änderungen wurden vorgenommen:
 
 
 ## (Mögliche) ToDos
+- Saboteur
+	- Soll wirklich alles außer Spezialgebäude angreifen können (per EntityCategory)
+	- Unique Angriffsanimation gegen Gebäude & ggf. Belagerungsgeräte
+- Paladin: Retexturing im Stile von Alandra
+- Stats von gezähmten Tieren korrigieren
+- Belagerungsturm buffen
 - (OnSreen) Button-Texturen leicht versetzt
 	- vmtl. Folge des Merges
 - c00-m3: Falsche Nachricht am Anfang
-- Lanzenträger/Hellebardiere
-	- Icon
-	- Audio-Feedback
-	- Rekrutierung
-		- Eigener Warenkreislauf?
-			- Gebäude
-			- Waren
-		- ODER: Der Nahkämpferkaserne hinzufügen
-			- Neuer Button für die Kaserne
-			- "Schwertkämpfer***"-Strings zu "Nahkämpfer***" abändern
 - Außenposten/Aussichtsturm/Wachturm
 	- ME-Aussichtsturm: Schwarze Seite
 	- Wachtürme: Mit Schützen bemannbar statt mit Katapulten ausrüstbar?
@@ -327,17 +324,17 @@ Folgende Änderungen wurden vorgenommen:
 	- AS: Kräutermet = Honig + Kräuter (Wird in der AddOn-Kampagne im Rahmen eines Auftrags erwähnt/gefordert, also gibts eine Referenz dazu)
 - Signatureinheiten für alle Ritter
 	- Dabei auch jeder etwas andere Stats geben, damit es sich lohnt
-	- Marcus		= Hellebardiere ("Garde")
-	- Allandra	= Berittene Streitaxtkämpfer ("Paladine")
-	- Elias		= Banditen (SE, 6er, "Händler-Miliz")
-	- Kestral		= Banditen (ME, 6er)
-	- Hakim		= Banditen (NA, 6er)
-	- Thordal		= Banditen (NE, 6er)
-	- Sabattata	= RP-Soldaten
-	- Roter Prinz	= RP-Soldaten
-	- Saraya		= Banditen (AS, 6er)
-	- Praphat		= Große Kanonen
-	- Khana		= Khana-Soldaten
+	- Marcus		= Hellebardiere (Damage+, Health+, Speed-)
+	- Alandra		= Berittene_Streitaxtkämpfer/Paladine (Damage+, Health+, Speed-)
+	- Elias			= SE-Banditen/Händler-Miliz (Damage-, Costs-)
+	- Kestral		= ME-Banditen/Vogelfreie (Speed+, Damage-, Bonusschaden gegen leicht gepanzerte)
+	- Hakim			= NA-Banditen/Sarazenen (Health-, Speed++)
+	- Thordal		= NE-Banditen/Wikinger (Damage+, Range-, Bonusschaden gegen schwer gepanzerte)
+	- Sabatt		= S5-Dieb/Saboteur (Damage++, Health-, Bonusschaden gegen Gebäude und Belagerungsgeräte, Kein Munitionsverbrauch, Diebeslimit gilt)
+	- Roter Prinz	= RP-Soldaten/Gardisten (Damage+, Health-)
+	- Saraya		= AS-Banditen/Exulanten (Speed+, Health-, Nahkämpfer mit leichtem SplashDamage, Fernkämpfer nutzen Brandpfeile gegen Einheiten mit Damage+)
+	- Praphat		= Belagerungskanone (Damage+, Speed-, SplashRange+)
+	- Khana			= Khana-Soldaten/Fanatiker (Speed+, Health-, Bonusschaden gegen Gebäuden)
 - Audio-Feedback für Ochsen
 - Rebalancing
 	- Neue (sinnvollere) Aufstiegsbedingungen

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AnimSet>
+    <Categories>
+        <Category classname="EGL::CAnimCategory">
+            <Name>Walk</Name>
+            <Animation>Misc_Unit\U_Saboteur_Walk</Animation>
+        </Category>
+        <Category classname="EGL::CAnimCategory">
+            <Name>Run</Name>
+            <Animation>Misc_Unit\U_Saboteur_Walk</Animation>
+        </Category>
+        <Category classname="EGL::CAnimCategory">
+            <Name>AttackRun</Name>
+            <Animation>Misc_Unit\U_Saboteur_Run</Animation>
+        </Category>
+        <Category classname="EGL::CAnimCategory">
+            <Name>Stand</Name>
+            <Animation>Misc_Unit\U_Saboteur_Idle1</Animation>
+        </Category>
+		<!-- Does not exist! -->
+        <Category classname="EGL::CAnimCategory">
+            <Name>Cheer</Name>
+            <Animation>Misc_Unit\U_Saboteur_Idle1</Animation>
+        </Category>
+		<!-- Does not exist! -->
+        <Category classname="EGL::CAnimCategory">
+            <Name>Jubilate</Name>
+            <Animation>Misc_Unit\U_Saboteur_Idle1</Animation>
+        </Category>
+		<!-- Does not exist! -->
+        <Category classname="EGL::CAnimCategory">
+            <Name>Dead</Name>
+            <Animation>Misc_Unit\U_Saboteur_Dead</Animation>
+        </Category>
+
+
+		<!--********************************** RAISESHIELD **********************************-->
+        <Category classname="EGL::CAnimCategory">
+            <Name>RaiseShield</Name>
+            <Animation>Misc_Unit\U_Saboteur_Idle1</Animation>
+        </Category>
+        <Category classname="EGL::CAnimCategory">
+            <Name>RaiseShieldRun</Name>
+            <Animation>Misc_Unit\U_Saboteur_Run</Animation>
+        </Category>
+		<!--********************************** STANDTOARMS **********************************-->
+		<!-- Does not exist! -->
+        <Category classname="EGL::CAnimCategory">
+            <Name>StandToArms</Name>
+            <Animation>Misc_Unit\U_Saboteur_Idle1</Animation>
+        </Category>
+		<!-- Does not exist! -->
+        <Category classname="EGL::CAnimCategory">
+            <Name>JumpToArms</Name>
+            <Animation>Misc_Unit\U_Saboteur_Idle1</Animation>
+        </Category>
+        
+		<!--********************************** STANDTOARMSIDLE **********************************-->
+		<Category classname="EGL::CAnimCategory">
+            <Name>StandToArmsIdle</Name>
+    	    <RandomAnims>
+    		    <RandomAnim>
+    			    <Animation>Misc_Unit\U_Saboteur_Idle1</Animation>
+    			    <Rank>1</Rank>
+    		    </RandomAnim>
+    	    </RandomAnims>
+        </Category>
+
+		<!--********************************** IDLE **********************************-->
+        <Category classname="EGL::CAnimCategory">
+            <Name>Idle</Name>
+    	    <RandomAnims>
+    		    <RandomAnim>
+    			    <Animation>Misc_Unit\U_Saboteur_Idle1</Animation>
+    			    <Rank>20</Rank>
+    		    </RandomAnim>
+    		    <RandomAnim>
+    			    <Animation>Misc_Unit\U_Saboteur_Idle2</Animation>
+    			    <Rank>1</Rank>
+    		    </RandomAnim>
+    		    <RandomAnim>
+    			    <Animation>Misc_Unit\U_Saboteur_Idle3</Animation>
+    			    <Rank>1</Rank>
+    		    </RandomAnim>
+				<RandomAnim>
+					<Animation>Misc_Unit\U_Saboteur_Idle4</Animation>
+					<Rank>1</Rank>
+				</RandomAnim>
+				<RandomAnim>
+					<Animation>Misc_Unit\U_Saboteur_Idle5</Animation>
+					<Rank>1</Rank>
+				</RandomAnim>
+				<RandomAnim>
+					<Animation>Misc_Unit\U_Saboteur_Idle6</Animation>
+					<Rank>1</Rank>
+				</RandomAnim>
+    	    </RandomAnims>
+        </Category>
+		
+		<!--********************************** HEIST **********************************-->
+		<Category classname="EGL::CAnimCategory">
+			<Name>HeistRunFat</Name>
+			<Animation>Military\U_MilitaryBandit_Melee_SE_HeistFRun</Animation>
+		</Category>
+
+		<Category classname="EGL::CAnimCategory">
+			<Name>HeistRunSexy</Name>
+			<Animation>Military\U_MilitaryBandit_Melee_SE_HeistSRun</Animation>
+		</Category>
+
+		<!--********************************** ATTACK **********************************-->
+        <Category classname="EGL::CAnimCategory">
+            <Name>Attack</Name>
+    	    <RandomAnims>
+    		    <RandomAnim>
+    			    <Animation>Misc_Unit\U_Saboteur_Fight</Animation>
+    			    <Rank>1</Rank>
+    		    </RandomAnim>
+    		    <RandomAnim>
+    			    <Animation>Misc_Unit\U_Saboteur_Fight2</Animation>
+    			    <Rank>2</Rank>
+    		    </RandomAnim>
+    		    <RandomAnim>
+    			    <Animation>Misc_Unit\U_Saboteur_Fight3</Animation>
+    			    <Rank>3</Rank>
+    		    </RandomAnim>
+    	    </RandomAnims>
+        </Category>
+
+		<!--********************************** DIE **********************************-->		
+        <Category classname="EGL::CAnimCategory">
+            <Name>Die</Name>
+    	    <RandomAnims>
+    		    <RandomAnim>
+    			    <Animation>Misc_Unit\U_Saboteur_Die</Animation>
+    			    <Rank>1</Rank>
+    		    </RandomAnim>
+    	    </RandomAnims>
+        </Category>
+		<!--********************************** BATTLEIDLE **********************************-->
+        <Category classname="EGL::CAnimCategory">
+            <Name>BattleIdle</Name>
+    	    <RandomAnims>
+    		    <RandomAnim>
+    			    <Animation>Misc_Unit\U_Saboteur_BattleIdle</Animation>
+    			    <Rank>1</Rank>
+    		    </RandomAnim>
+    	    </RandomAnims>
+        </Category>
+        
+</Categories>
+</AnimSet>

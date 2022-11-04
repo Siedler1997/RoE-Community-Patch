@@ -3,56 +3,56 @@
     <Categories>
         <Category classname="EGL::CAnimCategory">
             <Name>Walk</Name>
-            <Animation>U_Helbardier_Walk</Animation>
+            <Animation>Military\U_Military_Paladin_Run</Animation>
         </Category>
         <Category classname="EGL::CAnimCategory">
             <Name>Run</Name>
-            <Animation>U_Helbardier_Walk</Animation>
+            <Animation>Military\U_Military_Paladin_Run</Animation>
         </Category>
         <Category classname="EGL::CAnimCategory">
             <Name>AttackRun</Name>
-            <Animation>U_Helbardier_Run</Animation>
+            <Animation>Military\U_Military_Paladin_Run</Animation>
         </Category>
         <Category classname="EGL::CAnimCategory">
             <Name>Stand</Name>
-            <Animation>U_Helbardier_Idle1</Animation>
+            <Animation>Military\U_Military_Paladin_Idle1</Animation>
         </Category>
 		<!-- Does not exist! -->
         <Category classname="EGL::CAnimCategory">
             <Name>Cheer</Name>
-            <Animation>U_Helbardier_Idle1</Animation>
+            <Animation>Military\U_Military_Paladin_Idle1</Animation>
         </Category>
 		<!-- Does not exist! -->
         <Category classname="EGL::CAnimCategory">
             <Name>Jubilate</Name>
-            <Animation>U_Helbardier_Idle1</Animation>
+            <Animation>Military\U_Military_Paladin_Idle1</Animation>
         </Category>
 		<!-- Does not exist! -->
         <Category classname="EGL::CAnimCategory">
             <Name>Dead</Name>
-            <Animation>U_Helbardier_Idle1</Animation>
+            <Animation>Military\U_Military_Paladin_Idle1</Animation>
         </Category>
 
 
 		<!--********************************** RAISESHIELD **********************************-->
         <Category classname="EGL::CAnimCategory">
             <Name>RaiseShield</Name>
-            <Animation>U_Helbardier_Idle1</Animation>
+            <Animation>Military\U_Military_Paladin_Idle1</Animation>
         </Category>
         <Category classname="EGL::CAnimCategory">
             <Name>RaiseShieldRun</Name>
-            <Animation>U_Helbardier_Run</Animation>
+            <Animation>Military\U_Military_Paladin_Walk</Animation>
         </Category>
 		<!--********************************** STANDTOARMS **********************************-->
 		<!-- Does not exist! -->
         <Category classname="EGL::CAnimCategory">
             <Name>StandToArms</Name>
-            <Animation>U_Helbardier_Idle1</Animation>
+            <Animation>Military\U_Military_Paladin_Idle3</Animation>
         </Category>
 		<!-- Does not exist! -->
         <Category classname="EGL::CAnimCategory">
             <Name>JumpToArms</Name>
-            <Animation>U_Helbardier_Idle1</Animation>
+            <Animation>Military\U_Military_Paladin_Idle3</Animation>
         </Category>
         
 		<!--********************************** STANDTOARMSIDLE **********************************-->
@@ -60,7 +60,7 @@
             <Name>StandToArmsIdle</Name>
     	    <RandomAnims>
     		    <RandomAnim>
-    			    <Animation>U_Helbardier_Idle1</Animation>
+    			    <Animation>Military\U_Military_Paladin_Idle3</Animation>
     			    <Rank>1</Rank>
     		    </RandomAnim>
     	    </RandomAnims>
@@ -71,27 +71,27 @@
             <Name>Idle</Name>
     	    <RandomAnims>
     		    <RandomAnim>
-    			    <Animation>U_Helbardier_Idle1</Animation>
+    			    <Animation>Military\U_Military_Paladin_Idle1</Animation>
     			    <Rank>20</Rank>
     		    </RandomAnim>
     		    <RandomAnim>
-    			    <Animation>U_Helbardier_Idle2</Animation>
+    			    <Animation>Military\U_Military_Paladin_Idle2</Animation>
     			    <Rank>1</Rank>
     		    </RandomAnim>
     		    <RandomAnim>
-    			    <Animation>U_Helbardier_Idle3</Animation>
+    			    <Animation>Military\U_Military_Paladin_Idle3</Animation>
     			    <Rank>1</Rank>
     		    </RandomAnim>
 				<RandomAnim>
-					<Animation>U_Helbardier_Idle4</Animation>
+					<Animation>Military\U_Military_Paladin_Idle4</Animation>
 					<Rank>1</Rank>
 				</RandomAnim>
 				<RandomAnim>
-					<Animation>U_Helbardier_Idle5</Animation>
+					<Animation>Military\U_Military_Paladin_Idle5</Animation>
 					<Rank>1</Rank>
 				</RandomAnim>
 				<RandomAnim>
-					<Animation>U_Helbardier_Idle6</Animation>
+					<Animation>Military\U_Military_Paladin_Idle6</Animation>
 					<Rank>1</Rank>
 				</RandomAnim>
     	    </RandomAnims>
@@ -113,16 +113,8 @@
             <Name>Attack</Name>
     	    <RandomAnims>
     		    <RandomAnim>
-    			    <Animation>U_Helbardier_Fight</Animation>
+    			    <Animation>Military\U_Military_Paladin_Fight</Animation>
     			    <Rank>1</Rank>
-    		    </RandomAnim>
-    		    <RandomAnim>
-    			    <Animation>U_Helbardier_Fight2</Animation>
-    			    <Rank>2</Rank>
-    		    </RandomAnim>
-    		    <RandomAnim>
-    			    <Animation>U_Helbardier_Fight3</Animation>
-    			    <Rank>3</Rank>
     		    </RandomAnim>
     	    </RandomAnims>
         </Category>
@@ -132,7 +124,7 @@
             <Name>Die</Name>
     	    <RandomAnims>
     		    <RandomAnim>
-    			    <Animation>U_Helbardier_Die</Animation>
+    			    <Animation>Military\U_Military_Paladin_Die</Animation>
     			    <Rank>1</Rank>
     		    </RandomAnim>
     	    </RandomAnims>
@@ -142,7 +134,7 @@
             <Name>BattleIdle</Name>
     	    <RandomAnims>
     		    <RandomAnim>
-    			    <Animation>U_Helbardier_BattleIdle</Animation>
+    			    <Animation>Military\U_Military_Paladin_Idle1</Animation>
     			    <Rank>1</Rank>
     		    </RandomAnim>
     	    </RandomAnims>

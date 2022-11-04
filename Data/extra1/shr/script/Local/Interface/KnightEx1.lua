@@ -295,17 +295,17 @@ function GetKnightSpecialBattalionType(_knightId, _buildingId, _tier, _special)
         if _tier == 1 then
             if _special == true then 
                 if KnightType == Entities.U_KnightTrading then
-                    BattalionType = Entities.U_MilitaryBandit_Ranged_SE     --U_Military_TradeMilitia_Range
+                    BattalionType = Entities.U_MilitaryBandit_Ranged_SE     --U_Military_TradeMilitia_Melee
                 elseif KnightType == Entities.U_KnightPlunder then
-                    BattalionType = Entities.U_MilitaryBandit_Ranged_ME     --U_Military_Outlaw_Range
+                    BattalionType = Entities.U_MilitaryBandit_Ranged_ME     --U_Military_Outlaw_Melee
                 elseif KnightType == Entities.U_KnightWisdom then
-                    BattalionType = Entities.U_MilitaryBandit_Ranged_NA     --U_Military_Nomad_Range
+                    BattalionType = Entities.U_MilitaryBandit_Ranged_NA     --U_Military_Nomad_Melee
                 elseif KnightType == Entities.U_KnightSong then
-                    BattalionType = Entities.U_MilitaryBandit_Ranged_NE     --U_Military_Viking_Range
+                    BattalionType = Entities.U_MilitaryBandit_Ranged_NE     --U_Military_Viking_Melee
                 elseif KnightType == Entities.U_KnightRedPrince then
                     BattalionType = Entities.U_MilitaryBow_RedPrince
                 elseif KnightType == Entities.U_KnightSaraya then
-                    BattalionType = Entities.U_MilitaryBandit_Ranged_AS     --U_Military_Exile_Range
+                    BattalionType = Entities.U_MilitaryBandit_Ranged_AS     --U_Military_Exile_Melee
                 elseif KnightType == Entities.U_KnightKhana then
                     BattalionType = Entities.U_MilitaryBow_Khana
                 end
@@ -315,7 +315,7 @@ function GetKnightSpecialBattalionType(_knightId, _buildingId, _tier, _special)
         elseif _tier == 2 then
             if _special == true then 
                 if KnightType == Entities.U_KnightHealing then
-                    BattalionType = Entities.U_MilitaryCavalry      --U_Military_Paladin
+                    BattalionType = Entities.U_Military_Paladin
                 end
             else
                 BattalionType = Entities.U_MilitaryCavalry
@@ -344,7 +344,7 @@ function GetKnightSpecialBattalionType(_knightId, _buildingId, _tier, _special)
     elseif BuildingType == Entities.B_BarracksSpearmen and _tier == 1 then
         if _special == true then 
             if KnightType == Entities.U_KnightChivalry then
-                BattalionType = Entities.U_MilitarySpear    --U_Military_Helbardier
+                BattalionType = Entities.U_Military_Helbardier
             end
         else
             BattalionType = Entities.U_MilitarySpear
@@ -354,7 +354,7 @@ function GetKnightSpecialBattalionType(_knightId, _buildingId, _tier, _special)
     elseif Logic.IsEntityInCategory(_buildingId, EntityCategories.Headquarters) == 1 and _tier == 1 then
         if _special == true then
             if KnightType == Entities.U_KnightSabatta then
-                BattalionType = Entities.U_Thief    --U_Assassin
+                BattalionType = Entities.U_Saboteur
             end
         else
             BattalionType = Entities.U_Thief
@@ -399,8 +399,8 @@ function GetBattalionBuyTooltipString(_BattalionType)
         TooltipString = "BuyVikingMelee"
     elseif _BattalionType == Entities.U_Military_Viking_Range then
         TooltipString = "BuyVikingRange"
-    elseif _BattalionType == Entities.U_Assassin then
-        TooltipString = "BuyAssassin"
+    elseif _BattalionType == Entities.U_Saboteur then
+        TooltipString = "BuySaboteur"
     elseif _BattalionType == Entities.U_MilitarySword_RedPrince then
         TooltipString = "BuyGuardMelee"
     elseif _BattalionType == Entities.U_MilitaryBow_RedPrince then

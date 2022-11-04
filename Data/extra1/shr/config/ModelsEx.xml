@@ -2474,12 +2474,44 @@
 			<DefaultAnimID>Military\U_MilitarySpear_Run</DefaultAnimID>
 		</Model>
 
-		<Model id="Units\U_Helbardier">
+		<Model id="Units\Military\U_Military_Helbardier">
 			<SelectionRadius>100</SelectionRadius>
 			<!--<Effect>SettlerRimPlayerColorSpecular</Effect>-->
 			<SelectionTexture>Selection_Soldier</SelectionTexture>
 			<OcclusionReceiver>True</OcclusionReceiver>
-			<DefaultAnimID>U_Helbardier_Run</DefaultAnimID>
+			<DefaultAnimID>Military\U_Military_Helbardier_Run</DefaultAnimID>
+		</Model>
+
+		<Model id="Units\Military\U_MilitaryCavalry">
+			<SelectionRadius>100</SelectionRadius>
+			<!--<Effect>SettlerRimPlayerColorSpecular</Effect>-->
+			<SelectionTexture>Selection_Soldier</SelectionTexture>
+			<OcclusionReceiver>True</OcclusionReceiver>
+			<DefaultAnimID>Military\U_MilitaryCavalry_Run</DefaultAnimID>
+		</Model>
+
+		<Model id="Units\Military\U_Military_Paladin">
+			<SelectionRadius>100</SelectionRadius>
+			<!--Effect>SettlerRimPlayerColorSpecular</Effect-->
+			<SelectionTexture>Selection_Soldier</SelectionTexture>
+			<OcclusionReceiver>True</OcclusionReceiver>
+			<DefaultAnimID>Military\U_Military_Paladin_Run</DefaultAnimID>
+		</Model>
+
+		<Model id="Units\Misc_Unit\U_Saboteur">
+			<SelectionRadius>100</SelectionRadius>
+			<!--<Effect>SettlerRimPlayerColorSpecular</Effect>-->
+			<SelectionTexture>Selection_Soldier</SelectionTexture>
+			<OcclusionReceiver>True</OcclusionReceiver>
+			<DefaultAnimID>U_Saboteur_Walk</DefaultAnimID>
+		</Model>
+		<Model id="Units\Misc_Unit\U_Saboteur_Invisible">
+			<SelectionRadius>100</SelectionRadius>
+			<Effect>SettlerRimPlayerColorSpecular</Effect>
+			<SelectionTexture>Selection_Soldier</SelectionTexture>
+			<OcclusionReceiver>True</OcclusionReceiver>
+			<CastShadow>True</CastShadow>
+			<DefaultAnimID>U_Saboteur_Walk</DefaultAnimID>
 		</Model>
 
 		<Model id="Doodads\D_X_Beautification_Dragon">

@@ -6,12 +6,11 @@
     "\\Data\\extra1\\shr",
     "\\Data\\extra1\\shr\\config",
     "\\Data\\extra1\\shr\\config\\Entities",
-    "\\Data\\extra1\\shr\\menu",
-    "\\Data\\extra1\\shr\\menu\\Projects",
-    "\\Data\\extra1\\shr\\Script",
-    "\\Data\\extra1\\shr\\text\\de",
-    "\\Data\\extra1\\shr\\text\\de\\ingame"
+    "\\Data\\extra1\\shr\\text",
+    "\\Data\\extra1\\shr\\text\\bb",
+    "\\Data\\extra1\\shr\\text\\bb\\InGame",
+    "\\Data\\extra1\\shr\\text\\de"
   ],
-  "SelectedNode": "\\Data\\extra1\\shr\\menu\\Projects\\InGame.xml",
+  "SelectedNode": "\\Data\\extra1\\shr\\config\\Entities\\U_Tiger_White.xml",
   "PreviewInSolutionExplorer": false
 }

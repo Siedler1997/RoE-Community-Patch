@@ -64,6 +64,11 @@
     <Id>Balista</Id>
     <Id>Cannon</Id>
 	<Id>G_Spear_Supplier</Id>
+	
+	<!--Dient dazu, dass Saboteure alle Gebäude außer SpecialBuildings angreifen können-->
+	<Id>SabotatableBuilding</Id>
+	
+	<!--Kategorie erforderlich, damit nur Fernkämpfer Drachen angreifen können und ihre Projektile 'richtig' treffen-->
 	<Id>Dragon</Id>
     
 </EntityCategories>

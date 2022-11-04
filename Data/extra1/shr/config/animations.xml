@@ -11172,79 +11172,79 @@
 	</Animation>
 	
 	<Animation>
-		<FileName>u_helbardier_battleidle</FileName>
+		<FileName>military\u_military_helbardier_battleidle</FileName>
 		<Timestamp>128208607970000000</Timestamp>
 		<FileLength>53164</FileLength>
 		<AnimationDuration>5.675</AnimationDuration>
 	</Animation>
 	<Animation>
-		<FileName>u_helbardier_die</FileName>
+		<FileName>military\u_military_helbardier_die</FileName>
 		<Timestamp>128306301210000000</Timestamp>
 		<FileLength>53164</FileLength>
 		<AnimationDuration>1.925</AnimationDuration>
 	</Animation>
 	<Animation>
-		<FileName>u_helbardier_fight</FileName>
+		<FileName>military\u_military_helbardier_fight</FileName>
 		<Timestamp>128178413810000000</Timestamp>
 		<FileLength>53164</FileLength>
 		<AnimationDuration>1.325</AnimationDuration>
 	</Animation>
 	<Animation>
-		<FileName>u_helbardier_fight2</FileName>
+		<FileName>military\u_military_helbardier_fight2</FileName>
 		<Timestamp>128193943300000000</Timestamp>
 		<FileLength>53164</FileLength>
 		<AnimationDuration>1.2</AnimationDuration>
 	</Animation>
 	<Animation>
-		<FileName>u_helbardier_fight3</FileName>
+		<FileName>military\u_military_helbardier_fight3</FileName>
 		<Timestamp>128193943570000000</Timestamp>
 		<FileLength>53164</FileLength>
 		<AnimationDuration>1.475</AnimationDuration>
 	</Animation>
 	<Animation>
-		<FileName>u_helbardier_idle1</FileName>
+		<FileName>military\u_military_helbardier_idle1</FileName>
 		<Timestamp>128304434450000000</Timestamp>
 		<FileLength>53164</FileLength>
 		<AnimationDuration>5.325</AnimationDuration>
 	</Animation>
 	<Animation>
-		<FileName>u_helbardier_idle2</FileName>
+		<FileName>military\u_military_helbardier_idle2</FileName>
 		<Timestamp>128304434630000000</Timestamp>
 		<FileLength>53164</FileLength>
 		<AnimationDuration>3.</AnimationDuration>
 	</Animation>
 	<Animation>
-		<FileName>u_helbardier_idle3</FileName>
+		<FileName>military\u_military_helbardier_idle3</FileName>
 		<Timestamp>128304434820000000</Timestamp>
 		<FileLength>53164</FileLength>
 		<AnimationDuration>1.725</AnimationDuration>
 	</Animation>
 	<Animation>
-		<FileName>u_helbardier_idle4</FileName>
+		<FileName>military\u_military_helbardier_idle4</FileName>
 		<Timestamp>128304434820000000</Timestamp>
 		<FileLength>53164</FileLength>
 		<AnimationDuration>1.8</AnimationDuration>
 	</Animation>
 	<Animation>
-		<FileName>u_helbardier_idle5</FileName>
+		<FileName>military\u_military_helbardier_idle5</FileName>
 		<Timestamp>128304434820000000</Timestamp>
 		<FileLength>53164</FileLength>
 		<AnimationDuration>1.8</AnimationDuration>
 	</Animation>
 	<Animation>
-		<FileName>u_helbardier_idle6</FileName>
+		<FileName>military\u_military_helbardier_idle6</FileName>
 		<Timestamp>128304434820000000</Timestamp>
 		<FileLength>53164</FileLength>
 		<AnimationDuration>5.325</AnimationDuration>
 	</Animation>
 	<Animation>
-		<FileName>u_helbardier_run</FileName>
+		<FileName>military\u_military_helbardier_run</FileName>
 		<Timestamp>127941656140000000</Timestamp>
 		<FileLength>53164</FileLength>
 		<AnimationDuration>1.6</AnimationDuration>
 	</Animation>
 	<Animation>
-		<FileName>u_helbardier_walk</FileName>
+		<FileName>military\u_military_helbardier_walk</FileName>
 		<Timestamp>128178463530000000</Timestamp>
 		<FileLength>53164</FileLength>
 		<AnimationDuration>0.8</AnimationDuration>
@@ -11328,6 +11328,162 @@
 		<FileLength>53164</FileLength>
 		<AnimationDuration>1.33</AnimationDuration>
 	</Animation>
+
+	<Animation>
+		<FileName>military\u_military_paladin_die</FileName>
+		<Timestamp>128306301210000000</Timestamp>
+		<FileLength>53164</FileLength>
+		<AnimationDuration>1.8</AnimationDuration>
+	</Animation>
+	<Animation>
+		<FileName>military\u_military_paladin_fight</FileName>
+		<Timestamp>128178413810000000</Timestamp>
+		<FileLength>53164</FileLength>
+		<AnimationDuration>1.28</AnimationDuration>
+	</Animation>
+	<Animation>
+		<FileName>military\u_military_paladin_idle1</FileName>
+		<Timestamp>128304434450000000</Timestamp>
+		<FileLength>53164</FileLength>
+		<AnimationDuration>2.62</AnimationDuration>
+	</Animation>
+	<Animation>
+		<FileName>military\u_military_paladin_idle2</FileName>
+		<Timestamp>128304434630000000</Timestamp>
+		<FileLength>53164</FileLength>
+		<AnimationDuration>2.62</AnimationDuration>
+	</Animation>
+	<Animation>
+		<FileName>military\u_military_paladin_idle3</FileName>
+		<Timestamp>128304434820000000</Timestamp>
+		<FileLength>53164</FileLength>
+		<AnimationDuration>2.64</AnimationDuration>
+	</Animation>
+	<Animation>
+		<FileName>military\u_military_paladin_idle4</FileName>
+		<Timestamp>128304434820000000</Timestamp>
+		<FileLength>53164</FileLength>
+		<AnimationDuration>2.635</AnimationDuration>
+	</Animation>
+	<Animation>
+		<FileName>military\u_military_paladin_idle5</FileName>
+		<Timestamp>128304434820000000</Timestamp>
+		<FileLength>53164</FileLength>
+		<AnimationDuration>2.635</AnimationDuration>
+	</Animation>
+	<Animation>
+		<FileName>military\u_military_paladin_idle6</FileName>
+		<Timestamp>128304434820000000</Timestamp>
+		<FileLength>53164</FileLength>
+		<AnimationDuration>2.635</AnimationDuration>
+	</Animation>
+	<Animation>
+		<FileName>military\u_military_paladin_run</FileName>
+		<Timestamp>127941656140000000</Timestamp>
+		<FileLength>53164</FileLength>
+		<AnimationDuration>1.6</AnimationDuration>
+	</Animation>
+	<Animation>
+		<FileName>military\u_military_paladin_walk</FileName>
+		<Timestamp>128178463530000000</Timestamp>
+		<FileLength>53164</FileLength>
+		<AnimationDuration>1.33</AnimationDuration>
+	</Animation>
+
+
+	<Animation>
+		<FileName>misc_unit\u_saboteur_battleidle</FileName>
+		<Timestamp>128208607970000000</Timestamp>
+		<FileLength>53164</FileLength>
+		<AnimationDuration>5.675</AnimationDuration>
+	</Animation>
+	<Animation>
+		<FileName>misc_unit\u_saboteur_die</FileName>
+		<Timestamp>128306301210000000</Timestamp>
+		<FileLength>53164</FileLength>
+		<AnimationDuration>2.0</AnimationDuration>
+	</Animation>
+	<Animation>
+		<FileName>misc_unit\u_saboteur_fight</FileName>
+		<Timestamp>128178413810000000</Timestamp>
+		<FileLength>53164</FileLength>
+		<AnimationDuration>1.325</AnimationDuration>
+	</Animation>
+	<Animation>
+		<FileName>misc_unit\u_saboteur_fight2</FileName>
+		<Timestamp>128193943300000000</Timestamp>
+		<FileLength>53164</FileLength>
+		<AnimationDuration>1.2325</AnimationDuration>
+	</Animation>
+	<Animation>
+		<FileName>misc_unit\u_saboteur_fight3</FileName>
+		<Timestamp>128193943570000000</Timestamp>
+		<FileLength>53164</FileLength>
+		<AnimationDuration>1.075</AnimationDuration>
+	</Animation>
+	<Animation>
+		<FileName>misc_unit\u_saboteur_idle1</FileName>
+		<Timestamp>128304434450000000</Timestamp>
+		<FileLength>53164</FileLength>
+		<AnimationDuration>5.325</AnimationDuration>
+	</Animation>
+	<Animation>
+		<FileName>misc_unit\u_saboteur_idle2</FileName>
+		<Timestamp>128304434630000000</Timestamp>
+		<FileLength>53164</FileLength>
+		<AnimationDuration>7.325</AnimationDuration>
+	</Animation>
+	<Animation>
+		<FileName>misc_unit\u_saboteur_idle3</FileName>
+		<Timestamp>128304434820000000</Timestamp>
+		<FileLength>53164</FileLength>
+		<AnimationDuration>7.325</AnimationDuration>
+	</Animation>
+	<Animation>
+		<FileName>misc_unit\u_saboteur_idle4</FileName>
+		<Timestamp>128304434820000000</Timestamp>
+		<FileLength>53164</FileLength>
+		<AnimationDuration>8.8</AnimationDuration>
+	</Animation>
+	<Animation>
+		<FileName>misc_unit\u_saboteur_idle5</FileName>
+		<Timestamp>128304434820000000</Timestamp>
+		<FileLength>53164</FileLength>
+		<AnimationDuration>2.675</AnimationDuration>
+	</Animation>
+	<Animation>
+		<FileName>misc_unit\u_saboteur_idle6</FileName>
+		<Timestamp>128304434820000000</Timestamp>
+		<FileLength>53164</FileLength>
+		<AnimationDuration>5.325</AnimationDuration>
+	</Animation>
+	<Animation>
+		<FileName>misc_unit\u_saboteur_run</FileName>
+		<Timestamp>127941656140000000</Timestamp>
+		<FileLength>53164</FileLength>
+		<AnimationDuration>1.125</AnimationDuration>
+	</Animation>
+	<Animation>
+		<FileName>misc_unit\u_saboteur_walk</FileName>
+		<Timestamp>127941656140000000</Timestamp>
+		<FileLength>53164</FileLength>
+		<AnimationDuration>0.8</AnimationDuration>
+	</Animation>
+	<Animation>
+		<FileName>misc_unit\u_saboteur_bomb</FileName>
+		<Timestamp>127941656140000000</Timestamp>
+		<FileLength>53164</FileLength>
+		<AnimationDuration>6.675</AnimationDuration>
+	</Animation>
+	<Animation>
+		<FileName>misc_unit\u_saboteur_dead</FileName>
+		<Timestamp>127941656140000000</Timestamp>
+		<FileLength>53164</FileLength>
+		<AnimationDuration>0.075</AnimationDuration>
+	</Animation>
+	
+	
+	
 	<Animation>
 		<FileName>military\u_dragon_fly</FileName>
 		<Timestamp>128178463530000000</Timestamp>

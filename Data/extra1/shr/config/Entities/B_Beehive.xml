@@ -28,6 +28,7 @@
         <EntityCategories>
             <EntityCategory>BeeHive</EntityCategory>
             <EntityCategory>AttackableBuilding</EntityCategory>
+			<EntityCategory>SabotatableBuilding</EntityCategory>
         </EntityCategories>
         <RepairBuildingTL>TL_WORKER_REPAIR</RepairBuildingTL>
         <ApproachPos>
