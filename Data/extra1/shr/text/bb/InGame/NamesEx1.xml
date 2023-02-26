@@ -117,6 +117,24 @@
 	<string id="U_Tiger" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Tiger]]></string>
 	<string id="U_Tiger_White" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[White Tiger]]></string>
 	<string id="A_AS_Tiger_White" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114410" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[White Tiger]]></string>
+	<!--
+	<string id="U_Cat1" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114413" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Mrs. Norris]]></string>
+	<string id="U_Cat2" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114413" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Garfield]]></string>
+	<string id="U_Cat3" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114413" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Meowth]]></string>
+	<string id="U_Cat4" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114413" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Tom]]></string>
+	<string id="U_Dog1" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114413" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Scooby]]></string>
+	<string id="U_Dog2" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114413" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Pluto]]></string>
+	<string id="U_Dog3" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114413" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cerberus]]></string>
+	<string id="U_Dog4" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114413" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dogmatix]]></string>
+	-->
+	<string id="U_Cat1" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114413" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cat]]></string>
+	<string id="U_Cat2" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114413" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cat]]></string>
+	<string id="U_Cat3" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114413" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cat]]></string>
+	<string id="U_Cat4" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114413" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cat]]></string>
+	<string id="U_Dog1" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114413" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dog]]></string>
+	<string id="U_Dog2" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114413" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dog]]></string>
+	<string id="U_Dog3" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114413" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dog]]></string>
+	<string id="U_Dog4" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114413" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dog]]></string>
 	<string id="B_GuardTower_AS" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Guard Tower]]></string>
 	<string id="B_WatchTower_AS" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Lookout Tower]]></string>
 </root>

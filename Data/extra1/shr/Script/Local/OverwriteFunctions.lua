@@ -77,7 +77,7 @@ function InitLocalOverwrite()
 
         g_MilitaryFeedback.Animals = {}
         g_MilitaryFeedback.Animals[Entities.U_Tiger] 			= "Tiger"
-        g_MilitaryFeedback.Animals[Entities.U_Tiger_White] 			= "Tiger"
+        g_MilitaryFeedback.Animals[Entities.U_Tiger_White] 		= "Tiger"
         g_MilitaryFeedback.Animals[Entities.U_Lion_Male] 		= "Lion"
         g_MilitaryFeedback.Animals[Entities.U_Lion_Female] 		= "Lion"
         g_MilitaryFeedback.Animals[Entities.U_Bear] 		    = "Bear"
@@ -87,6 +87,13 @@ function InitLocalOverwrite()
         g_MilitaryFeedback.Animals[Entities.U_Wolf_White] 		= "Wolf"
         g_MilitaryFeedback.Animals[Entities.U_Wolf_Black] 		= "Wolf"
         g_MilitaryFeedback.Animals[Entities.U_Wolf_Brown] 		= "Wolf"
+        g_MilitaryFeedback.Animals[Entities.U_Cat1] 		    = "Cat"
+        g_MilitaryFeedback.Animals[Entities.U_Cat2] 		    = "Cat"
+        g_MilitaryFeedback.Animals[Entities.U_Cat3] 		    = "Cat"
+        g_MilitaryFeedback.Animals[Entities.U_Cat4] 		    = "Cat"
+        g_MilitaryFeedback.Animals[Entities.U_Dog1] 		    = "Dog"
+        g_MilitaryFeedback.Animals[Entities.U_Dog2] 		    = "Dog"
+        g_MilitaryFeedback.Animals[Entities.U_Dog3] 		    = "Dog"
     end      
 
     -----------------------------------------------------------------
@@ -204,6 +211,13 @@ function InitLocalOverwrite()
             g_TexturePositions.Entities[Entities.U_Lion_Female]    = {13, 8}
             g_TexturePositions.Entities[Entities.U_Tiger]    = {1, 8, 1}
             g_TexturePositions.Entities[Entities.U_Tiger_White]    = {1, 8, 1}
+            g_TexturePositions.Entities[Entities.U_Cat1]    = {13, 8}
+            g_TexturePositions.Entities[Entities.U_Cat2]    = {13, 8}
+            g_TexturePositions.Entities[Entities.U_Cat3]    = {13, 8}
+            g_TexturePositions.Entities[Entities.U_Cat4]    = {13, 8}
+            g_TexturePositions.Entities[Entities.U_Dog1]    = {13, 8}
+            g_TexturePositions.Entities[Entities.U_Dog2]    = {13, 8}
+            g_TexturePositions.Entities[Entities.U_Dog3]    = {13, 8}
             g_TexturePositions.Entities[Entities.A_AS_Tiger_White] = {1, 8, 1}
             g_TexturePositions.Entities[Entities.B_GuardTower_ME]    = {12, 3}
             g_TexturePositions.Entities[Entities.B_GuardTower_NE]    = {12, 3}
@@ -286,7 +300,9 @@ function MilitaryFeedback_GetSpeaker(_EntityID)
     
     if type == Entities.U_Bear or type == Entities.U_BlackBear or type == Entities.U_PolarBear
         or type == Entities.U_Wolf_Grey or type == Entities.U_Wolf_White or type == Entities.U_Wolf_Black or type == Entities.U_Wolf_Brown
-        or type == Entities.U_Lion_Male or type == Entities.U_Lion_Female or type == Entities.U_Tiger or type == Entities.U_Tiger_White then
+        or type == Entities.U_Lion_Male or type == Entities.U_Lion_Female or type == Entities.U_Tiger or type == Entities.U_Tiger_White
+        or type == Entities.U_Cat1 or type == Entities.U_Cat2 or type == Entities.U_Cat3 or type == Entities.U_Cat4
+        or type == Entities.U_Dog1 or type == Entities.U_Dog2 or type == Entities.U_Dog3 then
 	    return "Animals"
     end
 
@@ -360,7 +376,9 @@ function MilitaryFeedback_GetType(_EntityID)
 		return "VoiceThief_speech"
 	elseif type == Entities.U_Bear or type == Entities.U_BlackBear or type == Entities.U_PolarBear
             or type == Entities.U_Wolf_Grey or type == Entities.U_Wolf_White or type == Entities.U_Wolf_Black or type == Entities.U_Wolf_Brown
-            or type == Entities.U_Lion_Male or type == Entities.U_Lion_Female or type == Entities.U_Tiger or type == Entities.U_Tiger_White then
+            or type == Entities.U_Lion_Male or type == Entities.U_Lion_Female or type == Entities.U_Tiger or type == Entities.U_Tiger_White
+            or type == Entities.U_Cat1 or type == Entities.U_Cat2 or type == Entities.U_Cat3 or type == Entities.U_Cat4
+            or type == Entities.U_Dog1 or type == Entities.U_Dog2 or type == Entities.U_Dog3 then
 		return "VoicesAnimals_" .. g_MilitaryFeedback.Animals[type]
     else
 		return "VoiceMilitary_speech"
@@ -381,7 +399,9 @@ function MilitaryFeedback_GetState(_EntityID, _Key)
 
     if type == Entities.U_Bear or type == Entities.U_BlackBear or type == Entities.U_PolarBear
         or type == Entities.U_Wolf_Grey or type == Entities.U_Wolf_White or type == Entities.U_Wolf_Black or type == Entities.U_Wolf_Brown
-        or type == Entities.U_Lion_Male or type == Entities.U_Lion_Female or type == Entities.U_Tiger or type == Entities.U_Tiger_White then
+        or type == Entities.U_Lion_Male or type == Entities.U_Lion_Female or type == Entities.U_Tiger or type == Entities.U_Tiger_White
+        or type == Entities.U_Cat1 or type == Entities.U_Cat2 or type == Entities.U_Cat3 or type == Entities.U_Cat4
+        or type == Entities.U_Dog1 or type == Entities.U_Dog2 or type == Entities.U_Dog3 then
         
 	    local variant = 1
 	    if state == "Attack" then
@@ -564,7 +584,9 @@ function InitMultiselection()
     LeaderSortOrder[33] = Entities.U_Wolf_Black
     LeaderSortOrder[34] = Entities.U_Wolf_Brown
     LeaderSortOrder[35] = Entities.U_Tiger
-    LeaderSortOrder[35] = Entities.U_Tiger_White
+    LeaderSortOrder[36] = Entities.U_Tiger_White
+    LeaderSortOrder[37] = Entities.U_Cat
+    LeaderSortOrder[38] = Entities.U_Dog
 end
 
 

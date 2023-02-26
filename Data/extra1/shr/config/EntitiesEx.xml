@@ -421,6 +421,13 @@
 	<Entity>U_Tiger_White</Entity>
 	<Entity>A_AS_Tiger_White</Entity>
 	<Entity>U_MagicOx</Entity>
+	<Entity>U_Cat1</Entity>
+	<Entity>U_Cat2</Entity>
+	<Entity>U_Cat3</Entity>
+	<Entity>U_Cat4</Entity>
+	<Entity>U_Dog1</Entity>
+	<Entity>U_Dog2</Entity>
+	<Entity>U_Dog3</Entity>
 
 	<Entity>U_MilitaryTrebuchet</Entity>
 	<Entity>U_TrebuchetCart</Entity>

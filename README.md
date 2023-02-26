@@ -1,237 +1,237 @@
 # Unofficial RoE Communitypatch
-Dieser inoffizielle Patch behebt diverse Bugs der History Edition vom Spiel 'Die Siedler - Aufstieg eines Königreichs' und fügt neue Features hinzu.
+Dieser inoffizielle Patch behebt diverse Bugs der History Edition vom Spiel 'Die Siedler - Aufstieg eines KÃ¶nigreichs' und fÃ¼gt neue Features hinzu.
 
 
 
 ## Installation
-Mit folgenden Schritten lässt sich der Patch installieren:
+Mit folgenden Schritten lÃ¤sst sich der Patch installieren:
 1. Sicherungskopie vom AeK-Ordner anlegen und z.B. "thesettlers6_Orig" nennen
-2. Projekt über Code -> Download ZIP herunterladen
-3. Projektordner in den Ornder OHNE "_Orig-Zusatz" entpacken und die Frage nach Überschreiben von X Dateien bestätigen
+2. Projekt Ã¼ber Code -> Download ZIP herunterladen
+3. Projektordner in den Ornder OHNE "_Orig-Zusatz" entpacken und die Frage nach Ãœberschreiben von X Dateien bestÃ¤tigen
 3. Zocken
 
 ## Deinstallation
-Mit folgenden Schritten l�sst sich der Patch deinstallieren:
-1. L�sche `Settlers - Rise of an Empire - History Edition\Data\extra1`.
+Mit folgenden Schritten lässt sich der Patch deinstallieren:
+1. Lösche `Settlers - Rise of an Empire - History Edition\Data\extra1`.
 2. Benenne die Sicherheitskopie von `extra1_orig` in `extra1` um.
 3. Entferne `-EXTRA1` aus den Startoptionen von Steam bzw. Uplay.
 4. Vanilla zocken
 
 
 ## Features
-Folgende Änderungen wurden vorgenommen:
+Folgende Ã„nderungen wurden vorgenommen:
 - Ritter
-	- Haben nun je 3 "Fackeln", um Gebäude angreifen zu können
-	- "Alte" Ritter überarbeitet
+	- Haben nun je 3 "Fackeln", um GebÃ¤ude angreifen zu kÃ¶nnen
+	- "Alte" Ritter Ã¼berarbeitet
 		- Allandra
-			- Passive Fähigkeiten: Bonusgold für Predigten erhöht (20% -> 40%)
-			- Bonus: Lebenspunkte leicht erhöht (1.000 -> 1.100)
+			- Passive FÃ¤higkeiten: Bonusgold fÃ¼r Predigten erhÃ¶ht (20% -> 40%)
+			- Bonus: Lebenspunkte leicht erhÃ¶ht (1.000 -> 1.100)
 		- Elias
-			- Aktive Fähigkeit: Gewährt zusätzlich den "Vielfältige Nahrung"-Bonus
-			- Passive Fähigkeiten: Handelsbonus erhöht (20% -> 40%)
+			- Aktive FÃ¤higkeit: GewÃ¤hrt zusÃ¤tzlich den "VielfÃ¤ltige Nahrung"-Bonus
+			- Passive FÃ¤higkeiten: Handelsbonus erhÃ¶ht (20% -> 40%)
 		- Hakim
-			- Aktive Fähigkeit (Konversion)
-				- Cooldown leicht erhöht (7:30 Min. -> 8:00 Min.)
+			- Aktive FÃ¤higkeit (Konversion)
+				- Cooldown leicht erhÃ¶ht (7:30 Min. -> 8:00 Min.)
 				- Kann nicht benutzt werden, wenn Soldatenlimit schon erreicht
 		- Marcus
-			- Bonus: Lebenspunkte leicht erhöht (1.000 -> 1.100)
+			- Bonus: Lebenspunkte leicht erhÃ¶ht (1.000 -> 1.100)
 		- Thordal
-			- Aktive Fähigkeit: Gewährt zusätzlich den "Vielfältige Unterhaltung"-Bonus
-			- Boni: Angriffskraft erhöht (25 -> 50) und Rekrutierung von Wikingern in Kasernen
+			- Aktive FÃ¤higkeit: GewÃ¤hrt zusÃ¤tzlich den "VielfÃ¤ltige Unterhaltung"-Bonus
+			- Boni: Angriffskraft erhÃ¶ht (25 -> 50) und Rekrutierung von Wikingern in Kasernen
 		- Kestral
-			- Bonus: Rekrutierung von Banditen in Kasernen (Art hängt von Klimazone ab)
+			- Bonus: Rekrutierung von Banditen in Kasernen (Art hÃ¤ngt von Klimazone ab)
 		- Saraya
-			- Aktive Fähigkeit: Mindest-Warenmenge erhöht (5 -> 9)
-			- Passive Fähigkeit: Handelsposten noch billiger (50% -> 25%)
+			- Aktive FÃ¤higkeit: Mindest-Warenmenge erhÃ¶ht (5 -> 9)
+			- Passive FÃ¤higkeit: Handelsposten noch billiger (50% -> 25%)
 	- "Neue" Ritter implementiert
 		- Crimson Sabatt
-			- Aktive Fähigkeit: Konversion (wie Hakim)
-			- Passive Fähigkeit: Bessere Handelskonditionen (wie Elias)
+			- Aktive FÃ¤higkeit: Konversion (wie Hakim)
+			- Passive FÃ¤higkeit: Bessere Handelskonditionen (wie Elias)
 			- Bonus: Rekrutierung von Signatureinheiten in Kasernen
 		- Der Rote Prinz
-			- Aktive Fähigkeit: Tribut (wie Saraya)
-			- Passive Fähigkeit: Höhere Steuern (wie Kestral)
+			- Aktive FÃ¤higkeit: Tribut (wie Saraya)
+			- Passive FÃ¤higkeit: HÃ¶here Steuern (wie Kestral)
 			- Bonus: Rekrutierung von Signatureinheiten in Kasernen
-			- Für Mapper: 
-				- Es gibt auskommentierte Codeschnippsel für eine "richtige" Seuchen-Fähigkeit
+			- FÃ¼r Mapper: 
+				- Es gibt auskommentierte Codeschnippsel fÃ¼r eine "richtige" Seuchen-FÃ¤higkeit
 				- Wird zurzeit nicht verwendet, da im Mehrspieler nicht nutzbar
-				- Wer sie nutzen will, kann sie womöglich reaktivieren
+				- Wer sie nutzen will, kann sie womÃ¶glich reaktivieren
 		- Khana
-			- Aktive Fähigkeit: Versorgung von Soldaten mit Fackeln (wie Marcus)
-			- Passive Fähigkeit: Mehr Gold von Predigten (wie Allandra)
+			- Aktive FÃ¤higkeit: Versorgung von Soldaten mit Fackeln (wie Marcus)
+			- Passive FÃ¤higkeit: Mehr Gold von Predigten (wie Allandra)
 			- Bonus: Rekrutierung von Signatureinheiten in Kasernen
 		- Praphat
-			- Aktive Fähigkeit: Versorgung von Einwohnern mit Kleidung und gewährt "Vielfältige Kleidung"-Bonus (analog Elias/Thordal)
-			- Passive Fähigkeit: Billigerer Ausbau von Gebäuden (wie Hakim)
+			- Aktive FÃ¤higkeit: Versorgung von Einwohnern mit Kleidung und gewÃ¤hrt "VielfÃ¤ltige Kleidung"-Bonus (analog Elias/Thordal)
+			- Passive FÃ¤higkeit: Billigerer Ausbau von GebÃ¤uden (wie Hakim)
 		- Kastellane 
-			- Können theoretisch als Ritter genutzt werden
-			- Haben keine besonderen Fähigkeiten
+			- KÃ¶nnen theoretisch als Ritter genutzt werden
+			- Haben keine besonderen FÃ¤higkeiten
 		- Varianz an Ladebildschirm-Bildern
-- Militär
-	- Einheiten können mittels Entlassen-Button ... entlassen werden
-	- Bogenschützen allgemein
+- MilitÃ¤r
+	- Einheiten kÃ¶nnen mittels Entlassen-Button ... entlassen werden
+	- BogenschÃ¼tzen allgemein
 		- Fernkampf-Schaden deutlich reduziert (30 -> 20)
-		- Maximale Fernkampf-Reichweite leicht erhöht (24sm -> 25sm)
+		- Maximale Fernkampf-Reichweite leicht erhÃ¶ht (24sm -> 25sm)
 		- Ausnahme: Wikinger-Axtwerfer
 	- Banditen 
-		- Können in Kasernen wieder aufgefüllt werden
+		- KÃ¶nnen in Kasernen wieder aufgefÃ¼llt werden
 		- Haben ein eigenes Audio-Feedback
-		- Haben etwas andere Statuswerte ggü. konventionellen Einheiten
+		- Haben etwas andere Statuswerte ggÃ¼. konventionellen Einheiten
 			- Weniger Lebenspunkte (-5)
-			- Höhere Bewegungsgeschwindigkeit (480 < 500)
-			- Höherer Schaden gegen Gebäude (5 -> 10)
+			- HÃ¶here Bewegungsgeschwindigkeit (480 < 500)
+			- HÃ¶herer Schaden gegen GebÃ¤ude (5 -> 10)
 			- Eine Fackel mehr (1 -> 2)
 		- Fixes
-			- Südeuropäische Banditen-Schwertkämpfer greifen nicht mehr automatisch Gebäude an
+			- SÃ¼deuropÃ¤ische Banditen-SchwertkÃ¤mpfer greifen nicht mehr automatisch GebÃ¤ude an
 			- Asiatische Banditen haben keine Overhead-Namen mehr
 	- Signatureinheiten vom Roten Prinzen und Khana 
-		- Können in Kasernen wieder aufgefüllt werden
+		- KÃ¶nnen in Kasernen wieder aufgefÃ¼llt werden
 		- Haben ein anderes Audio-Feedback 
 			- Zurzeit noch das von Banditen...
-		- Haben etwas andere Statuswerte ggü. konventionellen Einheiten
+		- Haben etwas andere Statuswerte ggÃ¼. konventionellen Einheiten
 			- RP
 				- Weniger Lebenspunkte (-5)
-				- Höhere Bewegungsgeschwindigkeit (480 < 490)
+				- HÃ¶here Bewegungsgeschwindigkeit (480 < 490)
 			- Khana
 				- Weniger Lebenspunkte (-10)
-				- Höhere Bewegungsgeschwindigkeit (480 < 500)
-				- Höherer Schaden gegen anderen Einheiten (20 < 22)
+				- HÃ¶here Bewegungsgeschwindigkeit (480 < 500)
+				- HÃ¶herer Schaden gegen anderen Einheiten (20 < 22)
 		- RP-Einheiten haben eine eigene Button-Textur
 		- Khana-Einheiten haben keine Overhead-Namen mehr
 	- "Neue" Einheiten
-		- Lanzenträger
-			- Inspiriert von den Streitlanzenträgern in DEdK
-			- Statuswerte (im Vergleich zu Schwertkämpfern)
-				- Höhere Lebenspunkte (180 > 120)
+		- LanzentrÃ¤ger
+			- Inspiriert von den StreitlanzentrÃ¤gern in DEdK
+			- Statuswerte (im Vergleich zu SchwertkÃ¤mpfern)
+				- HÃ¶here Lebenspunkte (180 > 120)
 				- Weniger Schaden (15 < 20)
-				- Etwas höhere Reichweite (2sm > 1,5sm)
+				- Etwas hÃ¶here Reichweite (2sm > 1,5sm)
 				- Langsamere Bewegungsgeschwindigkeit (420 < 480)
 		- Hellebardiere
 			- Basieren auf den Hellebardieren in DEdK
-			- Haben noch etwas bessere Stats als Streitlanzenträger
-			- Sind Einzelgänger
+			- Haben noch etwas bessere Stats als StreitlanzentrÃ¤ger
+			- Sind EinzelgÃ¤nger
 			- NICHT rekrutierbar, aber kontrollierbar
-				- Für Mapper: Gut nutzbar als NPCs bzw. Dekoration
-		- Raubtiere als kontrollierbare Militäreinheiten verfügbar
-			- Konkret: Bären (3 Arten), Löwen (2 Arten), Wölfe (4 Arten), Tiger (2 Arten)
+				- FÃ¼r Mapper: Gut nutzbar als NPCs bzw. Dekoration
+		- Raubtiere als kontrollierbare MilitÃ¤reinheiten verfÃ¼gbar
+			- Konkret: BÃ¤ren (3 Arten), LÃ¶wen (2 Arten), WÃ¶lfe (4 Arten), Tiger (2 Arten)
 		- Trebuchet
-			- Funktioniert ähnlich wie ein Katapult
-				- Höhere Maximalreichweite (32sm > 24sm)
-				- Höhere Mindestreichweite (18sm > 10sm)
-				- Höherer Schaden (100 > 50)
+			- Funktioniert Ã¤hnlich wie ein Katapult
+				- HÃ¶here Maximalreichweite (32sm > 24sm)
+				- HÃ¶here Mindestreichweite (18sm > 10sm)
+				- HÃ¶herer Schaden (100 > 50)
 				- Geringere Feuerrate (8 Sek. > 5 Sek.)
-				- Braucht länger zum Auf- und Abbau (8 Sek. > 5 Sek.)
+				- Braucht lÃ¤nger zum Auf- und Abbau (8 Sek. > 5 Sek.)
 			- Kann sich in aufgebauter Form nicht fortbewegen
 			- Muss nicht von Soldaten bedient werden
 			- Zurzeit noch nicht baubar, vllt. mit Titel "Erzherzog"?
 		- Geister-Ochse in Anlehnung an Ubis Raketen Ochsen ;)
 	- "Alte" Trebuchets
-		- Richtiges Selektionsmenü
+		- Richtiges SelektionsmenÃ¼
 		- Eigener Tooltip-String
 		- Mit Munition belieferbar
 		- Diverse Anpassungen auf Basis des "neuen" Trebuchets
-	- Rammen können keine Mauern mehr angreifen
-	- (Turm-)Katapulte und Trebuchets können Militäreinheiten aktiv angreifen
-	- Overhead und SelectionMenu vom Gefängniskarren den anderen Karren angeglichen
-	- Mauerkatapulte abgeschwächt
+	- Rammen kÃ¶nnen keine Mauern mehr angreifen
+	- (Turm-)Katapulte und Trebuchets kÃ¶nnen MilitÃ¤reinheiten aktiv angreifen
+	- Overhead und SelectionMenu vom GefÃ¤ngniskarren den anderen Karren angeglichen
+	- Mauerkatapulte abgeschwÃ¤cht
 		- Kosten mehr Eisen (5 -> 10)
 		- Kosten mehr Gold (200 -> 300)
 		- Schaden reduziert (50 -> 40)
-		- Mindestreichweite erhöht (10sm -> 12sm)
-		- Sind auf maximal 12 Stück gleichzeitig pro Spieler limitiert
+		- Mindestreichweite erhÃ¶ht (10sm -> 12sm)
+		- Sind auf maximal 12 StÃ¼ck gleichzeitig pro Spieler limitiert
 	- Diebe
-		- Sind auf maximal 6 Stück gleichzeitig pro Spieler limitiert
-- Gebäude
+		- Sind auf maximal 6 StÃ¼ck gleichzeitig pro Spieler limitiert
+- GebÃ¤ude
 	- Kirche
-		- Mehr Siedler pro Predigt möglich
-		- Einwohnerlimit pro Ausbaustufe erhöht
+		- Mehr Siedler pro Predigt mÃ¶glich
+		- Einwohnerlimit pro Ausbaustufe erhÃ¶ht
 		- Eigenes Icon auf der Minimap
 	- Burg
-		- Soldatenlimit pro Ausbaustufe erhöht
+		- Soldatenlimit pro Ausbaustufe erhÃ¶ht
 		- Eigenes Icon auf der Minimap
 		- Spielerwappen wird nicht mehr auf dem Banner am Eingang abgebildet
 			- Technisch leider zwecks Konsistenz zwischen alten und neuen Wappen notwendig
 	- Lagerhaus
-		- Lagerkapazität der 3. und 4. Ausbaustufe erhöht
+		- LagerkapazitÃ¤t der 3. und 4. Ausbaustufe erhÃ¶ht
 		- Eigenes Icon auf der Minimap
 	- Marktplatz: Generische Ritter-Statue bei Khana, Praphat und Kastellanen
-	- "Neue" Gebäude
+	- "Neue" GebÃ¤ude
 		- Wachturm
 			- Kostet 11 Steine
-			- Kann mit einem Turmkatapult ausgerüstet wwerden
+			- Kann mit einem Turmkatapult ausgerÃ¼stet wwerden
 		- Aussichtsturm
 			- Kostet 12 Steine
 			- Besitzt eine hohe Sichtweite
 			- Sieht einfach schick aus :)
 		- AS-Zelte mit entsprechenden Workern
-	- NPC-Gebäude
+	- NPC-GebÃ¤ude
 		- RP-/Khana-Kasernen
 			- Funktionieren unter Spieler-Kontrolle wie normale Kasernen auch
-			- Ermöglichen, unabhängig vom Ritter, Rekrutierung von RP- bzw. Khana-Einheiten
-		- Alle NPC-Gebäude mit Menü
+			- ErmÃ¶glichen, unabhÃ¤ngig vom Ritter, Rekrutierung von RP- bzw. Khana-Einheiten
+		- Alle NPC-GebÃ¤ude mit MenÃ¼
 			- Sollten nun einen Namens-String haben
 			- Zeigen die Ausbaustufe "1/1" an
-		- Hauptspiel-Marktplätze haben ein Mouseover
-	- Bienenstöcke haben weniger Lebenspunkte (10 -> 5)
-	- Handelsposten-Baubutton hat einen etwas verständlicheren Tooltip
-- Hauptmenü
+		- Hauptspiel-MarktplÃ¤tze haben ein Mouseover
+	- BienenstÃ¶cke haben weniger Lebenspunkte (10 -> 5)
+	- Handelsposten-Baubutton hat einen etwas verstÃ¤ndlicheren Tooltip
+- HauptmenÃ¼
 	- AddOn nutzt weitgehend Hauptspiel-Hintergrund und Soundtrack
-	- Hintergrund ist tageszeitabhängig
+	- Hintergrund ist tageszeitabhÃ¤ngig
 	- Kartenauswahl
-		- Im AddOn wieder alle Ritter auswählbar, inklusive die Neuen
+		- Im AddOn wieder alle Ritter auswÃ¤hlbar, inklusive die Neuen
 		- Ritter-Restriktionen erlauben jetzt die korrekte Sperrung einzelner Ritter
 		- Filter
 			- Im Einzelspieler nach Herkunft und Missionsziel
 			- Im Mehrspieler nach Herkunft und maximaler Spieleranzahl
-			- Wenn dadurch keine ausgewählt ist wird Mapvorschau geleert und Starten-Button deaktiviert
-		- Im AddOn auch alle Hauptspiel-Karten auswählbar
+			- Wenn dadurch keine ausgewÃ¤hlt ist wird Mapvorschau geleert und Starten-Button deaktiviert
+		- Im AddOn auch alle Hauptspiel-Karten auswÃ¤hlbar
 - Diverses
 	- Automatisches Schnellspeichern deaktiviert
-		- Für Mapper: Quicksave wurde über neue Funktion umgeleitet: KeyBindings_SaveGame_Neu()
+		- FÃ¼r Mapper: Quicksave wurde Ã¼ber neue Funktion umgeleitet: KeyBindings_SaveGame_Neu()
 	- Teardown-Sound von Palisaden/Mauern etwas leiser
 	- Marcus wird nicht mehr als generischer Ritter gesetzt
 	- Ungenutztes Audio-Feedback von Rittern, Soldaten und Dieben wird nun verwendet
-	- Eisbären nutzen ihre richtige Sterbeanimation
-	- Maximale bzw. Standard-Kapazität von Stein- und Eisenminen etwas erhöht (250 -> 300)
-	- Geologeneinsätze 
+	- EisbÃ¤ren nutzen ihre richtige Sterbeanimation
+	- Maximale bzw. Standard-KapazitÃ¤t von Stein- und Eisenminen etwas erhÃ¶ht (250 -> 300)
+	- GeologeneinsÃ¤tze 
 		- Kosten deutlich mehr Gold (250 -> 500)
-		- Haben einen verständlicheren Tooltip sowie einen eigenen Disabled-Tooltip
-		- Für Mapper: Können mit den neuen Technologien 'R_RefillStoneMine', 'R_RefillIronMine' und 'R_RefillCistern' verboten werden
+		- Haben einen verstÃ¤ndlicheren Tooltip sowie einen eigenen Disabled-Tooltip
+		- FÃ¼r Mapper: KÃ¶nnen mit den neuen Technologien 'R_RefillStoneMine', 'R_RefillIronMine' und 'R_RefillCistern' verboten werden
 	- Steuern
-		- Maximale Anzahl an Steuereintreibern erhöht (6 -> 8)
-	- Bei Minimap-Benachrichtigung wird der auslösende Spieler erst entfernt, um Verwirrung zu vermeiden
+		- Maximale Anzahl an Steuereintreibern erhÃ¶ht (6 -> 8)
+	- Bei Minimap-Benachrichtigung wird der auslÃ¶sende Spieler erst entfernt, um Verwirrung zu vermeiden
 	- Neun "neue" Spielerfarben
 	- Wappen
-		- Textur ist im Beförderungs-Fenster nun richtig zentriert
+		- Textur ist im BefÃ¶rderungs-Fenster nun richtig zentriert
 		- Neue, von Stronghold 2 und Legends inspirierte Wappen
 	- Alternative Spielerfarbe: Gelb
 		- Ist in den Optionen (de-)aktivierbar
-		- Wirkt sich auch auf das gewählte Wappen aus
+		- Wirkt sich auch auf das gewÃ¤hlte Wappen aus
 		- Hat keinen Einfluss auf den Multiplayer
-	- Profil-Menü
+	- Profil-MenÃ¼
 		- Buttons haben nun alle einen Hover-Effekt
-		- Speichern der Profileinstellungen funktioniert nun zuverlässig
+		- Speichern der Profileinstellungen funktioniert nun zuverlÃ¤ssig
 	- Kampfmusik nach Klimazonen getrennt (als verschiedene Playlists)
-	- Baumenü: BeautificationMenu verschönert
-	- Unterschiedliche Festival-Musik, je nachdem, ob der Anlass eine Heldenbeförderung oder ein normales Fest ist
+	- BaumenÃ¼: BeautificationMenu verschÃ¶nert
+	- Unterschiedliche Festival-Musik, je nachdem, ob der Anlass eine HeldenbefÃ¶rderung oder ein normales Fest ist
 	- Niederlagen-Kamerarotation deutlich verlangsamt
 	- Sieg und Niederlage haben jeweils eine Art "Jingle"
 	- Spielerfarben auf der Minimap sind nun (meistens) korrekt
 	- Krankheiten treten nun schon ab 101 Siedlern auf, nicht erst ab 151
-	- Neue Tiger-Unterart: Wei�er Tiger
+	- Neue Tiger-Unterart: Weißer Tiger
 - Kampagnen
 	- Hauptspiel-Kampagne auch im AddOn spielbar
 	- Bugs gefixt
-		- Verfrühte Meldungen von KI-Mitspielern (M05: Drengir, M09: Husran)
-		- Verstärkung für den Spieler spawnt jetzt (M15: Vestholm)
+		- VerfrÃ¼hte Meldungen von KI-Mitspielern (M05: Drengir, M09: Husran)
+		- VerstÃ¤rkung fÃ¼r den Spieler spawnt jetzt (M15: Vestholm)
 		- KI verliert am Anfang der Mission keine Territorien mehr (M09: Husran)
-		- Unnütze Randterritorien in benachbarte eingegliedert (M14: Gueranna)
+		- UnnÃ¼tze Randterritorien in benachbarte eingegliedert (M14: Gueranna)
 	- KI-Spielerfarben
 		- Mehr Varianz bei Spielerfarben
 		- Konsistentere Spielerfarben im AddOn
 	- Thronsaal 
 		- Hat einen eigenen Soundtrack
-		- Tür wird von Hellebardieren bewacht
+		- TÃ¼r wird von Hellebardieren bewacht
 	- Diverses
 		- M09: Husran: KI aggressiver und mit eigener Eisenmine
 		- AM05: Idukun: durch etwas mehr Startkapital etwas einfacher

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+
+    <Category>TC_DUMMY</Category>
+    
+    <Tasks>
+        <Task classname="EGL::CTaskArgsAnimation">
+            <TaskType>TASK_SET_ANIM</TaskType>
+            <Category>Die</Category>
+        </Task>
+
+        <Task classname="EGL::CTaskArgsEffectType" classid="0x442afa07">
+			<TaskType>TASK_SPAWN_PLAYER_EFFECT</TaskType>
+			<EffectType>E_DieHero</EffectType>
+		</Task>
+        
+        <Task classname="EGL::CTaskArgsThousandths" classid="0x230862d8">
+            <TaskType>TASK_WAIT_FOR_ANIM</TaskType>
+            <Thousandths>1000</Thousandths>
+        </Task>
+
+        <!-- was fallen lassen, das sich selsbt l�t (Schild, schwert, Bogen) -->
+        <!--Task classname="EGL::CTaskArgsEntityTypeAndPos">
+        <TaskType>TASK_CREATE_ENTITY</TaskType>
+        <EntityType>U_NPC_CityGuard</EntityType>
+        <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+        </Position>            
+        </Task-->
+        <Task classname="EGL::CTaskArgs" classid="0x7ce66308">
+            <TaskType>TASK_DELETE_SELF</TaskType>
+        </Task>
+        <!-- this should never be reached!  If you forget TASK_DELETE_SELF and leave this in,
+        you may end up with walking dead...  BRAAAAAIIIIINNNN! -->
+        <Task classname="EGL::CTaskArgs" classid="0x7ce66308">
+            <TaskType>TASK_LIST_DONE</TaskType>
+        </Task>
+    </Tasks>
+</root>
