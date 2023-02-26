@@ -20,7 +20,15 @@ GameCallback_LoadScriptFiles = function()
    
     Script.Load("Script\\Shared\\OverwriteShared.lua" )
     InitSharedOverwrite()
-       
+
+
+
+    -- Community Patch Global Overwrite
+    Script.Load("Script\\Global\\CPOverwriteFunctions.lua")
+    InitGlobalOverwriteCP()
+    -- Community Patch Shared Overwrite
+    Script.Load("Script\\Shared\\CPOverwriteFunctions.lua")
+    InitSharedOverwriteCP()
 end
 
 g_PatchIdentifierExtra1 = "mission-pack-master"

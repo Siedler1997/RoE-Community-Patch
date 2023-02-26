@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    id="svg2"
    width="1962.6667"
    height="1962.6667"
    viewBox="0 0 1962.6667 1962.6667"
    sodipodi:docname="IconsBig.svg"
-   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
-   inkscape:export-filename="E:\Repositories\RoE-Community-Patch\dev\graphics\textures\gui_1200\IconsBig.png"
-   inkscape:export-xdpi="72"
-   inkscape:export-ydpi="72">
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   inkscape:export-filename="..\gui_960\IconsBig.png"
+   inkscape:export-xdpi="40.05978"
+   inkscape:export-ydpi="40.05978"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -46,19 +46,21 @@
      id="namedview4"
      showgrid="false"
      inkscape:zoom="0.43308422"
-     inkscape:cx="658.96173"
-     inkscape:cy="829.94622"
+     inkscape:cx="660.37964"
+     inkscape:cy="831.2471"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="g10"
-     inkscape:document-rotation="0" />
+     inkscape:document-rotation="0"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
   <g
      inkscape:groupmode="layer"
      inkscape:label="Image"
      id="g10">
     <image
-       sodipodi:absref="E:\Repositories\RoE-Community-Patch\dev\graphics\textures\gui_1200\IconsBig.png"
        xlink:href="IconsBig.png"
        width="1962.6667"
        height="1962.6667"
