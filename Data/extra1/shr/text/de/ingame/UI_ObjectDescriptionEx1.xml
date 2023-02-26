@@ -76,4 +76,14 @@
 	<string id="AbilityPraphat" MD5Hash="80CB1EC4FAF3367CECE66805C00059EF" mod="20071205123556" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- Siedler in der Nähe mit Kleidung versorgen{cr}- Besserer Ruf der Stadt durch Vielfalt verfügbarer Kleidung]]></string>
 	<string id="B_ArmorMaker" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="do not delete this"><![CDATA[- Stellt Lederrüstungen her]]></string>
 	<string id="B_ArmorSmith" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="do not delete this"><![CDATA[- Stellt Plattenrüstungen her]]></string>
+	<!--
+	<string id="Abilities_U_Cat1" MD5Hash="081F560C7325427C9F5183B161DE8711" mod="20071205123351" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- Katze von Argus Flinch{cr}- Hat nur noch 6 Leben]]></string>
+	<string id="Abilities_U_Cat2" MD5Hash="081F560C7325427C9F5183B161DE8711" mod="20071205123351" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- Hasst Montage{cr}- Liebt Lasagne]]></string>
+	<string id="Abilities_U_Cat3" MD5Hash="081F560C7325427C9F5183B161DE8711" mod="20071205123351" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- Kann sprechen{cr}- Tut es aber nicht]]></string>
+	<string id="Abilities_U_Cat4" MD5Hash="081F560C7325427C9F5183B161DE8711" mod="20071205123351" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- Jerrys Erzfeind{cr}- Vom Pech verfolgt]]></string>
+	<string id="Abilities_U_Dog1" MD5Hash="081F560C7325427C9F5183B161DE8711" mod="20071205123351" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- Scooby Dooby Doo!]]></string>
+	<string id="Abilities_U_Dog2" MD5Hash="081F560C7325427C9F5183B161DE8711" mod="20071205123351" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[]]></string>
+	<string id="Abilities_U_Dog3" MD5Hash="081F560C7325427C9F5183B161DE8711" mod="20071205123351" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- Wächter der Unterwerlt{cr}- Hält gerne ein Nickerchen]]></string>
+	<string id="Abilities_U_Dog4" MD5Hash="081F560C7325427C9F5183B161DE8711" mod="20071205123351" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- Des Galliers bester Freund{cr}- Liebt die Natur]]></string>
+	-->
 </root>

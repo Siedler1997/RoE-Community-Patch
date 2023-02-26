@@ -82,4 +82,6 @@
 	<AnimSet>SET_MILITARYCAVALRY</AnimSet>
 	<AnimSet>SET_MILITARY_PALADIN</AnimSet>
 	<AnimSet>SET_SABOTEUR</AnimSet>
+	<AnimSet>SET_CAT</AnimSet>
+	<AnimSet>SET_DOG</AnimSet>
 </root>

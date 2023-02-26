@@ -439,7 +439,7 @@
 
 	<Entity>U_Military_Helbardier</Entity>
 	<Entity>U_Military_Paladin</Entity>
-	<!--
+	<Entity>U_Saboteur</Entity>
 	<Entity>U_Military_TradeMilitia_Melee</Entity>
 	<Entity>U_Military_TradeMilitia_Range</Entity>
 	<Entity>U_Military_Outlaw_Melee</Entity>
@@ -448,11 +448,14 @@
 	<Entity>U_Military_Nomad_Range</Entity>
 	<Entity>U_Military_Viking_Melee</Entity>
 	<Entity>U_Military_Viking_Range</Entity>
-	-->
-	<Entity>U_Saboteur</Entity>
-	<!--
 	<Entity>U_Military_Exile_Melee</Entity>
 	<Entity>U_Military_Exile_Range</Entity>
-	-->
+	<Entity>U_Cat1</Entity>
+	<Entity>U_Cat2</Entity>
+	<Entity>U_Cat3</Entity>
+	<Entity>U_Cat4</Entity>
+	<Entity>U_Dog1</Entity>
+	<Entity>U_Dog2</Entity>
+	<Entity>U_Dog3</Entity>
 </root>
 

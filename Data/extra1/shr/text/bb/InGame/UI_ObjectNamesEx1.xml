@@ -129,6 +129,23 @@
 	<string id="Abilities_U_KnightKhana" MD5Hash="77D147AAA8852F941E356DCDBB345BCB" mod="20080304151126" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Khana]]></string>
 	<string id="Abilities_U_Tiger" MD5Hash="77D147AAA8852F941E356DCDBB345BCB" mod="20080304151126" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Tiger]]></string>
 	<string id="Abilities_U_Tiger_White" MD5Hash="77D147AAA8852F941E356DCDBB345BCB" mod="20080304151126" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[White Tiger]]></string>
+	<!--
+	<string id="Abilities_U_Cat1" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114413" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Tom]]></string>
+	<string id="Abilities_U_Cat2" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114413" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Garfield]]></string>
+	<string id="Abilities_U_Cat3" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114413" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Sylvester]]></string>
+	<string id="Abilities_U_Cat4" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114413" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Meowth]]></string>
+	<string id="Abilities_U_Dog1" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114413" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Scooby]]></string>
+	<string id="Abilities_U_Dog2" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114413" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Pluto]]></string>
+	<string id="Abilities_U_Dog3" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114413" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dogmatix]]></string>
+	-->
+	<string id="Abilities_U_Cat1" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114413" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cat]]></string>
+	<string id="Abilities_U_Cat2" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114413" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cat]]></string>
+	<string id="Abilities_U_Cat3" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114413" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cat]]></string>
+	<string id="Abilities_U_Cat4" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114413" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cat]]></string>
+	<string id="Abilities_U_Dog1" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114413" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dog]]></string>
+	<string id="Abilities_U_Dog2" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114413" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dog]]></string>
+	<string id="Abilities_U_Dog3" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114413" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dog]]></string>
+	<string id="Abilities_U_Dog4" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114413" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dog]]></string>
 	<string id="Abilities_U_NPC_Castellan_AS" MD5Hash="0055D815AC3E445508C9F42176AAD579" mod="20080206075412" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Castellan]]></string>
 	<string id="U_NPC_Castellan_AS" MD5Hash="0055D815AC3E445508C9F42176AAD579" mod="20080206075412" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Castellan]]></string>
 	<string id="AbilityKhana" MD5Hash="" mod="20070801080004" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Khanas Torches]]></string>

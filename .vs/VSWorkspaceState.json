@@ -3,14 +3,15 @@
     "",
     "\\Data",
     "\\Data\\extra1",
+    "\\Data\\extra1\\lng",
+    "\\Data\\extra1\\lng\\en",
+    "\\Data\\extra1\\lng\\en\\Voices",
+    "\\Data\\extra1\\lng\\en\\Voices\\Animals",
     "\\Data\\extra1\\shr",
-    "\\Data\\extra1\\shr\\config",
-    "\\Data\\extra1\\shr\\config\\Entities",
     "\\Data\\extra1\\shr\\text",
-    "\\Data\\extra1\\shr\\text\\bb",
-    "\\Data\\extra1\\shr\\text\\bb\\InGame",
-    "\\Data\\extra1\\shr\\text\\de"
+    "\\Data\\extra1\\shr\\text\\de",
+    "\\Data\\extra1\\shr\\text\\de\\ingame"
   ],
-  "SelectedNode": "\\Data\\extra1\\shr\\config\\Entities\\U_Tiger_White.xml",
+  "SelectedNode": "\\Data\\extra1\\shr\\text\\de\\ingame\\UI_ObjectNamesEx1.xml",
   "PreviewInSolutionExplorer": false
 }

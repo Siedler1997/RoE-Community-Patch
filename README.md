@@ -241,12 +241,32 @@ Folgende Änderungen wurden vorgenommen:
 
 
 ## (Mögliche) ToDos
-- Saboteur
-	- Soll wirklich alles außer Spezialgebäude angreifen können (per EntityCategory)
-	- Unique Angriffsanimation gegen Gebäude & ggf. Belagerungsgeräte
-- Paladin: Retexturing im Stile von Alandra
-- Stats von gezähmten Tieren korrigieren
+- Neue Einheiten
+	- Für alle neuen Einheiten EndStatistic_SettlerSpawned und InitMultiselection
+	- Saboteur
+		- Soll wirklich alles außer Spezialgebäude angreifen können (per EntityCategory)
+		- Unique Angriffsanimation gegen Gebäude & ggf. Belagerungsgeräte
+	- Paladin: Retexturing im Stile von Alandra
+	- Gezähmten Tiere
+		- Stats korrigieren
+		- Rudelverhalten in Verbindung mit wilten Exemplaren
+		- In MilitaryFeedback-Funktionen eleganter lösen
+		- Funktion für Random Skins
+		- Weitere Tiere
+			- 4. Hund (weiß, Brian)
+			- Leopard (Normal und Panther)
+			- Jaguar (Normal und Panther)
+			- Schneleopard
+			- Hornissen
+			- Blaubär?
+	- Katzen und Hunde als "Wild Animals" ergänzen"
+	- Miliz-Soldaten?
+- InitMultiselection doppelt vorhanden
+- Entlassen-Button fehlt
+- Falscher Statistik-Background (zumindest bei Saraya...)
 - Belagerungsturm buffen
+- Große Brücke und Zugbrücken?
+- Forschungen analog zu DEdK möglich?
 - (OnSreen) Button-Texturen leicht versetzt
 	- vmtl. Folge des Merges
 - c00-m3: Falsche Nachricht am Anfang
