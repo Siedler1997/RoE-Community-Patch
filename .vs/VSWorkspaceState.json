@@ -3,15 +3,11 @@
     "",
     "\\Data",
     "\\Data\\extra1",
-    "\\Data\\extra1\\lng",
-    "\\Data\\extra1\\lng\\en",
-    "\\Data\\extra1\\lng\\en\\Voices",
-    "\\Data\\extra1\\lng\\en\\Voices\\Animals",
     "\\Data\\extra1\\shr",
-    "\\Data\\extra1\\shr\\text",
-    "\\Data\\extra1\\shr\\text\\de",
-    "\\Data\\extra1\\shr\\text\\de\\ingame"
+    "\\Data\\extra1\\shr\\graphics",
+    "\\Data\\extra1\\shr\\graphics\\Textures",
+    "\\Data\\extra1\\shr\\graphics\\Textures\\GUI_1200",
+    "\\Data\\extra1\\shr\\graphics\\Textures\\GUI_1200\\Loadscreens"
   ],
-  "SelectedNode": "\\Data\\extra1\\shr\\text\\de\\ingame\\UI_ObjectNamesEx1.xml",
   "PreviewInSolutionExplorer": false
 }
