@@ -1,16 +1,6 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Data",
-    "\\Data\\extra1",
-    "\\Data\\extra1\\shr",
-    "\\Data\\extra1\\shr\\config",
-    "\\Data\\extra1\\shr\\config\\Entities",
-    "\\Data\\extra1\\shr\\Script",
-    "\\Data\\extra1\\shr\\Script\\Local",
-    "\\Data\\extra1\\shr\\Script\\Local\\Interface",
-    "\\Data\\extra1\\shr\\Script\\Local\\KeyBindings"
+    ""
   ],
-  "SelectedNode": "\\Data\\extra1\\shr\\Script\\Local\\Interface\\BuildingButtonsEx1.lua",
   "PreviewInSolutionExplorer": false
 }

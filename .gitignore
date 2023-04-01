@@ -2,7 +2,6 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/obj/.
 /obj/x86/Debug/RoE-Campaign-Hotfix.csproj.FileListAbsolute.txt
 /obj/x86/Debug/RoE-Campaign-Hotfix.csproj.CoreCompileInputs.cache
 /obj/x86/Debug/RoE-Campaign-Hotfix.csproj.AssemblyReference.cache
