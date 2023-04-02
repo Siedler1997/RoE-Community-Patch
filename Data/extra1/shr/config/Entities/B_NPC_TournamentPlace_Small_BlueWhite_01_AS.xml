@@ -28,7 +28,7 @@
         <EntityCategories>
             <EntityCategory>AttackableBuilding</EntityCategory>
         </EntityCategories>
-        <Worker>U_NPC_Villager01_AS</Worker>
+        <Worker>U_TournamentWorker_AS</Worker>
         <MaxWorkers>1</MaxWorkers>
         <WorkTaskLists>
             <WorkTaskList>TL_TOURNAMENTWORKER_IDLE</WorkTaskList>

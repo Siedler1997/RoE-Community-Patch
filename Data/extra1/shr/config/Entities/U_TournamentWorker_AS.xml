@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+    <Display classname="ED::CDisplaySettlerWithSlaveProps">
+        <Class>ED::CDisplaySettlerWithSlave</Class>
+            <Model>Units\Misc_Unit\U_NPC_Villager01_AS</Model>
+            <SlaveAlwaysVisible>false</SlaveAlwaysVisible>
+	</Display>
+	<Logic classname="EGL::CSettlerProps">
+        <Class>EGL::CSettler</Class>
+        <AccessCategory>AccessCategorySettler</AccessCategory>
+        <PlayerSectorType>PlayerSectorTypeCivil</PlayerSectorType>
+        <MaxHealth>60</MaxHealth>
+        <NeedsPlayer>true</NeedsPlayer>
+        <ForceNoPlayer>false</ForceNoPlayer>
+        <EntityCategories>
+            <EntityCategory>Worker</EntityCategory>
+        </EntityCategories>
+        <AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
+        <Exploration>0</Exploration>
+        <IdleTaskList/>
+        <Familiar>
+            <With>SheepPasture</With>
+            <With>CattlePasture</With>
+        </Familiar>
+
+        <!-- each time the settler takes a resource for production out of the storehouse, the following buff good is reduced by one if available  -->
+	<BuffGoodType>G_Salt</BuffGoodType>
+
+    </Logic>
+
+    <Behaviors>
+        <Behavior>
+            <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::CWaitForStorageCapacityBehavior</Class>
+            </Logic>
+        </Behavior>
+        <Behavior>
+            <Logic classname="EGL::CAnimationBehaviorExProps">
+                <Class>EGL::CBehaviorAnimationEx</Class>
+
+                    <AnimSet>SET_THIN_WORKER</AnimSet>
+                <ExtraAnimSets>
+                    <ExtraAnimSet>
+                        <Model>Units\Misc_Unit\U_NPC_Villager01_SE_Handcart_Master</Model>
+                        <AnimSet>SET_THIN_WORKER_HANDCART</AnimSet>
+                    </ExtraAnimSet>
+                </ExtraAnimSets>
+            </Logic>
+            <Display classname="ED::CAnimationBehaviorSlaveProps">
+                <Class>ED::CAnimationBehaviorSlave</Class>
+                <SlaveAnimation>
+                    <Mapping>
+                        <Master>Thin\U_Thin_HandCart_Stand</Master>
+                        <Slave>Misc_Unit\U_HandCart_Stand</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>Thin\U_Thin_HandCart_Walk</Master>
+                        <Slave>Misc_Unit\U_HandCart_Walk</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>Thin\U_Thin_HandCart_Walk2</Master>
+                        <Slave>Misc_Unit\U_HandCart_Walk</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>Thin\U_Thin_HandCart_Walk3</Master>
+                        <Slave>Misc_Unit\U_HandCart_Walk</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>Thin\U_Thin_HandCart_Walk4</Master>
+                        <Slave>Misc_Unit\U_HandCart_Walk</Slave>
+                    </Mapping>
+                </SlaveAnimation>
+            </Display>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorDefaultMovementProps">
+                <Class>EGL::CSettlerMovement</Class>
+                   <Speed>270</Speed>
+                <SpeedFactorRoad>1.4</SpeedFactorRoad>
+                    <RotationSpeed>30</RotationSpeed>
+                    <MoveTaskList/>
+                    <MoveIdleAnim/>
+            </Logic>
+            <Display classname="ED::CMovementBehaviorSlaveCartProps">
+                <Class>ED::CMovementBehaviorSlaveCart</Class>
+                <MovementToRotationSets>
+                    <Set>
+                        <MasterModel>Units\Misc_Unit\U_NPC_Villager01_AS_HandCart_Master</MasterModel>
+                        <AngleLock>70</AngleLock>
+                        <LowRotationAngle>10</LowRotationAngle>
+                        <MovementToRotationFactor>0.5</MovementToRotationFactor>
+                        <MovementToLowRotationFactor>0.3</MovementToLowRotationFactor>
+                    </Set>
+                </MovementToRotationSets>
+            </Display>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::CBehaviorWalkCommand</Class>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CWorkerBehaviorProps">
+                <Class>EGL::CWorkerBehavior</Class>
+                <FrameworkTaskList>TL_TOURNAMENTWORKER_IDLE</FrameworkTaskList>
+            </Logic>
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CCarryBehavior</Class>
+            </Display>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CWorkerVariableCartBehaviorProps">
+                <Class>EGL::CWorkerVariableCartBehavior</Class>
+                <CartsProps>
+                    <CartProps>
+
+            <!-- no building -->
+                        <PrimaryModel>Units\Misc_Unit\U_NPC_Villager01_AS_HandCart_Master</PrimaryModel>
+                        <UsesSlaveClump>true</UsesSlaveClump>
+                        <SlaveModel>Units\Misc_Unit\U_BuildingConstructionCart</SlaveModel>
+                        <Speed>260</Speed>
+                        <SpeedFactorRoad>1.7</SpeedFactorRoad>
+                        <EvasionPriority>120</EvasionPriority>
+                    </CartProps>
+                 </CartsProps>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::CTaskHistory</Class>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorPropsDying">
+                <Class>EGL::CBehaviorDying</Class>
+                <DyingTaskList>TL_DIE</DyingTaskList>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CWorkerFleeBehaviorProps">
+                <Class>EGL::CWorkerFleeBehavior</Class>
+                <FlightTaskList>TL_WORKER_FLEE</FlightTaskList>
+                <FlightSpeedModifierSeconds>5</FlightSpeedModifierSeconds>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::CTaskTimeLogger</Class>
+            </Logic>
+        </Behavior>
+
+            <Behavior>
+            <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::CParticleEffectAttachmentBehavior</Class>
+            </Logic>
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CParticleEffectAttachmentBehavior</Class>
+            </Display>
+        </Behavior>
+   </Behaviors>
+
+    <MapEditor>
+        <TreePosition>Units\Workers</TreePosition>
+        <ShowInTree>false</ShowInTree>
+        <Clime>Generic</Clime>
+        <Scalable>false</Scalable>
+    </MapEditor>
+</root>

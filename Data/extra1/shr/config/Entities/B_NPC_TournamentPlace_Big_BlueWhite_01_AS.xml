@@ -3,7 +3,7 @@
     <Display classname="ED::CBuildingProps">
         <Class>ED::CDisplayBuilding</Class>
         <Banner>Default</Banner>
-        <Model>Buildings\B_NPC_TournamentPlace_Big_BlueWhite_01_AS</Model>
+        <Model>Buildings\B_NPC_TournamentPlace_Big_BlueWhite_01</Model>
         <Destroyed>Buildings\B_NPC_TournamentPlace_Rubble_Big</Destroyed>
         <FireNodeCount>15</FireNodeCount>
 				<SnowFactor>0.2</SnowFactor>
@@ -28,7 +28,7 @@
           <EntityCategories>
         	  <EntityCategory>AttackableBuilding</EntityCategory>
           </EntityCategories>
-          <Worker>U_NPC_Villager01_AS</Worker>
+          <Worker>U_TournamentWorker_AS</Worker>
 		  <MaxWorkers>1</MaxWorkers>
           <WorkTaskLists>
                   <WorkTaskList>TL_TOURNAMENTWORKER_IDLE</WorkTaskList>

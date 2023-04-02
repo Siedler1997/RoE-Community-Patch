@@ -380,10 +380,18 @@
     <Content Include="Data\extra1\shr\config\Entities\B_NPC_Spicetrader.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\extra1\shr\config\Entities\B_NPC_TournamentPlace_Big_BlueWhite_01_AS.xml" />
-    <Content Include="Data\extra1\shr\config\Entities\B_NPC_TournamentPlace_Big_BlueWhite_02_AS.xml" />
-    <Content Include="Data\extra1\shr\config\Entities\B_NPC_TournamentPlace_Big_BlueWhite_04_AS.xml" />
-    <Content Include="Data\extra1\shr\config\Entities\B_NPC_TournamentPlace_Small_BlueWhite_01_AS.xml" />
+    <Content Include="Data\extra1\shr\config\Entities\B_NPC_TournamentPlace_Big_BlueWhite_01_AS.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\extra1\shr\config\Entities\B_NPC_TournamentPlace_Big_BlueWhite_02_AS.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\extra1\shr\config\Entities\B_NPC_TournamentPlace_Big_BlueWhite_04_AS.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\extra1\shr\config\Entities\B_NPC_TournamentPlace_Small_BlueWhite_01_AS.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Data\extra1\shr\config\Entities\B_Outpost.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -559,6 +567,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\extra1\shr\config\Entities\U_Tiger.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\extra1\shr\config\Entities\U_TournamentWorker_AS.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\extra1\shr\config\Entities\U_Trebuchet.xml">
