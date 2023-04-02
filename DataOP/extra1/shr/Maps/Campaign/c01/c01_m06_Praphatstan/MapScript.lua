@@ -74,7 +74,7 @@ function Mission_FirstMapAction()
         Startup_Diplomacy()
         
         -- CP: Changed player colors to be more consistent
-        Logic.PlayerSetPlayerColor(2 , g_ColorIndex["VillageColor2"], -1, -1)  --Praphat-Militär: Banditen-Orange
+        Logic.PlayerSetPlayerColor(2 , g_ColorIndex["BanditsColor2"], -1, -1)  --Praphat-Militär: Banditen-Orange
         Logic.PlayerSetPlayerColor(3 , g_ColorIndex["CityColor6"], -1, -1)   --Praphat-Stadt: Orange
         Logic.PlayerSetPlayerColor(4 , g_ColorIndex["CloisterColor2"], -1, -1)  --Forswapur: Türkis
         Logic.PlayerSetPlayerColor(8 , g_ColorIndex["BanditsColor3"], -1, -1)  --Banditen: Braun

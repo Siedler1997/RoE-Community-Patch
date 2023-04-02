@@ -46,7 +46,7 @@ function Mission_FirstMapAction()
         -- CP: Changed player colors to be more consistent
         Logic.PlayerSetPlayerColor(2 , g_ColorIndex["VillageColor3"], -1, -1)  --Amethi: Blaugrün
         Logic.PlayerSetPlayerColor(3 , g_ColorIndex["BanditsColor2"], -1, -1)  --Praphat: Banditen-Orange
-        Logic.PlayerSetPlayerColor(4 , g_ColorIndex["CityColor2"], -1, -1)   --Khana: Grün
+        Logic.PlayerSetPlayerColor(4 , g_ColorIndex["CityColor3"], -1, -1)   --Khana: Grün
     end    
 
     -- create quests
