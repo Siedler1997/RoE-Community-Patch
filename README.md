@@ -156,6 +156,7 @@ Folgende Änderungen wurden vorgenommen:
 			- Kostet 12 Steine
 			- Besitzt eine hohe Sichtweite
 			- Sieht einfach schick aus :)
+		- AS-Zelte mit entsprechenden Workern
 	- NPC-Gebäude
 		- RP-/Khana-Kasernen
 			- Funktionieren unter Spieler-Kontrolle wie normale Kasernen auch
