@@ -20,7 +20,7 @@ function Mission_InitPlayers()
     
     VestholmPlayerID = SetupPlayer(2, Head, "", "CityColor4")
     MonkPlayerID = SetupPlayer(3, "H_NPC_Monk_ME", "Monk", "VillageColor1")
-    BanditsPlayerID = SetupPlayer(5, "H_Mercenary_ME", "Bandits", "CityColor2")
+    BanditsPlayerID = SetupPlayer(5, "H_Mercenary_ME", "Bandits", "BanditsColor1")
     HarbourPlayerID = SetupPlayer( 4 , "H_NPC_Generic_Trader", "XTradeShipX", "TravelingSalesmanColor")
 
     -- set some resources for player 2
@@ -169,6 +169,7 @@ function Mission_FirstMapAction()
     StartSimpleJob("CheckPlayerHasEnoughStones")
     StartSimpleJob("HACK_StopBanditSpawn")
     
+    MakeInvulnerable(Logic.GetStoreHouse(BanditsPlayerID))
 end
 
  function DeletePresentationModeBuildings()
@@ -336,8 +337,8 @@ function StealStoneCutscene()
     elseif StealStoneCutsceneCounter == 30 then
         
         local Bandits = {Logic.GetPlayerEntitiesInCategory(BanditsPlayerID, EntityCategories.Leader)}        
-        local CampID = Logic.GetStoreHouse(BanditsPlayerID)
-        local x,y = Logic.GetEntityPosition(CampID)
+        --local CampID = Logic.GetStoreHouse(BanditsPlayerID)
+        local x,y = Logic.GetEntityPosition("BanditSpawn")
                 
         for i=1, #Bandits do        
             Logic.MoveSettler(Bandits[i], x,y)
@@ -533,19 +534,15 @@ function OnMayorQuestCompleted()
     local x, y = Logic.GetEntityPosition(GlobalTutorial.Entities.TroopSpawnPoint)
     
     Bowmen1  = Logic.CreateBattalionOnUnblockedLand(Entities.U_MilitaryBow, x,y, 0, 1, 9)
-    Bowmen2  = Logic.CreateBattalionOnUnblockedLand(Entities.U_MilitaryBow, x,y, 0, 1, 9)
     Swordsmen1  = Logic.CreateBattalionOnUnblockedLand(Entities.U_MilitarySword, x,y, 0, 1, 9)    
-    Swordsmen2  = Logic.CreateBattalionOnUnblockedLand(Entities.U_MilitarySword, x,y, 0, 1, 9)    
-    
-    
+    Spearmen1  = Logic.CreateBattalionOnUnblockedLand(Entities.U_MilitarySpear, x,y, 0, 1, 9)    
     
     local MarketplaceID = Logic.GetMarketplace(1)    
     x, y = Logic.GetBuildingApproachPosition(MarketplaceID)
     
     Logic.MoveSettler(Bowmen1, x, y)
-    Logic.MoveSettler(Bowmen2, x, y)
     Logic.MoveSettler(Swordsmen1, x, y)
-    Logic.MoveSettler(Swordsmen2, x, y)
+    Logic.MoveSettler(Spearmen1, x, y)
     
     BanditsAttackCutsceneCounter = 0
     StartSimpleJob("BanditsAttackPlayerCutscene")
@@ -565,7 +562,7 @@ function BanditsAttackPlayerCutscene()
         local Bandits = {Logic.GetPlayerEntitiesInCategory(BanditsPlayerID, EntityCategories.Military)}
         
         for i=1,#Bandits do
-            Logic.GroupAttack(Bandits[i], Swordsmen2)
+            Logic.GroupAttack(Bandits[i], Spearmen1)
         end
          
         
@@ -577,6 +574,7 @@ function BanditsAttackPlayerCutscene()
     end
     
     if BanditsAttackCutsceneCounter == 20 then
+        MakeVulnerable(Logic.GetStoreHouse(BanditsPlayerID))
         SendVoiceMessage(1,"NPCTalk_BanditsAreAttacking")
         Logic.ExecuteInLuaLocalState("Display.SetRenderFogOfWar(1)")
         
@@ -698,10 +696,16 @@ function SpawnBanditsForAttacks()
     local x,y = Logic.GetBuildingApproachPosition(BanditsHQ)
     
     local NPC_Melee = GetPlayerEntities(BanditsPlayerID, Entities.U_MilitaryBandit_Melee_ME)
+    local NPC_Range = GetPlayerEntities(BanditsPlayerID, Entities.U_MilitaryBandit_Ranged_ME)
     
     if #NPC_Melee == 0 then
         for i=1, 2 do
             Logic.CreateBattalionOnUnblockedLand(Entities.U_MilitaryBandit_Melee_ME, x,y, 0, BanditsPlayerID, 3)
+        end
+    end
+    if #NPC_Range == 0 then
+        for i=1, 2 do
+            Logic.CreateBattalionOnUnblockedLand(Entities.U_MilitaryBandit_Ranged_ME, x,y, 0, BanditsPlayerID, 3)
         end
     end
     

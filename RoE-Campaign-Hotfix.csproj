@@ -71,6 +71,9 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="DataOP\extra1\shr\Maps\Campaign\c00\c00_m01_Vestholm\MapData.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Data\extra1\lng\de\Voices\Animals\VoicesAnimals_Bear_Attack_rnd_01.mp3">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

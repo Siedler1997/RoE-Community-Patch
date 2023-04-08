@@ -17,7 +17,7 @@ function Mission_InitPlayers()
     
     CalhadorHoldPlayerID = SetupPlayer(4, "H_NPC_Mercenary_ME", "Calhador Hold", "BanditsColor1")
 
-    SetupPlayer(5, "H_NPC_Villager01_ME", "Village of Eastholm", "VillageColor3")
+    SetupPlayer(5, "H_NPC_Villager01_ME", "Village of Eastholm", "VillageColor2")
 
     -- set some resources for player 1
     AddResourcesToPlayer(Goods.G_Gold,250)
