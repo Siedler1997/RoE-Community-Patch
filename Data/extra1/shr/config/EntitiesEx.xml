@@ -390,6 +390,10 @@
 	<!-- ********************************************
     CP stuff
     ************************************************-->
+	<Entity>B_NPC_TournamentPlace_Big_BlueWhite_01_AS</Entity>
+	<Entity>B_NPC_TournamentPlace_Big_BlueWhite_02_AS</Entity>
+	<Entity>B_NPC_TournamentPlace_Big_BlueWhite_04_AS</Entity>
+	<Entity>B_NPC_TournamentPlace_Small_BlueWhite_01_AS</Entity>
 
 	<Entity>B_GuardTower_ME</Entity>
 	<Entity>B_GuardTower_NE</Entity>
@@ -403,6 +407,7 @@
 	<Entity>B_WatchTower_AS</Entity>
 	<Entity>B_SpearMaker</Entity>
 	<Entity>U_SpearMaker</Entity>
+	<Entity>U_TournamentWorker_AS</Entity>
 	
 	<Entity>U_Bear</Entity>
 	<Entity>U_BlackBear</Entity>
