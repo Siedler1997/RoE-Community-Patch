@@ -236,12 +236,12 @@
 
 						<!-- don't remove  the empty tags, otherwise the data isn't shown correctly in the XML balancer! -->
 						<EntityCategoryList>
-							<EntityCategory/>
-							<EntityCategory/>
-							<EntityCategory/>
 							<EntityCategory>AttackableBuilding</EntityCategory>
-							<EntityCategory>PalisadeSegment</EntityCategory>
-							<EntityCategory>SpecialBuilding</EntityCategory>
+							<EntityCategory>HeavyWeapon</EntityCategory>
+							<EntityCategory>Trebuchet</EntityCategory>
+							<EntityCategory>Military</EntityCategory>
+							<EntityCategory/>
+							<EntityCategory/>
 						</EntityCategoryList>
 
 						<AttackModeList>
