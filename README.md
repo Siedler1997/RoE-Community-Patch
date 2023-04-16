@@ -118,6 +118,7 @@ Folgende Änderungen wurden vorgenommen:
 			- Kann sich in aufgebauter Form nicht fortbewegen
 			- Muss nicht von Soldaten bedient werden
 			- Zurzeit noch nicht baubar, vllt. mit Titel "Erzherzog"?
+		- Geister-Ochse in Anlehnung an Ubis Raketen Ochsen ;)
 	- "Alte" Trebuchets
 		- Richtiges Selektionsmenü
 		- Eigener Tooltip-String
