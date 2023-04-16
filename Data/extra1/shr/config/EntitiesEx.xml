@@ -418,6 +418,7 @@
 	<Entity>U_Wolf_Brown</Entity>
 	<Entity>U_Lion_Male</Entity>
 	<Entity>U_Lion_Female</Entity>
+	<Entity>U_MagicOx</Entity>
 
 	<Entity>U_MilitaryTrebuchet</Entity>
 	<Entity>U_TrebuchetCart</Entity>

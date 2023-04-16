@@ -72,4 +72,5 @@
 	<string id="Abilities_U_KnightPraphat" MD5Hash="081F560C7325427C9F5183B161DE8711" mod="20071205123351" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- Siedler in der Nähe mit Kleidung versorgen{cr}- Besserer Ruf der Stadt durch Vielfalt verfügbarer Kleidung]]></string>
 	<string id="AbilityKhana" MD5Hash="45DCA541F448A243115E748B0FAA940E" mod="20070819154801" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- Truppen in der Nähe mit Fackeln versorgen]]></string>
 	<string id="AbilityPraphat" MD5Hash="80CB1EC4FAF3367CECE66805C00059EF" mod="20071205123556" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- Siedler in der Nähe mit Kleidung versorgen{cr}- Besserer Ruf der Stadt durch Vielfalt verfügbarer Kleidung]]></string>
+	<string id="Abilities_U_MagicOx" MD5Hash="C0A52A33D6B81F633578A61329DCA10F" mod="20070819135241" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- Besitzt Kräfte jenseits menschlicher Vorstellungskraft {cr}- Stark gegen Alles]]></string>
 </root>

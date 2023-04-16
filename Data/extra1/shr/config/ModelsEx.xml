@@ -2497,6 +2497,15 @@
 			<OcclusionReceiver>True</OcclusionReceiver>
 			<DefaultAnimID>Military\U_MilitaryPoleArm_Run</DefaultAnimID>
 		</Model>
+
+		<Model id="Animals\A_Ox">
+			<Effect>SettlerThroneRoom</Effect>
+			<CastShadow>False</CastShadow>
+			<SelectionTexture>Selection_Soldier</SelectionTexture>
+			<OcclusionReceiver>True</OcclusionReceiver>
+			<DefaultAnimID>Military\U_MilitaryPoleArm_Run</DefaultAnimID>
+			<UseAlphaBlending>True</UseAlphaBlending>
+		</Model>
 		
 		
 		<Model id="Goods\G_SpearSpearMaker01">

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AnimSet>
+	<Categories>
+		<Category classname="EGL::CAnimCategory">
+			<Name>Walk</Name>
+			<Animation>Misc_Unit\U_Ox_Walk</Animation>
+		</Category>
+		<Category classname="EGL::CAnimCategory">
+			<Name>Run</Name>
+			<Animation>Misc_Unit\U_Ox_Run</Animation>
+		</Category>
+		<Category classname="EGL::CAnimCategory">
+			<Name>AttackRun</Name>
+			<Animation>Misc_Unit\U_Ox_Run</Animation>
+		</Category>
+		<Category classname="EGL::CAnimCategory">
+			<Name>Stand</Name>
+			<Animation>Misc_Unit\U_Ox_Idle1</Animation>
+		</Category>
+		<Category classname="EGL::CAnimCategory">
+			<Name>Dead</Name>
+			<Animation>Misc_Unit\U_Ox_Die</Animation>
+		</Category>
+		<Category classname="EGL::CAnimCategory">
+			<Name>Die</Name>
+			<Animation>Misc_Unit\U_Ox_Die</Animation>
+		</Category>
+		<Category classname="EGL::CAnimCategory">
+			<Name>BattleIdle</Name>
+			<Animation>Misc_Unit\U_Ox_Idle1</Animation>
+		</Category>
+		<!--********************************** IDLE **********************************-->
+
+
+		<Category classname="EGL::CAnimCategory">
+			<Name>Idle</Name>
+			<RandomAnims>
+				<RandomAnim>
+					<Animation>Misc_Unit\U_Ox_Idle1</Animation>
+					<Rank>1</Rank>
+				</RandomAnim>
+				<RandomAnim>
+					<Animation>Misc_Unit\U_Ox_Idle2</Animation>
+					<Rank>2</Rank>
+				</RandomAnim>
+			</RandomAnims>
+		</Category>
+
+		<!--********************************** ATTACK **********************************-->
+
+
+		<Category classname="EGL::CAnimCategory">
+			<Name>Attack</Name>
+			<RandomAnims>
+				<RandomAnim>
+					<Animation>Misc_Unit\U_Ox_Idle1</Animation>
+					<Rank>1</Rank>
+				</RandomAnim>
+				<RandomAnim>
+					<Animation>Misc_Unit\U_Ox_Idle2</Animation>
+					<Rank>2</Rank>
+				</RandomAnim>
+			</RandomAnims>
+		</Category>
+
+	</Categories>
+</AnimSet>
