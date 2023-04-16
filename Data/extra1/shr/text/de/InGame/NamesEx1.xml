@@ -111,6 +111,7 @@
 	<string id="B_WatchTower_NE" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Aussichtsturm]]></string>
 	<string id="B_WatchTower_SE" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Aussichtsturm]]></string>
 	<string id="U_Dragon" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Drache]]></string>
+	<string id="U_MagicOx" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Geister-Ochse]]></string>
 
 	<string id="U_Tiger" MD5Hash="10687AEA6D1F89D037FFEE5B70D06B8D" mod="20080125114413" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Tiger]]></string>
 	<string id="B_GuardTower_AS" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Wachturm]]></string>

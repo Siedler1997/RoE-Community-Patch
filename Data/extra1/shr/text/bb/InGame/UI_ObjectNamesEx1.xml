@@ -158,4 +158,5 @@
 	<string id="U_NPC_Resource_Monk_AS" MD5Hash="12D78470B56D9FBE63BC7E03EE459F71" mod="20080125122256" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Monk]]></string>
 	<string id="U_NPC_SmokeHouseWorker_AS" MD5Hash="12D78470B56D9FBE63BC7E03EE459F71" mod="20080125122256" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Smokehouse Worker]]></string>
 	<string id="U_NPC_Villager01_AS" MD5Hash="12D78470B56D9FBE63BC7E03EE459F71" mod="20080125122256" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Villager]]></string>
+	<string id="Abilities_U_MagicOx" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Ox Ghost]]></string>
 </root>

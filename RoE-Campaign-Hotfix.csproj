@@ -4997,7 +4997,7 @@
     <Content Include="Data\extra1\shr\config\Entities\B_WatchTower_SE.xml" />
     <Content Include="Data\extra1\shr\config\Entities\R_IronMine.xml" />
     <Content Include="Data\extra1\shr\config\Entities\R_StoneMine.xml" />
-    <Content Include="Data\extra1\shr\config\Entities\U_Ox.xml" />
+    <Content Include="Data\extra1\shr\config\Entities\U_MagicOx.xml" />
     <Content Include="Data\extra1\shr\config\Entities\U_Bear.xml" />
     <Content Include="Data\extra1\shr\config\Entities\U_BlackBear.xml" />
     <Content Include="Data\extra1\shr\config\Entities\U_Dragon.xml" />
