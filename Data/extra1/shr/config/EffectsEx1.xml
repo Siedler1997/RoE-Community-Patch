@@ -56,5 +56,73 @@
 				<Model>Effects\XD_Hero2Bomb</Model>
 			</Display>
 		</Effect>
+		<Effect id="E_Ox_Fire">
+			<Logic classname="EGL::CArrowEffectProps">
+				<Class>EGL::CArrowEffect</Class>
+				<Global>false</Global>
+				<Duration>0</Duration>
+				<Speed>3000.0</Speed>
+				<GravityFactor>1800.0f</GravityFactor>
+				<HeightOffsetStart>60.0</HeightOffsetStart>
+				<HeightOffsetTarget>60.0</HeightOffsetTarget>
+				<SoundProjectileType>Catapult</SoundProjectileType>
+				<ImpactEffectID>E_Shockwave03</ImpactEffectID>
+			</Logic>
+			<Display classname="ED::CFlyingEffectProps">
+				<Class>ED::CFlyingEffect</Class>
+				<Model>Effects\XD_Hero2Bomb</Model>
+			</Display>
+		</Effect>
+		<Effect id="E_Ox_Fire_Palisade">
+			<Logic classname="EGL::CArrowEffectProps">
+				<Class>EGL::CArrowEffect</Class>
+				<Global>false</Global>
+				<Duration>0</Duration>
+				<Speed>3000.0</Speed>
+				<GravityFactor>1800.0f</GravityFactor>
+				<HeightOffsetStart>60.0</HeightOffsetStart>
+				<HeightOffsetTarget>60.0</HeightOffsetTarget>
+				<SoundProjectileType>Catapult</SoundProjectileType>
+				<ImpactEffectID>FXPalisadeImpact</ImpactEffectID>
+			</Logic>
+			<Display classname="ED::CFlyingEffectProps">
+				<Class>ED::CFlyingEffect</Class>
+				<Model>Effects\XD_Hero2Bomb</Model>
+			</Display>
+		</Effect>
+		<Effect id="E_Ox_Fire_Wall">
+			<Logic classname="EGL::CArrowEffectProps">
+				<Class>EGL::CArrowEffect</Class>
+				<Global>false</Global>
+				<Duration>0</Duration>
+				<Speed>3000.0</Speed>
+				<GravityFactor>1800.0f</GravityFactor>
+				<HeightOffsetStart>60.0</HeightOffsetStart>
+				<HeightOffsetTarget>60.0</HeightOffsetTarget>
+				<SoundProjectileType>Catapult</SoundProjectileType>
+				<ImpactEffectID>FXWallImpact</ImpactEffectID>
+			</Logic>
+			<Display classname="ED::CFlyingEffectProps">
+				<Class>ED::CFlyingEffect</Class>
+				<Model>Effects\XD_Hero2Bomb</Model>
+			</Display>
+		</Effect>
+		<Effect id="E_Ox_Fire_Fly">
+			<Logic classname="EGL::CArrowEffectProps">
+				<Class>EGL::CArrowEffect</Class>
+				<Global>false</Global>
+				<Duration>0</Duration>
+				<Speed>3000.0</Speed>
+				<GravityFactor>1800.0f</GravityFactor>
+				<HeightOffsetStart>60.0</HeightOffsetStart>
+				<HeightOffsetTarget>1300.0</HeightOffsetTarget>
+				<SoundProjectileType>Catapult</SoundProjectileType>
+				<ImpactEffectID>E_Shockwave04</ImpactEffectID>
+			</Logic>
+			<Display classname="ED::CFlyingEffectProps">
+				<Class>ED::CFlyingEffect</Class>
+				<Model>Effects\XD_Hero2Bomb</Model>
+			</Display>
+		</Effect>
     </Effects>
 </root>
