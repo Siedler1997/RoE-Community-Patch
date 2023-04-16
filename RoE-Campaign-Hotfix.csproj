@@ -5087,6 +5087,7 @@
     <Content Include="Data\extra1\shr\config\TaskLists\TL_SPEARMAKER_WORK03.xml" />
     <Content Include="Data\extra1\shr\config\TechnologiesEx1.xml" />
     <Content Include="Data\extra1\shr\config\TLListEx.xml" />
+    <Content Include="Data\extra1\shr\graphics\Textures\A_MagicOx.dds" />
     <Content Include="Data\extra1\shr\graphics\Textures\CoA_Logo.dds" />
     <Content Include="Data\extra1\shr\graphics\Textures\CoA_Pattern.dds" />
     <Content Include="Data\extra1\shr\graphics\Textures\E_BurningSphere_test.dds" />
