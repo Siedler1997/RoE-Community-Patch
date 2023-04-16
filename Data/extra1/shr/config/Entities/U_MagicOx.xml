@@ -11,7 +11,7 @@
 		<MilMetaFormationMemberType>MilMetaFormationMemberTypeMelee</MilMetaFormationMemberType>
 		<NeedsPlayer>true</NeedsPlayer>
 		<ForceNoPlayer>false</ForceNoPlayer>
-		<MaxHealth>720</MaxHealth>
+		<MaxHealth>800</MaxHealth>
 		<HealingSeconds>10</HealingSeconds>
 		<HealingPoints>20</HealingPoints>
         <IsAttackable>true</IsAttackable>
@@ -103,7 +103,7 @@
 								<Damage>
 									<DiceCount>0</DiceCount>
 									<FaceCount>0</FaceCount>
-									<BaseValue>30</BaseValue>
+									<BaseValue>40</BaseValue>
 								</Damage>
 								<BuildingFireSize>20</BuildingFireSize>
 								<DamageRadiusList>
@@ -155,7 +155,7 @@
 								<Damage>
 									<DiceCount>0</DiceCount>
 									<FaceCount>0</FaceCount>
-									<BaseValue>30</BaseValue>
+									<BaseValue>40</BaseValue>
 								</Damage>
 								<BuildingFireSize>20</BuildingFireSize>
 								<DamageRadiusList>
@@ -207,7 +207,7 @@
 								<Damage>
 									<DiceCount>0</DiceCount>
 									<FaceCount>0</FaceCount>
-									<BaseValue>30</BaseValue>
+									<BaseValue>40</BaseValue>
 								</Damage>
 								<BuildingFireSize>20</BuildingFireSize>
 								<DamageRadiusList>
@@ -259,7 +259,7 @@
 								<Damage>
 									<DiceCount>0</DiceCount>
 									<FaceCount>0</FaceCount>
-									<BaseValue>30</BaseValue>
+									<BaseValue>40</BaseValue>
 								</Damage>
 								<BuildingFireSize>20</BuildingFireSize>
 								<DamageRadiusList>
