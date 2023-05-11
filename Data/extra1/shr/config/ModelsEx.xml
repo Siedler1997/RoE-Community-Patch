@@ -2465,6 +2465,13 @@
         </Model>   
 		
 		<!-- CP -->
+
+		<Model id="Doodads\D_X_SpecialEdition_BuildingPlot">
+			<Effect>SimpleObjectMultiply</Effect>
+			<OcclusionCaster>False</OcclusionCaster>
+			<CastShadow>True</CastShadow>
+			<UseAlphaBlending>False</UseAlphaBlending>
+		</Model>
 		
 		<Model id="Units\Military\U_MilitarySpear">
 			<SelectionRadius>100</SelectionRadius>
@@ -2516,6 +2523,21 @@
 		</Model>
 
 
+		<Model id="Doodads\D_X_Beautification_CloisterHutGrave">
+			<CastShadow>True</CastShadow>
+			<ShareShadowRaster>True</ShareShadowRaster>
+			<UseAlphaBlending>False</UseAlphaBlending>
+			<UseSurfaceHeight>True</UseSurfaceHeight>
+			<Effect>SimpleObjectMultiply</Effect>
+		</Model>
+
+		<Model id="Doodads\D_X_Beautification_BrothersInArms">
+			<CastShadow>True</CastShadow>
+			<ShareShadowRaster>True</ShareShadowRaster>
+			<UseAlphaBlending>False</UseAlphaBlending>
+			<UseSurfaceHeight>True</UseSurfaceHeight>
+			<Effect>SimpleObjectMultiply</Effect>
+		</Model>
 
 		<Model id="Buildings\B_Spicetrader_Buildingsite_1">
 			<Effect>SimpleObjectMultiply</Effect>

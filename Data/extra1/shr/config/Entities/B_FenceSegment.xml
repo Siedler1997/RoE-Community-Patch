@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+    <Display classname="ED::CWallProps">
+        <Class>ED::CWall</Class>
+        
+        <Model>Buildings/B_FenceSegment</Model>
+        <ConstructionSite/>
+        <ModelWidth>400</ModelWidth>
+        
+        <Banner>Default</Banner>
+        <Anims/>
+    </Display>
+
+    <Logic classname="EGL::CWallSegmentProps">
+        <Class>EGL::CWallSegment</Class>
+        <MapFileDontSave>true</MapFileDontSave>
+        <AccessCategory>AccessCategoryBuilding</AccessCategory>
+        <EntityCategories>
+            <EntityCategory>Wall</EntityCategory>
+            <EntityCategory>Fence</EntityCategory>
+        </EntityCategories>
+        <NeedsPlayer>true</NeedsPlayer>
+        <ForceNoPlayer>false</ForceNoPlayer>
+        <RemovableBlocking>true</RemovableBlocking>
+        <DeleteWhenBuiltOn>true</DeleteWhenBuiltOn>
+        <Worker>U_WallConstructionWorker</Worker> <!-- construction only -->
+        <MaxWorkers>0</MaxWorkers>                <!-- construction only -->
+        <MaxHealth>5</MaxHealth>
+        <TurretType>B_FenceTurret</TurretType>
+        <Exploration>0</Exploration>
+        <CanBeKnockedDown>true</CanBeKnockedDown>
+        <FlattenOnBuild>false</FlattenOnBuild>
+        <IsHeightLocking>true</IsHeightLocking>
+        <CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim>
+        <MaxHeightDelta>300</MaxHeightDelta>
+        <MaxLength>500</MaxLength>
+        <WallHeight>100</WallHeight>
+        <IsMountable>false</IsMountable>
+        <AlarmRepairBuildingTL>TL_WORKER_REPAIR_ALARM</AlarmRepairBuildingTL>
+        <AlarmRepairMaterial>G_Wood</AlarmRepairMaterial>
+        <AlarmRepairProvider>G_Wood_Supplier</AlarmRepairProvider>
+        <CollapseEffectID>FXWallCollapseFence</CollapseEffectID>
+        <MaxFloorFireSize>0</MaxFloorFireSize>
+        <Cost>
+            <GoodAmount>
+                <GoodType>G_Wood</GoodType>
+                <Amount>1</Amount>
+            </GoodAmount>
+        </Cost>
+        <ApproachPos>
+            <X>220</X>
+            <Y>-500</Y>
+        </ApproachPos>
+        <ApproachR>0</ApproachR>
+        <DoorPos>
+            <X>220</X>
+            <Y>-50</Y>
+        </DoorPos>
+        <BlockingAreas>
+            <BlockingArea>
+                <Blocked1>
+                    <X>-300</X>
+                    <Y>80</Y>
+                </Blocked1>
+                <Blocked2>
+                    <X>300</X>
+                    <Y>-80</Y>
+                </Blocked2>
+            </BlockingArea>
+        </BlockingAreas>
+        <BuildBlockingAreas>
+            <BuildBlockingArea>
+                <Blocked1>
+                    <X>-300</X>
+                    <Y>80</Y>
+                </Blocked1>
+                <Blocked2>
+                    <X>300</X>
+                    <Y>-80</Y>
+                </Blocked2>
+            </BuildBlockingArea>
+        </BuildBlockingAreas>
+
+        <ConstructionInfo>
+            <Time>5</Time>
+
+            <BuilderSlots>
+                <BuilderSlot>
+                    <Position>
+                        <X>100</X>
+                        <Y>-200</Y>
+                    </Position>
+                    <Orientation>0</Orientation>
+                </BuilderSlot>
+            </BuilderSlots>
+            <ConstructionSite>B_BuildingPlot_Palisade</ConstructionSite>
+        </ConstructionInfo>
+
+    </Logic>
+    <Behaviors>
+
+    </Behaviors>
+    <MapEditor>
+        <TreePosition>buildings\camps</TreePosition>
+        <ShowInTree>false</ShowInTree>
+        <Clime>Generic</Clime>
+        <Scalable>false</Scalable>
+        <TemplateResistant>true</TemplateResistant>
+    </MapEditor>
+</root>

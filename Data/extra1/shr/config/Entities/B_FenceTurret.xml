@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+    <Display classname="ED::CBuildingProps">
+        <Class>ED::CWallBuilding</Class>
+        <Model>Buildings/B_FenceTurret</Model>
+        <Anims/>
+    </Display>
+
+    <Logic classname="EGL::CWallTurretProps">
+        <Class>EGL::CWallTurret</Class>
+        <MapFileDontSave>true</MapFileDontSave>
+        <AccessCategory>AccessCategoryBuilding</AccessCategory>
+        <EntityCategories>
+            <EntityCategory>Wall</EntityCategory>
+            <EntityCategory>Fence</EntityCategory>
+            <EntityCategory>Turret</EntityCategory>
+        </EntityCategories>
+        <NeedsPlayer>true</NeedsPlayer>
+        <ForceNoPlayer>false</ForceNoPlayer>
+        <RemovableBlocking>true</RemovableBlocking>
+        <DeleteWhenBuiltOn>true</DeleteWhenBuiltOn>
+        <Worker>U_WallConstructionWorker</Worker> <!-- construction only -->
+        <MaxWorkers>0</MaxWorkers>                <!-- construction only -->
+        <MaxHealth>5</MaxHealth>
+        <ResistsSplashDamage>true</ResistsSplashDamage>
+        <Exploration>0</Exploration>
+        <FlattenOnBuild>false</FlattenOnBuild>
+        <IsHeightLocking>true</IsHeightLocking>
+        <CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim>
+        <WallHeight>100</WallHeight>
+        <IsMountable>false</IsMountable>
+        <CanLeaveImmediately>true</CanLeaveImmediately>
+        <CanBeKnockedDown>false</CanBeKnockedDown>
+        <MaxFloorFireSize>0</MaxFloorFireSize>
+        <!-- replaced by higher prio -->
+        <ReplacementPriority>0</ReplacementPriority> 
+        
+        <ApproachPos>
+            <X>0</X>
+            <Y>40</Y>
+        </ApproachPos>
+        <ApproachR>0</ApproachR>
+        <DoorPos>
+            <X>0</X>
+            <Y>0</Y>
+        </DoorPos>
+        <BlockingAreas>
+            <BlockingArea>
+                <Blocked1>
+                    <X>-10</X>
+                    <Y>-10</Y>
+                </Blocked1>
+                <Blocked2>
+                    <X>10</X>
+                    <Y>10</Y>
+                </Blocked2>
+            </BlockingArea>
+        </BlockingAreas>
+        <BuildBlockingAreas>
+            <BuildBlockingArea>
+                <Blocked1>
+                    <X>-30</X>
+                    <Y>-30</Y>
+                </Blocked1>
+                <Blocked2>
+                    <X>30</X>
+                    <Y>50</Y>
+                </Blocked2>
+            </BuildBlockingArea>
+        </BuildBlockingAreas>
+
+        <ConstructionInfo>
+            <Time>5</Time>
+
+            <BuilderSlots>
+                <BuilderSlot>
+                    <Position>
+                        <X>100</X>
+                        <Y>-200</Y>
+                    </Position>
+                    <Orientation>0</Orientation>
+                </BuilderSlot>
+            </BuilderSlots>
+            <ConstructionSite>B_BuildingPlot_Palisade</ConstructionSite>
+        </ConstructionInfo>
+
+
+    </Logic>
+    <Behaviors>
+    </Behaviors>
+    <MapEditor>
+        <TreePosition>buildings\camps</TreePosition>
+        <ShowInTree>false</ShowInTree>
+        <Clime>Generic</Clime>
+        <Scalable>false</Scalable>
+        <TemplateResistant>true</TemplateResistant>
+    </MapEditor>
+</root>

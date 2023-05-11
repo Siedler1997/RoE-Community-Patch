@@ -420,6 +420,7 @@
 	<Entity>U_Lion_Female</Entity>
 	<Entity>U_MagicOx</Entity>
 
+	<Entity>B_BuildingPlot_2x2</Entity>
 	<Entity>U_MilitaryTrebuchet</Entity>
 	<Entity>U_TrebuchetCart</Entity>
 	<Entity>U_TrebuchetCart_Collapse</Entity>
@@ -428,5 +429,13 @@
 	<Entity>B_Beautification_Dragon</Entity>
 	<Entity>U_Dragon</Entity>
 	<Entity>B_Beautification_Cathedral</Entity>
+	<Entity>B_Beautification_CloisterHutGrave</Entity>
+	<Entity>B_Beautification_BrothersInArms</Entity>
+	<Entity>B_Beautification_Pavilion</Entity>
+	<Entity>B_Beautification_XmasTree</Entity>
+	<Entity>B_Beautification_Flowerpot_Round</Entity>
+	<Entity>B_Beautification_Flowerpot_Square</Entity>
+	<Entity>B_Beautification_Lantern</Entity>
+	<Entity>B_Beautification_WoodBench</Entity>
 </root>
 

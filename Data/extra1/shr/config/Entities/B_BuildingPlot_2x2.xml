@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <Display classname="ED::CBuildingProps">
+		<Class>ED::CDisplayBuilding</Class>
+		<Model>Doodads\D_X_SpecialEdition_BuildingPlot</Model>
+        <DecalUseRoadTexture>false</DecalUseRoadTexture>
+	</Display>
+
+	<Logic classname="EGL::CBuildingProps">
+		<Class>EGL::CConstructionSite</Class>
+		<AccessCategory>AccessCategoryStatic</AccessCategory>
+		<ForceNoPlayer>false</ForceNoPlayer>
+		<FlattenOnBuild>false</FlattenOnBuild>
+		<!--
+		<IsHeightLocking>true</IsHeightLocking>
+		-->
+        <EntityCategories>
+        </EntityCategories>
+		<NeedsPlayer>true</NeedsPlayer>
+		<MaxWorkers>4</MaxWorkers>
+        <Exploration>0</Exploration>
+		<ApproachPos>
+			<X>100</X>
+			<Y>0</Y>
+		</ApproachPos>
+		<ApproachR>0</ApproachR>
+		<DeleteWhenBuiltOn>false</DeleteWhenBuiltOn>
+	</Logic>
+
+	<Behaviors>
+	</Behaviors>
+</root>

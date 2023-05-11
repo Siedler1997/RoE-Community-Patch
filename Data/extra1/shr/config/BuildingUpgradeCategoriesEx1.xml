@@ -83,6 +83,46 @@
 		<Category>WatchTower_Asia</Category>
 		<FirstBuilding>B_WatchTower_AS</FirstBuilding>
 	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>Beautification_CloisterHutGrave</Category>
+		<FirstBuilding>B_Beautification_CloisterHutGrave</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>Beautification_BrothersInArms</Category>
+		<FirstBuilding>B_Beautification_BrothersInArms</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>Beautification_Pavilion</Category>
+		<FirstBuilding>B_Beautification_Pavilion</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>Beautification_XmasTree</Category>
+		<FirstBuilding>B_Beautification_XmasTree</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>Beautification_Flowerpot_Round</Category>
+		<FirstBuilding>B_Beautification_Flowerpot_Round</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>Beautification_Flowerpot_Square</Category>
+		<FirstBuilding>B_Beautification_Flowerpot_Square</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>Beautification_Lantern</Category>
+		<FirstBuilding>B_Beautification_Lantern</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>Beautification_WoodBench</Category>
+		<FirstBuilding>B_Beautification_WoodBench</FirstBuilding>
+	</BuildingUpgrade>
 
+	<BuildingUpgrade>
+		<Category>NPC_Cloister_NA_WallSegment</Category>
+		<FirstBuilding>B_NPC_Cloister_NA_WallSegment</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>NPC_Cloister_NA_WallTurret</Category>
+		<FirstBuilding>B_NPC_Cloister_NA_WallTurret</FirstBuilding>
+	</BuildingUpgrade>
 
 </BuildingUpgrades>

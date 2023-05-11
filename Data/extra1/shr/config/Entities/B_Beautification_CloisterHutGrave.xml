@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<root>
+	<Display classname="ED::CBuildingProps">
+		<Class>ED::CDisplayBuilding</Class>
+		<Model>Doodads\D_X_Beautification_CloisterHutGrave</Model>
+		<FireNodeCount>15</FireNodeCount>
+	</Display>
+
+	<Logic classname="EGL::CBuildingProps">
+		<Class>EGL::CBuilding</Class>
+		<Cost>
+			<GoodAmount>
+				<GoodType>G_Wood</GoodType>
+				<Amount>10</Amount>
+			</GoodAmount>
+			<GoodAmount>
+				<GoodType>G_Gold</GoodType>
+				<Amount>200</Amount>
+			</GoodAmount>
+		</Cost>
+		<AccessCategory>AccessCategoryBuilding</AccessCategory>
+		<ApproachPos>
+			<X>0</X>
+			<Y>-400</Y>
+		</ApproachPos>
+		<ApproachR>0</ApproachR>
+		<DoorPos>
+			<X>0</X>
+			<Y>-200</Y>
+		</DoorPos>
+		<BlockingAreas>
+			<BlockingArea>
+				<Blocked1>
+					<X>-700</X>
+					<Y>450</Y>
+				</Blocked1>
+				<Blocked2>
+					<X>600</X>
+					<Y>-400</Y>
+				</Blocked2>
+			</BlockingArea>
+		</BlockingAreas>
+		<BuildBlockingAreas>
+			<BuildBlockingArea>
+				<Blocked1>
+					<X>-700</X>
+					<Y>450</Y>
+				</Blocked1>
+				<Blocked2>
+					<X>600</X>
+					<Y>-400</Y>
+				</Blocked2>
+			</BuildBlockingArea>
+		</BuildBlockingAreas>
+		<ConstructionInfo>
+			<Time>20</Time>
+			<TaskListConstruction>TL_CONSTRUCT_BUILDING</TaskListConstruction>
+			<ConstructionSite>B_BuildingPlot_8x8</ConstructionSite>
+		</ConstructionInfo>
+		<CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim>
+		<FlattenOnBuild>true</FlattenOnBuild>
+		<IsHeightLocking>true</IsHeightLocking>
+		<MaxHealth>10</MaxHealth>
+		<MinFloorFireSize>0</MinFloorFireSize>
+		<MaxFloorFireSize>0</MaxFloorFireSize>
+		<MayRemoveEntities>true</MayRemoveEntities>
+		<NeedsPlayer>true</NeedsPlayer>
+		<ForceNoPlayer>false</ForceNoPlayer>
+		<CanBeKnockedDown>true</CanBeKnockedDown>
+		<Worker>U_WallConstructionWorker</Worker>
+		<!-- Construction only -->
+		<MaxWorkers>0</MaxWorkers>
+		<!-- Construction only -->
+		<EntityCategories>
+			<EntityCategory>AttackableBuilding</EntityCategory>
+		</EntityCategories>
+
+		<Exploration>0</Exploration>
+		<NoAutoRepair>true</NoAutoRepair>
+		<SoundImpactType>Stone</SoundImpactType>
+	</Logic>
+	<Behavior>
+		<Logic classname="EGL::CBehaviorProps">
+			<Class>EGL::CParticleEffectSwitchBehavior</Class>
+		</Logic>
+		<Display classname="ED::CBehaviorProps">
+			<Class>ED::CParticleEffectSwitchBehavior</Class>
+		</Display>
+	</Behavior>
+	<MapEditor>
+		<TreePosition>SpecialEdition</TreePosition>
+		<ShowInTree>false</ShowInTree>
+		<Clime>Generic</Clime>
+		<Scalable>false</Scalable>
+		<TemplateResistant>true</TemplateResistant>
+	</MapEditor>
+</root>

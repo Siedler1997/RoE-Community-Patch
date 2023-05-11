@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<root>
+    <Display classname="ED::CBuildingProps">
+        <Class>ED::CDisplayBuilding</Class>
+		<Model>Doodads\D_AS_StoneBench</Model>
+        <FireNodeCount>15</FireNodeCount>
+    </Display>
+
+    <Logic classname="EGL::CBuildingProps">
+        <Class>EGL::CBuilding</Class>
+        <Cost>
+            <GoodAmount>
+                <GoodType>G_Stone</GoodType>
+                <Amount>20</Amount>
+            </GoodAmount>
+            <GoodAmount>
+                <GoodType>G_Gold</GoodType>
+                <Amount>500</Amount>
+            </GoodAmount>
+        </Cost>
+        <AccessCategory>AccessCategoryBuilding</AccessCategory>
+        <ApproachPos>
+            <X>0</X>
+            <Y>-200</Y>
+        </ApproachPos>
+        <BlockingAreas>
+            <BlockingArea>
+                <Blocked1>
+                    <X>-100</X>
+                    <Y>100</Y>
+                </Blocked1>
+                <Blocked2>
+                    <X>100</X>
+                    <Y>-100</Y>
+                </Blocked2>
+            </BlockingArea>
+        </BlockingAreas>
+        <BuildBlockingAreas>
+            <BuildBlockingArea>
+                <Blocked1>
+            	    <X>-100</X>
+            	    <Y>100</Y>
+                </Blocked1>
+                <Blocked2>
+            	    <X>100</X>
+            	    <Y>-250</Y>
+                </Blocked2>
+            </BuildBlockingArea>
+	     </BuildBlockingAreas>
+         <ConstructionInfo>
+            <Time>35</Time>
+            <TaskListConstruction>TL_CONSTRUCT_BUILDING</TaskListConstruction>
+            <ConstructionSite>B_BuildingPlot_2x2</ConstructionSite>
+        </ConstructionInfo>
+        <CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim>
+        <FlattenOnBuild>true</FlattenOnBuild>
+        <IsHeightLocking>true</IsHeightLocking>
+        <MaxHealth>150</MaxHealth>
+        <MinFloorFireSize>0</MinFloorFireSize>
+        <MaxFloorFireSize>0</MaxFloorFireSize>
+        <MayRemoveEntities>true</MayRemoveEntities>
+        <NeedsPlayer>true</NeedsPlayer>
+        <ForceNoPlayer>false</ForceNoPlayer>
+        <CanBeKnockedDown>true</CanBeKnockedDown>
+        <Worker>U_OutpostConstructionWorker</Worker> <!-- Construction only -->
+        <MaxWorkers>0</MaxWorkers>                   <!-- Construction only -->
+        <EntityCategories>
+            <EntityCategory>AttackableBuilding</EntityCategory>
+        </EntityCategories>
+
+        <Exploration>0</Exploration>
+        <NoAutoRepair>true</NoAutoRepair>
+        <SoundImpactType>Stone_Wood</SoundImpactType>
+    </Logic>
+    <Behavior>
+      <Logic classname="EGL::CBehaviorProps">
+        <Class>EGL::CParticleEffectSwitchBehavior</Class>
+      </Logic>
+      <Display classname="ED::CBehaviorProps">
+        <Class>ED::CParticleEffectSwitchBehavior</Class>
+      </Display>
+    </Behavior>
+    <MapEditor>
+        <TreePosition>Buildings/Beautyfication</TreePosition>
+        <ShowInTree>True</ShowInTree>
+        <Clime>Generic</Clime>
+        <Scalable>false</Scalable>
+        <TemplateResistant>true</TemplateResistant>
+    </MapEditor>
+</root>
