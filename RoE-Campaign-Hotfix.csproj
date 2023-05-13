@@ -4706,6 +4706,8 @@
     <None Include="Data\extra1\shr\graphics\Animations\U_Helbardier_Run.anm" />
     <None Include="Data\extra1\shr\graphics\Animations\U_Helbardier_Walk.anm" />
     <None Include="Data\extra1\shr\graphics\Models\Animals\A_Ox.dff" />
+    <None Include="Data\extra1\shr\graphics\Models\Buildings\B_NPC_Cloister_AS_WallSegment.dff" />
+    <None Include="Data\extra1\shr\graphics\Models\Buildings\B_NPC_Cloister_AS_WallTurret.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Doodads\D_X_Beautification_BrothersInArms.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Doodads\D_X_Beautification_CloisterHutGrave.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Doodads\D_X_Beautification_Dragon.dff" />
@@ -5009,7 +5011,9 @@
     <Content Include="Data\extra1\shr\config\Entities\B_NPC_Barracks_AS_Test.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_NPC_Cloister_ME_WallSegment.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_NPC_Cloister_ME_WallTurret.xml" />
+    <Content Include="Data\extra1\shr\config\Entities\B_NPC_Cloister_AS_WallSegment.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_NPC_Cloister_NA_WallSegment.xml" />
+    <Content Include="Data\extra1\shr\config\Entities\B_NPC_Cloister_AS_WallTurret.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_NPC_Cloister_NA_WallTurret.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_NPC_Cloister_NE_WallSegment.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_NPC_Cloister_NE_WallTurret.xml" />

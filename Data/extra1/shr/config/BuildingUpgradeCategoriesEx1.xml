@@ -148,5 +148,13 @@
 		<Category>NPC_Cloister_NA_WallTurret</Category>
 		<FirstBuilding>B_NPC_Cloister_NA_WallTurret</FirstBuilding>
 	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>NPC_Cloister_AS_WallSegment</Category>
+		<FirstBuilding>B_NPC_Cloister_AS_WallSegment</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>NPC_Cloister_AS_WallTurret</Category>
+		<FirstBuilding>B_NPC_Cloister_AS_WallTurret</FirstBuilding>
+	</BuildingUpgrade>
 
 </BuildingUpgrades>
