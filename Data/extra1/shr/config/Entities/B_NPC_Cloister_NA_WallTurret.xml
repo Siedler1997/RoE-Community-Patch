@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
-    <Display classname="ED::CWallProps">
-        <Class>ED::CWall</Class>
-        
-        <Model>Buildings/B_FenceSegment</Model>
-        <ConstructionSite/>
-        <ModelWidth>400</ModelWidth>
-        
-        <Banner>Default</Banner>
+    <Display classname="ED::CBuildingProps">
+        <Class>ED::CWallBuilding</Class>
+        <Model>Buildings/B_NPC_Cloister_NA_WallTurret</Model>
+        <FireNodeCount>15</FireNodeCount>
         <Anims/>
-		<FireNodeCount>4</FireNodeCount>
     </Display>
 
-    <Logic classname="EGL::CWallSegmentProps">
-        <Class>EGL::CWallSegment</Class>
+    <Logic classname="EGL::CWallTurretProps">
+        <Class>EGL::CWallTurret</Class>
         <MapFileDontSave>true</MapFileDontSave>
         <AccessCategory>AccessCategoryBuilding</AccessCategory>
         <EntityCategories>
             <EntityCategory>Wall</EntityCategory>
             <EntityCategory>Fence</EntityCategory>
+			<EntityCategory>Turret</EntityCategory>
         </EntityCategories>
 		<NeedsPlayer>true</NeedsPlayer>
 		<ForceNoPlayer>false</ForceNoPlayer>
@@ -25,60 +21,52 @@
 		<!-- construction only -->
 		<MaxWorkers>0</MaxWorkers>
 		<!-- construction only -->
-		<MaxHealth>50</MaxHealth>
-		<MaxFloorFireSize>5</MaxFloorFireSize>
+		<MaxHealth>500</MaxHealth>
+		<ResistsSplashDamage>true</ResistsSplashDamage>
 		<Exploration>0</Exploration>
-        <TurretType>B_FenceTurret</TurretType>
-		<CanBeKnockedDown>true</CanBeKnockedDown>
+		<CanBeKnockedDown>false</CanBeKnockedDown>
 		<FlattenOnBuild>false</FlattenOnBuild>
 		<IsHeightLocking>true</IsHeightLocking>
 		<MayRemoveEntities>true</MayRemoveEntities>
 		<CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim>
-		<MaxHeightDelta>300</MaxHeightDelta>
-		<MaxLength>500</MaxLength>
 		<WallHeight>100</WallHeight>
 		<IsMountable>false</IsMountable>
-		<CollapseEffectID>FXWallCollapseFence</CollapseEffectID>
-		<AlarmRepairBuildingTL>TL_WORKER_REPAIR_ALARM</AlarmRepairBuildingTL>
-		<AlarmRepairMaterial>G_Wood</AlarmRepairMaterial>
-		<AlarmRepairProvider>G_Wood_Supplier</AlarmRepairProvider>
-        <Cost>
-            <GoodAmount>
-                <GoodType>G_Wood</GoodType>
-                <Amount>1</Amount>
-            </GoodAmount>
-        </Cost>
+		<CanLeaveImmediately>true</CanLeaveImmediately>
+		<MaxFloorFireSize>0</MaxFloorFireSize>
+		<!-- replaced by higher prio -->
+		<ReplacementPriority>10</ReplacementPriority>
+		
         <ApproachPos>
-            <X>220</X>
-            <Y>-500</Y>
+            <X>0</X>
+            <Y>25</Y>
         </ApproachPos>
         <ApproachR>0</ApproachR>
         <DoorPos>
-            <X>220</X>
-            <Y>-50</Y>
+            <X>0</X>
+            <Y>0</Y>
         </DoorPos>
         <BlockingAreas>
             <BlockingArea>
                 <Blocked1>
-                    <X>-200</X>
-                    <Y>50</Y>
+                    <X>-10</X>
+                    <Y>-10</Y>
                 </Blocked1>
                 <Blocked2>
-                    <X>200</X>
-                    <Y>-50</Y>
+                    <X>10</X>
+                    <Y>10</Y>
                 </Blocked2>
             </BlockingArea>
         </BlockingAreas>
         <BuildBlockingAreas>
             <BuildBlockingArea>
-				<Blocked1>
-					<X>-200</X>
-					<Y>50</Y>
-				</Blocked1>
-				<Blocked2>
-					<X>200</X>
-					<Y>-50</Y>
-				</Blocked2>
+                <Blocked1>
+                    <X>-10</X>
+                    <Y>-10</Y>
+                </Blocked1>
+                <Blocked2>
+                    <X>10</X>
+                    <Y>10</Y>
+                </Blocked2>
             </BuildBlockingArea>
         </BuildBlockingAreas>
 
@@ -94,17 +82,16 @@
                     <Orientation>0</Orientation>
                 </BuilderSlot>
             </BuilderSlots>
-            <ConstructionSite>B_BuildingPlot_Palisade</ConstructionSite>
+            <ConstructionSite>B_BuildingPlot_WallTurret</ConstructionSite>
         </ConstructionInfo>
 
     </Logic>
     <Behaviors>
-
     </Behaviors>
     <MapEditor>
         <TreePosition>buildings\camps</TreePosition>
         <ShowInTree>false</ShowInTree>
-        <Clime>Generic</Clime>
+        <Clime>NorthAfrica</Clime>
         <Scalable>false</Scalable>
         <TemplateResistant>true</TemplateResistant>
     </MapEditor>

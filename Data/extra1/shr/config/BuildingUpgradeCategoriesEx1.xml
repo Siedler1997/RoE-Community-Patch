@@ -117,6 +117,30 @@
 	</BuildingUpgrade>
 
 	<BuildingUpgrade>
+		<Category>NPC_Cloister_ME_WallSegment</Category>
+		<FirstBuilding>B_NPC_Cloister_ME_WallSegment</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>NPC_Cloister_ME_WallTurret</Category>
+		<FirstBuilding>B_NPC_Cloister_ME_WallTurret</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>NPC_Cloister_NE_WallSegment</Category>
+		<FirstBuilding>B_NPC_Cloister_NE_WallSegment</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>NPC_Cloister_NE_WallTurret</Category>
+		<FirstBuilding>B_NPC_Cloister_NE_WallTurret</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>NPC_Cloister_SE_WallSegment</Category>
+		<FirstBuilding>B_NPC_Cloister_SE_WallSegment</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>NPC_Cloister_SE_WallTurret</Category>
+		<FirstBuilding>B_NPC_Cloister_SE_WallTurret</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
 		<Category>NPC_Cloister_NA_WallSegment</Category>
 		<FirstBuilding>B_NPC_Cloister_NA_WallSegment</FirstBuilding>
 	</BuildingUpgrade>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
     <Display classname="ED::CWallProps">
         <Class>ED::CWall</Class>
-        
-        <Model>Buildings/B_FenceSegment</Model>
+		
+        <Model>Buildings/B_NPC_Cloister_NA_WallSegment</Model>
         <ConstructionSite/>
-        <ModelWidth>400</ModelWidth>
-        
+        <ModelWidth>200</ModelWidth>
+
         <Banner>Default</Banner>
         <Anims/>
 		<FireNodeCount>4</FireNodeCount>
@@ -25,26 +25,26 @@
 		<!-- construction only -->
 		<MaxWorkers>0</MaxWorkers>
 		<!-- construction only -->
-		<MaxHealth>50</MaxHealth>
-		<MaxFloorFireSize>5</MaxFloorFireSize>
+		<MaxHealth>200</MaxHealth>
+		<MaxFloorFireSize>10</MaxFloorFireSize>
 		<Exploration>0</Exploration>
-        <TurretType>B_FenceTurret</TurretType>
+		<TurretType>B_NPC_Cloister_NA_WallTurret</TurretType>
 		<CanBeKnockedDown>true</CanBeKnockedDown>
 		<FlattenOnBuild>false</FlattenOnBuild>
 		<IsHeightLocking>true</IsHeightLocking>
 		<MayRemoveEntities>true</MayRemoveEntities>
 		<CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim>
 		<MaxHeightDelta>300</MaxHeightDelta>
-		<MaxLength>500</MaxLength>
-		<WallHeight>100</WallHeight>
+		<MaxLength>300</MaxLength>
+		<WallHeight>300</WallHeight>
 		<IsMountable>false</IsMountable>
 		<CollapseEffectID>FXWallCollapseFence</CollapseEffectID>
 		<AlarmRepairBuildingTL>TL_WORKER_REPAIR_ALARM</AlarmRepairBuildingTL>
-		<AlarmRepairMaterial>G_Wood</AlarmRepairMaterial>
-		<AlarmRepairProvider>G_Wood_Supplier</AlarmRepairProvider>
+		<AlarmRepairMaterial>G_Stone</AlarmRepairMaterial>
+		<AlarmRepairProvider>G_Stone_Supplier</AlarmRepairProvider>
         <Cost>
             <GoodAmount>
-                <GoodType>G_Wood</GoodType>
+                <GoodType>G_Stone</GoodType>
                 <Amount>1</Amount>
             </GoodAmount>
         </Cost>
@@ -60,25 +60,25 @@
         <BlockingAreas>
             <BlockingArea>
                 <Blocked1>
-                    <X>-200</X>
+                    <X>-100</X>
                     <Y>50</Y>
                 </Blocked1>
                 <Blocked2>
-                    <X>200</X>
+                    <X>100</X>
                     <Y>-50</Y>
                 </Blocked2>
             </BlockingArea>
         </BlockingAreas>
         <BuildBlockingAreas>
             <BuildBlockingArea>
-				<Blocked1>
-					<X>-200</X>
+                <Blocked1>
+					<X>-100</X>
 					<Y>50</Y>
 				</Blocked1>
 				<Blocked2>
-					<X>200</X>
+					<X>100</X>
 					<Y>-50</Y>
-				</Blocked2>
+                </Blocked2>
             </BuildBlockingArea>
         </BuildBlockingAreas>
 
@@ -99,12 +99,11 @@
 
     </Logic>
     <Behaviors>
-
     </Behaviors>
     <MapEditor>
         <TreePosition>buildings\camps</TreePosition>
         <ShowInTree>false</ShowInTree>
-        <Clime>Generic</Clime>
+        <Clime>NorthAfrica</Clime>
         <Scalable>false</Scalable>
         <TemplateResistant>true</TemplateResistant>
     </MapEditor>
