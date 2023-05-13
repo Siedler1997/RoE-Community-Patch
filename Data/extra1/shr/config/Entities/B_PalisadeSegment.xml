@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+    <Display classname="ED::CWallProps">
+        <Class>ED::CWall</Class>
+
+        <Model>Buildings/B_PalisadeSegment</Model>
+        <ConstructionSite/>
+        <ModelWidth>800</ModelWidth>
+
+        <Banner>Default</Banner>
+        <Anims/>
+        <FireNodeCount>4</FireNodeCount>
+    </Display>
+
+    <Logic classname="EGL::CWallSegmentProps">
+        <Class>EGL::CWallSegment</Class>
+        <MapFileDontSave>true</MapFileDontSave>
+        <AccessCategory>AccessCategoryBuilding</AccessCategory>
+        <EntityCategories>
+            <EntityCategory>Wall</EntityCategory>
+            <EntityCategory>PalisadeSegment</EntityCategory>
+        </EntityCategories>
+        <NeedsPlayer>true</NeedsPlayer>
+        <ForceNoPlayer>false</ForceNoPlayer>
+        <Worker>U_WallConstructionWorker</Worker> <!-- construction only -->
+        <MaxWorkers>0</MaxWorkers>                <!-- construction only -->
+        <MaxHealth>300</MaxHealth>
+        <MaxFloorFireSize>20</MaxFloorFireSize>
+        <Exploration>0</Exploration>
+        <TurretType>B_palisadeTurret</TurretType>
+        <AcceptableTurretTypes>
+            <TurretType>B_PalisadeGate_Turret_L</TurretType>
+            <TurretType>B_PalisadeGate_Turret_R</TurretType>
+        </AcceptableTurretTypes>
+        <CanBeKnockedDown>true</CanBeKnockedDown>
+        <FlattenOnBuild>false</FlattenOnBuild>
+        <IsHeightLocking>true</IsHeightLocking>
+        <MayRemoveEntities>true</MayRemoveEntities>
+        <CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim>
+        <MaxHeightDelta>300</MaxHeightDelta>
+        <MaxLength>1200</MaxLength>
+        <WallHeight>300</WallHeight>
+        <IsMountable>false</IsMountable>
+        <CollapseEffectID>E_PalisadeCollapse</CollapseEffectID>        
+        <AlarmRepairBuildingTL>TL_WORKER_REPAIR_ALARM</AlarmRepairBuildingTL>
+        <AlarmRepairMaterial>G_Wood</AlarmRepairMaterial>
+        <AlarmRepairProvider>G_Wood_Supplier</AlarmRepairProvider>
+        <Cost>
+            <GoodAmount>
+                <GoodType>G_Wood</GoodType>
+                <Amount>2</Amount>
+            </GoodAmount>
+        </Cost>
+        <ApproachPos>
+            <X>220</X>
+            <Y>-500</Y>
+        </ApproachPos>
+        <ApproachR>0</ApproachR>
+        <DoorPos>
+            <X>220</X>
+            <Y>-50</Y>
+        </DoorPos>
+        <BlockingAreas>
+            <BlockingArea>
+                <Blocked1>
+                    <X>-300</X>
+                    <Y>80</Y>
+                </Blocked1>
+                <Blocked2>
+                    <X>300</X>
+                    <Y>-80</Y>
+                </Blocked2>
+            </BlockingArea>
+        </BlockingAreas>
+        <BuildBlockingAreas>
+            <BuildBlockingArea>
+                <Blocked1>
+                    <X>-300</X>
+                    <Y>80</Y>
+                </Blocked1> <Blocked2>
+                    <X>300</X>
+                    <Y>-80</Y>
+                </Blocked2>
+            </BuildBlockingArea>
+        </BuildBlockingAreas>
+
+        <ConstructionInfo>
+            <Time>12</Time>
+
+            <BuilderSlots>
+                <BuilderSlot>
+                    <Position>
+                        <X>100</X>
+                        <Y>-200</Y>
+                    </Position>
+                    <Orientation>0</Orientation>
+                </BuilderSlot>
+            </BuilderSlots>
+            <ConstructionSite>B_BuildingPlot_Palisade</ConstructionSite>
+        </ConstructionInfo>
+		<SoundImpactType>Wood</SoundImpactType>
+    </Logic>
+    <Behaviors>
+    </Behaviors>
+    <MapEditor>
+        <TreePosition>buildings\camps</TreePosition>
+        <ShowInTree>false</ShowInTree>
+        <Clime>Generic</Clime>
+        <Scalable>false</Scalable>
+        <TemplateResistant>true</TemplateResistant>
+    </MapEditor>
+</root>
