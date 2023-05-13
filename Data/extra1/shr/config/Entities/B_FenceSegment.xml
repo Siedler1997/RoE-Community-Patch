@@ -18,6 +18,7 @@
         <EntityCategories>
             <EntityCategory>Wall</EntityCategory>
             <EntityCategory>Fence</EntityCategory>
+			<EntityCategory>PalisadeSegment</EntityCategory>
         </EntityCategories>
 		<NeedsPlayer>true</NeedsPlayer>
 		<ForceNoPlayer>false</ForceNoPlayer>

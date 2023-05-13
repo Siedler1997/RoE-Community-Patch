@@ -4,7 +4,8 @@
         <Model>Buildings/B_FenceGate</Model>
         <Banner>Default</Banner>
         <Anims/>
-        <ConstructionSite>Buildings/B_BuildingPlot_PalisadeGate</ConstructionSite>
+		<FireNodeCount>4</FireNodeCount>
+		<ConstructionSite>Buildings/B_BuildingPlot_PalisadeGate</ConstructionSite>
     </Display>
     <Logic classname="EGL::CWallGateProps">
         <Class>EGL::CWallGate</Class>
@@ -13,40 +14,46 @@
         <EntityCategories>
             <EntityCategory>Wall</EntityCategory>
             <EntityCategory>Fence</EntityCategory>
-            <EntityCategory>CityWallSegment</EntityCategory>
+			<EntityCategory>CityWallGate</EntityCategory>
+			<EntityCategory>PalisadeSegment</EntityCategory>
         </EntityCategories>
-        <NeedsPlayer>true</NeedsPlayer>
-        <ForceNoPlayer>false</ForceNoPlayer>
-        <RemovableBlocking>true</RemovableBlocking>
-        <DeleteWhenBuiltOn>true</DeleteWhenBuiltOn>
-        <Worker>U_WallConstructionWorker</Worker> <!-- construction only -->
-        <MaxWorkers>0</MaxWorkers>                <!-- construction only -->
-        <MaxHealth>5</MaxHealth>
-        <Exploration>0</Exploration>
-        <CanBeKnockedDown>true</CanBeKnockedDown>
-        <FlattenOnBuild>false</FlattenOnBuild>
-        <IsHeightLocking>true</IsHeightLocking>
-        <CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim>
-        <FirstTurretType>B_FenceTurret</FirstTurretType>
-        <SecondTurretType>B_FenceTurret</SecondTurretType>
-        <MaxHeightDelta>300</MaxHeightDelta>
-        <Lengths>
-            <Length>500</Length>
-        </Lengths>
-        <WallHeight>100</WallHeight>
-        <IsMountable>false</IsMountable>
-        <OpenGateAnimID>B_FenceGate_OpenGate_600</OpenGateAnimID>
-        <OpenGateSubAnimIdx>0</OpenGateSubAnimIdx>
-        <CloseGateAnimID>B_FenceGate_CloseGate_600</CloseGateAnimID>
-        <CloseGateSubAnimIdx>0</CloseGateSubAnimIdx>
-        <AlarmRepairBuildingTL>TL_WORKER_REPAIR_ALARM</AlarmRepairBuildingTL>
-        <AlarmRepairMaterial>G_Wood</AlarmRepairMaterial>
-        <AlarmRepairProvider>G_Wood_Supplier</AlarmRepairProvider>
-        <MaxFloorFireSize>0</MaxFloorFireSize>
+		<NeedsPlayer>true</NeedsPlayer>
+		<ForceNoPlayer>false</ForceNoPlayer>
+		<Worker>U_WallConstructionWorker</Worker>
+		<!-- construction only -->
+		<MaxWorkers>0</MaxWorkers>
+		<!-- construction only -->
+		<MaxHealth>100</MaxHealth>
+		<Exploration>0</Exploration>
+		<CanBeKnockedDown>true</CanBeKnockedDown>
+		<FlattenOnBuild>false</FlattenOnBuild>
+		<MayRemoveEntities>true</MayRemoveEntities>
+		<CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim>
+		<FirstTurretType>B_FenceTurret</FirstTurretType>
+		<SecondTurretType>B_FenceTurret</SecondTurretType>
+		<AcceptableTurretTypes>
+			<TurretType>B_FenceTurret</TurretType>
+		</AcceptableTurretTypes>
+		<MaxHeightDelta>300</MaxHeightDelta>
+		<WallHeight>100</WallHeight>
+		<IsMountable>false</IsMountable>
+		<OpenGateAnimID>B_FenceGate_OpenGate_600</OpenGateAnimID>
+		<OpenGateSubAnimIdx>0</OpenGateSubAnimIdx>
+		<CloseGateAnimID>B_FenceGate_CloseGate_600</CloseGateAnimID>
+		<CloseGateSubAnimIdx>0</CloseGateSubAnimIdx>
+		<SearchRadiusForHostiles>1600</SearchRadiusForHostiles>
+		<SearchIntervalForHostilesInSeconds>.5</SearchIntervalForHostilesInSeconds>
+		<SearchRadiusNonHostileMilitaryUnit>250</SearchRadiusNonHostileMilitaryUnit>
+		<SearchIntervalNonHostileMilitaryUnitInSeconds>.1</SearchIntervalNonHostileMilitaryUnitInSeconds>
+		<CollapseEffectID>FXWallCollapseFence</CollapseEffectID>
+		<AlarmRepairBuildingTL>TL_WORKER_REPAIR_ALARM</AlarmRepairBuildingTL>
+		<AlarmRepairMaterial>G_Wood</AlarmRepairMaterial>
+		<AlarmRepairProvider>G_Wood_Supplier</AlarmRepairProvider>
+		<MaxFloorFireSize>20</MaxFloorFireSize>
         <Cost>
             <GoodAmount>
                 <GoodType>G_Wood</GoodType>
-                <Amount>1</Amount>
+                <Amount>4</Amount>
             </GoodAmount>
             <!--GoodAmount>
             <GoodType>G_Wood</GoodType>
@@ -91,7 +98,7 @@
     </GateAreas>
 
     <ConstructionInfo>
-        <Time>5</Time>
+        <Time>8</Time>
 
         <BuilderSlots>
             <BuilderSlot>
@@ -102,7 +109,7 @@
                 <Orientation>0</Orientation>
             </BuilderSlot>
         </BuilderSlots>
-        <ConstructionSite>B_BuildingPlot_PalisadeGate</ConstructionSite>
+		<ConstructionSite>B_BuildingPlot_PalisadeGate</ConstructionSite>
     </ConstructionInfo>
 
 </Logic>
