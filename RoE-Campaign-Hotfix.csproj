@@ -4713,6 +4713,10 @@
     <None Include="Data\extra1\shr\graphics\Models\Doodads\D_X_Beautification_Dragon.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Doodads\D_X_Beautification_Pavilion.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Doodads\D_X_Beautification_WoodBench.dff" />
+    <None Include="Data\extra1\shr\graphics\Models\Doodads\D_X_Beautification_Standarte.dff" />
+    <None Include="Data\extra1\shr\graphics\Models\Doodads\XB_LargeEmpty.dff" />
+    <None Include="Data\extra1\shr\graphics\Models\Doodads\XB_StandarteEmpty.dff" />
+    <None Include="Data\extra1\shr\graphics\Models\Doodads\XD_StandartePlayerColor.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Effects\XD_Hero2Bomb.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Goods\G_Spear.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Goods\G_SpearSpearMaker01.dff" />
@@ -4981,6 +4985,7 @@
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Dragon.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Pillar.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Shrine.xml" />
+    <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Standarte.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_WoodBench.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_StoneBench.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Sundial.xml" />
@@ -5183,6 +5188,7 @@
     <Content Include="Data\extra1\shr\menu\Projects\InGameBuildMenu.xml" />
     <Content Include="Data\extra1\shr\menu\Projects\InGameMapFrame.xml" />
     <Content Include="Data\extra1\shr\menu\Projects\InGameSelection.xml" />
+    <Content Include="Data\extra1\shr\menu\Projects\InGameTopBar.xml" />
     <Content Include="Data\extra1\shr\menu\Projects\MenuMultiplayer.xml" />
     <Content Include="Data\extra1\shr\menu\Projects\MenuOptions.xml" />
     <Content Include="Data\extra1\shr\menu\Projects\MenuProfile.xml" />
