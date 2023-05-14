@@ -117,43 +117,43 @@
 	</BuildingUpgrade>
 
 	<BuildingUpgrade>
-		<Category>NPC_Cloister_ME_WallSegment</Category>
+		<Category>WallSegment_NPC_MiddleEurope</Category>
 		<FirstBuilding>B_NPC_Cloister_ME_WallSegment</FirstBuilding>
 	</BuildingUpgrade>
 	<BuildingUpgrade>
-		<Category>NPC_Cloister_ME_WallTurret</Category>
+		<Category>WallTurret_NPC_MiddleEurope</Category>
 		<FirstBuilding>B_NPC_Cloister_ME_WallTurret</FirstBuilding>
 	</BuildingUpgrade>
 	<BuildingUpgrade>
-		<Category>NPC_Cloister_NE_WallSegment</Category>
+		<Category>WallSegment_NPC_NorthEurope</Category>
 		<FirstBuilding>B_NPC_Cloister_NE_WallSegment</FirstBuilding>
 	</BuildingUpgrade>
 	<BuildingUpgrade>
-		<Category>NPC_Cloister_NE_WallTurret</Category>
+		<Category>WallTurret_NPC_NorthEurope</Category>
 		<FirstBuilding>B_NPC_Cloister_NE_WallTurret</FirstBuilding>
 	</BuildingUpgrade>
 	<BuildingUpgrade>
-		<Category>NPC_Cloister_SE_WallSegment</Category>
+		<Category>WallSegment_NPC_SouthEurope</Category>
 		<FirstBuilding>B_NPC_Cloister_SE_WallSegment</FirstBuilding>
 	</BuildingUpgrade>
 	<BuildingUpgrade>
-		<Category>NPC_Cloister_SE_WallTurret</Category>
+		<Category>WallTurret_NPC_SouthEurope</Category>
 		<FirstBuilding>B_NPC_Cloister_SE_WallTurret</FirstBuilding>
 	</BuildingUpgrade>
 	<BuildingUpgrade>
-		<Category>NPC_Cloister_NA_WallSegment</Category>
+		<Category>WallSegment_NPC_NorthAfrica</Category>
 		<FirstBuilding>B_NPC_Cloister_NA_WallSegment</FirstBuilding>
 	</BuildingUpgrade>
 	<BuildingUpgrade>
-		<Category>NPC_Cloister_NA_WallTurret</Category>
+		<Category>WallTurret_NPC_NorthAfrica</Category>
 		<FirstBuilding>B_NPC_Cloister_NA_WallTurret</FirstBuilding>
 	</BuildingUpgrade>
 	<BuildingUpgrade>
-		<Category>NPC_Cloister_AS_WallSegment</Category>
+		<Category>WallSegment_NPC_Asia</Category>
 		<FirstBuilding>B_NPC_Cloister_AS_WallSegment</FirstBuilding>
 	</BuildingUpgrade>
 	<BuildingUpgrade>
-		<Category>NPC_Cloister_AS_WallTurret</Category>
+		<Category>WallTurret_NPC_Asia</Category>
 		<FirstBuilding>B_NPC_Cloister_AS_WallTurret</FirstBuilding>
 	</BuildingUpgrade>
 

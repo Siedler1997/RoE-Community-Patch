@@ -62,14 +62,14 @@
     </Cost>
     <BlockingAreas>
             <BlockingArea>
-                <Blocked1>
-                    <X>0</X>
-                    <Y>0</Y>
-                </Blocked1>
-                <Blocked2>
-                    <X>0</X>
-                    <Y>0</Y>
-                </Blocked2>
+				<Blocked1>
+					<X>-170</X>
+					<Y>-80</Y>
+				</Blocked1>
+				<Blocked2>
+					<X>170</X>
+					<Y>80</Y>
+				</Blocked2>
             </BlockingArea>
         </BlockingAreas>
         <BuildBlockingAreas>

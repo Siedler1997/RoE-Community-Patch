@@ -168,6 +168,107 @@ function GUI_BuildingButtons.UpgradeTurretUpdate()
     end
 end
 
+function GUI_BuildingButtons.ContinueWallClicked()
+
+    Sound.FXPlay2DSound("ui\\menu_click")
+
+    local TurretID = GUI.GetSelectedEntity()
+    local WeaponSlotID = Logic.GetWeaponHolder(TurretID)
+
+    if WeaponSlotID ~= nil then
+        TurretID = WeaponSlotID
+    end
+
+    local TurretType = Logic.GetEntityType(TurretID)
+    local UpgradeCategory = UpgradeCategories.PalisadeSegment
+
+    if TurretType ~= Entities.B_PalisadeTurret and TurretType ~= Entities.B_PalisadeGate_Turret_L and TurretType ~= Entities.B_PalisadeGate_Turret_R then
+        if Logic.IsEntityInCategory(TurretID,EntityCategories.Fence) == 1 then
+            if TurretType == Entities.B_FenceTurret then
+                UpgradeCategory = UpgradeCategories.FenceSegment
+            else
+                UpgradeCategory = GetUpgradeCategoryForClimatezone( "WallSegment_NPC" )
+            end
+        else
+            UpgradeCategory = GetUpgradeCategoryForClimatezone( "WallSegment" )
+        end
+    end
+
+    GUI.DeselectEntity(TurretID)
+    local x,y = Logic.GetEntityPosition(TurretID)
+    GUI.ActivateContinuePlaceWallState(UpgradeCategory, x,y)
+end
+
+function GUI_BuildingButtons.ContinueWallMouseOver()
+
+    local TurretID = GUI.GetSelectedEntity()
+    local WeaponSlotID = Logic.GetWeaponHolder(TurretID)
+
+    if WeaponSlotID ~= nil then
+        TurretID = WeaponSlotID
+    end
+
+    local TurretType = Logic.GetEntityType(TurretID)
+    local Costs
+    local TooltipTextKey
+
+    if TurretType == Entities.B_PalisadeTurret or TurretType == Entities.B_PalisadeGate_Turret_L or TurretType == Entities.B_PalisadeGate_Turret_R then
+        TooltipTextKey = "ContinuePalisade"
+        Costs = {Goods.G_Wood, -1}
+    elseif Logic.IsEntityInCategory(TurretID,EntityCategories.Fence) == 1 then 
+        if TurretType == Entities.B_FenceTurret then
+            TooltipTextKey = "ContinueFence"
+            Costs = {Goods.G_Wood, -1}
+        else
+            TooltipTextKey = "ContinueNPCWall"
+            Costs = {Goods.G_Stone, -1}
+        end
+    else
+        TooltipTextKey = "ContinueWall"
+        Costs = {Goods.G_Stone, -1}
+
+    end
+
+    GUI_Tooltip.TooltipBuy(Costs, TooltipTextKey)
+end
+
+
+function GUI_BuildingButtons.ContinueWallUpdate()
+    local CurrentWidgetID = XGUIEng.GetCurrentWidgetID()
+    local EntityID = GUI.GetSelectedEntity()
+    local IsInTurretCategory = Logic.IsEntityInCategory(EntityID, EntityCategories.Turret)
+    local WeaponHolder = Logic.GetWeaponHolder(EntityID)
+    local IsWeaponHolderGate
+
+    if WeaponHolder ~= nil then
+        IsWeaponHolderGate = Logic.IsGate(WeaponHolder)
+    end
+
+    if ( IsInTurretCategory == 1
+    or (WeaponHolder ~= nil
+    and IsWeaponHolderGate == false) )
+    and Logic.IsBuildingBeingKnockedDown(EntityID) == false
+    then
+        XGUIEng.ShowWidget(CurrentWidgetID, 1)
+
+        if Logic.GetWeaponHolder(EntityID) ~= nil then
+            EntityID = Logic.GetWeaponHolder(EntityID)
+        end
+
+        local TurretType = Logic.GetEntityType(EntityID)
+
+        if TurretType == Entities.B_PalisadeTurret
+        or TurretType == Entities.B_PalisadeGate_Turret_L
+        or TurretType == Entities.B_PalisadeGate_Turret_R
+        or TurretType == Entities.B_FenceTurret then
+            SetIcon(CurrentWidgetID, {3, 7})
+        else
+            SetIcon(CurrentWidgetID, {3, 9})
+        end
+    else
+        XGUIEng.ShowWidget(CurrentWidgetID, 0)
+    end
+end
 --------------------------------------------------------------------------------
 -- Barracks
 
