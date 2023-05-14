@@ -435,6 +435,7 @@
 	<Entity>B_Beautification_XmasTree</Entity>
 	<Entity>B_Beautification_Flowerpot_Round</Entity>
 	<Entity>B_Beautification_Flowerpot_Square</Entity>
+	<Entity>B_Beautification_ExecutionerPlace</Entity>
 	<Entity>B_Beautification_Lantern</Entity>
 	<Entity>B_Beautification_WoodBench</Entity>
 	<Entity>B_NPC_Cloister_AS_WallSegment</Entity>

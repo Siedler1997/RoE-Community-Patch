@@ -88,6 +88,10 @@
 		<FirstBuilding>B_Beautification_CloisterHutGrave</FirstBuilding>
 	</BuildingUpgrade>
 	<BuildingUpgrade>
+		<Category>Beautification_ExecutionerPlace</Category>
+		<FirstBuilding>B_Beautification_ExecutionerPlace</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
 		<Category>Beautification_BrothersInArms</Category>
 		<FirstBuilding>B_Beautification_BrothersInArms</FirstBuilding>
 	</BuildingUpgrade>
