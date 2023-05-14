@@ -2106,7 +2106,7 @@
                     <LuaCommand></LuaCommand>
                    </OnBlur>
                    <UpdateFunction>
-                    <LuaCommand>GUI_Construction.BuildUpdate(Technologies.R_SpecialEdition)</LuaCommand>
+                    <LuaCommand>GUI_Construction.BuildUpdate(Technologies.R_SpecialEdition2)</LuaCommand>
                    </UpdateFunction>
                    <UpdateFunctionTurnBased>
                     <LuaCommand></LuaCommand>
@@ -2118,7 +2118,7 @@
                     <ToolTipEnabledFlag>true</ToolTipEnabledFlag>
                     <ControlTargetVisibility>true</ControlTargetVisibility>
                     <ToolTipUpdateFunction>
-                     <LuaCommand>GUI_Tooltip.TooltipTechnology(Technologies.R_SpecialEdition)</LuaCommand>
+                     <LuaCommand>GUI_Tooltip.TooltipTechnology(Technologies.R_SpecialEdition2)</LuaCommand>
                     </ToolTipUpdateFunction>
                     <RawString></RawString>
                     <StringTableKey></StringTableKey>
@@ -2130,7 +2130,7 @@
                    </ToolTipHelper>
                    <Group>MenuButtons</Group>
                    <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/Categories</MotherID>
-                   <Name>SpecialEdition</Name>
+                   <Name>SpecialEdition2</Name>
                    <FullScreenBackground>false</FullScreenBackground>
                    <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
                    <BackgroundMaterial>
@@ -2510,7 +2510,7 @@
 							 <LuaCommand></LuaCommand>
 						 </OnBlur>
 						 <UpdateFunction>
-							 <LuaCommand>GUI_Construction.BuildUpdate(Technologies.R_SpecialEdition2)</LuaCommand>
+							 <LuaCommand>GUI_Construction.BuildUpdate(Technologies.R_SpecialEdition)</LuaCommand>
 						 </UpdateFunction>
 						 <UpdateFunctionTurnBased>
 							 <LuaCommand></LuaCommand>
@@ -2534,7 +2534,7 @@
 						 </ToolTipHelper>
 						 <Group>MenuButtons</Group>
 						 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/Categories</MotherID>
-						 <Name>SpecialEdition2</Name>
+						 <Name>SpecialEdition</Name>
 						 <FullScreenBackground>false</FullScreenBackground>
 						 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
 						 <BackgroundMaterial>
