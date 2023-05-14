@@ -17,5 +17,6 @@
 	<Technology id="R_RefillStoneMine"></Technology>
 	<Technology id="R_RefillIronMine"></Technology>
 	<Technology id="R_RefillCistern"></Technology>
+	<Technology id="R_SpecialEdition2"></Technology>
 
 </Technologies>

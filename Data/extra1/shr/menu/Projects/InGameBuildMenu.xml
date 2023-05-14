@@ -2510,7 +2510,7 @@
 							 <LuaCommand></LuaCommand>
 						 </OnBlur>
 						 <UpdateFunction>
-							 <LuaCommand>GUI_Construction.BuildUpdate(Technologies.R_SpecialEdition)</LuaCommand>
+							 <LuaCommand>GUI_Construction.BuildUpdate(Technologies.R_SpecialEdition2)</LuaCommand>
 						 </UpdateFunction>
 						 <UpdateFunctionTurnBased>
 							 <LuaCommand></LuaCommand>

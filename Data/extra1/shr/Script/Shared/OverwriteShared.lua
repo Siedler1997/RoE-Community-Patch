@@ -31,6 +31,17 @@ function InitSharedOverwrite()
             SavedFunction = nil
             
             local TechnologiesTableIndex = 4
+
+            -- New beautification menus
+            table.remove(
+                NeedsAndRightsByKnightTitle[KnightTitles.Knight][TechnologiesTableIndex],
+                Technologies.R_SpecialEdition)
+            table.insert(
+                NeedsAndRightsByKnightTitle[KnightTitles.Knight][TechnologiesTableIndex],
+                Technologies.R_SpecialEdition2)
+            table.insert(
+                NeedsAndRightsByKnightTitle[KnightTitles.Marquees][TechnologiesTableIndex],
+                Technologies.R_SpecialEdition)
             
             -- Cistern
             table.insert(
