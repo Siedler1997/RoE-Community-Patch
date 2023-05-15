@@ -119,6 +119,26 @@
 		<Category>Beautification_WoodBench</Category>
 		<FirstBuilding>B_Beautification_WoodBench</FirstBuilding>
 	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>Beautification_Plaza_ME</Category>
+		<FirstBuilding>B_Beautification_Plaza_ME</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>Beautification_Plaza_NE</Category>
+		<FirstBuilding>B_Beautification_Plaza_NE</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>Beautification_Plaza_SE</Category>
+		<FirstBuilding>B_Beautification_Plaza_SE</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>Beautification_Plaza_NA</Category>
+		<FirstBuilding>B_Beautification_Plaza_NA</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>Beautification_Plaza_AS</Category>
+		<FirstBuilding>B_Beautification_Plaza_AS</FirstBuilding>
+	</BuildingUpgrade>
 
 	<BuildingUpgrade>
 		<Category>WallSegment_NPC_MiddleEurope</Category>

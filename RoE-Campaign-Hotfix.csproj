@@ -4713,10 +4713,6 @@
     <None Include="Data\extra1\shr\graphics\Models\Doodads\D_X_Beautification_Dragon.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Doodads\D_X_Beautification_Pavilion.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Doodads\D_X_Beautification_WoodBench.dff" />
-    <None Include="Data\extra1\shr\graphics\Models\Doodads\D_X_Beautification_Standarte.dff" />
-    <None Include="Data\extra1\shr\graphics\Models\Doodads\XB_LargeEmpty.dff" />
-    <None Include="Data\extra1\shr\graphics\Models\Doodads\XB_StandarteEmpty.dff" />
-    <None Include="Data\extra1\shr\graphics\Models\Doodads\XD_StandartePlayerColor.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Effects\XD_Hero2Bomb.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Goods\G_Spear.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Goods\G_SpearSpearMaker01.dff" />
@@ -4975,6 +4971,7 @@
     <Content Include="Data\extra1\shr\config\Entities\B_Barracks_Khana.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Barracks_RedPrince.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Brazier.xml" />
+    <Content Include="Data\extra1\shr\config\Entities\B_Beautification_ExecutionerPlace.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Flowerpot_Round.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Flowerpot_Square.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Lantern.xml" />
@@ -4985,7 +4982,6 @@
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Dragon.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Pillar.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Shrine.xml" />
-    <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Standarte.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_WoodBench.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_StoneBench.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Sundial.xml" />
@@ -5144,6 +5140,7 @@
     <Content Include="Data\extra1\shr\graphics\Textures\GUI_1200\Frames2.png" />
     <Content Include="Data\extra1\shr\graphics\Textures\GUI_1200\IconsBig.png" />
     <Content Include="Data\extra1\shr\graphics\Textures\GUI_1200\IconsBig2.png" />
+    <Content Include="Data\extra1\shr\graphics\Textures\GUI_1200\IconsBig3.png" />
     <Content Include="Data\extra1\shr\graphics\Textures\GUI_1200\Loadscreens\chapter1.png" />
     <Content Include="Data\extra1\shr\graphics\Textures\GUI_1200\Loadscreens\chapter2.png" />
     <Content Include="Data\extra1\shr\graphics\Textures\GUI_1200\Loadscreens\chapter3_Test.png" />

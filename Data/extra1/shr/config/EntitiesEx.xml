@@ -438,6 +438,11 @@
 	<Entity>B_Beautification_ExecutionerPlace</Entity>
 	<Entity>B_Beautification_Lantern</Entity>
 	<Entity>B_Beautification_WoodBench</Entity>
+	<Entity>B_Beautification_Plaza_ME</Entity>
+	<Entity>B_Beautification_Plaza_NE</Entity>
+	<Entity>B_Beautification_Plaza_SE</Entity>
+	<Entity>B_Beautification_Plaza_NA</Entity>
+	<Entity>B_Beautification_Plaza_AS</Entity>
 	<Entity>B_NPC_Cloister_AS_WallSegment</Entity>
 	<Entity>B_NPC_Cloister_AS_WallTurret</Entity>
 </root>
