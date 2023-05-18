@@ -3,7 +3,7 @@
 	<Display classname="ED::CBuildingProps">
 		<Class>ED::CDisplayBuilding</Class>
 		<Model>Buildings\B_Plaza_SE</Model>
-		<Decal>Buildings\B_Plaza_SE_Decal</Decal>
+		<Decal>Trees\XD_Cypress1</Decal>
 		<FireNodeCount>15</FireNodeCount>
 		<OnScreenOffset>100</OnScreenOffset>
 	</Display>

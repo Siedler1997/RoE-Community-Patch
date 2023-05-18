@@ -3,7 +3,7 @@
 	<Display classname="ED::CBuildingProps">
 		<Class>ED::CDisplayBuilding</Class>
 		<Model>Buildings\B_Plaza_NA</Model>
-		<Decal>Buildings\B_Plaza_NA_Decal</Decal>
+		<Decal>Trees\R_NA_Tree_Palm02_01</Decal>
 		<FireNodeCount>15</FireNodeCount>
 		<OnScreenOffset>100</OnScreenOffset>
 	</Display>
@@ -30,6 +30,18 @@
 			<X>0</X>
 			<Y>0</Y>
 		</DoorPos>
+		<BlockingAreas>
+			<BlockingArea>
+				<Blocked1>
+					<X>50</X>
+					<Y>50</Y>
+				</Blocked1>
+				<Blocked2>
+					<X>-50</X>
+					<Y>-50</Y>
+				</Blocked2>
+			</BlockingArea>
+		</BlockingAreas>
 		<BuildBlockingAreas>
 			<BuildBlockingArea>
 				<Blocked1>

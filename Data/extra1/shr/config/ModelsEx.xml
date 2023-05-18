@@ -2574,41 +2574,6 @@
 			<CastShadow>True</CastShadow>
 			<UseAlphaBlending>True</UseAlphaBlending>
 		</Model>
-		<Model id="Buildings\B_Plaza_ME_Decal">
-			<Effect>SimpleObjectMultiply</Effect>
-			<SelectionTexture>Selection_Building</SelectionTexture>
-			<ShareShadowRaster>True</ShareShadowRaster>
-			<CastShadow>True</CastShadow>
-			<UseAlphaBlending>True</UseAlphaBlending>
-		</Model>
-		<Model id="Buildings\B_Plaza_NE_Decal">
-			<Effect>SimpleObjectMultiply</Effect>
-			<SelectionTexture>Selection_Building</SelectionTexture>
-			<ShareShadowRaster>True</ShareShadowRaster>
-			<CastShadow>True</CastShadow>
-			<UseAlphaBlending>True</UseAlphaBlending>
-		</Model>
-		<Model id="Buildings\B_Plaza_SE_Decal">
-			<Effect>SimpleObjectMultiply</Effect>
-			<SelectionTexture>Selection_Building</SelectionTexture>
-			<ShareShadowRaster>True</ShareShadowRaster>
-			<CastShadow>True</CastShadow>
-			<UseAlphaBlending>True</UseAlphaBlending>
-		</Model>
-		<Model id="Buildings\B_Plaza_NA_Decal">
-			<Effect>SimpleObjectMultiply</Effect>
-			<SelectionTexture>Selection_Building</SelectionTexture>
-			<ShareShadowRaster>True</ShareShadowRaster>
-			<CastShadow>True</CastShadow>
-			<UseAlphaBlending>True</UseAlphaBlending>
-		</Model>
-		<Model id="Buildings\B_Plaza_AS_Decal">
-			<Effect>SimpleObjectMultiply</Effect>
-			<SelectionTexture>Selection_Building</SelectionTexture>
-			<ShareShadowRaster>True</ShareShadowRaster>
-			<CastShadow>True</CastShadow>
-			<UseAlphaBlending>True</UseAlphaBlending>
-		</Model>
 
 		<Model id="Buildings\B_Spicetrader_Buildingsite_1">
 			<Effect>SimpleObjectMultiply</Effect>
