@@ -12774,7 +12774,7 @@
                    </ToolTipHelper>
                    <Group></Group>
                    <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus</MotherID>
-                   <Name>SpecialEdition</Name>
+                   <Name>SpecialEdition2</Name>
                    <SubWidgets>
                     <WidgetList>
                      <Widget classname="EGUIX::CContainerWidget">
@@ -12847,7 +12847,7 @@
                        <TargetWidget05></TargetWidget05>
                       </ToolTipHelper>
                       <Group></Group>
-                      <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition</MotherID>
+                      <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2</MotherID>
                       <Name>ButtonsAddon</Name>
                       <SubWidgets>
                        <WidgetList>
@@ -12921,7 +12921,7 @@
                           <TargetWidget05></TargetWidget05>
                          </ToolTipHelper>
                          <Group>Construction</Group>
-                         <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/ButtonsAddon</MotherID>
+                         <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2/ButtonsAddon</MotherID>
                          <Name>B_Beautification_Shrine</Name>
                          <FullScreenBackground>false</FullScreenBackground>
                          <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -13123,7 +13123,7 @@
                           <TargetWidget05></TargetWidget05>
                          </ToolTipHelper>
                          <Group>Construction</Group>
-                         <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/ButtonsAddon</MotherID>
+                         <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2/ButtonsAddon</MotherID>
                          <Name>B_Beautification_StoneBench</Name>
                          <FullScreenBackground>false</FullScreenBackground>
                          <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -13325,7 +13325,7 @@
                           <TargetWidget05></TargetWidget05>
                          </ToolTipHelper>
                          <Group>Construction</Group>
-                         <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/ButtonsAddon</MotherID>
+                         <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2/ButtonsAddon</MotherID>
                          <Name>B_Beautification_Vase</Name>
                          <FullScreenBackground>false</FullScreenBackground>
                          <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -13527,7 +13527,7 @@
                           <TargetWidget05></TargetWidget05>
                          </ToolTipHelper>
                          <Group>Construction</Group>
-                         <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/ButtonsAddon</MotherID>
+                         <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2/ButtonsAddon</MotherID>
                          <Name>B_Beautification_Brazier</Name>
                          <FullScreenBackground>false</FullScreenBackground>
                          <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -13729,7 +13729,7 @@
                           <TargetWidget05></TargetWidget05>
                          </ToolTipHelper>
                          <Group>Construction</Group>
-                         <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/ButtonsAddon</MotherID>
+                         <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2/ButtonsAddon</MotherID>
                          <Name>B_Beautification_Pillar</Name>
                          <FullScreenBackground>false</FullScreenBackground>
                          <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -13931,7 +13931,7 @@
                           <TargetWidget05></TargetWidget05>
                          </ToolTipHelper>
                          <Group>Construction</Group>
-                         <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/ButtonsAddon</MotherID>
+                         <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2/ButtonsAddon</MotherID>
                          <Name>B_Beautification_Sundial</Name>
                          <FullScreenBackground>false</FullScreenBackground>
                          <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -14133,7 +14133,7 @@
                           <TargetWidget05></TargetWidget05>
                          </ToolTipHelper>
                          <Group>Construction</Group>
-                         <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/ButtonsAddon</MotherID>
+                         <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2/ButtonsAddon</MotherID>
                          <Name>B_Beautification_TriumphalArch</Name>
                          <FullScreenBackground>false</FullScreenBackground>
                          <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -14335,7 +14335,7 @@
                           <TargetWidget05></TargetWidget05>
                          </ToolTipHelper>
                          <Group>Construction</Group>
-                         <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/ButtonsAddon</MotherID>
+                         <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2/ButtonsAddon</MotherID>
                          <Name>B_Beautification_VictoryColumn</Name>
                          <FullScreenBackground>false</FullScreenBackground>
                          <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -14540,7 +14540,7 @@
                        <TargetWidget05></TargetWidget05>
                       </ToolTipHelper>
                       <Group></Group>
-                      <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition</MotherID>
+                      <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2</MotherID>
                       <Name>Buttons</Name>
                       <SubWidgets>
                        <WidgetList>
@@ -14614,7 +14614,7 @@
                           <TargetWidget05></TargetWidget05>
                          </ToolTipHelper>
                          <Group>Construction</Group>
-                         <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/Buttons</MotherID>
+                         <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2/Buttons</MotherID>
                          <Name>B_SpecialEdition_StatueDario</Name>
                          <FullScreenBackground>false</FullScreenBackground>
                          <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -14816,8 +14816,8 @@
                           <TargetWidget05></TargetWidget05>
                          </ToolTipHelper>
                          <Group>Construction</Group>
-                         <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/Buttons</MotherID>
-                         <Name>B_SpecialEdition_StatueFamily</Name>
+                         <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2/Buttons</MotherID>
+                         <Name>B_SpecialEdition2_StatueFamily</Name>
                          <FullScreenBackground>false</FullScreenBackground>
                          <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
                          <BackgroundMaterial>
@@ -15018,7 +15018,7 @@
                           <TargetWidget05></TargetWidget05>
                          </ToolTipHelper>
                          <Group>Construction</Group>
-                         <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/Buttons</MotherID>
+                         <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2/Buttons</MotherID>
                          <Name>B_SpecialEdition_Pavilion</Name>
                          <FullScreenBackground>false</FullScreenBackground>
                          <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -15220,7 +15220,7 @@
                           <TargetWidget05></TargetWidget05>
                          </ToolTipHelper>
                          <Group>Construction</Group>
-                         <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/Buttons</MotherID>
+                         <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2/Buttons</MotherID>
                          <Name>B_SpecialEdition_StatueProduction</Name>
                          <FullScreenBackground>false</FullScreenBackground>
                          <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -15422,7 +15422,7 @@
                           <TargetWidget05></TargetWidget05>
                          </ToolTipHelper>
                          <Group>Construction</Group>
-                         <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/Buttons</MotherID>
+                         <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2/Buttons</MotherID>
                          <Name>B_SpecialEdition_StatueSettler</Name>
                          <FullScreenBackground>false</FullScreenBackground>
                          <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -15624,7 +15624,7 @@
                           <TargetWidget05></TargetWidget05>
                          </ToolTipHelper>
                          <Group>Construction</Group>
-                         <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/Buttons</MotherID>
+                         <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2/Buttons</MotherID>
                          <Name>B_SpecialEdition_Column</Name>
                          <FullScreenBackground>false</FullScreenBackground>
                          <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -15829,7 +15829,7 @@
                        <TargetWidget05></TargetWidget05>
                       </ToolTipHelper>
                       <Group></Group>
-                      <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition</MotherID>
+                      <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2</MotherID>
                       <Name>BGVert</Name>
                       <FullScreenBackground>false</FullScreenBackground>
                       <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -15919,7 +15919,7 @@
                        <TargetWidget05></TargetWidget05>
                       </ToolTipHelper>
                       <Group></Group>
-                      <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition</MotherID>
+                      <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2</MotherID>
                       <Name>BGVert (1)</Name>
                       <FullScreenBackground>false</FullScreenBackground>
                       <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -16009,7 +16009,7 @@
                        <TargetWidget05></TargetWidget05>
                       </ToolTipHelper>
                       <Group></Group>
-                      <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition</MotherID>
+                      <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2</MotherID>
                       <Name>BGVert (2)</Name>
                       <FullScreenBackground>false</FullScreenBackground>
                       <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -16099,7 +16099,7 @@
                        <TargetWidget05></TargetWidget05>
                       </ToolTipHelper>
                       <Group></Group>
-                      <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition</MotherID>
+                      <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2</MotherID>
                       <Name>BG</Name>
                       <FullScreenBackground>false</FullScreenBackground>
                       <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -16189,7 +16189,7 @@
 							    <TargetWidget05></TargetWidget05>
 						    </ToolTipHelper>
 						    <Group></Group>
-						    <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition</MotherID>
+						    <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2</MotherID>
 						    <Name>CPBar</Name>
 						    <FullScreenBackground>false</FullScreenBackground>
 						    <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -18547,7 +18547,7 @@
 						 </ToolTipHelper>
 						 <Group></Group>
 						 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus</MotherID>
-						 <Name>SpecialEdition2</Name>
+						 <Name>SpecialEdition</Name>
 						 <SubWidgets>
 							 <WidgetList>
 								 <Widget classname="EGUIX::CContainerWidget">
@@ -18620,7 +18620,7 @@
 										 <TargetWidget05></TargetWidget05>
 									 </ToolTipHelper>
 									 <Group></Group>
-									 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2</MotherID>
+									 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition</MotherID>
 									 <Name>ButtonsAddon</Name>
 									 <SubWidgets>
 										 <WidgetList>
@@ -18694,7 +18694,7 @@
 													 <TargetWidget05></TargetWidget05>
 												 </ToolTipHelper>
 												 <Group>Construction</Group>
-												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2/ButtonsAddon</MotherID>
+												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/ButtonsAddon</MotherID>
 												 <Name>B_Beautification_Shrine</Name>
 												 <FullScreenBackground>false</FullScreenBackground>
 												 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -18896,7 +18896,7 @@
 													 <TargetWidget05></TargetWidget05>
 												 </ToolTipHelper>
 												 <Group>Construction</Group>
-												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2/ButtonsAddon</MotherID>
+												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/ButtonsAddon</MotherID>
 												 <Name>B_Beautification_StoneBench</Name>
 												 <FullScreenBackground>false</FullScreenBackground>
 												 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -19098,7 +19098,7 @@
 													 <TargetWidget05></TargetWidget05>
 												 </ToolTipHelper>
 												 <Group>Construction</Group>
-												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2/ButtonsAddon</MotherID>
+												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/ButtonsAddon</MotherID>
 												 <Name>B_Beautification_Vase</Name>
 												 <FullScreenBackground>false</FullScreenBackground>
 												 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -19300,7 +19300,7 @@
 													 <TargetWidget05></TargetWidget05>
 												 </ToolTipHelper>
 												 <Group>Construction</Group>
-												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2/ButtonsAddon</MotherID>
+												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/ButtonsAddon</MotherID>
 												 <Name>B_Beautification_Brazier</Name>
 												 <FullScreenBackground>false</FullScreenBackground>
 												 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -19502,7 +19502,7 @@
 													 <TargetWidget05></TargetWidget05>
 												 </ToolTipHelper>
 												 <Group>Construction</Group>
-												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2/ButtonsAddon</MotherID>
+												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/ButtonsAddon</MotherID>
 												 <Name>B_Beautification_Pillar</Name>
 												 <FullScreenBackground>false</FullScreenBackground>
 												 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -19704,7 +19704,7 @@
 													 <TargetWidget05></TargetWidget05>
 												 </ToolTipHelper>
 												 <Group>Construction</Group>
-												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2/ButtonsAddon</MotherID>
+												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/ButtonsAddon</MotherID>
 												 <Name>B_Beautification_Sundial</Name>
 												 <FullScreenBackground>false</FullScreenBackground>
 												 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -19906,7 +19906,7 @@
 													 <TargetWidget05></TargetWidget05>
 												 </ToolTipHelper>
 												 <Group>Construction</Group>
-												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2/ButtonsAddon</MotherID>
+												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/ButtonsAddon</MotherID>
 												 <Name>B_Beautification_TriumphalArch</Name>
 												 <FullScreenBackground>false</FullScreenBackground>
 												 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -20108,7 +20108,7 @@
 													 <TargetWidget05></TargetWidget05>
 												 </ToolTipHelper>
 												 <Group>Construction</Group>
-												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2/ButtonsAddon</MotherID>
+												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/ButtonsAddon</MotherID>
 												 <Name>B_Beautification_VictoryColumn</Name>
 												 <FullScreenBackground>false</FullScreenBackground>
 												 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -20313,7 +20313,7 @@
 										 <TargetWidget05></TargetWidget05>
 									 </ToolTipHelper>
 									 <Group></Group>
-									 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2</MotherID>
+									 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition</MotherID>
 									 <Name>Buttons</Name>
 									 <SubWidgets>
 										 <WidgetList>
@@ -20387,7 +20387,7 @@
 													 <TargetWidget05></TargetWidget05>
 												 </ToolTipHelper>
 												 <Group>Construction</Group>
-												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2/Buttons</MotherID>
+												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/Buttons</MotherID>
 												 <Name>B_SpecialEdition_StatueDario</Name>
 												 <FullScreenBackground>false</FullScreenBackground>
 												 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -20589,7 +20589,7 @@
 													 <TargetWidget05></TargetWidget05>
 												 </ToolTipHelper>
 												 <Group>Construction</Group>
-												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2/Buttons</MotherID>
+												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/Buttons</MotherID>
 												 <Name>B_SpecialEdition_StatueFamily</Name>
 												 <FullScreenBackground>false</FullScreenBackground>
 												 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -20791,7 +20791,7 @@
 													 <TargetWidget05></TargetWidget05>
 												 </ToolTipHelper>
 												 <Group>Construction</Group>
-												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2/Buttons</MotherID>
+												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/Buttons</MotherID>
 												 <Name>B_SpecialEdition_Pavilion</Name>
 												 <FullScreenBackground>false</FullScreenBackground>
 												 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -20993,7 +20993,7 @@
 													 <TargetWidget05></TargetWidget05>
 												 </ToolTipHelper>
 												 <Group>Construction</Group>
-												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2/Buttons</MotherID>
+												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/Buttons</MotherID>
 												 <Name>B_SpecialEdition_StatueProduction</Name>
 												 <FullScreenBackground>false</FullScreenBackground>
 												 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -21195,7 +21195,7 @@
 													 <TargetWidget05></TargetWidget05>
 												 </ToolTipHelper>
 												 <Group>Construction</Group>
-												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2/Buttons</MotherID>
+												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/Buttons</MotherID>
 												 <Name>B_SpecialEdition_StatueSettler</Name>
 												 <FullScreenBackground>false</FullScreenBackground>
 												 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -21397,7 +21397,7 @@
 													 <TargetWidget05></TargetWidget05>
 												 </ToolTipHelper>
 												 <Group>Construction</Group>
-												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2/Buttons</MotherID>
+												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/Buttons</MotherID>
 												 <Name>B_SpecialEdition_Column</Name>
 												 <FullScreenBackground>false</FullScreenBackground>
 												 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -21602,7 +21602,7 @@
 										 <TargetWidget05></TargetWidget05>
 									 </ToolTipHelper>
 									 <Group></Group>
-									 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2</MotherID>
+									 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition</MotherID>
 									 <Name>BGVert</Name>
 									 <FullScreenBackground>false</FullScreenBackground>
 									 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -21692,7 +21692,7 @@
 										 <TargetWidget05></TargetWidget05>
 									 </ToolTipHelper>
 									 <Group></Group>
-									 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2</MotherID>
+									 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition</MotherID>
 									 <Name>BGVert (1)</Name>
 									 <FullScreenBackground>false</FullScreenBackground>
 									 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -21782,7 +21782,7 @@
 										 <TargetWidget05></TargetWidget05>
 									 </ToolTipHelper>
 									 <Group></Group>
-									 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2</MotherID>
+									 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition</MotherID>
 									 <Name>BGVert (2)</Name>
 									 <FullScreenBackground>false</FullScreenBackground>
 									 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -21872,7 +21872,7 @@
 										 <TargetWidget05></TargetWidget05>
 									 </ToolTipHelper>
 									 <Group></Group>
-									 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2</MotherID>
+									 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition</MotherID>
 									 <Name>BG</Name>
 									 <FullScreenBackground>false</FullScreenBackground>
 									 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
@@ -21962,7 +21962,7 @@
 										 <TargetWidget05></TargetWidget05>
 									 </ToolTipHelper>
 									 <Group></Group>
-									 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2</MotherID>
+									 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition</MotherID>
 									 <Name>CPBar</Name>
 									 <FullScreenBackground>false</FullScreenBackground>
 									 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
