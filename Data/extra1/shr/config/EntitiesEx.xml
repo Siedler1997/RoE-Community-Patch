@@ -443,6 +443,18 @@
 	<Entity>B_Beautification_Plaza_SE</Entity>
 	<Entity>B_Beautification_Plaza_NA</Entity>
 	<Entity>B_Beautification_Plaza_AS</Entity>
+	<Entity>B_Beautification_Knight_Chivalry</Entity>
+	<Entity>B_Beautification_Knight_Healing</Entity>
+	<Entity>B_Beautification_Knight_Plunder</Entity>
+	<Entity>B_Beautification_Knight_Song</Entity>
+	<Entity>B_Beautification_Knight_Trading</Entity>
+	<Entity>B_Beautification_Knight_Wisdomr</Entity>
+	<Entity>B_Beautification_Knight_Sabatt.</Entity>
+	<Entity>B_Beautification_Knight_RedPrince</Entity>
+	<Entity>B_Beautification_Knight_Saraya</Entity>
+	<Entity>B_Beautification_Knight_Praphat</Entity>
+	<Entity>B_Beautification_Knight_Khana</Entity>
+	<Entity>B_Beautification_Knight_Generic</Entity>
 	<Entity>B_NPC_Cloister_AS_WallSegment</Entity>
 	<Entity>B_NPC_Cloister_AS_WallTurret</Entity>
 </root>

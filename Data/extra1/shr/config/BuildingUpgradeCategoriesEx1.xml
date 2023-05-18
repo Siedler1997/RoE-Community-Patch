@@ -120,6 +120,55 @@
 		<FirstBuilding>B_Beautification_WoodBench</FirstBuilding>
 	</BuildingUpgrade>
 	<BuildingUpgrade>
+		<Category>Beautification_Knight_Chivalry</Category>
+		<FirstBuilding>B_Beautification_Knight_Chivalry</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>Beautification_Knight_Healing</Category>
+		<FirstBuilding>B_Beautification_Knight_Healing</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>Beautification_Knight_Plunder</Category>
+		<FirstBuilding>B_Beautification_Knight_Plunder</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>Beautification_Knight_Song</Category>
+		<FirstBuilding>B_Beautification_Knight_Song</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>Beautification_Knight_Trading</Category>
+		<FirstBuilding>B_Beautification_Knight_Trading</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>Beautification_Knight_Wisdom</Category>
+		<FirstBuilding>B_Beautification_Knight_Wisdom</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>Beautification_Knight_Sabatt</Category>
+		<FirstBuilding>B_Beautification_Knight_Sabatt</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>Beautification_Knight_RedPrince</Category>
+		<FirstBuilding>B_Beautification_Knight_RedPrince</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>Beautification_Knight_Saraya</Category>
+		<FirstBuilding>B_Beautification_Knight_Saraya</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>Beautification_Knight_Praphat</Category>
+		<FirstBuilding>B_Beautification_Knight_Praphat</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>Beautification_Knight_Khana</Category>
+		<FirstBuilding>B_Beautification_Knight_Khana</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>Beautification_Knight_Generic</Category>
+		<FirstBuilding>B_Beautification_Knight_Generic</FirstBuilding>
+	</BuildingUpgrade>
+	
+	<BuildingUpgrade>
 		<Category>Beautification_Plaza_ME</Category>
 		<FirstBuilding>B_Beautification_Plaza_ME</FirstBuilding>
 	</BuildingUpgrade>
