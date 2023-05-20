@@ -86,10 +86,14 @@
         <CriticalThresholdWealth>-1</CriticalThresholdWealth>
 
         <Cost>
-            <GoodAmount>
-                <GoodType>G_Wood</GoodType>
-                <Amount>0</Amount>
-            </GoodAmount>
+			<GoodAmount>
+				<GoodType>G_Wood</GoodType>
+				<Amount>20</Amount>
+			</GoodAmount>
+			<GoodAmount>
+				<GoodType>G_Gold</GoodType>
+				<Amount>3000</Amount>
+			</GoodAmount>
         </Cost>
 
        <UpgradeCosts>
