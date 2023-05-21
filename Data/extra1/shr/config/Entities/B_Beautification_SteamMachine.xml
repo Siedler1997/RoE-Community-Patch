@@ -2,7 +2,8 @@
 <root>
 	<Display classname="ED::CBuildingProps">
 		<Class>ED::CDisplayBuilding</Class>
-		<Model>Buildings\D_X_Beautification_Dragon</Model>
+		<Model>Buildings\D_X_Beautification_SteamMashine</Model>
+		<DisplayPlayerColor>True</DisplayPlayerColor>
 		<FireNodeCount>15</FireNodeCount>
 	</Display>
 
@@ -10,12 +11,12 @@
 		<Class>EGL::CBuilding</Class>
 		<Cost>
 			<GoodAmount>
-				<GoodType>G_Stone</GoodType>
-				<Amount>30</Amount>
+				<GoodType>G_Iron</GoodType>
+				<Amount>10</Amount>
 			</GoodAmount>
 			<GoodAmount>
 				<GoodType>G_Gold</GoodType>
-				<Amount>1500</Amount>
+				<Amount>1000</Amount>
 			</GoodAmount>
 		</Cost>
 		<AccessCategory>AccessCategoryBuilding</AccessCategory>
@@ -48,7 +49,7 @@
 			</BuildBlockingArea>
 		</BuildBlockingAreas>
 		<ConstructionInfo>
-			<Time>30</Time>
+			<Time>20</Time>
 			<TaskListConstruction>TL_CONSTRUCT_BUILDING</TaskListConstruction>
 			<ConstructionSite>B_BuildingPlot_8x8</ConstructionSite>
 		</ConstructionInfo>
@@ -72,7 +73,7 @@
 
 		<Exploration>0</Exploration>
 		<NoAutoRepair>true</NoAutoRepair>
-		<SoundImpactType>Stone</SoundImpactType>
+		<SoundImpactType>Wood</SoundImpactType>
 	</Logic>
 	<Behavior>
 		<Logic classname="EGL::CBehaviorProps">

@@ -14315,7 +14315,7 @@
                           <LuaCommand></LuaCommand>
                          </UpdateFunction>
                          <UpdateFunctionTurnBased>
-                          <LuaCommand>GUI_Construction.BuildUpdate(Technologies.R_Beautification_Dragon)</LuaCommand>
+                          <LuaCommand>GUI_Construction.BuildUpdate(Technologies.R_Beautification_SteamMachine)</LuaCommand>
                          </UpdateFunctionTurnBased>
                          <UpdateFunctionSecondBased>
                           <LuaCommand></LuaCommand>
@@ -14324,7 +14324,7 @@
                           <ToolTipEnabledFlag>true</ToolTipEnabledFlag>
                           <ControlTargetVisibility>true</ControlTargetVisibility>
                           <ToolTipUpdateFunction>
-                           <LuaCommand>GUI_Tooltip.TooltipBuild(false,true,Technologies.R_Beautification_Dragon)</LuaCommand>
+                           <LuaCommand>GUI_Tooltip.TooltipBuild(false,true,Technologies.R_Beautification_SteamMachine)</LuaCommand>
                           </ToolTipUpdateFunction>
                           <RawString></RawString>
                           <StringTableKey></StringTableKey>
@@ -14336,7 +14336,7 @@
                          </ToolTipHelper>
                          <Group>Construction</Group>
                          <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2/ButtonsAddon</MotherID>
-                         <Name>B_Beautification_Dragon</Name>
+                         <Name>B_Beautification_SteamMachine</Name>
                          <FullScreenBackground>false</FullScreenBackground>
                          <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
                          <BackgroundMaterial>
@@ -14355,7 +14355,7 @@
                           </Color>
                          </BackgroundMaterial>
                          <ActionFunction>
-                          <LuaCommand>GUI_Construction.BuildClicked(UpgradeCategories.Beautification_Dragon)</LuaCommand>
+                          <LuaCommand>GUI_Construction.BuildClicked(UpgradeCategories.Beautification_SteamMachine)</LuaCommand>
                          </ActionFunction>
                          <GenerateMaterialsFromNormal>false</GenerateMaterialsFromNormal>
                          <ShortCutKey></ShortCutKey>

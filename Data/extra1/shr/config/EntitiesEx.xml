@@ -457,5 +457,6 @@
 	<Entity>B_Beautification_Knight_Generic</Entity>
 	<Entity>B_NPC_Cloister_AS_WallSegment</Entity>
 	<Entity>B_NPC_Cloister_AS_WallTurret</Entity>
+	<Entity>B_Beautification_SteamMachine</Entity>
 </root>
 

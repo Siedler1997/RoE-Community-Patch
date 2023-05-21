@@ -4713,6 +4713,8 @@
     <None Include="Data\extra1\shr\graphics\Models\Buildings\B_Plaza_NA.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Buildings\B_Plaza_NE.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Buildings\B_Plaza_SE.dff" />
+    <None Include="Data\extra1\shr\graphics\Models\Buildings\D_X_Beautification_SteamMashine.dff" />
+    <None Include="Data\extra1\shr\graphics\Models\Buildings\D_X_Beautification_Dragon.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Buildings\D_X_Beautification_Knight_Chivalry.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Buildings\D_X_Beautification_Knight_Decal.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Buildings\D_X_Beautification_Knight_Generic.dff" />
@@ -4728,7 +4730,6 @@
     <None Include="Data\extra1\shr\graphics\Models\Buildings\D_X_Beautification_Knight_Wisdom.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Doodads\D_X_Beautification_BrothersInArms.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Doodads\D_X_Beautification_CloisterHutGrave.dff" />
-    <None Include="Data\extra1\shr\graphics\Models\Doodads\D_X_Beautification_Dragon.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Doodads\D_X_Beautification_Pavilion.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Doodads\D_X_Beautification_WoodBench.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Effects\XD_Hero2Bomb.dff" />
@@ -4990,6 +4991,7 @@
     <Content Include="Data\extra1\shr\config\Entities\B_Barracks_Khana.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Barracks_RedPrince.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Brazier.xml" />
+    <Content Include="Data\extra1\shr\config\Entities\B_Beautification_SteamMachine.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Knight_Chivalry.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Knight_Healing.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Knight_Plunder.xml" />
@@ -5176,6 +5178,7 @@
     <Content Include="Data\extra1\shr\graphics\Textures\B_NE_Plaza.dds" />
     <Content Include="Data\extra1\shr\graphics\Textures\B_SE_MarketPlace01.dds" />
     <Content Include="Data\extra1\shr\graphics\Textures\B_SE_Plaza.dds" />
+    <Content Include="Data\extra1\shr\graphics\Textures\CB_SteamMashine.dds" />
     <Content Include="Data\extra1\shr\graphics\Textures\CoA_Logo.dds" />
     <Content Include="Data\extra1\shr\graphics\Textures\CoA_Pattern.dds" />
     <Content Include="Data\extra1\shr\graphics\Textures\E_BurningSphere_test.dds" />
@@ -5224,6 +5227,7 @@
     <Content Include="Data\extra1\shr\graphics\Textures\PU_SoldierPoleArm4_spec.dds" />
     <Content Include="Data\extra1\shr\graphics\Textures\XA_Dragon.dds" />
     <Content Include="Data\extra1\shr\graphics\Textures\XA_Dragon_Grey.dds" />
+    <Content Include="Data\extra1\shr\graphics\Textures\XB_Decals1.dds" />
     <Content Include="Data\extra1\shr\graphics\Textures\XD_Cypress.dds" />
     <Content Include="Data\extra1\shr\menu\Projects\InGame.xml" />
     <Content Include="Data\extra1\shr\menu\Projects\InGameBuildMenu.xml" />

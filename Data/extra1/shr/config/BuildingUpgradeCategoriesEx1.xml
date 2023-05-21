@@ -175,6 +175,10 @@
 		<Category>Beautification_Cathedral</Category>
 		<FirstBuilding>B_Beautification_Cathedral</FirstBuilding>
 	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>Beautification_SteamMachine</Category>
+		<FirstBuilding>B_Beautification_SteamMachine</FirstBuilding>
+	</BuildingUpgrade>
 	
 	<BuildingUpgrade>
 		<Category>Beautification_Plaza_MiddleEurope</Category>

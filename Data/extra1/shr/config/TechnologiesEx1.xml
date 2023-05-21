@@ -29,5 +29,6 @@
 	<Technology id="R_Beautification_Knight"></Technology>
 	<Technology id="R_Beautification_Cathedral"></Technology>
 	<Technology id="R_Beautification_Dragon"></Technology>
+	<Technology id="R_Beautification_SteamMachine"></Technology>
 
 </Technologies>

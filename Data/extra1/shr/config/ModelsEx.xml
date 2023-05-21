@@ -2489,7 +2489,7 @@
 			<DefaultAnimID>U_Helbardier_Run</DefaultAnimID>
 		</Model>
 
-		<Model id="Doodads\D_X_Beautification_Dragon">
+		<Model id="Buildings\D_X_Beautification_Dragon">
 			<CastShadow>True</CastShadow>
 			<ShareShadowRaster>True</ShareShadowRaster>
 			<!--<UseAlphaBlending>True</UseAlphaBlending>-->
