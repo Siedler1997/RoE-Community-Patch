@@ -1943,5 +1943,17 @@
 		<Row>15</Row>
 		<Col>0</Col>
 	</Icon>
+	
+	<Icon classname="GGUI::COnScreenIconProps">
+		<IconName>MinimapBeautificationCathedral</IconName>
+		<TextureName>IconsTiny2.png</TextureName>
+		<U>0</U>
+		<V>0</V>
+		<U2>1</U2>
+		<V2>1</V2>
+		<Size>32</Size>
+		<Row>0</Row>
+		<Col>0</Col>
+	</Icon>
 
 </OnScreenIcons>

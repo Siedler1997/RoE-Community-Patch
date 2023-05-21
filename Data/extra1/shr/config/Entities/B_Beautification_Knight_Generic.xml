@@ -12,11 +12,11 @@
 		<Cost>
 			<GoodAmount>
 				<GoodType>G_Stone</GoodType>
-				<Amount>10</Amount>
+				<Amount>20</Amount>
 			</GoodAmount>
 			<GoodAmount>
 				<GoodType>G_Gold</GoodType>
-				<Amount>200</Amount>
+				<Amount>600</Amount>
 			</GoodAmount>
 		</Cost>
 		<AccessCategory>AccessCategoryBuilding</AccessCategory>

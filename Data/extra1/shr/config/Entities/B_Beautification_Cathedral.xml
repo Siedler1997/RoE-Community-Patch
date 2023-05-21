@@ -100,12 +100,12 @@
        <UpgradeCosts>
             <UpgradeCost>
                 <GoodAmount>
-                    <GoodType>G_Stone</GoodType>
-                    <Amount>20</Amount>
+                    <GoodType>G_Wood</GoodType>
+                    <Amount>30</Amount>
                 </GoodAmount>
                 <GoodAmount>
                     <GoodType>G_Gold</GoodType>
-                    <Amount>300</Amount>
+                    <Amount>500</Amount>
                 </GoodAmount>
             </UpgradeCost>
 
@@ -116,39 +116,39 @@
                 </GoodAmount>
                 <GoodAmount>
                     <GoodType>G_Gold</GoodType>
-                    <Amount>500</Amount>
+                    <Amount>1000</Amount>
                 </GoodAmount>
             </UpgradeCost>
 
             <UpgradeCost>
                 <GoodAmount>
                     <GoodType>G_Stone</GoodType>
-                    <Amount>60</Amount>
+                    <Amount>50</Amount>
                 </GoodAmount>
                 <GoodAmount>
                     <GoodType>G_Gold</GoodType>
-                    <Amount>700</Amount>
+                    <Amount>1500</Amount>
                 </GoodAmount>
             </UpgradeCost>
 
             <UpgradeCost>
                 <GoodAmount>
-                    <GoodType>G_Stone</GoodType>
-                    <Amount>60</Amount>
+                    <GoodType>G_Iron</GoodType>
+                    <Amount>30</Amount>
                 </GoodAmount>
                 <GoodAmount>
                     <GoodType>G_Gold</GoodType>
-                    <Amount>700</Amount>
+                    <Amount>2000</Amount>
                 </GoodAmount>
             </UpgradeCost>
         </UpgradeCosts>
         <MaxNumberOfUpgrades>4</MaxNumberOfUpgrades>
-        <SecondsToUpgrade>50</SecondsToUpgrade>
+        <SecondsToUpgrade>60</SecondsToUpgrade>
 
         <SecondsToUpgradeByLevel>
-            <Seconds>50</Seconds>
-	        <Seconds>100</Seconds>
-	        <Seconds>200</Seconds>
+            <Seconds>60</Seconds>
+	        <Seconds>120</Seconds>
+	        <Seconds>180</Seconds>
             <Seconds>300</Seconds>
 	    </SecondsToUpgradeByLevel>
 
@@ -159,7 +159,7 @@
 			<MaxSettlers>30</MaxSettlers>
 		</MaxSettlersForUpgradeByLevel>
 		
-        <MaxHealth>5000</MaxHealth>
+        <MaxHealth>10000</MaxHealth>
 
         <MinFloorFireSize>0</MinFloorFireSize>
         <MaxFloorFireSize>30</MaxFloorFireSize>
@@ -184,6 +184,21 @@
 			<SermonSettlerLimit>30</SermonSettlerLimit>
 			<SermonSettlerLimit>60</SermonSettlerLimit>
 		</SermonSettlerLimits>
+		
+		<MaxHitpoints>
+			<MaxHitpoint>5000</MaxHitpoint>
+			<MaxHitpoint>6000</MaxHitpoint>
+			<MaxHitpoint>7000</MaxHitpoint>
+			<MaxHitpoint>8000</MaxHitpoint>
+			<MaxHitpoint>10000</MaxHitpoint>
+		</MaxHitpoints>
+
+		<PrestigePointsForUpgrade>
+			<PrestigePoints>100</PrestigePoints>
+			<PrestigePoints>200</PrestigePoints>
+			<PrestigePoints>300</PrestigePoints>
+			<PrestigePoints>1000</PrestigePoints>
+		</PrestigePointsForUpgrade>
 
         <Worker>U_WallConstructionWorker</Worker>
         <MaxWorkers>0</MaxWorkers>
@@ -246,7 +261,7 @@
         </BuildBlockingAreas>
 
         <ConstructionInfo>
-            <Time>30</Time>
+            <Time>60</Time>
             <BuilderSlots>
                 <BuilderSlot>
                     <Position>
@@ -261,7 +276,7 @@
         
         <SoundImpactType>Stone</SoundImpactType>
 
-		<OnScreenIcon>MinimapCathedral</OnScreenIcon>
+		<OnScreenIcon>MinimapBeautificationCathedral</OnScreenIcon>
     </Logic>
 
     <Behaviors>

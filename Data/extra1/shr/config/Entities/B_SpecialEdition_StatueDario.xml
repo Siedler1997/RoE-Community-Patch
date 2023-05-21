@@ -1,8 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<root>
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
     <Display classname="ED::CBuildingProps">
         <Class>ED::CDisplayBuilding</Class>
-		<Model>Doodads\D_AS_Brazier</Model>
+        <Model>Doodads\D_X_SpecialEdition_StatueDario</Model>
         <FireNodeCount>15</FireNodeCount>
     </Display>
 
@@ -10,12 +9,12 @@
         <Class>EGL::CBuilding</Class>
         <Cost>
             <GoodAmount>
-                <GoodType>G_Iron</GoodType>
-                <Amount>15</Amount>
+                <GoodType>G_Stone</GoodType>
+                <Amount>22</Amount>
             </GoodAmount>
             <GoodAmount>
                 <GoodType>G_Gold</GoodType>
-                <Amount>400</Amount>
+                <Amount>600</Amount>
             </GoodAmount>
         </Cost>
         <AccessCategory>AccessCategoryBuilding</AccessCategory>
@@ -48,21 +47,21 @@
             </BuildBlockingArea>
 	     </BuildBlockingAreas>
          <ConstructionInfo>
-            <Time>30</Time>
+            <Time>35</Time>
             <TaskListConstruction>TL_CONSTRUCT_BUILDING</TaskListConstruction>
-            <ConstructionSite>B_BuildingPlot_2x2</ConstructionSite>
+            <ConstructionSite>B_BuildingPlot_8x8</ConstructionSite>
         </ConstructionInfo>
         <CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim>
         <FlattenOnBuild>true</FlattenOnBuild>
         <IsHeightLocking>true</IsHeightLocking>
-        <MaxHealth>100</MaxHealth>
+        <MaxHealth>150</MaxHealth>
         <MinFloorFireSize>0</MinFloorFireSize>
         <MaxFloorFireSize>0</MaxFloorFireSize>
         <MayRemoveEntities>true</MayRemoveEntities>
         <NeedsPlayer>true</NeedsPlayer>
         <ForceNoPlayer>false</ForceNoPlayer>
         <CanBeKnockedDown>true</CanBeKnockedDown>
-        <Worker>U_OutpostConstructionWorker</Worker> <!-- Construction only -->
+        <Worker>U_WallConstructionWorker</Worker> <!-- Construction only -->
         <MaxWorkers>0</MaxWorkers>                   <!-- Construction only -->
         <EntityCategories>
             <EntityCategory>AttackableBuilding</EntityCategory>
@@ -70,7 +69,7 @@
 
         <Exploration>0</Exploration>
         <NoAutoRepair>true</NoAutoRepair>
-        <SoundImpactType>Stone_Wood</SoundImpactType>
+        <SoundImpactType>Stone</SoundImpactType>
     </Logic>
     <Behavior>
       <Logic classname="EGL::CBehaviorProps">
@@ -81,8 +80,8 @@
       </Display>
     </Behavior>
     <MapEditor>
-        <TreePosition>Buildings/Beautyfication</TreePosition>
-        <ShowInTree>True</ShowInTree>
+        <TreePosition>SpecialEdition</TreePosition>
+        <ShowInTree>false</ShowInTree>
         <Clime>Generic</Clime>
         <Scalable>false</Scalable>
         <TemplateResistant>true</TemplateResistant>

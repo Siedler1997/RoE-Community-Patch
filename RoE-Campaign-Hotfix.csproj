@@ -5063,6 +5063,7 @@
     <Content Include="Data\extra1\shr\config\Entities\B_PalisadeSegment.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_SpearMaker.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_SpecialEdition_Column.xml" />
+    <Content Include="Data\extra1\shr\config\Entities\B_SpecialEdition_StatueDario.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_SpecialEdition_StatueFamily.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_SpecialEdition_StatueProduction.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_SpecialEdition_StatueSettler.xml" />
@@ -5187,6 +5188,7 @@
     <Content Include="Data\extra1\shr\graphics\Textures\GUI_1200\IconsBig.png" />
     <Content Include="Data\extra1\shr\graphics\Textures\GUI_1200\IconsBig2.png" />
     <Content Include="Data\extra1\shr\graphics\Textures\GUI_1200\IconsBig3.png" />
+    <Content Include="Data\extra1\shr\graphics\Textures\GUI_1200\IconsTiny2.png" />
     <Content Include="Data\extra1\shr\graphics\Textures\GUI_1200\Loadscreens\chapter1.png" />
     <Content Include="Data\extra1\shr\graphics\Textures\GUI_1200\Loadscreens\chapter2.png" />
     <Content Include="Data\extra1\shr\graphics\Textures\GUI_1200\Loadscreens\chapter3_Test.png" />

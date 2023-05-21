@@ -15,7 +15,7 @@
 			</GoodAmount>
 			<GoodAmount>
 				<GoodType>G_Gold</GoodType>
-				<Amount>600</Amount>
+				<Amount>200</Amount>
 			</GoodAmount>
 		</Cost>
 		<AccessCategory>AccessCategoryBuilding</AccessCategory>
