@@ -10,8 +10,8 @@
 		<Class>EGL::CBuilding</Class>
 		<Cost>
 			<GoodAmount>
-				<GoodType>G_Iron</GoodType>
-				<Amount>4</Amount>
+				<GoodType>G_Honeycomb</GoodType>
+				<Amount>1</Amount>
 			</GoodAmount>
 			<GoodAmount>
 				<GoodType>G_Gold</GoodType>
@@ -26,24 +26,24 @@
 		<BlockingAreas>
 			<BlockingArea>
 				<Blocked1>
-					<X>-100</X>
-					<Y>100</Y>
+					<X>-50</X>
+					<Y>50</Y>
 				</Blocked1>
 				<Blocked2>
-					<X>100</X>
-					<Y>-100</Y>
+					<X>50</X>
+					<Y>-50</Y>
 				</Blocked2>
 			</BlockingArea>
 		</BlockingAreas>
 		<BuildBlockingAreas>
 			<BuildBlockingArea>
 				<Blocked1>
-					<X>-100</X>
-					<Y>100</Y>
+					<X>-50</X>
+					<Y>50</Y>
 				</Blocked1>
 				<Blocked2>
-					<X>100</X>
-					<Y>-100</Y>
+					<X>50</X>
+					<Y>-50</Y>
 				</Blocked2>
 			</BuildBlockingArea>
 		</BuildBlockingAreas>

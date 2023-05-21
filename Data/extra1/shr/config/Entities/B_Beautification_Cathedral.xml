@@ -2,6 +2,7 @@
     <Display classname="ED::CReplaceUpgradeBuildingProps">
 
         <Class>ED::CReplaceUpgradeBuilding</Class>
+		<Decal>Buildings\B_Castle_ME_Decal</Decal>
 
         <Model>Buildings\B_Cathedral_Big00</Model>
 
@@ -92,7 +93,7 @@
 			</GoodAmount>
 			<GoodAmount>
 				<GoodType>G_Gold</GoodType>
-				<Amount>3000</Amount>
+				<Amount>2000</Amount>
 			</GoodAmount>
         </Cost>
 
@@ -144,37 +145,30 @@
         <MaxNumberOfUpgrades>4</MaxNumberOfUpgrades>
         <SecondsToUpgrade>50</SecondsToUpgrade>
 
-    <SecondsToUpgradeByLevel>
-        <Seconds>50</Seconds>
-	    <Seconds>100</Seconds>
-	    <Seconds>200</Seconds>
-        <Seconds>300</Seconds>
-	</SecondsToUpgradeByLevel>
+        <SecondsToUpgradeByLevel>
+            <Seconds>50</Seconds>
+	        <Seconds>100</Seconds>
+	        <Seconds>200</Seconds>
+            <Seconds>300</Seconds>
+	    </SecondsToUpgradeByLevel>
 
-	<MaxSettlersForUpgradeByLevel>
-	    <MaxSettlers>5</MaxSettlers>
-	    <MaxSettlers>10</MaxSettlers>
-	    <MaxSettlers>20</MaxSettlers>
-	    <MaxSettlers>25</MaxSettlers>
-	</MaxSettlersForUpgradeByLevel>
-
-	<PrestigePointsForUpgrade>
-        <PrestigePoints>100</PrestigePoints>
-        <PrestigePoints>200</PrestigePoints>
-        <PrestigePoints>400</PrestigePoints>
-        <PrestigePoints>800</PrestigePoints>
-    </PrestigePointsForUpgrade>
-
-        <MaxHealth>500</MaxHealth>
+		<MaxSettlersForUpgradeByLevel>
+			<MaxSettlers>5</MaxSettlers>
+			<MaxSettlers>10</MaxSettlers>
+			<MaxSettlers>20</MaxSettlers>
+			<MaxSettlers>30</MaxSettlers>
+		</MaxSettlersForUpgradeByLevel>
+		
+        <MaxHealth>5000</MaxHealth>
 
         <MinFloorFireSize>0</MinFloorFireSize>
         <MaxFloorFireSize>30</MaxFloorFireSize>
 
-        <CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim>
+        <CanBeBuildOnOuterRim>false</CanBeBuildOnOuterRim>
         <CanLeaveImmediately>true</CanLeaveImmediately>
         <FlattenOnBuild>true</FlattenOnBuild>
-	<IsHeightLocking>true</IsHeightLocking>
-	<MayRemoveEntities>true</MayRemoveEntities>
+	    <IsHeightLocking>true</IsHeightLocking>
+	    <MayRemoveEntities>true</MayRemoveEntities>
         <AccessCategory>AccessCategoryBuilding</AccessCategory>
         <NeedsPlayer>true</NeedsPlayer>
         <ForceNoPlayer>false</ForceNoPlayer>
@@ -184,44 +178,31 @@
         <AlarmRepairMaterial>G_Stone</AlarmRepairMaterial>
         <AlarmRepairProvider>G_Stone_Supplier</AlarmRepairProvider>
 
-        <SermonSettlerLimits>
+		<SermonSettlerLimits>
+			<SermonSettlerLimit>10</SermonSettlerLimit>
 			<SermonSettlerLimit>15</SermonSettlerLimit>
-			<SermonSettlerLimit>20</SermonSettlerLimit>
-			<SermonSettlerLimit>40</SermonSettlerLimit>
-			<SermonSettlerLimit>80</SermonSettlerLimit>
-        </SermonSettlerLimits>
+			<SermonSettlerLimit>30</SermonSettlerLimit>
+			<SermonSettlerLimit>60</SermonSettlerLimit>
+		</SermonSettlerLimits>
 
-        <Worker>U_Priest</Worker>
-        <MaxWorkers>1</MaxWorkers>
+        <Worker>U_WallConstructionWorker</Worker>
+        <MaxWorkers>0</MaxWorkers>
 
-        <WorkTaskLists>
-            <WorkTaskList>TL_PRIEST_WORK</WorkTaskList>
-            <WorkTaskList>TL_PRIEST_WORK</WorkTaskList>
-            <WorkTaskList>TL_PRIEST_WORK</WorkTaskList>
-        </WorkTaskLists>
-        <FireDuringSermonTL>TL_CATHEDRAL_ON_FIRE_DURING_SERMON</FireDuringSermonTL>
+		<FireDuringSermonTL>TL_CATHEDRAL_ON_FIRE_DURING_SERMON</FireDuringSermonTL>
         <RepairBuildingTL>TL_WORKER_REPAIR</RepairBuildingTL>
 
         <Loot><Type>InfoCathedral</Type></Loot>
 
-        <OutStockCapacities>
-            <OutStockCapacity>10</OutStockCapacity>
-        </OutStockCapacities>
+		<OutStockCapacities>
+			<OutStockCapacity>10</OutStockCapacity>
+		</OutStockCapacities>
 
         <Exploration>0</Exploration>
 
         <EntityCategories>
-            <EntityCategory>Cathedrals</EntityCategory>
             <EntityCategory>AttackableBuilding</EntityCategory>
             <EntityCategory>SpecialBuilding</EntityCategory>
         </EntityCategories>
-
-		<SoldierLimits>
-			<Limit>25</Limit>
-			<Limit>55</Limit>
-			<Limit>85</Limit>
-			<Limit>115</Limit>
-		</SoldierLimits>
 
         <ApproachPos>
             <X>0</X>
@@ -237,10 +218,6 @@
             <X>400</X>
             <Y>-1500</Y>
         </IdlePos>
-        <OutstockPos>
-            <X>300</X>
-            <Y>-1500</Y>
-        </OutstockPos>
 
         <BlockingAreas>
             <BlockingArea>
@@ -279,7 +256,7 @@
                     <Orientation>0</Orientation>
                 </BuilderSlot>
             </BuilderSlots>
-            <ConstructionSite>B_BuildingPlot_10x10</ConstructionSite>
+            <ConstructionSite>B_BuildingPlot_12x12</ConstructionSite>
         </ConstructionInfo>
         
         <SoundImpactType>Stone</SoundImpactType>

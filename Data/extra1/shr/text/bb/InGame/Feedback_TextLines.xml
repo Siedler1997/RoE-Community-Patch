@@ -45,4 +45,6 @@
 <string id="TextLine_TradeGathererUnderway" MD5Hash="" mod="20070831092348" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Please wait until the Trade Gatherer has returned to the Storehouse.]]></string>
 <string id="TextLine_SaveGameFailed" MD5Hash="" mod="20070910140400" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Failed to save game!]]></string>
 	<string id="TextLine_EntityLimitReached" MD5Hash="3A4DDE7FEB9B80366265083A4005D5F6" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[The limit for that unit has been reached!]]></string>
+	<string id="TextLine_NotEnough_G_Honeycomb" MD5Hash="A4C0658B6317FE5BC2F35F190044F90F" mod="20070815142928" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Not enough Honeycombs!]]></string>
+	<string id="TextLine_NotEnough_G_Gold_G_Honeycomb" MD5Hash="A4C0658B6317FE5BC2F35F190044F90F" mod="20070815142928" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Not enough Gold and Honeycombs!]]></string>
 </root>

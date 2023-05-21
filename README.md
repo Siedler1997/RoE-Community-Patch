@@ -136,19 +136,25 @@ Folgende Änderungen wurden vorgenommen:
 	- Diebe
 		- Sind auf maximal 6 Stück gleichzeitig pro Spieler limitiert
 - Gebäude
-	- Kirche
-		- Mehr Siedler pro Predigt möglich
-		- Einwohnerlimit pro Ausbaustufe erhöht
-		- Eigenes Icon auf der Minimap
-	- Burg
-		- Soldatenlimit pro Ausbaustufe erhöht
-		- Eigenes Icon auf der Minimap
-		- Spielerwappen wird nicht mehr auf dem Banner am Eingang abgebildet
-			- Technisch leider zwecks Konsistenz zwischen alten und neuen Wappen notwendig
-	- Lagerhaus
-		- Lagerkapazität der 3. und 4. Ausbaustufe erhöht
-		- Eigenes Icon auf der Minimap
-	- Marktplatz: Generische Ritter-Statue bei Khana, Praphat und Kastellanen
+	- Spezialgebäude
+		- Allgemein
+			- Ausbau triggert nicht mehr Hakims/Praphats Info bzgl. Rabatt auf Ausbaukosten
+				- Grund: Die Fähigkeit wirkt sich nicht auf den Ausbau jener Gebäude aus
+			- Ausbaubutton erscheint nicht mehr bei Errichtung
+				- Normalerweise nur relevant beim Bau der neuen Kathedrale
+		- Kirche
+			- Mehr Siedler pro Predigt möglich
+			- Einwohnerlimit pro Ausbaustufe erhöht
+			- Eigenes Icon auf der Minimap
+		- Burg
+			- Soldatenlimit pro Ausbaustufe erhöht
+			- Eigenes Icon auf der Minimap
+			- Spielerwappen wird nicht mehr auf dem Banner am Eingang abgebildet
+				- Technisch leider zwecks Konsistenz zwischen alten und neuen Wappen notwendig
+		- Lagerhaus
+			- Lagerkapazität der 3. und 4. Ausbaustufe erhöht
+			- Eigenes Icon auf der Minimap
+		- Marktplatz: Generische Ritter-Statue bei Khana, Praphat und Kastellanen
 	- "Neue" Gebäude
 		- Wachturm
 			- Kostet 11 Steine

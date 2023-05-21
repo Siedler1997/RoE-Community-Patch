@@ -4995,7 +4995,7 @@
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Knight_Plunder.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Knight_Song.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Knight_Trading.xml" />
-    <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Knight_Wisdomr.xml" />
+    <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Knight_Wisdom.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Knight_Sabatt.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Knight_RedPrince.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Knight_Praphat.xml" />

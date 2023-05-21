@@ -587,6 +587,59 @@ end
 
 ------------------------------------------------------------------------------------------------
 
+function GUI_Construction.BuildNPCWallClicked()
+    GUI_Construction.BuildWallClicked(GetUpgradeCategoryForClimatezone("WallSegment_NPC"))
+end
+
+function GUI_Construction.BuildKnightStatueClicked()
+    local KnightId = Logic.GetKnightID(GUI.GetPlayerID())
+    if KnightId ~= nil then
+        local KnightType = Logic.GetEntityTypeName(Logic.GetEntityType(KnightId))
+        local UpgradeCategoryName = "Beautification_" ..KnightType
+        local UpgradeCategory = UpgradeCategories[UpgradeCategoryName]
+    
+        GUI_Construction.BuildClicked(UpgradeCategory)
+    else
+        GUI_Construction.BuildClicked(UpgradeCategories.Beautification_U_KnightGeneric)
+    end
+end
+
+function GUI_Construction.BuildPlazaClicked()
+    local buildingType = GetUpgradeCategoryForClimatezone("Beautification_Plaza")
+    PlacementState = 0
+
+    XGUIEng.UnHighLightGroup("/InGame", "Construction")
+
+    if not GUI_Construction.TestSettlerLimit(buildingType) then
+        return
+    end
+
+    local CanPlace, CanNotPlaceString = CanPlaceByCosts(buildingType)
+
+    if CanPlace == false then
+        Message(CanNotPlaceString)
+    else
+        Sound.FXPlay2DSound( "ui\\menu_select")
+        GUI.CancelState()
+
+        GUI.ActivatePlaceBuildingState(buildingType)
+
+        XGUIEng.ShowWidget("/Ingame/Root/Normal/PlacementStatus",1)
+        GUI_Construction.CloseContextSensitiveMenu()
+
+        -- save last placement
+        g_LastPlacedParam = buildingType
+        g_LastPlacedFunction = GUI_Construction.BuildClicked
+
+        -- tell the tutorial, that this button has been pressed by the player
+        if XGUIEng.GetCurrentWidgetID() ~= 0 then
+            SaveButtonPressed(XGUIEng.GetCurrentWidgetID())
+        end
+    end
+end
+
+------------------------------------------------------------------------------------------------
+
 function GUI_Construction.KnockDownClicked()
     Sound.FXPlay2DSound( "ui\\menu_right_knock_down")
 

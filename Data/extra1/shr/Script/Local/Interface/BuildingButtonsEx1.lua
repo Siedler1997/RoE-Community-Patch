@@ -6,6 +6,7 @@ GUI_BuildingButtons.EntitiesWithLimit = {
 function GUI_BuildingButtons.UpgradeSpecialBuildingUpdate()
     local CurrentWidgetID = XGUIEng.GetCurrentWidgetID()
     local EntityID = GUI.GetSelectedEntity()
+    local EntityType = Logic.GetEntityType(EntityID)
     local PlayerID = GUI.GetPlayerID()
 
     if EntityID == nil
@@ -31,7 +32,8 @@ function GUI_BuildingButtons.UpgradeSpecialBuildingUpdate()
     -- do not show button, when building can not be upgraded anymore
     if (Logic.IsBuilding(EntityID) == 0
     or (Logic.IsBuilding(EntityID) == 1
-    and Logic.IsBuildingUpgradable(EntityID, true) == false)) then
+    and (Logic.IsBuildingUpgradable(EntityID, true) == false 
+    or Logic.IsConstructionComplete(EntityID) == 0))) then
         XGUIEng.ShowWidget(CurrentWidgetID, 0)
         return
     else
@@ -42,7 +44,7 @@ function GUI_BuildingButtons.UpgradeSpecialBuildingUpdate()
         elseif EntityID == Logic.GetStoreHouse(PlayerID) then
             SetIcon(CurrentWidgetID, {4, 6})
 
-        elseif EntityID == Logic.GetCathedral(PlayerID) then
+        elseif EntityID == Logic.GetCathedral(PlayerID) or EntityType == Entities.B_Beautification_Cathedral then
             SetIcon(CurrentWidgetID, {4, 5})
 
         else
@@ -65,6 +67,121 @@ function GUI_BuildingButtons.UpgradeSpecialBuildingUpdate()
             XGUIEng.DisableButton(CurrentWidgetID, 0)
         end
     end
+end
+
+function GUI_BuildingButtons.UpgradeMouseOver()
+
+    local TooltipTextKey
+    local TooltipTextKeyDisabled
+
+    local CurrentWidgetID = XGUIEng.GetCurrentWidgetID()
+    local PlayerID = GUI.GetPlayerID()
+    local EntityID = GUI.GetSelectedEntity()
+    local EntityType = Logic.GetEntityType(EntityID)
+
+    local UpgradeCosts = GUI_BuildingButtons.GetUpgradeCosts()
+
+    -- used to check if technology is locked (upgrade is impossible)
+    local TechnologyType = Technologies.R_BuildingUpgrade
+
+    if EntityID ~= 0 and EntityID ~= nil then
+        if Logic.IsEntityInCategory(EntityID, EntityCategories.OuterRimBuilding) == 1 then
+            TooltipTextKey = "UpgradeOuterRim"
+
+            if Logic.BuildingDoWorkersStrike(EntityID) == true then
+                TooltipTextKeyDisabled = "UpgradeSettlersStrike"
+            end
+
+        elseif Logic.IsEntityInCategory(EntityID, EntityCategories.CityBuilding) == 1 then
+            TooltipTextKey = "UpgradeCity"
+
+            if Logic.BuildingDoWorkersStrike(EntityID) == true then
+                TooltipTextKeyDisabled = "UpgradeSettlersStrike"
+            end
+
+            if Logic.GetEntityType(EntityID) == Entities.B_Theatre then
+                local TheatrePlayProgress = Logic.GetTheatrePlayProgress(EntityID)
+
+                if TheatrePlayProgress ~= 0 then
+                    TooltipTextKeyDisabled = "UpgradeTheaterPlayRunning"
+                end
+            end
+
+        elseif Logic.IsEntityInCategory(EntityID, EntityCategories.Outpost) == 1 then
+            TooltipTextKey = "UpgradeOutpost"
+
+            if Logic.BuildingDoWorkersStrike(EntityID) == true then
+                TooltipTextKeyDisabled = "UpgradeSettlersStrike"
+            end
+
+        elseif Logic.IsEntityInCategory(EntityID, EntityCategories.Storehouse) == 1 then
+            TooltipTextKey = "UpgradeStorehouse"
+
+            if Logic.GetNumberOfEmployedWorkers(PlayerID) < 2 then
+                TooltipTextKeyDisabled = "UpgradeStorehouseNoSettler"
+            end
+
+            local UpgradeLevel = Logic.GetUpgradeLevel(EntityID) + 1
+            TechnologyType = TechnologyNeededForUpgrade[EntityCategories.Storehouse][UpgradeLevel]
+
+        elseif Logic.IsEntityInCategory(EntityID, EntityCategories.Headquarters) == 1 then
+            TooltipTextKey = "UpgradeCastle"
+
+            if Logic.GetNumberOfEmployedWorkers(PlayerID) < 2 then
+                TooltipTextKeyDisabled = "UpgradeCastleNoSettler"
+            end
+
+            local UpgradeLevel = Logic.GetUpgradeLevel(EntityID) + 1
+            TechnologyType = TechnologyNeededForUpgrade[EntityCategories.Headquarters][UpgradeLevel]
+
+        elseif EntityType == Entities.B_Beautification_Cathedral then
+            TooltipTextKey = "UpgradeBeutification"
+
+            if Logic.GetNumberOfEmployedWorkers(PlayerID) < 2 then
+                TooltipTextKeyDisabled = "UpgradeCathedralNoSettler"
+            end
+
+        elseif Logic.IsEntityInCategory(EntityID, EntityCategories.Cathedrals) == 1 then
+            TooltipTextKey = "UpgradeCathedral"
+
+            if Logic.GetNumberOfEmployedWorkers(PlayerID) < 2 then
+                TooltipTextKeyDisabled = "UpgradeCathedralNoSettler"
+            end
+
+            if Logic.IsSermonActive(PlayerID) == true then
+                TooltipTextKeyDisabled = "UpgradeCathedralSermonRunning"
+            end
+
+            local UpgradeLevel = Logic.GetUpgradeLevel(EntityID) + 1
+            TechnologyType = TechnologyNeededForUpgrade[EntityCategories.Cathedrals][UpgradeLevel]
+        end
+    end
+
+    local CurrentHealth = Logic.GetEntityHealth(EntityID)
+    local MaxHealth = Logic.GetEntityMaxHealth(EntityID)
+    local Damage = MaxHealth - CurrentHealth
+
+    if Logic.CanCancelUpgradeBuilding(EntityID) then
+        UpgradeCosts = {}
+        TooltipTextKey = TooltipTextKey .. "Cancel"
+    end
+
+    if Damage > 0
+    and Logic.IsBuildingBeingUpgraded(EntityID) == false then
+        TooltipTextKeyDisabled = "UpgradeDamaged"
+    end
+
+    if Logic.CanCancelKnockDownBuilding(EntityID) then
+        TooltipTextKeyDisabled = "UpgradeKnockDown"
+    end
+
+    if Logic.TechnologyGetState(PlayerID, TechnologyType) == TechnologyStates.Locked
+        or IsSpecificBuildingUpgradeLocked( PlayerID, EntityID ) then
+        
+        TooltipTextKeyDisabled = "UpgradeLevelLocked"
+    end
+
+    GUI_Tooltip.TooltipBuy(UpgradeCosts, TooltipTextKey, TooltipTextKeyDisabled)
 end
 
 function GUI_BuildingButtons.UpgradeTurretClicked()
@@ -638,7 +755,6 @@ function GUI_BuildingButtons.BuyBattalionUpdate(_IsSpecial)
 end
 
 function GUI_BuildingButtons.UpgradeClicked()
-
     local EntityID = GUI.GetSelectedEntity()
 
     if Logic.CanCancelUpgradeBuilding(EntityID) then
@@ -655,8 +771,10 @@ function GUI_BuildingButtons.UpgradeClicked()
         Sound.FXPlay2DSound("ui\\menu_click")
         GUI.UpgradeBuilding(EntityID, UpgradePart)
 
-        StartKnightVoiceForPermanentSpecialAbility(Entities.U_KnightWisdom)
-        StartKnightVoiceForPermanentSpecialAbility(Entities.U_KnightPraphat)
+        if Logic.IsEntityInCategory(EntityID, EntityCategories.SpecialBuilding ) == 0 then
+            StartKnightVoiceForPermanentSpecialAbility(Entities.U_KnightWisdom)
+            StartKnightVoiceForPermanentSpecialAbility(Entities.U_KnightPraphat)
+        end
 
         if XGUIEng.GetCurrentWidgetID() ~= 0 then
             SaveButtonPressed(XGUIEng.GetCurrentWidgetID())

@@ -124,68 +124,76 @@
 		<FirstBuilding>B_Beautification_Knight_Chivalry</FirstBuilding>
 	</BuildingUpgrade>
 	<BuildingUpgrade>
-		<Category>Beautification_Knight_Healing</Category>
+		<Category>Beautification_U_KnightHealing</Category>
 		<FirstBuilding>B_Beautification_Knight_Healing</FirstBuilding>
 	</BuildingUpgrade>
 	<BuildingUpgrade>
-		<Category>Beautification_Knight_Plunder</Category>
+		<Category>Beautification_U_KnightPlunder</Category>
 		<FirstBuilding>B_Beautification_Knight_Plunder</FirstBuilding>
 	</BuildingUpgrade>
 	<BuildingUpgrade>
-		<Category>Beautification_Knight_Song</Category>
+		<Category>Beautification_U_KnightSong</Category>
 		<FirstBuilding>B_Beautification_Knight_Song</FirstBuilding>
 	</BuildingUpgrade>
 	<BuildingUpgrade>
-		<Category>Beautification_Knight_Trading</Category>
+		<Category>Beautification_U_KnightTrading</Category>
 		<FirstBuilding>B_Beautification_Knight_Trading</FirstBuilding>
 	</BuildingUpgrade>
 	<BuildingUpgrade>
-		<Category>Beautification_Knight_Wisdom</Category>
+		<Category>Beautification_U_KnightWisdom</Category>
 		<FirstBuilding>B_Beautification_Knight_Wisdom</FirstBuilding>
 	</BuildingUpgrade>
 	<BuildingUpgrade>
-		<Category>Beautification_Knight_Sabatt</Category>
+		<Category>Beautification_U_KnightSabatt</Category>
 		<FirstBuilding>B_Beautification_Knight_Sabatt</FirstBuilding>
 	</BuildingUpgrade>
 	<BuildingUpgrade>
-		<Category>Beautification_Knight_RedPrince</Category>
+		<Category>Beautification_U_KnightRedPrince</Category>
 		<FirstBuilding>B_Beautification_Knight_RedPrince</FirstBuilding>
 	</BuildingUpgrade>
 	<BuildingUpgrade>
-		<Category>Beautification_Knight_Saraya</Category>
+		<Category>Beautification_U_KnightSaraya</Category>
 		<FirstBuilding>B_Beautification_Knight_Saraya</FirstBuilding>
 	</BuildingUpgrade>
 	<BuildingUpgrade>
-		<Category>Beautification_Knight_Praphat</Category>
+		<Category>Beautification_U_KnightPraphat</Category>
 		<FirstBuilding>B_Beautification_Knight_Praphat</FirstBuilding>
 	</BuildingUpgrade>
 	<BuildingUpgrade>
-		<Category>Beautification_Knight_Khana</Category>
+		<Category>Beautification_U_KnightKhana</Category>
 		<FirstBuilding>B_Beautification_Knight_Khana</FirstBuilding>
 	</BuildingUpgrade>
 	<BuildingUpgrade>
-		<Category>Beautification_Knight_Generic</Category>
+		<Category>Beautification_U_KnightGeneric</Category>
 		<FirstBuilding>B_Beautification_Knight_Generic</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>Beautification_Dragon</Category>
+		<FirstBuilding>B_Beautification_Dragon</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>Beautification_Cathedral</Category>
+		<FirstBuilding>B_Beautification_Cathedral</FirstBuilding>
 	</BuildingUpgrade>
 	
 	<BuildingUpgrade>
-		<Category>Beautification_Plaza_ME</Category>
+		<Category>Beautification_Plaza_MiddleEurope</Category>
 		<FirstBuilding>B_Beautification_Plaza_ME</FirstBuilding>
 	</BuildingUpgrade>
 	<BuildingUpgrade>
-		<Category>Beautification_Plaza_NE</Category>
+		<Category>Beautification_Plaza_NorthEurope</Category>
 		<FirstBuilding>B_Beautification_Plaza_NE</FirstBuilding>
 	</BuildingUpgrade>
 	<BuildingUpgrade>
-		<Category>Beautification_Plaza_SE</Category>
+		<Category>Beautification_Plaza_SouthEurop</Category>
 		<FirstBuilding>B_Beautification_Plaza_SE</FirstBuilding>
 	</BuildingUpgrade>
 	<BuildingUpgrade>
-		<Category>Beautification_Plaza_NA</Category>
+		<Category>Beautification_Plaza_NorthAfrica</Category>
 		<FirstBuilding>B_Beautification_Plaza_NA</FirstBuilding>
 	</BuildingUpgrade>
 	<BuildingUpgrade>
-		<Category>Beautification_Plaza_AS</Category>
+		<Category>Beautification_Plaza_Asia</Category>
 		<FirstBuilding>B_Beautification_Plaza_AS</FirstBuilding>
 	</BuildingUpgrade>
 

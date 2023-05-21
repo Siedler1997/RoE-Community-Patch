@@ -165,7 +165,7 @@ function GameCallback_GUI_SelectionChanged(_Source)
 
                 local AnchorInfoForBigX, AnchorInfoForBigY = XGUIEng.GetWidgetLocalPosition("/InGame/Root/Normal/AlignBottomRight/Selection/AnchorInfoForBig")
                 XGUIEng.SetWidgetLocalPosition("/InGame/Root/Normal/AlignBottomRight/Selection/Info", AnchorInfoForBigX, AnchorInfoForBigY)
-            elseif Logic.GetCathedral(PlayerID) == EntityID or EntityType == Entities.B_Beautification_Cathedral then
+            elseif Logic.GetCathedral(PlayerID) == EntityID then
                 XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/Selection/BGSmall",1)
                 XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/Selection/Cathedral",1)
                 XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/Building",1)
@@ -177,6 +177,14 @@ function GameCallback_GUI_SelectionChanged(_Source)
                 XGUIEng.ShowWidget("/InGame/Root/Normal/Selected_Tradepost",1)
                 XGUIEng.ShowAllSubWidgets("/InGame/Root/Normal/Selected_Tradepost/Trades", 1)
                 GUI_Tradepost.TradepostSelected()
+            elseif EntityType == Entities.B_Beautification_Cathedral then
+                XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/Selection/BGSmall",1)
+                XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/Selection/Beautification_Cathedral",1)
+                XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/Building",1)
+                XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/Building/JumpToWorker",0)
+
+                local AnchorInfoForSmallX, AnchorInfoForSmallY = XGUIEng.GetWidgetLocalPosition("/InGame/Root/Normal/AlignBottomRight/Selection/AnchorInfoForSmall")
+                XGUIEng.SetWidgetLocalPosition("/InGame/Root/Normal/AlignBottomRight/Selection/Info", AnchorInfoForSmallX, AnchorInfoForSmallY)
             else
                 XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/Selection/Info",0)
             end
