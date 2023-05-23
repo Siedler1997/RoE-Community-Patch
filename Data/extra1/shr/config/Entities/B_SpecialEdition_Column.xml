@@ -21,29 +21,29 @@
         <AccessCategory>AccessCategoryBuilding</AccessCategory>
         <ApproachPos>
             <X>0</X>
-            <Y>-200</Y>
+            <Y>-250</Y>
         </ApproachPos>
         <BlockingAreas>
             <BlockingArea>
                 <Blocked1>
-                    <X>-100</X>
-                    <Y>100</Y>
+                    <X>-150</X>
+                    <Y>150</Y>
                 </Blocked1>
                 <Blocked2>
-                    <X>100</X>
-                    <Y>-100</Y>
+                    <X>150</X>
+                    <Y>-150</Y>
                 </Blocked2>
             </BlockingArea>
         </BlockingAreas>
         <BuildBlockingAreas>
             <BuildBlockingArea>
                 <Blocked1>
-            	    <X>-100</X>
-            	    <Y>100</Y>
+            	    <X>-150</X>
+            	    <Y>150</Y>
                 </Blocked1>
                 <Blocked2>
-            	    <X>100</X>
-            	    <Y>-250</Y>
+            	    <X>150</X>
+            	    <Y>-200</Y>
                 </Blocked2>
             </BuildBlockingArea>
 	     </BuildBlockingAreas>

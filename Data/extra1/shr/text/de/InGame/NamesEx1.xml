@@ -117,7 +117,7 @@
 	<string id="B_GuardTower_AS" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Wachturm]]></string>
 	<string id="B_WatchTower_AS" MD5Hash="01AC712A939250264015BD7386896BB1" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Aussichtsturm]]></string>
 
-	<string id="B_Beautification_CloisterHutGrave" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Friedhof]]></string>
+	<string id="B_Beautification_Graveyard" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Friedhof]]></string>
 	<string id="B_Beautification_ExecutionerPlace" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Richtplatz]]></string>
 	<string id="B_Beautification_BrothersInArms" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Kameraden-Statue]]></string>
 	<string id="B_SpecialEdition_Pavilion" MD5Hash="6481C1A0290E193EA3AA583650B15C16" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Pavillon I]]></string>

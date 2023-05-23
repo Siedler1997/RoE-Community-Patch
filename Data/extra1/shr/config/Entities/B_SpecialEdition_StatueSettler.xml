@@ -20,41 +20,41 @@
         <AccessCategory>AccessCategoryBuilding</AccessCategory>
         <ApproachPos>
             <X>0</X>
-            <Y>-200</Y>
+            <Y>-225</Y>
         </ApproachPos>
         <BlockingAreas>
             <BlockingArea>
                 <Blocked1>
-                    <X>-100</X>
-                    <Y>100</Y>
+                    <X>-125</X>
+                    <Y>125</Y>
                 </Blocked1>
                 <Blocked2>
-                    <X>100</X>
-                    <Y>-100</Y>
+                    <X>125</X>
+                    <Y>-125</Y>
                 </Blocked2>
             </BlockingArea>
         </BlockingAreas>
         <BuildBlockingAreas>
             <BuildBlockingArea>
                 <Blocked1>
-            	    <X>-100</X>
-            	    <Y>100</Y>
+            	    <X>-125</X>
+            	    <Y>125</Y>
                 </Blocked1>
                 <Blocked2>
-            	    <X>100</X>
-            	    <Y>-250</Y>
+            	    <X>125</X>
+            	    <Y>-175</Y>
                 </Blocked2>
             </BuildBlockingArea>
 	     </BuildBlockingAreas>
          <ConstructionInfo>
-            <Time>25</Time>
+            <Time>30</Time>
             <TaskListConstruction>TL_CONSTRUCT_BUILDING</TaskListConstruction>
             <ConstructionSite>B_BuildingPlot_2x2</ConstructionSite>
         </ConstructionInfo>
         <CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim>
         <FlattenOnBuild>true</FlattenOnBuild>
         <IsHeightLocking>true</IsHeightLocking>
-        <MaxHealth>50</MaxHealth>
+        <MaxHealth>30</MaxHealth>
         <MinFloorFireSize>0</MinFloorFireSize>
         <MaxFloorFireSize>0</MaxFloorFireSize>
         <MayRemoveEntities>true</MayRemoveEntities>

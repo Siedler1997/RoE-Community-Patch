@@ -26,11 +26,11 @@
         <BlockingAreas>
             <BlockingArea>
                 <Blocked1>
-                    <X>-100</X>
+                    <X>-125</X>
                     <Y>100</Y>
                 </Blocked1>
                 <Blocked2>
-                    <X>100</X>
+                    <X>125</X>
                     <Y>-100</Y>
                 </Blocked2>
             </BlockingArea>
@@ -38,24 +38,24 @@
         <BuildBlockingAreas>
             <BuildBlockingArea>
                 <Blocked1>
-            	    <X>-100</X>
+            	    <X>-125</X>
             	    <Y>100</Y>
                 </Blocked1>
                 <Blocked2>
-            	    <X>100</X>
-            	    <Y>-250</Y>
+            	    <X>125</X>
+            	    <Y>-150</Y>
                 </Blocked2>
             </BuildBlockingArea>
 	     </BuildBlockingAreas>
          <ConstructionInfo>
-            <Time>35</Time>
+            <Time>20</Time>
             <TaskListConstruction>TL_CONSTRUCT_BUILDING</TaskListConstruction>
             <ConstructionSite>B_BuildingPlot_2x2</ConstructionSite>
         </ConstructionInfo>
         <CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim>
         <FlattenOnBuild>true</FlattenOnBuild>
         <IsHeightLocking>true</IsHeightLocking>
-        <MaxHealth>150</MaxHealth>
+        <MaxHealth>10</MaxHealth>
         <MinFloorFireSize>0</MinFloorFireSize>
         <MaxFloorFireSize>0</MaxFloorFireSize>
         <MayRemoveEntities>true</MayRemoveEntities>
@@ -70,7 +70,7 @@
 
         <Exploration>0</Exploration>
         <NoAutoRepair>true</NoAutoRepair>
-        <SoundImpactType>Stone_Wood</SoundImpactType>
+        <SoundImpactType>Wood</SoundImpactType>
     </Logic>
     <Behavior>
       <Logic classname="EGL::CBehaviorProps">

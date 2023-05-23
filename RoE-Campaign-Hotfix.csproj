@@ -4729,7 +4729,6 @@
     <None Include="Data\extra1\shr\graphics\Models\Buildings\D_X_Beautification_Knight_Trading.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Buildings\D_X_Beautification_Knight_Wisdom.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Doodads\D_X_Beautification_BrothersInArms.dff" />
-    <None Include="Data\extra1\shr\graphics\Models\Doodads\D_X_Beautification_CloisterHutGrave.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Doodads\D_X_Beautification_Pavilion.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Doodads\D_X_Beautification_WoodBench.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Effects\XD_Hero2Bomb.dff" />
@@ -5016,10 +5015,12 @@
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Pavilion.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Cathedral.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_BrothersInArms.xml" />
-    <Content Include="Data\extra1\shr\config\Entities\B_Beautification_CloisterHutGrave.xml" />
+    <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Graveyard.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Dragon.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Pillar.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Shrine.xml" />
+    <Content Include="Data\extra1\shr\config\Entities\B_Beautification_TriumphalArch.xml" />
+    <Content Include="Data\extra1\shr\config\Entities\B_Beautification_VictoryColumn.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_WoodBench.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_StoneBench.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Sundial.xml" />
@@ -5063,6 +5064,7 @@
     <Content Include="Data\extra1\shr\config\Entities\B_PalisadeSegment.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_SpearMaker.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_SpecialEdition_Column.xml" />
+    <Content Include="Data\extra1\shr\config\Entities\B_SpecialEdition_Pavilion.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_SpecialEdition_StatueDario.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_SpecialEdition_StatueFamily.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_SpecialEdition_StatueProduction.xml" />

@@ -2,7 +2,7 @@
 <root>
 	<Display classname="ED::CBuildingProps">
 		<Class>ED::CDisplayBuilding</Class>
-		<Model>Doodads\D_X_Beautification_CloisterHutGrave</Model>
+		<Model>Doodads\D_X_GraveYard</Model>
 		<FireNodeCount>15</FireNodeCount>
 	</Display>
 
@@ -21,21 +21,16 @@
 		<AccessCategory>AccessCategoryBuilding</AccessCategory>
 		<ApproachPos>
 			<X>0</X>
-			<Y>-400</Y>
+			<Y>-490</Y>
 		</ApproachPos>
-		<ApproachR>0</ApproachR>
-		<DoorPos>
-			<X>0</X>
-			<Y>-200</Y>
-		</DoorPos>
 		<BlockingAreas>
 			<BlockingArea>
 				<Blocked1>
-					<X>-700</X>
+					<X>-450</X>
 					<Y>450</Y>
 				</Blocked1>
 				<Blocked2>
-					<X>600</X>
+					<X>500</X>
 					<Y>-400</Y>
 				</Blocked2>
 			</BlockingArea>
@@ -43,24 +38,24 @@
 		<BuildBlockingAreas>
 			<BuildBlockingArea>
 				<Blocked1>
-					<X>-700</X>
+					<X>-450</X>
 					<Y>450</Y>
 				</Blocked1>
 				<Blocked2>
-					<X>600</X>
-					<Y>-400</Y>
+					<X>500</X>
+					<Y>-450</Y>
 				</Blocked2>
 			</BuildBlockingArea>
 		</BuildBlockingAreas>
 		<ConstructionInfo>
-			<Time>20</Time>
+			<Time>10</Time>
 			<TaskListConstruction>TL_CONSTRUCT_BUILDING</TaskListConstruction>
 			<ConstructionSite>B_BuildingPlot_8x8</ConstructionSite>
 		</ConstructionInfo>
 		<CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim>
 		<FlattenOnBuild>true</FlattenOnBuild>
 		<IsHeightLocking>true</IsHeightLocking>
-		<MaxHealth>10</MaxHealth>
+		<MaxHealth>15</MaxHealth>
 		<MinFloorFireSize>0</MinFloorFireSize>
 		<MaxFloorFireSize>0</MaxFloorFireSize>
 		<MayRemoveEntities>true</MayRemoveEntities>
@@ -77,7 +72,7 @@
 
 		<Exploration>0</Exploration>
 		<NoAutoRepair>true</NoAutoRepair>
-		<SoundImpactType>Stone</SoundImpactType>
+		<SoundImpactType>Stone_Wood</SoundImpactType>
 	</Logic>
 	<Behavior>
 		<Logic classname="EGL::CBehaviorProps">

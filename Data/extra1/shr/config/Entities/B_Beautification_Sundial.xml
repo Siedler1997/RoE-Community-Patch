@@ -43,7 +43,7 @@
                 </Blocked1>
                 <Blocked2>
             	    <X>100</X>
-            	    <Y>-250</Y>
+            	    <Y>-150</Y>
                 </Blocked2>
             </BuildBlockingArea>
 	     </BuildBlockingAreas>

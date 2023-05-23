@@ -51,7 +51,7 @@ function InitSharedOverwrite()
                 Technologies.R_NPC_Cloister_Wall)
             table.insert(
                 NeedsAndRightsByKnightTitle[KnightTitles.Knight][TechnologiesTableIndex],
-                Technologies.R_Beautification_CloisterHutGrave)
+                Technologies.R_Beautification_Graveyard)
 
             table.insert(
                 NeedsAndRightsByKnightTitle[KnightTitles.Mayor][TechnologiesTableIndex],

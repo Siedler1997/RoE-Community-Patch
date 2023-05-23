@@ -20,7 +20,7 @@
 	<Technology id="R_SpecialEdition2"></Technology>
 	<Technology id="R_Fence"></Technology>
 	<Technology id="R_NPC_Cloister_Wall"></Technology>
-	<Technology id="R_Beautification_CloisterHutGrave"></Technology>
+	<Technology id="R_Beautification_Graveyard"></Technology>
 	<Technology id="R_Beautification_WoodBench"></Technology>
 	<Technology id="R_Beautification_ExecutionerPlace"></Technology>
 	<Technology id="R_Beautification_BrothersInArms"></Technology>

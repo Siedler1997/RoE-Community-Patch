@@ -2523,14 +2523,6 @@
 		</Model>
 
 
-		<Model id="Doodads\D_X_Beautification_CloisterHutGrave">
-			<CastShadow>True</CastShadow>
-			<ShareShadowRaster>True</ShareShadowRaster>
-			<UseAlphaBlending>False</UseAlphaBlending>
-			<UseSurfaceHeight>True</UseSurfaceHeight>
-			<Effect>SimpleObjectMultiply</Effect>
-		</Model>
-
 		<Model id="Doodads\D_X_Beautification_BrothersInArms">
 			<CastShadow>True</CastShadow>
 			<ShareShadowRaster>True</ShareShadowRaster>

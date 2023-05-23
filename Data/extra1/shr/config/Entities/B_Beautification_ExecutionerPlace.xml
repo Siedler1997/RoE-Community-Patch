@@ -21,34 +21,29 @@
 		<AccessCategory>AccessCategoryBuilding</AccessCategory>
 		<ApproachPos>
 			<X>0</X>
-			<Y>-400</Y>
+			<Y>-550</Y>
 		</ApproachPos>
-		<ApproachR>0</ApproachR>
-		<DoorPos>
-			<X>0</X>
-			<Y>-200</Y>
-		</DoorPos>
 		<BlockingAreas>
 			<BlockingArea>
 				<Blocked1>
-					<X>-450</X>
-					<Y>450</Y>
+					<X>-475</X>
+					<Y>475</Y>
 				</Blocked1>
 				<Blocked2>
-					<X>450</X>
-					<Y>-450</Y>
+					<X>475</X>
+					<Y>-475</Y>
 				</Blocked2>
 			</BlockingArea>
 		</BlockingAreas>
 		<BuildBlockingAreas>
 			<BuildBlockingArea>
 				<Blocked1>
-					<X>-450</X>
-					<Y>450</Y>
+					<X>-475</X>
+					<Y>475</Y>
 				</Blocked1>
 				<Blocked2>
-					<X>450</X>
-					<Y>-450</Y>
+					<X>475</X>
+					<Y>-525</Y>
 				</Blocked2>
 			</BuildBlockingArea>
 		</BuildBlockingAreas>
@@ -60,7 +55,7 @@
 		<CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim>
 		<FlattenOnBuild>true</FlattenOnBuild>
 		<IsHeightLocking>true</IsHeightLocking>
-		<MaxHealth>10</MaxHealth>
+		<MaxHealth>15</MaxHealth>
 		<MinFloorFireSize>0</MinFloorFireSize>
 		<MaxFloorFireSize>0</MaxFloorFireSize>
 		<MayRemoveEntities>true</MayRemoveEntities>
@@ -77,7 +72,7 @@
 
 		<Exploration>0</Exploration>
 		<NoAutoRepair>true</NoAutoRepair>
-		<SoundImpactType>Stone</SoundImpactType>
+		<SoundImpactType>Wood</SoundImpactType>
 	</Logic>
 	<Behavior>
 		<Logic classname="EGL::CBehaviorProps">

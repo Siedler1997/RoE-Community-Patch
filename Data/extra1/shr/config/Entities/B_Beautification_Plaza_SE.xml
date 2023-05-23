@@ -33,12 +33,22 @@
 		<BuildBlockingAreas>
 			<BuildBlockingArea>
 				<Blocked1>
-					<X>-550</X>
+					<X>-350</X>
 					<Y>550</Y>
 				</Blocked1>
 				<Blocked2>
-					<X>550</X>
+					<X>350</X>
 					<Y>-550</Y>
+				</Blocked2>
+			</BuildBlockingArea>
+			<BuildBlockingArea>
+				<Blocked1>
+					<X>-550</X>
+					<Y>350</Y>
+				</Blocked1>
+				<Blocked2>
+					<X>550</X>
+					<Y>-350</Y>
 				</Blocked2>
 			</BuildBlockingArea>
 		</BuildBlockingAreas>

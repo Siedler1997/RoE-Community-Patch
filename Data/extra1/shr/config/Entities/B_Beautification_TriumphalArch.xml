@@ -2,7 +2,7 @@
 <root>
     <Display classname="ED::CBuildingProps">
         <Class>ED::CDisplayBuilding</Class>
-		<Model>Doodads\D_AS_StoneBench</Model>
+		<Model>Doodads\D_AS_TriumphalArch</Model>
         <FireNodeCount>15</FireNodeCount>
     </Display>
 
@@ -11,51 +11,61 @@
         <Cost>
             <GoodAmount>
                 <GoodType>G_Stone</GoodType>
-                <Amount>20</Amount>
+                <Amount>40</Amount>
             </GoodAmount>
             <GoodAmount>
                 <GoodType>G_Gold</GoodType>
-                <Amount>500</Amount>
+                <Amount>1000</Amount>
             </GoodAmount>
         </Cost>
         <AccessCategory>AccessCategoryBuilding</AccessCategory>
         <ApproachPos>
             <X>0</X>
-            <Y>-200</Y>
+            <Y>0</Y>
         </ApproachPos>
         <BlockingAreas>
             <BlockingArea>
                 <Blocked1>
-                    <X>-100</X>
-                    <Y>100</Y>
+                    <X>-200</X>
+                    <Y>400</Y>
                 </Blocked1>
                 <Blocked2>
-                    <X>100</X>
+                    <X>200</X>
+                    <Y>100</Y>
+                </Blocked2>
+            </BlockingArea>
+           <BlockingArea>
+                <Blocked1>
+                    <X>-200</X>
                     <Y>-100</Y>
+                </Blocked1>
+                <Blocked2>
+                    <X>200</X>
+                    <Y>-400</Y>
                 </Blocked2>
             </BlockingArea>
         </BlockingAreas>
         <BuildBlockingAreas>
             <BuildBlockingArea>
                 <Blocked1>
-            	    <X>-100</X>
-            	    <Y>100</Y>
+            	    <X>-200</X>
+            	    <Y>400</Y>
                 </Blocked1>
                 <Blocked2>
-            	    <X>100</X>
-            	    <Y>-150</Y>
+            	    <X>200</X>
+            	    <Y>-550</Y>
                 </Blocked2>
             </BuildBlockingArea>
 	     </BuildBlockingAreas>
          <ConstructionInfo>
-            <Time>35</Time>
+            <Time>45</Time>
             <TaskListConstruction>TL_CONSTRUCT_BUILDING</TaskListConstruction>
-            <ConstructionSite>B_BuildingPlot_2x2</ConstructionSite>
+            <ConstructionSite>B_BuildingPlot_8x8</ConstructionSite>
         </ConstructionInfo>
         <CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim>
         <FlattenOnBuild>true</FlattenOnBuild>
         <IsHeightLocking>true</IsHeightLocking>
-        <MaxHealth>150</MaxHealth>
+        <MaxHealth>500</MaxHealth>
         <MinFloorFireSize>0</MinFloorFireSize>
         <MaxFloorFireSize>0</MaxFloorFireSize>
         <MayRemoveEntities>true</MayRemoveEntities>

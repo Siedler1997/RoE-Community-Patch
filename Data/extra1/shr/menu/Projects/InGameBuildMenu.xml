@@ -20973,7 +20973,7 @@
 													 <LuaCommand></LuaCommand>
 												 </UpdateFunction>
 												 <UpdateFunctionTurnBased>
-													 <LuaCommand>GUI_Construction.BuildUpdate(Technologies.R_Beautification_CloisterHutGrave)</LuaCommand>
+													 <LuaCommand>GUI_Construction.BuildUpdate(Technologies.R_Beautification_Graveyard)</LuaCommand>
 												 </UpdateFunctionTurnBased>
 												 <UpdateFunctionSecondBased>
 													 <LuaCommand></LuaCommand>
@@ -20982,7 +20982,7 @@
 													 <ToolTipEnabledFlag>true</ToolTipEnabledFlag>
 													 <ControlTargetVisibility>true</ControlTargetVisibility>
 													 <ToolTipUpdateFunction>
-														 <LuaCommand>GUI_Tooltip.TooltipBuild(false,true,Technologies.R_Beautification_CloisterHutGrave)</LuaCommand>
+														 <LuaCommand>GUI_Tooltip.TooltipBuild(false,true,Technologies.R_Beautification_Graveyard)</LuaCommand>
 													 </ToolTipUpdateFunction>
 													 <RawString></RawString>
 													 <StringTableKey></StringTableKey>
@@ -20994,7 +20994,7 @@
 												 </ToolTipHelper>
 												 <Group>Construction</Group>
 												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/Buttons</MotherID>
-												 <Name>B_Beautification_CloisterHutGrave</Name>
+												 <Name>B_Beautification_Graveyard</Name>
 												 <FullScreenBackground>false</FullScreenBackground>
 												 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
 												 <BackgroundMaterial>
@@ -21013,7 +21013,7 @@
 													 </Color>
 												 </BackgroundMaterial>
 												 <ActionFunction>
-													 <LuaCommand>GUI_Construction.BuildClicked(UpgradeCategories.Beautification_CloisterHutGrave)</LuaCommand>
+													 <LuaCommand>GUI_Construction.BuildClicked(UpgradeCategories.Beautification_Graveyard)</LuaCommand>
 												 </ActionFunction>
 												 <GenerateMaterialsFromNormal>false</GenerateMaterialsFromNormal>
 												 <ShortCutKey></ShortCutKey>
