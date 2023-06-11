@@ -179,6 +179,14 @@
 		<Category>Beautification_SteamMachine</Category>
 		<FirstBuilding>B_Beautification_SteamMachine</FirstBuilding>
 	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>Beautification_StatueDario</Category>
+		<FirstBuilding>B_Beautification_StatueDario</FirstBuilding>
+	</BuildingUpgrade>
+	<BuildingUpgrade>
+		<Category>Beautification_StatueHorseman</Category>
+		<FirstBuilding>B_Beautification_StatueHorseman</FirstBuilding>
+	</BuildingUpgrade>
 	
 	<BuildingUpgrade>
 		<Category>Beautification_Plaza_MiddleEurope</Category>

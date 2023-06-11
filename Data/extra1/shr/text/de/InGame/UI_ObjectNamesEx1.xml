@@ -32,7 +32,7 @@
 <string id="B_Beautification_Pillar" MD5Hash="64507F1BA58DB53151F4460519002598" mod="20080212125053" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Säule II]]></string>
 <string id="B_Beautification_Lantern" MD5Hash="9B9DAB43D90F191C47D032C1178A0560" mod="20080212125108" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Laterne]]></string>
 <string id="B_Beautification_Flowerpot_Square" MD5Hash="BC63C3B2BA4CAAF5926F04E0738E0DA3" mod="20080212125316" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Blumentopf (quadratisch)]]></string>
-<string id="B_Beautification_Flowerpot_Round" MD5Hash="B0F1C8EA4AD0408C9D71ED8CFB2CFAB0" mod="20080212125333" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Blumentopf (rund)]]></string>
+<string id="B_Beautification_Flowerpot_Round" MD5Hash="B0F1C8EA4AD0408C9D71ED8CFB2CFAB0" mod="20080212125333" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Blumentöpfe]]></string>
 <string id="B_Beautification_Brazier" MD5Hash="C3FC86D902646EB9859FFFD3C5F40ADD" mod="20080225150737" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Kohlenbecken]]></string>
 <string id="B_Beautification_TriumphalArch" MD5Hash="50E3179098908C5B92F27EFCC9411F0A" mod="20080212130507" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Triumphbogen]]></string>
 <string id="B_Beautification_VictoryColumn" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Siegessäule]]></string>
@@ -55,7 +55,8 @@
 	<string id="SpecialEdition2" MD5Hash="B0D825F7927224A2CFAD065141097E65" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Verschönerungen II]]></string>
 	<string id="B_Beautification_Graveyard" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Friedhof]]></string>
 	<string id="B_Beautification_ExecutionerPlace" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Richtplatz]]></string>
-	<string id="B_Beautification_BrothersInArms" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Kameraden-Statue]]></string>
+	<string id="B_Beautification_BrothersInArms" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Soldaten-Statuen]]></string>
+	<string id="B_SpecialEdition_StatueDario" MD5Hash="36F4DD55E51431069982647F4093B618" mod="20070817173831" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dariostatuen]]></string>
 	<string id="B_SpecialEdition_Pavilion" MD5Hash="6481C1A0290E193EA3AA583650B15C16" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Pavillon I]]></string>
 	<string id="B_SpecialEdition_Column" MD5Hash="6481C1A0290E193EA3AA583650B15C16" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Säule I]]></string>
 	<string id="B_Beautification_Pavilion" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Pavillon II]]></string>

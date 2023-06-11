@@ -30,5 +30,7 @@
 	<Technology id="R_Beautification_Cathedral"></Technology>
 	<Technology id="R_Beautification_Dragon"></Technology>
 	<Technology id="R_Beautification_SteamMachine"></Technology>
+	<Technology id="R_Beautification_StatueDario"></Technology>
+	<Technology id="R_Beautification_StatueHorseman"></Technology>
 
 </Technologies>

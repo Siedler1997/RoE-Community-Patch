@@ -10,6 +10,14 @@ GUI_Construction.BuildingsWithSkins[UpgradeCategories.Beautification_Flowerpot_R
     UpgradeCategories.Beautification_Flowerpot_Round,
     UpgradeCategories.Beautification_Flowerpot_Square
 }
+GUI_Construction.BuildingsWithSkins[UpgradeCategories.SpecialEdition_StatueDario] = {
+    UpgradeCategories.SpecialEdition_StatueDario,
+    UpgradeCategories.Beautification_StatueDario
+}
+GUI_Construction.BuildingsWithSkins[UpgradeCategories.Beautification_BrothersInArms] = {
+    UpgradeCategories.Beautification_BrothersInArms,
+    UpgradeCategories.Beautification_StatueHorseman
+}
 
 --[[ Type_Road = 1,
 Type_Building = 2,
@@ -358,7 +366,7 @@ function GUI_Construction.TestSettlerLimit(_BuildingType)--return true if can co
 end
 
 function GUI_Construction.BuildClicked(_BuildingType, _KeepCategory)
-    PlacementState = 0
+    PlacementState = 0 
 
     XGUIEng.UnHighLightGroup("/InGame", "Construction")
 

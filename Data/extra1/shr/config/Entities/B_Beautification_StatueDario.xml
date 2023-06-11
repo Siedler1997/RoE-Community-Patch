@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <root>
 	<Display classname="ED::CBuildingProps">
 		<Class>ED::CDisplayBuilding</Class>
-		<Model>Doodads\D_AS_Flowerpot_Square</Model>
+		<Model>Doodads\D_X_Beautification_StatueDario</Model>
 		<FireNodeCount>15</FireNodeCount>
 	</Display>
 
@@ -11,39 +11,39 @@
 		<Cost>
 			<GoodAmount>
 				<GoodType>G_Stone</GoodType>
-				<Amount>5</Amount>
+				<Amount>22</Amount>
 			</GoodAmount>
 			<GoodAmount>
 				<GoodType>G_Gold</GoodType>
-				<Amount>150</Amount>
+				<Amount>600</Amount>
 			</GoodAmount>
 		</Cost>
 		<AccessCategory>AccessCategoryBuilding</AccessCategory>
 		<ApproachPos>
 			<X>0</X>
-			<Y>-175</Y>
+			<Y>-225</Y>
 		</ApproachPos>
 		<BlockingAreas>
 			<BlockingArea>
 				<Blocked1>
-					<X>-100</X>
-					<Y>75</Y>
+					<X>-125</X>
+					<Y>125</Y>
 				</Blocked1>
 				<Blocked2>
-					<X>100</X>
-					<Y>-75</Y>
+					<X>125</X>
+					<Y>-125</Y>
 				</Blocked2>
 			</BlockingArea>
 		</BlockingAreas>
 		<BuildBlockingAreas>
 			<BuildBlockingArea>
 				<Blocked1>
-					<X>-100</X>
-					<Y>75</Y>
+					<X>-125</X>
+					<Y>125</Y>
 				</Blocked1>
 				<Blocked2>
-					<X>100</X>
-					<Y>-125</Y>
+					<X>125</X>
+					<Y>-175</Y>
 				</Blocked2>
 			</BuildBlockingArea>
 		</BuildBlockingAreas>
@@ -55,7 +55,7 @@
 		<CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim>
 		<FlattenOnBuild>true</FlattenOnBuild>
 		<IsHeightLocking>true</IsHeightLocking>
-		<MaxHealth>10</MaxHealth>
+		<MaxHealth>100</MaxHealth>
 		<MinFloorFireSize>0</MinFloorFireSize>
 		<MaxFloorFireSize>0</MaxFloorFireSize>
 		<MayRemoveEntities>true</MayRemoveEntities>

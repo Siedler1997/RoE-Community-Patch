@@ -4730,7 +4730,9 @@
     <None Include="Data\extra1\shr\graphics\Models\Buildings\D_X_Beautification_Knight_Wisdom.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Doodads\D_X_Beautification_BrothersInArms.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Doodads\D_X_Beautification_Pavilion.dff" />
+    <None Include="Data\extra1\shr\graphics\Models\Doodads\D_X_Beautification_StatueDario.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Doodads\D_X_Beautification_WoodBench.dff" />
+    <None Include="Data\extra1\shr\graphics\Models\Doodads\D_X_Beautification_Horseman.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Effects\XD_Hero2Bomb.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Goods\G_Spear.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Goods\G_SpearSpearMaker01.dff" />
@@ -4746,7 +4748,6 @@
     <None Include="Data\extra1\shr\graphics\Models\Units\Military\U_Dragon.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Units\Military\U_MilitarySpear.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Units\U_Helbardier.dff" />
-    <None Include="Data\extra1\shr\graphics\Models\Doodads\XD_StandartePlayerColor.dff" />
     <None Include="Data\extra1\shr\Script\Global\CampaignHotfix.lua" />
     <None Include="Data\extra1\shr\Script\Global\GlobalScriptEx1.lua" />
     <None Include="Data\extra1\shr\Script\Global\MainMapScript\GlobalMainMapScript.lua" />
@@ -4991,7 +4992,8 @@
     <Content Include="Data\extra1\shr\config\Entities\B_Barracks_Khana.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Barracks_RedPrince.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Brazier.xml" />
-    <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Standarte.xml" />
+    <Content Include="Data\extra1\shr\config\Entities\B_Beautification_StatueHorseman.xml" />
+    <Content Include="Data\extra1\shr\config\Entities\B_Beautification_StatueDario.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_SteamMachine.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Knight_Chivalry.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Knight_Healing.xml" />
@@ -5224,6 +5226,10 @@
     <Content Include="Data\extra1\shr\graphics\Textures\GUI_960\Loadscreens\se_old.png" />
     <Content Include="Data\extra1\shr\graphics\Textures\GUI_960\Loadscreens\Throneroom_old.png" />
     <Content Include="Data\extra1\shr\graphics\Textures\GUI_960\Mainmenu\masterBG_old.png" />
+    <Content Include="Data\extra1\shr\graphics\Textures\PB_Beautification01.dds" />
+    <Content Include="Data\extra1\shr\graphics\Textures\PB_Beautification02.dds" />
+    <Content Include="Data\extra1\shr\graphics\Textures\PB_Beautification04.dds" />
+    <Content Include="Data\extra1\shr\graphics\Textures\PB_Beautification05.dds" />
     <Content Include="Data\extra1\shr\graphics\Textures\PB_Beautification06.dds" />
     <Content Include="Data\extra1\shr\graphics\Textures\PB_Beautification11.dds" />
     <Content Include="Data\extra1\shr\graphics\Textures\PU_LeaderPoleArm1.dds" />
@@ -5233,9 +5239,9 @@
     <Content Include="Data\extra1\shr\graphics\Textures\PU_SoldierPoleArm4_spec.dds" />
     <Content Include="Data\extra1\shr\graphics\Textures\XA_Dragon.dds" />
     <Content Include="Data\extra1\shr\graphics\Textures\XA_Dragon_Grey.dds" />
-    <Content Include="Data\extra1\shr\graphics\Textures\XB_Banners.dds" />
     <Content Include="Data\extra1\shr\graphics\Textures\XB_Decals1.dds" />
     <Content Include="Data\extra1\shr\graphics\Textures\XD_Cypress.dds" />
+    <Content Include="Data\extra1\shr\graphics\Textures\XD_Plant1.dds" />
     <Content Include="Data\extra1\shr\menu\Projects\InGame.xml" />
     <Content Include="Data\extra1\shr\menu\Projects\InGameBuildMenu.xml" />
     <Content Include="Data\extra1\shr\menu\Projects\InGameMapFrame.xml" />

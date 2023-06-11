@@ -78,6 +78,9 @@ function InitSharedOverwrite()
                 Technologies.R_Beautification_BrothersInArms)
             table.insert(
                 NeedsAndRightsByKnightTitle[KnightTitles.Earl][TechnologiesTableIndex],
+                Technologies.R_Beautification_StatueHorseman)
+            table.insert(
+                NeedsAndRightsByKnightTitle[KnightTitles.Earl][TechnologiesTableIndex],
                 Technologies.R_SpecialEdition_StatueProduction)
             table.insert(
                 NeedsAndRightsByKnightTitle[KnightTitles.Earl][TechnologiesTableIndex],
@@ -101,6 +104,9 @@ function InitSharedOverwrite()
             table.insert(
                 NeedsAndRightsByKnightTitle[KnightTitles.Duke][TechnologiesTableIndex],
                 Technologies.R_Beautification_Lantern)
+            table.insert(
+                NeedsAndRightsByKnightTitle[KnightTitles.Duke][TechnologiesTableIndex],
+                Technologies.R_Beautification_StatueDario)
 
             table.insert(
                 NeedsAndRightsByKnightTitle[KnightTitles.Archduke][TechnologiesTableIndex],
