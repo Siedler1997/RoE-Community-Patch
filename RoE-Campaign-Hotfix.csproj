@@ -4746,6 +4746,7 @@
     <None Include="Data\extra1\shr\graphics\Models\Units\Military\U_Dragon.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Units\Military\U_MilitarySpear.dff" />
     <None Include="Data\extra1\shr\graphics\Models\Units\U_Helbardier.dff" />
+    <None Include="Data\extra1\shr\graphics\Models\Doodads\XD_StandartePlayerColor.dff" />
     <None Include="Data\extra1\shr\Script\Global\CampaignHotfix.lua" />
     <None Include="Data\extra1\shr\Script\Global\GlobalScriptEx1.lua" />
     <None Include="Data\extra1\shr\Script\Global\MainMapScript\GlobalMainMapScript.lua" />
@@ -4990,6 +4991,7 @@
     <Content Include="Data\extra1\shr\config\Entities\B_Barracks_Khana.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Barracks_RedPrince.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Brazier.xml" />
+    <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Standarte.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_SteamMachine.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Knight_Chivalry.xml" />
     <Content Include="Data\extra1\shr\config\Entities\B_Beautification_Knight_Healing.xml" />
@@ -5231,6 +5233,7 @@
     <Content Include="Data\extra1\shr\graphics\Textures\PU_SoldierPoleArm4_spec.dds" />
     <Content Include="Data\extra1\shr\graphics\Textures\XA_Dragon.dds" />
     <Content Include="Data\extra1\shr\graphics\Textures\XA_Dragon_Grey.dds" />
+    <Content Include="Data\extra1\shr\graphics\Textures\XB_Banners.dds" />
     <Content Include="Data\extra1\shr\graphics\Textures\XB_Decals1.dds" />
     <Content Include="Data\extra1\shr\graphics\Textures\XD_Cypress.dds" />
     <Content Include="Data\extra1\shr\menu\Projects\InGame.xml" />

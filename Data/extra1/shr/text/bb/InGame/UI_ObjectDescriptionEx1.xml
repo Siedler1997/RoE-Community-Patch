@@ -74,4 +74,27 @@
 	<string id="AbilityKhana" MD5Hash="45DCA541F448A243115E748B0FAA940E" mod="20070819154801" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- supply nearby troops with Torches]]></string>
 	<string id="AbilityPraphat" MD5Hash="80CB1EC4FAF3367CECE66805C00059EF" mod="20071205123556" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- provide Settlers nearby with Clothes{cr}- increased City Reputation due to diversity of available Clothes]]></string>
 	<string id="Abilities_U_MagicOx" MD5Hash="C0A52A33D6B81F633578A61329DCA10F" mod="20070819135241" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- Possesses powers beyond human imagination {cr}- strong against everything]]></string>
+
+	<string id="Fence" MD5Hash="2B4C5F946CC6A582580C95C3B800E8BF" mod="20070819144753" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- beautifies the city]]></string>
+	<string id="NPCWall" MD5Hash="2B4C5F946CC6A582580C95C3B800E8BF" mod="20070819144753" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- beautifies the city]]></string>
+	<string id="B_SpecialEdition_Column" MD5Hash="2B4C5F946CC6A582580C95C3B800E8BF" mod="20070819144753" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- beautifies the city]]></string>
+	<string id="B_SpecialEdition_Pavilion" MD5Hash="2B4C5F946CC6A582580C95C3B800E8BF" mod="20070819144758" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- beautifies the city]]></string>
+	<string id="B_SpecialEdition_StatueDario" MD5Hash="2B4C5F946CC6A582580C95C3B800E8BF" mod="20070819144802" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- beautifies the city]]></string>
+	<string id="B_SpecialEdition_StatueFamily" MD5Hash="2B4C5F946CC6A582580C95C3B800E8BF" mod="20070819144807" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- beautifies the city]]></string>
+	<string id="B_SpecialEdition_StatueProduction" MD5Hash="2B4C5F946CC6A582580C95C3B800E8BF" mod="20070819144812" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- beautifies the city]]></string>
+	<string id="B_SpecialEdition_StatueSettler" MD5Hash="2B4C5F946CC6A582580C95C3B800E8BF" mod="20070819144816" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- beautifies the city]]></string>
+	<string id="B_Beautification_Graveyard" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- beautifies the city]]></string>
+	<string id="B_Beautification_ExecutionerPlace" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- "beautifies" the city]]></string>
+	<string id="B_Beautification_BrothersInArms" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- beautifies the city]]></string>
+	<string id="B_Beautification_Pavilion" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- beautifies the city]]></string>
+	<string id="B_Beautification_XmasTree" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- beautifies the city]]></string>
+	<string id="B_Beautification_WoodBench" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- beautifies the city]]></string>
+	<string id="B_Beautification_Plaza" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- beautifies the city]]></string>
+	<string id="B_Beautification_Knight_Generic" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- beautifies the city]]></string>
+	<string id="B_Beautification_Dragon" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- beautifies the city]]></string>
+	<string id="B_Beautification_SteamMachine" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- beautifies the city]]></string>
+	<string id="B_Beautification_Cathedral" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- base of the monument Cathedral]]></string>
+	<string id="UpgradeBeutification" MD5Hash="84046ADEC7554B2416602C5384CE4217" mod="20070816094122" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- continue building the monument]]></string>
+
+	<string id="ChangeType" MD5Hash="95CFABAA4D1C78A808F217A2DF1C6BE4" mod="20070809143407" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[{cr}- switchable with "C"]]></string>
 </root>

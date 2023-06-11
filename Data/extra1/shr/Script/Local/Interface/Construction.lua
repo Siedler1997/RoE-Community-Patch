@@ -3,7 +3,13 @@
 GUI_Construction = {}
 
 g_Construction = {}
+g_LastPlacedParam = -1
 
+GUI_Construction.BuildingsWithSkins = {}
+GUI_Construction.BuildingsWithSkins[UpgradeCategories.Beautification_Flowerpot_Round] = {
+    UpgradeCategories.Beautification_Flowerpot_Round,
+    UpgradeCategories.Beautification_Flowerpot_Square
+}
 
 --[[ Type_Road = 1,
 Type_Building = 2,
@@ -118,6 +124,25 @@ function GameCallback_GUI_PlacementState(_State, _Type)
             GUI.AddNote("Placing type: " .. _Type)
         end
     
+    end
+end
+
+function GUI_Construction.SwitchBuildingCategory()
+    if g_Construction.CurrentPlacementType ~= nil then
+        --local AmountOfTypes, FirstBuildingType = Logic.GetBuildingTypesInUpgradeCategory(g_LastPlacedParam)
+        --GUI.AddNote("PlacementType: ".. g_Construction.CurrentPlacementType)
+        if g_LastPlacedCategory >= 0 and GUI_Construction.BuildingsWithSkins[g_LastPlacedCategory] ~= nil then
+            --GUI.AddNote("DEBUG: " .. table.getn(GUI_Construction.BuildingsWithSkins[g_LastPlacedCategory]) .. " buildings.")
+            --GUI.AddNote("DEBUG: Index of item: " .. indexOf(GUI_Construction.BuildingsWithSkins[g_LastPlacedCategory], g_LastPlacedParam) .. ".")
+            local itemIndex = GetIndexOfItem(GUI_Construction.BuildingsWithSkins[g_LastPlacedCategory], g_LastPlacedParam)
+            local nextItem
+            if itemIndex < table.getn(GUI_Construction.BuildingsWithSkins[g_LastPlacedCategory]) then
+                nextItem = GUI_Construction.BuildingsWithSkins[g_LastPlacedCategory][itemIndex+1]
+            else
+                nextItem = GUI_Construction.BuildingsWithSkins[g_LastPlacedCategory][1]
+            end
+            GUI_Construction.BuildClicked(nextItem, true)
+        end
     end
 end
 
@@ -332,7 +357,7 @@ function GUI_Construction.TestSettlerLimit(_BuildingType)--return true if can co
 
 end
 
-function GUI_Construction.BuildClicked(_BuildingType)
+function GUI_Construction.BuildClicked(_BuildingType, _KeepCategory)
     PlacementState = 0
 
     XGUIEng.UnHighLightGroup("/InGame", "Construction")
@@ -357,6 +382,13 @@ function GUI_Construction.BuildClicked(_BuildingType)
         -- save last placement
         g_LastPlacedParam = _BuildingType
         g_LastPlacedFunction = GUI_Construction.BuildClicked
+        if _KeepCategory ~= true then
+            if GUI_Construction.BuildingsWithSkins[g_LastPlacedParam] ~= nil then
+                g_LastPlacedCategory = _BuildingType
+            else
+                g_LastPlacedCategory = -1
+            end
+        end
 
         -- tell the tutorial, that this button has been pressed by the player
         if XGUIEng.GetCurrentWidgetID() ~= 0 then
@@ -547,6 +579,8 @@ function GUI_Construction.BuildWallClicked(_BuildingType)
     GUI.ClearSelection()
 
     GUI.ActivatePlaceWallState(_BuildingType)
+    
+    GUI.AddNote("Text: " .. GUI.GetCurrentStateID())
 
     XGUIEng.ShowWidget("/Ingame/Root/Normal/PlacementStatus", 1)
     GUI_Construction.CloseContextSensitiveMenu()
@@ -588,6 +622,7 @@ end
 ------------------------------------------------------------------------------------------------
 
 function GUI_Construction.BuildNPCWallClicked()
+    GUI.AddNote("Text: " .. GUI.GetCurrentStateID())
     GUI_Construction.BuildWallClicked(GetUpgradeCategoryForClimatezone("WallSegment_NPC"))
 end
 

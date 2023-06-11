@@ -198,5 +198,13 @@ function GetPlayerCategoryType(_PlayerID)
 
 end
 
-
-
+-- Return the first index with the given value (or nil if not found).
+-- Source: https://stackoverflow.com/a/69651531
+function GetIndexOfItem(array, value)
+    for i, v in ipairs(array) do
+        if v == value then
+            return i
+        end
+    end
+    return nil
+end

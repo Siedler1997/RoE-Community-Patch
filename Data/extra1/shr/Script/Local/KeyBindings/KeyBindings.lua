@@ -90,7 +90,8 @@ function DebugKeyBindings_Init()
     -- Screen shot
     -----------------------------------------------------------------------------------------------
 
-    -- Input.KeyBindDown(Keys.F12, "Game.SaveScreenShot()", 31)
+    Input.KeyBindDown(Keys.Print, "Game.SaveScreenShot()", 2)
+    Input.KeyBindDown(Keys.Snapshot, "Game.SaveScreenShot()", 2)
 
     -- snapshot key event is received only if key is released
     -- Input.KeyBindUp(Keys.Snapshot, "Game.SaveScreenShot()", 31)
@@ -223,11 +224,17 @@ function DebugKeyBindings_Init()
     --Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad8, "KeyBindings_TestFunc()", 2, true)
     --Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad8, "GUI_Construction.BuildWallClicked(UpgradeCategories.FenceSegment)", 2, true)
     --Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad9, "GUI_Construction.BuildWallClicked(UpgradeCategories.WallSegment_NPC_Asia)", 2, true)
-    Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad9, "GUI_Construction.BuildClicked(UpgradeCategories.Beautification_Standarte)", 2, true)
-    --Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad9, "KeyBindings_CreateEntityAtMousePositionForActiveGUIPlayer(Entities.B_NPC_Spicetrader)", 2, true)
+    --Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad9, "GUI_Construction.BuildClicked(UpgradeCategories.Beautification_Standarte)", 2, true)
+    Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad9, "KeyBindings_CreateEntityAtMousePositionForActiveGUIPlayer(Entities.U_Dragon)", 2, true)
     --Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad9, "KeyBindings_CreateEntityAtMousePositionForActiveGUIPlayer(Entities.B_Beautification_Dragon)", 2, true)
     --Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad9, "KeyBindings_CreateEntityAtMousePositionForActiveGUIPlayer(Entities.U_Dragon)", 2, true)
     
+    
+    -----------------------------------------------------------------------------------------------
+    -- Change building skin
+    -----------------------------------------------------------------------------------------------
+
+    Input.KeyBindDown(Keys.C, "GUI_Construction.SwitchBuildingCategory()", 2, true)
 
     -----------------------------------------------------------------------------------------------
     -- Camera debug

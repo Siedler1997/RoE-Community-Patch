@@ -174,6 +174,7 @@ function GUI_Tooltip.TooltipBuild(_OptionalPositionTooltipAboveBoolean, _Optiona
     local PositionWidget = XGUIEng.GetWidgetsMotherID(CurrentWidgetID)
     local WidgetName = XGUIEng.GetWidgetNameByID(CurrentWidgetID)
     local BuildingType
+    local ChangeType
     
     if WidgetName == "B_WallGate" or WidgetName == "B_GuardTower" or WidgetName == "B_WatchTower" or WidgetName == "B_Beautification_Plaza" then
         BuildingType = GetEntityTypeForClimatezone(WidgetName)
@@ -221,8 +222,13 @@ function GUI_Tooltip.TooltipBuild(_OptionalPositionTooltipAboveBoolean, _Optiona
     if _TechnologyType ~= nil then
         DisabledTextKeyName = GUI_Tooltip.GetDisabledKeyForTechnologyType(_TechnologyType)
     end
+    
+    local BuildingUpgradeCategory = Logic.GetUpgradeCategoryByBuildingType(BuildingType)
+    if BuildingUpgradeCategory ~= 0 and GUI_Construction.BuildingsWithSkins[BuildingUpgradeCategory] ~= nil then
+        ChangeType = "ChangeType"
+    end
 
-    GUI_Tooltip.SetNameAndDescription(TooltipNameWidget, TooltipDescriptionWidget, nil, DisabledTextKeyName)
+    GUI_Tooltip.SetNameAndDescription(TooltipNameWidget, TooltipDescriptionWidget, nil, DisabledTextKeyName, nil, nil, ChangeType)
 
     GUI_Tooltip.SetCosts(TooltipCostsContainer, Costs)
     
@@ -234,7 +240,7 @@ end
 
 
 function GUI_Tooltip.SetNameAndDescription(_TooltipNameWidget, _TooltipDescriptionWidget, _OptionalTextKeyName, _OptionalDisabledTextKeyName,
-        _OptionalMissionTextFileBoolean, _LimitString)
+        _OptionalMissionTextFileBoolean, _LimitString, _SpecialTextKeyName)
     local CurrentWidgetID = XGUIEng.GetCurrentWidgetID()
     local WidgetName = XGUIEng.GetWidgetNameByID(CurrentWidgetID)
 
@@ -264,6 +270,10 @@ function GUI_Tooltip.SetNameAndDescription(_TooltipNameWidget, _TooltipDescripti
             TooltipName = XGUIEng.GetStringTableText("UI_ObjectNames/" .. _OptionalTextKeyName)
             TooltipDesc = XGUIEng.GetStringTableText("UI_ObjectDescription/".. _OptionalTextKeyName)
         end
+    end
+
+    if _SpecialTextKeyName ~= nil then
+        TooltipDesc = TooltipDesc .. XGUIEng.GetStringTableText("UI_ObjectDescription/".. _SpecialTextKeyName)
     end
 
     if TooltipName == "" then

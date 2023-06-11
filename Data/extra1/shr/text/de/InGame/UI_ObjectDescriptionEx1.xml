@@ -94,4 +94,6 @@
 	<string id="B_Beautification_SteamMachine" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- Verschönert die Stadt]]></string>
 	<string id="B_Beautification_Cathedral" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- Basis des Monuments Kathedrale]]></string>
 	<string id="UpgradeBeutification" MD5Hash="84046ADEC7554B2416602C5384CE4217" mod="20070816094122" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- Setzt den Bau des Monuments fort]]></string>
+	
+	<string id="ChangeType" MD5Hash="95CFABAA4D1C78A808F217A2DF1C6BE4" mod="20070809143407" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[{cr}- Mit "C" durchschaltbar]]></string>
 </root>
