@@ -8,20 +8,6 @@
 
 	<Logic classname="EGL::CBuildingProps">
 		<Class>EGL::CBuilding</Class>
-		<DecorationalEffect>
-			<Type>FXFireSmall</Type>
-			<Position>
-				<X>0</X>
-				<Y>-380</Y>
-			</Position>
-		</DecorationalEffect>
-		<DecorationalEffect>
-			<Type>FXFireSmall</Type>
-			<Position>
-				<X>0</X>
-				<Y>380</Y>
-			</Position>
-		</DecorationalEffect>
 		<Cost>
 			<GoodAmount>
 				<GoodType>G_Wood</GoodType>
