@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
     <Display classname="ED::CReplaceUpgradeBuildingProps">
         <Class>ED::CReplaceUpgradeBuilding</Class>
-        <Model>Buildings/B_WallTurret_ME</Model>
+        <Model>Buildings/B_GuardTower_ME</Model>
         <Anims/>
         <ConstructionSite>Buildings/B_WallTurret_BuildingSite_ME</ConstructionSite>
     </Display>
@@ -35,7 +35,7 @@
 		
 		<ApproachPos>
 			<X>0</X>
-			<Y>400</Y>
+			<Y>-450</Y>
 		</ApproachPos>
 		<ApproachR>0</ApproachR>
 		<DoorPos>
@@ -45,24 +45,24 @@
         <BlockingAreas>
             <BlockingArea>
                 <Blocked1>
-                    <X>-200</X>
-                    <Y>-200</Y>
+                    <X>-250</X>
+                    <Y>-250</Y>
                 </Blocked1>
                 <Blocked2>
-                    <X>200</X>
-                    <Y>200</Y>
+                    <X>250</X>
+                    <Y>250</Y>
                 </Blocked2>
             </BlockingArea>
         </BlockingAreas>
         <BuildBlockingAreas>
             <BuildBlockingArea>
                 <Blocked1>
-                    <X>-300</X>
-                    <Y>-300</Y>
+                    <X>-350</X>
+                    <Y>-350</Y>
                 </Blocked1>
                 <Blocked2>
-                    <X>300</X>
-                    <Y>300</Y>
+                    <X>350</X>
+                    <Y>350</Y>
                 </Blocked2>
             </BuildBlockingArea>
         </BuildBlockingAreas>
