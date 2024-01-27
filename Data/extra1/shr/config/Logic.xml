@@ -122,7 +122,7 @@
 
     <!-- ILLNESS STUFF -->
     <!-- When you have this number of settlers or more, illness is activated -->
-    <InitialIllnessNumSettlers>151</InitialIllnessNumSettlers>
+    <InitialIllnessNumSettlers>101</InitialIllnessNumSettlers>
     <!-- When you have exactly <InitialIllnessNumSettlers> and all buildings have non-critical hygiene,
         this is the probability that a building "falls ill" when one of its workers finishes work  -->
     <InitialIllnessProbability>0.005</InitialIllnessProbability>

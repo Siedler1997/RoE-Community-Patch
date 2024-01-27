@@ -211,6 +211,7 @@ Folgende Änderungen wurden vorgenommen:
 	- Niederlagen-Kamerarotation deutlich verlangsamt
 	- Sieg und Niederlage haben jeweils eine Art "Jingle"
 	- Spielerfarben auf der Minimap sind nun (meistens) korrekt
+	- Krankheiten treten nun schon ab 101 Siedlern auf, nicht erst ab 151
 - Kampagnen
 	- Hauptspiel-Kampagne auch im AddOn spielbar
 	- Bugs gefixt
