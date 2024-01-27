@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
-
   <Display classname="ED::CBuildingProps">
         <Class>ED::CDisplayBuilding</Class>
         <Banner>Default</Banner>
-        <Model>Buildings\B_NPC_Barracks_NA</Model>
-        <Model2>Buildings\B_NPC_Barracks_NA_Light</Model2>
+        <Model>Buildings\B_NPC_Barracks_SE</Model>
+        <Model2>Buildings\B_NPC_Barracks_SE_Light</Model2>
         <FireNodeCount>15</FireNodeCount>
     </Display>
 
@@ -62,9 +61,7 @@
                </GoodAmount>
             </UpgradeCost>
         </UpgradeCosts>
-
-
-       <ApproachPos>
+        <ApproachPos>
           <X>200</X>
           <Y>-300</Y>
         </ApproachPos>
@@ -76,11 +73,11 @@
         <BlockingAreas>
           <BlockingArea>
             <Blocked1>
-              <X>-400</X>
-              <Y>300</Y>
+              <X>-300</X>
+              <Y>200</Y>
             </Blocked1>
             <Blocked2>
-              <X>400</X>
+              <X>300</X>
               <Y>-200</Y>
             </Blocked2>
           </BlockingArea>
@@ -88,11 +85,11 @@
         <BuildBlockingAreas>
           <BuildBlockingArea>
             <Blocked1>
-              <X>-400</X>
-              <Y>300</Y>
+              <X>-300</X>
+              <Y>200</Y>
             </Blocked1>
             <Blocked2>
-              <X>400</X>
+              <X>300</X>
               <Y>-350</Y>
             </Blocked2>
           </BuildBlockingArea>
@@ -112,9 +109,9 @@
       </BuilderSlots>
       <ConstructionSite>B_BuildingPlot_8x8</ConstructionSite>
     </ConstructionInfo>
-
+    
     <SoundImpactType>Stone_Wood</SoundImpactType>
-
+    
   </Logic>
   <Behaviors>
 
@@ -127,7 +124,7 @@
       </Display>
     </Behavior>
 
-
+   
       <Behavior>
         <Logic classname="EGL::CRespawnResourceEntityBehaviorProps">
 			<Class>EGL::CRespawnResourceEntityBehavior</Class>
@@ -140,12 +137,12 @@
 			<MinScale>1</MinScale>
 			<MaxScale>1</MaxScale>
 			<SpawnTypes>
-				<SpawnType>U_MilitaryBandit_Melee_AS</SpawnType>
-				<SpawnType>U_MilitaryBandit_Ranged_AS</SpawnType>
+				<SpawnType>U_MilitaryBandit_Melee_SE</SpawnType>
+				<SpawnType>U_MilitaryBandit_Ranged_SE</SpawnType>
 			</SpawnTypes>
 		</Logic>
     </Behavior>
-
+    
     <Behavior>
             <Logic classname="EGL::CAmmunitionFillerBehaviorProps">
                 <Class>EGL::CAmmunitionFillerBehavior</Class>
@@ -159,7 +156,7 @@
   <MapEditor>
     <TreePosition>Buildings\Village</TreePosition>
     <ShowInTree>true</ShowInTree>
-    <Clime>Asia</Clime>
+    <Clime>SouthEurope</Clime>
     <Scalable>false</Scalable>
     <TemplateResistant>true</TemplateResistant>
   </MapEditor>

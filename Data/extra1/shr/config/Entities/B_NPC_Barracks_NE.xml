@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
-
   <Display classname="ED::CBuildingProps">
         <Class>ED::CDisplayBuilding</Class>
         <Banner>Default</Banner>
-        <Model>Buildings\B_NPC_Barracks_NA</Model>
-        <Model2>Buildings\B_NPC_Barracks_NA_Light</Model2>
+        <Model>Buildings\B_NPC_Barracks_NE</Model>
+        <Model2>Buildings\B_NPC_Barracks_NE_Light</Model2>
+        <Decal>Buildings\B_NPC_Barracks_NE_Decal</Decal>
         <FireNodeCount>15</FireNodeCount>
-    </Display>
+        <SnowFactor>2.0</SnowFactor>
+  </Display>
 
     <Logic classname="EGL::CUpgradableBuildingProps">
     <Class>EGL::CUpgradableBuilding</Class>
@@ -62,59 +63,56 @@
                </GoodAmount>
             </UpgradeCost>
         </UpgradeCosts>
-
-
        <ApproachPos>
-          <X>200</X>
-          <Y>-300</Y>
+          <X>0</X>
+          <Y>-400</Y>
         </ApproachPos>
         <ApproachR>0</ApproachR>
         <DoorPos>
-          <X>100</X>
-          <Y>0</Y>
+          <X>0</X>
+          <Y>100</Y>
         </DoorPos>
         <BlockingAreas>
           <BlockingArea>
             <Blocked1>
-              <X>-400</X>
+              <X>-300</X>
               <Y>300</Y>
             </Blocked1>
             <Blocked2>
-              <X>400</X>
-              <Y>-200</Y>
+              <X>300</X>
+              <Y>-300</Y>
             </Blocked2>
           </BlockingArea>
         </BlockingAreas>
         <BuildBlockingAreas>
           <BuildBlockingArea>
             <Blocked1>
-              <X>-400</X>
+              <X>-300</X>
               <Y>300</Y>
             </Blocked1>
             <Blocked2>
-              <X>400</X>
-              <Y>-350</Y>
+              <X>300</X>
+              <Y>-450</Y>
             </Blocked2>
           </BuildBlockingArea>
         </BuildBlockingAreas>
-
     <ConstructionInfo>
       <Time>18</Time>
 
       <BuilderSlots>
         <BuilderSlot>
           <Position>
-            <X>-500</X>
-            <Y>400</Y>
+            <X>100</X>
+            <Y>-200</Y>
           </Position>
           <Orientation>0</Orientation>
         </BuilderSlot>
       </BuilderSlots>
       <ConstructionSite>B_BuildingPlot_8x8</ConstructionSite>
     </ConstructionInfo>
-
+    
     <SoundImpactType>Stone_Wood</SoundImpactType>
-
+    
   </Logic>
   <Behaviors>
 
@@ -127,7 +125,7 @@
       </Display>
     </Behavior>
 
-
+   
       <Behavior>
         <Logic classname="EGL::CRespawnResourceEntityBehaviorProps">
 			<Class>EGL::CRespawnResourceEntityBehavior</Class>
@@ -140,12 +138,12 @@
 			<MinScale>1</MinScale>
 			<MaxScale>1</MaxScale>
 			<SpawnTypes>
-				<SpawnType>U_MilitaryBandit_Melee_AS</SpawnType>
-				<SpawnType>U_MilitaryBandit_Ranged_AS</SpawnType>
+				<SpawnType>U_MilitaryBandit_Melee_NE</SpawnType>
+				<SpawnType>U_MilitaryBandit_Ranged_NE</SpawnType>
 			</SpawnTypes>
 		</Logic>
     </Behavior>
-
+    
     <Behavior>
             <Logic classname="EGL::CAmmunitionFillerBehaviorProps">
                 <Class>EGL::CAmmunitionFillerBehavior</Class>
@@ -159,7 +157,7 @@
   <MapEditor>
     <TreePosition>Buildings\Village</TreePosition>
     <ShowInTree>true</ShowInTree>
-    <Clime>Asia</Clime>
+    <Clime>NorthEurope</Clime>
     <Scalable>false</Scalable>
     <TemplateResistant>true</TemplateResistant>
   </MapEditor>

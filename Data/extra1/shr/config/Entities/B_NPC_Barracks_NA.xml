@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
-
   <Display classname="ED::CBuildingProps">
         <Class>ED::CDisplayBuilding</Class>
         <Banner>Default</Banner>
@@ -62,8 +61,6 @@
                </GoodAmount>
             </UpgradeCost>
         </UpgradeCosts>
-
-
        <ApproachPos>
           <X>200</X>
           <Y>-300</Y>
@@ -140,8 +137,8 @@
 			<MinScale>1</MinScale>
 			<MaxScale>1</MaxScale>
 			<SpawnTypes>
-				<SpawnType>U_MilitaryBandit_Melee_AS</SpawnType>
-				<SpawnType>U_MilitaryBandit_Ranged_AS</SpawnType>
+				<SpawnType>U_MilitaryBandit_Melee_NA</SpawnType>
+				<SpawnType>U_MilitaryBandit_Ranged_NA</SpawnType>
 			</SpawnTypes>
 		</Logic>
     </Behavior>
@@ -159,7 +156,7 @@
   <MapEditor>
     <TreePosition>Buildings\Village</TreePosition>
     <ShowInTree>true</ShowInTree>
-    <Clime>Asia</Clime>
+    <Clime>NorthAfrica</Clime>
     <Scalable>false</Scalable>
     <TemplateResistant>true</TemplateResistant>
   </MapEditor>
