@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+    <Display classname="ED::CBuildingProps">
+        <Class>ED::CDisplayBuilding</Class>
+        <Model>Buildings\B_NPC_MercenarySmall_SE</Model>
+        <FireNodeCount>15</FireNodeCount>
+    		<SnowFactor>0.2</SnowFactor>
+    </Display>
+
+    <Logic classname="EGL::CBuildingProps">
+        <Class>EGL::CBuilding</Class>
+        <ConstructionCost>
+            <Wood>0</Wood>
+            <Stone>0</Stone>
+        </ConstructionCost>
+        <CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim>
+        <FlattenOnBuild>false</FlattenOnBuild>
+        <IsHeightLocking>true</IsHeightLocking>
+        <AccessCategory>AccessCategoryBuilding</AccessCategory>
+        <NeedsPlayer>true</NeedsPlayer>
+        <ForceNoPlayer>false</ForceNoPlayer>
+        <CanBeKnockedDown>false</CanBeKnockedDown>
+        <MaxWorkers>1</MaxWorkers>
+        <MaxHealth>10</MaxHealth>
+        <NoAutoRepair>true</NoAutoRepair>
+        <RepairBuildingTL>TL_WORKER_REPAIR</RepairBuildingTL>
+        <MaxFloorFireSize>0</MaxFloorFireSize>
+        <Loot><Type>None</Type></Loot>
+
+        <Exploration>0</Exploration>
+        <InertToTerritoryOwnerChange>true</InertToTerritoryOwnerChange>
+        <EntityCategories>
+            <EntityCategory>AttackableBuilding</EntityCategory>			  
+            <EntityCategory>BanditsCamp</EntityCategory>
+        </EntityCategories>
+        <ApproachPos>
+            <X>0</X>
+            <Y>-255</Y>
+        </ApproachPos>
+        <ApproachR>0</ApproachR>
+        <DoorPos>
+            <X>0</X>
+            <Y>0</Y>
+        </DoorPos>
+        <BlockingAreas>
+            <BlockingArea>
+                <Blocked1>
+                    <X>-150</X>
+                    <Y>150</Y>
+                </Blocked1>
+                <Blocked2>
+                    <X>150</X>
+                    <Y>-150</Y>
+                </Blocked2>
+            </BlockingArea>
+        </BlockingAreas>
+        <BuildBlockingAreas>
+            <BuildBlockingArea>
+                <Blocked1>
+                    <X>-300</X>
+                    <Y>300</Y>
+                </Blocked1>
+                <Blocked2>
+                    <X>300</X>
+                    <Y>-300</Y>
+                </Blocked2>
+            </BuildBlockingArea>
+        </BuildBlockingAreas>
+
+        <SoundImpactType>Tent</SoundImpactType>
+
+    </Logic>
+    <Behaviors>
+
+        <Behavior>
+            <Logic classname="EGL::CRespawnResourceEntityBehaviorProps">
+                <Class>EGL::CRespawnResourceEntityBehavior</Class>
+                <SpawnBattalion>true</SpawnBattalion>
+                <MaxCapacity>2</MaxCapacity>
+                <MinSpawn>0.01</MinSpawn>
+                <MaxSpawn>0.01</MaxSpawn>
+                <MaxSpawnCapacity>1</MaxSpawnCapacity>
+                <SpawnRange>800</SpawnRange>
+                <MinScale>1</MinScale>
+                <MaxScale>1</MaxScale>
+                <SpawnTypes>
+                    <SpawnType>U_MilitaryBandit_Melee_SE</SpawnType>
+                    <SpawnType>U_MilitaryBandit_Ranged_SE</SpawnType>
+                </SpawnTypes>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CAmmunitionFillerBehaviorProps">
+                <Class>EGL::CAmmunitionFillerBehavior</Class>
+                <TargetCategory>Military</TargetCategory>
+                <AmmunitionType>G_TorchAmmunition</AmmunitionType>
+                <CooldownTurns>2000</CooldownTurns>
+                <RefillingRange>2000</RefillingRange>
+            </Logic>
+        </Behavior>
+    </Behaviors>
+    <MapEditor>
+        <TreePosition>Buildings\Bandits</TreePosition>
+        <ShowInTree>true</ShowInTree>
+        <Clime>SouthEurope</Clime>
+        <Scalable>false</Scalable>
+        <TemplateResistant>true</TemplateResistant>
+    </MapEditor>
+</root>
