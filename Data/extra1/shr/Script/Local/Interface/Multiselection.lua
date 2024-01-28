@@ -8,37 +8,51 @@ function InitMultiselection()
     g_MultiSelection.Highlighted = {}
     --g_MultiSelection.IgnoreCreate = 0
     
-    LeaderSortOrder = {}
-    LeaderSortOrder[1] = Entities.U_MilitarySword
-    LeaderSortOrder[2] = Entities.U_MilitaryBow
-    LeaderSortOrder[3] = Entities.U_MilitarySword_RedPrince
-    LeaderSortOrder[4] = Entities.U_MilitaryBow_RedPrince
-    LeaderSortOrder[5] = Entities.U_MilitaryBandit_Melee_ME
-    LeaderSortOrder[6] = Entities.U_MilitaryBandit_Melee_NA
-    LeaderSortOrder[7] = Entities.U_MilitaryBandit_Melee_NE
-    LeaderSortOrder[8] = Entities.U_MilitaryBandit_Melee_SE
-    LeaderSortOrder[9] = Entities.U_MilitaryBandit_Ranged_ME
-    LeaderSortOrder[10] = Entities.U_MilitaryBandit_Ranged_NA
-    LeaderSortOrder[11] = Entities.U_MilitaryBandit_Ranged_NE
-    LeaderSortOrder[12] = Entities.U_MilitaryBandit_Ranged_SE
-    LeaderSortOrder[13] = Entities.U_MilitaryCatapult
-    LeaderSortOrder[14] = Entities.U_MilitarySiegeTower
-    LeaderSortOrder[15] = Entities.U_MilitaryBatteringRam
-    LeaderSortOrder[16] = Entities.U_MilitaryTrebuchet
-    LeaderSortOrder[17] = Entities.U_CatapultCart
-    LeaderSortOrder[18] = Entities.U_SiegeTowerCart
-    LeaderSortOrder[19] = Entities.U_BatteringRamCart
-    LeaderSortOrder[20] = Entities.U_TrebuchetCart
-    LeaderSortOrder[21] = Entities.U_Thief
-    LeaderSortOrder[22] = Entities.U_Bear
-    LeaderSortOrder[23] = Entities.U_BlackBear
-    LeaderSortOrder[24] = Entities.U_PolarBear
-    LeaderSortOrder[25] = Entities.U_Lion_Male
-    LeaderSortOrder[26] = Entities.U_Lion_Female
-    LeaderSortOrder[27] = Entities.U_Wolf_Grey
-    LeaderSortOrder[28] = Entities.U_Wolf_White
-    LeaderSortOrder[29] = Entities.U_Wolf_Black
-    LeaderSortOrder[30] = Entities.U_Wolf_Brown
+    LeaderSortOrder = {
+        Entities.U_MilitarySword,
+        Entities.U_MilitaryBow,
+        Entities.U_MilitarySword_RedPrince,
+        Entities.U_MilitaryBow_RedPrince,
+        Entities.U_MilitaryBandit_Melee_ME,
+        Entities.U_MilitaryBandit_Melee_NA,
+        Entities.U_MilitaryBandit_Melee_NE,
+        Entities.U_MilitaryBandit_Melee_SE,
+        Entities.U_MilitaryBandit_Melee_AS,
+        Entities.U_MilitaryBandit_Ranged_ME,
+        Entities.U_MilitaryBandit_Ranged_NA,
+        Entities.U_MilitaryBandit_Ranged_NE,
+        Entities.U_MilitaryBandit_Ranged_SE,
+        Entities.U_MilitaryBandit_Ranged_AS,
+        Entities.U_MilitaryCatapult,
+        Entities.U_MilitarySiegeTower,
+        Entities.U_MilitaryBatteringRam,
+        Entities.U_MilitaryTrebuchet,
+        Entities.U_CatapultCart,
+        Entities.U_SiegeTowerCart,
+        Entities.U_BatteringRamCart,
+        Entities.U_TrebuchetCart,
+        Entities.U_Thief,
+        Entities.U_MilitarySword_Khana,
+        Entities.U_MilitaryBow_Khana,
+        Entities.U_Bear,
+        Entities.U_BlackBear,
+        Entities.U_PolarBear,
+        Entities.U_Lion_Male,
+        Entities.U_Lion_Female,
+        Entities.U_Wolf_Grey,
+        Entities.U_Wolf_White,
+        Entities.U_Wolf_Black,
+        Entities.U_Wolf_Brown,
+        Entities.U_Tiger,
+        Entities.U_Tiger_White,
+        Entities.U_Cat1,
+        Entities.U_Cat2,
+        Entities.U_Cat3,
+        Entities.U_Cat4,
+        Entities.U_Dog1,
+        Entities.U_Dog2,
+        Entities.U_Dog3
+    }
 end
 
 
