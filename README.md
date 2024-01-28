@@ -168,6 +168,11 @@ Folgende Änderungen wurden vorgenommen:
 		- Hauptspiel-Marktplätze haben ein Mouseover
 	- Bienenstöcke haben weniger Lebenspunkte (10 -> 5)
 	- Handelsposten-Baubutton hat einen etwas verständlicheren Tooltip
+- Doodads
+	- "Neue" Doodads
+		- Standarte
+			- Nutzt Modell und Texturen von "U_MilitaryLeader"
+			- Wird (noch) nicht in der Spielerfarbe eingefärbt
 - Hauptmenü
 	- AddOn nutzt weitgehend Hauptspiel-Hintergrund und Soundtrack
 	- Hintergrund ist tageszeitabhängig
@@ -212,6 +217,12 @@ Folgende Änderungen wurden vorgenommen:
 	- Sieg und Niederlage haben jeweils eine Art "Jingle"
 	- Spielerfarben auf der Minimap sind nun (meistens) korrekt
 	- Krankheiten treten nun schon ab 101 Siedlern auf, nicht erst ab 151
+	- Test: Neue Unit 'U_MilitaryStandarte'
+		- Ist als Munitionskarren für Fackeln vorgesehen
+		- Probleme
+			- Besitzt keine Animationen
+			- Spielerfarbe wird nicht darauf angewandt
+			- Ist falsch rotiert
 - Kampagnen
 	- Hauptspiel-Kampagne auch im AddOn spielbar
 	- Bugs gefixt

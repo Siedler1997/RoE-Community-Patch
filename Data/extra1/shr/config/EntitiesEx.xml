@@ -428,5 +428,7 @@
 	<Entity>B_Beautification_Dragon</Entity>
 	<Entity>U_Dragon</Entity>
 	<Entity>B_Beautification_Cathedral</Entity>
+	<Entity>U_MilitaryStandarte</Entity>
+	<Entity>D_X_Battlefield_Standarte</Entity>
 </root>
 

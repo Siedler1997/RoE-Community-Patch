@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<root>
+	<Display classname="ED::CEntityProps">
+		<Class>ED::CDisplaySettler</Class>
+		<Model>Units\Military\Standarte</Model>
+		<DrawPlayerColor>true</DrawPlayerColor>
+	</Display>
+
+	<Logic classname="EGL::CSettlerProps">
+		<Class>EGL::CSettler</Class>
+		<AccessCategory>AccessCategoryAttackableSettler</AccessCategory>
+		<PlayerSectorType>PlayerSectorTypeMilitary</PlayerSectorType>
+		<MilMetaFormationMemberType>MilMetaFormationMemberTypeCart</MilMetaFormationMemberType>
+		<MaxHealth>100</MaxHealth>
+		<HealingSeconds/>
+		<HealingPoints>0</HealingPoints>
+		
+		<NeedsPlayer>true</NeedsPlayer>
+		<ForceNoPlayer>false</ForceNoPlayer>
+		<ApproachR>200</ApproachR>
+		<IsSelectable>true</IsSelectable>
+		<ShowInMiniMap>1</ShowInMiniMap>
+		<EntityCategories>
+			<EntityCategory>Military</EntityCategory>
+			<EntityCategory>HeavyWeapon</EntityCategory>
+		</EntityCategories>
+		<AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
+		<RepairFactor>0.3</RepairFactor>
+		<Exploration>0</Exploration>
+
+		<Cost>
+			<GoodAmount>
+				<GoodType>G_Wood</GoodType>
+				<Amount>12</Amount>
+			</GoodAmount>
+		</Cost>
+		
+		<Familiar>
+			<With>SheepPasture</With>
+			<With>CattlePasture</With>
+		</Familiar>
+		<SoundImpactType>Wood</SoundImpactType>
+	</Logic>
+
+	<Behaviors>
+		<Behavior>
+			<Logic classname="EGL::CAmmunitionCartBehaviorProps">
+				<Class>EGL::CAmmunitionCartBehavior</Class>
+				<TargetCategory>Military</TargetCategory>
+				<AmmunitionType>G_TorchAmmunition</AmmunitionType>
+				<AmmunitionAmount>12</AmmunitionAmount>
+				<CooldownTurns>2000</CooldownTurns>
+				<RefillingRange>1000</RefillingRange>
+			</Logic>
+		</Behavior>
+		
+		<Behavior>
+			<Logic classname="EGL::CAnimationBehaviorExProps">
+				<Class>EGL::CBehaviorAnimationEx</Class>
+				<DefaultAnimation>Military\Standarte_1</DefaultAnimation>
+				<AnimSet>SET_MILITARYLEADER</AnimSet>
+			</Logic>
+			<Display classname="ED::CBehaviorProps">
+				<Class>ED::CDisplayBehaviorAnimation</Class>
+			</Display>
+		</Behavior>
+		
+		<Behavior>
+			<Logic classname="EGL::CMilitaryMovementBehaviorProps">
+				<Class>EGL::CMilitaryMovementBehavior</Class>
+				<StraightenPath>true</StraightenPath>
+				<Speed>400</Speed>
+				<RotationSpeed>150</RotationSpeed>
+				<MoveTaskList>TL_MILITARY_WALK</MoveTaskList>
+				<MoveIdleAnim>Military\Standarte_1</MoveIdleAnim>
+			</Logic>
+			<Display classname="ED::CBehaviorProps">
+				<Class>ED::CDisplayBehaviorMovement</Class>
+			</Display>
+		</Behavior>
+		
+		<Behavior>
+			<Logic classname="EGL::CFightBehaviorProps">
+				<Class>EGL::CFightBehavior</Class>
+				<DefendTL>TL_MILITARY_DEFEND</DefendTL>
+				<MoveTaskList>TL_KNIGHT_WALK</MoveTaskList>
+				<DefendRange>0</DefendRange>
+				<AttackMoveRange>0</AttackMoveRange>
+			</Logic>
+		</Behavior>
+		
+		<Behavior>
+			<Logic classname="EGL::CBehaviorProps">
+				<Class>EGL::CBehaviorWalkCommand</Class>
+			</Logic>
+		</Behavior>
+		
+		<Behavior>
+			<Logic classname="EGL::CGuardableBehaviorProps">
+				<Class>EGL::CGuardableBehavior</Class>
+				<GuardFormationID>GuardingMechant</GuardFormationID>
+				<GuardApproachPos>
+					<X>-200</X>
+					<Y>0</Y>
+				</GuardApproachPos>
+			</Logic>
+		</Behavior>
+		
+		<Behavior>
+			<Logic classname="EGL::CCapturableBehaviorProps">
+				<Class>EGL::CCapturableBehavior</Class>
+			</Logic>
+		</Behavior>
+		
+		<Behavior>
+			<Logic classname="EGL::CBehaviorPropsDying">
+				<Class>EGL::CBehaviorDying</Class>
+				<DyingTaskList>TL_DIE</DyingTaskList>
+			</Logic>
+		</Behavior>
+
+		<Behavior>
+			<Logic classname="EGL::CBehaviorProps">
+				<Class>EGL::CParticleEffectAttachmentBehavior</Class>
+			</Logic>
+			<Display classname="ED::CBehaviorProps">
+				<Class>ED::CParticleEffectAttachmentBehavior</Class>
+			</Display>
+		</Behavior>
+	</Behaviors>
+
+	<MapEditor>
+		<TreePosition>Units\Military\Heavy Weapons</TreePosition>
+		<ShowInTree>false</ShowInTree>
+		<Clime>Generic</Clime>
+		<Scalable>false</Scalable>
+	</MapEditor>
+</root>
