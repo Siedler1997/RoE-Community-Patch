@@ -12365,9 +12365,9 @@
        <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
        <TabIndex>0</TabIndex>
        <Rectangle>
-        <X>-100.</X>
+        <X>-75.</X>
         <Y>0.</Y>
-        <W>1420.</W>
+        <W>1520.</W>
         <H>1200.</H>
         <KeepAspectRatio>false</KeepAspectRatio>
         <CirclePointTest>false</CirclePointTest>
@@ -16419,7 +16419,7 @@
                 <Rectangle>
                  <X>202.</X>
                  <Y>68.</Y>
-                 <W>290.</W>
+                 <W>390.</W>
                  <H>13.</H>
                  <KeepAspectRatio>true</KeepAspectRatio>
                  <CirclePointTest>false</CirclePointTest>
@@ -16507,9 +16507,9 @@
                 <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
                 <TabIndex>0</TabIndex>
                 <Rectangle>
-                 <X>182.</X>
+                 <X>202.</X>
                  <Y>702.</Y>
-                 <W>290.</W>
+                 <W>390.</W>
                  <H>13.</H>
                  <KeepAspectRatio>true</KeepAspectRatio>
                  <CirclePointTest>false</CirclePointTest>
@@ -16687,7 +16687,7 @@
                 <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
                 <TabIndex>0</TabIndex>
                 <Rectangle>
-                 <X>613.</X>
+                 <X>713.</X>
                  <Y>77.</Y>
                  <W>30.</W>
                  <H>36.</H>
@@ -16777,7 +16777,7 @@
                 <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
                 <TabIndex>0</TabIndex>
                 <Rectangle>
-                 <X>615.</X>
+                 <X>715.</X>
                  <Y>672.</Y>
                  <W>30.</W>
                  <H>36.</H>
@@ -17124,7 +17124,7 @@
                 <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
                 <TabIndex>0</TabIndex>
                 <Rectangle>
-                 <X>504.</X>
+                 <X>604.</X>
                  <Y>641.</Y>
                  <W>150.</W>
                  <H>76.</H>
@@ -17304,7 +17304,7 @@
                 <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
                 <TabIndex>0</TabIndex>
                 <Rectangle>
-                 <X>509.</X>
+                 <X>609.</X>
                  <Y>71.</Y>
                  <W>150.</W>
                  <H>76.</H>
@@ -17396,7 +17396,7 @@
                 <Rectangle>
                  <X>166.</X>
                  <Y>100.</Y>
-                 <W>347.</W>
+                 <W>447.</W>
                  <H>16.</H>
                  <KeepAspectRatio>true</KeepAspectRatio>
                  <CirclePointTest>false</CirclePointTest>
@@ -17486,7 +17486,7 @@
                 <Rectangle>
                  <X>179.</X>
                  <Y>682.</Y>
-                 <W>342.</W>
+                 <W>442.</W>
                  <H>16.</H>
                  <KeepAspectRatio>true</KeepAspectRatio>
                  <CirclePointTest>false</CirclePointTest>
@@ -17664,7 +17664,7 @@
                 <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
                 <TabIndex>0</TabIndex>
                 <Rectangle>
-                 <X>608.</X>
+                 <X>708.</X>
                  <Y>137.</Y>
                  <W>17.</W>
                  <H>505.</H>
@@ -18011,7 +18011,7 @@
                 <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
                 <TabIndex>0</TabIndex>
                 <Rectangle>
-                 <X>500.</X>
+                 <X>600.</X>
                  <Y>0.</Y>
                  <W>150.</W>
                  <H>150.</H>
@@ -18191,7 +18191,7 @@
                 <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
                 <TabIndex>0</TabIndex>
                 <Rectangle>
-                 <X>521.</X>
+                 <X>621.</X>
                  <Y>538.</Y>
                  <W>150.</W>
                  <H>150.</H>
@@ -20278,7 +20278,7 @@
              <Rectangle>
               <X>30.</X>
               <Y>70.</Y>
-              <W>630.</W>
+              <W>730.</W>
               <H>725.</H>
               <KeepAspectRatio>true</KeepAspectRatio>
               <CirclePointTest>false</CirclePointTest>
@@ -20352,7 +20352,7 @@
                 <Rectangle>
                  <X>0.</X>
                  <Y>7.</Y>
-                 <W>620.</W>
+                 <W>720.</W>
                  <H>300.</H>
                  <KeepAspectRatio>true</KeepAspectRatio>
                  <CirclePointTest>false</CirclePointTest>
@@ -20426,7 +20426,7 @@
                    <Rectangle>
                     <X>10.</X>
                     <Y>0.</Y>
-                    <W>300.</W>
+                    <W>400.</W>
                     <H>300.</H>
                     <KeepAspectRatio>true</KeepAspectRatio>
                     <CirclePointTest>false</CirclePointTest>
@@ -20516,7 +20516,7 @@
                    <Rectangle>
                     <X>300.</X>
                     <Y>0.</Y>
-                    <W>300.</W>
+                    <W>400.</W>
                     <H>300.</H>
                     <KeepAspectRatio>true</KeepAspectRatio>
                     <CirclePointTest>false</CirclePointTest>
@@ -20609,7 +20609,7 @@
                 <Rectangle>
                  <X>0.</X>
                  <Y>264.</Y>
-                 <W>610.</W>
+                 <W>710.</W>
                  <H>300.</H>
                  <KeepAspectRatio>true</KeepAspectRatio>
                  <CirclePointTest>false</CirclePointTest>
@@ -20683,7 +20683,7 @@
                    <Rectangle>
                     <X>10.</X>
                     <Y>0.</Y>
-                    <W>300.</W>
+                    <W>400.</W>
                     <H>300.</H>
                     <KeepAspectRatio>true</KeepAspectRatio>
                     <CirclePointTest>false</CirclePointTest>
@@ -20773,7 +20773,7 @@
                    <Rectangle>
                     <X>300.</X>
                     <Y>0.</Y>
-                    <W>300.</W>
+                    <W>400.</W>
                     <H>300.</H>
                     <KeepAspectRatio>true</KeepAspectRatio>
                     <CirclePointTest>false</CirclePointTest>
@@ -20866,7 +20866,7 @@
                 <Rectangle>
                  <X>0.</X>
                  <Y>526.</Y>
-                 <W>620.</W>
+                 <W>720.</W>
                  <H>115.</H>
                  <KeepAspectRatio>true</KeepAspectRatio>
                  <CirclePointTest>false</CirclePointTest>
@@ -20940,7 +20940,7 @@
                    <Rectangle>
                     <X>10.</X>
                     <Y>0.</Y>
-                    <W>300.</W>
+                    <W>400.</W>
                     <H>115.</H>
                     <KeepAspectRatio>true</KeepAspectRatio>
                     <CirclePointTest>false</CirclePointTest>
@@ -21030,7 +21030,7 @@
                    <Rectangle>
                     <X>300.</X>
                     <Y>0.</Y>
-                    <W>300.</W>
+                    <W>400.</W>
                     <H>115.</H>
                     <KeepAspectRatio>true</KeepAspectRatio>
                     <CirclePointTest>false</CirclePointTest>
