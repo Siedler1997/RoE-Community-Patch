@@ -7718,10 +7718,10 @@
              <FullScreenBackground>false</FullScreenBackground>
              <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
              <BackgroundMaterial>
-              <Texture>frames2.png</Texture>
-              <TextureCoordinatesMinU>1280.</TextureCoordinatesMinU>
+              <Texture>CoA_Big.png</Texture>
+              <TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
               <TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
-              <TextureCoordinatesMxU>1408.</TextureCoordinatesMxU>
+              <TextureCoordinatesMxU>128.</TextureCoordinatesMxU>
               <TextureCoordinatesMxV>176.</TextureCoordinatesMxV>
               <TextureFixedSizeX>0.</TextureFixedSizeX>
               <TextureFixedSizeY>0.</TextureFixedSizeY>
@@ -12440,7 +12440,7 @@
           <TabIndex>0</TabIndex>
           <Rectangle>
            <X>-401.</X>
-           <Y>405.</Y>
+           <Y>355.</Y>
            <W>240.</W>
            <H>53.</H>
            <KeepAspectRatio>true</KeepAspectRatio>
@@ -13800,7 +13800,7 @@
           <TabIndex>0</TabIndex>
           <Rectangle>
            <X>-32.</X>
-           <Y>516.</Y>
+           <Y>466.</Y>
            <W>569.</W>
            <H>294.</H>
            <KeepAspectRatio>true</KeepAspectRatio>
@@ -14387,10 +14387,10 @@
                 <FullScreenBackground>false</FullScreenBackground>
                 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
                 <BackgroundMaterial>
-                 <Texture>frames2.png</Texture>
-                 <TextureCoordinatesMinU>1280.</TextureCoordinatesMinU>
+                 <Texture>CoA_Big.png</Texture>
+                 <TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
                  <TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
-                 <TextureCoordinatesMxU>1408.</TextureCoordinatesMxU>
+                 <TextureCoordinatesMxU>128.</TextureCoordinatesMxU>
                  <TextureCoordinatesMxV>176.</TextureCoordinatesMxV>
                  <TextureFixedSizeX>0.</TextureFixedSizeX>
                  <TextureFixedSizeY>0.</TextureFixedSizeY>
@@ -14586,7 +14586,7 @@
           <TabIndex>0</TabIndex>
           <Rectangle>
            <X>151.</X>
-           <Y>113.</Y>
+           <Y>63.</Y>
            <W>98.</W>
            <H>35.</H>
            <KeepAspectRatio>true</KeepAspectRatio>
@@ -14676,7 +14676,7 @@
           <TabIndex>0</TabIndex>
           <Rectangle>
            <X>-85.</X>
-           <Y>390.</Y>
+           <Y>340.</Y>
            <W>585.</W>
            <H>100.</H>
            <KeepAspectRatio>true</KeepAspectRatio>
@@ -15501,7 +15501,7 @@
           <TabIndex>0</TabIndex>
           <Rectangle>
            <X>-290.</X>
-           <Y>291.</Y>
+           <Y>241.</Y>
            <W>331.</W>
            <H>47.</H>
            <KeepAspectRatio>true</KeepAspectRatio>
@@ -15621,7 +15621,7 @@
           <TabIndex>0</TabIndex>
           <Rectangle>
            <X>-244.</X>
-           <Y>287.</Y>
+           <Y>237.</Y>
            <W>430.</W>
            <H>73.</H>
            <KeepAspectRatio>true</KeepAspectRatio>
@@ -15878,7 +15878,7 @@
           <TabIndex>0</TabIndex>
           <Rectangle>
            <X>-7.</X>
-           <Y>60.</Y>
+           <Y>10.</Y>
            <W>630.</W>
            <H>900.</H>
            <KeepAspectRatio>true</KeepAspectRatio>
@@ -16270,7 +16270,7 @@
           <TabIndex>0</TabIndex>
           <Rectangle>
            <X>-725.</X>
-           <Y>103.</Y>
+           <Y>53.</Y>
            <W>710.</W>
            <H>878.</H>
            <KeepAspectRatio>true</KeepAspectRatio>

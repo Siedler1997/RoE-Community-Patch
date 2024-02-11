@@ -608,7 +608,7 @@
                    <FullScreenBackground>false</FullScreenBackground>
                    <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
                    <BackgroundMaterial>
-                    <Texture>frames2.png</Texture>
+                    <Texture>CoA_Big.png</Texture>
                     <TextureCoordinatesMinU>1280.</TextureCoordinatesMinU>
                     <TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
                     <TextureCoordinatesMxU>1408.</TextureCoordinatesMxU>

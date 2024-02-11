@@ -21367,10 +21367,10 @@
              <FullScreenBackground>false</FullScreenBackground>
              <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
              <BackgroundMaterial>
-              <Texture>frames2.png</Texture>
-              <TextureCoordinatesMinU>1280.</TextureCoordinatesMinU>
+              <Texture>CoA_Big.png</Texture>
+              <TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
               <TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
-              <TextureCoordinatesMxU>1408.</TextureCoordinatesMxU>
+              <TextureCoordinatesMxU>128.</TextureCoordinatesMxU>
               <TextureCoordinatesMxV>176.</TextureCoordinatesMxV>
               <TextureFixedSizeX>0.</TextureFixedSizeX>
               <TextureFixedSizeY>0.</TextureFixedSizeY>
@@ -26227,10 +26227,10 @@
 									 <FullScreenBackground>false</FullScreenBackground>
 									 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
 									 <BackgroundMaterial>
-										 <Texture>frames2.png</Texture>
-										 <TextureCoordinatesMinU>1280.</TextureCoordinatesMinU>
+										 <Texture>CoA_Big.png</Texture>
+										 <TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
 										 <TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
-										 <TextureCoordinatesMxU>1408.</TextureCoordinatesMxU>
+										 <TextureCoordinatesMxU>128.</TextureCoordinatesMxU>
 										 <TextureCoordinatesMxV>176.</TextureCoordinatesMxV>
 										 <TextureFixedSizeX>0.</TextureFixedSizeX>
 										 <TextureFixedSizeY>0.</TextureFixedSizeY>
