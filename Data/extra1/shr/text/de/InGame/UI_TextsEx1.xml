@@ -27,4 +27,7 @@
 	<string id="Multiplayer_MaxPlayerCount_Four" MD5Hash="3D33F3AAB0B59B4F41D42A532F62E40F" mod="20070828185817" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[4 Spieler]]></string>
 	<string id="MainMenuSelectColor" MD5Hash="" mod="20070809132947" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Alternative Spielerfarbe]]></string>
 	<string id="MainMenuSelectColor_Tooltip" MD5Hash="" mod="20070809132947" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Aktiviert oder deaktiviert eine alternative Spielerfarbe für den Einzelspielermodus.]]></string>
+	<string id="MainMenuEnterName_colon" MD5Hash="AC7C7CBA56A6ED4912C4C09D22730C42" mod="20080305185041" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Euer Namen:]]></string>
+	<string id="MainMenuSelectGender_colon" MD5Hash="E5863A91A248F4CDB046C6A7CD2FE58F" mod="20070809133021" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Euer Geschlecht:]]></string>
+	<string id="MainMenuSelectCoA_colon" MD5Hash="31DDC99E3CB405AF520AF608570D190A" mod="20070809133010" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Euer Wappen:]]></string>
 </root>
