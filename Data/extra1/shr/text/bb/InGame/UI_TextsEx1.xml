@@ -18,4 +18,7 @@
 	<string id="MainMenuEnterName_colon" MD5Hash="" mod="20070731123705" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Your name:]]></string>
 	<string id="MainMenuSelectGender_colon" MD5Hash="" mod="20070809132947" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Your gender:]]></string>
 	<string id="MainMenuSelectCoA_colon" MD5Hash="" mod="20070809132924" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Your Coat of Arms:]]></string>
+	<string id="MainMenuSelectCoAColorScheme_colon" MD5Hash="31DDC99E3CB405AF520AF608570D190A" mod="20070809133010" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Color scheme:]]></string>
+	<string id="MainMenuCoABright" MD5Hash="31DDC99E3CB405AF520AF608570D190A" mod="20070809133010" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bright]]></string>
+	<string id="MainMenuCoADark" MD5Hash="31DDC99E3CB405AF520AF608570D190A" mod="20070809133010" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dark]]></string>
 </root>

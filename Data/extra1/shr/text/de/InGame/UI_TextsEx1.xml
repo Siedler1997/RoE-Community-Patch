@@ -30,4 +30,7 @@
 	<string id="MainMenuEnterName_colon" MD5Hash="AC7C7CBA56A6ED4912C4C09D22730C42" mod="20080305185041" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Euer Namen:]]></string>
 	<string id="MainMenuSelectGender_colon" MD5Hash="E5863A91A248F4CDB046C6A7CD2FE58F" mod="20070809133021" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Euer Geschlecht:]]></string>
 	<string id="MainMenuSelectCoA_colon" MD5Hash="31DDC99E3CB405AF520AF608570D190A" mod="20070809133010" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Euer Wappen:]]></string>
+	<string id="MainMenuSelectCoAColorScheme_colon" MD5Hash="31DDC99E3CB405AF520AF608570D190A" mod="20070809133010" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Farbschema:]]></string>
+	<string id="MainMenuCoABright" MD5Hash="31DDC99E3CB405AF520AF608570D190A" mod="20070809133010" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Hell]]></string>
+	<string id="MainMenuCoADark" MD5Hash="31DDC99E3CB405AF520AF608570D190A" mod="20070809133010" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dunkel]]></string>
 </root>
