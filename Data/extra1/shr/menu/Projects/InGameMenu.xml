@@ -6807,7 +6807,7 @@
                  <LuaCommand></LuaCommand>
                 </OnBlur>
                 <UpdateFunction>
-                 <LuaCommand>g_CoatOfArm.UpdatePattern( )</LuaCommand>
+                 <LuaCommand>g_CoatOfArm.UpdatePatternByPlayerColor( )</LuaCommand>
                 </UpdateFunction>
                 <UpdateFunctionTurnBased>
                  <LuaCommand></LuaCommand>
@@ -21150,7 +21150,7 @@
                  <LuaCommand></LuaCommand>
                 </OnBlur>
                 <UpdateFunction>
-                 <LuaCommand>g_CoatOfArm.UpdatePattern(true)</LuaCommand>
+                 <LuaCommand>g_CoatOfArm.UpdatePatternByPlayerColor(true)</LuaCommand>
                 </UpdateFunction>
                 <UpdateFunctionTurnBased>
                  <LuaCommand></LuaCommand>
@@ -21407,7 +21407,7 @@
                  <LuaCommand></LuaCommand>
                 </OnBlur>
                 <UpdateFunction>
-                 <LuaCommand>g_CoatOfArm.UpdatePattern(true)</LuaCommand>
+                 <LuaCommand>g_CoatOfArm.UpdatePatternByPlayerColor(true)</LuaCommand>
                 </UpdateFunction>
                 <UpdateFunctionTurnBased>
                  <LuaCommand></LuaCommand>

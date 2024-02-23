@@ -16,11 +16,13 @@ g_MainMenuProfile.IndexOfCurrentGender = 0                  -- 0..1
 g_MainMenuProfile.IndexOfCurrentSelectedCoAColorScheme = 0  -- 0..1
 g_MainMenuProfile.IndexOfCurrentProfile = 0                 -- 0..n
 g_MainMenuProfile.IndexOfCurrentGender = 0                  -- 0..1
+g_MainMenuProfile.IndexOfCurrentPreferredColor = 1          -- 1..18
 
 g_MainMenuProfile.ChangingProfile = 0
 g_MainMenuProfile.TempGender = 0    				        -- 0..1
 g_MainMenuProfile.TempPattern = 0					        -- 0..1
 g_MainMenuProfile.TempCoAColorScheme = 0    		        -- 0..1
+g_MainMenuProfile.TempPreferredColor = 1    		        -- 1..18
 g_MainMenuProfile.BottomCleared = 0
 g_MainMenuProfile.ExitCancelVisibile = 0
 g_MainMenuProfile.CreateAcceptVisibile = 0
@@ -120,6 +122,7 @@ function g_MainMenuProfile:OnChangeProfile()
     local coAColorScheme = Profile.GetInteger("Profile", "CoAColorScheme", 0)
 	--self:ChoseCoAColorScheme(coAColorScheme)
 	self:DisplayCoAColorScheme(coAColorScheme)
+    g_MainMenuProfile:DisplayPreferredColor(Profile.GetInteger("Profile", "PreferredPlayerColor", 1))
 
 	Profile.SelectProfile(CurrentProfile)
 
@@ -162,6 +165,7 @@ function g_MainMenuProfile:OnNewProfile()
     self:ChosePattern(self.IndexOfCurrentSelectedPattern)
     self.IndexOfCurrentSelectedCoAColorScheme = 0
     g_MainMenuProfile:DisplayCoAColorScheme(0)
+    g_MainMenuProfile:DisplayPreferredColor(1)
 
 end
 ---------------------------------------------------------------------------------------------------
@@ -219,11 +223,8 @@ function g_MainMenuProfile:OnCreateNew()
             self:ChoseGender("female")
         end
         
-        if self.IndexOfCurrentCoAColorScheme == 0 then
-            self:ChoseCoAColorScheme("bright")
-        else
-            self:ChoseCoAColorScheme("dark")
-        end
+        self:ChoseCoAColorScheme(self.IndexOfCurrentCoAColorScheme)
+        self:ChosePreferredColor(self.IndexOfCurrentPreferredColor)
 
         --Arms
         self:ChosePattern(self.IndexOfCurrentSelectedPattern)	-- may be redundant but we have to call this function
@@ -273,6 +274,7 @@ function g_MainMenuProfile:OnAcceptChanges()
     end
     
     self:ChoseCoAColorScheme(self.TempCoAColorScheme)
+    self:ChosePreferredColor(self.TempPreferredColor)
 
     --Arms
     self:ChosePattern(self.TempPattern)
@@ -387,6 +389,8 @@ function g_MainMenuProfile:FirstLaunch()
     self:ChosePattern(self.IndexOfCurrentSelectedPattern)
     self.IndexOfCurrentCoAColorScheme = 0
     self:DisplayCoAColorScheme(self.IndexOfCurrentCoAColorScheme)
+    self.IndexOfCurrentPreferredColor = 1
+    self:DisplayPreferredColor(self.IndexOfCurrentPreferredColor)
 
 end
 ---------------------------------------------------------------------------------------------------
@@ -538,18 +542,21 @@ function g_MainMenuProfile:UpdatePattern(_Pattern)
     local IndexGender
     local IndexPattern
     local IndexColorScheme
+    local IndexPreferredColor
     if self.ChangingProfile == 1 then
 		IndexGender = self.TempGender
 		IndexPattern = self.TempPattern
 		IndexColorScheme = self.TempCoAColorScheme
+		IndexPreferredColor = self.TempPreferredColor
 	else
 		IndexGender = self.IndexOfCurrentGender
 		IndexPattern = self.IndexOfCurrentSelectedPattern
 		IndexColorScheme = self.IndexOfCurrentCoAColorScheme
+		IndexPreferredColor = self.IndexOfCurrentPreferredColor
 	end
 
     local PatternTexture = IndexGender * g_CoatOfArm.NumberOfPatterns + (IndexPattern)
-    g_CoatOfArm.UpdatePattern( false, PatternTexture, IndexGender, nil, IndexColorScheme )
+    g_CoatOfArm.UpdatePattern( false, PatternTexture, IndexGender, nil, IndexColorScheme, IndexPreferredColor )
 
     --for i=0,4 do
     --    XGUIEng.SetMaterialTexture(WidgetID, i, "graphics\\Textures\\GUI\\" .. PatternTexture .. ".png")
@@ -625,12 +632,61 @@ end
 ---------------------------------------------------------------------------------------------------
 function g_MainMenuProfile:ChoseCoAColorScheme(_CoAColorScheme)
 
-	--Profile.SetString("Profile", "CoAColorScheme", _CoAColorScheme)
     Profile.SetInteger("Profile", "CoAColorScheme", _CoAColorScheme)
-	if (_CoAColorScheme == "bright") then
-		--Profile.SetInteger("Profile", "LogoTexture", 0)
-	else -- "female"
-		--Profile.SetInteger("Profile", "LogoTexture", 1)
+
+end
+
+---------------------------------------------------------------------------------------------------
+function g_MainMenuProfile:DisplayPreferredColor( _SelectedPreferredColor)
+
+    if self.ChangingProfile == 1 then
+		self.TempPreferredColor = _SelectedPreferredColor
+	else
+		self.IndexOfCurrentPreferredColor = _SelectedPreferredColor --or 1
 	end
+
+	if _SelectedPreferredColor == 1 then
+        XGUIEng.CheckBoxSetIsChecked("/InGame/Profile/NewProfile/PreferredColorRadios/Blue/BlueCheckBox", true)
+        XGUIEng.CheckBoxSetIsChecked("/InGame/Profile/NewProfile/PreferredColorRadios/Yellow/YellowCheckBox", false)
+    else
+        XGUIEng.CheckBoxSetIsChecked("/InGame/Profile/NewProfile/PreferredColorRadios/Blue/BlueCheckBox", false)
+        XGUIEng.CheckBoxSetIsChecked("/InGame/Profile/NewProfile/PreferredColorRadios/Yellow/YellowCheckBox", true)
+    end
+
+end
+---------------------------------------------------------------------------------------------------
+function g_MainMenuProfile:OnPreferredColorSelectionChange(_SelectedIndex)
+
+    local CurrentWidget
+    local OtherWidget
+
+    	if _SelectedIndex == 1 then
+            CurrentWidget = "/InGame/Profile/NewProfile/PreferredColorRadios/Blue/BlueCheckBox"
+            OtherWidget   = "/InGame/Profile/NewProfile/PreferredColorRadios/Yellow/YellowCheckBox"
+        else
+            OtherWidget   = "/InGame/Profile/NewProfile/PreferredColorRadios/Blue/BlueCheckBox"
+            CurrentWidget = "/InGame/Profile/NewProfile/PreferredColorRadios/Yellow/YellowCheckBox"
+        end
+
+    if XGUIEng.CheckBoxIsChecked(CurrentWidget) == true then
+
+        self.HasChanged = true
+
+    	if self.ChangingProfile == 1 then
+    		self.TempPreferredColor = _SelectedIndex
+    	else
+    	    self.IndexOfCurrentPreferredColor = _SelectedIndex
+    	end
+
+        XGUIEng.CheckBoxSetIsChecked(OtherWidget,false)
+    else
+        XGUIEng.CheckBoxSetIsChecked(CurrentWidget,true)
+    end
+
+end
+---------------------------------------------------------------------------------------------------
+function g_MainMenuProfile:ChosePreferredColor(_PreferredColor)
+
+    Profile.SetInteger("Profile", "PreferredPlayerColor", _PreferredColor)
 
 end

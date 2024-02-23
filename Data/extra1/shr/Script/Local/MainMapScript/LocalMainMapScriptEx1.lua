@@ -150,10 +150,8 @@ function FixCameraPosition(_LookAtX, _LookAtY, _RotationAngle, _ZoomFactor)
 end
 
 
-function SetAltPlayerColor()
-    local newColor = Options.GetIntValue("Game", "AltPlayerColor", 0)
-    if newColor == 0 then
-        newColor = newColor + 1
-    end
+function SetPreferredPlayerColor()
+    local newColor = Profile.GetInteger("Profile", "PreferredPlayerColor", 1)
+
     GUI.SendScriptCommand("PlayerChangePlayerColor2("..newColor..")")
 end

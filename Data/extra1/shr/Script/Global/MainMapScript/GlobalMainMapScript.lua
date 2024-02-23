@@ -170,7 +170,7 @@ function GameCallback_OnGameStart()
 end
 
 function PlayerChangePlayerColor()
-	Logic.ExecuteInLuaLocalState("SetAltPlayerColor()")
+	Logic.ExecuteInLuaLocalState("SetPreferredPlayerColor()")
     return true
 end
 
@@ -386,7 +386,6 @@ function InitPlayerColorIndex()
     g_ColorIndex["BanditsColor4"] = 23  --Black
     g_ColorIndex["BanditsColor5"] = 24  --Dark Grey
 end
-
 
 function SetupPlayer(_PlayerID, _Head, _Name, _ColorName, _Logo, _Pattern)
 
