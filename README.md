@@ -195,16 +195,15 @@ Folgende Änderungen wurden vorgenommen:
 		- Maximale Anzahl an Steuereintreibern erhöht (6 -> 8)
 	- Bei Minimap-Benachrichtigung wird der auslösende Spieler erst entfernt, um Verwirrung zu vermeiden
 	- Neun "neue" Spielerfarben
-	- Wappen
-		- Textur ist im Beförderungs-Fenster nun richtig zentriert
-		- Neue, von Stronghold 2 und Legends inspirierte Wappen
-	- Alternative Spielerfarbe: Gelb
-		- Ist in den Optionen (de-)aktivierbar
-		- Wirkt sich auch auf das gewählte Wappen aus
-		- Hat keinen Einfluss auf den Multiplayer
 	- Profil-Menü
 		- Buttons haben nun alle einen Hover-Effekt
 		- Speichern der Profileinstellungen funktioniert nun zuverlässig
+		- Neue Wappen hinzugefügt
+			- Textur ist im Beförderungs-Fenster nun richtig zentriert
+			- Neue, von Stronghold 2 und Legends inspirierte Wappen
+		- Option für alternative Spielerfarbe: Gelb
+			- Wirkt sich auf das gewählte Wappen und ALLE Maps aus
+			- Hat keinen Einfluss auf den Multiplayer
 	- Kampfmusik nach Klimazonen getrennt (als verschiedene Playlists)
 	- Baumenü: BeautificationMenu verschönert
 	- Unterschiedliche Festival-Musik, je nachdem, ob der Anlass eine Heldenbeförderung oder ein normales Fest ist

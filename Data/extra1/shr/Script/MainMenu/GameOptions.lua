@@ -53,17 +53,6 @@ function g_GameOptions:OnShow()
         XGUIEng.SliderSetValueMax(WidgetID, 60)        
         XGUIEng.SliderSetValueAbs(WidgetID, Camera.RTS_GetScrollSpeed() / 100)
     end
-    
-    -- Player color
-    do
-        local WidgetID = XGUIEng.GetWidgetID("/InGame/GameOptionsMain/RightContainer/PlayerColor/CheckBox")
-        local Value = Options.GetIntValue("Game", "AltPlayerColor", 0)              
-        if (Value > 1) then
-            XGUIEng.CheckBoxSetIsChecked(WidgetID, true)
-        else
-            XGUIEng.CheckBoxSetIsChecked(WidgetID, false)
-        end
-    end
      
     self.HasChanged = false
     self.RefreshLeftContainer()
@@ -105,16 +94,6 @@ function g_GameOptions:OnOK()
         
         Options.SetFloatValue("Game", "ScrollSpeed", Camera.RTS_GetScrollSpeed())
     end
-    
-    -- Player color
-    do
-        local WidgetID = XGUIEng.GetWidgetID("/InGame/GameOptionsMain/RightContainer/PlayerColor/CheckBox")          
-        if (XGUIEng.CheckBoxIsChecked(WidgetID) == true) then        
-            Options.SetFloatValue("Game", "AltPlayerColor", 18)     
-        else 
-            Options.SetFloatValue("Game", "AltPlayerColor", g_DefaultPlayerColor)     
-        end 
-    end  
 
     self:OnBackPressed()
     
