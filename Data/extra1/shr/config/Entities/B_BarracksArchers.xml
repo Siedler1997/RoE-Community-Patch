@@ -399,7 +399,7 @@
     <Behavior>
             <Logic classname="EGL::CAmmunitionFillerBehaviorProps">
                 <Class>EGL::CAmmunitionFillerBehavior</Class>
-                <TargetCategory>Soldier</TargetCategory>
+                <TargetCategory>Military</TargetCategory>
                 <AmmunitionType>G_TorchAmmunition</AmmunitionType>
                 <CooldownTurns>2000</CooldownTurns>
                 <RefillingRange>2000</RefillingRange>

@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+    <Display classname="ED::CEntityProps">
+        <Class>ED::CDisplaySettler</Class>
+        <Model>Vehicles\V_SiegeTower</Model>
+        <DrawPlayerColor>true</DrawPlayerColor>
+    </Display>
+
+    <Logic classname="EGL::CSettlerProps">
+        <Class>EGL::CBigSettler</Class>
+        <AccessCategory>AccessCategoryAttackableSettler</AccessCategory>
+        <PlayerSectorType>PlayerSectorTypeMilitary</PlayerSectorType>
+        <MilMetaFormationMemberType>MilMetaFormationMemberTypeEngine</MilMetaFormationMemberType>
+        <MaxHealth>400</MaxHealth>
+        <HealingSeconds/>
+        <HealingPoints>0</HealingPoints>
+
+        <NeedsPlayer>true</NeedsPlayer>
+        <ForceNoPlayer>false</ForceNoPlayer>
+        <EntityCategories>
+            <EntityCategory>Military</EntityCategory>
+            <EntityCategory>HeavyWeapon</EntityCategory>
+        </EntityCategories>
+        <AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
+        <Exploration>0</Exploration>
+        <IdleTaskList>TL_MILITARY_DEFEND</IdleTaskList>
+        <CanDrown>true</CanDrown>
+        <IsSelectable>true</IsSelectable>
+        <ShowInMiniMap>1</ShowInMiniMap>
+        <BlockSize>3</BlockSize>
+        <Familiar>
+            <With>SheepPasture</With>
+            <With>CattlePasture</With>
+        </Familiar>
+        <AttackPoints>
+            <AttackPoint>
+                <X>-300</X> <Y>0</Y>
+            </AttackPoint>
+            <AttackPoint>
+                <X>+300</X> <Y>0</Y>
+            </AttackPoint>
+            <AttackPoint>
+                <X>0</X> <Y>-300</Y>
+            </AttackPoint>
+            <AttackPoint>
+                <X>0</X> <Y>+300</Y>
+            </AttackPoint>
+        </AttackPoints>
+        <SoundImpactType>Wood</SoundImpactType>
+
+        <OnScreenIcon>MinimapSiegeTower</OnScreenIcon>
+		<ShowInMiniMap>0.75</ShowInMiniMap>
+    </Logic>
+
+    <Behaviors>
+        <Behavior>
+            <Logic classname="EGL::CMilitaryMovementBehaviorProps">
+                <Class>EGL::CMilitaryBigUnitMovementBehavior</Class>
+                <StraightenPath>true</StraightenPath>
+                <EvasionPriority>140</EvasionPriority>
+                <Speed>300</Speed>
+                <SmoothingRadius>1000</SmoothingRadius>
+                <RotationSpeed>50</RotationSpeed>
+                <MoveTaskList>TL_MILITARY_WALK</MoveTaskList>
+                <MoveIdleAnim>V_BatteringRam_Stand</MoveIdleAnim>
+            </Logic>
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CDisplayBehaviorMovement</Class>
+            </Display>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CAnimationBehaviorExProps">
+                <Class>EGL::CBehaviorAnimationEx</Class>
+                <AnimSet>SET_MILITARYSIEGETOWER</AnimSet>
+            </Logic>
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CDisplayBehaviorAnimation</Class>
+            </Display>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::CParticleEffectAttachmentBehavior</Class>
+            </Logic>
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CParticleEffectAttachmentBehavior</Class>
+            </Display>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CAttachableWarMachineBehaviorProps">
+                <Class>EGL::CAttachableWarMachineBehavior</Class>
+                <GuardFormationID>OperatingSiegeTower</GuardFormationID>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CCapturableBehaviorProps">
+                <Class>EGL::CCapturableBehavior</Class>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CSiegeTowerBehaviorProps">
+                <Class>EGL::CSiegeTowerBehavior</Class>
+                <DefendTL>TL_MILITARY_DEFEND</DefendTL>
+                <MoveTaskList>TL_KNIGHT_WALK</MoveTaskList>
+                <DefendRange>0</DefendRange>
+                <AttackMoveRange>0</AttackMoveRange>
+                <OperatingSoldierCount>1</OperatingSoldierCount>
+                <IdleWhileDefended>false</IdleWhileDefended>
+
+                <OpenDoorAnimID>V_SiegeTower_Dock_Open</OpenDoorAnimID>
+                <CloseDoorAnimID>V_SiegeTower_Dock_Close</CloseDoorAnimID>
+
+                <PlatformHeight>1030</PlatformHeight>
+                <PlatformFormation>MountedOnSiegeTower</PlatformFormation>
+                <OpenDoorHeight>800</OpenDoorHeight>
+                <ApproachPosition><X>-500</X><Y>0</Y></ApproachPosition>
+
+                <CartEntityType>U_SiegeTowerCart</CartEntityType>
+                <ConstructionDelay>5000</ConstructionDelay>
+
+                <TargetCategoryList>
+                    <TargetCategory>
+                        <DisableAutoAttack>true</DisableAutoAttack>
+                        <EntityCategoryList>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                            <EntityCategory>CityWallSegment</EntityCategory>
+                        </EntityCategoryList>
+                        <AttackModeList>
+                            <AttackMode>
+                                <BattleTL>TL_BATTLE_MELEE</BattleTL>
+                                <AttackAnim>V_BatteringRam_Shoot</AttackAnim>
+                                <MinRange>0</MinRange>
+                                <MaxRange>100</MaxRange> <!-- Do not increase -->
+                                <MaxHeightDeltaToTarget>100</MaxHeightDeltaToTarget>
+                                <CanAttackOverWalls>false</CanAttackOverWalls>
+                                <CooldownThousandths>1500</CooldownThousandths>
+                                <Damage>
+                                    <DiceCount>0</DiceCount>
+                                    <FaceCount>0</FaceCount>
+                                    <BaseValue>0</BaseValue>
+                                </Damage>
+                            </AttackMode>
+                        </AttackModeList>
+                    </TargetCategory>
+                </TargetCategoryList>
+            </Logic>
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CSiegeCartBehavior</Class>
+            </Display>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorPropsDying">
+                <Class>EGL::CBehaviorDying</Class>
+                <DyingTaskList>TL_DIE_SIEGEENGINETOWER</DyingTaskList>
+                <DeadEntity>U_MilitarySiegeTower_Collapse</DeadEntity>
+            </Logic>
+       </Behavior>
+    </Behaviors>
+
+    <MapEditor>
+        <TreePosition>Units\Military\Heavy Weapons</TreePosition>
+        <ShowInTree>false</ShowInTree>
+        <Clime>Generic</Clime>
+        <Scalable>false</Scalable>
+    </MapEditor>
+</root>

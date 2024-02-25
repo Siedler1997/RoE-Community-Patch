@@ -51,6 +51,7 @@
         <SoundProjectileType>Stone</SoundProjectileType>
 
         <OnScreenIcon>MinimapCatapult</OnScreenIcon>
+		<ShowInMiniMap>0.75</ShowInMiniMap>
     </Logic>
 
     <Behaviors>

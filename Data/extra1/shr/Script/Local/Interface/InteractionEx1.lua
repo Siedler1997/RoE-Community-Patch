@@ -314,4 +314,48 @@ end
 end ]]
 
 
+function GUI_Interaction.SetPlayerIcon(_PlayerIconContainer, _PlayerID)
 
+    local LogoWidget = _PlayerIconContainer .. "/Logo"
+    local PatternWidget = _PlayerIconContainer .. "/Pattern"
+
+    if _PlayerID == GUI.GetPlayerID() then
+
+        local CoASet = Profile.IsKeyValid("Profile", "PatternTexture")
+
+        if CoASet then
+            XGUIEng.SetMaterialTexture(LogoWidget, 0, "Frames2.png")
+            XGUIEng.SetMaterialTexture(PatternWidget, 0, "CoA_Small.png")
+            g_CoatOfArm.UpdateGender(true, nil, LogoWidget)
+            g_CoatOfArm.UpdatePattern(true, nil, nil, PatternWidget)
+        else
+            XGUIEng.SetMaterialColor(LogoWidget,0,255,255,255,0)
+            XGUIEng.SetMaterialColor(PatternWidget,0,255,255,255,0)
+        end
+    else
+        local PlayerCategory = GetPlayerCategoryType(_PlayerID)
+        local PlayerIcon = g_TexturePositions.PlayerCategories[PlayerCategory]
+        
+        if Mission_Callback_OverridePlayerIconForQuest then
+            local NewPlayerIcon = Mission_Callback_OverridePlayerIconForQuest(_PlayerID)
+            if NewPlayerIcon then
+                PlayerIcon = NewPlayerIcon
+            end
+        end
+        
+        if PlayerIcon then
+            SetIcon(LogoWidget, PlayerIcon)
+        else
+            SetIcon(LogoWidget, {7, 7})--default empty square
+        end
+        
+        SetIcon(PatternWidget, {14, 1})
+        local R, G, B = GUI.GetPlayerColor(_PlayerID)
+        
+        if PlayerCategory == PlayerCategories.Harbour then
+            R, G, B = 255, 255, 255
+        end
+        
+        XGUIEng.SetMaterialColor(PatternWidget, 0, R, G, B, 255)
+    end
+end

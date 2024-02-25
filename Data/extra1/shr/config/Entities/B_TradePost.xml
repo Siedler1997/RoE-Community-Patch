@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+
+    <Display classname="ED::CReplaceUpgradeBuildingProps">
+
+        <Class>ED::CReplaceUpgradeBuilding</Class>
+
+        <Decal>Buildings\B_Tradingpost_Decal</Decal>
+        <Model>Buildings\B_Tradingpost</Model>
+        <Destroyed>Buildings\B_Tradingpost_Rubble</Destroyed>
+        <UpgradeSite>Buildings\B_Tradingpost_ConstructionSite</UpgradeSite>
+        <LightModel>Buildings\B_Tradingpost_Light</LightModel>
+
+        <BannersPerUpgrade>
+            <Banner classname="ED::CBannerProps">
+                <Model>Buildings\B_Outpost_ME_Banner_01</Model>
+                <AnimationNoWind>B_Outpost_ME_Banner_01</AnimationNoWind>
+                <AnimationNormalWind>B_Outpost_ME_Banner_01</AnimationNormalWind>
+                <AnimationStrongWind>B_Outpost_ME_Banner_01</AnimationStrongWind>
+            </Banner>
+        </BannersPerUpgrade>
+        <ShowDestroyedModelAt>0</ShowDestroyedModelAt>
+        <FireNodeCount>30</FireNodeCount>
+    </Display>
+
+    <Logic classname="EGL::CUpgradableBuildingProps">
+        <Class>EGL::CUpgradableBuilding</Class>
+
+        <Cost>
+            <GoodAmount>
+                <GoodType>G_Wood</GoodType>
+                <Amount>12</Amount>
+            </GoodAmount>
+
+            <GoodAmount>
+                <GoodType>G_Gold</GoodType>
+                <Amount>100</Amount>
+            </GoodAmount>
+        </Cost>
+
+        <UpgradeCosts>
+            <UpgradeCost>
+                <GoodAmount>
+                    <GoodType>G_Stone</GoodType>
+                    <Amount>10</Amount>
+                </GoodAmount>
+
+                <GoodAmount>
+                    <GoodType>G_Gold</GoodType>
+                    <Amount>30</Amount>
+                </GoodAmount>
+            </UpgradeCost>
+        </UpgradeCosts>
+
+        <MaxNumberOfUpgrades>0</MaxNumberOfUpgrades>
+        <SecondsToUpgrade>6</SecondsToUpgrade>
+        <DowngradeOnDamage>false</DowngradeOnDamage>
+
+        <MinFloorFireSize>0</MinFloorFireSize>
+        <MaxFloorFireSize>0</MaxFloorFireSize>
+        <MaxHealth>600</MaxHealth>
+
+        <OutStockCapacities/>
+
+        <CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim>
+        <FlattenOnBuild>true</FlattenOnBuild>
+        <IsHeightLocking>true</IsHeightLocking>
+        <MayRemoveEntities>true</MayRemoveEntities>
+        <AccessCategory>AccessCategoryBuilding</AccessCategory>
+        <NeedsPlayer>true</NeedsPlayer>
+        <ForceNoPlayer>false</ForceNoPlayer>
+        <CanBeKnockedDown>true</CanBeKnockedDown>
+        <Worker>U_OutpostConstructionWorker</Worker> <!-- Construction only -->
+        <MaxWorkers>0</MaxWorkers>                   <!-- Construction only -->
+        <OutpostRepairMechanics>true</OutpostRepairMechanics>
+
+        <EntityCategories>
+            <EntityCategory>AttackableBuilding</EntityCategory>
+        </EntityCategories>
+        
+        <RepairBuildingTL>TL_WORKER_REPAIR</RepairBuildingTL>
+        <ApproachPos>
+            <X>-300</X>
+            <Y>-500</Y>
+        </ApproachPos>
+        <ApproachR>0</ApproachR>
+        <DoorPos>
+            <X>-300</X>
+            <Y>100</Y>
+        </DoorPos>
+        <BlockingAreas>
+            <BlockingArea>
+                <Blocked1>
+                    <X>-500</X>
+                    <Y>400</Y>
+                </Blocked1>
+                <Blocked2>
+                    <X>500</X>
+                    <Y>-400</Y>
+                </Blocked2>
+            </BlockingArea>
+
+        </BlockingAreas>
+        <BuildBlockingAreas>
+            <BuildBlockingArea>
+                <Blocked1>
+                    <X>-500</X>
+                    <Y>400</Y>
+                </Blocked1>
+                <Blocked2>
+                    <X>500</X>
+                    <Y>-550</Y>
+                </Blocked2>
+            </BuildBlockingArea>
+        </BuildBlockingAreas>
+        <ConstructionInfo>
+            <Time>6</Time>
+
+            <BuilderSlots>
+                <BuilderSlot>
+                    <Position>
+                        <X>-500</X>
+                        <Y>-750</Y>
+                    </Position>
+                    <Orientation>0</Orientation>
+                </BuilderSlot>
+            </BuilderSlots>
+            <TaskListConstruction>TL_CONSTRUCT_BUILDING</TaskListConstruction>
+            <ConstructionSite>B_TradePostConstructionSite</ConstructionSite>
+        </ConstructionInfo>
+        <Exploration>1</Exploration>
+        <SoundImpactType>Stone</SoundImpactType>
+
+		<OnScreenIcon>MinimapTradePost</OnScreenIcon>
+		<ShowInMiniMap>0.75</ShowInMiniMap>
+    </Logic>
+    <Behaviors>
+        <Behavior>
+            <Logic classname="EGL::CMountableBehaviorProps">
+                <Class>EGL::CMountableBehavior</Class>
+                <DoorBreaksAtPercentHealth>80</DoorBreaksAtPercentHealth>
+                <HeightOffset>785</HeightOffset>
+                <RelativeMountDoorPos>
+                    <X>300</X>
+                    <Y>200</Y>
+                </RelativeMountDoorPos>
+                <RelativeMountLeavePos>
+                    <X>300</X>
+                    <Y>200</Y>
+                </RelativeMountLeavePos>
+                <Slots>
+                    <Slot>
+                        <Priority>0</Priority>
+                        <Orientation>-90</Orientation>
+                        <RelativePos>
+                            <X>200</X>
+                            <Y>100</Y>
+                        </RelativePos>
+                    </Slot>
+                    <Slot>
+                        <Priority>0</Priority>
+                        <Orientation>180</Orientation>
+                        <RelativePos>
+                            <X>200</X>
+                            <Y>200</Y>
+                        </RelativePos>
+                    </Slot>
+                    <Slot>
+                        <Priority>0</Priority>
+                        <Orientation>90</Orientation>
+                        <RelativePos>
+                            <X>200</X>
+                            <Y>300</Y>
+                        </RelativePos>
+                    </Slot>
+                    <Slot>
+                        <Priority>0</Priority>
+                        <Orientation>-90</Orientation>
+                        <RelativePos>
+                            <X>400</X>
+                            <Y>100</Y>
+                        </RelativePos>
+                    </Slot>
+                    <Slot>
+                        <Priority>0</Priority>
+                        <Orientation>0</Orientation>
+                        <RelativePos>
+                            <X>400</X>
+                            <Y>200</Y>
+                        </RelativePos>
+                    </Slot>
+                    <Slot>
+                        <Priority>0</Priority>
+                        <Orientation>90</Orientation>
+                        <RelativePos>
+                            <X>400</X>
+                            <Y>300</Y>
+                        </RelativePos>
+                    </Slot>
+                </Slots>
+            </Logic>
+        </Behavior>
+        <Behavior>
+            <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::CTradePostBehavior</Class>                
+            </Logic>
+        </Behavior>
+    </Behaviors>
+    <MapEditor>
+        <TreePosition>Buildings\Village</TreePosition>
+        <ShowInTree>true</ShowInTree>
+        <Clime>Generic</Clime>
+        <Scalable>false</Scalable>
+        <TemplateResistant>true</TemplateResistant>
+    </MapEditor>
+</root>

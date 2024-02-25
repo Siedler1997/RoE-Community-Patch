@@ -5,11 +5,20 @@ Dieser inoffizielle Patch behebt diverse Bugs der History Edition vom Spiel 'Die
 
 ## Installation
 Mit folgenden Schritten lässt sich der Patch installieren:
-1. Sicherungskopie vom AeK-Ordner anlegen und z.B. "thesettlers6_Orig" nennen
+1. Lege eine Sicherheitskopie von `extra1` unter dem Namen `extra1_orig` an.
+Extra1 findest du unter The `Settlers - Rise of an Empire - History Edition\Data`. Du kannst die Kopie nennen, wie du willst.
 2. Projekt über Code -> Download ZIP herunterladen
-3. Projektordner in den Ornder OHNE "_Orig-Zusatz" entpacken und die Frage nach Überschreiben von X Dateien bestätigen
+3. Kopiere den `Data` Ordner in der Zip nach `Settlers - Rise of an Empire - History Edition` und bestätige das Überschreiben.
+4. Ändere die Starteinstellungen in Steam bzw. Uplay, sodass das Programm mit `-EXTRA1` als Parameter ausgeführt wird.
 3. Zocken
 
+
+## Deinstallation
+Mit folgenden Schritten lässt sich der Patch deinstallieren:
+1. Lösche `Settlers - Rise of an Empire - History Edition\Data\extra1`.
+2. Benenne die Sicherheitskopie von `extra1_orig` in `extra1` um.
+3. Entferne `-EXTRA1` aus den Startoptionen von Steam bzw. Uplay.
+4. Vanilla zocken
 
 
 ## Features
@@ -60,7 +69,7 @@ Folgende Änderungen wurden vorgenommen:
 		- Kastellane 
 			- Können theoretisch als Ritter genutzt werden
 			- Haben keine besonderen Fähigkeiten
-		- Varianz an Ladebildschirm-Bildern
+		- Alle "neuen" Ritte haben (provisorische) Ladebildschirm-Bilder
 - Militär
 	- Einheiten können mittels Entlassen-Button ... entlassen werden
 	- Bogenschützen allgemein
@@ -201,22 +210,26 @@ Folgende Änderungen wurden vorgenommen:
 		- Maximale Anzahl an Steuereintreibern erhöht (6 -> 8)
 	- Bei Minimap-Benachrichtigung wird der auslösende Spieler erst entfernt, um Verwirrung zu vermeiden
 	- Neun "neue" Spielerfarben
-	- Wappen
-		- Textur ist im Beförderungs-Fenster nun richtig zentriert
-		- Neue, von Stronghold 2 und Legends inspirierte Wappen
-	- Alternative Spielerfarbe: Gelb
-		- Ist in den Optionen (de-)aktivierbar
-		- Wirkt sich auch auf das gewählte Wappen aus
-		- Hat keinen Einfluss auf den Multiplayer
 	- Profil-Menü
 		- Buttons haben nun alle einen Hover-Effekt
 		- Speichern der Profileinstellungen funktioniert nun zuverlässig
+		- Neue Wappen hinzugefügt
+			- Textur ist im Beförderungs-Fenster nun richtig zentriert
+			- Neue, von Stronghold 2 und Legends inspirierte Wappen
+		- Option für alternative Spielerfarbe: Gelb
+			- Wirkt sich auf das gewählte Wappen und ALLE Maps aus
+			- Hat keinen Einfluss auf den Multiplayer
 	- Kampfmusik nach Klimazonen getrennt (als verschiedene Playlists)
 	- Baumenü: BeautificationMenu verschönert
 	- Unterschiedliche Festival-Musik, je nachdem, ob der Anlass eine Heldenbeförderung oder ein normales Fest ist
 	- Niederlagen-Kamerarotation deutlich verlangsamt
 	- Sieg und Niederlage haben jeweils eine Art "Jingle"
-	- Spielerfarben auf der Minimap sind nun (meistens) korrekt
+	- Krankheiten treten nun schon ab 101 Siedlern auf, nicht erst ab 151
+	- Minimap
+		- Spielerfarben auf der Minimap sind nun (meistens) korrekt
+		- Alle Icons um 25% verkleinert
+		- Außenposten, Handelsposten und Khanas Tempel werden ebenfalls angezeigt
+    - NPC Charaktere können nicht mehr Spieler 0 angehören
 - Kampagnen
 	- Hauptspiel-Kampagne auch im AddOn spielbar
 	- Bugs gefixt

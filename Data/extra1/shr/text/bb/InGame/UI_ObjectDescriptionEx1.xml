@@ -6,7 +6,7 @@
 <string id="B_TradePost" MD5Hash="45B97C4E5FA8E2729915EA1B03FE7446" mod="20071205164038" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- can automate trade]]></string>
 <string id="TradeGive" MD5Hash="4C3DBD7868639BC49693141C1099C27F" mod="20071210132054" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments="tooltip of the tradepost"><![CDATA[- goods to give]]></string>
 <string id="TradeReceive" MD5Hash="0DC893A7DB8AA1A9CE7C40FAC67E4EEF" mod="20071210131925" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments="tooltip of the tradepost"><![CDATA[- goods to receive]]></string>
-<string id="B_Cistern" MD5Hash="9A235BF9A32FAE71DB9D619E02C93DC8" mod="20080124130002" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- Well]]></string>
+<string id="B_Cistern" MD5Hash="9A235BF9A32FAE71DB9D619E02C93DC8" mod="20080124130002" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- provides water]]></string>
 <string id="GeologistBack" MD5Hash="52AC7D3B00BF18DABE007EFA0B6E9DE2" mod="20071211094648" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- Geologist will return, stopping his task]]></string>
 <string id="InteractiveObjectTradepost" MD5Hash="A4EBDF84A04D51A36980845023D6C07A" mod="20080206105649" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- can automate trade]]></string>
 <string id="InteractiveObjectGeologist" MD5Hash="D41D8CD98F00B204E9800998ECF8427E" mod="20080121112530" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- partially refills a well or mine]]></string>

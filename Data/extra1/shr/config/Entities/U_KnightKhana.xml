@@ -39,6 +39,8 @@
         </Familiar>
         <SoundImpactType>Leather</SoundImpactType>
         <SoundProjectileType>Sword</SoundProjectileType>
+		
+		<ShowInMiniMap>0.75</ShowInMiniMap>
     </Logic>
     <Behaviors>
 
@@ -149,7 +151,7 @@
 		<Behavior>
 			<Logic classname="EGL::CAmmunitionFillerBehaviorProps">
 				<Class>EGL::CAmmunitionFillerBehavior</Class>
-				<TargetCategory>Soldier</TargetCategory>
+				<TargetCategory>Military</TargetCategory>
 				<AmmunitionType>G_TorchAmmunition</AmmunitionType>
 				<CooldownTurns>1002</CooldownTurns>
 				<RefillingRange>800</RefillingRange>
