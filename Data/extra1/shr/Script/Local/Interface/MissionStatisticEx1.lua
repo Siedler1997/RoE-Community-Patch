@@ -30,24 +30,16 @@ function GUI_MissionStatistic.SetBG()
     elseif KnightType == Entities.U_KnightPlunder  then KnightBG = 5
     elseif KnightType == Entities.U_KnightSong     then KnightBG = 6
     elseif KnightType == Entities.U_KnightSaraya   then KnightBG = 7
+    elseif KnightType == Entities.U_KnightSabatta   then KnightBG = 8
+    elseif KnightType == Entities.U_KnightRedPrince   then KnightBG = 9
+    elseif KnightType == Entities.U_KnightPraphat   then KnightBG = 10
+    elseif KnightType == Entities.U_KnightKhana   then KnightBG = 11
     end
 
     local Filename
 
     if KnightBG == 0 then
-        if KnightType == Entities.U_KnightKhana then
-            Filename = "loadscreens\\chapter3.png"
-        --[[
-        elseif KnightType == Entities.U_KnightPraphat then
-            Filename = "loadscreens\\Throneroom.png"
-        elseif Tex == "me" then
-            Filename = "loadscreens\\chapter1.png"
-        --]]
-        elseif Tex == "as" then
-            Filename = "loadscreens\\Endscreen.png"
-        else
-            Filename = "loadscreens\\" .. Tex .. ".png"
-        end
+        Filename = "loadscreens\\" .. Tex .. ".png"
     else
         Filename = "loadscreens\\" .. Tex .. KnightBG .. ".png"
     end
