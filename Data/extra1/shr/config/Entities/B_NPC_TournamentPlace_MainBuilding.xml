@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+
+    <Display classname="ED::CBuildingProps">
+    <Class>ED::CDisplayBuilding</Class>
+    <Banner>Default</Banner>
+    <Model>Buildings\B_NPC_TournamentPlace_MainBuilding</Model>
+    <FireNodeCount>15</FireNodeCount>
+  	<SnowFactor>0.2</SnowFactor>
+  </Display>
+
+  
+  
+  <Logic classname="EGL::CCastleProps">
+    <Class>EGL::CCastle</Class>
+    <ConstructionCost>
+        <Wood>0</Wood>
+        <Stone>0</Stone>
+    </ConstructionCost>
+
+   <UpgradeCosts>
+       <UpgradeCost>
+           <GoodAmount>
+               <GoodType>G_Stone</GoodType>
+               <Amount>25</Amount>
+           </GoodAmount>
+           <GoodAmount>
+               <GoodType>G_Gold</GoodType>
+               <Amount>150</Amount>
+           </GoodAmount>
+       </UpgradeCost>
+
+       <UpgradeCost>
+           <GoodAmount>
+               <GoodType>G_Stone</GoodType>
+               <Amount>50</Amount>
+           </GoodAmount>
+           <GoodAmount>
+               <GoodType>G_Gold</GoodType>
+               <Amount>250</Amount>
+           </GoodAmount>
+   </UpgradeCost>
+
+       <UpgradeCost>
+           <GoodAmount>
+               <GoodType>G_Stone</GoodType>
+               <Amount>75</Amount>
+           </GoodAmount>
+           <GoodAmount>
+               <GoodType>G_Gold</GoodType>
+               <Amount>500</Amount>
+           </GoodAmount>
+   </UpgradeCost>
+</UpgradeCosts>
+
+    <MaxNumberOfUpgrades>3</MaxNumberOfUpgrades>
+    
+    <SecondsToUpgrade>50</SecondsToUpgrade>
+        <SecondsToUpgradeByLevel>
+        <Seconds>50</Seconds>
+	    <Seconds>100</Seconds>
+	    <Seconds>200</Seconds>
+	</SecondsToUpgradeByLevel>
+
+	<MaxSettlersForUpgradeByLevel>
+	    <MaxSettlers>5</MaxSettlers>
+	    <MaxSettlers>10</MaxSettlers>
+	    <MaxSettlers>20</MaxSettlers>
+	</MaxSettlersForUpgradeByLevel>
+
+<!-- castle uses <MaxHitpoints>. Do we need different amounts of health per castle upgrade?
+        If not, I suggest to use <MaxHealth> instead -->
+        <MaxHealth>600</MaxHealth>
+
+        <MinFloorFireSize>0</MinFloorFireSize>
+        <MaxFloorFireSize>40</MaxFloorFireSize>
+
+        <MaxHitpoints>
+            <MaxHitpoint>750</MaxHitpoint>
+            <MaxHitpoint>1500</MaxHitpoint>
+            <MaxHitpoint>2250</MaxHitpoint>
+            <MaxHitpoint>3000</MaxHitpoint>
+        </MaxHitpoints>
+
+    <PrestigePointsForUpgrade>
+        <PrestigePoints>100</PrestigePoints>
+        <PrestigePoints>250</PrestigePoints>
+        <PrestigePoints>500</PrestigePoints>
+    </PrestigePointsForUpgrade>
+
+    <PlacementAcquiresTerritoryOwnership>true</PlacementAcquiresTerritoryOwnership>
+    <CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim>
+    <FlattenOnBuild>true</FlattenOnBuild>
+    <IsHeightLocking>true</IsHeightLocking>
+    <MayRemoveEntities>true</MayRemoveEntities>
+    <AccessCategory>AccessCategoryBuilding</AccessCategory>
+    <NeedsPlayer>true</NeedsPlayer>
+    <ForceNoPlayer>false</ForceNoPlayer>
+    <CanLeaveImmediately>true</CanLeaveImmediately>
+
+    <AlarmRepairBuildingTL>TL_WORKER_REPAIR_ALARM</AlarmRepairBuildingTL>
+    <AlarmRepairMaterial>G_Stone</AlarmRepairMaterial>
+    <AlarmRepairProvider>G_Stone_Supplier</AlarmRepairProvider>
+
+    <OnScreenIcon>MinimapCastle</OnScreenIcon><!-- Must be a subfolder of graphics\\textures -->
+	  <ShowInMiniMap>0.75</ShowInMiniMap>
+    <KegEffectFactor>0.1</KegEffectFactor>
+
+    <EntityCategories>
+        <EntityCategory>Headquarters</EntityCategory>
+        <EntityCategory>NonTorchable</EntityCategory>
+        <EntityCategory>AttackableBuilding</EntityCategory>
+        <EntityCategory>SpecialBuilding</EntityCategory>
+    </EntityCategories>
+
+    <RepairBuildingTL>TL_WORKER_REPAIR</RepairBuildingTL>
+    <Exploration>0</Exploration>
+
+    <TaxCollectorType>U_TaxCollector</TaxCollectorType>
+    <NumberOfBuildingsPerTaxCollector>3</NumberOfBuildingsPerTaxCollector>
+
+    <DepotStorageCapacities>
+    <!-- ToDo: not used for the castle anymore. still needed?? -->
+        <DepotStorageCapacity>1</DepotStorageCapacity>
+        <DepotStorageCapacity>1</DepotStorageCapacity>
+        <DepotStorageCapacity>1</DepotStorageCapacity>
+        <DepotStorageCapacity>1</DepotStorageCapacity>
+    </DepotStorageCapacities>
+
+    <TreasuryStorageCapacities>
+        <TreasuryStorageCapacity>99000</TreasuryStorageCapacity>
+        <TreasuryStorageCapacity>99000</TreasuryStorageCapacity>
+        <TreasuryStorageCapacity>99000</TreasuryStorageCapacity>
+        <TreasuryStorageCapacity>99000</TreasuryStorageCapacity>
+    </TreasuryStorageCapacities>
+
+    <SoldierLimits>
+        <Limit>36</Limit>
+        <Limit>63</Limit>
+        <Limit>90</Limit>
+        <Limit>135</Limit>
+    </SoldierLimits>
+
+    <LeavePos>
+      <X>0</X>
+      <Y>-700</Y>
+</LeavePos>
+<ApproachPos>
+      <X>0</X>
+      <Y>-700</Y>
+</ApproachPos>
+    <ApproachR>0</ApproachR>
+    <DoorPos>
+      <X>0</X>
+      <Y>-200</Y>
+</DoorPos>
+    <BlockingAreas>
+      <BlockingArea>
+        <Blocked1>
+            <X>-600</X>
+            <Y>700</Y>
+        </Blocked1>
+        <Blocked2>
+            <X>600</X>
+            <Y>-600</Y>
+        </Blocked2>
+    </BlockingArea>
+</BlockingAreas>
+    <BuildBlockingAreas>
+      <BuildBlockingArea>
+        <Blocked1>
+            <X>-600</X>
+            <Y>700</Y>
+        </Blocked1>
+        <Blocked2>
+            <X>600</X>
+            <Y>-750</Y>
+        </Blocked2>
+    </BuildBlockingArea>
+</BuildBlockingAreas>
+
+
+      <SoundImpactType>Stone</SoundImpactType>
+
+    </Logic>
+
+    <Behaviors>
+        <Behavior>
+            <Logic classname="EGL::CLimitedAttachmentBehaviorProperties">
+                <Class>EGL::CLimitedAttachmentBehavior</Class>
+                <Attachment>
+                    <Type>ATTACHMENT_DEFENDER_BUILDING</Type>
+                    <Limit>200</Limit>
+                </Attachment>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CStockBehaviorProps">
+                <Class>EGL::CStockOutBehavior</Class>
+                <MaxAmountOnStock>100</MaxAmountOnStock>
+                <MaxAmountOnStockGold>100</MaxAmountOnStockGold>
+
+                <GoodTypes>
+                    <GoodType>G_Gold</GoodType>
+                </GoodTypes>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::CBuildingGoodTrader</Class>
+            </Logic>
+        </Behavior>
+        <Behavior>
+            <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::CBuildingEntertainerBehavior</Class>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBuildingMerchantBehaviorProps">
+                <Class>EGL::CBuildingMerchantBehavior</Class>
+                <!-- <MaximumSlotCount>4</MaximumSlotCount> -->
+                <ActivationDistance>2100</ActivationDistance>
+                <TraderEntityType>U_NPC_Villager01_ME</TraderEntityType>
+                <IsEmptyStringKey>MerchantStates/Empty</IsEmptyStringKey>
+                <IsUnderUseStringKey>MerchantStates/UnderUse</IsUnderUseStringKey>
+                <MoveNearStringKey>MerchantStates/MoveNear</MoveNearStringKey>
+                <IsNearStringKey>MerchantStates/IsNearMercenary</IsNearStringKey>
+            </Logic>
+        </Behavior>
+
+
+    </Behaviors>
+
+   <MapEditor>
+        <TreePosition>Buildings\Tournament</TreePosition>
+        <ShowInTree>true</ShowInTree>
+        <Clime>Generic</Clime>
+        <Scalable>false</Scalable>
+        <TemplateResistant>true</TemplateResistant>
+    </MapEditor>
+</root>

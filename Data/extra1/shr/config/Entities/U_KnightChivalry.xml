@@ -38,6 +38,8 @@
         </Familiar>
         <SoundImpactType>Metal</SoundImpactType>
         <SoundProjectileType>Lance</SoundProjectileType>
+		
+		<ShowInMiniMap>0.75</ShowInMiniMap>
     </Logic>
     <Behaviors>
 

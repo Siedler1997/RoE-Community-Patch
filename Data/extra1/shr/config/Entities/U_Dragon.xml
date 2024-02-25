@@ -35,6 +35,9 @@
 			<EntityCategory>Dragon</EntityCategory>
 		</EntityCategories>
 		<SoundImpactType>Leather</SoundImpactType>
+
+		<OnScreenIcon>MinimapDragon</OnScreenIcon>
+		<ShowInMiniMap>0.75</ShowInMiniMap>
 	</Logic>
 
 	<Behaviors>

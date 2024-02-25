@@ -39,6 +39,8 @@
         </Familiar>
         <SoundImpactType>Leather</SoundImpactType>
         <SoundProjectileType>MorningStar</SoundProjectileType>
+
+		<ShowInMiniMap>0.75</ShowInMiniMap>
     </Logic>
     <Behaviors>
 

@@ -51,6 +51,7 @@
 
 
         <OnScreenIcon>MinimapBatteringRam</OnScreenIcon>
+		<ShowInMiniMap>0.75</ShowInMiniMap>
     </Logic>
 
     <Behaviors>

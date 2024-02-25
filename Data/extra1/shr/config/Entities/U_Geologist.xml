@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+
+    <!-- DUMMYMODELS PLEASE CHANGE AFTER RIGHT MODELS AVAILABLE-->
+    <Display classname="ED::CDisplaySettlerWithSlaveProps">
+        <Class>ED::CDisplaySettlerWithSlave</Class>
+          <Model>Units\Misc_Unit\U_NPC_Geologist</Model>
+        <SlaveAlwaysVisible>false</SlaveAlwaysVisible>
+    </Display>
+
+    <Logic classname="EGL::CSettlerProps">
+        <Class>EGL::CSettler</Class>
+        <AccessCategory>AccessCategoryAttackableSettler</AccessCategory>
+        <PlayerSectorType>PlayerSectorTypeCivil</PlayerSectorType>
+        <MaxHealth>30</MaxHealth>
+        <NeedsPlayer>true</NeedsPlayer>
+        <ForceNoPlayer>false</ForceNoPlayer>
+        <EntityCategories>
+            <!--EntityCategory>Worker</EntityCategory-->
+            <EntityCategory>AttackableSettler</EntityCategory>
+        </EntityCategories>
+        <AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
+        <Exploration>0</Exploration>
+        <IsSelectable>true</IsSelectable>
+        <IdleTaskList/>
+        <DoesntAlert>
+            <EntityType>BeeHive</EntityType>
+        </DoesntAlert>
+        <Familiar>
+            <With>SheepPasture</With>
+            <With>CattlePasture</With>
+        </Familiar>
+        
+        <OnScreenIcon>MinimapGeologist</OnScreenIcon>
+		<ShowInMiniMap>0.75</ShowInMiniMap>
+    </Logic>
+
+    <Behaviors>
+        <Behavior>
+            <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::CWaitForStorageCapacityBehavior</Class>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CAnimationBehaviorExProps">
+                <Class>EGL::CBehaviorAnimationEx</Class>
+
+                <AnimSet>SET_GEOLOGIST</AnimSet>
+            </Logic>
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CDisplayBehaviorAnimation</Class>
+            </Display>
+        </Behavior>
+                
+        <Behavior>
+            <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::CBehaviorWalkCommand</Class>
+            </Logic>
+        </Behavior>
+        <Behavior>
+            <Logic classname="EGL::CBehaviorDefaultMovementProps">
+                <Class>EGL::CSettlerMovement</Class>
+        <!-- SensorRadius: Radius around the unit for checking if evaison is needed (default 250)
+        SensorShift: Offset to move sensor radius in movement direction. 1.0 moves the radius completely in front of the settler (default 0.3)
+        AvoidFactor: Strength of evasion (default 3.0)
+ -->
+                <SensorRadius>200</SensorRadius>
+                <SensorShift>0.8</SensorShift>
+                <AvoidFactor>1.5</AvoidFactor>
+    	       <EvasionPriority>100</EvasionPriority>
+
+                <Speed>270</Speed>
+                <SpeedFactorRoad>1.4</SpeedFactorRoad>
+                <RotationSpeed>30</RotationSpeed>
+                <MoveTaskList>TL_NPC_WALK</MoveTaskList>
+                <MoveIdleAnim>U_Thin_Normal_Walk</MoveIdleAnim>
+            </Logic>
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CDisplayBehaviorMovement</Class>
+            </Display>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CWorkerBehaviorProps">
+                <Class>EGL::CWorkerBehavior</Class>
+                <FrameworkTaskList>TL_GEOLOGIST_FRAMEWORK</FrameworkTaskList>                
+                <WorkWaitTime>5000</WorkWaitTime>
+            </Logic>
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CCarryBehavior</Class>
+            </Display>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CWorkerFleeBehaviorProps">
+                <Class>EGL::CWorkerFleeBehavior</Class>
+                <FlightTaskList>TL_WORKER_FLEE</FlightTaskList>
+                <FlightSpeedModifierSeconds>5</FlightSpeedModifierSeconds>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::CTaskHistory</Class>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorPropsDying">
+                <Class>EGL::CBehaviorDying</Class>
+                <DyingTaskList>TL_DIE</DyingTaskList>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::CParticleEffectAttachmentBehavior</Class>
+            </Logic>
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CParticleEffectAttachmentBehavior</Class>
+            </Display>
+        </Behavior>
+    </Behaviors>
+    <MapEditor>
+        <TreePosition>Units\Workers</TreePosition>
+        <ShowInTree>true</ShowInTree>
+        <Clime>Generic</Clime>
+        <Scalable>false</Scalable>
+        <TemplateResistant>true</TemplateResistant>
+    </MapEditor>
+</root>

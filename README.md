@@ -211,6 +211,9 @@ Folgende Änderungen wurden vorgenommen:
 	- Sieg und Niederlage haben jeweils eine Art "Jingle"
 	- Spielerfarben auf der Minimap sind nun (meistens) korrekt
 	- Krankheiten treten nun schon ab 101 Siedlern auf, nicht erst ab 151
+	- Minimap
+		- Alle Icons um 25% verkleinert
+		- Außenposten, Handelsposten und Khanas Tempel werden ebenfalls angezeigt
 - Kampagnen
 	- Hauptspiel-Kampagne auch im AddOn spielbar
 	- Bugs gefixt

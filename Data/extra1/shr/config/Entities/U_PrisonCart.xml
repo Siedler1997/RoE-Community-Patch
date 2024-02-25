@@ -23,6 +23,7 @@
         <Exploration>4</Exploration>
         <IdleTaskList/>
         <OnScreenIcon>MinimapCart</OnScreenIcon>
+		<ShowInMiniMap>0.75</ShowInMiniMap>
         <IsSelectable>true</IsSelectable>
         <Familiar>
             <With>SheepPasture</With>

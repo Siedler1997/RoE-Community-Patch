@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <Display classname="ED::CReplaceUpgradeBuildingProps">
+        <Class>ED::CReplaceUpgradeBuilding</Class>
+        <Model>Buildings\B_KhanaTemple</Model>
+        <Destroyed>Buildings\B_KhanaTemple_Destroyed</Destroyed>
+        
+        <BannersPerUpgrade>
+            <Banner classname="ED::CBannerProps">
+                <Model></Model>
+                <AnimationNoWind></AnimationNoWind>
+                <AnimationNormalWind></AnimationNormalWind>
+                <AnimationStrongWind></AnimationStrongWind>
+            </Banner>
+        </BannersPerUpgrade>
+        <ShowDestroyedModelAt>0.50</ShowDestroyedModelAt>        
+        <FireNodeCount>15</FireNodeCount>
+    </Display>
+    <Logic classname="EGL::CUpgradableBuildingProps">
+    <Class>EGL::CUpgradableBuilding</Class>
+    <RubbleDoodad>B_KhanaTemple_Destroyed</RubbleDoodad>
+          <DecorationalEffect>
+            <Type>E_KhanaTemple_Fire</Type>
+            <Position>
+                <X>0</X>
+                <Y>-380</Y>
+            </Position>
+            </DecorationalEffect>
+		  <ConstructionCost>
+              <Wood>10</Wood>
+              <Stone>0</Stone>
+		  </ConstructionCost>
+          <CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim>
+          <FlattenOnBuild>false</FlattenOnBuild>
+		  <IsHeightLocking>true</IsHeightLocking>
+          <AccessCategory>AccessCategoryBuilding</AccessCategory>
+		  <NeedsPlayer>false</NeedsPlayer>
+		  <ForceNoPlayer>false</ForceNoPlayer>
+		  <CanBeKnockedDown>false</CanBeKnockedDown>
+		  <MaxHealth>120</MaxHealth>
+		  <RepairBuildingTL>TL_WORKER_REPAIR</RepairBuildingTL>
+		  <MaxFloorFireSize>20</MaxFloorFireSize>
+          <Exploration>0</Exploration>
+          <EntityCategories>
+        	  <EntityCategory>AttackableBuilding</EntityCategory>
+          </EntityCategories>
+          <Worker>U_NPC_Monk_Khana</Worker>
+		  <MaxWorkers>1</MaxWorkers>
+          <WorkTaskLists>
+                  <WorkTaskList>TL_TOURNAMENTWORKER_IDLE</WorkTaskList>
+          </WorkTaskLists>
+        <ApproachPos>
+          <X>0</X>
+          <Y>-800</Y>
+        </ApproachPos>
+        <ApproachR>0</ApproachR>
+        <DoorPos>
+          <X>0</X>
+          <Y>0</Y>
+        </DoorPos>
+        <BlockingAreas>
+          <BlockingArea>
+            <Blocked1>
+              <X>-700</X>
+              <Y>500</Y>
+            </Blocked1>
+            <Blocked2>
+              <X>700</X>
+              <Y>-900</Y>
+            </Blocked2>
+          </BlockingArea>
+        </BlockingAreas>
+        <BuildBlockingAreas>
+          <BuildBlockingArea>
+            <Blocked1>
+              <X>-700</X>
+              <Y>500</Y>
+            </Blocked1>
+            <Blocked2>
+              <X>700</X>
+              <Y>-1050</Y>
+            </Blocked2>
+          </BuildBlockingArea>
+        </BuildBlockingAreas>
+        <AlarmRepairBuildingTL>TL_WORKER_REPAIR_ALARM</AlarmRepairBuildingTL>
+        <AlarmRepairMaterial>G_Stone</AlarmRepairMaterial>
+        <AlarmRepairProvider>G_Stone_Supplier</AlarmRepairProvider>
+        <ConstructionInfo>
+            <Time>10</Time>
+
+            <BuilderSlots>
+                <BuilderSlot>
+                    <Position>
+                        <X>0</X>
+                        <Y>0</Y>
+                    </Position>
+                    <Orientation>0</Orientation>
+                </BuilderSlot>
+            </BuilderSlots>
+            <TaskListConstruction>TL_CONSTRUCT_BUILDING</TaskListConstruction>
+            <ConstructionSite>B_BuildingPlot_8x8</ConstructionSite>
+        </ConstructionInfo>
+        <SoundImpactType>Stone</SoundImpactType>
+
+		<OnScreenIcon>MinimapKhanaTemple</OnScreenIcon>
+		<ShowInMiniMap>0.75</ShowInMiniMap>
+	</Logic>
+	<MapEditor>
+		<TreePosition>Buildings\Khana</TreePosition>
+		<ShowInTree>true</ShowInTree>
+		<Clime>Asia</Clime>
+		<Scalable>false</Scalable>
+		<TemplateResistant>true</TemplateResistant>
+	</MapEditor>
+</root>
+
+
