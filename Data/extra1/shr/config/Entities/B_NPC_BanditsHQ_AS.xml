@@ -32,6 +32,7 @@
             <OutStockCapacity>9000</OutStockCapacity>
         </OutStockCapacities>
         <OnScreenIcon>MinimapMercenary</OnScreenIcon>
+		<ShowInMiniMap>0.75</ShowInMiniMap>
         <KegEffectFactor>0.1</KegEffectFactor>
         <InertToTerritoryOwnerChange>true</InertToTerritoryOwnerChange>
         <EntityCategories>

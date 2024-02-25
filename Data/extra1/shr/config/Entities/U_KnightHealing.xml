@@ -39,6 +39,8 @@
         </Familiar>
         <SoundImpactType>Metal</SoundImpactType>
         <SoundProjectileType>Mace</SoundProjectileType>
+
+		<ShowInMiniMap>0.75</ShowInMiniMap>
     </Logic>
     <Behaviors>
 

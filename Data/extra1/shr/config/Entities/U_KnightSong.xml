@@ -40,6 +40,8 @@
 		</Familiar>
 		<SoundImpactType>Leather</SoundImpactType>
 		<SoundProjectileType>Axe</SoundProjectileType>
+
+		<ShowInMiniMap>0.75</ShowInMiniMap>
 	</Logic>
 	<Behaviors>
 

@@ -260,6 +260,7 @@
         <SoundImpactType>Stone</SoundImpactType>
 
 		<OnScreenIcon>MinimapCathedral</OnScreenIcon>
+		<ShowInMiniMap>0.75</ShowInMiniMap>
     </Logic>
 
     <Behaviors>
