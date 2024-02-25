@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<OnScreenIcons>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconGems</IconName>               
+        <TextureName>Icons2.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>0</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconOlibanum</IconName>              
+        <TextureName>Icons2.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>1</Row>
+        <Col>0</Col>
+    </Icon>
+
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconMusicalInstrument</IconName>     
+        <TextureName>Icons2.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>2</Row>
+        <Col>0</Col>
+    </Icon>
+    
+    <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>IconHolyCow</IconName>               
+        <TextureName>IconsTiny.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>32</Size>
+        <Row>13</Row>
+        <Col>1</Col>
+    </Icon>
+    
+     <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>Icon44GrainFieldMonsoon</IconName>
+        <TextureName>Icons2.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>44</Size>
+        <Row>2</Row>
+        <Col>1</Col>
+    </Icon>
+
+     <Icon classname="GGUI::COnScreenIconProps">
+        <IconName>MinimapGeologist</IconName>
+        <TextureName>IconsTiny.png</TextureName>
+        <U>0</U>
+        <V>0</V>
+        <U2>1</U2>
+        <V2>1</V2>
+        <Size>32</Size>
+        <Row>11</Row>
+        <Col>1</Col>
+    </Icon>
+
+	<Icon classname="GGUI::COnScreenIconProps">
+		<IconName>MinimapOutpost</IconName>
+		<!-- reserved, do not delete -->
+		<TextureName>IconsTiny.png</TextureName>
+		<U>0</U>
+		<V>0</V>
+		<U2>1</U2>
+		<V2>1</V2>
+		<Size>32</Size>
+		<Row>14</Row>
+		<Col>0</Col>
+	</Icon>
+
+	<Icon classname="GGUI::COnScreenIconProps">
+		<IconName>MinimapDragon</IconName>
+		<!-- reserved, do not delete -->
+		<TextureName>IconsTiny.png</TextureName>
+		<U>0</U>
+		<V>0</V>
+		<U2>1</U2>
+		<V2>1</V2>
+		<Size>32</Size>
+		<Row>14</Row>
+		<Col>1</Col>
+	</Icon>
+
+	<Icon classname="GGUI::COnScreenIconProps">
+		<IconName>MinimapTradePost</IconName>
+		<!-- reserved, do not delete -->
+		<TextureName>IconsTiny.png</TextureName>
+		<U>0</U>
+		<V>0</V>
+		<U2>1</U2>
+		<V2>1</V2>
+		<Size>32</Size>
+		<Row>0</Row>
+		<Col>2</Col>
+	</Icon>
+
+	<Icon classname="GGUI::COnScreenIconProps">
+		<IconName>MinimapKhanaTemple</IconName>
+		<!-- reserved, do not delete -->
+		<TextureName>IconsTiny.png</TextureName>
+		<U>0</U>
+		<V>0</V>
+		<U2>1</U2>
+		<V2>1</V2>
+		<Size>32</Size>
+		<Row>1</Row>
+		<Col>2</Col>
+	</Icon>
+	
+</OnScreenIcons>

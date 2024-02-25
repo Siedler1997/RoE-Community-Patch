@@ -139,6 +139,9 @@
             <ConstructionSite>B_BuildingPlot_8x8</ConstructionSite>
         </ConstructionInfo>
         <Exploration>0</Exploration>
+
+		<OnScreenIcon>MinimapOutpost</OnScreenIcon>
+		<ShowInMiniMap>0.75</ShowInMiniMap>
     </Logic>
 
     <Behaviors>
