@@ -9,7 +9,7 @@ Mit folgenden Schritten lässt sich der Patch installieren:
 Extra1 findest du unter The `Settlers - Rise of an Empire - History Edition\Data`. Du kannst die Kopie nennen, wie du willst.
 2. Projekt über Code -> Download ZIP herunterladen
 3. Kopiere den `Data` Ordner in der Zip nach `Settlers - Rise of an Empire - History Edition` und bestätige das Überschreiben.
-4. Ã„ndere die Starteinstellungen in Steam bzw. Uplay, sodass das Programm mit `-EXTRA1` als Parameter ausgeführt wird.
+4. Ändere die Starteinstellungen in Steam bzw. Uplay, sodass das Programm mit `-EXTRA1` als Parameter ausgeführt wird.
 3. Zocken
 
 
