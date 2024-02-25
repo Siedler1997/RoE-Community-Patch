@@ -38,17 +38,7 @@ function GetLoadScreen(_remappedKnightId, _tex)
     if _remappedKnightId == 0 then
         filename = "loadscreens\\" .. _tex .. "_old.png"
     else
-        if _remappedKnightId >= 8 then
-            if _remappedKnightId == 11 then  --Khana
-                filename = "loadscreens\\chapter3.png"
-            elseif _tex == "as" then
-                filename = "loadscreens\\Endscreen.png"
-            else
-                filename = "loadscreens\\" .. _tex .. "_old.png"
-            end
-        else
-            filename = "loadscreens\\" .. _tex .. _remappedKnightId .. ".png"
-        end
+        filename = "loadscreens\\" .. _tex .. _remappedKnightId .. ".png"
     end
     return filename
 end
