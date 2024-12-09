@@ -234,7 +234,7 @@ function DebugKeyBindings_Init()
     -- Change building skin
     -----------------------------------------------------------------------------------------------
 
-    Input.KeyBindDown(Keys.C, "GUI_Construction.SwitchBuildingCategory()", 2, true)
+    Input.KeyBindDown(Keys.C, "GUI_Construction.SwitchBuildingCategory()", 2)
 
     -----------------------------------------------------------------------------------------------
     -- Camera debug
