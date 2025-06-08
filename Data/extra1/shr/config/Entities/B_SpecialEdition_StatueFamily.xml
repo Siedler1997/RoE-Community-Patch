@@ -10,11 +10,11 @@
         <Cost>
             <GoodAmount>
                 <GoodType>G_Stone</GoodType>
-                <Amount>6</Amount>
+                <Amount>15</Amount>
             </GoodAmount>
             <GoodAmount>
                 <GoodType>G_Gold</GoodType>
-                <Amount>100</Amount>
+                <Amount>350</Amount>
             </GoodAmount>
         </Cost>
         <AccessCategory>AccessCategoryBuilding</AccessCategory>
@@ -47,14 +47,14 @@
             </BuildBlockingArea>
 	     </BuildBlockingAreas>
          <ConstructionInfo>
-            <Time>20</Time>
+            <Time>30</Time>
             <TaskListConstruction>TL_CONSTRUCT_BUILDING</TaskListConstruction>
             <ConstructionSite>B_BuildingPlot_2x2</ConstructionSite>
         </ConstructionInfo>
         <CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim>
         <FlattenOnBuild>true</FlattenOnBuild>
         <IsHeightLocking>true</IsHeightLocking>
-        <MaxHealth>20</MaxHealth>
+        <MaxHealth>30</MaxHealth>
         <MinFloorFireSize>0</MinFloorFireSize>
         <MaxFloorFireSize>0</MaxFloorFireSize>
         <MayRemoveEntities>true</MayRemoveEntities>

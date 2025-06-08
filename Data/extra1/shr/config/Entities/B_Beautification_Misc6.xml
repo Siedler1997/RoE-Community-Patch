@@ -11,11 +11,11 @@
 		<Cost>
 			<GoodAmount>
 				<GoodType>G_Wood</GoodType>
-				<Amount>8</Amount>
+				<Amount>4</Amount>
 			</GoodAmount>
 			<GoodAmount>
 				<GoodType>G_Gold</GoodType>
-				<Amount>100</Amount>
+				<Amount>50</Amount>
 			</GoodAmount>
 		</Cost>
 		<AccessCategory>AccessCategoryBuilding</AccessCategory>
@@ -55,7 +55,7 @@
 		<CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim>
 		<FlattenOnBuild>true</FlattenOnBuild>
 		<IsHeightLocking>true</IsHeightLocking>
-		<MaxHealth>10</MaxHealth>
+		<MaxHealth>5</MaxHealth>
 		<MinFloorFireSize>0</MinFloorFireSize>
 		<MaxFloorFireSize>0</MaxFloorFireSize>
 		<MayRemoveEntities>true</MayRemoveEntities>

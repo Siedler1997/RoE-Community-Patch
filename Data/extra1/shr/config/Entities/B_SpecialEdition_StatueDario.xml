@@ -10,7 +10,7 @@
         <Cost>
             <GoodAmount>
                 <GoodType>G_Stone</GoodType>
-                <Amount>22</Amount>
+                <Amount>25</Amount>
             </GoodAmount>
             <GoodAmount>
                 <GoodType>G_Gold</GoodType>

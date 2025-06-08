@@ -2,7 +2,7 @@
 <root>
 	<Display classname="ED::CBuildingProps">
 		<Class>ED::CDisplayBuilding</Class>
-		<Model>Buildings\B_Beautification_ExecutionerPlace</Model>
+		<Model>Doodads\D_X_ExecutionerPlace</Model>
 		<FireNodeCount>15</FireNodeCount>
 	</Display>
 

@@ -13467,7 +13467,7 @@
                          <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
                          <TabIndex>1</TabIndex>
                          <Rectangle>
-                          <X>110.</X>
+                          <X>55.</X>
                           <Y>0.</Y>
                           <W>64.</W>
                           <H>64.</H>
@@ -13632,11 +13632,11 @@
                           </Color>
                          </MaterialPressed>
                          <IconMaterial>
-							 <Texture>iconsbig.png</Texture>
-							 <TextureCoordinatesMinU>960.</TextureCoordinatesMinU>
-							 <TextureCoordinatesMinV>256.</TextureCoordinatesMinV>
-							 <TextureCoordinatesMxU>1024.</TextureCoordinatesMxU>
-							 <TextureCoordinatesMxV>320.</TextureCoordinatesMxV>
+							             <Texture>iconsbig.png</Texture>
+													 <TextureCoordinatesMinU>896.</TextureCoordinatesMinU>
+													 <TextureCoordinatesMinV>640.</TextureCoordinatesMinV>
+													 <TextureCoordinatesMxU>960.</TextureCoordinatesMxU>
+													 <TextureCoordinatesMxV>704.</TextureCoordinatesMxV>
                           <TextureFixedSizeX>0.</TextureFixedSizeX>
                           <TextureFixedSizeY>0.</TextureFixedSizeY>
                           <Color>
@@ -13669,7 +13669,7 @@
                          <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
                          <TabIndex>1</TabIndex>
                          <Rectangle>
-                          <X>0.</X>
+                          <X>110.</X>
                           <Y>55.</Y>
                           <W>64.</W>
                           <H>64.</H>
@@ -13871,7 +13871,7 @@
                          <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
                          <TabIndex>1</TabIndex>
                          <Rectangle>
-                          <X>110.</X>
+                          <X>0.</X>
                           <Y>55.</Y>
                           <W>64.</W>
                           <H>64.</H>
@@ -14275,7 +14275,7 @@
                          <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
                          <TabIndex>1</TabIndex>
                          <Rectangle>
-                          <X>55.</X>
+                          <X>110.</X>
                           <Y>0.</Y>
                           <W>64.</W>
                           <H>64.</H>
@@ -14669,410 +14669,6 @@
                          <PulseMouseoverMinAlpha>0.25</PulseMouseoverMinAlpha>
                          <ShowHighlightedAsPressed>false</ShowHighlightedAsPressed>
                         </Widget>
-                        <Widget classname="EGUIX::CGfxButtonWidget">
-                         <IsShown>true</IsShown>
-                         <UpdateManualFlag>false</UpdateManualFlag>
-                         <EventHandling>true</EventHandling>
-                         <ZPriority>100.</ZPriority>
-                         <ForceToHandleMouseEventsFlag>false</ForceToHandleMouseEventsFlag>
-                         <ForceToHandleKeyboardEventsFlag>false</ForceToHandleKeyboardEventsFlag>
-                         <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
-                         <TabIndex>3</TabIndex>
-                         <Rectangle>
-                          <X>27.</X>
-                          <Y>108.</Y>
-                          <W>64.</W>
-                          <H>64.</H>
-                          <KeepAspectRatio>true</KeepAspectRatio>
-                          <CirclePointTest>true</CirclePointTest>
-                          <FixedTextureSetSize>true</FixedTextureSetSize>
-                          <AlignmentX>0</AlignmentX>
-                          <AlignmentY>0</AlignmentY>
-                          <AnchorX>0</AnchorX>
-                          <AnchorY>0</AnchorY>
-                         </Rectangle>
-                         <OnPushToStack>
-                          <LuaCommand></LuaCommand>
-                         </OnPushToStack>
-                         <OnMouseOver>
-                          <LuaCommand></LuaCommand>
-                         </OnMouseOver>
-                         <OnMouseOut>
-                          <LuaCommand></LuaCommand>
-                         </OnMouseOut>
-                         <OnRightClick>
-                          <LuaCommand></LuaCommand>
-                         </OnRightClick>
-                         <OnLeftClick>
-                          <LuaCommand></LuaCommand>
-                         </OnLeftClick>
-                         <OnKeyPress>
-                          <LuaCommand></LuaCommand>
-                         </OnKeyPress>
-                         <OnFocus>
-                          <LuaCommand></LuaCommand>
-                         </OnFocus>
-                         <OnBlur>
-                          <LuaCommand></LuaCommand>
-                         </OnBlur>
-                         <UpdateFunction>
-                          <LuaCommand></LuaCommand>
-                         </UpdateFunction>
-                         <UpdateFunctionTurnBased>
-                          <LuaCommand>GUI_Construction.BuildUpdate(Technologies.R_Beautification_Cathedral)</LuaCommand>
-                         </UpdateFunctionTurnBased>
-                         <UpdateFunctionSecondBased>
-                          <LuaCommand></LuaCommand>
-                         </UpdateFunctionSecondBased>
-                         <ToolTipHelper>
-                          <ToolTipEnabledFlag>true</ToolTipEnabledFlag>
-                          <ControlTargetVisibility>true</ControlTargetVisibility>
-                          <ToolTipUpdateFunction>
-                           <LuaCommand>GUI_Tooltip.TooltipBuild(false,true,Technologies.R_Beautification_Cathedral)</LuaCommand>
-                          </ToolTipUpdateFunction>
-                          <RawString></RawString>
-                          <StringTableKey></StringTableKey>
-                          <TargetWidget01>/InGame/Root/Normal/AlignBottomRight/BuildMenu/TooltipBuild</TargetWidget01>
-                          <TargetWidget02></TargetWidget02>
-                          <TargetWidget03></TargetWidget03>
-                          <TargetWidget04></TargetWidget04>
-                          <TargetWidget05></TargetWidget05>
-                         </ToolTipHelper>
-                         <Group>Construction</Group>
-                         <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2/ButtonsAddon</MotherID>
-                         <Name>B_Beautification_Cathedral</Name>
-                         <FullScreenBackground>false</FullScreenBackground>
-                         <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
-                         <BackgroundMaterial>
-                          <Texture>buttons.png</Texture>
-                          <TextureCoordinatesMinU>256.</TextureCoordinatesMinU>
-                          <TextureCoordinatesMinV>64.</TextureCoordinatesMinV>
-                          <TextureCoordinatesMxU>320.</TextureCoordinatesMxU>
-                          <TextureCoordinatesMxV>128.</TextureCoordinatesMxV>
-                          <TextureFixedSizeX>0.</TextureFixedSizeX>
-                          <TextureFixedSizeY>0.</TextureFixedSizeY>
-                          <Color>
-                           <Red>255</Red>
-                           <Green>255</Green>
-                           <Blue>255</Blue>
-                           <Alpha>255</Alpha>
-                          </Color>
-                         </BackgroundMaterial>
-                         <ActionFunction>
-                          <LuaCommand>GUI_Construction.BuildClicked(UpgradeCategories.Beautification_Cathedral)</LuaCommand>
-                         </ActionFunction>
-                         <GenerateMaterialsFromNormal>false</GenerateMaterialsFromNormal>
-                         <ShortCutKey></ShortCutKey>
-                         <ShortCutKeyStringTableKey></ShortCutKeyStringTableKey>
-                         <AllowRightMouseButton>false</AllowRightMouseButton>
-                         <AllowDoubleClick>false</AllowDoubleClick>
-                         <Disabled>false</Disabled>
-                         <Highlighted>false</Highlighted>
-                         <MaterialBaseNormal classname="EGUIX::CMaterial">
-                          <Texture>buttons.png</Texture>
-                          <TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
-                          <TextureCoordinatesMinV>448.</TextureCoordinatesMinV>
-                          <TextureCoordinatesMxU>64.</TextureCoordinatesMxU>
-                          <TextureCoordinatesMxV>512.</TextureCoordinatesMxV>
-                          <TextureFixedSizeX>0.</TextureFixedSizeX>
-                          <TextureFixedSizeY>0.</TextureFixedSizeY>
-                          <Color>
-                           <Red>255</Red>
-                           <Green>255</Green>
-                           <Blue>255</Blue>
-                           <Alpha>255</Alpha>
-                          </Color>
-                         </MaterialBaseNormal>
-                         <MaterialDisabled classname="EGUIX::CMaterial">
-                          <Texture></Texture>
-                          <TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
-                          <TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
-                          <TextureCoordinatesMxU>64.</TextureCoordinatesMxU>
-                          <TextureCoordinatesMxV>64.</TextureCoordinatesMxV>
-                          <TextureFixedSizeX>0.</TextureFixedSizeX>
-                          <TextureFixedSizeY>0.</TextureFixedSizeY>
-                          <Color>
-                           <Red>255</Red>
-                           <Green>255</Green>
-                           <Blue>255</Blue>
-                           <Alpha>0</Alpha>
-                          </Color>
-                         </MaterialDisabled>
-                         <MaterialHighlight classname="EGUIX::CMaterial">
-                          <Texture>buttons.png</Texture>
-                          <TextureCoordinatesMinU>192.</TextureCoordinatesMinU>
-                          <TextureCoordinatesMinV>448.</TextureCoordinatesMinV>
-                          <TextureCoordinatesMxU>256.</TextureCoordinatesMxU>
-                          <TextureCoordinatesMxV>512.</TextureCoordinatesMxV>
-                          <TextureFixedSizeX>0.</TextureFixedSizeX>
-                          <TextureFixedSizeY>0.</TextureFixedSizeY>
-                          <Color>
-                           <Red>255</Red>
-                           <Green>255</Green>
-                           <Blue>255</Blue>
-                           <Alpha>255</Alpha>
-                          </Color>
-                         </MaterialHighlight>
-                         <MaterialMouseOver classname="EGUIX::CMaterial">
-                          <Texture>buttons.png</Texture>
-                          <TextureCoordinatesMinU>128.</TextureCoordinatesMinU>
-                          <TextureCoordinatesMinV>448.</TextureCoordinatesMinV>
-                          <TextureCoordinatesMxU>192.</TextureCoordinatesMxU>
-                          <TextureCoordinatesMxV>512.</TextureCoordinatesMxV>
-                          <TextureFixedSizeX>0.</TextureFixedSizeX>
-                          <TextureFixedSizeY>0.</TextureFixedSizeY>
-                          <Color>
-                           <Red>255</Red>
-                           <Green>255</Green>
-                           <Blue>255</Blue>
-                           <Alpha>255</Alpha>
-                          </Color>
-                         </MaterialMouseOver>
-                         <MaterialPressed classname="EGUIX::CMaterial">
-                          <Texture>buttons.png</Texture>
-                          <TextureCoordinatesMinU>64.</TextureCoordinatesMinU>
-                          <TextureCoordinatesMinV>448.</TextureCoordinatesMinV>
-                          <TextureCoordinatesMxU>128.</TextureCoordinatesMxU>
-                          <TextureCoordinatesMxV>512.</TextureCoordinatesMxV>
-                          <TextureFixedSizeX>0.</TextureFixedSizeX>
-                          <TextureFixedSizeY>0.</TextureFixedSizeY>
-                          <Color>
-                           <Red>255</Red>
-                           <Green>255</Green>
-                           <Blue>255</Blue>
-                           <Alpha>255</Alpha>
-                          </Color>
-                         </MaterialPressed>
-                         <IconMaterial>
-                          <Texture>iconsbig2.png</Texture>
-                          <TextureCoordinatesMinU>384.</TextureCoordinatesMinU>
-                          <TextureCoordinatesMinV>128.</TextureCoordinatesMinV>
-                          <TextureCoordinatesMxU>448.</TextureCoordinatesMxU>
-                          <TextureCoordinatesMxV>194.</TextureCoordinatesMxV>
-                          <TextureFixedSizeX>0.</TextureFixedSizeX>
-                          <TextureFixedSizeY>0.</TextureFixedSizeY>
-                          <Color>
-                           <Red>255</Red>
-                           <Green>255</Green>
-                           <Blue>255</Blue>
-                           <Alpha>255</Alpha>
-                          </Color>
-                         </IconMaterial>
-                         <IconOffsetWhilePressed>2</IconOffsetWhilePressed>
-                         <IconColorWhileDisabled>
-                          <Red>150</Red>
-                          <Green>150</Green>
-                          <Blue>150</Blue>
-                          <Alpha>200</Alpha>
-                         </IconColorWhileDisabled>
-                         <PulseHighlightDuration>2.</PulseHighlightDuration>
-                         <PulseHighlightMinAlpha>0.25</PulseHighlightMinAlpha>
-                         <PulseMouseoverDuration>0.</PulseMouseoverDuration>
-                         <PulseMouseoverMinAlpha>0.25</PulseMouseoverMinAlpha>
-                         <ShowHighlightedAsPressed>false</ShowHighlightedAsPressed>
-                        </Widget>
-                        <Widget classname="EGUIX::CGfxButtonWidget">
-                         <IsShown>true</IsShown>
-                         <UpdateManualFlag>false</UpdateManualFlag>
-                         <EventHandling>true</EventHandling>
-                         <ZPriority>100.</ZPriority>
-                         <ForceToHandleMouseEventsFlag>false</ForceToHandleMouseEventsFlag>
-                         <ForceToHandleKeyboardEventsFlag>false</ForceToHandleKeyboardEventsFlag>
-                         <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
-                         <TabIndex>2</TabIndex>
-                         <Rectangle>
-                          <X>82.</X>
-                          <Y>108.</Y>
-                          <W>64.</W>
-                          <H>64.</H>
-                          <KeepAspectRatio>true</KeepAspectRatio>
-                          <CirclePointTest>true</CirclePointTest>
-                          <FixedTextureSetSize>true</FixedTextureSetSize>
-                          <AlignmentX>0</AlignmentX>
-                          <AlignmentY>0</AlignmentY>
-                          <AnchorX>0</AnchorX>
-                          <AnchorY>0</AnchorY>
-                         </Rectangle>
-                         <OnPushToStack>
-                          <LuaCommand></LuaCommand>
-                         </OnPushToStack>
-                         <OnMouseOver>
-                          <LuaCommand></LuaCommand>
-                         </OnMouseOver>
-                         <OnMouseOut>
-                          <LuaCommand></LuaCommand>
-                         </OnMouseOut>
-                         <OnRightClick>
-                          <LuaCommand></LuaCommand>
-                         </OnRightClick>
-                         <OnLeftClick>
-                          <LuaCommand></LuaCommand>
-                         </OnLeftClick>
-                         <OnKeyPress>
-                          <LuaCommand></LuaCommand>
-                         </OnKeyPress>
-                         <OnFocus>
-                          <LuaCommand></LuaCommand>
-                         </OnFocus>
-                         <OnBlur>
-                          <LuaCommand></LuaCommand>
-                         </OnBlur>
-                         <UpdateFunction>
-                          <LuaCommand></LuaCommand>
-                         </UpdateFunction>
-                         <UpdateFunctionTurnBased>
-                          <LuaCommand>GUI_Construction.BuildUpdate(Technologies.R_Beautification_SteamMachine)</LuaCommand>
-                         </UpdateFunctionTurnBased>
-                         <UpdateFunctionSecondBased>
-                          <LuaCommand></LuaCommand>
-                         </UpdateFunctionSecondBased>
-                         <ToolTipHelper>
-                          <ToolTipEnabledFlag>true</ToolTipEnabledFlag>
-                          <ControlTargetVisibility>true</ControlTargetVisibility>
-                          <ToolTipUpdateFunction>
-                           <LuaCommand>GUI_Tooltip.TooltipBuild(false,true,Technologies.R_Beautification_SteamMachine)</LuaCommand>
-                          </ToolTipUpdateFunction>
-                          <RawString></RawString>
-                          <StringTableKey></StringTableKey>
-                          <TargetWidget01>/InGame/Root/Normal/AlignBottomRight/BuildMenu/TooltipBuild</TargetWidget01>
-                          <TargetWidget02></TargetWidget02>
-                          <TargetWidget03></TargetWidget03>
-                          <TargetWidget04></TargetWidget04>
-                          <TargetWidget05></TargetWidget05>
-                         </ToolTipHelper>
-                         <Group>Construction</Group>
-                         <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2/ButtonsAddon</MotherID>
-                         <Name>B_Beautification_SteamMachine</Name>
-                         <FullScreenBackground>false</FullScreenBackground>
-                         <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
-                         <BackgroundMaterial>
-                          <Texture>buttons.png</Texture>
-                          <TextureCoordinatesMinU>256.</TextureCoordinatesMinU>
-                          <TextureCoordinatesMinV>64.</TextureCoordinatesMinV>
-                          <TextureCoordinatesMxU>320.</TextureCoordinatesMxU>
-                          <TextureCoordinatesMxV>128.</TextureCoordinatesMxV>
-                          <TextureFixedSizeX>0.</TextureFixedSizeX>
-                          <TextureFixedSizeY>0.</TextureFixedSizeY>
-                          <Color>
-                           <Red>255</Red>
-                           <Green>255</Green>
-                           <Blue>255</Blue>
-                           <Alpha>255</Alpha>
-                          </Color>
-                         </BackgroundMaterial>
-                         <ActionFunction>
-                          <LuaCommand>GUI_Construction.BuildClicked(UpgradeCategories.Beautification_SteamMachine)</LuaCommand>
-                         </ActionFunction>
-                         <GenerateMaterialsFromNormal>false</GenerateMaterialsFromNormal>
-                         <ShortCutKey></ShortCutKey>
-                         <ShortCutKeyStringTableKey></ShortCutKeyStringTableKey>
-                         <AllowRightMouseButton>false</AllowRightMouseButton>
-                         <AllowDoubleClick>false</AllowDoubleClick>
-                         <Disabled>false</Disabled>
-                         <Highlighted>false</Highlighted>
-                         <MaterialBaseNormal classname="EGUIX::CMaterial">
-                          <Texture>buttons.png</Texture>
-                          <TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
-                          <TextureCoordinatesMinV>448.</TextureCoordinatesMinV>
-                          <TextureCoordinatesMxU>64.</TextureCoordinatesMxU>
-                          <TextureCoordinatesMxV>512.</TextureCoordinatesMxV>
-                          <TextureFixedSizeX>0.</TextureFixedSizeX>
-                          <TextureFixedSizeY>0.</TextureFixedSizeY>
-                          <Color>
-                           <Red>255</Red>
-                           <Green>255</Green>
-                           <Blue>255</Blue>
-                           <Alpha>255</Alpha>
-                          </Color>
-                         </MaterialBaseNormal>
-                         <MaterialDisabled classname="EGUIX::CMaterial">
-                          <Texture></Texture>
-                          <TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
-                          <TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
-                          <TextureCoordinatesMxU>64.</TextureCoordinatesMxU>
-                          <TextureCoordinatesMxV>64.</TextureCoordinatesMxV>
-                          <TextureFixedSizeX>0.</TextureFixedSizeX>
-                          <TextureFixedSizeY>0.</TextureFixedSizeY>
-                          <Color>
-                           <Red>255</Red>
-                           <Green>255</Green>
-                           <Blue>255</Blue>
-                           <Alpha>0</Alpha>
-                          </Color>
-                         </MaterialDisabled>
-                         <MaterialHighlight classname="EGUIX::CMaterial">
-                          <Texture>buttons.png</Texture>
-                          <TextureCoordinatesMinU>192.</TextureCoordinatesMinU>
-                          <TextureCoordinatesMinV>448.</TextureCoordinatesMinV>
-                          <TextureCoordinatesMxU>256.</TextureCoordinatesMxU>
-                          <TextureCoordinatesMxV>512.</TextureCoordinatesMxV>
-                          <TextureFixedSizeX>0.</TextureFixedSizeX>
-                          <TextureFixedSizeY>0.</TextureFixedSizeY>
-                          <Color>
-                           <Red>255</Red>
-                           <Green>255</Green>
-                           <Blue>255</Blue>
-                           <Alpha>255</Alpha>
-                          </Color>
-                         </MaterialHighlight>
-                         <MaterialMouseOver classname="EGUIX::CMaterial">
-                          <Texture>buttons.png</Texture>
-                          <TextureCoordinatesMinU>128.</TextureCoordinatesMinU>
-                          <TextureCoordinatesMinV>448.</TextureCoordinatesMinV>
-                          <TextureCoordinatesMxU>192.</TextureCoordinatesMxU>
-                          <TextureCoordinatesMxV>512.</TextureCoordinatesMxV>
-                          <TextureFixedSizeX>0.</TextureFixedSizeX>
-                          <TextureFixedSizeY>0.</TextureFixedSizeY>
-                          <Color>
-                           <Red>255</Red>
-                           <Green>255</Green>
-                           <Blue>255</Blue>
-                           <Alpha>255</Alpha>
-                          </Color>
-                         </MaterialMouseOver>
-                         <MaterialPressed classname="EGUIX::CMaterial">
-                          <Texture>buttons.png</Texture>
-                          <TextureCoordinatesMinU>64.</TextureCoordinatesMinU>
-                          <TextureCoordinatesMinV>448.</TextureCoordinatesMinV>
-                          <TextureCoordinatesMxU>128.</TextureCoordinatesMxU>
-                          <TextureCoordinatesMxV>512.</TextureCoordinatesMxV>
-                          <TextureFixedSizeX>0.</TextureFixedSizeX>
-                          <TextureFixedSizeY>0.</TextureFixedSizeY>
-                          <Color>
-                           <Red>255</Red>
-                           <Green>255</Green>
-                           <Blue>255</Blue>
-                           <Alpha>255</Alpha>
-                          </Color>
-                         </MaterialPressed>
-                         <IconMaterial>
-							 <Texture>iconsbig.png</Texture>
-							 <TextureCoordinatesMinU>960.</TextureCoordinatesMinU>
-							 <TextureCoordinatesMinV>256.</TextureCoordinatesMinV>
-							 <TextureCoordinatesMxU>1024.</TextureCoordinatesMxU>
-							 <TextureCoordinatesMxV>320.</TextureCoordinatesMxV>
-                          <TextureFixedSizeX>0.</TextureFixedSizeX>
-                          <TextureFixedSizeY>0.</TextureFixedSizeY>
-                          <Color>
-                           <Red>255</Red>
-                           <Green>255</Green>
-                           <Blue>255</Blue>
-                           <Alpha>255</Alpha>
-                          </Color>
-                         </IconMaterial>
-                         <IconOffsetWhilePressed>2</IconOffsetWhilePressed>
-                         <IconColorWhileDisabled>
-                          <Red>150</Red>
-                          <Green>150</Green>
-                          <Blue>150</Blue>
-                          <Alpha>200</Alpha>
-                         </IconColorWhileDisabled>
-                         <PulseHighlightDuration>2.</PulseHighlightDuration>
-                         <PulseHighlightMinAlpha>0.25</PulseHighlightMinAlpha>
-                         <PulseMouseoverDuration>0.</PulseMouseoverDuration>
-                         <PulseMouseoverMinAlpha>0.25</PulseMouseoverMinAlpha>
-                         <ShowHighlightedAsPressed>false</ShowHighlightedAsPressed>
-                        </Widget>
                        </WidgetList>
                       </SubWidgets>
                      </Widget>
@@ -15160,8 +14756,8 @@
                          <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
                          <TabIndex>0</TabIndex>
                          <Rectangle>
-                          <X>0.</X>
-                          <Y>55.</Y>
+                          <X>110.</X>
+                          <Y>0.</Y>
                           <W>64.</W>
                           <H>64.</H>
                           <KeepAspectRatio>true</KeepAspectRatio>
@@ -15362,7 +14958,7 @@
                          <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
                          <TabIndex>0</TabIndex>
                          <Rectangle>
-                          <X>110.</X>
+                          <X>0.</X>
                           <Y>55.</Y>
                           <W>64.</W>
                           <H>64.</H>
@@ -15564,7 +15160,7 @@
                          <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
                          <TabIndex>0</TabIndex>
                          <Rectangle>
-                          <X>110.</X>
+                          <X>55.</X>
                           <Y>0.</Y>
                           <W>64.</W>
                           <H>64.</H>
@@ -15766,8 +15362,8 @@
                          <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
                          <TabIndex>0</TabIndex>
                          <Rectangle>
-                          <X>0.</X>
-                          <Y>0.</Y>
+                          <X>55.</X>
+                          <Y>55.</Y>
                           <W>64.</W>
                           <H>64.</H>
                           <KeepAspectRatio>true</KeepAspectRatio>
@@ -15968,8 +15564,8 @@
                          <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
                          <TabIndex>0</TabIndex>
                          <Rectangle>
-                          <X>55.</X>
-                          <Y>55.</Y>
+                          <X>0.</X>
+                          <Y>0.</Y>
                           <W>64.</W>
                           <H>64.</H>
                           <KeepAspectRatio>true</KeepAspectRatio>
@@ -16170,8 +15766,8 @@
                          <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
                          <TabIndex>0</TabIndex>
                          <Rectangle>
-                          <X>55.</X>
-                          <Y>0.</Y>
+                          <X>110.</X>
+                          <Y>55.</Y>
                           <W>64.</W>
                           <H>64.</H>
                           <KeepAspectRatio>true</KeepAspectRatio>
@@ -16210,7 +15806,7 @@
                           <LuaCommand></LuaCommand>
                          </UpdateFunction>
                          <UpdateFunctionTurnBased>
-                          <LuaCommand>GUI_Construction.BuildUpdate(Technologies.R_Beautification_Pillar)</LuaCommand>
+                          <LuaCommand>GUI_Construction.BuildUpdate(Technologies.R_SpecialEdition_Column)</LuaCommand>
                          </UpdateFunctionTurnBased>
                          <UpdateFunctionSecondBased>
                           <LuaCommand></LuaCommand>
@@ -16219,7 +15815,7 @@
                           <ToolTipEnabledFlag>true</ToolTipEnabledFlag>
                           <ControlTargetVisibility>true</ControlTargetVisibility>
                           <ToolTipUpdateFunction>
-                           <LuaCommand>GUI_Tooltip.TooltipBuild(false,true,Technologies.R_Beautification_Pillar)</LuaCommand>
+                           <LuaCommand>GUI_Tooltip.TooltipBuild(false,true,Technologies.R_SpecialEdition_Column)</LuaCommand>
                           </ToolTipUpdateFunction>
                           <RawString></RawString>
                           <StringTableKey></StringTableKey>
@@ -16231,7 +15827,7 @@
                          </ToolTipHelper>
                          <Group>Construction</Group>
                          <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2/Buttons</MotherID>
-                         <Name>B_Beautification_Pillar</Name>
+                         <Name>B_SpecialEdition_Column</Name>
                          <FullScreenBackground>false</FullScreenBackground>
                          <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
                          <BackgroundMaterial>
@@ -16250,7 +15846,7 @@
                           </Color>
                          </BackgroundMaterial>
                          <ActionFunction>
-                          <LuaCommand>GUI_Construction.BuildClicked(UpgradeCategories.Beautification_Pillar)</LuaCommand>
+                          <LuaCommand>GUI_Construction.BuildClicked(UpgradeCategories.SpecialEdition_Column)</LuaCommand>
                          </ActionFunction>
                          <GenerateMaterialsFromNormal>false</GenerateMaterialsFromNormal>
                          <ShortCutKey></ShortCutKey>
@@ -16335,11 +15931,11 @@
                           </Color>
                          </MaterialPressed>
                          <IconMaterial>
-							 <Texture>iconsbig2.png</Texture>
-							 <TextureCoordinatesMinU>192.</TextureCoordinatesMinU>
-							 <TextureCoordinatesMinV>65.</TextureCoordinatesMinV>
-							 <TextureCoordinatesMxU>256.</TextureCoordinatesMxU>
-							 <TextureCoordinatesMxV>129.</TextureCoordinatesMxV>
+                          <Texture>iconsbig.png</Texture>
+                          <TextureCoordinatesMinU>896.</TextureCoordinatesMinU>
+                          <TextureCoordinatesMinV>448.</TextureCoordinatesMinV>
+                          <TextureCoordinatesMxU>960.</TextureCoordinatesMxU>
+                          <TextureCoordinatesMxV>512.</TextureCoordinatesMxV>
                           <TextureFixedSizeX>0.</TextureFixedSizeX>
                           <TextureFixedSizeY>0.</TextureFixedSizeY>
                           <Color>
@@ -16378,7 +15974,7 @@
                        <X>48.</X>
                        <Y>75.</Y>
                        <W>37.</W>
-                       <H>170.</H>
+                       <H>116.</H>
                        <KeepAspectRatio>true</KeepAspectRatio>
                        <CirclePointTest>false</CirclePointTest>
                        <FixedTextureSetSize>true</FixedTextureSetSize>
@@ -16468,7 +16064,7 @@
                        <X>103.</X>
                        <Y>75.</Y>
                        <W>37.</W>
-                       <H>170.</H>
+                       <H>116.</H>
                        <KeepAspectRatio>true</KeepAspectRatio>
                        <CirclePointTest>false</CirclePointTest>
                        <FixedTextureSetSize>true</FixedTextureSetSize>
@@ -16558,7 +16154,7 @@
                        <X>118.</X>
                        <Y>75.</Y>
                        <W>37.</W>
-                       <H>170.</H>
+                       <H>116.</H>
                        <KeepAspectRatio>true</KeepAspectRatio>
                        <CirclePointTest>false</CirclePointTest>
                        <FixedTextureSetSize>true</FixedTextureSetSize>
@@ -16736,7 +16332,7 @@
 						    <TabIndex>0</TabIndex>
 						    <Rectangle>
 							    <X>0.</X>
-							    <Y>215.</Y>
+							    <Y>161.</Y>
 								<W>215.</W>
 								<H>37.</H>
 							    <KeepAspectRatio>true</KeepAspectRatio>
@@ -19280,7 +18876,7 @@
 													 <LuaCommand></LuaCommand>
 												 </UpdateFunction>
 												 <UpdateFunctionTurnBased>
-													 <LuaCommand>GUI_Construction.BuildUpdate(Technologies.R_SpecialEdition_Column)</LuaCommand>
+													 <LuaCommand>GUI_Construction.BuildUpdate(Technologies.R_Beautification_Military)</LuaCommand>
 												 </UpdateFunctionTurnBased>
 												 <UpdateFunctionSecondBased>
 													 <LuaCommand></LuaCommand>
@@ -19289,7 +18885,7 @@
 													 <ToolTipEnabledFlag>true</ToolTipEnabledFlag>
 													 <ControlTargetVisibility>true</ControlTargetVisibility>
 													 <ToolTipUpdateFunction>
-														 <LuaCommand>GUI_Tooltip.TooltipBuild(false,true,Technologies.R_SpecialEdition_Column)</LuaCommand>
+														 <LuaCommand>GUI_Tooltip.TooltipBuild(false,true,Technologies.R_Beautification_Military)</LuaCommand>
 													 </ToolTipUpdateFunction>
 													 <RawString></RawString>
 													 <StringTableKey></StringTableKey>
@@ -19301,7 +18897,7 @@
 												 </ToolTipHelper>
 												 <Group>Construction</Group>
 												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/ButtonsAddon</MotherID>
-												 <Name>B_SpecialEdition_Column</Name>
+												 <Name>B_Beautification_Military1</Name>
 												 <FullScreenBackground>false</FullScreenBackground>
 												 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
 												 <BackgroundMaterial>
@@ -19320,7 +18916,7 @@
 													 </Color>
 												 </BackgroundMaterial>
 												 <ActionFunction>
-													 <LuaCommand>GUI_Construction.BuildClicked(UpgradeCategories.SpecialEdition_Column)</LuaCommand>
+													 <LuaCommand>GUI_Construction.BuildClicked(UpgradeCategories.Beautification_Military1)</LuaCommand>
 												 </ActionFunction>
 												 <GenerateMaterialsFromNormal>false</GenerateMaterialsFromNormal>
 												 <ShortCutKey></ShortCutKey>
@@ -19406,10 +19002,10 @@
 												 </MaterialPressed>
 												 <IconMaterial>
 													 <Texture>iconsbig.png</Texture>
-													 <TextureCoordinatesMinU>896.</TextureCoordinatesMinU>
-													 <TextureCoordinatesMinV>448.</TextureCoordinatesMinV>
-													 <TextureCoordinatesMxU>960.</TextureCoordinatesMxU>
-													 <TextureCoordinatesMxV>512.</TextureCoordinatesMxV>
+													 <TextureCoordinatesMinU>384.</TextureCoordinatesMinU>
+													 <TextureCoordinatesMinV>256.</TextureCoordinatesMinV>
+													 <TextureCoordinatesMxU>448.</TextureCoordinatesMxU>
+													 <TextureCoordinatesMxV>320.</TextureCoordinatesMxV>
 													 <TextureFixedSizeX>0.</TextureFixedSizeX>
 													 <TextureFixedSizeY>0.</TextureFixedSizeY>
 													 <Color>
@@ -19482,7 +19078,7 @@
 													 <LuaCommand></LuaCommand>
 												 </UpdateFunction>
 												 <UpdateFunctionTurnBased>
-													 <LuaCommand>GUI_Construction.BuildUpdate(Technologies.R_Beautification_Plaza)</LuaCommand>
+													 <LuaCommand>GUI_Construction.BuildUpdate(Technologies.R_Beautification_BrothersInArms)</LuaCommand>
 												 </UpdateFunctionTurnBased>
 												 <UpdateFunctionSecondBased>
 													 <LuaCommand></LuaCommand>
@@ -19491,7 +19087,7 @@
 													 <ToolTipEnabledFlag>true</ToolTipEnabledFlag>
 													 <ControlTargetVisibility>true</ControlTargetVisibility>
 													 <ToolTipUpdateFunction>
-														 <LuaCommand>GUI_Tooltip.TooltipBuild(false,true,Technologies.R_Beautification_Plaza)</LuaCommand>
+														 <LuaCommand>GUI_Tooltip.TooltipBuild(false,true,Technologies.R_Beautification_BrothersInArms)</LuaCommand>
 													 </ToolTipUpdateFunction>
 													 <RawString></RawString>
 													 <StringTableKey></StringTableKey>
@@ -19503,7 +19099,7 @@
 												 </ToolTipHelper>
 												 <Group>Construction</Group>
 												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/ButtonsAddon</MotherID>
-												 <Name>B_Beautification_Plaza</Name>
+												 <Name>B_Beautification_BrothersInArms</Name>
 												 <FullScreenBackground>false</FullScreenBackground>
 												 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
 												 <BackgroundMaterial>
@@ -19522,7 +19118,7 @@
 													 </Color>
 												 </BackgroundMaterial>
 												 <ActionFunction>
-													 <LuaCommand>GUI_Construction.BuildPlazaClicked()</LuaCommand>
+													 <LuaCommand>GUI_Construction.BuildClicked(UpgradeCategories.Beautification_BrothersInArms)</LuaCommand>
 												 </ActionFunction>
 												 <GenerateMaterialsFromNormal>false</GenerateMaterialsFromNormal>
 												 <ShortCutKey></ShortCutKey>
@@ -19646,6 +19242,208 @@
 												 <Rectangle>
 													 <X>110.</X>
 													 <Y>55.</Y>
+													 <W>64.</W>
+													 <H>64.</H>
+													 <KeepAspectRatio>true</KeepAspectRatio>
+													 <CirclePointTest>true</CirclePointTest>
+													 <FixedTextureSetSize>true</FixedTextureSetSize>
+													 <AlignmentX>0</AlignmentX>
+													 <AlignmentY>0</AlignmentY>
+													 <AnchorX>0</AnchorX>
+													 <AnchorY>0</AnchorY>
+												 </Rectangle>
+												 <OnPushToStack>
+													 <LuaCommand></LuaCommand>
+												 </OnPushToStack>
+												 <OnMouseOver>
+													 <LuaCommand></LuaCommand>
+												 </OnMouseOver>
+												 <OnMouseOut>
+													 <LuaCommand></LuaCommand>
+												 </OnMouseOut>
+												 <OnRightClick>
+													 <LuaCommand></LuaCommand>
+												 </OnRightClick>
+												 <OnLeftClick>
+													 <LuaCommand></LuaCommand>
+												 </OnLeftClick>
+												 <OnKeyPress>
+													 <LuaCommand></LuaCommand>
+												 </OnKeyPress>
+												 <OnFocus>
+													 <LuaCommand></LuaCommand>
+												 </OnFocus>
+												 <OnBlur>
+													 <LuaCommand></LuaCommand>
+												 </OnBlur>
+												 <UpdateFunction>
+													 <LuaCommand></LuaCommand>
+												 </UpdateFunction>
+												 <UpdateFunctionTurnBased>
+													 <LuaCommand>GUI_Construction.BuildUpdate(Technologies.R_Beautification_Flowerpot_Round)</LuaCommand>
+												 </UpdateFunctionTurnBased>
+												 <UpdateFunctionSecondBased>
+													 <LuaCommand></LuaCommand>
+												 </UpdateFunctionSecondBased>
+												 <ToolTipHelper>
+													 <ToolTipEnabledFlag>true</ToolTipEnabledFlag>
+													 <ControlTargetVisibility>true</ControlTargetVisibility>
+													 <ToolTipUpdateFunction>
+														 <LuaCommand>GUI_Tooltip.TooltipBuild(false,true,Technologies.R_Beautification_Flowerpot_Round)</LuaCommand>
+													 </ToolTipUpdateFunction>
+													 <RawString></RawString>
+													 <StringTableKey></StringTableKey>
+													 <TargetWidget01>/InGame/Root/Normal/AlignBottomRight/BuildMenu/TooltipBuild</TargetWidget01>
+													 <TargetWidget02></TargetWidget02>
+													 <TargetWidget03></TargetWidget03>
+													 <TargetWidget04></TargetWidget04>
+													 <TargetWidget05></TargetWidget05>
+												 </ToolTipHelper>
+												 <Group>Construction</Group>
+												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/ButtonsAddon</MotherID>
+												 <Name>B_Beautification_Flowerpot_Round</Name>
+												 <FullScreenBackground>false</FullScreenBackground>
+												 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
+												 <BackgroundMaterial>
+													 <Texture>buttons.png</Texture>
+													 <TextureCoordinatesMinU>256.</TextureCoordinatesMinU>
+													 <TextureCoordinatesMinV>64.</TextureCoordinatesMinV>
+													 <TextureCoordinatesMxU>320.</TextureCoordinatesMxU>
+													 <TextureCoordinatesMxV>128.</TextureCoordinatesMxV>
+													 <TextureFixedSizeX>0.</TextureFixedSizeX>
+													 <TextureFixedSizeY>0.</TextureFixedSizeY>
+													 <Color>
+														 <Red>255</Red>
+														 <Green>255</Green>
+														 <Blue>255</Blue>
+														 <Alpha>255</Alpha>
+													 </Color>
+												 </BackgroundMaterial>
+												 <ActionFunction>
+													 <LuaCommand>GUI_Construction.BuildClicked(UpgradeCategories.Beautification_Flowerpot_Round)</LuaCommand>
+												 </ActionFunction>
+												 <GenerateMaterialsFromNormal>false</GenerateMaterialsFromNormal>
+												 <ShortCutKey></ShortCutKey>
+												 <ShortCutKeyStringTableKey></ShortCutKeyStringTableKey>
+												 <AllowRightMouseButton>false</AllowRightMouseButton>
+												 <AllowDoubleClick>false</AllowDoubleClick>
+												 <Disabled>false</Disabled>
+												 <Highlighted>false</Highlighted>
+												 <MaterialBaseNormal classname="EGUIX::CMaterial">
+													 <Texture>buttons.png</Texture>
+													 <TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
+													 <TextureCoordinatesMinV>448.</TextureCoordinatesMinV>
+													 <TextureCoordinatesMxU>64.</TextureCoordinatesMxU>
+													 <TextureCoordinatesMxV>512.</TextureCoordinatesMxV>
+													 <TextureFixedSizeX>0.</TextureFixedSizeX>
+													 <TextureFixedSizeY>0.</TextureFixedSizeY>
+													 <Color>
+														 <Red>255</Red>
+														 <Green>255</Green>
+														 <Blue>255</Blue>
+														 <Alpha>255</Alpha>
+													 </Color>
+												 </MaterialBaseNormal>
+												 <MaterialDisabled classname="EGUIX::CMaterial">
+													 <Texture></Texture>
+													 <TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
+													 <TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
+													 <TextureCoordinatesMxU>64.</TextureCoordinatesMxU>
+													 <TextureCoordinatesMxV>64.</TextureCoordinatesMxV>
+													 <TextureFixedSizeX>0.</TextureFixedSizeX>
+													 <TextureFixedSizeY>0.</TextureFixedSizeY>
+													 <Color>
+														 <Red>255</Red>
+														 <Green>255</Green>
+														 <Blue>255</Blue>
+														 <Alpha>0</Alpha>
+													 </Color>
+												 </MaterialDisabled>
+												 <MaterialHighlight classname="EGUIX::CMaterial">
+													 <Texture>buttons.png</Texture>
+													 <TextureCoordinatesMinU>192.</TextureCoordinatesMinU>
+													 <TextureCoordinatesMinV>448.</TextureCoordinatesMinV>
+													 <TextureCoordinatesMxU>256.</TextureCoordinatesMxU>
+													 <TextureCoordinatesMxV>512.</TextureCoordinatesMxV>
+													 <TextureFixedSizeX>0.</TextureFixedSizeX>
+													 <TextureFixedSizeY>0.</TextureFixedSizeY>
+													 <Color>
+														 <Red>255</Red>
+														 <Green>255</Green>
+														 <Blue>255</Blue>
+														 <Alpha>255</Alpha>
+													 </Color>
+												 </MaterialHighlight>
+												 <MaterialMouseOver classname="EGUIX::CMaterial">
+													 <Texture>buttons.png</Texture>
+													 <TextureCoordinatesMinU>128.</TextureCoordinatesMinU>
+													 <TextureCoordinatesMinV>448.</TextureCoordinatesMinV>
+													 <TextureCoordinatesMxU>192.</TextureCoordinatesMxU>
+													 <TextureCoordinatesMxV>512.</TextureCoordinatesMxV>
+													 <TextureFixedSizeX>0.</TextureFixedSizeX>
+													 <TextureFixedSizeY>0.</TextureFixedSizeY>
+													 <Color>
+														 <Red>255</Red>
+														 <Green>255</Green>
+														 <Blue>255</Blue>
+														 <Alpha>255</Alpha>
+													 </Color>
+												 </MaterialMouseOver>
+												 <MaterialPressed classname="EGUIX::CMaterial">
+													 <Texture>buttons.png</Texture>
+													 <TextureCoordinatesMinU>64.</TextureCoordinatesMinU>
+													 <TextureCoordinatesMinV>448.</TextureCoordinatesMinV>
+													 <TextureCoordinatesMxU>128.</TextureCoordinatesMxU>
+													 <TextureCoordinatesMxV>512.</TextureCoordinatesMxV>
+													 <TextureFixedSizeX>0.</TextureFixedSizeX>
+													 <TextureFixedSizeY>0.</TextureFixedSizeY>
+													 <Color>
+														 <Red>255</Red>
+														 <Green>255</Green>
+														 <Blue>255</Blue>
+														 <Alpha>255</Alpha>
+													 </Color>
+												 </MaterialPressed>
+												 <IconMaterial>
+													 <Texture>iconsbig.png</Texture>
+													 <TextureCoordinatesMinU>64</TextureCoordinatesMinU>
+													 <TextureCoordinatesMinV>64.</TextureCoordinatesMinV>
+													 <TextureCoordinatesMxU>128.</TextureCoordinatesMxU>
+													 <TextureCoordinatesMxV>128.</TextureCoordinatesMxV>
+													 <TextureFixedSizeX>0.</TextureFixedSizeX>
+													 <TextureFixedSizeY>0.</TextureFixedSizeY>
+													 <Color>
+														 <Red>255</Red>
+														 <Green>255</Green>
+														 <Blue>255</Blue>
+														 <Alpha>255</Alpha>
+													 </Color>
+												 </IconMaterial>
+												 <IconOffsetWhilePressed>2</IconOffsetWhilePressed>
+												 <IconColorWhileDisabled>
+													 <Red>150</Red>
+													 <Green>150</Green>
+													 <Blue>150</Blue>
+													 <Alpha>200</Alpha>
+												 </IconColorWhileDisabled>
+												 <PulseHighlightDuration>2.</PulseHighlightDuration>
+												 <PulseHighlightMinAlpha>0.25</PulseHighlightMinAlpha>
+												 <PulseMouseoverDuration>0.</PulseMouseoverDuration>
+												 <PulseMouseoverMinAlpha>0.25</PulseMouseoverMinAlpha>
+												 <ShowHighlightedAsPressed>false</ShowHighlightedAsPressed>
+											 </Widget>
+											 <Widget classname="EGUIX::CGfxButtonWidget">
+												 <IsShown>true</IsShown>
+												 <UpdateManualFlag>false</UpdateManualFlag>
+												 <EventHandling>true</EventHandling>
+												 <ZPriority>100.</ZPriority>
+												 <ForceToHandleMouseEventsFlag>false</ForceToHandleMouseEventsFlag>
+												 <ForceToHandleKeyboardEventsFlag>false</ForceToHandleKeyboardEventsFlag>
+												 <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
+												 <TabIndex>1</TabIndex>
+												 <Rectangle>
+													 <X>0.</X>
+													 <Y>0.</Y>
 													 <W>64.</W>
 													 <H>64.</H>
 													 <KeepAspectRatio>true</KeepAspectRatio>
@@ -19846,208 +19644,6 @@
 												 <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
 												 <TabIndex>1</TabIndex>
 												 <Rectangle>
-													 <X>0.</X>
-													 <Y>0.</Y>
-													 <W>64.</W>
-													 <H>64.</H>
-													 <KeepAspectRatio>true</KeepAspectRatio>
-													 <CirclePointTest>true</CirclePointTest>
-													 <FixedTextureSetSize>true</FixedTextureSetSize>
-													 <AlignmentX>0</AlignmentX>
-													 <AlignmentY>0</AlignmentY>
-													 <AnchorX>0</AnchorX>
-													 <AnchorY>0</AnchorY>
-												 </Rectangle>
-												 <OnPushToStack>
-													 <LuaCommand></LuaCommand>
-												 </OnPushToStack>
-												 <OnMouseOver>
-													 <LuaCommand></LuaCommand>
-												 </OnMouseOver>
-												 <OnMouseOut>
-													 <LuaCommand></LuaCommand>
-												 </OnMouseOut>
-												 <OnRightClick>
-													 <LuaCommand></LuaCommand>
-												 </OnRightClick>
-												 <OnLeftClick>
-													 <LuaCommand></LuaCommand>
-												 </OnLeftClick>
-												 <OnKeyPress>
-													 <LuaCommand></LuaCommand>
-												 </OnKeyPress>
-												 <OnFocus>
-													 <LuaCommand></LuaCommand>
-												 </OnFocus>
-												 <OnBlur>
-													 <LuaCommand></LuaCommand>
-												 </OnBlur>
-												 <UpdateFunction>
-													 <LuaCommand></LuaCommand>
-												 </UpdateFunction>
-												 <UpdateFunctionTurnBased>
-													 <LuaCommand>GUI_Construction.BuildUpdate(Technologies.R_Beautification_Signpost1)</LuaCommand>
-												 </UpdateFunctionTurnBased>
-												 <UpdateFunctionSecondBased>
-													 <LuaCommand></LuaCommand>
-												 </UpdateFunctionSecondBased>
-												 <ToolTipHelper>
-													 <ToolTipEnabledFlag>true</ToolTipEnabledFlag>
-													 <ControlTargetVisibility>true</ControlTargetVisibility>
-													 <ToolTipUpdateFunction>
-														 <LuaCommand>GUI_Tooltip.TooltipBuild(false,true,Technologies.R_Beautification_Signpost1)</LuaCommand>
-													 </ToolTipUpdateFunction>
-													 <RawString></RawString>
-													 <StringTableKey></StringTableKey>
-													 <TargetWidget01>/InGame/Root/Normal/AlignBottomRight/BuildMenu/TooltipBuild</TargetWidget01>
-													 <TargetWidget02></TargetWidget02>
-													 <TargetWidget03></TargetWidget03>
-													 <TargetWidget04></TargetWidget04>
-													 <TargetWidget05></TargetWidget05>
-												 </ToolTipHelper>
-												 <Group>Construction</Group>
-												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/ButtonsAddon</MotherID>
-												 <Name>B_Beautification_Signpost1</Name>
-												 <FullScreenBackground>false</FullScreenBackground>
-												 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
-												 <BackgroundMaterial>
-													 <Texture>buttons.png</Texture>
-													 <TextureCoordinatesMinU>256.</TextureCoordinatesMinU>
-													 <TextureCoordinatesMinV>64.</TextureCoordinatesMinV>
-													 <TextureCoordinatesMxU>320.</TextureCoordinatesMxU>
-													 <TextureCoordinatesMxV>128.</TextureCoordinatesMxV>
-													 <TextureFixedSizeX>0.</TextureFixedSizeX>
-													 <TextureFixedSizeY>0.</TextureFixedSizeY>
-													 <Color>
-														 <Red>255</Red>
-														 <Green>255</Green>
-														 <Blue>255</Blue>
-														 <Alpha>255</Alpha>
-													 </Color>
-												 </BackgroundMaterial>
-												 <ActionFunction>
-													 <LuaCommand>GUI_Construction.BuildClicked(UpgradeCategories.Beautification_Signpost1)</LuaCommand>
-												 </ActionFunction>
-												 <GenerateMaterialsFromNormal>false</GenerateMaterialsFromNormal>
-												 <ShortCutKey></ShortCutKey>
-												 <ShortCutKeyStringTableKey></ShortCutKeyStringTableKey>
-												 <AllowRightMouseButton>false</AllowRightMouseButton>
-												 <AllowDoubleClick>false</AllowDoubleClick>
-												 <Disabled>false</Disabled>
-												 <Highlighted>false</Highlighted>
-												 <MaterialBaseNormal classname="EGUIX::CMaterial">
-													 <Texture>buttons.png</Texture>
-													 <TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
-													 <TextureCoordinatesMinV>448.</TextureCoordinatesMinV>
-													 <TextureCoordinatesMxU>64.</TextureCoordinatesMxU>
-													 <TextureCoordinatesMxV>512.</TextureCoordinatesMxV>
-													 <TextureFixedSizeX>0.</TextureFixedSizeX>
-													 <TextureFixedSizeY>0.</TextureFixedSizeY>
-													 <Color>
-														 <Red>255</Red>
-														 <Green>255</Green>
-														 <Blue>255</Blue>
-														 <Alpha>255</Alpha>
-													 </Color>
-												 </MaterialBaseNormal>
-												 <MaterialDisabled classname="EGUIX::CMaterial">
-													 <Texture></Texture>
-													 <TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
-													 <TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
-													 <TextureCoordinatesMxU>64.</TextureCoordinatesMxU>
-													 <TextureCoordinatesMxV>64.</TextureCoordinatesMxV>
-													 <TextureFixedSizeX>0.</TextureFixedSizeX>
-													 <TextureFixedSizeY>0.</TextureFixedSizeY>
-													 <Color>
-														 <Red>255</Red>
-														 <Green>255</Green>
-														 <Blue>255</Blue>
-														 <Alpha>0</Alpha>
-													 </Color>
-												 </MaterialDisabled>
-												 <MaterialHighlight classname="EGUIX::CMaterial">
-													 <Texture>buttons.png</Texture>
-													 <TextureCoordinatesMinU>192.</TextureCoordinatesMinU>
-													 <TextureCoordinatesMinV>448.</TextureCoordinatesMinV>
-													 <TextureCoordinatesMxU>256.</TextureCoordinatesMxU>
-													 <TextureCoordinatesMxV>512.</TextureCoordinatesMxV>
-													 <TextureFixedSizeX>0.</TextureFixedSizeX>
-													 <TextureFixedSizeY>0.</TextureFixedSizeY>
-													 <Color>
-														 <Red>255</Red>
-														 <Green>255</Green>
-														 <Blue>255</Blue>
-														 <Alpha>255</Alpha>
-													 </Color>
-												 </MaterialHighlight>
-												 <MaterialMouseOver classname="EGUIX::CMaterial">
-													 <Texture>buttons.png</Texture>
-													 <TextureCoordinatesMinU>128.</TextureCoordinatesMinU>
-													 <TextureCoordinatesMinV>448.</TextureCoordinatesMinV>
-													 <TextureCoordinatesMxU>192.</TextureCoordinatesMxU>
-													 <TextureCoordinatesMxV>512.</TextureCoordinatesMxV>
-													 <TextureFixedSizeX>0.</TextureFixedSizeX>
-													 <TextureFixedSizeY>0.</TextureFixedSizeY>
-													 <Color>
-														 <Red>255</Red>
-														 <Green>255</Green>
-														 <Blue>255</Blue>
-														 <Alpha>255</Alpha>
-													 </Color>
-												 </MaterialMouseOver>
-												 <MaterialPressed classname="EGUIX::CMaterial">
-													 <Texture>buttons.png</Texture>
-													 <TextureCoordinatesMinU>64.</TextureCoordinatesMinU>
-													 <TextureCoordinatesMinV>448.</TextureCoordinatesMinV>
-													 <TextureCoordinatesMxU>128.</TextureCoordinatesMxU>
-													 <TextureCoordinatesMxV>512.</TextureCoordinatesMxV>
-													 <TextureFixedSizeX>0.</TextureFixedSizeX>
-													 <TextureFixedSizeY>0.</TextureFixedSizeY>
-													 <Color>
-														 <Red>255</Red>
-														 <Green>255</Green>
-														 <Blue>255</Blue>
-														 <Alpha>255</Alpha>
-													 </Color>
-												 </MaterialPressed>
-												 <IconMaterial>
-													 <Texture>iconsbig.png</Texture>
-													 <TextureCoordinatesMinU>960.</TextureCoordinatesMinU>
-													 <TextureCoordinatesMinV>256.</TextureCoordinatesMinV>
-													 <TextureCoordinatesMxU>1024.</TextureCoordinatesMxU>
-													 <TextureCoordinatesMxV>320.</TextureCoordinatesMxV>
-													 <TextureFixedSizeX>0.</TextureFixedSizeX>
-													 <TextureFixedSizeY>0.</TextureFixedSizeY>
-													 <Color>
-														 <Red>255</Red>
-														 <Green>255</Green>
-														 <Blue>255</Blue>
-														 <Alpha>255</Alpha>
-													 </Color>
-												 </IconMaterial>
-												 <IconOffsetWhilePressed>2</IconOffsetWhilePressed>
-												 <IconColorWhileDisabled>
-													 <Red>150</Red>
-													 <Green>150</Green>
-													 <Blue>150</Blue>
-													 <Alpha>200</Alpha>
-												 </IconColorWhileDisabled>
-												 <PulseHighlightDuration>2.</PulseHighlightDuration>
-												 <PulseHighlightMinAlpha>0.25</PulseHighlightMinAlpha>
-												 <PulseMouseoverDuration>0.</PulseMouseoverDuration>
-												 <PulseMouseoverMinAlpha>0.25</PulseMouseoverMinAlpha>
-												 <ShowHighlightedAsPressed>false</ShowHighlightedAsPressed>
-											 </Widget>
-											 <Widget classname="EGUIX::CGfxButtonWidget">
-												 <IsShown>true</IsShown>
-												 <UpdateManualFlag>false</UpdateManualFlag>
-												 <EventHandling>true</EventHandling>
-												 <ZPriority>100.</ZPriority>
-												 <ForceToHandleMouseEventsFlag>false</ForceToHandleMouseEventsFlag>
-												 <ForceToHandleKeyboardEventsFlag>false</ForceToHandleKeyboardEventsFlag>
-												 <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
-												 <TabIndex>1</TabIndex>
-												 <Rectangle>
 													 <X>55.</X>
 													 <Y>0.</Y>
 													 <W>64.</W>
@@ -20088,7 +19684,7 @@
 													 <LuaCommand></LuaCommand>
 												 </UpdateFunction>
 												 <UpdateFunctionTurnBased>
-													 <LuaCommand>GUI_Construction.BuildUpdate(Technologies.R_Beautification_Flowerpot_Round)</LuaCommand>
+													 <LuaCommand>GUI_Construction.BuildUpdate(Technologies.R_Beautification_PrisonCage)</LuaCommand>
 												 </UpdateFunctionTurnBased>
 												 <UpdateFunctionSecondBased>
 													 <LuaCommand></LuaCommand>
@@ -20097,7 +19693,7 @@
 													 <ToolTipEnabledFlag>true</ToolTipEnabledFlag>
 													 <ControlTargetVisibility>true</ControlTargetVisibility>
 													 <ToolTipUpdateFunction>
-														 <LuaCommand>GUI_Tooltip.TooltipBuild(false,true,Technologies.R_Beautification_Flowerpot_Round)</LuaCommand>
+														 <LuaCommand>GUI_Tooltip.TooltipBuild(false,true,Technologies.R_Beautification_PrisonCage)</LuaCommand>
 													 </ToolTipUpdateFunction>
 													 <RawString></RawString>
 													 <StringTableKey></StringTableKey>
@@ -20109,7 +19705,7 @@
 												 </ToolTipHelper>
 												 <Group>Construction</Group>
 												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/ButtonsAddon</MotherID>
-												 <Name>B_Beautification_Flowerpot_Round</Name>
+												 <Name>B_Beautification_PrisonCage</Name>
 												 <FullScreenBackground>false</FullScreenBackground>
 												 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
 												 <BackgroundMaterial>
@@ -20128,7 +19724,7 @@
 													 </Color>
 												 </BackgroundMaterial>
 												 <ActionFunction>
-													 <LuaCommand>GUI_Construction.BuildClicked(UpgradeCategories.Beautification_Flowerpot_Round)</LuaCommand>
+													 <LuaCommand>GUI_Construction.BuildClicked(UpgradeCategories.Beautification_PrisonCage)</LuaCommand>
 												 </ActionFunction>
 												 <GenerateMaterialsFromNormal>false</GenerateMaterialsFromNormal>
 												 <ShortCutKey></ShortCutKey>
@@ -20290,7 +19886,7 @@
 													 <LuaCommand></LuaCommand>
 												 </UpdateFunction>
 												 <UpdateFunctionTurnBased>
-													 <LuaCommand>GUI_Construction.BuildUpdate(Technologies.R_SpecialEdition_StatueSettler)</LuaCommand>
+													 <LuaCommand>GUI_Construction.BuildUpdate(Technologies.R_SpecialEdition_StatueFamily)</LuaCommand>
 												 </UpdateFunctionTurnBased>
 												 <UpdateFunctionSecondBased>
 													 <LuaCommand></LuaCommand>
@@ -20299,7 +19895,7 @@
 													 <ToolTipEnabledFlag>true</ToolTipEnabledFlag>
 													 <ControlTargetVisibility>true</ControlTargetVisibility>
 													 <ToolTipUpdateFunction>
-														 <LuaCommand>GUI_Tooltip.TooltipBuild(false,true,Technologies.R_SpecialEdition_StatueSettler)</LuaCommand>
+														 <LuaCommand>GUI_Tooltip.TooltipBuild(false,true,Technologies.R_SpecialEdition_StatueFamily)</LuaCommand>
 													 </ToolTipUpdateFunction>
 													 <RawString></RawString>
 													 <StringTableKey></StringTableKey>
@@ -20311,7 +19907,7 @@
 												 </ToolTipHelper>
 												 <Group>Construction</Group>
 												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/ButtonsAddon</MotherID>
-												 <Name>B_SpecialEdition_StatueSettler</Name>
+												 <Name>B_SpecialEdition_StatueFamily</Name>
 												 <FullScreenBackground>false</FullScreenBackground>
 												 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
 												 <BackgroundMaterial>
@@ -20330,209 +19926,7 @@
 													 </Color>
 												 </BackgroundMaterial>
 												 <ActionFunction>
-													 <LuaCommand>GUI_Construction.BuildClicked(UpgradeCategories.SpecialEdition_StatueSettler)</LuaCommand>
-												 </ActionFunction>
-												 <GenerateMaterialsFromNormal>false</GenerateMaterialsFromNormal>
-												 <ShortCutKey></ShortCutKey>
-												 <ShortCutKeyStringTableKey></ShortCutKeyStringTableKey>
-												 <AllowRightMouseButton>false</AllowRightMouseButton>
-												 <AllowDoubleClick>false</AllowDoubleClick>
-												 <Disabled>false</Disabled>
-												 <Highlighted>false</Highlighted>
-												 <MaterialBaseNormal classname="EGUIX::CMaterial">
-													 <Texture>buttons.png</Texture>
-													 <TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
-													 <TextureCoordinatesMinV>448.</TextureCoordinatesMinV>
-													 <TextureCoordinatesMxU>64.</TextureCoordinatesMxU>
-													 <TextureCoordinatesMxV>512.</TextureCoordinatesMxV>
-													 <TextureFixedSizeX>0.</TextureFixedSizeX>
-													 <TextureFixedSizeY>0.</TextureFixedSizeY>
-													 <Color>
-														 <Red>255</Red>
-														 <Green>255</Green>
-														 <Blue>255</Blue>
-														 <Alpha>255</Alpha>
-													 </Color>
-												 </MaterialBaseNormal>
-												 <MaterialDisabled classname="EGUIX::CMaterial">
-													 <Texture></Texture>
-													 <TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
-													 <TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
-													 <TextureCoordinatesMxU>64.</TextureCoordinatesMxU>
-													 <TextureCoordinatesMxV>64.</TextureCoordinatesMxV>
-													 <TextureFixedSizeX>0.</TextureFixedSizeX>
-													 <TextureFixedSizeY>0.</TextureFixedSizeY>
-													 <Color>
-														 <Red>255</Red>
-														 <Green>255</Green>
-														 <Blue>255</Blue>
-														 <Alpha>0</Alpha>
-													 </Color>
-												 </MaterialDisabled>
-												 <MaterialHighlight classname="EGUIX::CMaterial">
-													 <Texture>buttons.png</Texture>
-													 <TextureCoordinatesMinU>192.</TextureCoordinatesMinU>
-													 <TextureCoordinatesMinV>448.</TextureCoordinatesMinV>
-													 <TextureCoordinatesMxU>256.</TextureCoordinatesMxU>
-													 <TextureCoordinatesMxV>512.</TextureCoordinatesMxV>
-													 <TextureFixedSizeX>0.</TextureFixedSizeX>
-													 <TextureFixedSizeY>0.</TextureFixedSizeY>
-													 <Color>
-														 <Red>255</Red>
-														 <Green>255</Green>
-														 <Blue>255</Blue>
-														 <Alpha>255</Alpha>
-													 </Color>
-												 </MaterialHighlight>
-												 <MaterialMouseOver classname="EGUIX::CMaterial">
-													 <Texture>buttons.png</Texture>
-													 <TextureCoordinatesMinU>128.</TextureCoordinatesMinU>
-													 <TextureCoordinatesMinV>448.</TextureCoordinatesMinV>
-													 <TextureCoordinatesMxU>192.</TextureCoordinatesMxU>
-													 <TextureCoordinatesMxV>512.</TextureCoordinatesMxV>
-													 <TextureFixedSizeX>0.</TextureFixedSizeX>
-													 <TextureFixedSizeY>0.</TextureFixedSizeY>
-													 <Color>
-														 <Red>255</Red>
-														 <Green>255</Green>
-														 <Blue>255</Blue>
-														 <Alpha>255</Alpha>
-													 </Color>
-												 </MaterialMouseOver>
-												 <MaterialPressed classname="EGUIX::CMaterial">
-													 <Texture>buttons.png</Texture>
-													 <TextureCoordinatesMinU>64.</TextureCoordinatesMinU>
-													 <TextureCoordinatesMinV>448.</TextureCoordinatesMinV>
-													 <TextureCoordinatesMxU>128.</TextureCoordinatesMxU>
-													 <TextureCoordinatesMxV>512.</TextureCoordinatesMxV>
-													 <TextureFixedSizeX>0.</TextureFixedSizeX>
-													 <TextureFixedSizeY>0.</TextureFixedSizeY>
-													 <Color>
-														 <Red>255</Red>
-														 <Green>255</Green>
-														 <Blue>255</Blue>
-														 <Alpha>255</Alpha>
-													 </Color>
-												 </MaterialPressed>
-												 <IconMaterial>
-													 <Texture>iconsbig.png</Texture>
-													 <TextureCoordinatesMinU>896.</TextureCoordinatesMinU>
-													 <TextureCoordinatesMinV>704.</TextureCoordinatesMinV>
-													 <TextureCoordinatesMxU>960.</TextureCoordinatesMxU>
-													 <TextureCoordinatesMxV>768.</TextureCoordinatesMxV>
-													 <TextureFixedSizeX>0.</TextureFixedSizeX>
-													 <TextureFixedSizeY>0.</TextureFixedSizeY>
-													 <Color>
-														 <Red>255</Red>
-														 <Green>255</Green>
-														 <Blue>255</Blue>
-														 <Alpha>255</Alpha>
-													 </Color>
-												 </IconMaterial>
-												 <IconOffsetWhilePressed>2</IconOffsetWhilePressed>
-												 <IconColorWhileDisabled>
-													 <Red>150</Red>
-													 <Green>150</Green>
-													 <Blue>150</Blue>
-													 <Alpha>200</Alpha>
-												 </IconColorWhileDisabled>
-												 <PulseHighlightDuration>2.</PulseHighlightDuration>
-												 <PulseHighlightMinAlpha>0.25</PulseHighlightMinAlpha>
-												 <PulseMouseoverDuration>0.</PulseMouseoverDuration>
-												 <PulseMouseoverMinAlpha>0.25</PulseMouseoverMinAlpha>
-												 <ShowHighlightedAsPressed>false</ShowHighlightedAsPressed>
-											 </Widget>
-											 <Widget classname="EGUIX::CGfxButtonWidget">
-												 <IsShown>true</IsShown>
-												 <UpdateManualFlag>false</UpdateManualFlag>
-												 <EventHandling>true</EventHandling>
-												 <ZPriority>100.</ZPriority>
-												 <ForceToHandleMouseEventsFlag>false</ForceToHandleMouseEventsFlag>
-												 <ForceToHandleKeyboardEventsFlag>false</ForceToHandleKeyboardEventsFlag>
-												 <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
-												 <TabIndex>3</TabIndex>
-												 <Rectangle>
-													 <X>27.</X>
-													 <Y>108.</Y>
-													 <W>64.</W>
-													 <H>64.</H>
-													 <KeepAspectRatio>true</KeepAspectRatio>
-													 <CirclePointTest>true</CirclePointTest>
-													 <FixedTextureSetSize>true</FixedTextureSetSize>
-													 <AlignmentX>0</AlignmentX>
-													 <AlignmentY>0</AlignmentY>
-													 <AnchorX>0</AnchorX>
-													 <AnchorY>0</AnchorY>
-												 </Rectangle>
-												 <OnPushToStack>
-													 <LuaCommand></LuaCommand>
-												 </OnPushToStack>
-												 <OnMouseOver>
-													 <LuaCommand></LuaCommand>
-												 </OnMouseOver>
-												 <OnMouseOut>
-													 <LuaCommand></LuaCommand>
-												 </OnMouseOut>
-												 <OnRightClick>
-													 <LuaCommand></LuaCommand>
-												 </OnRightClick>
-												 <OnLeftClick>
-													 <LuaCommand></LuaCommand>
-												 </OnLeftClick>
-												 <OnKeyPress>
-													 <LuaCommand></LuaCommand>
-												 </OnKeyPress>
-												 <OnFocus>
-													 <LuaCommand></LuaCommand>
-												 </OnFocus>
-												 <OnBlur>
-													 <LuaCommand></LuaCommand>
-												 </OnBlur>
-												 <UpdateFunction>
-													 <LuaCommand></LuaCommand>
-												 </UpdateFunction>
-												 <UpdateFunctionTurnBased>
-													 <LuaCommand>GUI_Construction.BuildUpdate(Technologies.R_SpecialEdition_StatueProduction)</LuaCommand>
-												 </UpdateFunctionTurnBased>
-												 <UpdateFunctionSecondBased>
-													 <LuaCommand></LuaCommand>
-												 </UpdateFunctionSecondBased>
-												 <ToolTipHelper>
-													 <ToolTipEnabledFlag>true</ToolTipEnabledFlag>
-													 <ControlTargetVisibility>true</ControlTargetVisibility>
-													 <ToolTipUpdateFunction>
-														 <LuaCommand>GUI_Tooltip.TooltipBuild(false,true,Technologies.R_SpecialEdition_StatueProduction)</LuaCommand>
-													 </ToolTipUpdateFunction>
-													 <RawString></RawString>
-													 <StringTableKey></StringTableKey>
-													 <TargetWidget01>/InGame/Root/Normal/AlignBottomRight/BuildMenu/TooltipBuild</TargetWidget01>
-													 <TargetWidget02></TargetWidget02>
-													 <TargetWidget03></TargetWidget03>
-													 <TargetWidget04></TargetWidget04>
-													 <TargetWidget05></TargetWidget05>
-												 </ToolTipHelper>
-												 <Group>Construction</Group>
-												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/ButtonsAddon</MotherID>
-												 <Name>B_SpecialEdition_StatueProduction</Name>
-												 <FullScreenBackground>false</FullScreenBackground>
-												 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
-												 <BackgroundMaterial>
-													 <Texture>buttons.png</Texture>
-													 <TextureCoordinatesMinU>256.</TextureCoordinatesMinU>
-													 <TextureCoordinatesMinV>64.</TextureCoordinatesMinV>
-													 <TextureCoordinatesMxU>320.</TextureCoordinatesMxU>
-													 <TextureCoordinatesMxV>128.</TextureCoordinatesMxV>
-													 <TextureFixedSizeX>0.</TextureFixedSizeX>
-													 <TextureFixedSizeY>0.</TextureFixedSizeY>
-													 <Color>
-														 <Red>255</Red>
-														 <Green>255</Green>
-														 <Blue>255</Blue>
-														 <Alpha>255</Alpha>
-													 </Color>
-												 </BackgroundMaterial>
-												 <ActionFunction>
-													 <LuaCommand>GUI_Construction.BuildClicked(UpgradeCategories.SpecialEdition_StatueProduction)</LuaCommand>
+													 <LuaCommand>GUI_Construction.BuildClicked(UpgradeCategories.SpecialEdition_StatueFamily)</LuaCommand>
 												 </ActionFunction>
 												 <GenerateMaterialsFromNormal>false</GenerateMaterialsFromNormal>
 												 <ShortCutKey></ShortCutKey>
@@ -20644,208 +20038,6 @@
 												 <PulseMouseoverMinAlpha>0.25</PulseMouseoverMinAlpha>
 												 <ShowHighlightedAsPressed>false</ShowHighlightedAsPressed>
 											 </Widget>
-											 <Widget classname="EGUIX::CGfxButtonWidget">
-												 <IsShown>true</IsShown>
-												 <UpdateManualFlag>false</UpdateManualFlag>
-												 <EventHandling>true</EventHandling>
-												 <ZPriority>100.</ZPriority>
-												 <ForceToHandleMouseEventsFlag>false</ForceToHandleMouseEventsFlag>
-												 <ForceToHandleKeyboardEventsFlag>false</ForceToHandleKeyboardEventsFlag>
-												 <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
-												 <TabIndex>2</TabIndex>
-												 <Rectangle>
-													 <X>82.</X>
-													 <Y>108.</Y>
-													 <W>64.</W>
-													 <H>64.</H>
-													 <KeepAspectRatio>true</KeepAspectRatio>
-													 <CirclePointTest>true</CirclePointTest>
-													 <FixedTextureSetSize>true</FixedTextureSetSize>
-													 <AlignmentX>0</AlignmentX>
-													 <AlignmentY>0</AlignmentY>
-													 <AnchorX>0</AnchorX>
-													 <AnchorY>0</AnchorY>
-												 </Rectangle>
-												 <OnPushToStack>
-													 <LuaCommand></LuaCommand>
-												 </OnPushToStack>
-												 <OnMouseOver>
-													 <LuaCommand></LuaCommand>
-												 </OnMouseOver>
-												 <OnMouseOut>
-													 <LuaCommand></LuaCommand>
-												 </OnMouseOut>
-												 <OnRightClick>
-													 <LuaCommand></LuaCommand>
-												 </OnRightClick>
-												 <OnLeftClick>
-													 <LuaCommand></LuaCommand>
-												 </OnLeftClick>
-												 <OnKeyPress>
-													 <LuaCommand></LuaCommand>
-												 </OnKeyPress>
-												 <OnFocus>
-													 <LuaCommand></LuaCommand>
-												 </OnFocus>
-												 <OnBlur>
-													 <LuaCommand></LuaCommand>
-												 </OnBlur>
-												 <UpdateFunction>
-													 <LuaCommand></LuaCommand>
-												 </UpdateFunction>
-												 <UpdateFunctionTurnBased>
-													 <LuaCommand>GUI_Construction.BuildUpdate(Technologies.R_Beautification_BrothersInArms)</LuaCommand>
-												 </UpdateFunctionTurnBased>
-												 <UpdateFunctionSecondBased>
-													 <LuaCommand></LuaCommand>
-												 </UpdateFunctionSecondBased>
-												 <ToolTipHelper>
-													 <ToolTipEnabledFlag>true</ToolTipEnabledFlag>
-													 <ControlTargetVisibility>true</ControlTargetVisibility>
-													 <ToolTipUpdateFunction>
-														 <LuaCommand>GUI_Tooltip.TooltipBuild(false,true,Technologies.R_Beautification_BrothersInArms)</LuaCommand>
-													 </ToolTipUpdateFunction>
-													 <RawString></RawString>
-													 <StringTableKey></StringTableKey>
-													 <TargetWidget01>/InGame/Root/Normal/AlignBottomRight/BuildMenu/TooltipBuild</TargetWidget01>
-													 <TargetWidget02></TargetWidget02>
-													 <TargetWidget03></TargetWidget03>
-													 <TargetWidget04></TargetWidget04>
-													 <TargetWidget05></TargetWidget05>
-												 </ToolTipHelper>
-												 <Group>Construction</Group>
-												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/ButtonsAddon</MotherID>
-												 <Name>B_Beautification_BrothersInArms</Name>
-												 <FullScreenBackground>false</FullScreenBackground>
-												 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
-												 <BackgroundMaterial>
-													 <Texture>buttons.png</Texture>
-													 <TextureCoordinatesMinU>256.</TextureCoordinatesMinU>
-													 <TextureCoordinatesMinV>64.</TextureCoordinatesMinV>
-													 <TextureCoordinatesMxU>320.</TextureCoordinatesMxU>
-													 <TextureCoordinatesMxV>128.</TextureCoordinatesMxV>
-													 <TextureFixedSizeX>0.</TextureFixedSizeX>
-													 <TextureFixedSizeY>0.</TextureFixedSizeY>
-													 <Color>
-														 <Red>255</Red>
-														 <Green>255</Green>
-														 <Blue>255</Blue>
-														 <Alpha>255</Alpha>
-													 </Color>
-												 </BackgroundMaterial>
-												 <ActionFunction>
-													 <LuaCommand>GUI_Construction.BuildClicked(UpgradeCategories.Beautification_BrothersInArms)</LuaCommand>
-												 </ActionFunction>
-												 <GenerateMaterialsFromNormal>false</GenerateMaterialsFromNormal>
-												 <ShortCutKey></ShortCutKey>
-												 <ShortCutKeyStringTableKey></ShortCutKeyStringTableKey>
-												 <AllowRightMouseButton>false</AllowRightMouseButton>
-												 <AllowDoubleClick>false</AllowDoubleClick>
-												 <Disabled>false</Disabled>
-												 <Highlighted>false</Highlighted>
-												 <MaterialBaseNormal classname="EGUIX::CMaterial">
-													 <Texture>buttons.png</Texture>
-													 <TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
-													 <TextureCoordinatesMinV>448.</TextureCoordinatesMinV>
-													 <TextureCoordinatesMxU>64.</TextureCoordinatesMxU>
-													 <TextureCoordinatesMxV>512.</TextureCoordinatesMxV>
-													 <TextureFixedSizeX>0.</TextureFixedSizeX>
-													 <TextureFixedSizeY>0.</TextureFixedSizeY>
-													 <Color>
-														 <Red>255</Red>
-														 <Green>255</Green>
-														 <Blue>255</Blue>
-														 <Alpha>255</Alpha>
-													 </Color>
-												 </MaterialBaseNormal>
-												 <MaterialDisabled classname="EGUIX::CMaterial">
-													 <Texture></Texture>
-													 <TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
-													 <TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
-													 <TextureCoordinatesMxU>64.</TextureCoordinatesMxU>
-													 <TextureCoordinatesMxV>64.</TextureCoordinatesMxV>
-													 <TextureFixedSizeX>0.</TextureFixedSizeX>
-													 <TextureFixedSizeY>0.</TextureFixedSizeY>
-													 <Color>
-														 <Red>255</Red>
-														 <Green>255</Green>
-														 <Blue>255</Blue>
-														 <Alpha>0</Alpha>
-													 </Color>
-												 </MaterialDisabled>
-												 <MaterialHighlight classname="EGUIX::CMaterial">
-													 <Texture>buttons.png</Texture>
-													 <TextureCoordinatesMinU>192.</TextureCoordinatesMinU>
-													 <TextureCoordinatesMinV>448.</TextureCoordinatesMinV>
-													 <TextureCoordinatesMxU>256.</TextureCoordinatesMxU>
-													 <TextureCoordinatesMxV>512.</TextureCoordinatesMxV>
-													 <TextureFixedSizeX>0.</TextureFixedSizeX>
-													 <TextureFixedSizeY>0.</TextureFixedSizeY>
-													 <Color>
-														 <Red>255</Red>
-														 <Green>255</Green>
-														 <Blue>255</Blue>
-														 <Alpha>255</Alpha>
-													 </Color>
-												 </MaterialHighlight>
-												 <MaterialMouseOver classname="EGUIX::CMaterial">
-													 <Texture>buttons.png</Texture>
-													 <TextureCoordinatesMinU>128.</TextureCoordinatesMinU>
-													 <TextureCoordinatesMinV>448.</TextureCoordinatesMinV>
-													 <TextureCoordinatesMxU>192.</TextureCoordinatesMxU>
-													 <TextureCoordinatesMxV>512.</TextureCoordinatesMxV>
-													 <TextureFixedSizeX>0.</TextureFixedSizeX>
-													 <TextureFixedSizeY>0.</TextureFixedSizeY>
-													 <Color>
-														 <Red>255</Red>
-														 <Green>255</Green>
-														 <Blue>255</Blue>
-														 <Alpha>255</Alpha>
-													 </Color>
-												 </MaterialMouseOver>
-												 <MaterialPressed classname="EGUIX::CMaterial">
-													 <Texture>buttons.png</Texture>
-													 <TextureCoordinatesMinU>64.</TextureCoordinatesMinU>
-													 <TextureCoordinatesMinV>448.</TextureCoordinatesMinV>
-													 <TextureCoordinatesMxU>128.</TextureCoordinatesMxU>
-													 <TextureCoordinatesMxV>512.</TextureCoordinatesMxV>
-													 <TextureFixedSizeX>0.</TextureFixedSizeX>
-													 <TextureFixedSizeY>0.</TextureFixedSizeY>
-													 <Color>
-														 <Red>255</Red>
-														 <Green>255</Green>
-														 <Blue>255</Blue>
-														 <Alpha>255</Alpha>
-													 </Color>
-												 </MaterialPressed>
-												 <IconMaterial>
-													 <Texture>iconsbig.png</Texture>
-													 <TextureCoordinatesMinU>960.</TextureCoordinatesMinU>
-													 <TextureCoordinatesMinV>256.</TextureCoordinatesMinV>
-													 <TextureCoordinatesMxU>1024.</TextureCoordinatesMxU>
-													 <TextureCoordinatesMxV>320.</TextureCoordinatesMxV>
-													 <TextureFixedSizeX>0.</TextureFixedSizeX>
-													 <TextureFixedSizeY>0.</TextureFixedSizeY>
-													 <Color>
-														 <Red>255</Red>
-														 <Green>255</Green>
-														 <Blue>255</Blue>
-														 <Alpha>255</Alpha>
-													 </Color>
-												 </IconMaterial>
-												 <IconOffsetWhilePressed>2</IconOffsetWhilePressed>
-												 <IconColorWhileDisabled>
-													 <Red>150</Red>
-													 <Green>150</Green>
-													 <Blue>150</Blue>
-													 <Alpha>200</Alpha>
-												 </IconColorWhileDisabled>
-												 <PulseHighlightDuration>2.</PulseHighlightDuration>
-												 <PulseHighlightMinAlpha>0.25</PulseHighlightMinAlpha>
-												 <PulseMouseoverDuration>0.</PulseMouseoverDuration>
-												 <PulseMouseoverMinAlpha>0.25</PulseMouseoverMinAlpha>
-												 <ShowHighlightedAsPressed>false</ShowHighlightedAsPressed>
-											 </Widget>
 										 </WidgetList>
 									 </SubWidgets>
 								 </Widget>
@@ -20934,208 +20126,6 @@
 												 <TabIndex>0</TabIndex>
 												 <Rectangle>
 													 <X>0.</X>
-													 <Y>55.</Y>
-													 <W>64.</W>
-													 <H>64.</H>
-													 <KeepAspectRatio>true</KeepAspectRatio>
-													 <CirclePointTest>true</CirclePointTest>
-													 <FixedTextureSetSize>true</FixedTextureSetSize>
-													 <AlignmentX>0</AlignmentX>
-													 <AlignmentY>0</AlignmentY>
-													 <AnchorX>0</AnchorX>
-													 <AnchorY>0</AnchorY>
-												 </Rectangle>
-												 <OnPushToStack>
-													 <LuaCommand></LuaCommand>
-												 </OnPushToStack>
-												 <OnMouseOver>
-													 <LuaCommand></LuaCommand>
-												 </OnMouseOver>
-												 <OnMouseOut>
-													 <LuaCommand></LuaCommand>
-												 </OnMouseOut>
-												 <OnRightClick>
-													 <LuaCommand></LuaCommand>
-												 </OnRightClick>
-												 <OnLeftClick>
-													 <LuaCommand></LuaCommand>
-												 </OnLeftClick>
-												 <OnKeyPress>
-													 <LuaCommand></LuaCommand>
-												 </OnKeyPress>
-												 <OnFocus>
-													 <LuaCommand></LuaCommand>
-												 </OnFocus>
-												 <OnBlur>
-													 <LuaCommand></LuaCommand>
-												 </OnBlur>
-												 <UpdateFunction>
-													 <LuaCommand></LuaCommand>
-												 </UpdateFunction>
-												 <UpdateFunctionTurnBased>
-													 <LuaCommand>GUI_Construction.BuildUpdate(Technologies.R_Beautification_WoodBench)</LuaCommand>
-												 </UpdateFunctionTurnBased>
-												 <UpdateFunctionSecondBased>
-													 <LuaCommand></LuaCommand>
-												 </UpdateFunctionSecondBased>
-												 <ToolTipHelper>
-													 <ToolTipEnabledFlag>true</ToolTipEnabledFlag>
-													 <ControlTargetVisibility>true</ControlTargetVisibility>
-													 <ToolTipUpdateFunction>
-														 <LuaCommand>GUI_Tooltip.TooltipBuild(false,true,Technologies.R_Beautification_WoodBench)</LuaCommand>
-													 </ToolTipUpdateFunction>
-													 <RawString></RawString>
-													 <StringTableKey></StringTableKey>
-													 <TargetWidget01>/InGame/Root/Normal/AlignBottomRight/BuildMenu/TooltipBuild</TargetWidget01>
-													 <TargetWidget02></TargetWidget02>
-													 <TargetWidget03></TargetWidget03>
-													 <TargetWidget04></TargetWidget04>
-													 <TargetWidget05></TargetWidget05>
-												 </ToolTipHelper>
-												 <Group>Construction</Group>
-												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/Buttons</MotherID>
-												 <Name>B_Beautification_WoodBench1</Name>
-												 <FullScreenBackground>false</FullScreenBackground>
-												 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
-												 <BackgroundMaterial>
-													 <Texture>buttons.png</Texture>
-													 <TextureCoordinatesMinU>256.</TextureCoordinatesMinU>
-													 <TextureCoordinatesMinV>64.</TextureCoordinatesMinV>
-													 <TextureCoordinatesMxU>320.</TextureCoordinatesMxU>
-													 <TextureCoordinatesMxV>128.</TextureCoordinatesMxV>
-													 <TextureFixedSizeX>0.</TextureFixedSizeX>
-													 <TextureFixedSizeY>0.</TextureFixedSizeY>
-													 <Color>
-														 <Red>255</Red>
-														 <Green>255</Green>
-														 <Blue>255</Blue>
-														 <Alpha>255</Alpha>
-													 </Color>
-												 </BackgroundMaterial>
-												 <ActionFunction>
-													 <LuaCommand>GUI_Construction.BuildClicked(UpgradeCategories.Beautification_WoodBench1)</LuaCommand>
-												 </ActionFunction>
-												 <GenerateMaterialsFromNormal>false</GenerateMaterialsFromNormal>
-												 <ShortCutKey></ShortCutKey>
-												 <ShortCutKeyStringTableKey></ShortCutKeyStringTableKey>
-												 <AllowRightMouseButton>false</AllowRightMouseButton>
-												 <AllowDoubleClick>false</AllowDoubleClick>
-												 <Disabled>false</Disabled>
-												 <Highlighted>false</Highlighted>
-												 <MaterialBaseNormal classname="EGUIX::CMaterial">
-													 <Texture>buttons.png</Texture>
-													 <TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
-													 <TextureCoordinatesMinV>448.</TextureCoordinatesMinV>
-													 <TextureCoordinatesMxU>64.</TextureCoordinatesMxU>
-													 <TextureCoordinatesMxV>512.</TextureCoordinatesMxV>
-													 <TextureFixedSizeX>0.</TextureFixedSizeX>
-													 <TextureFixedSizeY>0.</TextureFixedSizeY>
-													 <Color>
-														 <Red>255</Red>
-														 <Green>255</Green>
-														 <Blue>255</Blue>
-														 <Alpha>255</Alpha>
-													 </Color>
-												 </MaterialBaseNormal>
-												 <MaterialDisabled classname="EGUIX::CMaterial">
-													 <Texture></Texture>
-													 <TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
-													 <TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
-													 <TextureCoordinatesMxU>1.</TextureCoordinatesMxU>
-													 <TextureCoordinatesMxV>1.</TextureCoordinatesMxV>
-													 <TextureFixedSizeX>0.</TextureFixedSizeX>
-													 <TextureFixedSizeY>0.</TextureFixedSizeY>
-													 <Color>
-														 <Red>255</Red>
-														 <Green>255</Green>
-														 <Blue>255</Blue>
-														 <Alpha>0</Alpha>
-													 </Color>
-												 </MaterialDisabled>
-												 <MaterialHighlight classname="EGUIX::CMaterial">
-													 <Texture>buttons.png</Texture>
-													 <TextureCoordinatesMinU>192.</TextureCoordinatesMinU>
-													 <TextureCoordinatesMinV>448.</TextureCoordinatesMinV>
-													 <TextureCoordinatesMxU>256.</TextureCoordinatesMxU>
-													 <TextureCoordinatesMxV>512.</TextureCoordinatesMxV>
-													 <TextureFixedSizeX>0.</TextureFixedSizeX>
-													 <TextureFixedSizeY>0.</TextureFixedSizeY>
-													 <Color>
-														 <Red>255</Red>
-														 <Green>255</Green>
-														 <Blue>255</Blue>
-														 <Alpha>255</Alpha>
-													 </Color>
-												 </MaterialHighlight>
-												 <MaterialMouseOver classname="EGUIX::CMaterial">
-													 <Texture>buttons.png</Texture>
-													 <TextureCoordinatesMinU>128.</TextureCoordinatesMinU>
-													 <TextureCoordinatesMinV>448.</TextureCoordinatesMinV>
-													 <TextureCoordinatesMxU>192.</TextureCoordinatesMxU>
-													 <TextureCoordinatesMxV>512.</TextureCoordinatesMxV>
-													 <TextureFixedSizeX>0.</TextureFixedSizeX>
-													 <TextureFixedSizeY>0.</TextureFixedSizeY>
-													 <Color>
-														 <Red>255</Red>
-														 <Green>255</Green>
-														 <Blue>255</Blue>
-														 <Alpha>255</Alpha>
-													 </Color>
-												 </MaterialMouseOver>
-												 <MaterialPressed classname="EGUIX::CMaterial">
-													 <Texture>buttons.png</Texture>
-													 <TextureCoordinatesMinU>64.</TextureCoordinatesMinU>
-													 <TextureCoordinatesMinV>448.</TextureCoordinatesMinV>
-													 <TextureCoordinatesMxU>128.</TextureCoordinatesMxU>
-													 <TextureCoordinatesMxV>512.</TextureCoordinatesMxV>
-													 <TextureFixedSizeX>0.</TextureFixedSizeX>
-													 <TextureFixedSizeY>0.</TextureFixedSizeY>
-													 <Color>
-														 <Red>255</Red>
-														 <Green>255</Green>
-														 <Blue>255</Blue>
-														 <Alpha>255</Alpha>
-													 </Color>
-												 </MaterialPressed>
-												 <IconMaterial>
-													 <Texture>iconsbig.png</Texture>
-													 <TextureCoordinatesMinU>128.</TextureCoordinatesMinU>
-													 <TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
-													 <TextureCoordinatesMxU>192.</TextureCoordinatesMxU>
-													 <TextureCoordinatesMxV>64.</TextureCoordinatesMxV>
-													 <TextureFixedSizeX>0.</TextureFixedSizeX>
-													 <TextureFixedSizeY>0.</TextureFixedSizeY>
-													 <Color>
-														 <Red>255</Red>
-														 <Green>255</Green>
-														 <Blue>255</Blue>
-														 <Alpha>255</Alpha>
-													 </Color>
-												 </IconMaterial>
-												 <IconOffsetWhilePressed>2</IconOffsetWhilePressed>
-												 <IconColorWhileDisabled>
-													 <Red>150</Red>
-													 <Green>150</Green>
-													 <Blue>150</Blue>
-													 <Alpha>200</Alpha>
-												 </IconColorWhileDisabled>
-												 <PulseHighlightDuration>2.</PulseHighlightDuration>
-												 <PulseHighlightMinAlpha>0.25</PulseHighlightMinAlpha>
-												 <PulseMouseoverDuration>0.</PulseMouseoverDuration>
-												 <PulseMouseoverMinAlpha>0.25</PulseMouseoverMinAlpha>
-												 <ShowHighlightedAsPressed>false</ShowHighlightedAsPressed>
-											 </Widget>
-											 <Widget classname="EGUIX::CGfxButtonWidget">
-												 <IsShown>true</IsShown>
-												 <UpdateManualFlag>false</UpdateManualFlag>
-												 <EventHandling>true</EventHandling>
-												 <ZPriority>110.</ZPriority>
-												 <ForceToHandleMouseEventsFlag>false</ForceToHandleMouseEventsFlag>
-												 <ForceToHandleKeyboardEventsFlag>false</ForceToHandleKeyboardEventsFlag>
-												 <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
-												 <TabIndex>0</TabIndex>
-												 <Rectangle>
-													 <X>110.</X>
 													 <Y>55.</Y>
 													 <W>64.</W>
 													 <H>64.</H>
@@ -21338,7 +20328,7 @@
 												 <TabIndex>0</TabIndex>
 												 <Rectangle>
 													 <X>110.</X>
-													 <Y>0.</Y>
+													 <Y>55.</Y>
 													 <W>64.</W>
 													 <H>64.</H>
 													 <KeepAspectRatio>true</KeepAspectRatio>
@@ -21377,7 +20367,7 @@
 													 <LuaCommand></LuaCommand>
 												 </UpdateFunction>
 												 <UpdateFunctionTurnBased>
-													 <LuaCommand>GUI_Construction.BuildUpdate(Technologies.R_Fence)</LuaCommand>
+													 <LuaCommand>GUI_Construction.BuildUpdate(Technologies.R_Beautification_Signpost)</LuaCommand>
 												 </UpdateFunctionTurnBased>
 												 <UpdateFunctionSecondBased>
 													 <LuaCommand></LuaCommand>
@@ -21386,7 +20376,7 @@
 													 <ToolTipEnabledFlag>true</ToolTipEnabledFlag>
 													 <ControlTargetVisibility>true</ControlTargetVisibility>
 													 <ToolTipUpdateFunction>
-														 <LuaCommand>GUI_Tooltip.TooltipBuild(false,true,Technologies.R_Fence)</LuaCommand>
+														 <LuaCommand>GUI_Tooltip.TooltipBuild(false,true,Technologies.R_Beautification_Signpost)</LuaCommand>
 													 </ToolTipUpdateFunction>
 													 <RawString></RawString>
 													 <StringTableKey></StringTableKey>
@@ -21398,7 +20388,7 @@
 												 </ToolTipHelper>
 												 <Group>Construction</Group>
 												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/Buttons</MotherID>
-												 <Name>Fence</Name>
+												 <Name>B_Beautification_Signpost1</Name>
 												 <FullScreenBackground>false</FullScreenBackground>
 												 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
 												 <BackgroundMaterial>
@@ -21417,7 +20407,7 @@
 													 </Color>
 												 </BackgroundMaterial>
 												 <ActionFunction>
-													 <LuaCommand>GUI_Construction.BuildWallClicked(UpgradeCategories.FenceSegment)</LuaCommand>
+													 <LuaCommand>GUI_Construction.BuildClicked(UpgradeCategories.Beautification_Signpost1)</LuaCommand>
 												 </ActionFunction>
 												 <GenerateMaterialsFromNormal>false</GenerateMaterialsFromNormal>
 												 <ShortCutKey></ShortCutKey>
@@ -21507,6 +20497,208 @@
 													 <TextureCoordinatesMinV>256.</TextureCoordinatesMinV>
 													 <TextureCoordinatesMxU>1024.</TextureCoordinatesMxU>
 													 <TextureCoordinatesMxV>320.</TextureCoordinatesMxV>
+													 <TextureFixedSizeX>0.</TextureFixedSizeX>
+													 <TextureFixedSizeY>0.</TextureFixedSizeY>
+													 <Color>
+														 <Red>255</Red>
+														 <Green>255</Green>
+														 <Blue>255</Blue>
+														 <Alpha>255</Alpha>
+													 </Color>
+												 </IconMaterial>
+												 <IconOffsetWhilePressed>2</IconOffsetWhilePressed>
+												 <IconColorWhileDisabled>
+													 <Red>150</Red>
+													 <Green>150</Green>
+													 <Blue>150</Blue>
+													 <Alpha>200</Alpha>
+												 </IconColorWhileDisabled>
+												 <PulseHighlightDuration>2.</PulseHighlightDuration>
+												 <PulseHighlightMinAlpha>0.25</PulseHighlightMinAlpha>
+												 <PulseMouseoverDuration>0.</PulseMouseoverDuration>
+												 <PulseMouseoverMinAlpha>0.25</PulseMouseoverMinAlpha>
+												 <ShowHighlightedAsPressed>false</ShowHighlightedAsPressed>
+											 </Widget>
+											 <Widget classname="EGUIX::CGfxButtonWidget">
+												 <IsShown>true</IsShown>
+												 <UpdateManualFlag>false</UpdateManualFlag>
+												 <EventHandling>true</EventHandling>
+												 <ZPriority>110.</ZPriority>
+												 <ForceToHandleMouseEventsFlag>false</ForceToHandleMouseEventsFlag>
+												 <ForceToHandleKeyboardEventsFlag>false</ForceToHandleKeyboardEventsFlag>
+												 <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
+												 <TabIndex>0</TabIndex>
+												 <Rectangle>
+													 <X>110.</X>
+													 <Y>0.</Y>
+													 <W>64.</W>
+													 <H>64.</H>
+													 <KeepAspectRatio>true</KeepAspectRatio>
+													 <CirclePointTest>true</CirclePointTest>
+													 <FixedTextureSetSize>true</FixedTextureSetSize>
+													 <AlignmentX>0</AlignmentX>
+													 <AlignmentY>0</AlignmentY>
+													 <AnchorX>0</AnchorX>
+													 <AnchorY>0</AnchorY>
+												 </Rectangle>
+												 <OnPushToStack>
+													 <LuaCommand></LuaCommand>
+												 </OnPushToStack>
+												 <OnMouseOver>
+													 <LuaCommand></LuaCommand>
+												 </OnMouseOver>
+												 <OnMouseOut>
+													 <LuaCommand></LuaCommand>
+												 </OnMouseOut>
+												 <OnRightClick>
+													 <LuaCommand></LuaCommand>
+												 </OnRightClick>
+												 <OnLeftClick>
+													 <LuaCommand></LuaCommand>
+												 </OnLeftClick>
+												 <OnKeyPress>
+													 <LuaCommand></LuaCommand>
+												 </OnKeyPress>
+												 <OnFocus>
+													 <LuaCommand></LuaCommand>
+												 </OnFocus>
+												 <OnBlur>
+													 <LuaCommand></LuaCommand>
+												 </OnBlur>
+												 <UpdateFunction>
+													 <LuaCommand></LuaCommand>
+												 </UpdateFunction>
+												 <UpdateFunctionTurnBased>
+													 <LuaCommand>GUI_Construction.BuildUpdate(Technologies.R_Beautification_Misc)</LuaCommand>
+												 </UpdateFunctionTurnBased>
+												 <UpdateFunctionSecondBased>
+													 <LuaCommand></LuaCommand>
+												 </UpdateFunctionSecondBased>
+												 <ToolTipHelper>
+													 <ToolTipEnabledFlag>true</ToolTipEnabledFlag>
+													 <ControlTargetVisibility>true</ControlTargetVisibility>
+													 <ToolTipUpdateFunction>
+														 <LuaCommand>GUI_Tooltip.TooltipBuild(false,true,Technologies.R_Beautification_Misc)</LuaCommand>
+													 </ToolTipUpdateFunction>
+													 <RawString></RawString>
+													 <StringTableKey></StringTableKey>
+													 <TargetWidget01>/InGame/Root/Normal/AlignBottomRight/BuildMenu/TooltipBuild</TargetWidget01>
+													 <TargetWidget02></TargetWidget02>
+													 <TargetWidget03></TargetWidget03>
+													 <TargetWidget04></TargetWidget04>
+													 <TargetWidget05></TargetWidget05>
+												 </ToolTipHelper>
+												 <Group>Construction</Group>
+												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/Buttons</MotherID>
+												 <Name>B_Beautification_Misc1</Name>
+												 <FullScreenBackground>false</FullScreenBackground>
+												 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
+												 <BackgroundMaterial>
+													 <Texture>buttons.png</Texture>
+													 <TextureCoordinatesMinU>256.</TextureCoordinatesMinU>
+													 <TextureCoordinatesMinV>64.</TextureCoordinatesMinV>
+													 <TextureCoordinatesMxU>320.</TextureCoordinatesMxU>
+													 <TextureCoordinatesMxV>128.</TextureCoordinatesMxV>
+													 <TextureFixedSizeX>0.</TextureFixedSizeX>
+													 <TextureFixedSizeY>0.</TextureFixedSizeY>
+													 <Color>
+														 <Red>255</Red>
+														 <Green>255</Green>
+														 <Blue>255</Blue>
+														 <Alpha>255</Alpha>
+													 </Color>
+												 </BackgroundMaterial>
+												 <ActionFunction>
+													 <LuaCommand>GUI_Construction.BuildClicked(UpgradeCategories.Beautification_Misc1)</LuaCommand>
+												 </ActionFunction>
+												 <GenerateMaterialsFromNormal>false</GenerateMaterialsFromNormal>
+												 <ShortCutKey></ShortCutKey>
+												 <ShortCutKeyStringTableKey></ShortCutKeyStringTableKey>
+												 <AllowRightMouseButton>false</AllowRightMouseButton>
+												 <AllowDoubleClick>false</AllowDoubleClick>
+												 <Disabled>false</Disabled>
+												 <Highlighted>false</Highlighted>
+												 <MaterialBaseNormal classname="EGUIX::CMaterial">
+													 <Texture>buttons.png</Texture>
+													 <TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
+													 <TextureCoordinatesMinV>448.</TextureCoordinatesMinV>
+													 <TextureCoordinatesMxU>64.</TextureCoordinatesMxU>
+													 <TextureCoordinatesMxV>512.</TextureCoordinatesMxV>
+													 <TextureFixedSizeX>0.</TextureFixedSizeX>
+													 <TextureFixedSizeY>0.</TextureFixedSizeY>
+													 <Color>
+														 <Red>255</Red>
+														 <Green>255</Green>
+														 <Blue>255</Blue>
+														 <Alpha>255</Alpha>
+													 </Color>
+												 </MaterialBaseNormal>
+												 <MaterialDisabled classname="EGUIX::CMaterial">
+													 <Texture></Texture>
+													 <TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
+													 <TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
+													 <TextureCoordinatesMxU>1.</TextureCoordinatesMxU>
+													 <TextureCoordinatesMxV>1.</TextureCoordinatesMxV>
+													 <TextureFixedSizeX>0.</TextureFixedSizeX>
+													 <TextureFixedSizeY>0.</TextureFixedSizeY>
+													 <Color>
+														 <Red>255</Red>
+														 <Green>255</Green>
+														 <Blue>255</Blue>
+														 <Alpha>0</Alpha>
+													 </Color>
+												 </MaterialDisabled>
+												 <MaterialHighlight classname="EGUIX::CMaterial">
+													 <Texture>buttons.png</Texture>
+													 <TextureCoordinatesMinU>192.</TextureCoordinatesMinU>
+													 <TextureCoordinatesMinV>448.</TextureCoordinatesMinV>
+													 <TextureCoordinatesMxU>256.</TextureCoordinatesMxU>
+													 <TextureCoordinatesMxV>512.</TextureCoordinatesMxV>
+													 <TextureFixedSizeX>0.</TextureFixedSizeX>
+													 <TextureFixedSizeY>0.</TextureFixedSizeY>
+													 <Color>
+														 <Red>255</Red>
+														 <Green>255</Green>
+														 <Blue>255</Blue>
+														 <Alpha>255</Alpha>
+													 </Color>
+												 </MaterialHighlight>
+												 <MaterialMouseOver classname="EGUIX::CMaterial">
+													 <Texture>buttons.png</Texture>
+													 <TextureCoordinatesMinU>128.</TextureCoordinatesMinU>
+													 <TextureCoordinatesMinV>448.</TextureCoordinatesMinV>
+													 <TextureCoordinatesMxU>192.</TextureCoordinatesMxU>
+													 <TextureCoordinatesMxV>512.</TextureCoordinatesMxV>
+													 <TextureFixedSizeX>0.</TextureFixedSizeX>
+													 <TextureFixedSizeY>0.</TextureFixedSizeY>
+													 <Color>
+														 <Red>255</Red>
+														 <Green>255</Green>
+														 <Blue>255</Blue>
+														 <Alpha>255</Alpha>
+													 </Color>
+												 </MaterialMouseOver>
+												 <MaterialPressed classname="EGUIX::CMaterial">
+													 <Texture>buttons.png</Texture>
+													 <TextureCoordinatesMinU>64.</TextureCoordinatesMinU>
+													 <TextureCoordinatesMinV>448.</TextureCoordinatesMinV>
+													 <TextureCoordinatesMxU>128.</TextureCoordinatesMxU>
+													 <TextureCoordinatesMxV>512.</TextureCoordinatesMxV>
+													 <TextureFixedSizeX>0.</TextureFixedSizeX>
+													 <TextureFixedSizeY>0.</TextureFixedSizeY>
+													 <Color>
+														 <Red>255</Red>
+														 <Green>255</Green>
+														 <Blue>255</Blue>
+														 <Alpha>255</Alpha>
+													 </Color>
+												 </MaterialPressed>
+												 <IconMaterial>
+													 <Texture>iconsbig.png</Texture>
+													 <TextureCoordinatesMinU>576.</TextureCoordinatesMinU>
+													 <TextureCoordinatesMinV>512.</TextureCoordinatesMinV>
+													 <TextureCoordinatesMxU>640.</TextureCoordinatesMxU>
+													 <TextureCoordinatesMxV>576.</TextureCoordinatesMxV>
 													 <TextureFixedSizeX>0.</TextureFixedSizeX>
 													 <TextureFixedSizeY>0.</TextureFixedSizeY>
 													 <Color>
@@ -21781,7 +20973,7 @@
 													 <LuaCommand></LuaCommand>
 												 </UpdateFunction>
 												 <UpdateFunctionTurnBased>
-													 <LuaCommand>GUI_Construction.BuildUpdate(Technologies.R_SpecialEdition_StatueFamily)</LuaCommand>
+													 <LuaCommand>GUI_Construction.BuildUpdate(Technologies.R_Beautification_WoodBench)</LuaCommand>
 												 </UpdateFunctionTurnBased>
 												 <UpdateFunctionSecondBased>
 													 <LuaCommand></LuaCommand>
@@ -21790,7 +20982,7 @@
 													 <ToolTipEnabledFlag>true</ToolTipEnabledFlag>
 													 <ControlTargetVisibility>true</ControlTargetVisibility>
 													 <ToolTipUpdateFunction>
-														 <LuaCommand>GUI_Tooltip.TooltipBuild(false,true,Technologies.R_SpecialEdition_StatueFamily)</LuaCommand>
+														 <LuaCommand>GUI_Tooltip.TooltipBuild(false,true,Technologies.R_Beautification_WoodBench)</LuaCommand>
 													 </ToolTipUpdateFunction>
 													 <RawString></RawString>
 													 <StringTableKey></StringTableKey>
@@ -21802,7 +20994,7 @@
 												 </ToolTipHelper>
 												 <Group>Construction</Group>
 												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/Buttons</MotherID>
-												 <Name>B_SpecialEdition_StatueFamily</Name>
+												 <Name>B_Beautification_WoodBench1</Name>
 												 <FullScreenBackground>false</FullScreenBackground>
 												 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
 												 <BackgroundMaterial>
@@ -21821,7 +21013,7 @@
 													 </Color>
 												 </BackgroundMaterial>
 												 <ActionFunction>
-													 <LuaCommand>GUI_Construction.BuildClicked(UpgradeCategories.SpecialEdition_StatueFamily)</LuaCommand>
+													 <LuaCommand>GUI_Construction.BuildClicked(UpgradeCategories.Beautification_WoodBench1)</LuaCommand>
 												 </ActionFunction>
 												 <GenerateMaterialsFromNormal>false</GenerateMaterialsFromNormal>
 												 <ShortCutKey></ShortCutKey>
@@ -21907,10 +21099,10 @@
 												 </MaterialPressed>
 												 <IconMaterial>
 													 <Texture>iconsbig.png</Texture>
-													 <TextureCoordinatesMinU>896.</TextureCoordinatesMinU>
-													 <TextureCoordinatesMinV>512.</TextureCoordinatesMinV>
-													 <TextureCoordinatesMxU>960.</TextureCoordinatesMxU>
-													 <TextureCoordinatesMxV>576.</TextureCoordinatesMxV>
+													 <TextureCoordinatesMinU>128.</TextureCoordinatesMinU>
+													 <TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
+													 <TextureCoordinatesMxU>192.</TextureCoordinatesMxU>
+													 <TextureCoordinatesMxV>65.</TextureCoordinatesMxV>
 													 <TextureFixedSizeX>0.</TextureFixedSizeX>
 													 <TextureFixedSizeY>0.</TextureFixedSizeY>
 													 <Color>
@@ -21983,7 +21175,7 @@
 													 <LuaCommand></LuaCommand>
 												 </UpdateFunction>
 												 <UpdateFunctionTurnBased>
-													 <LuaCommand>GUI_Construction.BuildUpdate(Technologies.R_NPC_Cloister_Wall)</LuaCommand>
+													 <LuaCommand>GUI_Construction.BuildUpdate(Technologies.R_Beautification_Cart)</LuaCommand>
 												 </UpdateFunctionTurnBased>
 												 <UpdateFunctionSecondBased>
 													 <LuaCommand></LuaCommand>
@@ -21992,7 +21184,7 @@
 													 <ToolTipEnabledFlag>true</ToolTipEnabledFlag>
 													 <ControlTargetVisibility>true</ControlTargetVisibility>
 													 <ToolTipUpdateFunction>
-														 <LuaCommand>GUI_Tooltip.TooltipBuild(false,true,Technologies.R_NPC_Cloister_Wall)</LuaCommand>
+														 <LuaCommand>GUI_Tooltip.TooltipBuild(false,true,Technologies.R_Beautification_Cart)</LuaCommand>
 													 </ToolTipUpdateFunction>
 													 <RawString></RawString>
 													 <StringTableKey></StringTableKey>
@@ -22004,7 +21196,7 @@
 												 </ToolTipHelper>
 												 <Group>Construction</Group>
 												 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition/Buttons</MotherID>
-												 <Name>NPCWall</Name>
+												 <Name>B_Beautification_Cart1</Name>
 												 <FullScreenBackground>false</FullScreenBackground>
 												 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
 												 <BackgroundMaterial>
@@ -22023,7 +21215,7 @@
 													 </Color>
 												 </BackgroundMaterial>
 												 <ActionFunction>
-													 <LuaCommand>GUI_Construction.BuildNPCWallClicked()</LuaCommand>
+													 <LuaCommand>GUI_Construction.BuildClicked(UpgradeCategories.Beautification_Cart1)</LuaCommand>
 												 </ActionFunction>
 												 <GenerateMaterialsFromNormal>false</GenerateMaterialsFromNormal>
 												 <ShortCutKey></ShortCutKey>
@@ -22109,10 +21301,10 @@
 												 </MaterialPressed>
 												 <IconMaterial>
 													 <Texture>iconsbig.png</Texture>
-													 <TextureCoordinatesMinU>960.</TextureCoordinatesMinU>
-													 <TextureCoordinatesMinV>256.</TextureCoordinatesMinV>
-													 <TextureCoordinatesMxU>1024.</TextureCoordinatesMxU>
-													 <TextureCoordinatesMxV>320.</TextureCoordinatesMxV>
+													 <TextureCoordinatesMinU>576.</TextureCoordinatesMinU>
+													 <TextureCoordinatesMinV>192.</TextureCoordinatesMinV>
+													 <TextureCoordinatesMxU>640.</TextureCoordinatesMxU>
+													 <TextureCoordinatesMxV>256.</TextureCoordinatesMxV>
 													 <TextureFixedSizeX>0.</TextureFixedSizeX>
 													 <TextureFixedSizeY>0.</TextureFixedSizeY>
 													 <Color>
@@ -22151,7 +21343,7 @@
 										 <X>48.</X>
 										 <Y>75.</Y>
 										 <W>37.</W>
-										 <H>170.</H>
+										 <H>116.</H>
 										 <KeepAspectRatio>true</KeepAspectRatio>
 										 <CirclePointTest>false</CirclePointTest>
 										 <FixedTextureSetSize>true</FixedTextureSetSize>
@@ -22241,7 +21433,7 @@
 										 <X>103.</X>
 										 <Y>75.</Y>
 										 <W>37.</W>
-										 <H>170.</H>
+										 <H>116.</H>
 										 <KeepAspectRatio>true</KeepAspectRatio>
 										 <CirclePointTest>false</CirclePointTest>
 										 <FixedTextureSetSize>true</FixedTextureSetSize>
@@ -22331,7 +21523,7 @@
 										 <X>118.</X>
 										 <Y>75.</Y>
 										 <W>37.</W>
-										 <H>170.</H>
+										 <H>116.</H>
 										 <KeepAspectRatio>true</KeepAspectRatio>
 										 <CirclePointTest>false</CirclePointTest>
 										 <FixedTextureSetSize>true</FixedTextureSetSize>
@@ -22509,7 +21701,7 @@
 									 <TabIndex>0</TabIndex>
 									 <Rectangle>
 										 <X>0.</X>
-										 <Y>215.</Y>
+										 <Y>161.</Y>
 										 <W>215.</W>
 										 <H>37.</H>
 										 <KeepAspectRatio>true</KeepAspectRatio>

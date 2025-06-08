@@ -394,21 +394,6 @@
 	<Entity>D_X_Target</Entity>
 	<Entity>D_X_TargetDummy</Entity>
 	<Entity>D_X_WeaponTable</Entity>
-	<Entity>B_Beautification_Misc1</Entity>
-	<Entity>B_Beautification_Misc2</Entity>
-	<Entity>B_Beautification_Misc3</Entity>
-	<Entity>B_Beautification_Misc4</Entity>
-	<Entity>B_Beautification_Misc5</Entity>
-	<Entity>B_Beautification_Misc6</Entity>
-	<Entity>B_Beautification_Misc7</Entity>
-	<Entity>B_Beautification_Misc8</Entity>
-	<Entity>B_Beautification_Military1</Entity>
-	<Entity>B_Beautification_Military2</Entity>
-	<Entity>B_Beautification_Military3</Entity>
-	<Entity>B_Beautification_Military4</Entity>
-	<Entity>B_Beautification_Military5</Entity>
-	<Entity>B_Beautification_Military6</Entity>
-	<Entity>B_Beautification_Military7</Entity>
 	
 	<Entity>B_NPC_TournamentPlace_Big_BlueWhite_01_AS</Entity>
 	<Entity>B_NPC_TournamentPlace_Big_BlueWhite_02_AS</Entity>
@@ -497,7 +482,7 @@
 	<Entity>B_Beautification_Knight_Generic</Entity>
 	<Entity>B_NPC_Cloister_AS_WallSegment</Entity>
 	<Entity>B_NPC_Cloister_AS_WallTurret</Entity>
-	<Entity>B_Beautification_SteamMachine</Entity>
+	<Entity>B_Beautification_PrisonCage</Entity>
 	<Entity>B_Beautification_StatueDario</Entity>
 	<Entity>B_Beautification_StatueHorseman</Entity>
 	<Entity>B_Beautification_Brazier1</Entity>
@@ -506,5 +491,20 @@
 	<Entity>B_Beautification_Signpost1</Entity>
 	<Entity>B_Beautification_Signpost2</Entity>
 	<Entity>B_Beautification_Signpost3</Entity>
+	<Entity>B_Beautification_Misc1</Entity>
+	<Entity>B_Beautification_Misc2</Entity>
+	<Entity>B_Beautification_Misc3</Entity>
+	<Entity>B_Beautification_Misc4</Entity>
+	<Entity>B_Beautification_Misc5</Entity>
+	<Entity>B_Beautification_Misc6</Entity>
+	<Entity>B_Beautification_Misc7</Entity>
+	<Entity>B_Beautification_Misc8</Entity>
+	<Entity>B_Beautification_Military1</Entity>
+	<Entity>B_Beautification_Military2</Entity>
+	<Entity>B_Beautification_Military3</Entity>
+	<Entity>B_Beautification_Military4</Entity>
+	<Entity>B_Beautification_Military5</Entity>
+	<Entity>B_Beautification_Military6</Entity>
+	<Entity>B_Beautification_Military7</Entity>
 </root>
 

@@ -285,8 +285,8 @@
 		<FirstBuilding>B_Beautification_Cathedral</FirstBuilding>
 	</BuildingUpgrade>
 	<BuildingUpgrade>
-		<Category>Beautification_SteamMachine</Category>
-		<FirstBuilding>B_Beautification_SteamMachine</FirstBuilding>
+		<Category>Beautification_PrisonCage</Category>
+		<FirstBuilding>B_Beautification_PrisonCage</FirstBuilding>
 	</BuildingUpgrade>
 	<BuildingUpgrade>
 		<Category>Beautification_StatueDario</Category>

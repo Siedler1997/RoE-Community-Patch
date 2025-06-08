@@ -41,60 +41,81 @@ function InitSharedOverwrite()
             table.remove(
                 NeedsAndRightsByKnightTitle[KnightTitles.Marquees][TechnologiesTableIndex],
                 Technologies.R_SpecialEdition_StatueProduction)
+            table.remove(
+                NeedsAndRightsByKnightTitle[KnightTitles.Marquees][TechnologiesTableIndex],
+                Technologies.R_SpecialEdition_Column)
+
+            -- Player has to unlock second beautification menu
+            table.insert(
+                NeedsAndRightsByKnightTitle[KnightTitles.Marquees][TechnologiesTableIndex],
+                Technologies.R_SpecialEdition2)   
 
             --Add new beautifications
+            -- Ritter
             table.insert(
                 NeedsAndRightsByKnightTitle[KnightTitles.Knight][TechnologiesTableIndex],
-                Technologies.R_Fence)
+                Technologies.R_Beautification_Misc)
             table.insert(
                 NeedsAndRightsByKnightTitle[KnightTitles.Knight][TechnologiesTableIndex],
-                Technologies.R_NPC_Cloister_Wall)
+                Technologies.R_Beautification_Cart)
             table.insert(
                 NeedsAndRightsByKnightTitle[KnightTitles.Knight][TechnologiesTableIndex],
                 Technologies.R_Beautification_Graveyard)
 
+            -- Landvogt
             table.insert(
                 NeedsAndRightsByKnightTitle[KnightTitles.Mayor][TechnologiesTableIndex],
-                Technologies.R_SpecialEdition_Pavilion)
+                Technologies.R_Beautification_Signpost)
             table.insert(
                 NeedsAndRightsByKnightTitle[KnightTitles.Mayor][TechnologiesTableIndex],
                 Technologies.R_Beautification_WoodBench)
             table.insert(
                 NeedsAndRightsByKnightTitle[KnightTitles.Mayor][TechnologiesTableIndex],
-                Technologies.R_SpecialEdition_StatueFamily)
+                Technologies.R_SpecialEdition_Pavilion)
                 
+            -- Baron
+            table.insert(
+                NeedsAndRightsByKnightTitle[KnightTitles.Baron][TechnologiesTableIndex],
+                Technologies.R_Beautification_Military)
+            table.insert(
+                NeedsAndRightsByKnightTitle[KnightTitles.Baron][TechnologiesTableIndex],
+                Technologies.R_Beautification_PrisonCage)
             table.insert(
                 NeedsAndRightsByKnightTitle[KnightTitles.Baron][TechnologiesTableIndex],
                 Technologies.R_Beautification_ExecutionerPlace)
+            
+            -- Graf
             table.insert(
-                NeedsAndRightsByKnightTitle[KnightTitles.Baron][TechnologiesTableIndex],
+                NeedsAndRightsByKnightTitle[KnightTitles.Earl][TechnologiesTableIndex],
                 Technologies.R_Beautification_Flowerpot_Round)
             table.insert(
-                NeedsAndRightsByKnightTitle[KnightTitles.Baron][TechnologiesTableIndex],
-                Technologies.R_Beautification_Signpost1)
+                NeedsAndRightsByKnightTitle[KnightTitles.Earl][TechnologiesTableIndex],
+                Technologies.R_SpecialEdition_StatueFamily)
+            table.insert(
+                NeedsAndRightsByKnightTitle[KnightTitles.Earl][TechnologiesTableIndex],
+                Technologies.R_Beautification_BrothersInArms)        
             
-            table.insert(
-                NeedsAndRightsByKnightTitle[KnightTitles.Earl][TechnologiesTableIndex],
-                Technologies.R_Beautification_BrothersInArms)
-            table.insert(
-                NeedsAndRightsByKnightTitle[KnightTitles.Earl][TechnologiesTableIndex],
-                Technologies.R_Beautification_StatueHorseman)
-            table.insert(
-                NeedsAndRightsByKnightTitle[KnightTitles.Earl][TechnologiesTableIndex],
-                Technologies.R_SpecialEdition_StatueProduction)
-            table.insert(
-                NeedsAndRightsByKnightTitle[KnightTitles.Earl][TechnologiesTableIndex],
-                Technologies.R_Beautification_Plaza)
-
-            -- Player has to unlock second beautification menu
-            table.insert(
-                NeedsAndRightsByKnightTitle[KnightTitles.Marquees][TechnologiesTableIndex],
-                Technologies.R_SpecialEdition2)             
-            
+            -- Marquis
             table.insert(
                 NeedsAndRightsByKnightTitle[KnightTitles.Marquees][TechnologiesTableIndex],
                 Technologies.R_Beautification_StoneBench)
+            table.insert(
+                NeedsAndRightsByKnightTitle[KnightTitles.Marquees][TechnologiesTableIndex],
+                Technologies.R_Beautification_Brazier)
+            table.insert(
+                NeedsAndRightsByKnightTitle[KnightTitles.Marquees][TechnologiesTableIndex],
+                Technologies.R_SpecialEdition_Column)
+            table.insert(
+                NeedsAndRightsByKnightTitle[KnightTitles.Marquees][TechnologiesTableIndex],
+                Technologies.R_Beautification_Shrine)
+            table.insert(
+                NeedsAndRightsByKnightTitle[KnightTitles.Marquees][TechnologiesTableIndex],
+                Technologies.R_Beautification_Lantern)
 
+            -- Herzog
+            table.insert(
+                NeedsAndRightsByKnightTitle[KnightTitles.Duke][TechnologiesTableIndex],
+                Technologies.R_Beautification_Vase)
             table.insert(
                 NeedsAndRightsByKnightTitle[KnightTitles.Duke][TechnologiesTableIndex],
                 Technologies.R_Beautification_Pavilion)
@@ -103,17 +124,30 @@ function InitSharedOverwrite()
                 Technologies.R_Beautification_Knight)
             table.insert(
                 NeedsAndRightsByKnightTitle[KnightTitles.Duke][TechnologiesTableIndex],
-                Technologies.R_Beautification_Lantern)
+                Technologies.R_Beautification_StatueDario)
             table.insert(
                 NeedsAndRightsByKnightTitle[KnightTitles.Duke][TechnologiesTableIndex],
-                Technologies.R_Beautification_StatueDario)
+                Technologies.R_Beautification_Sundial)
 
+            -- Erzherzog
+            table.insert(
+                NeedsAndRightsByKnightTitle[KnightTitles.Archduke][TechnologiesTableIndex],
+                Technologies.R_Beautification_TriumphalArch)
+            table.insert(
+                NeedsAndRightsByKnightTitle[KnightTitles.Archduke][TechnologiesTableIndex],
+                Technologies.R_Beautification_VictoryColumn)
+
+--[[
+            table.insert(
+                NeedsAndRightsByKnightTitle[KnightTitles.Marquees][TechnologiesTableIndex],
+                Technologies.R_Beautification_Pillar)
             table.insert(
                 NeedsAndRightsByKnightTitle[KnightTitles.Archduke][TechnologiesTableIndex],
                 Technologies.R_Beautification_SteamMachine)
             table.insert(
                 NeedsAndRightsByKnightTitle[KnightTitles.Archduke][TechnologiesTableIndex],
                 Technologies.R_Beautification_Cathedral)
+--]]
 
             -- Cistern
             table.insert(
@@ -127,45 +161,16 @@ function InitSharedOverwrite()
             table.insert(
                 NeedsAndRightsByKnightTitle[KnightTitles.Mayor][TechnologiesTableIndex],
                 Technologies.R_BarracksSpearmen)
-                
-            -- Embellishments Marquees
-            table.insert(
-                NeedsAndRightsByKnightTitle[KnightTitles.Marquees][TechnologiesTableIndex],
-                Technologies.R_Beautification_Brazier)
-            
-            table.insert(
-                NeedsAndRightsByKnightTitle[KnightTitles.Marquees][TechnologiesTableIndex],
-                Technologies.R_Beautification_Pillar)
-            table.insert(
-                NeedsAndRightsByKnightTitle[KnightTitles.Marquees][TechnologiesTableIndex],
-                Technologies.R_Beautification_Shrine)
-            table.insert(
-                NeedsAndRightsByKnightTitle[KnightTitles.Marquees][TechnologiesTableIndex],
-                Technologies.R_Beautification_Vase)
-                
+               
+            --Cavalry
             table.insert(
                 NeedsAndRightsByKnightTitle[KnightTitles.Marquees][TechnologiesTableIndex],
                 Technologies.R_BarracksCavalry)
                 
-            -- Embellishments Duke
-            table.insert(
-                NeedsAndRightsByKnightTitle[KnightTitles.Duke][TechnologiesTableIndex],
-                Technologies.R_Beautification_Sundial)
-                
-                
-             -- Embellishments Archduke
-            table.insert(
-                NeedsAndRightsByKnightTitle[KnightTitles.Archduke][TechnologiesTableIndex],
-                Technologies.R_Beautification_TriumphalArch)
-                
-            table.insert(
-                NeedsAndRightsByKnightTitle[KnightTitles.Archduke][TechnologiesTableIndex],
-                Technologies.R_Beautification_VictoryColumn)
-                
+            --Cannon
             table.insert(
                 NeedsAndRightsByKnightTitle[KnightTitles.Archduke][TechnologiesTableIndex],
                 Technologies.R_Cannon)
-                
                 
              CreateTechnologyKnightTitleTable()
             

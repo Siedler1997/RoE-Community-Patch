@@ -2,7 +2,7 @@
 <root>
 	<Display classname="ED::CBuildingProps">
 		<Class>ED::CDisplayBuilding</Class>
-		<Model>Buildings\D_X_Beautification_SteamMashine</Model>
+		<Model>Doodads\D_X_PrisonCage</Model>
 		<DisplayPlayerColor>True</DisplayPlayerColor>
 		<FireNodeCount>15</FireNodeCount>
 	</Display>
@@ -12,11 +12,11 @@
 		<Cost>
 			<GoodAmount>
 				<GoodType>G_Iron</GoodType>
-				<Amount>25</Amount>
+				<Amount>15</Amount>
 			</GoodAmount>
 			<GoodAmount>
 				<GoodType>G_Gold</GoodType>
-				<Amount>1200</Amount>
+				<Amount>250</Amount>
 			</GoodAmount>
 		</Cost>
 		<AccessCategory>AccessCategoryBuilding</AccessCategory>
@@ -27,12 +27,12 @@
 		<BlockingAreas>
 			<BlockingArea>
 				<Blocked1>
-					<X>-250</X>
-					<Y>250</Y>
+					<X>-200</X>
+					<Y>300</Y>
 				</Blocked1>
 				<Blocked2>
-					<X>250</X>
-					<Y>-250</Y>
+					<X>200</X>
+					<Y>-300</Y>
 				</Blocked2>
 			</BlockingArea>
 		</BlockingAreas>
@@ -40,11 +40,11 @@
 			<BuildBlockingArea>
 				<Blocked1>
 					<X>-250</X>
-					<Y>250</Y>
+					<Y>350</Y>
 				</Blocked1>
 				<Blocked2>
 					<X>250</X>
-					<Y>-300</Y>
+					<Y>-350</Y>
 				</Blocked2>
 			</BuildBlockingArea>
 		</BuildBlockingAreas>
@@ -56,7 +56,7 @@
 		<CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim>
 		<FlattenOnBuild>true</FlattenOnBuild>
 		<IsHeightLocking>true</IsHeightLocking>
-		<MaxHealth>10</MaxHealth>
+		<MaxHealth>60</MaxHealth>
 		<MinFloorFireSize>0</MinFloorFireSize>
 		<MaxFloorFireSize>0</MaxFloorFireSize>
 		<MayRemoveEntities>true</MayRemoveEntities>

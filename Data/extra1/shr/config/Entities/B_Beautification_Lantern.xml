@@ -11,11 +11,11 @@
 		<Cost>
 			<GoodAmount>
 				<GoodType>G_Honeycomb</GoodType>
-				<Amount>1</Amount>
+				<Amount>5</Amount>
 			</GoodAmount>
 			<GoodAmount>
 				<GoodType>G_Gold</GoodType>
-				<Amount>300</Amount>
+				<Amount>350</Amount>
 			</GoodAmount>
 		</Cost>
 		<AccessCategory>AccessCategoryBuilding</AccessCategory>

@@ -64,6 +64,15 @@ GUI_Construction.BuildingsWithSkins[UpgradeCategories.Beautification_Military1] 
     UpgradeCategories.Beautification_Military6,
     UpgradeCategories.Beautification_Military7
 }
+GUI_Construction.BuildingsWithSkins[UpgradeCategories.SpecialEdition_StatueFamily] = {
+    UpgradeCategories.SpecialEdition_StatueFamily,
+    UpgradeCategories.SpecialEdition_StatueProduction,
+    UpgradeCategories.SpecialEdition_StatueSettler
+}
+GUI_Construction.BuildingsWithSkins[UpgradeCategories.SpecialEdition_Column] = {
+    UpgradeCategories.SpecialEdition_Column,
+    UpgradeCategories.Beautification_Pillar
+}
 
 --[[ Type_Road = 1,
 Type_Building = 2,
