@@ -177,6 +177,7 @@ function GUI_Tooltip.TooltipBuild(_OptionalPositionTooltipAboveBoolean, _Optiona
     local PositionWidget = XGUIEng.GetWidgetsMotherID(CurrentWidgetID)
     local WidgetName = XGUIEng.GetWidgetNameByID(CurrentWidgetID)
     local BuildingType
+    local SkinAmmount
     local ChangeType
     
     if WidgetName == "B_WallGate" or WidgetName == "B_GuardTower" or WidgetName == "B_WatchTower" or WidgetName == "B_Beautification_Plaza" then
@@ -228,10 +229,11 @@ function GUI_Tooltip.TooltipBuild(_OptionalPositionTooltipAboveBoolean, _Optiona
     
     local BuildingUpgradeCategory = Logic.GetUpgradeCategoryByBuildingType(BuildingType)
     if BuildingUpgradeCategory ~= 0 and GUI_Construction.BuildingsWithSkins[BuildingUpgradeCategory] ~= nil then
+        SkinAmmount = "("..table.getn(GUI_Construction.BuildingsWithSkins[BuildingUpgradeCategory])..")"
         ChangeType = "ChangeType"
     end
 
-    GUI_Tooltip.SetNameAndDescription(TooltipNameWidget, TooltipDescriptionWidget, nil, DisabledTextKeyName, nil, nil, ChangeType)
+    GUI_Tooltip.SetNameAndDescription(TooltipNameWidget, TooltipDescriptionWidget, nil, DisabledTextKeyName, nil, SkinAmmount, ChangeType)
 
     GUI_Tooltip.SetCosts(TooltipCostsContainer, Costs)
     
