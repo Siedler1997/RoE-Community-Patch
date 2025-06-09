@@ -62,7 +62,8 @@ GUI_Construction.BuildingsWithSkins[UpgradeCategories.Beautification_Military1] 
     UpgradeCategories.Beautification_Military4,
     UpgradeCategories.Beautification_Military5,
     UpgradeCategories.Beautification_Military6,
-    UpgradeCategories.Beautification_Military7
+    UpgradeCategories.Beautification_Military7,
+    UpgradeCategories.Beautification_Military8
 }
 GUI_Construction.BuildingsWithSkins[UpgradeCategories.SpecialEdition_StatueFamily] = {
     UpgradeCategories.SpecialEdition_StatueFamily,
