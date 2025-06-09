@@ -227,6 +227,10 @@
 		<Category>Beautification_Military7</Category>
 		<FirstBuilding>B_Beautification_Military7</FirstBuilding>
 	</BuildingUpgrade>
+  <BuildingUpgrade>
+    <Category>Beautification_Military8</Category>
+    <FirstBuilding>B_Beautification_Military8</FirstBuilding>
+  </BuildingUpgrade>
 	
 	<BuildingUpgrade>
 		<Category>Beautification_U_KnightChivalry</Category>
