@@ -189,10 +189,10 @@ Folgende Änderungen wurden vorgenommen:
 		- Marktplatz: Generische Ritter-Statue bei Khana, Praphat und Kastellanen
 	- "Neue" Gebäude
 		- Wachturm
-			- Kostet 11 Steine
+			- Kostet 8 Steine
 			- Kann mit einem Turmkatapult ausgerüstet wwerden
 		- Aussichtsturm
-			- Kostet 12 Steine
+			- Kostet 8 Steine
 			- Besitzt eine hohe Sichtweite
 			- Sieht einfach schick aus :)
 		- AS-Zelte mit entsprechenden Workern
