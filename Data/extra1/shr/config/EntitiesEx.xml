@@ -390,6 +390,11 @@
 	<!-- ********************************************
     CP stuff
     ************************************************-->
+	<Entity>D_ME_AxeStump</Entity>
+	<Entity>D_X_Target</Entity>
+	<Entity>D_X_TargetDummy</Entity>
+	<Entity>D_X_WeaponTable</Entity>
+	
 	<Entity>B_NPC_TournamentPlace_Big_BlueWhite_01_AS</Entity>
 	<Entity>B_NPC_TournamentPlace_Big_BlueWhite_02_AS</Entity>
 	<Entity>B_NPC_TournamentPlace_Big_BlueWhite_04_AS</Entity>
@@ -424,6 +429,7 @@
 	<Entity>U_Lion_Female</Entity>
 	<Entity>U_MagicOx</Entity>
 
+	<Entity>B_BuildingPlot_2x2</Entity>
 	<Entity>U_MilitaryTrebuchet</Entity>
 	<Entity>U_TrebuchetCart</Entity>
 	<Entity>U_TrebuchetCart_Collapse</Entity>
@@ -437,5 +443,69 @@
 	<Entity>U_CannonCart_Collapse</Entity>
 	<Entity>U_MilitaryCannon</Entity>
 	<Entity>U_MilitaryCannon_Collapse</Entity>
+	<Entity>B_Beautification_Cart1</Entity>
+	<Entity>B_Beautification_Cart2</Entity>
+	<Entity>B_Beautification_Cart3</Entity>
+	<Entity>B_Beautification_Cart4</Entity>
+	<Entity>B_Beautification_Cart5</Entity>
+	<Entity>B_Beautification_Cart6</Entity>
+	<Entity>B_Beautification_Graveyard</Entity>
+	<Entity>B_Beautification_BrothersInArms</Entity>
+	<Entity>B_Beautification_Pavilion</Entity>
+	<Entity>B_Beautification_XmasTree</Entity>
+	<Entity>B_Beautification_Flowerpot_Round</Entity>
+	<Entity>B_Beautification_Flowerpot_Square</Entity>
+	<Entity>B_Beautification_ExecutionerPlace</Entity>
+	<Entity>B_Beautification_Lantern</Entity>
+	<Entity>B_Beautification_WoodBench1</Entity>
+	<Entity>B_Beautification_WoodBench2</Entity>
+	<Entity>B_Beautification_WoodBench3</Entity>
+	<Entity>B_Beautification_WoodBench4</Entity>
+	<Entity>B_Beautification_WoodBench5</Entity>
+	<Entity>B_Beautification_WoodBench6</Entity>
+	<Entity>B_Beautification_Plaza_ME</Entity>
+	<Entity>B_Beautification_Plaza_NE</Entity>
+	<Entity>B_Beautification_Plaza_SE</Entity>
+	<Entity>B_Beautification_Plaza_NA</Entity>
+	<Entity>B_Beautification_Plaza_AS</Entity>
+	<Entity>B_Beautification_Knight_Chivalry</Entity>
+	<Entity>B_Beautification_Knight_Healing</Entity>
+	<Entity>B_Beautification_Knight_Plunder</Entity>
+	<Entity>B_Beautification_Knight_Song</Entity>
+	<Entity>B_Beautification_Knight_Trading</Entity>
+	<Entity>B_Beautification_Knight_Wisdom</Entity>
+	<Entity>B_Beautification_Knight_Sabatt</Entity>
+	<Entity>B_Beautification_Knight_RedPrince</Entity>
+	<Entity>B_Beautification_Knight_Saraya</Entity>
+	<Entity>B_Beautification_Knight_Praphat</Entity>
+	<Entity>B_Beautification_Knight_Khana</Entity>
+	<Entity>B_Beautification_Knight_Generic</Entity>
+	<Entity>B_NPC_Cloister_AS_WallSegment</Entity>
+	<Entity>B_NPC_Cloister_AS_WallTurret</Entity>
+	<Entity>B_Beautification_PrisonCage</Entity>
+	<Entity>B_Beautification_StatueDario</Entity>
+	<Entity>B_Beautification_StatueHorseman</Entity>
+	<Entity>B_Beautification_Brazier1</Entity>
+	<Entity>B_Beautification_Brazier2</Entity>
+	<Entity>B_Beautification_Brazier3</Entity>
+	<Entity>B_Beautification_Signpost1</Entity>
+	<Entity>B_Beautification_Signpost2</Entity>
+	<Entity>B_Beautification_Signpost3</Entity>
+	<Entity>B_Beautification_Misc1</Entity>
+	<Entity>B_Beautification_Misc2</Entity>
+	<Entity>B_Beautification_Misc3</Entity>
+	<Entity>B_Beautification_Misc4</Entity>
+	<Entity>B_Beautification_Misc5</Entity>
+	<Entity>B_Beautification_Misc6</Entity>
+	<Entity>B_Beautification_Misc7</Entity>
+	<Entity>B_Beautification_Misc8</Entity>
+	<Entity>B_Beautification_Military1</Entity>
+	<Entity>B_Beautification_Military2</Entity>
+	<Entity>B_Beautification_Military3</Entity>
+	<Entity>B_Beautification_Military4</Entity>
+	<Entity>B_Beautification_Military5</Entity>
+	<Entity>B_Beautification_Military6</Entity>
+	<Entity>B_Beautification_Military7</Entity>
+  <Entity>B_Beautification_Military8</Entity>
 </root>
 

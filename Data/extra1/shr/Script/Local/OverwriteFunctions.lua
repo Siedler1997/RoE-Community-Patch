@@ -231,21 +231,21 @@ function InitLocalOverwrite()
             -- Technologies
             g_TexturePositions.Technologies[Technologies.R_Cistern]                         = {1, 16}
             
+            g_TexturePositions.Technologies[Technologies.R_SpecialEdition2]          = {16, 4}
             g_TexturePositions.Technologies[Technologies.R_Beautification_Brazier]          = {4, 1, 1}
             g_TexturePositions.Technologies[Technologies.R_Beautification_Flowerpot_Round]  = {1, 16}
-            g_TexturePositions.Technologies[Technologies.R_Beautification_Flowerpot_Square] = {1, 16}
+            --g_TexturePositions.Technologies[Technologies.R_Beautification_Flowerpot_Square] = {1, 16}
             g_TexturePositions.Technologies[Technologies.R_Beautification_Lantern]          = {1, 16}
-            g_TexturePositions.Technologies[Technologies.R_Beautification_Pillar]           = {4, 2, 1}
+            --g_TexturePositions.Technologies[Technologies.R_Beautification_Pillar]           = {4, 2, 1}
             g_TexturePositions.Technologies[Technologies.R_Beautification_Shrine]           = {4, 3, 1}
             g_TexturePositions.Technologies[Technologies.R_Beautification_StoneBench]       = {4, 4, 1}
             g_TexturePositions.Technologies[Technologies.R_Beautification_Sundial]          = {5, 1, 1}
             g_TexturePositions.Technologies[Technologies.R_Beautification_TriumphalArch]    = {1, 5, 1}
             g_TexturePositions.Technologies[Technologies.R_Beautification_Vase]             = {5, 2, 1}
-            g_TexturePositions.Technologies[Technologies.R_Beautification_Waystone]         = {1, 16}
             g_TexturePositions.Technologies[Technologies.R_Beautification_VictoryColumn]    = {1, 6, 1}
             g_TexturePositions.Technologies[Technologies.R_SpearMaker]    = {2, 1, 2}
             g_TexturePositions.Technologies[Technologies.R_BarracksSpearmen]    = {2, 2, 2}
-            g_TexturePositions.Technologies[Technologies.R_BarracksCavalry]    = {2, 2, 2}
+            g_TexturePositions.Technologies[Technologies.R_BarracksCavalry]    = {2, 3, 2}
             g_TexturePositions.Technologies[Technologies.R_Cannon] = g_TexturePositions.Entities[Entities.U_MilitaryCannon]
             
             

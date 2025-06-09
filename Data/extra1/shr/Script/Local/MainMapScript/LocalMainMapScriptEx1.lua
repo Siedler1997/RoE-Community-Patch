@@ -139,6 +139,23 @@ do
     end
 end    
 
+do
+    --Hack to attach the knights icon to the knight statue too
+    function LocalSetKnightPicture()
+        local KnightID = Logic.GetKnightID(GUI.GetPlayerID())
+
+        if KnightID == nil or KnightID == 0 then
+            return
+        end
+
+        local KnightEntityType = Logic.GetEntityType(KnightID)
+        local KnightButtonWidget = "/InGame/Root/Normal/AlignBottomRight/MapFrame/KnightButton"
+        local KnightStatueWidget = "/InGame/Root/Normal/AlignBottomRight/BuildMenu/SubMenus/SpecialEdition2/ButtonsAddon/B_Beautification_Knight_Generic"
+
+        SetIcon(KnightButtonWidget, g_TexturePositions.Entities[KnightEntityType])
+        SetIcon(KnightStatueWidget, g_TexturePositions.Entities[KnightEntityType])
+    end
+end
 
 function FixCameraPosition(_LookAtX, _LookAtY, _RotationAngle, _ZoomFactor)
     Camera.RTS_SetRotationAngle(_RotationAngle)

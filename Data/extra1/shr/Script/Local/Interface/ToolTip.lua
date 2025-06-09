@@ -177,8 +177,10 @@ function GUI_Tooltip.TooltipBuild(_OptionalPositionTooltipAboveBoolean, _Optiona
     local PositionWidget = XGUIEng.GetWidgetsMotherID(CurrentWidgetID)
     local WidgetName = XGUIEng.GetWidgetNameByID(CurrentWidgetID)
     local BuildingType
+    local SkinAmmount
+    local ChangeType
     
-    if WidgetName == "B_WallGate" or WidgetName == "B_GuardTower" or WidgetName == "B_WatchTower" then
+    if WidgetName == "B_WallGate" or WidgetName == "B_GuardTower" or WidgetName == "B_WatchTower" or WidgetName == "B_Beautification_Plaza" then
         BuildingType = GetEntityTypeForClimatezone(WidgetName)
     else
         BuildingType = Entities[WidgetName]
@@ -196,6 +198,10 @@ function GUI_Tooltip.TooltipBuild(_OptionalPositionTooltipAboveBoolean, _Optiona
         elseif WidgetName == "Palisade" then
             Costs = {Goods.G_Wood, -1}
         elseif WidgetName == "Wall" then
+            Costs = {Goods.G_Stone, -1}
+        elseif WidgetName == "Fence" then
+            Costs = {Goods.G_Wood, -1}
+        elseif WidgetName == "NPCWall" then
             Costs = {Goods.G_Stone, -1}
         end
     end
@@ -220,8 +226,14 @@ function GUI_Tooltip.TooltipBuild(_OptionalPositionTooltipAboveBoolean, _Optiona
     if _TechnologyType ~= nil then
         DisabledTextKeyName = GUI_Tooltip.GetDisabledKeyForTechnologyType(_TechnologyType)
     end
+    
+    local BuildingUpgradeCategory = Logic.GetUpgradeCategoryByBuildingType(BuildingType)
+    if BuildingUpgradeCategory ~= 0 and GUI_Construction.BuildingsWithSkins[BuildingUpgradeCategory] ~= nil then
+        SkinAmmount = "("..table.getn(GUI_Construction.BuildingsWithSkins[BuildingUpgradeCategory])..")"
+        ChangeType = "ChangeType"
+    end
 
-    GUI_Tooltip.SetNameAndDescription(TooltipNameWidget, TooltipDescriptionWidget, nil, DisabledTextKeyName)
+    GUI_Tooltip.SetNameAndDescription(TooltipNameWidget, TooltipDescriptionWidget, nil, DisabledTextKeyName, nil, SkinAmmount, ChangeType)
 
     GUI_Tooltip.SetCosts(TooltipCostsContainer, Costs)
     
@@ -233,7 +245,7 @@ end
 
 
 function GUI_Tooltip.SetNameAndDescription(_TooltipNameWidget, _TooltipDescriptionWidget, _OptionalTextKeyName, _OptionalDisabledTextKeyName,
-        _OptionalMissionTextFileBoolean, _LimitString)
+        _OptionalMissionTextFileBoolean, _LimitString, _SpecialTextKeyName)
     local CurrentWidgetID = XGUIEng.GetCurrentWidgetID()
     local WidgetName = XGUIEng.GetWidgetNameByID(CurrentWidgetID)
 
@@ -263,6 +275,10 @@ function GUI_Tooltip.SetNameAndDescription(_TooltipNameWidget, _TooltipDescripti
             TooltipName = XGUIEng.GetStringTableText("UI_ObjectNames/" .. _OptionalTextKeyName)
             TooltipDesc = XGUIEng.GetStringTableText("UI_ObjectDescription/".. _OptionalTextKeyName)
         end
+    end
+
+    if _SpecialTextKeyName ~= nil then
+        TooltipDesc = TooltipDesc .. XGUIEng.GetStringTableText("UI_ObjectDescription/".. _SpecialTextKeyName)
     end
 
     if TooltipName == "" then
@@ -312,7 +328,7 @@ function GUI_Tooltip.SetNameAndDescription(_TooltipNameWidget, _TooltipDescripti
         TooltipDesc = TooltipDesc .. DoesDescExist .. "{@color:220, 0, 0}" .. ButtonDisabledText .. "{@color:none}"
     end
 
-    XGUIEng.SetText(_TooltipNameWidget, "{center}" .. TooltipName .. TooltipLimit)
+    XGUIEng.SetText(_TooltipNameWidget, "{center}" .. TooltipName .. " " .. TooltipLimit)
     XGUIEng.SetText(_TooltipDescriptionWidget, TooltipDesc)
     
     local Height = XGUIEng.GetTextHeight(_TooltipDescriptionWidget, true)
@@ -652,6 +668,8 @@ function AreCostsAffordable(_Costs, _GoodsInSettlementBoolean)
     local PlayerGoldAmount = Logic.GetAmountOnOutStockByGoodType(CastleID, Goods.G_Gold)
     local PlayerStoneAmount = Logic.GetAmountOnOutStockByGoodType(StorehouseID, Goods.G_Stone)
     local PlayerWoodAmount = Logic.GetAmountOnOutStockByGoodType(StorehouseID, Goods.G_Wood)
+    local PlayerIronAmount = Logic.GetAmountOnOutStockByGoodType(StorehouseID, Goods.G_Iron)
+    local PlayerHoneyAmount = Logic.GetAmountOnOutStockByGoodType(StorehouseID, Goods.G_Honeycomb)
     
     local PlayerWeaponOrPartAmount = 0
     local WeaponOrPartType
@@ -660,6 +678,8 @@ function AreCostsAffordable(_Costs, _GoodsInSettlementBoolean)
     local GoldCost = 0
     local StoneCost = 0
     local WoodCost = 0
+    local IronCost = 0
+    local HoneyCost = 0
     local WeaponOrPartCost = 0
 
     for i = 1, table.getn(_Costs), 2 do
@@ -669,6 +689,10 @@ function AreCostsAffordable(_Costs, _GoodsInSettlementBoolean)
             StoneCost = _Costs[i + 1]
         elseif _Costs[i] == Goods.G_Wood then
             WoodCost = _Costs[i + 1]
+        elseif _Costs[i] == Goods.G_Iron then
+            IronCost = _Costs[i + 1]
+        elseif _Costs[i] == Goods.G_Honeycomb then
+            HoneyCost = _Costs[i + 1]
         else
             if WeaponOrPartType == nil then
                 WeaponOrPartType = _Costs[i]
@@ -735,6 +759,20 @@ function AreCostsAffordable(_Costs, _GoodsInSettlementBoolean)
     if PlayerWoodAmount < WoodCost then
         CanBuyBoolean = false
         local GoodName = Logic.GetGoodTypeName(Goods.G_Wood)
+        CanNotBuyStringSections.Number = CanNotBuyStringSections.Number + 1
+        CanNotBuyStringSections[CanNotBuyStringSections.Number] = GoodName
+    end
+
+    if PlayerIronAmount < IronCost then
+        CanBuyBoolean = false
+        local GoodName = Logic.GetGoodTypeName(Goods.G_Iron)
+        CanNotBuyStringSections.Number = CanNotBuyStringSections.Number + 1
+        CanNotBuyStringSections[CanNotBuyStringSections.Number] = GoodName
+    end
+
+    if PlayerHoneyAmount < HoneyCost then
+        CanBuyBoolean = false
+        local GoodName = Logic.GetGoodTypeName(Goods.G_Honeycomb)
         CanNotBuyStringSections.Number = CanNotBuyStringSections.Number + 1
         CanNotBuyStringSections[CanNotBuyStringSections.Number] = GoodName
     end

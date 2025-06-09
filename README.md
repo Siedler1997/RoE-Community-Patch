@@ -164,24 +164,29 @@ Folgende Änderungen wurden vorgenommen:
 	- Diebe
 		- Sind auf maximal 6 Stück gleichzeitig pro Spieler limitiert
 - Gebäude
-	- Arbeiter in Kasernen holen ihre Waffen nun einzeln
-	- Kirche
-		- Mehr Siedler pro Predigt möglich
-		- Einwohnerlimit pro Ausbaustufe erhöht
-		- Eigenes Icon auf der Minimap
-	- Burg
-		- Soldatenlimit pro Ausbaustufe erhöht
-		- Eigenes Icon auf der Minimap
-		- Spielerwappen wird nicht mehr auf dem Banner am Eingang abgebildet
-			- Technisch leider zwecks Konsistenz zwischen alten und neuen Wappen notwendig
-	- Lagerhaus
-		- Lagerkapazität der 3. und 4. Ausbaustufe erhöht
-		- Eigenes Icon auf der Minimap
-		- Menü etwas umsortiert
-			- Militärische Güter (z.B. Schwerter) liegen nun unter dem 3. Tab "Burg und Militär"
-				- Belagerungsmaschinenbauteile sind hier nun ebenfalls verkaufbar
-			- Luxusgüter unter dem 3. Tab sind nun korrekt angeordnet
-	- Marktplatz: Generische Ritter-Statue bei Khana, Praphat und Kastellanen
+	- Spezialgebäude
+		- Allgemein
+			- Ausbau triggert nicht mehr Hakims/Praphats Info bzgl. Rabatt auf Ausbaukosten
+				- Grund: Die Fähigkeit wirkt sich nicht auf den Ausbau jener Gebäude aus
+			- Ausbaubutton erscheint nicht mehr bei Errichtung
+				- Normalerweise nur relevant beim Bau der neuen Kathedrale
+		- Kirche
+			- Mehr Siedler pro Predigt möglich
+			- Einwohnerlimit pro Ausbaustufe erhöht
+			- Eigenes Icon auf der Minimap
+		- Burg
+			- Soldatenlimit pro Ausbaustufe erhöht
+			- Eigenes Icon auf der Minimap
+			- Spielerwappen wird nicht mehr auf dem Banner am Eingang abgebildet
+				- Technisch leider zwecks Konsistenz zwischen alten und neuen Wappen notwendig
+		- Lagerhaus
+			- Lagerkapazität der 3. und 4. Ausbaustufe erhöht
+			- Eigenes Icon auf der Minimap
+			- Menü etwas umsortiert
+				- Militärische Güter (z.B. Schwerter) liegen nun unter dem 3. Tab "Burg und Militär"
+					- Belagerungsmaschinenbauteile sind hier nun ebenfalls verkaufbar
+				- Luxusgüter unter dem 3. Tab sind nun korrekt angeordnet
+		- Marktplatz: Generische Ritter-Statue bei Khana, Praphat und Kastellanen
 	- "Neue" Gebäude
 		- Wachturm
 			- Kostet 11 Steine
@@ -206,6 +211,16 @@ Folgende Änderungen wurden vorgenommen:
 	- Bienenstöcke haben weniger Lebenspunkte (10 -> 5)
 	- Handelsposten-Baubutton hat einen etwas verständlicheren Tooltip
 	- Kasernen und Belagerungswaffenschmieden werden nicht mehr als potentielle reiche Stadtgebäude aufgelistet
+	- Arbeiter in Kasernen holen ihre Waffen nun einzeln
+	- Ziergebäude
+		- Rebalanced (weniger HP, z.T. höhere Bauzeit und späteres Freischalten)
+		- Werden nicht mehr im Titelmenü als freischaltbar angezeigt
+		- Viele neue Ziergebäude
+			- Basieren auf Lost Content, Doodads sowie DEdK
+			- Alle Ziergebäude sind auf 2 Baumenüs aufgeteilt
+			- Varianten können mit "C" durchgewechselt werden
+				- Auch ein paar Vanilla-Ziergebäude wurden auf diese Art zusammengefasst
+			- Insgesamt 24 Bauoptionen + etliche Varianten!
 - Hauptmenü
 	- AddOn nutzt weitgehend Hauptspiel-Hintergrund und Soundtrack
 	- Hintergrund ist tageszeitabhängig
