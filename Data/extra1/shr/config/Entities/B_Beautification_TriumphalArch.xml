@@ -58,14 +58,14 @@
             </BuildBlockingArea>
 	     </BuildBlockingAreas>
          <ConstructionInfo>
-            <Time>45</Time>
+            <Time>50</Time>
             <TaskListConstruction>TL_CONSTRUCT_BUILDING</TaskListConstruction>
             <ConstructionSite>B_BuildingPlot_8x8</ConstructionSite>
         </ConstructionInfo>
         <CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim>
         <FlattenOnBuild>true</FlattenOnBuild>
         <IsHeightLocking>true</IsHeightLocking>
-        <MaxHealth>500</MaxHealth>
+        <MaxHealth>180</MaxHealth>
         <MinFloorFireSize>0</MinFloorFireSize>
         <MaxFloorFireSize>0</MaxFloorFireSize>
         <MayRemoveEntities>true</MayRemoveEntities>

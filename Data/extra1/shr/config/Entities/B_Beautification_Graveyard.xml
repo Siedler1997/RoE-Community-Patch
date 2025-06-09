@@ -48,7 +48,7 @@
 			</BuildBlockingArea>
 		</BuildBlockingAreas>
 		<ConstructionInfo>
-			<Time>10</Time>
+			<Time>15</Time>
 			<TaskListConstruction>TL_CONSTRUCT_BUILDING</TaskListConstruction>
 			<ConstructionSite>B_BuildingPlot_8x8</ConstructionSite>
 		</ConstructionInfo>
