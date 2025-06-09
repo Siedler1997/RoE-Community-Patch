@@ -231,6 +231,7 @@ function InitLocalOverwrite()
             -- Technologies
             g_TexturePositions.Technologies[Technologies.R_Cistern]                         = {1, 16}
             
+            g_TexturePositions.Technologies[Technologies.R_SpecialEdition2]          = {16, 4}
             g_TexturePositions.Technologies[Technologies.R_Beautification_Brazier]          = {4, 1, 1}
             g_TexturePositions.Technologies[Technologies.R_Beautification_Flowerpot_Round]  = {1, 16}
             --g_TexturePositions.Technologies[Technologies.R_Beautification_Flowerpot_Square] = {1, 16}
@@ -244,7 +245,7 @@ function InitLocalOverwrite()
             g_TexturePositions.Technologies[Technologies.R_Beautification_VictoryColumn]    = {1, 6, 1}
             g_TexturePositions.Technologies[Technologies.R_SpearMaker]    = {2, 1, 2}
             g_TexturePositions.Technologies[Technologies.R_BarracksSpearmen]    = {2, 2, 2}
-            g_TexturePositions.Technologies[Technologies.R_BarracksCavalry]    = {2, 2, 2}
+            g_TexturePositions.Technologies[Technologies.R_BarracksCavalry]    = {2, 3, 2}
             g_TexturePositions.Technologies[Technologies.R_Cannon] = g_TexturePositions.Entities[Entities.U_MilitaryCannon]
             
             
