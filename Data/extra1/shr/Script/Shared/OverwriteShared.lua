@@ -39,6 +39,9 @@ function InitSharedOverwrite()
                 NeedsAndRightsByKnightTitle[KnightTitles.Knight][TechnologiesTableIndex],
                 Technologies.R_SpecialEdition_Pavilion)
             table.remove(
+                NeedsAndRightsByKnightTitle[KnightTitles.Earl][TechnologiesTableIndex],
+                Technologies.R_SpecialEdition_StatueSettler)
+            table.remove(
                 NeedsAndRightsByKnightTitle[KnightTitles.Marquees][TechnologiesTableIndex],
                 Technologies.R_SpecialEdition_StatueProduction)
             table.remove(
@@ -122,9 +125,6 @@ function InitSharedOverwrite()
             table.insert(
                 NeedsAndRightsByKnightTitle[KnightTitles.Duke][TechnologiesTableIndex],
                 Technologies.R_Beautification_Knight)
-            table.insert(
-                NeedsAndRightsByKnightTitle[KnightTitles.Duke][TechnologiesTableIndex],
-                Technologies.R_Beautification_StatueDario)
             table.insert(
                 NeedsAndRightsByKnightTitle[KnightTitles.Duke][TechnologiesTableIndex],
                 Technologies.R_Beautification_Sundial)
