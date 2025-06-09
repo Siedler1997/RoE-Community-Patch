@@ -212,6 +212,15 @@ Folgende Änderungen wurden vorgenommen:
 	- Handelsposten-Baubutton hat einen etwas verständlicheren Tooltip
 	- Kasernen und Belagerungswaffenschmieden werden nicht mehr als potentielle reiche Stadtgebäude aufgelistet
 	- Arbeiter in Kasernen holen ihre Waffen nun einzeln
+	- Ziergebäude
+		- Rebalanced (weniger HP, z.T. höhere Bauzeit und späteres Freischalten)
+		- Werden nicht mehr im Titelmenü als freischaltbar angezeigt
+		- Viele neue Ziergebäude
+			- Basieren auf Lost Content, Doodads sowie DEdK
+			- Alle Ziergebäude sind auf 2 Baumenüs aufgeteilt
+			- Varianten können mit "C" durchgewechselt werden
+				- Auch ein paar Vanilla-Ziergebäude wurden auf diese Art zusammengefasst
+			- Insgesamt 24 Bauoptionen + etliche Varianten!
 - Hauptmenü
 	- AddOn nutzt weitgehend Hauptspiel-Hintergrund und Soundtrack
 	- Hintergrund ist tageszeitabhängig
