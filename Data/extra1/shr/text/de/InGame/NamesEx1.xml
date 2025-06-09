@@ -149,9 +149,10 @@
   <string id="B_Beautification_PrisonCage" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Gefängniskäfig]]></string>
 	<string id="B_Beautification_BrothersInArms" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Kameraden-Statue]]></string>
 	<string id="B_Beautification_StatueHorseman" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Reiter-Statue]]></string>
-	<string id="B_Beautification_StatueDario" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dariostatue]]></string>
-	<string id="B_SpecialEdition_Pavilion" MD5Hash="6481C1A0290E193EA3AA583650B15C16" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Pavillon I]]></string>
+  <string id="B_SpecialEdition_StatueDario" MD5Hash="" mod="20070817173827" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dariostatue I]]></string>
+	<string id="B_Beautification_StatueDario" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dariostatue II]]></string>
 	<string id="B_SpecialEdition_Column" MD5Hash="6481C1A0290E193EA3AA583650B15C16" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Säule I]]></string>
+	<string id="B_SpecialEdition_Pavilion" MD5Hash="6481C1A0290E193EA3AA583650B15C16" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Pavillon I]]></string>
 	<string id="B_Beautification_Pavilion" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Pavillon II]]></string>
 	<string id="B_Beautification_XmasTree" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Weihnachtsbaum]]></string>
 	<string id="B_Beautification_WoodBench1" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Holzbank]]></string>
@@ -160,10 +161,8 @@
 	<string id="B_Beautification_WoodBench4" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Holzbank]]></string>
 	<string id="B_Beautification_WoodBench5" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Holzbank]]></string>
 	<string id="B_Beautification_WoodBench6" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Holzbank]]></string>
-	<string id="B_Beautification_Plaza" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Zierplatz]]></string>
-	<string id="B_Beautification_Knight_Generic" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Ritter-Statue]]></string>
 	<string id="B_Beautification_Dragon" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Drachen-Statue]]></string>
-	<string id="B_Beautification_SteamMachine" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dampfmaschine]]></string>
+	<string id="B_Beautification_Knight_Generic" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Ritter-Statue]]></string>
 	<string id="B_Beautification_Knight_Chivalry" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Ritter-Statue]]></string>
 	<string id="B_Beautification_Knight_Healing" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Ritter-Statue]]></string>
 	<string id="B_Beautification_Knight_Plunder" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Ritter-Statue]]></string>
@@ -176,6 +175,7 @@
 	<string id="B_Beautification_Knight_Praphat" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Ritter-Statue]]></string>
 	<string id="B_Beautification_Knight_Khana" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Ritter-Statue]]></string>
 	<string id="B_Beautification_Knight_Generic" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Ritter-Statue]]></string>
+	<string id="B_Beautification_Plaza" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Zierplatz]]></string>
 	<string id="B_Beautification_Plaza_ME" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Zierplatz]]></string>
 	<string id="B_Beautification_Plaza_NE" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Zierplatz]]></string>
 	<string id="B_Beautification_Plaza_SE" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Zierplatz]]></string>

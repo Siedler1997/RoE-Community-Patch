@@ -328,7 +328,7 @@ function GUI_Tooltip.SetNameAndDescription(_TooltipNameWidget, _TooltipDescripti
         TooltipDesc = TooltipDesc .. DoesDescExist .. "{@color:220, 0, 0}" .. ButtonDisabledText .. "{@color:none}"
     end
 
-    XGUIEng.SetText(_TooltipNameWidget, "{center}" .. TooltipName .. TooltipLimit)
+    XGUIEng.SetText(_TooltipNameWidget, "{center}" .. TooltipName .. " " .. TooltipLimit)
     XGUIEng.SetText(_TooltipDescriptionWidget, TooltipDesc)
     
     local Height = XGUIEng.GetTextHeight(_TooltipDescriptionWidget, true)
