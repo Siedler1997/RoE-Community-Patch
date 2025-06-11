@@ -180,7 +180,7 @@ function GUI_Tooltip.TooltipBuild(_OptionalPositionTooltipAboveBoolean, _Optiona
     local SkinAmmount
     local ChangeType
     
-    if WidgetName == "B_WallGate" or WidgetName == "B_GuardTower" or WidgetName == "B_WatchTower" or WidgetName == "B_Beautification_Plaza" then
+    if WidgetName == "B_WallGate" or WidgetName == "B_GuardTower" or WidgetName == "B_WatchTower" or WidgetName == "B_Plaza" then
         BuildingType = GetEntityTypeForClimatezone(WidgetName)
     else
         BuildingType = Entities[WidgetName]

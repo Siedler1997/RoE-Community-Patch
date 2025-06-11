@@ -149,6 +149,16 @@ function InitSharedOverwrite()
                 Technologies.R_Beautification_Cathedral)
 --]]
 
+            table.insert(
+                NeedsAndRightsByKnightTitle[KnightTitles.Knight][TechnologiesTableIndex],
+                Technologies.R_NPC_Cloister_Wall)
+            table.insert(
+                NeedsAndRightsByKnightTitle[KnightTitles.Baron][TechnologiesTableIndex],
+                Technologies.R_Plaza)
+            table.insert(
+                NeedsAndRightsByKnightTitle[KnightTitles.Earl][TechnologiesTableIndex],
+                Technologies.R_WatchTower)
+
             -- Cistern
             table.insert(
                 NeedsAndRightsByKnightTitle[KnightTitles.Mayor][TechnologiesTableIndex],

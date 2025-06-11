@@ -417,6 +417,11 @@
 	<Entity>B_BarracksCavalry</Entity>
 	<Entity>U_TournamentWorker_AS</Entity>
 	<Entity>B_NPC_Spicetrader</Entity>
+	<Entity>B_Plaza_ME</Entity>
+	<Entity>B_Plaza_NE</Entity>
+	<Entity>B_Plaza_SE</Entity>
+	<Entity>B_Plaza_NA</Entity>
+	<Entity>B_Plaza_AS</Entity>
 	
 	<Entity>U_Bear</Entity>
 	<Entity>U_BlackBear</Entity>
@@ -463,11 +468,6 @@
 	<Entity>B_Beautification_WoodBench4</Entity>
 	<Entity>B_Beautification_WoodBench5</Entity>
 	<Entity>B_Beautification_WoodBench6</Entity>
-	<Entity>B_Beautification_Plaza_ME</Entity>
-	<Entity>B_Beautification_Plaza_NE</Entity>
-	<Entity>B_Beautification_Plaza_SE</Entity>
-	<Entity>B_Beautification_Plaza_NA</Entity>
-	<Entity>B_Beautification_Plaza_AS</Entity>
 	<Entity>B_Beautification_Knight_Chivalry</Entity>
 	<Entity>B_Beautification_Knight_Healing</Entity>
 	<Entity>B_Beautification_Knight_Plunder</Entity>
