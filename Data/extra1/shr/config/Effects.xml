@@ -1506,12 +1506,12 @@
             <SoundLooped>false</SoundLooped>
 
             <Class>EGL::CEffect</Class>
-            <Duration>5.0</Duration>
+            <Duration>1.0</Duration>
         </Logic>
         <Display classname="ED::CHAnimEffectProps">
             <Class>ED::CHAnimEffect</Class>
-            <Model>Effects\XF_ExplosionPilgrim</Model>
-            <Anim>XF_ExplosionPilgrim</Anim>
+          <Model>Effects\E_PalisadeCollapse</Model>
+          <Anim>Effects\E_PalisadeCollapse</Anim>
         </Display>
     </Effect>
 
@@ -1523,12 +1523,12 @@
             <SoundLooped>false</SoundLooped>
 
             <Class>EGL::CEffect</Class>
-            <Duration>5.0</Duration>
+            <Duration>1.0</Duration>
         </Logic>
         <Display classname="ED::CHAnimEffectProps">
             <Class>ED::CHAnimEffect</Class>
-            <Model>Effects\XF_ExplosionPilgrim</Model>
-            <Anim>XF_ExplosionPilgrim</Anim>
+          <Model>Effects\E_PalisadeCollapse</Model>
+          <Anim>Effects\E_PalisadeCollapse</Anim>
         </Display>
     </Effect>
     <Effect id="E_Improvement">
