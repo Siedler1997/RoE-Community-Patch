@@ -18,6 +18,7 @@
         <EntityCategories>
             <EntityCategory>Wall</EntityCategory>
             <EntityCategory>Fence</EntityCategory>
+          <EntityCategory>PalisadeSegment</EntityCategory>
         </EntityCategories>
 		<NeedsPlayer>true</NeedsPlayer>
 		<ForceNoPlayer>false</ForceNoPlayer>
@@ -25,8 +26,9 @@
 		<!-- construction only -->
 		<MaxWorkers>0</MaxWorkers>
 		<!-- construction only -->
-		<MaxHealth>200</MaxHealth>
-		<MaxFloorFireSize>10</MaxFloorFireSize>
+      <MaxHealth>60</MaxHealth>
+      <MinFloorFireSize>0</MinFloorFireSize>
+      <MaxFloorFireSize>0</MaxFloorFireSize>
 		<Exploration>0</Exploration>
 		<TurretType>B_NPC_Cloister_NA_WallTurret</TurretType>
 		<CanBeKnockedDown>true</CanBeKnockedDown>

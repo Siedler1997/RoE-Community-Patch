@@ -26,7 +26,7 @@
 		<!-- construction only -->
 		<MaxWorkers>0</MaxWorkers>
 		<!-- construction only -->
-		<MaxHealth>50</MaxHealth>
+		<MaxHealth>60</MaxHealth>
 		<MaxFloorFireSize>5</MaxFloorFireSize>
 		<Exploration>0</Exploration>
         <TurretType>B_FenceTurret</TurretType>
