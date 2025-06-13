@@ -1,3 +1,25 @@
+--Used for military feedback so we don't need excessive if clauses
+MilitaryFeedback_AnimalTypes = {
+    Entities.U_Bear, 
+    Entities.U_BlackBear, 
+    Entities.U_PolarBear,
+    Entities.U_Wolf_Grey, 
+    Entities.U_Wolf_White, 
+    Entities.U_Wolf_Black, 
+    Entities.U_Wolf_Brown,
+    Entities.U_Lion_Male, 
+    Entities.U_Lion_Female, 
+    Entities.U_Tiger, 
+    Entities.U_Tiger_White,
+    Entities.U_Cat1, 
+    Entities.U_Cat2, 
+    Entities.U_Cat3, 
+    Entities.U_Cat4,
+    Entities.U_Dog1, 
+    Entities.U_Dog2, 
+    Entities.U_Dog3
+}
+
 -----------------------------------------------------------------------------------------
 -- Overwrites
 -- it must be in a function because the mapeditor uses the overwritten functions too
@@ -311,12 +333,7 @@ function MilitaryFeedback_GetSpeaker(_EntityID)
 		return g_MilitaryFeedback.Thiefs[Entities.U_Thief]
 
 	end		
-    
-    if type == Entities.U_Bear or type == Entities.U_BlackBear or type == Entities.U_PolarBear
-        or type == Entities.U_Wolf_Grey or type == Entities.U_Wolf_White or type == Entities.U_Wolf_Black or type == Entities.U_Wolf_Brown
-        or type == Entities.U_Lion_Male or type == Entities.U_Lion_Female or type == Entities.U_Tiger or type == Entities.U_Tiger_White
-        or type == Entities.U_Cat1 or type == Entities.U_Cat2 or type == Entities.U_Cat3 or type == Entities.U_Cat4
-        or type == Entities.U_Dog1 or type == Entities.U_Dog2 or type == Entities.U_Dog3 then
+    if GetIndexOfItem(MilitaryFeedback_AnimalTypes, type) ~= nil then
 	    return "Animals"
     end
 
@@ -390,11 +407,7 @@ function MilitaryFeedback_GetType(_EntityID)
 
 	if type == Entities.U_Thief then
 		return "VoiceThief_speech"
-	elseif type == Entities.U_Bear or type == Entities.U_BlackBear or type == Entities.U_PolarBear
-            or type == Entities.U_Wolf_Grey or type == Entities.U_Wolf_White or type == Entities.U_Wolf_Black or type == Entities.U_Wolf_Brown
-            or type == Entities.U_Lion_Male or type == Entities.U_Lion_Female or type == Entities.U_Tiger or type == Entities.U_Tiger_White
-            or type == Entities.U_Cat1 or type == Entities.U_Cat2 or type == Entities.U_Cat3 or type == Entities.U_Cat4
-            or type == Entities.U_Dog1 or type == Entities.U_Dog2 or type == Entities.U_Dog3 then
+	elseif GetIndexOfItem(MilitaryFeedback_AnimalTypes, type) ~= nil then
 		return "VoicesAnimals_" .. g_MilitaryFeedback.Animals[type]
     else
 		return "VoiceMilitary_speech"
@@ -413,11 +426,7 @@ function MilitaryFeedback_GetState(_EntityID, _Key)
     
 	local type = Logic.GetEntityType(_EntityID)
 
-    if type == Entities.U_Bear or type == Entities.U_BlackBear or type == Entities.U_PolarBear
-        or type == Entities.U_Wolf_Grey or type == Entities.U_Wolf_White or type == Entities.U_Wolf_Black or type == Entities.U_Wolf_Brown
-        or type == Entities.U_Lion_Male or type == Entities.U_Lion_Female or type == Entities.U_Tiger or type == Entities.U_Tiger_White
-        or type == Entities.U_Cat1 or type == Entities.U_Cat2 or type == Entities.U_Cat3 or type == Entities.U_Cat4
-        or type == Entities.U_Dog1 or type == Entities.U_Dog2 or type == Entities.U_Dog3 then
+    if GetIndexOfItem(MilitaryFeedback_AnimalTypes, type) ~= nil then
         
 	    local variant = 1
 	    if state == "Attack" then
