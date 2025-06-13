@@ -13,6 +13,9 @@ function InitMultiselection()
         Entities.U_MilitaryBow,
         Entities.U_MilitarySword_RedPrince,
         Entities.U_MilitaryBow_RedPrince,
+        Entities.U_MilitarySword_Khana,
+        Entities.U_MilitaryBow_Khana,
+        Entities.U_MilitarySpear,
         Entities.U_MilitaryBandit_Melee_ME,
         Entities.U_MilitaryBandit_Melee_NA,
         Entities.U_MilitaryBandit_Melee_NE,
@@ -34,8 +37,6 @@ function InitMultiselection()
         Entities.U_BatteringRamCart,
         Entities.U_TrebuchetCart,
         Entities.U_Thief,
-        Entities.U_MilitarySword_Khana,
-        Entities.U_MilitaryBow_Khana,
         Entities.U_Bear,
         Entities.U_BlackBear,
         Entities.U_PolarBear,
@@ -53,7 +54,8 @@ function InitMultiselection()
         Entities.U_Cat4,
         Entities.U_Dog1,
         Entities.U_Dog2,
-        Entities.U_Dog3
+        Entities.U_Dog3,
+        Entities.U_Dragon
     }
 end
 
