@@ -73,7 +73,7 @@
 				<Class>EGL::CArrowEffect</Class>
 				<Global>false</Global>
 				<Duration>0</Duration>
-				<Speed>3000.0</Speed>
+				<Speed>4000.0</Speed>
 				<GravityFactor>1800.0f</GravityFactor>
 				<HeightOffsetStart>60.0</HeightOffsetStart>
 				<HeightOffsetTarget>60.0</HeightOffsetTarget>
@@ -90,7 +90,7 @@
 				<Class>EGL::CArrowEffect</Class>
 				<Global>false</Global>
 				<Duration>0</Duration>
-				<Speed>3000.0</Speed>
+				<Speed>4000.0</Speed>
 				<GravityFactor>1800.0f</GravityFactor>
 				<HeightOffsetStart>60.0</HeightOffsetStart>
 				<HeightOffsetTarget>60.0</HeightOffsetTarget>
@@ -107,7 +107,7 @@
 				<Class>EGL::CArrowEffect</Class>
 				<Global>false</Global>
 				<Duration>0</Duration>
-				<Speed>3000.0</Speed>
+				<Speed>4000.0</Speed>
 				<GravityFactor>1800.0f</GravityFactor>
 				<HeightOffsetStart>60.0</HeightOffsetStart>
 				<HeightOffsetTarget>60.0</HeightOffsetTarget>
@@ -124,7 +124,7 @@
 				<Class>EGL::CArrowEffect</Class>
 				<Global>false</Global>
 				<Duration>0</Duration>
-				<Speed>3000.0</Speed>
+				<Speed>4000.0</Speed>
 				<GravityFactor>1800.0f</GravityFactor>
 				<HeightOffsetStart>60.0</HeightOffsetStart>
 				<HeightOffsetTarget>1300.0</HeightOffsetTarget>
@@ -142,7 +142,7 @@
 				<Class>EGL::CSplashEffect</Class>
 				<Global>false</Global>
 				<Duration>0</Duration>
-				<Speed>3000.0</Speed>
+				<Speed>4000.0</Speed>
 				<GravityFactor>200.0f</GravityFactor>
 				<HeightOffsetStart>100.0</HeightOffsetStart>
 				<HeightOffsetTarget>250.0</HeightOffsetTarget>
@@ -159,7 +159,7 @@
 				<Class>EGL::CSplashEffect</Class>
 				<Global>false</Global>
 				<Duration>0</Duration>
-				<Speed>3000.0</Speed>
+				<Speed>4000.0</Speed>
 				<GravityFactor>200.0f</GravityFactor>
 				<HeightOffsetStart>100.0</HeightOffsetStart>
 				<HeightOffsetTarget>250.0</HeightOffsetTarget>
@@ -177,7 +177,7 @@
 				<Class>EGL::CSplashEffect</Class>
 				<Global>false</Global>
 				<Duration>0</Duration>
-				<Speed>3000.0</Speed>
+				<Speed>4000.0</Speed>
 				<GravityFactor>200.0f</GravityFactor>
 				<HeightOffsetStart>100.0</HeightOffsetStart>
 				<HeightOffsetTarget>250.0</HeightOffsetTarget>
@@ -195,7 +195,7 @@
 				<Class>EGL::CArrowEffect</Class>
 				<Global>false</Global>
 				<Duration>0</Duration>
-				<Speed>3000.0</Speed>
+				<Speed>4000.0</Speed>
 				<GravityFactor>200.0f</GravityFactor>
 				<HeightOffsetStart>100.0</HeightOffsetStart>
 				<HeightOffsetTarget>1300.0</HeightOffsetTarget>
