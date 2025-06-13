@@ -389,6 +389,7 @@
 	<!-- ********************************************
     CP stuff
     ************************************************-->
+  <Entity>S_WhiteTiger</Entity>
 	<Entity>D_ME_AxeStump</Entity>
 	<Entity>D_X_Target</Entity>
 	<Entity>D_X_TargetDummy</Entity>
