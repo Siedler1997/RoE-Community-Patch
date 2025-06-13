@@ -1,3 +1,25 @@
+--Used for military feedback so we don't need excessive if clauses
+MilitaryFeedback_AnimalTypes = {
+    Entities.U_Bear, 
+    Entities.U_BlackBear, 
+    Entities.U_PolarBear,
+    Entities.U_Wolf_Grey, 
+    Entities.U_Wolf_White, 
+    Entities.U_Wolf_Black, 
+    Entities.U_Wolf_Brown,
+    Entities.U_Lion_Male, 
+    Entities.U_Lion_Female, 
+    Entities.U_Tiger, 
+    Entities.U_Tiger_White,
+    Entities.U_Cat1, 
+    Entities.U_Cat2, 
+    Entities.U_Cat3, 
+    Entities.U_Cat4,
+    Entities.U_Dog1, 
+    Entities.U_Dog2, 
+    Entities.U_Dog3
+}
+
 -----------------------------------------------------------------------------------------
 -- Overwrites
 -- it must be in a function because the mapeditor uses the overwritten functions too
@@ -78,6 +100,7 @@ function InitLocalOverwrite()
 
         g_MilitaryFeedback.Animals = {}
         g_MilitaryFeedback.Animals[Entities.U_Tiger] 			= "Tiger"
+        g_MilitaryFeedback.Animals[Entities.U_Tiger_White] 		= "Tiger"
         g_MilitaryFeedback.Animals[Entities.U_Lion_Male] 		= "Lion"
         g_MilitaryFeedback.Animals[Entities.U_Lion_Female] 		= "Lion"
         g_MilitaryFeedback.Animals[Entities.U_Bear] 		    = "Bear"
@@ -87,6 +110,13 @@ function InitLocalOverwrite()
         g_MilitaryFeedback.Animals[Entities.U_Wolf_White] 		= "Wolf"
         g_MilitaryFeedback.Animals[Entities.U_Wolf_Black] 		= "Wolf"
         g_MilitaryFeedback.Animals[Entities.U_Wolf_Brown] 		= "Wolf"
+        g_MilitaryFeedback.Animals[Entities.U_Cat1] 		    = "Cat"
+        g_MilitaryFeedback.Animals[Entities.U_Cat2] 		    = "Cat"
+        g_MilitaryFeedback.Animals[Entities.U_Cat3] 		    = "Cat"
+        g_MilitaryFeedback.Animals[Entities.U_Cat4] 		    = "Cat"
+        g_MilitaryFeedback.Animals[Entities.U_Dog1] 		    = "Dog"
+        g_MilitaryFeedback.Animals[Entities.U_Dog2] 		    = "Dog"
+        g_MilitaryFeedback.Animals[Entities.U_Dog3] 		    = "Dog"
     end      
 
     -----------------------------------------------------------------
@@ -207,6 +237,15 @@ function InitLocalOverwrite()
             g_TexturePositions.Entities[Entities.U_Lion_Male]    = {13, 8}
             g_TexturePositions.Entities[Entities.U_Lion_Female]    = {13, 8}
             g_TexturePositions.Entities[Entities.U_Tiger]    = {1, 8, 1}
+            g_TexturePositions.Entities[Entities.U_Tiger_White]    = {1, 8, 1}
+            g_TexturePositions.Entities[Entities.U_Cat1]    = {13, 8}
+            g_TexturePositions.Entities[Entities.U_Cat2]    = {13, 8}
+            g_TexturePositions.Entities[Entities.U_Cat3]    = {13, 8}
+            g_TexturePositions.Entities[Entities.U_Cat4]    = {13, 8}
+            g_TexturePositions.Entities[Entities.U_Dog1]    = {13, 8}
+            g_TexturePositions.Entities[Entities.U_Dog2]    = {13, 8}
+            g_TexturePositions.Entities[Entities.U_Dog3]    = {13, 8}
+            g_TexturePositions.Entities[Entities.A_AS_Tiger_White] = {1, 8, 1}
             g_TexturePositions.Entities[Entities.B_GuardTower_ME]    = {12, 3}
             g_TexturePositions.Entities[Entities.B_GuardTower_NE]    = {12, 3}
             g_TexturePositions.Entities[Entities.B_GuardTower_SE]    = {12, 3}
@@ -294,10 +333,7 @@ function MilitaryFeedback_GetSpeaker(_EntityID)
 		return g_MilitaryFeedback.Thiefs[Entities.U_Thief]
 
 	end		
-    
-    if type == Entities.U_Bear or type == Entities.U_BlackBear or type == Entities.U_PolarBear
-        or type == Entities.U_Wolf_Grey or type == Entities.U_Wolf_White or type == Entities.U_Wolf_Black or type == Entities.U_Wolf_Brown
-        or type == Entities.U_Lion_Male or type == Entities.U_Lion_Female or type == Entities.U_Tiger then
+    if GetIndexOfItem(MilitaryFeedback_AnimalTypes, type) ~= nil then
 	    return "Animals"
     end
 
@@ -371,9 +407,7 @@ function MilitaryFeedback_GetType(_EntityID)
 
 	if type == Entities.U_Thief then
 		return "VoiceThief_speech"
-	elseif type == Entities.U_Bear or type == Entities.U_BlackBear or type == Entities.U_PolarBear
-            or type == Entities.U_Wolf_Grey or type == Entities.U_Wolf_White or type == Entities.U_Wolf_Black or type == Entities.U_Wolf_Brown
-            or type == Entities.U_Lion_Male or type == Entities.U_Lion_Female or type == Entities.U_Tiger then
+	elseif GetIndexOfItem(MilitaryFeedback_AnimalTypes, type) ~= nil then
 		return "VoicesAnimals_" .. g_MilitaryFeedback.Animals[type]
     else
 		return "VoiceMilitary_speech"
@@ -392,9 +426,7 @@ function MilitaryFeedback_GetState(_EntityID, _Key)
     
 	local type = Logic.GetEntityType(_EntityID)
 
-    if type == Entities.U_Bear or type == Entities.U_BlackBear or type == Entities.U_PolarBear
-        or type == Entities.U_Wolf_Grey or type == Entities.U_Wolf_White or type == Entities.U_Wolf_Black or type == Entities.U_Wolf_Brown
-        or type == Entities.U_Lion_Male or type == Entities.U_Lion_Female or type == Entities.U_Tiger then
+    if GetIndexOfItem(MilitaryFeedback_AnimalTypes, type) ~= nil then
         
 	    local variant = 1
 	    if state == "Attack" then
@@ -534,60 +566,6 @@ function EndStatistic_ResourceAddedToPlayerStock(_PlayerID, _GoodType, _Amount)
     end
 
 end
-
-function InitMultiselection()
-    g_MultiSelection = {}
-    g_MultiSelection.EntityList = {}
-    g_MultiSelection.Highlighted = {}
-    --g_MultiSelection.IgnoreCreate = 0
-    
-    LeaderSortOrder = {
-        Entities.U_MilitarySword,
-        Entities.U_MilitarySword_RedPrince,
-        Entities.U_MilitarySword_Khana,
-        Entities.U_MilitarySpear,
-        Entities.U_MilitaryBow,
-        Entities.U_MilitaryBow_RedPrince,
-        Entities.U_MilitaryBow_Khana,
-        Entities.U_MilitaryCavalry,
-        Entities.U_MilitaryBandit_Melee_ME,
-        Entities.U_MilitaryBandit_Melee_NA,
-        Entities.U_MilitaryBandit_Melee_NE,
-        Entities.U_MilitaryBandit_Melee_SE,
-        Entities.U_MilitaryBandit_Melee_AS,
-        Entities.U_MilitaryBandit_Ranged_ME,
-        Entities.U_MilitaryBandit_Ranged_NA,
-        Entities.U_MilitaryBandit_Ranged_NE,
-        Entities.U_MilitaryBandit_Ranged_SE,
-        Entities.U_MilitaryBandit_Ranged_AS,
-        Entities.U_MilitaryCatapult,
-        Entities.U_MilitaryCannon,
-        Entities.U_MilitarySiegeTower,
-        Entities.U_MilitaryBatteringRam,
-        Entities.U_MilitaryTrebuchet,
-        Entities.U_CatapultCart,
-        Entities.U_CannonCart,
-        Entities.U_SiegeTowerCart,
-        Entities.U_BatteringRamCart,
-        Entities.U_TrebuchetCart,
-        Entities.U_Thief,
-        Entities.U_Bear,
-        Entities.U_BlackBear,
-        Entities.U_PolarBear,
-        Entities.U_Lion_Male,
-        Entities.U_Lion_Female,
-        Entities.U_Wolf_Grey,
-        Entities.U_Wolf_White,
-        Entities.U_Wolf_Black,
-        Entities.U_Wolf_Brown,
-        Entities.U_Tiger,
-        Entities.U_Dragon
-    }
-end
-
-
-
-
 
 --------------------------------------------------------------------------
 -- knight.liua 
