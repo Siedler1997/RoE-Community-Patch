@@ -193,7 +193,7 @@
 				<HeightOffsetStart>100.0</HeightOffsetStart>
 				<HeightOffsetTarget>250.0</HeightOffsetTarget>
 				<SoundProjectileType>Catapult</SoundProjectileType>
-				<ImpactEffectID>E_Shockwave03</ImpactEffectID>
+				<ImpactEffectID>FXBombImpact</ImpactEffectID>
 			</Logic>
 			<Display classname="ED::CFlyingEffectProps">
 				<Class>ED::CFlyingEffect</Class>
@@ -209,7 +209,7 @@
 				<GravityFactor>200.0f</GravityFactor>
 				<HeightOffsetStart>100.0</HeightOffsetStart>
 				<HeightOffsetTarget>250.0</HeightOffsetTarget>
-				<ImpactEffectID>FXPalisadeImpact</ImpactEffectID>
+				<ImpactEffectID>FXBombPalisadeImpact</ImpactEffectID>
 				<AlignImpactWithTarget>true</AlignImpactWithTarget>
 				<SoundProjectileType>Catapult</SoundProjectileType>
 			</Logic>
@@ -227,7 +227,7 @@
 				<GravityFactor>200.0f</GravityFactor>
 				<HeightOffsetStart>100.0</HeightOffsetStart>
 				<HeightOffsetTarget>250.0</HeightOffsetTarget>
-				<ImpactEffectID>FXWallImpact</ImpactEffectID>
+				<ImpactEffectID>FXBombWallImpact</ImpactEffectID>
 				<AlignImpactWithTarget>true</AlignImpactWithTarget>
 				<SoundProjectileType>Catapult</SoundProjectileType>
 			</Logic>
