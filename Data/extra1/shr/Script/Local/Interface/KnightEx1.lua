@@ -140,6 +140,9 @@ do
             TechnologiesNotShownForKnightTitle[Technologies.R_Prosperity] = true
             TechnologiesNotShownForKnightTitle[Technologies.R_Military] = true
             TechnologiesNotShownForKnightTitle[Technologies.R_Victory] = true
+            TechnologiesNotShownForKnightTitle[Technologies.R_SpearMaker] = true
+            TechnologiesNotShownForKnightTitle[Technologies.R_SwordSmith] = true
+            TechnologiesNotShownForKnightTitle[Technologies.R_BowMaker] = true
             
             TechnologiesNotShownForKnightTitle[Technologies.R_Beautification_Signpost] = true
             TechnologiesNotShownForKnightTitle[Technologies.R_Beautification_WoodBench] = true

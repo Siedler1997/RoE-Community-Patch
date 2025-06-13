@@ -34,6 +34,8 @@
 		<MaxFloorFireSize>0</MaxFloorFireSize>
 		<!-- replaced by higher prio -->
 		<ReplacementPriority>10</ReplacementPriority>
+
+      <CollapseEffectID>FXWallCollapseFence</CollapseEffectID>
         
         <ApproachPos>
             <X>0</X>

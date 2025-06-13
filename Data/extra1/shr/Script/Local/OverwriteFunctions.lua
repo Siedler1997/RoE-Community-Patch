@@ -231,7 +231,9 @@ function InitLocalOverwrite()
             -- Technologies
             g_TexturePositions.Technologies[Technologies.R_Cistern]                         = {1, 16}
             
-            g_TexturePositions.Technologies[Technologies.R_SpecialEdition2]          = {16, 4}
+            g_TexturePositions.Technologies[Technologies.R_WatchTower]                      = {7, 6}
+            g_TexturePositions.Technologies[Technologies.R_Plaza]                           = {5, 14}
+            g_TexturePositions.Technologies[Technologies.R_SpecialEdition2]                 = {16, 4}
             g_TexturePositions.Technologies[Technologies.R_Beautification_Brazier]          = {4, 1, 1}
             g_TexturePositions.Technologies[Technologies.R_Beautification_Flowerpot_Round]  = {1, 16}
             --g_TexturePositions.Technologies[Technologies.R_Beautification_Flowerpot_Square] = {1, 16}

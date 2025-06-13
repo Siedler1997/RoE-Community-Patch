@@ -188,13 +188,33 @@ Folgende Änderungen wurden vorgenommen:
 				- Luxusgüter unter dem 3. Tab sind nun korrekt angeordnet
 		- Marktplatz: Generische Ritter-Statue bei Khana, Praphat und Kastellanen
 	- "Neue" Gebäude
-		- Wachturm
-			- Kostet 11 Steine
-			- Kann mit einem Turmkatapult ausgerüstet wwerden
 		- Aussichtsturm
-			- Kostet 12 Steine
+			- Kostet 8 Steine
 			- Besitzt eine hohe Sichtweite
+			- Modell ist von Klimazone abhängig
 			- Sieht einfach schick aus :)
+			- Für Mapper: Es gibt auch einen "Wachturm"
+				- Kostet ebenfalls 8 Steine, hat aber weniger Sichtweite
+				- Kann mit einem Turmkatapult ausgerüstet werden
+				- Nicht baubar, aber grundsätzlich funktionsfähig
+		- Plaza
+			- Basiert auf Marktplätzen
+				- Jede Klimazone nutzt das Dorf-Modell der jeweiligen Klimazone 
+				- Ist von einer Straße umgeben
+				- Bietet weder Feste, noch Platz für Karren
+			- Stellt bis zu 50 Wasser zu verfügung
+				- ...aber nicht ab Bau. Der Brunnen muss sich erst füllen!
+				- Kann NICHT von Geologen aufgefüllt werden
+				- Wasser regeneriert sich realtiv schnell von selbst, besonders bei Regen
+		- Kleine Mauer
+			- benötigt Steine zum Bau
+			- Modell ist von Klimazone abhängig
+				- NPC Kloster-Mauern
+				- gilt auch für Asia, wofür es in Vanilla keine eigenen Modelle gab
+			- funktioniert ähnlich wie normale Mauern, aber mit ein paar Einschränkungen
+				- Es gibt weder Tore, noch "Abschlussstücke" für Klippen o.ä.
+				- kann von Soldaten mit Fackeln angegriffen werden, brennt aber nicht
+			- Hat eher ästetischen als praktischen Nutzen
 		- AS-Zelte mit entsprechenden Workern
 		- Gebäude für neue Militäreinheiten
 			- Lanzenmacher

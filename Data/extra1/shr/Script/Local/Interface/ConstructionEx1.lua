@@ -171,11 +171,11 @@ GUI_Construction.TestSettlerLimitExceptions = {
     UpgradeCategories.Beautification_U_KnightKhana,
     UpgradeCategories.Beautification_U_KnightGeneric,
 
-    UpgradeCategories.Beautification_Plaza_MiddleEurope,
-    UpgradeCategories.Beautification_Plaza_NorthEurope,
-    UpgradeCategories.Beautification_Plaza_SouthEurop,
-    UpgradeCategories.Beautification_Plaza_NorthAfrica,
-    UpgradeCategories.Beautification_Plaza_Asia
+    UpgradeCategories.Plaza_MiddleEurope,
+    UpgradeCategories.Plaza_NorthEurope,
+    UpgradeCategories.Plaza_SouthEurop,
+    UpgradeCategories.Plaza_NorthAfrica,
+    UpgradeCategories.Plaza_Asia
 
     --not buildabel (for now)
     --UpgradeCategories.Beautification_Brazier2,
@@ -400,7 +400,7 @@ end
 ------------------------------------------------------------------------------------------------
 
 function GUI_Construction.BuildNPCWallClicked()
-    GUI.AddNote("Text: " .. GUI.GetCurrentStateID())
+    --GUI.AddNote("Text: " .. GUI.GetCurrentStateID())
     GUI_Construction.BuildWallClicked(GetUpgradeCategoryForClimatezone("WallSegment_NPC"))
 end
 
@@ -418,7 +418,7 @@ function GUI_Construction.BuildKnightStatueClicked()
 end
 
 function GUI_Construction.BuildPlazaClicked()
-    local buildingType = GetUpgradeCategoryForClimatezone("Beautification_Plaza")
+    local buildingType = GetUpgradeCategoryForClimatezone("Plaza")
     PlacementState = 0
 
     XGUIEng.UnHighLightGroup("/InGame", "Construction")

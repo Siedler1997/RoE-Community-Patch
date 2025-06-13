@@ -35,7 +35,9 @@
 		<MaxFloorFireSize>0</MaxFloorFireSize>
 		<!-- replaced by higher prio -->
 		<ReplacementPriority>10</ReplacementPriority>
-		
+
+      <CollapseEffectID>FXWallCollapseFence</CollapseEffectID>
+      
         <ApproachPos>
             <X>0</X>
             <Y>25</Y>
@@ -91,7 +93,7 @@
     <MapEditor>
         <TreePosition>buildings\camps</TreePosition>
         <ShowInTree>false</ShowInTree>
-        <Clime>NorthAfrica</Clime>
+        <Clime>Asia</Clime>
         <Scalable>false</Scalable>
         <TemplateResistant>true</TemplateResistant>
     </MapEditor>

@@ -17,7 +17,7 @@
         <ForceNoPlayer>false</ForceNoPlayer>
         <Worker>U_WallConstructionWorker</Worker> <!-- construction only -->
         <MaxWorkers>0</MaxWorkers>                <!-- construction only -->
-        <MaxHealth>800</MaxHealth>
+        <MaxHealth>600</MaxHealth>
         <Exploration>25</Exploration>
 		<SoundImpactType>Stone</SoundImpactType>
         <CanBeKnockedDown>true</CanBeKnockedDown>
@@ -29,7 +29,7 @@
 		<Cost>
 			<GoodAmount>
 				<GoodType>G_Stone</GoodType>
-				<Amount>11</Amount>
+				<Amount>8</Amount>
 			</GoodAmount>
 		</Cost>
 

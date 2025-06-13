@@ -122,6 +122,12 @@
 	<string id="B_BarracksCavalry" MD5Hash="09D2F576D7D11F2C00F4018D9F89EA2E" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Stables]]></string>
 	<string id="U_CannonCart" MD5Hash="ADCF0A54592D97D3853733CDA1E87551" mod="20070801125300" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cannon Cart]]></string>
 	<string id="U_MilitaryCannon" MD5Hash="2A6A9144EAF0CAE75DDED46B10DFDC73" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cannon]]></string>
+  <string id="B_Plaza" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Plaza]]></string>
+  <string id="B_Plaza_ME" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Plaza]]></string>
+  <string id="B_Plaza_NE" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Plaza]]></string>
+  <string id="B_Plaza_SE" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Plaza]]></string>
+  <string id="B_Plaza_NA" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Plaza]]></string>
+  <string id="B_Plaza_AS" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Plaza]]></string>
 
   <string id="B_Beautification_Misc1" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Boxes]]></string>
   <string id="B_Beautification_Misc2" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Barrels]]></string>
@@ -176,12 +182,6 @@
   <string id="B_Beautification_Knight_Praphat" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Knight Statue]]></string>
   <string id="B_Beautification_Knight_Khana" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Knight Statue]]></string>
   <string id="B_Beautification_Knight_Generic" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Knight Statue]]></string>
-  <string id="B_Beautification_Plaza" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Plaza]]></string>
-  <string id="B_Beautification_Plaza_ME" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Plaza]]></string>
-  <string id="B_Beautification_Plaza_NE" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Plaza]]></string>
-  <string id="B_Beautification_Plaza_SE" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Plaza]]></string>
-  <string id="B_Beautification_Plaza_NA" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Plaza]]></string>
-  <string id="B_Beautification_Plaza_AS" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Plaza]]></string>
   <string id="B_Beautification_Brazier1" MD5Hash="C3FC86D902646EB9859FFFD3C5F40ADD" mod="20080212125348" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Brazier]]></string>
   <string id="B_Beautification_Brazier2" MD5Hash="C3FC86D902646EB9859FFFD3C5F40ADD" mod="20080212125348" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Brazier]]></string>
   <string id="B_Beautification_Brazier3" MD5Hash="C3FC86D902646EB9859FFFD3C5F40ADD" mod="20080212125348" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Brazier]]></string>
