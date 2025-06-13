@@ -213,6 +213,16 @@
 	</FX>
 
   <FX>
+    <Name>Impact\impact_bomb</Name>
+    <Category>Impact_big</Category>
+    <Volume>70</Volume>
+    <Group>army_fight_loop_big</Group>
+    <FileName>Sounds\impact\SO_CannonHit_rnd_1.wav</FileName>
+    <FileName>Sounds\impact\SO_CannonHit_rnd_3.wav</FileName>
+
+  </FX>
+  
+  <FX>
     <Name>Impact\impact_ram_stone</Name>
     <Category>Impact_big</Category>
     <Volume>80</Volume>

@@ -103,7 +103,7 @@
 								<Damage>
 									<DiceCount>0</DiceCount>
 									<FaceCount>0</FaceCount>
-									<BaseValue>40</BaseValue>
+									<BaseValue>60</BaseValue>
 								</Damage>
 								<BuildingFireSize>20</BuildingFireSize>
 								<DamageRadiusList>
@@ -155,7 +155,7 @@
 								<Damage>
 									<DiceCount>0</DiceCount>
 									<FaceCount>0</FaceCount>
-									<BaseValue>40</BaseValue>
+									<BaseValue>60</BaseValue>
 								</Damage>
 								<BuildingFireSize>20</BuildingFireSize>
 								<DamageRadiusList>
@@ -207,7 +207,7 @@
 								<Damage>
 									<DiceCount>0</DiceCount>
 									<FaceCount>0</FaceCount>
-									<BaseValue>40</BaseValue>
+									<BaseValue>60</BaseValue>
 								</Damage>
 								<BuildingFireSize>20</BuildingFireSize>
 								<DamageRadiusList>
@@ -240,7 +240,7 @@
 							<EntityCategory>HeavyWeapon</EntityCategory>
 							<EntityCategory>Trebuchet</EntityCategory>
 							<EntityCategory>Military</EntityCategory>
-							<EntityCategory/>
+              <EntityCategory>AttackableSettler</EntityCategory>
 							<EntityCategory/>
 						</EntityCategoryList>
 
@@ -259,7 +259,7 @@
 								<Damage>
 									<DiceCount>0</DiceCount>
 									<FaceCount>0</FaceCount>
-									<BaseValue>40</BaseValue>
+									<BaseValue>60</BaseValue>
 								</Damage>
 								<BuildingFireSize>20</BuildingFireSize>
 								<DamageRadiusList>
