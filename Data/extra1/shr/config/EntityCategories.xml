@@ -10,6 +10,32 @@
     <Id>BeeHive</Id>
     <Id>CattlePasture</Id>
     <Id>SheepPasture</Id>
+
+    <Id>AttackableBuilding</Id>
+    <Id>AttackableSettler</Id>
+    <Id>AttackableMerchant</Id>
+    <Id>AttackableAnimal</Id>
+    <Id>SiegeEngine</Id>
+    <Id>Trebuchet</Id>
+    <Id>CityWallSegment</Id>
+    <Id>CityWallGate</Id>
+    <Id>PalisadeSegment</Id>
+    <Id>Turret</Id>
+	
+	<!-- CP section -->
+	<!-- These must be here so that the game actually checks for them in battle -->
+	<Id>Cavalry</Id>
+	<Id>Dragon</Id>
+	<!--
+	<Id>LightArmor</Id>
+	<Id>HeavyArmor</Id>
+	-->
+	<!-- End section -->
+
+    <Id>HuntableMeat</Id>
+    <Id>GathererBuilding</Id>
+    <Id>FarmerBuilding</Id>
+    <Id>Spouse</Id>    
     
     <Id>G_Grain_Supplier</Id>
     <Id>G_Milk_Supplier</Id>
@@ -33,25 +59,8 @@
     <Id>GC_Weapon_Supplier</Id>
     <Id>GC_Clothes_Supplier</Id>
 
-
-    <Id>HuntableMeat</Id>
-
-    <Id>AttackableBuilding</Id>
-    <Id>AttackableSettler</Id>
-    <Id>AttackableMerchant</Id>
-    <Id>AttackableAnimal</Id>
-    <Id>SiegeEngine</Id>
-    <Id>Trebuchet</Id>
-    <Id>CityWallSegment</Id>
-    <Id>CityWallGate</Id>
-    <Id>PalisadeSegment</Id>
-    <Id>Turret</Id>
-    
-    <Id>GathererBuilding</Id>
-    <Id>FarmerBuilding</Id>
-    <Id>Spouse</Id>
-	
+	<!-- CP section -->
 	<Id>G_Spear_Supplier</Id>
-	<Id>Dragon</Id>
-    
+	<!-- End section -->
+	
 </EntityCategories>

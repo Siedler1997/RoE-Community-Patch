@@ -71,7 +71,7 @@
 				  <Resource>
 					  <GoodAmount>
 						  <GoodType>G_PoorSpear</GoodType>
-						  <Amount>3</Amount>
+						  <Amount>1</Amount>
 					  </GoodAmount>
 					  <ProviderCategory>G_Spear_Supplier</ProviderCategory>
 				  </Resource>
@@ -100,7 +100,7 @@
 			  </RequiredResources>
 		  </Logic>
 		  <Display classname="ED::CDisplayGoodProps">
-			  <Model>Goods\G_SpearSpearMaker01</Model>
+			  <Model>Goods\G_Spear</Model>
 		  </Display>
 	  </Good>
   </Goods>

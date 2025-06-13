@@ -69252,11 +69252,11 @@
              <FullScreenBackground>false</FullScreenBackground>
              <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
              <BackgroundMaterial>
-              <Texture>frames2.png</Texture>
-              <TextureCoordinatesMinU>1664.</TextureCoordinatesMinU>
-              <TextureCoordinatesMinV>352.</TextureCoordinatesMinV>
-              <TextureCoordinatesMxU>1792.</TextureCoordinatesMxU>
-              <TextureCoordinatesMxV>528.</TextureCoordinatesMxV>
+              <Texture>CoA_Big.png</Texture>
+              <TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
+              <TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
+              <TextureCoordinatesMxU>128.</TextureCoordinatesMxU>
+              <TextureCoordinatesMxV>176.</TextureCoordinatesMxV>
               <TextureFixedSizeX>0.</TextureFixedSizeX>
               <TextureFixedSizeY>0.</TextureFixedSizeY>
               <Color>

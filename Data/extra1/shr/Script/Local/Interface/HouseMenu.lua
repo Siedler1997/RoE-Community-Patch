@@ -320,7 +320,11 @@ function HouseMenuStopProductionUpdate()
     or HouseMenu.Widget.CurrentBuilding == "B_Outpost_NE"
     or HouseMenu.Widget.CurrentBuilding == "B_Outpost_SE"
     or HouseMenu.Widget.CurrentBuilding == "B_Outpost_NA"
-    or HouseMenu.Widget.CurrentBuilding == "B_StoreHouse" then
+    or HouseMenu.Widget.CurrentBuilding == "B_StoreHouse"
+    or HouseMenu.Widget.CurrentBuilding == "B_Castle_AS"
+    or HouseMenu.Widget.CurrentBuilding == "B_Outpost_AS"
+    or HouseMenu.Widget.CurrentBuilding == "B_TradePost"
+    or HouseMenu.Widget.CurrentBuilding == "B_Cathedral_Big" then
         XGUIEng.DisableButton(CurrentWidgetID, 1)
         return
     else
@@ -415,7 +419,13 @@ function HouseMenuStopConsumptionUpdate()
     or HouseMenu.Widget.CurrentBuilding == "B_StoreHouse"
     or HouseMenu.Widget.CurrentBuilding == "B_Barracks"
     or HouseMenu.Widget.CurrentBuilding == "B_BarracksArchers"
-    or HouseMenu.Widget.CurrentBuilding == "B_SiegeEngineWorkshop" then
+    or HouseMenu.Widget.CurrentBuilding == "B_SiegeEngineWorkshop"
+    or HouseMenu.Widget.CurrentBuilding == "B_Castle_AS"
+    or HouseMenu.Widget.CurrentBuilding == "B_Outpost_AS"
+    or HouseMenu.Widget.CurrentBuilding == "B_TradePost"
+    or HouseMenu.Widget.CurrentBuilding == "B_Cathedral_Big"
+    or HouseMenu.Widget.CurrentBuilding == "B_BarracksSpearmen" 
+    or HouseMenu.Widget.CurrentBuilding == "B_BarracksCavalry"then
         XGUIEng.DisableButton(CurrentWidgetID, 1)
         return
     else

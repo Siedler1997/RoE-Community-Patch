@@ -22,6 +22,7 @@
         <EntityCategories>
             <EntityCategory>Military</EntityCategory>
             <EntityCategory>Hero</EntityCategory>
+			<EntityCategory>Cavalry</EntityCategory>
             <EntityCategory>GC_Medicine_Supplier</EntityCategory>
         </EntityCategories>
         <AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
@@ -39,6 +40,8 @@
         </Familiar>
         <SoundImpactType>Metal</SoundImpactType>
         <SoundProjectileType>Mace</SoundProjectileType>
+
+		<ShowInMiniMap>0.75</ShowInMiniMap>
     </Logic>
     <Behaviors>
 

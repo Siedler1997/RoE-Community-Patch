@@ -7,4 +7,5 @@
 	<string id="AbilityTorchKhana" MD5Hash="" mod="20070801135457" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[No Soldiers without Torches nearby]]></string>
 	<string id="AbilityTributePraphat" MD5Hash="F99B2471F14214AF2BF3FCE0B0DA2F93" mod="20071205122902" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[No foreign Storehouse or Castle nearby.]]></string>
 	<string id="InteractiveObjectGeologist" MD5Hash="CE924F7FD4BD87A01F76258CF6E6A3A3" mod="20070829104330" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Can't be used in this mission yet.]]></string>
+	<string id="EntityLimitReached" MD5Hash="3A4DDE7FEB9B80366265083A4005D5F6" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[The limit for that unit has been reached!]]></string>
 </root>

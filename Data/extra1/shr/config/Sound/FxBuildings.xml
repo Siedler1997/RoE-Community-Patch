@@ -447,4 +447,15 @@
     <FileName>Sounds\building\building_start_sermon.wav</FileName>
   </FX>
 
+	<!-- CP -->
+
+	<FX>
+		<Name>Buildings\arm_cannon_shoot</Name>
+		<Category>Impact_big</Category>
+		<Volume>40</Volume>
+		<FileName>Sounds\vehicle\arm_cannon_shoot1.wav</FileName>
+		<FileName>Sounds\vehicle\arm_cannon_shoot2.wav</FileName>
+		<FileName>Sounds\vehicle\arm_cannon_shoot3.wav</FileName>
+	</FX>
+
 </FXDEFINITIONS>

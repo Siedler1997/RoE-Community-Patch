@@ -81,8 +81,28 @@ function InitGlobalOverwrite()
             MerchantSystem.RefreshRates[Goods.G_Gems]  = 150
             MerchantSystem.RefreshRates[Goods.G_Olibanum]  = 150
             MerchantSystem.RefreshRates[Goods.G_MusicalInstrument]  = 150
-
             
+            -- CP
+            MerchantSystem.BasePrices[Goods.G_PoorSpear]      = 60
+            
+            MerchantSystem.BasePrices[Entities.U_MilitarySword] = 120
+            MerchantSystem.BasePrices[Entities.U_MilitaryBow]  = 120
+            MerchantSystem.BasePrices[Entities.U_MilitarySword_RedPrince] = 120
+            MerchantSystem.BasePrices[Entities.U_MilitaryBow_RedPrince]  = 120
+            MerchantSystem.BasePrices[Entities.U_MilitarySword_Khana] = 120
+            MerchantSystem.BasePrices[Entities.U_MilitaryBow_Khana]  = 120
+
+            MerchantSystem.RefreshRates[Goods.G_PoorSpear]    = 150     
+            
+            MerchantSystem.RefreshRates[Entities.U_MilitarySword] = 150
+            MerchantSystem.RefreshRates[Entities.U_MilitaryBow] = 150
+            MerchantSystem.RefreshRates[Entities.U_MilitarySword_RedPrince] = 150
+            MerchantSystem.RefreshRates[Entities.U_MilitaryBow_RedPrince] = 150
+            MerchantSystem.RefreshRates[Entities.U_MilitarySword_Khana] = 150
+            MerchantSystem.RefreshRates[Entities.U_MilitaryBow_Khana] = 150
+
+
+
             g_BuffForGood[Goods.G_Gems] = Buffs.Buff_Gems
             g_BuffForGood[Goods.G_Olibanum] = Buffs.Buff_Olibanum
             g_BuffForGood[Goods.G_MusicalInstrument] = Buffs.Buff_MusicalInstrument

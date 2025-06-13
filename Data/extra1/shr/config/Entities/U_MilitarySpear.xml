@@ -13,9 +13,9 @@
 		<PlayerSectorType>PlayerSectorTypeMilitary</PlayerSectorType>
 		<MilMetaFormationMemberType>MilMetaFormationMemberTypeMelee</MilMetaFormationMemberType>
 		<CostsCanBeModified>true</CostsCanBeModified>
-		<MaxHealth>150</MaxHealth>
+		<MaxHealth>90</MaxHealth>
 		<HealingSeconds>10</HealingSeconds>
-		<HealingPoints>25</HealingPoints>
+		<HealingPoints>15</HealingPoints>
 
 		<NeedsPlayer>true</NeedsPlayer>
 		<ForceNoPlayer>false</ForceNoPlayer>
@@ -75,7 +75,7 @@
 				<Class>EGL::CMilitarySoldierMovementBehavior</Class>
 				<StraightenPath>true</StraightenPath>
 				<EvasionPriority>140</EvasionPriority>
-				<Speed>450</Speed>
+				<Speed>420</Speed>
 				<RotationSpeed>500</RotationSpeed>
 				<MoveTaskList>TL_MILITARY_WALK</MoveTaskList>
 				<MoveIdleAnim>Military\U_MilitaryPoleArm_Idle1</MoveIdleAnim>
@@ -119,7 +119,7 @@
 					<TargetCategory>
 						<!-- don't remove  the empty tags, otherwise the data isn't shown correctly in the XML balancer! -->
 						<EntityCategoryList>
-							<EntityCategory>Hero</EntityCategory>
+							<EntityCategory>Cavalry</EntityCategory>
 							<EntityCategory/>
 							<EntityCategory/>
 							<EntityCategory/>
@@ -134,14 +134,14 @@
 								<ApplyDamageModifiers>true</ApplyDamageModifiers>
 
 								<MinRange>0</MinRange>
-								<MaxRange>200</MaxRange>
+								<MaxRange>250</MaxRange>
 								<MaxHeightDeltaToTarget>100</MaxHeightDeltaToTarget>
 								<CanAttackOverWalls>false</CanAttackOverWalls>
-								<CooldownThousandths>3000</CooldownThousandths>
+								<CooldownThousandths>2500</CooldownThousandths>
 								<Damage>
 									<DiceCount>0</DiceCount>
 									<FaceCount>0</FaceCount>
-									<BaseValue>30</BaseValue>
+									<BaseValue>45</BaseValue>
 								</Damage>
 							</AttackMode>
 
@@ -187,10 +187,10 @@
 								<ApplyDamageModifiers>true</ApplyDamageModifiers>
 
 								<MinRange>0</MinRange>
-								<MaxRange>200</MaxRange>
+								<MaxRange>250</MaxRange>
 								<MaxHeightDeltaToTarget>100</MaxHeightDeltaToTarget>
 								<CanAttackOverWalls>false</CanAttackOverWalls>
-								<CooldownThousandths>3000</CooldownThousandths>
+								<CooldownThousandths>2500</CooldownThousandths>
 								<Damage>
 									<DiceCount>0</DiceCount>
 									<FaceCount>0</FaceCount>
@@ -246,7 +246,7 @@
 								<ProjectileEffect>FXTorch</ProjectileEffect>
 								<MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
 								<CanAttackOverWalls>false</CanAttackOverWalls>
-								<CooldownThousandths>3000</CooldownThousandths>
+								<CooldownThousandths>2500</CooldownThousandths>
 								<Damage>
 									<DiceCount>0</DiceCount>
 									<FaceCount>0</FaceCount>
@@ -278,10 +278,10 @@
 								<ApplyDamageModifiers>true</ApplyDamageModifiers>
 
 								<MinRange>0</MinRange>
-								<MaxRange>200</MaxRange>
+								<MaxRange>250</MaxRange>
 								<MaxHeightDeltaToTarget>100</MaxHeightDeltaToTarget>
 								<CanAttackOverWalls>false</CanAttackOverWalls>
-								<CooldownThousandths>3000</CooldownThousandths>
+								<CooldownThousandths>2500</CooldownThousandths>
 								<Damage>
 									<DiceCount>0</DiceCount>
 									<FaceCount>0</FaceCount>
@@ -310,10 +310,10 @@
 								<ApplyDamageModifiers>true</ApplyDamageModifiers>
 
 								<MinRange>0</MinRange>
-								<MaxRange>200</MaxRange>
+								<MaxRange>250</MaxRange>
 								<MaxHeightDeltaToTarget>100</MaxHeightDeltaToTarget>
 								<CanAttackOverWalls>false</CanAttackOverWalls>
-								<CooldownThousandths>3000</CooldownThousandths>
+								<CooldownThousandths>2500</CooldownThousandths>
 								<Damage>
 									<DiceCount>0</DiceCount>
 									<FaceCount>0</FaceCount>

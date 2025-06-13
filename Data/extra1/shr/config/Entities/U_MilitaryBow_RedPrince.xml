@@ -12,9 +12,9 @@
         <AccessCategory>AccessCategorySoldier</AccessCategory>
         <PlayerSectorType>PlayerSectorTypeMilitary</PlayerSectorType>
         <MilMetaFormationMemberType>MilMetaFormationMemberTypeRanged</MilMetaFormationMemberType>
-        <MaxHealth>85</MaxHealth>
+        <MaxHealth>90</MaxHealth>
         <HealingSeconds>10</HealingSeconds>
-        <HealingPoints>14</HealingPoints>
+        <HealingPoints>15</HealingPoints>
 
         <CostsCanBeModified>true</CostsCanBeModified>
         <NeedsPlayer>true</NeedsPlayer>
@@ -75,7 +75,7 @@
                 <Class>EGL::CMilitarySoldierMovementBehavior</Class>
                 <StraightenPath>true</StraightenPath>
                 <EvasionPriority>140</EvasionPriority>
-                <Speed>490</Speed>
+                <Speed>480</Speed>
                 <RotationSpeed>500</RotationSpeed>
                 <MoveTaskList>TL_MILITARY_WALK</MoveTaskList>
                 <MoveIdleAnim>Military\U_MilitaryBow_Stand</MoveIdleAnim>

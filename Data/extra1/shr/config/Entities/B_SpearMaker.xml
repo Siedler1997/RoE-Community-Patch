@@ -125,7 +125,7 @@
 		<Cost>
 			<GoodAmount>
 				<GoodType>G_Wood</GoodType>
-				<Amount>4</Amount>
+				<Amount>8</Amount>
 			</GoodAmount>
 		</Cost>
 
@@ -133,13 +133,13 @@
 			<UpgradeCost>
 				<GoodAmount>
 					<GoodType>G_Wood</GoodType>
-					<Amount>6</Amount>
+					<Amount>10</Amount>
 				</GoodAmount>
 			</UpgradeCost>
 			<UpgradeCost>
 				<GoodAmount>
 					<GoodType>G_Wood</GoodType>
-					<Amount>8</Amount>
+					<Amount>12</Amount>
 				</GoodAmount>
 			</UpgradeCost>
 		</UpgradeCosts>

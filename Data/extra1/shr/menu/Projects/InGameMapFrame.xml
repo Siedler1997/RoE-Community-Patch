@@ -580,7 +580,7 @@
                     <LuaCommand></LuaCommand>
                    </OnBlur>
                    <UpdateFunction>
-                    <LuaCommand>g_CoatOfArm.UpdatePattern(true)</LuaCommand>
+                    <LuaCommand>g_CoatOfArm.UpdatePatternByPlayerColor(true)</LuaCommand>
                    </UpdateFunction>
                    <UpdateFunctionTurnBased>
                     <LuaCommand></LuaCommand>
@@ -608,7 +608,7 @@
                    <FullScreenBackground>false</FullScreenBackground>
                    <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
                    <BackgroundMaterial>
-                    <Texture>frames2.png</Texture>
+                    <Texture>CoA_Small.png</Texture>
                     <TextureCoordinatesMinU>1280.</TextureCoordinatesMinU>
                     <TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
                     <TextureCoordinatesMxU>1408.</TextureCoordinatesMxU>

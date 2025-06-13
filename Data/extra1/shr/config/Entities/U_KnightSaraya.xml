@@ -22,7 +22,8 @@
 
         <EntityCategories>
             <EntityCategory>Military</EntityCategory>
-            <EntityCategory>Hero</EntityCategory>            
+            <EntityCategory>Hero</EntityCategory>
+			<EntityCategory>Cavalry</EntityCategory>       
         </EntityCategories>
         <AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
         <RepairFactor>0.3</RepairFactor>
@@ -39,6 +40,8 @@
         </Familiar>
         <SoundImpactType>Leather</SoundImpactType>
         <SoundProjectileType>Sword</SoundProjectileType>
+
+		<ShowInMiniMap>0.75</ShowInMiniMap>
     </Logic>
     <Behaviors>
 

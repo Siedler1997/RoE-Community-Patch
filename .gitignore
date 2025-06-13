@@ -9,4 +9,5 @@
 /obj/x86/Debug/DesignTimeResolveAssemblyReferences.cache
 /obj/x86/Debug/ConsoleApplication.pdb
 /obj/x86/Debug/ConsoleApplication.dll
-/.vs/RoE-Campaign-Hotfix/v17/.suo
+/.vs
+RoE-Campaign-Hotfix/.vs

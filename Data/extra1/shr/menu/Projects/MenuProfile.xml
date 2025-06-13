@@ -7718,10 +7718,10 @@
              <FullScreenBackground>false</FullScreenBackground>
              <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
              <BackgroundMaterial>
-              <Texture>frames2.png</Texture>
-              <TextureCoordinatesMinU>1280.</TextureCoordinatesMinU>
+              <Texture>CoA_Big.png</Texture>
+              <TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
               <TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
-              <TextureCoordinatesMxU>1408.</TextureCoordinatesMxU>
+              <TextureCoordinatesMxU>128.</TextureCoordinatesMxU>
               <TextureCoordinatesMxV>176.</TextureCoordinatesMxV>
               <TextureFixedSizeX>0.</TextureFixedSizeX>
               <TextureFixedSizeY>0.</TextureFixedSizeY>
@@ -12365,9 +12365,9 @@
        <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
        <TabIndex>0</TabIndex>
        <Rectangle>
-        <X>0.</X>
+        <X>-75.</X>
         <Y>0.</Y>
-        <W>1420.</W>
+        <W>1520.</W>
         <H>1200.</H>
         <KeepAspectRatio>false</KeepAspectRatio>
         <CirclePointTest>false</CirclePointTest>
@@ -12440,7 +12440,7 @@
           <TabIndex>0</TabIndex>
           <Rectangle>
            <X>-401.</X>
-           <Y>405.</Y>
+           <Y>355.</Y>
            <W>240.</W>
            <H>53.</H>
            <KeepAspectRatio>true</KeepAspectRatio>
@@ -13799,8 +13799,8 @@
           <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
           <TabIndex>0</TabIndex>
           <Rectangle>
-           <X>-32.</X>
-           <Y>516.</Y>
+           <X>150.</X>
+           <Y>300.</Y>
            <W>569.</W>
            <H>294.</H>
            <KeepAspectRatio>true</KeepAspectRatio>
@@ -13873,9 +13873,9 @@
              <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
              <TabIndex>0</TabIndex>
              <Rectangle>
-              <X>58.</X>
-              <Y>218.</Y>
-              <W>321.</W>
+              <X>48.</X>
+              <Y>228.</Y>
+              <W>347.</W>
               <H>46.</H>
               <KeepAspectRatio>true</KeepAspectRatio>
               <CirclePointTest>false</CirclePointTest>
@@ -13954,7 +13954,7 @@
              </BackgroundMaterial>
              <Default>0.</Default>
              <MinValue>0.</MinValue>
-             <MaxValue>9.</MaxValue>
+             <MaxValue>15.</MaxValue>
              <Steps>1.</Steps>
              <ShowButtons>true</ShowButtons>
              <VerticalSlider>false</VerticalSlider>
@@ -14387,10 +14387,10 @@
                 <FullScreenBackground>false</FullScreenBackground>
                 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
                 <BackgroundMaterial>
-                 <Texture>frames2.png</Texture>
-                 <TextureCoordinatesMinU>1280.</TextureCoordinatesMinU>
+                 <Texture>CoA_Big.png</Texture>
+                 <TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
                  <TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
-                 <TextureCoordinatesMxU>1408.</TextureCoordinatesMxU>
+                 <TextureCoordinatesMxU>128.</TextureCoordinatesMxU>
                  <TextureCoordinatesMxV>176.</TextureCoordinatesMxV>
                  <TextureFixedSizeX>0.</TextureFixedSizeX>
                  <TextureFixedSizeY>0.</TextureFixedSizeY>
@@ -14586,7 +14586,7 @@
           <TabIndex>0</TabIndex>
           <Rectangle>
            <X>151.</X>
-           <Y>113.</Y>
+           <Y>63.</Y>
            <W>98.</W>
            <H>35.</H>
            <KeepAspectRatio>true</KeepAspectRatio>
@@ -14675,8 +14675,8 @@
           <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
           <TabIndex>0</TabIndex>
           <Rectangle>
-           <X>-85.</X>
-           <Y>390.</Y>
+           <X>240.</X>
+           <Y>235.</Y>
            <W>585.</W>
            <H>100.</H>
            <KeepAspectRatio>true</KeepAspectRatio>
@@ -14749,8 +14749,8 @@
              <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
              <TabIndex>0</TabIndex>
              <Rectangle>
-              <X>43.</X>
-              <Y>13.</Y>
+              <X>0.</X>
+              <Y>0.</Y>
               <W>269.</W>
               <H>75.</H>
               <KeepAspectRatio>true</KeepAspectRatio>
@@ -15123,8 +15123,8 @@
              <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
              <TabIndex>0</TabIndex>
              <Rectangle>
-              <X>303.</X>
-              <Y>13.</Y>
+              <X>200.</X>
+              <Y>0.</Y>
               <W>259.</W>
               <H>75.</H>
               <KeepAspectRatio>true</KeepAspectRatio>
@@ -15500,8 +15500,8 @@
           <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
           <TabIndex>0</TabIndex>
           <Rectangle>
-           <X>-290.</X>
-           <Y>291.</Y>
+           <X>-30.</X>
+           <Y>200.</Y>
            <W>331.</W>
            <H>47.</H>
            <KeepAspectRatio>true</KeepAspectRatio>
@@ -15610,7 +15610,1657 @@
            <LuaCommand></LuaCommand>
           </OnReturn>
          </Widget>
-         <Widget classname="EGUIX::CContainerWidget">
+			<Widget classname="EGUIX::CContainerWidget">
+				<IsShown>true</IsShown>
+				<UpdateManualFlag>false</UpdateManualFlag>
+				<EventHandling>true</EventHandling>
+				<ZPriority>100.</ZPriority>
+				<ForceToHandleMouseEventsFlag>false</ForceToHandleMouseEventsFlag>
+				<ForceToHandleKeyboardEventsFlag>false</ForceToHandleKeyboardEventsFlag>
+				<PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
+				<TabIndex>0</TabIndex>
+				<Rectangle>
+					<X>-50.</X>
+					<Y>400.</Y>
+					<W>585.</W>
+					<H>100.</H>
+					<KeepAspectRatio>true</KeepAspectRatio>
+					<CirclePointTest>false</CirclePointTest>
+					<FixedTextureSetSize>false</FixedTextureSetSize>
+					<AlignmentX>2</AlignmentX>
+					<AlignmentY>0</AlignmentY>
+					<AnchorX>2</AnchorX>
+					<AnchorY>0</AnchorY>
+				</Rectangle>
+				<OnPushToStack>
+					<LuaCommand></LuaCommand>
+				</OnPushToStack>
+				<OnMouseOver>
+					<LuaCommand></LuaCommand>
+				</OnMouseOver>
+				<OnMouseOut>
+					<LuaCommand></LuaCommand>
+				</OnMouseOut>
+				<OnRightClick>
+					<LuaCommand></LuaCommand>
+				</OnRightClick>
+				<OnLeftClick>
+					<LuaCommand></LuaCommand>
+				</OnLeftClick>
+				<OnKeyPress>
+					<LuaCommand></LuaCommand>
+				</OnKeyPress>
+				<OnFocus>
+					<LuaCommand></LuaCommand>
+				</OnFocus>
+				<OnBlur>
+					<LuaCommand></LuaCommand>
+				</OnBlur>
+				<UpdateFunction>
+					<LuaCommand></LuaCommand>
+				</UpdateFunction>
+				<UpdateFunctionTurnBased>
+					<LuaCommand></LuaCommand>
+				</UpdateFunctionTurnBased>
+				<UpdateFunctionSecondBased>
+					<LuaCommand></LuaCommand>
+				</UpdateFunctionSecondBased>
+				<ToolTipHelper>
+					<ToolTipEnabledFlag>true</ToolTipEnabledFlag>
+					<ControlTargetVisibility>true</ControlTargetVisibility>
+					<ToolTipUpdateFunction>
+						<LuaCommand></LuaCommand>
+					</ToolTipUpdateFunction>
+					<RawString></RawString>
+					<StringTableKey></StringTableKey>
+					<TargetWidget01></TargetWidget01>
+					<TargetWidget02></TargetWidget02>
+					<TargetWidget03></TargetWidget03>
+					<TargetWidget04></TargetWidget04>
+					<TargetWidget05></TargetWidget05>
+				</ToolTipHelper>
+				<Group></Group>
+				<MotherID>/InGame/Profile/NewProfile</MotherID>
+				<Name>CoARadios</Name>
+				<SubWidgets>
+					<WidgetList>
+						<Widget classname="EGUIX::CContainerWidget">
+							<IsShown>true</IsShown>
+							<UpdateManualFlag>false</UpdateManualFlag>
+							<EventHandling>true</EventHandling>
+							<ZPriority>100.</ZPriority>
+							<ForceToHandleMouseEventsFlag>false</ForceToHandleMouseEventsFlag>
+							<ForceToHandleKeyboardEventsFlag>false</ForceToHandleKeyboardEventsFlag>
+							<PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
+							<TabIndex>0</TabIndex>
+							<Rectangle>
+								<X>0.</X>
+								<Y>0.</Y>
+								<W>150.</W>
+								<H>75.</H>
+								<KeepAspectRatio>true</KeepAspectRatio>
+								<CirclePointTest>false</CirclePointTest>
+								<FixedTextureSetSize>false</FixedTextureSetSize>
+								<AlignmentX>0</AlignmentX>
+								<AlignmentY>0</AlignmentY>
+								<AnchorX>0</AnchorX>
+								<AnchorY>0</AnchorY>
+							</Rectangle>
+							<OnPushToStack>
+								<LuaCommand></LuaCommand>
+							</OnPushToStack>
+							<OnMouseOver>
+								<LuaCommand></LuaCommand>
+							</OnMouseOver>
+							<OnMouseOut>
+								<LuaCommand></LuaCommand>
+							</OnMouseOut>
+							<OnRightClick>
+								<LuaCommand></LuaCommand>
+							</OnRightClick>
+							<OnLeftClick>
+								<LuaCommand></LuaCommand>
+							</OnLeftClick>
+							<OnKeyPress>
+								<LuaCommand></LuaCommand>
+							</OnKeyPress>
+							<OnFocus>
+								<LuaCommand></LuaCommand>
+							</OnFocus>
+							<OnBlur>
+								<LuaCommand></LuaCommand>
+							</OnBlur>
+							<UpdateFunction>
+								<LuaCommand></LuaCommand>
+							</UpdateFunction>
+							<UpdateFunctionTurnBased>
+								<LuaCommand></LuaCommand>
+							</UpdateFunctionTurnBased>
+							<UpdateFunctionSecondBased>
+								<LuaCommand></LuaCommand>
+							</UpdateFunctionSecondBased>
+							<ToolTipHelper>
+								<ToolTipEnabledFlag>true</ToolTipEnabledFlag>
+								<ControlTargetVisibility>true</ControlTargetVisibility>
+								<ToolTipUpdateFunction>
+									<LuaCommand></LuaCommand>
+								</ToolTipUpdateFunction>
+								<RawString></RawString>
+								<StringTableKey></StringTableKey>
+								<TargetWidget01></TargetWidget01>
+								<TargetWidget02></TargetWidget02>
+								<TargetWidget03></TargetWidget03>
+								<TargetWidget04></TargetWidget04>
+								<TargetWidget05></TargetWidget05>
+							</ToolTipHelper>
+							<Group></Group>
+							<MotherID>/InGame/Profile/NewProfile/CoARadios</MotherID>
+							<Name>Bright</Name>
+							<SubWidgets>
+								<WidgetList>
+									<Widget classname="EGUIX::CStaticTextWidget">
+										<IsShown>true</IsShown>
+										<UpdateManualFlag>false</UpdateManualFlag>
+										<EventHandling>true</EventHandling>
+										<ZPriority>100.</ZPriority>
+										<ForceToHandleMouseEventsFlag>false</ForceToHandleMouseEventsFlag>
+										<ForceToHandleKeyboardEventsFlag>false</ForceToHandleKeyboardEventsFlag>
+										<PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
+										<TabIndex>2</TabIndex>
+										<Rectangle>
+											<X>50.</X>
+											<Y>25.</Y>
+											<W>219.</W>
+											<H>30.</H>
+											<KeepAspectRatio>true</KeepAspectRatio>
+											<CirclePointTest>false</CirclePointTest>
+											<FixedTextureSetSize>false</FixedTextureSetSize>
+											<AlignmentX>0</AlignmentX>
+											<AlignmentY>0</AlignmentY>
+											<AnchorX>0</AnchorX>
+											<AnchorY>0</AnchorY>
+										</Rectangle>
+										<OnPushToStack>
+											<LuaCommand></LuaCommand>
+										</OnPushToStack>
+										<OnMouseOver>
+											<LuaCommand></LuaCommand>
+										</OnMouseOver>
+										<OnMouseOut>
+											<LuaCommand></LuaCommand>
+										</OnMouseOut>
+										<OnRightClick>
+											<LuaCommand></LuaCommand>
+										</OnRightClick>
+										<OnLeftClick>
+											<LuaCommand></LuaCommand>
+										</OnLeftClick>
+										<OnKeyPress>
+											<LuaCommand></LuaCommand>
+										</OnKeyPress>
+										<OnFocus>
+											<LuaCommand></LuaCommand>
+										</OnFocus>
+										<OnBlur>
+											<LuaCommand></LuaCommand>
+										</OnBlur>
+										<UpdateFunction>
+											<LuaCommand></LuaCommand>
+										</UpdateFunction>
+										<UpdateFunctionTurnBased>
+											<LuaCommand></LuaCommand>
+										</UpdateFunctionTurnBased>
+										<UpdateFunctionSecondBased>
+											<LuaCommand></LuaCommand>
+										</UpdateFunctionSecondBased>
+										<ToolTipHelper>
+											<ToolTipEnabledFlag>true</ToolTipEnabledFlag>
+											<ControlTargetVisibility>true</ControlTargetVisibility>
+											<ToolTipUpdateFunction>
+												<LuaCommand></LuaCommand>
+											</ToolTipUpdateFunction>
+											<RawString></RawString>
+											<StringTableKey></StringTableKey>
+											<TargetWidget01></TargetWidget01>
+											<TargetWidget02></TargetWidget02>
+											<TargetWidget03></TargetWidget03>
+											<TargetWidget04></TargetWidget04>
+											<TargetWidget05></TargetWidget05>
+										</ToolTipHelper>
+										<Group></Group>
+										<MotherID>/InGame/Profile/NewProfile/CoARadios/Bright</MotherID>
+										<Name>BrightText</Name>
+										<FullScreenBackground>false</FullScreenBackground>
+										<AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
+										<BackgroundMaterial>
+											<Texture></Texture>
+											<TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
+											<TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
+											<TextureCoordinatesMxU>1.</TextureCoordinatesMxU>
+											<TextureCoordinatesMxV>1.</TextureCoordinatesMxV>
+											<TextureFixedSizeX>0.</TextureFixedSizeX>
+											<TextureFixedSizeY>0.</TextureFixedSizeY>
+											<Color>
+												<Red>255</Red>
+												<Green>255</Green>
+												<Blue>255</Blue>
+												<Alpha>0</Alpha>
+											</Color>
+										</BackgroundMaterial>
+										<LineDistanceFactor>0.</LineDistanceFactor>
+										<LinkedSlider></LinkedSlider>
+										<StringFrameDistance>0.</StringFrameDistance>
+										<RawString>Please choose your gender :</RawString>
+										<StringTableKey>UI_Texts/MainMenuCoABright</StringTableKey>
+										<ClipTextAtWidgetBounds>false</ClipTextAtWidgetBounds>
+										<ForceMultiLine>true</ForceMultiLine>
+										<AllowScriptCommands>true</AllowScriptCommands>
+										<FontColor>
+											<Red>51</Red>
+											<Green>51</Green>
+											<Blue>120</Blue>
+											<Alpha>255</Alpha>
+										</FontColor>
+										<FontName>menu\fonts\humanistika12.xml</FontName>
+									</Widget>
+									<Widget classname="EGUIX::CCheckBoxWidget">
+										<IsShown>true</IsShown>
+										<UpdateManualFlag>false</UpdateManualFlag>
+										<EventHandling>true</EventHandling>
+										<ZPriority>100.</ZPriority>
+										<ForceToHandleMouseEventsFlag>true</ForceToHandleMouseEventsFlag>
+										<ForceToHandleKeyboardEventsFlag>false</ForceToHandleKeyboardEventsFlag>
+										<PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
+										<TabIndex>1</TabIndex>
+										<Rectangle>
+											<X>0.</X>
+											<Y>19.</Y>
+											<W>40.</W>
+											<H>40.</H>
+											<KeepAspectRatio>true</KeepAspectRatio>
+											<CirclePointTest>false</CirclePointTest>
+											<FixedTextureSetSize>false</FixedTextureSetSize>
+											<AlignmentX>0</AlignmentX>
+											<AlignmentY>0</AlignmentY>
+											<AnchorX>0</AnchorX>
+											<AnchorY>0</AnchorY>
+										</Rectangle>
+										<OnPushToStack>
+											<LuaCommand></LuaCommand>
+										</OnPushToStack>
+										<OnMouseOver>
+											<LuaCommand></LuaCommand>
+										</OnMouseOver>
+										<OnMouseOut>
+											<LuaCommand></LuaCommand>
+										</OnMouseOut>
+										<OnRightClick>
+											<LuaCommand></LuaCommand>
+										</OnRightClick>
+										<OnLeftClick>
+											<LuaCommand></LuaCommand>
+										</OnLeftClick>
+										<OnKeyPress>
+											<LuaCommand></LuaCommand>
+										</OnKeyPress>
+										<OnFocus>
+											<LuaCommand></LuaCommand>
+										</OnFocus>
+										<OnBlur>
+											<LuaCommand></LuaCommand>
+										</OnBlur>
+										<UpdateFunction>
+											<LuaCommand></LuaCommand>
+										</UpdateFunction>
+										<UpdateFunctionTurnBased>
+											<LuaCommand></LuaCommand>
+										</UpdateFunctionTurnBased>
+										<UpdateFunctionSecondBased>
+											<LuaCommand></LuaCommand>
+										</UpdateFunctionSecondBased>
+										<ToolTipHelper>
+											<ToolTipEnabledFlag>true</ToolTipEnabledFlag>
+											<ControlTargetVisibility>true</ControlTargetVisibility>
+											<ToolTipUpdateFunction>
+												<LuaCommand></LuaCommand>
+											</ToolTipUpdateFunction>
+											<RawString></RawString>
+											<StringTableKey></StringTableKey>
+											<TargetWidget01></TargetWidget01>
+											<TargetWidget02></TargetWidget02>
+											<TargetWidget03></TargetWidget03>
+											<TargetWidget04></TargetWidget04>
+											<TargetWidget05></TargetWidget05>
+										</ToolTipHelper>
+										<Group>ProfileCoAColorScheme</Group>
+										<MotherID>/InGame/Profile/NewProfile/CoARadios/Bright</MotherID>
+										<Name>BrightCheckBox</Name>
+										<FullScreenBackground>false</FullScreenBackground>
+										<AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
+										<BackgroundMaterial>
+											<Texture>Buttons.png</Texture>
+											<TextureCoordinatesMinU>448.</TextureCoordinatesMinU>
+											<TextureCoordinatesMinV>704.</TextureCoordinatesMinV>
+											<TextureCoordinatesMxU>488.</TextureCoordinatesMxU>
+											<TextureCoordinatesMxV>744.</TextureCoordinatesMxV>
+											<TextureFixedSizeX>0.</TextureFixedSizeX>
+											<TextureFixedSizeY>0.</TextureFixedSizeY>
+											<Color>
+												<Red>255</Red>
+												<Green>255</Green>
+												<Blue>255</Blue>
+												<Alpha>255</Alpha>
+											</Color>
+										</BackgroundMaterial>
+										<ActionFunction>
+											<LuaCommand>g_MainMenuProfile:OnCoAColorSchemeSelectionChange(0)</LuaCommand>
+										</ActionFunction>
+										<GenerateMaterialsFromNormal>false</GenerateMaterialsFromNormal>
+										<ShortCutKey></ShortCutKey>
+										<ShortCutKeyStringTableKey></ShortCutKeyStringTableKey>
+										<AllowRightMouseButton>false</AllowRightMouseButton>
+										<AllowDoubleClick>false</AllowDoubleClick>
+										<Disabled>false</Disabled>
+										<Highlighted>false</Highlighted>
+										<MaterialBaseNormal classname="EGUIX::CMaterial">
+											<Texture></Texture>
+											<TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
+											<TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
+											<TextureCoordinatesMxU>1.</TextureCoordinatesMxU>
+											<TextureCoordinatesMxV>1.</TextureCoordinatesMxV>
+											<TextureFixedSizeX>0.</TextureFixedSizeX>
+											<TextureFixedSizeY>0.</TextureFixedSizeY>
+											<Color>
+												<Red>255</Red>
+												<Green>255</Green>
+												<Blue>255</Blue>
+												<Alpha>0</Alpha>
+											</Color>
+										</MaterialBaseNormal>
+										<MaterialDisabled classname="EGUIX::CMaterial">
+											<Texture></Texture>
+											<TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
+											<TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
+											<TextureCoordinatesMxU>1.</TextureCoordinatesMxU>
+											<TextureCoordinatesMxV>1.</TextureCoordinatesMxV>
+											<TextureFixedSizeX>0.</TextureFixedSizeX>
+											<TextureFixedSizeY>0.</TextureFixedSizeY>
+											<Color>
+												<Red>255</Red>
+												<Green>255</Green>
+												<Blue>255</Blue>
+												<Alpha>0</Alpha>
+											</Color>
+										</MaterialDisabled>
+										<MaterialHighlight classname="EGUIX::CMaterial">
+											<Texture></Texture>
+											<TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
+											<TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
+											<TextureCoordinatesMxU>1.</TextureCoordinatesMxU>
+											<TextureCoordinatesMxV>1.</TextureCoordinatesMxV>
+											<TextureFixedSizeX>0.</TextureFixedSizeX>
+											<TextureFixedSizeY>0.</TextureFixedSizeY>
+											<Color>
+												<Red>255</Red>
+												<Green>255</Green>
+												<Blue>255</Blue>
+												<Alpha>0</Alpha>
+											</Color>
+										</MaterialHighlight>
+										<MaterialMouseOver classname="EGUIX::CMaterial">
+											<Texture>Buttons.png</Texture>
+											<TextureCoordinatesMinU>448.</TextureCoordinatesMinU>
+											<TextureCoordinatesMinV>768.</TextureCoordinatesMinV>
+											<TextureCoordinatesMxU>488.</TextureCoordinatesMxU>
+											<TextureCoordinatesMxV>808.</TextureCoordinatesMxV>
+											<TextureFixedSizeX>0.</TextureFixedSizeX>
+											<TextureFixedSizeY>0.</TextureFixedSizeY>
+											<Color>
+												<Red>255</Red>
+												<Green>255</Green>
+												<Blue>255</Blue>
+												<Alpha>255</Alpha>
+											</Color>
+										</MaterialMouseOver>
+										<MaterialPressed classname="EGUIX::CMaterial">
+											<Texture></Texture>
+											<TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
+											<TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
+											<TextureCoordinatesMxU>1.</TextureCoordinatesMxU>
+											<TextureCoordinatesMxV>1.</TextureCoordinatesMxV>
+											<TextureFixedSizeX>0.</TextureFixedSizeX>
+											<TextureFixedSizeY>0.</TextureFixedSizeY>
+											<Color>
+												<Red>255</Red>
+												<Green>255</Green>
+												<Blue>255</Blue>
+												<Alpha>0</Alpha>
+											</Color>
+										</MaterialPressed>
+										<Checked>true</Checked>
+										<HandleState>true</HandleState>
+										<CheckedOverlay>
+											<Texture>iconsbig.png</Texture>
+											<TextureCoordinatesMinU>640.</TextureCoordinatesMinU>
+											<TextureCoordinatesMinV>576.</TextureCoordinatesMinV>
+											<TextureCoordinatesMxU>680.</TextureCoordinatesMxU>
+											<TextureCoordinatesMxV>616.</TextureCoordinatesMxV>
+											<TextureFixedSizeX>0.</TextureFixedSizeX>
+											<TextureFixedSizeY>0.</TextureFixedSizeY>
+											<Color>
+												<Red>255</Red>
+												<Green>255</Green>
+												<Blue>255</Blue>
+												<Alpha>255</Alpha>
+											</Color>
+										</CheckedOverlay>
+									</Widget>
+								</WidgetList>
+							</SubWidgets>
+						</Widget>
+						<Widget classname="EGUIX::CContainerWidget">
+							<IsShown>true</IsShown>
+							<UpdateManualFlag>false</UpdateManualFlag>
+							<EventHandling>true</EventHandling>
+							<ZPriority>100.</ZPriority>
+							<ForceToHandleMouseEventsFlag>false</ForceToHandleMouseEventsFlag>
+							<ForceToHandleKeyboardEventsFlag>false</ForceToHandleKeyboardEventsFlag>
+							<PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
+							<TabIndex>0</TabIndex>
+							<Rectangle>
+								<X>150.</X>
+								<Y>0.</Y>
+								<W>150.</W>
+								<H>75.</H>
+								<KeepAspectRatio>true</KeepAspectRatio>
+								<CirclePointTest>false</CirclePointTest>
+								<FixedTextureSetSize>false</FixedTextureSetSize>
+								<AlignmentX>0</AlignmentX>
+								<AlignmentY>0</AlignmentY>
+								<AnchorX>0</AnchorX>
+								<AnchorY>0</AnchorY>
+							</Rectangle>
+							<OnPushToStack>
+								<LuaCommand></LuaCommand>
+							</OnPushToStack>
+							<OnMouseOver>
+								<LuaCommand></LuaCommand>
+							</OnMouseOver>
+							<OnMouseOut>
+								<LuaCommand></LuaCommand>
+							</OnMouseOut>
+							<OnRightClick>
+								<LuaCommand></LuaCommand>
+							</OnRightClick>
+							<OnLeftClick>
+								<LuaCommand></LuaCommand>
+							</OnLeftClick>
+							<OnKeyPress>
+								<LuaCommand></LuaCommand>
+							</OnKeyPress>
+							<OnFocus>
+								<LuaCommand></LuaCommand>
+							</OnFocus>
+							<OnBlur>
+								<LuaCommand></LuaCommand>
+							</OnBlur>
+							<UpdateFunction>
+								<LuaCommand></LuaCommand>
+							</UpdateFunction>
+							<UpdateFunctionTurnBased>
+								<LuaCommand></LuaCommand>
+							</UpdateFunctionTurnBased>
+							<UpdateFunctionSecondBased>
+								<LuaCommand></LuaCommand>
+							</UpdateFunctionSecondBased>
+							<ToolTipHelper>
+								<ToolTipEnabledFlag>true</ToolTipEnabledFlag>
+								<ControlTargetVisibility>true</ControlTargetVisibility>
+								<ToolTipUpdateFunction>
+									<LuaCommand></LuaCommand>
+								</ToolTipUpdateFunction>
+								<RawString></RawString>
+								<StringTableKey></StringTableKey>
+								<TargetWidget01></TargetWidget01>
+								<TargetWidget02></TargetWidget02>
+								<TargetWidget03></TargetWidget03>
+								<TargetWidget04></TargetWidget04>
+								<TargetWidget05></TargetWidget05>
+							</ToolTipHelper>
+							<Group></Group>
+							<MotherID>/InGame/Profile/NewProfile/CoARadios</MotherID>
+							<Name>Dark</Name>
+							<SubWidgets>
+								<WidgetList>
+									<Widget classname="EGUIX::CStaticTextWidget">
+										<IsShown>true</IsShown>
+										<UpdateManualFlag>false</UpdateManualFlag>
+										<EventHandling>true</EventHandling>
+										<ZPriority>100.</ZPriority>
+										<ForceToHandleMouseEventsFlag>false</ForceToHandleMouseEventsFlag>
+										<ForceToHandleKeyboardEventsFlag>false</ForceToHandleKeyboardEventsFlag>
+										<PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
+										<TabIndex>1</TabIndex>
+										<Rectangle>
+											<X>50.</X>
+											<Y>25.</Y>
+											<W>209.</W>
+											<H>30.</H>
+											<KeepAspectRatio>true</KeepAspectRatio>
+											<CirclePointTest>false</CirclePointTest>
+											<FixedTextureSetSize>false</FixedTextureSetSize>
+											<AlignmentX>0</AlignmentX>
+											<AlignmentY>0</AlignmentY>
+											<AnchorX>0</AnchorX>
+											<AnchorY>0</AnchorY>
+										</Rectangle>
+										<OnPushToStack>
+											<LuaCommand></LuaCommand>
+										</OnPushToStack>
+										<OnMouseOver>
+											<LuaCommand></LuaCommand>
+										</OnMouseOver>
+										<OnMouseOut>
+											<LuaCommand></LuaCommand>
+										</OnMouseOut>
+										<OnRightClick>
+											<LuaCommand></LuaCommand>
+										</OnRightClick>
+										<OnLeftClick>
+											<LuaCommand></LuaCommand>
+										</OnLeftClick>
+										<OnKeyPress>
+											<LuaCommand></LuaCommand>
+										</OnKeyPress>
+										<OnFocus>
+											<LuaCommand></LuaCommand>
+										</OnFocus>
+										<OnBlur>
+											<LuaCommand></LuaCommand>
+										</OnBlur>
+										<UpdateFunction>
+											<LuaCommand></LuaCommand>
+										</UpdateFunction>
+										<UpdateFunctionTurnBased>
+											<LuaCommand></LuaCommand>
+										</UpdateFunctionTurnBased>
+										<UpdateFunctionSecondBased>
+											<LuaCommand></LuaCommand>
+										</UpdateFunctionSecondBased>
+										<ToolTipHelper>
+											<ToolTipEnabledFlag>true</ToolTipEnabledFlag>
+											<ControlTargetVisibility>true</ControlTargetVisibility>
+											<ToolTipUpdateFunction>
+												<LuaCommand></LuaCommand>
+											</ToolTipUpdateFunction>
+											<RawString></RawString>
+											<StringTableKey></StringTableKey>
+											<TargetWidget01></TargetWidget01>
+											<TargetWidget02></TargetWidget02>
+											<TargetWidget03></TargetWidget03>
+											<TargetWidget04></TargetWidget04>
+											<TargetWidget05></TargetWidget05>
+										</ToolTipHelper>
+										<Group></Group>
+										<MotherID>/InGame/Profile/NewProfile/CoARadios/Dark</MotherID>
+										<Name>DarkText</Name>
+										<FullScreenBackground>false</FullScreenBackground>
+										<AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
+										<BackgroundMaterial>
+											<Texture></Texture>
+											<TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
+											<TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
+											<TextureCoordinatesMxU>1.</TextureCoordinatesMxU>
+											<TextureCoordinatesMxV>1.</TextureCoordinatesMxV>
+											<TextureFixedSizeX>0.</TextureFixedSizeX>
+											<TextureFixedSizeY>0.</TextureFixedSizeY>
+											<Color>
+												<Red>255</Red>
+												<Green>255</Green>
+												<Blue>255</Blue>
+												<Alpha>0</Alpha>
+											</Color>
+										</BackgroundMaterial>
+										<LineDistanceFactor>0.</LineDistanceFactor>
+										<LinkedSlider></LinkedSlider>
+										<StringFrameDistance>0.</StringFrameDistance>
+										<RawString>Please choose your gender :</RawString>
+										<StringTableKey>UI_Texts/MainMenuCoADark</StringTableKey>
+										<ClipTextAtWidgetBounds>false</ClipTextAtWidgetBounds>
+										<ForceMultiLine>true</ForceMultiLine>
+										<AllowScriptCommands>true</AllowScriptCommands>
+										<FontColor>
+											<Red>51</Red>
+											<Green>51</Green>
+											<Blue>120</Blue>
+											<Alpha>255</Alpha>
+										</FontColor>
+										<FontName>menu\fonts\humanistika12.xml</FontName>
+									</Widget>
+									<Widget classname="EGUIX::CCheckBoxWidget">
+										<IsShown>true</IsShown>
+										<UpdateManualFlag>false</UpdateManualFlag>
+										<EventHandling>true</EventHandling>
+										<ZPriority>100.</ZPriority>
+										<ForceToHandleMouseEventsFlag>true</ForceToHandleMouseEventsFlag>
+										<ForceToHandleKeyboardEventsFlag>false</ForceToHandleKeyboardEventsFlag>
+										<PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
+										<TabIndex>0</TabIndex>
+										<Rectangle>
+											<X>0.</X>
+											<Y>19.</Y>
+											<W>40.</W>
+											<H>40.</H>
+											<KeepAspectRatio>true</KeepAspectRatio>
+											<CirclePointTest>false</CirclePointTest>
+											<FixedTextureSetSize>false</FixedTextureSetSize>
+											<AlignmentX>0</AlignmentX>
+											<AlignmentY>0</AlignmentY>
+											<AnchorX>0</AnchorX>
+											<AnchorY>0</AnchorY>
+										</Rectangle>
+										<OnPushToStack>
+											<LuaCommand></LuaCommand>
+										</OnPushToStack>
+										<OnMouseOver>
+											<LuaCommand></LuaCommand>
+										</OnMouseOver>
+										<OnMouseOut>
+											<LuaCommand></LuaCommand>
+										</OnMouseOut>
+										<OnRightClick>
+											<LuaCommand></LuaCommand>
+										</OnRightClick>
+										<OnLeftClick>
+											<LuaCommand></LuaCommand>
+										</OnLeftClick>
+										<OnKeyPress>
+											<LuaCommand></LuaCommand>
+										</OnKeyPress>
+										<OnFocus>
+											<LuaCommand></LuaCommand>
+										</OnFocus>
+										<OnBlur>
+											<LuaCommand></LuaCommand>
+										</OnBlur>
+										<UpdateFunction>
+											<LuaCommand></LuaCommand>
+										</UpdateFunction>
+										<UpdateFunctionTurnBased>
+											<LuaCommand></LuaCommand>
+										</UpdateFunctionTurnBased>
+										<UpdateFunctionSecondBased>
+											<LuaCommand></LuaCommand>
+										</UpdateFunctionSecondBased>
+										<ToolTipHelper>
+											<ToolTipEnabledFlag>true</ToolTipEnabledFlag>
+											<ControlTargetVisibility>true</ControlTargetVisibility>
+											<ToolTipUpdateFunction>
+												<LuaCommand></LuaCommand>
+											</ToolTipUpdateFunction>
+											<RawString></RawString>
+											<StringTableKey></StringTableKey>
+											<TargetWidget01></TargetWidget01>
+											<TargetWidget02></TargetWidget02>
+											<TargetWidget03></TargetWidget03>
+											<TargetWidget04></TargetWidget04>
+											<TargetWidget05></TargetWidget05>
+										</ToolTipHelper>
+										<Group>ProfileCoAColorScheme</Group>
+										<MotherID>/InGame/Profile/NewProfile/CoARadios/Dark</MotherID>
+										<Name>DarkCheckBox</Name>
+										<FullScreenBackground>false</FullScreenBackground>
+										<AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
+										<BackgroundMaterial>
+											<Texture>Buttons.png</Texture>
+											<TextureCoordinatesMinU>448.</TextureCoordinatesMinU>
+											<TextureCoordinatesMinV>704.</TextureCoordinatesMinV>
+											<TextureCoordinatesMxU>488.</TextureCoordinatesMxU>
+											<TextureCoordinatesMxV>744.</TextureCoordinatesMxV>
+											<TextureFixedSizeX>0.</TextureFixedSizeX>
+											<TextureFixedSizeY>0.</TextureFixedSizeY>
+											<Color>
+												<Red>255</Red>
+												<Green>255</Green>
+												<Blue>255</Blue>
+												<Alpha>255</Alpha>
+											</Color>
+										</BackgroundMaterial>
+										<ActionFunction>
+											<LuaCommand>g_MainMenuProfile:OnCoAColorSchemeSelectionChange(1)</LuaCommand>
+										</ActionFunction>
+										<GenerateMaterialsFromNormal>false</GenerateMaterialsFromNormal>
+										<ShortCutKey></ShortCutKey>
+										<ShortCutKeyStringTableKey></ShortCutKeyStringTableKey>
+										<AllowRightMouseButton>false</AllowRightMouseButton>
+										<AllowDoubleClick>false</AllowDoubleClick>
+										<Disabled>false</Disabled>
+										<Highlighted>false</Highlighted>
+										<MaterialBaseNormal classname="EGUIX::CMaterial">
+											<Texture></Texture>
+											<TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
+											<TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
+											<TextureCoordinatesMxU>1.</TextureCoordinatesMxU>
+											<TextureCoordinatesMxV>1.</TextureCoordinatesMxV>
+											<TextureFixedSizeX>0.</TextureFixedSizeX>
+											<TextureFixedSizeY>0.</TextureFixedSizeY>
+											<Color>
+												<Red>255</Red>
+												<Green>255</Green>
+												<Blue>255</Blue>
+												<Alpha>0</Alpha>
+											</Color>
+										</MaterialBaseNormal>
+										<MaterialDisabled classname="EGUIX::CMaterial">
+											<Texture></Texture>
+											<TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
+											<TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
+											<TextureCoordinatesMxU>1.</TextureCoordinatesMxU>
+											<TextureCoordinatesMxV>1.</TextureCoordinatesMxV>
+											<TextureFixedSizeX>0.</TextureFixedSizeX>
+											<TextureFixedSizeY>0.</TextureFixedSizeY>
+											<Color>
+												<Red>255</Red>
+												<Green>255</Green>
+												<Blue>255</Blue>
+												<Alpha>0</Alpha>
+											</Color>
+										</MaterialDisabled>
+										<MaterialHighlight classname="EGUIX::CMaterial">
+											<Texture></Texture>
+											<TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
+											<TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
+											<TextureCoordinatesMxU>1.</TextureCoordinatesMxU>
+											<TextureCoordinatesMxV>1.</TextureCoordinatesMxV>
+											<TextureFixedSizeX>0.</TextureFixedSizeX>
+											<TextureFixedSizeY>0.</TextureFixedSizeY>
+											<Color>
+												<Red>255</Red>
+												<Green>255</Green>
+												<Blue>255</Blue>
+												<Alpha>0</Alpha>
+											</Color>
+										</MaterialHighlight>
+										<MaterialMouseOver classname="EGUIX::CMaterial">
+											<Texture>Buttons.png</Texture>
+											<TextureCoordinatesMinU>448.</TextureCoordinatesMinU>
+											<TextureCoordinatesMinV>768.</TextureCoordinatesMinV>
+											<TextureCoordinatesMxU>488.</TextureCoordinatesMxU>
+											<TextureCoordinatesMxV>808.</TextureCoordinatesMxV>
+											<TextureFixedSizeX>0.</TextureFixedSizeX>
+											<TextureFixedSizeY>0.</TextureFixedSizeY>
+											<Color>
+												<Red>255</Red>
+												<Green>255</Green>
+												<Blue>255</Blue>
+												<Alpha>255</Alpha>
+											</Color>
+										</MaterialMouseOver>
+										<MaterialPressed classname="EGUIX::CMaterial">
+											<Texture></Texture>
+											<TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
+											<TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
+											<TextureCoordinatesMxU>1.</TextureCoordinatesMxU>
+											<TextureCoordinatesMxV>1.</TextureCoordinatesMxV>
+											<TextureFixedSizeX>0.</TextureFixedSizeX>
+											<TextureFixedSizeY>0.</TextureFixedSizeY>
+											<Color>
+												<Red>255</Red>
+												<Green>255</Green>
+												<Blue>255</Blue>
+												<Alpha>0</Alpha>
+											</Color>
+										</MaterialPressed>
+										<Checked>false</Checked>
+										<HandleState>true</HandleState>
+										<CheckedOverlay>
+											<Texture>iconsbig.png</Texture>
+											<TextureCoordinatesMinU>640.</TextureCoordinatesMinU>
+											<TextureCoordinatesMinV>576.</TextureCoordinatesMinV>
+											<TextureCoordinatesMxU>680.</TextureCoordinatesMxU>
+											<TextureCoordinatesMxV>616.</TextureCoordinatesMxV>
+											<TextureFixedSizeX>0.</TextureFixedSizeX>
+											<TextureFixedSizeY>0.</TextureFixedSizeY>
+											<Color>
+												<Red>255</Red>
+												<Green>255</Green>
+												<Blue>255</Blue>
+												<Alpha>255</Alpha>
+											</Color>
+										</CheckedOverlay>
+									</Widget>
+								</WidgetList>
+							</SubWidgets>
+						</Widget>
+					</WidgetList>
+				</SubWidgets>
+			</Widget>
+			<Widget classname="EGUIX::CContainerWidget">
+				<IsShown>true</IsShown>
+				<UpdateManualFlag>false</UpdateManualFlag>
+				<EventHandling>true</EventHandling>
+				<ZPriority>100.</ZPriority>
+				<ForceToHandleMouseEventsFlag>false</ForceToHandleMouseEventsFlag>
+				<ForceToHandleKeyboardEventsFlag>false</ForceToHandleKeyboardEventsFlag>
+				<PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
+				<TabIndex>0</TabIndex>
+				<Rectangle>
+					<X>240.</X>
+					<Y>560.</Y>
+					<W>585.</W>
+					<H>100.</H>
+					<KeepAspectRatio>true</KeepAspectRatio>
+					<CirclePointTest>false</CirclePointTest>
+					<FixedTextureSetSize>false</FixedTextureSetSize>
+					<AlignmentX>2</AlignmentX>
+					<AlignmentY>0</AlignmentY>
+					<AnchorX>2</AnchorX>
+					<AnchorY>0</AnchorY>
+				</Rectangle>
+				<OnPushToStack>
+					<LuaCommand></LuaCommand>
+				</OnPushToStack>
+				<OnMouseOver>
+					<LuaCommand></LuaCommand>
+				</OnMouseOver>
+				<OnMouseOut>
+					<LuaCommand></LuaCommand>
+				</OnMouseOut>
+				<OnRightClick>
+					<LuaCommand></LuaCommand>
+				</OnRightClick>
+				<OnLeftClick>
+					<LuaCommand></LuaCommand>
+				</OnLeftClick>
+				<OnKeyPress>
+					<LuaCommand></LuaCommand>
+				</OnKeyPress>
+				<OnFocus>
+					<LuaCommand></LuaCommand>
+				</OnFocus>
+				<OnBlur>
+					<LuaCommand></LuaCommand>
+				</OnBlur>
+				<UpdateFunction>
+					<LuaCommand></LuaCommand>
+				</UpdateFunction>
+				<UpdateFunctionTurnBased>
+					<LuaCommand></LuaCommand>
+				</UpdateFunctionTurnBased>
+				<UpdateFunctionSecondBased>
+					<LuaCommand></LuaCommand>
+				</UpdateFunctionSecondBased>
+				<ToolTipHelper>
+					<ToolTipEnabledFlag>true</ToolTipEnabledFlag>
+					<ControlTargetVisibility>true</ControlTargetVisibility>
+					<ToolTipUpdateFunction>
+						<LuaCommand></LuaCommand>
+					</ToolTipUpdateFunction>
+					<RawString></RawString>
+					<StringTableKey></StringTableKey>
+					<TargetWidget01></TargetWidget01>
+					<TargetWidget02></TargetWidget02>
+					<TargetWidget03></TargetWidget03>
+					<TargetWidget04></TargetWidget04>
+					<TargetWidget05></TargetWidget05>
+				</ToolTipHelper>
+				<Group></Group>
+				<MotherID>/InGame/Profile/NewProfile</MotherID>
+				<Name>PreferredColorRadios</Name>
+				<SubWidgets>
+					<WidgetList>
+						<Widget classname="EGUIX::CContainerWidget">
+							<IsShown>true</IsShown>
+							<UpdateManualFlag>false</UpdateManualFlag>
+							<EventHandling>true</EventHandling>
+							<ZPriority>100.</ZPriority>
+							<ForceToHandleMouseEventsFlag>false</ForceToHandleMouseEventsFlag>
+							<ForceToHandleKeyboardEventsFlag>false</ForceToHandleKeyboardEventsFlag>
+							<PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
+							<TabIndex>0</TabIndex>
+							<Rectangle>
+								<X>0.</X>
+								<Y>0.</Y>
+								<W>269.</W>
+								<H>75.</H>
+								<KeepAspectRatio>true</KeepAspectRatio>
+								<CirclePointTest>false</CirclePointTest>
+								<FixedTextureSetSize>false</FixedTextureSetSize>
+								<AlignmentX>0</AlignmentX>
+								<AlignmentY>0</AlignmentY>
+								<AnchorX>0</AnchorX>
+								<AnchorY>0</AnchorY>
+							</Rectangle>
+							<OnPushToStack>
+								<LuaCommand></LuaCommand>
+							</OnPushToStack>
+							<OnMouseOver>
+								<LuaCommand></LuaCommand>
+							</OnMouseOver>
+							<OnMouseOut>
+								<LuaCommand></LuaCommand>
+							</OnMouseOut>
+							<OnRightClick>
+								<LuaCommand></LuaCommand>
+							</OnRightClick>
+							<OnLeftClick>
+								<LuaCommand></LuaCommand>
+							</OnLeftClick>
+							<OnKeyPress>
+								<LuaCommand></LuaCommand>
+							</OnKeyPress>
+							<OnFocus>
+								<LuaCommand></LuaCommand>
+							</OnFocus>
+							<OnBlur>
+								<LuaCommand></LuaCommand>
+							</OnBlur>
+							<UpdateFunction>
+								<LuaCommand></LuaCommand>
+							</UpdateFunction>
+							<UpdateFunctionTurnBased>
+								<LuaCommand></LuaCommand>
+							</UpdateFunctionTurnBased>
+							<UpdateFunctionSecondBased>
+								<LuaCommand></LuaCommand>
+							</UpdateFunctionSecondBased>
+							<ToolTipHelper>
+								<ToolTipEnabledFlag>true</ToolTipEnabledFlag>
+								<ControlTargetVisibility>true</ControlTargetVisibility>
+								<ToolTipUpdateFunction>
+									<LuaCommand></LuaCommand>
+								</ToolTipUpdateFunction>
+								<RawString></RawString>
+								<StringTableKey></StringTableKey>
+								<TargetWidget01></TargetWidget01>
+								<TargetWidget02></TargetWidget02>
+								<TargetWidget03></TargetWidget03>
+								<TargetWidget04></TargetWidget04>
+								<TargetWidget05></TargetWidget05>
+							</ToolTipHelper>
+							<Group></Group>
+							<MotherID>/InGame/Profile/NewProfile/PreferredColorRadios</MotherID>
+							<Name>Blue</Name>
+							<SubWidgets>
+								<WidgetList>
+									<Widget classname="EGUIX::CStaticTextWidget">
+										<IsShown>true</IsShown>
+										<UpdateManualFlag>false</UpdateManualFlag>
+										<EventHandling>true</EventHandling>
+										<ZPriority>100.</ZPriority>
+										<ForceToHandleMouseEventsFlag>false</ForceToHandleMouseEventsFlag>
+										<ForceToHandleKeyboardEventsFlag>false</ForceToHandleKeyboardEventsFlag>
+										<PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
+										<TabIndex>2</TabIndex>
+										<Rectangle>
+											<X>50.</X>
+											<Y>25.</Y>
+											<W>219.</W>
+											<H>30.</H>
+											<KeepAspectRatio>true</KeepAspectRatio>
+											<CirclePointTest>false</CirclePointTest>
+											<FixedTextureSetSize>false</FixedTextureSetSize>
+											<AlignmentX>0</AlignmentX>
+											<AlignmentY>0</AlignmentY>
+											<AnchorX>0</AnchorX>
+											<AnchorY>0</AnchorY>
+										</Rectangle>
+										<OnPushToStack>
+											<LuaCommand></LuaCommand>
+										</OnPushToStack>
+										<OnMouseOver>
+											<LuaCommand></LuaCommand>
+										</OnMouseOver>
+										<OnMouseOut>
+											<LuaCommand></LuaCommand>
+										</OnMouseOut>
+										<OnRightClick>
+											<LuaCommand></LuaCommand>
+										</OnRightClick>
+										<OnLeftClick>
+											<LuaCommand></LuaCommand>
+										</OnLeftClick>
+										<OnKeyPress>
+											<LuaCommand></LuaCommand>
+										</OnKeyPress>
+										<OnFocus>
+											<LuaCommand></LuaCommand>
+										</OnFocus>
+										<OnBlur>
+											<LuaCommand></LuaCommand>
+										</OnBlur>
+										<UpdateFunction>
+											<LuaCommand></LuaCommand>
+										</UpdateFunction>
+										<UpdateFunctionTurnBased>
+											<LuaCommand></LuaCommand>
+										</UpdateFunctionTurnBased>
+										<UpdateFunctionSecondBased>
+											<LuaCommand></LuaCommand>
+										</UpdateFunctionSecondBased>
+										<ToolTipHelper>
+											<ToolTipEnabledFlag>true</ToolTipEnabledFlag>
+											<ControlTargetVisibility>true</ControlTargetVisibility>
+											<ToolTipUpdateFunction>
+												<LuaCommand></LuaCommand>
+											</ToolTipUpdateFunction>
+											<RawString></RawString>
+											<StringTableKey></StringTableKey>
+											<TargetWidget01></TargetWidget01>
+											<TargetWidget02></TargetWidget02>
+											<TargetWidget03></TargetWidget03>
+											<TargetWidget04></TargetWidget04>
+											<TargetWidget05></TargetWidget05>
+										</ToolTipHelper>
+										<Group></Group>
+										<MotherID>/InGame/Profile/NewProfile/PreferredColorRadios/Blue</MotherID>
+										<Name>BlueText</Name>
+										<FullScreenBackground>false</FullScreenBackground>
+										<AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
+										<BackgroundMaterial>
+											<Texture></Texture>
+											<TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
+											<TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
+											<TextureCoordinatesMxU>1.</TextureCoordinatesMxU>
+											<TextureCoordinatesMxV>1.</TextureCoordinatesMxV>
+											<TextureFixedSizeX>0.</TextureFixedSizeX>
+											<TextureFixedSizeY>0.</TextureFixedSizeY>
+											<Color>
+												<Red>255</Red>
+												<Green>255</Green>
+												<Blue>255</Blue>
+												<Alpha>0</Alpha>
+											</Color>
+										</BackgroundMaterial>
+										<LineDistanceFactor>0.</LineDistanceFactor>
+										<LinkedSlider></LinkedSlider>
+										<StringFrameDistance>0.</StringFrameDistance>
+										<RawString>Please choose your gender :</RawString>
+										<StringTableKey>UI_Texts/MainMenuColorBlue</StringTableKey>
+										<ClipTextAtWidgetBounds>false</ClipTextAtWidgetBounds>
+										<ForceMultiLine>true</ForceMultiLine>
+										<AllowScriptCommands>true</AllowScriptCommands>
+										<FontColor>
+											<Red>51</Red>
+											<Green>51</Green>
+											<Blue>120</Blue>
+											<Alpha>255</Alpha>
+										</FontColor>
+										<FontName>menu\fonts\humanistika12.xml</FontName>
+									</Widget>
+									<Widget classname="EGUIX::CCheckBoxWidget">
+										<IsShown>true</IsShown>
+										<UpdateManualFlag>false</UpdateManualFlag>
+										<EventHandling>true</EventHandling>
+										<ZPriority>100.</ZPriority>
+										<ForceToHandleMouseEventsFlag>true</ForceToHandleMouseEventsFlag>
+										<ForceToHandleKeyboardEventsFlag>false</ForceToHandleKeyboardEventsFlag>
+										<PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
+										<TabIndex>1</TabIndex>
+										<Rectangle>
+											<X>0.</X>
+											<Y>19.</Y>
+											<W>40.</W>
+											<H>40.</H>
+											<KeepAspectRatio>true</KeepAspectRatio>
+											<CirclePointTest>false</CirclePointTest>
+											<FixedTextureSetSize>false</FixedTextureSetSize>
+											<AlignmentX>0</AlignmentX>
+											<AlignmentY>0</AlignmentY>
+											<AnchorX>0</AnchorX>
+											<AnchorY>0</AnchorY>
+										</Rectangle>
+										<OnPushToStack>
+											<LuaCommand></LuaCommand>
+										</OnPushToStack>
+										<OnMouseOver>
+											<LuaCommand></LuaCommand>
+										</OnMouseOver>
+										<OnMouseOut>
+											<LuaCommand></LuaCommand>
+										</OnMouseOut>
+										<OnRightClick>
+											<LuaCommand></LuaCommand>
+										</OnRightClick>
+										<OnLeftClick>
+											<LuaCommand></LuaCommand>
+										</OnLeftClick>
+										<OnKeyPress>
+											<LuaCommand></LuaCommand>
+										</OnKeyPress>
+										<OnFocus>
+											<LuaCommand></LuaCommand>
+										</OnFocus>
+										<OnBlur>
+											<LuaCommand></LuaCommand>
+										</OnBlur>
+										<UpdateFunction>
+											<LuaCommand></LuaCommand>
+										</UpdateFunction>
+										<UpdateFunctionTurnBased>
+											<LuaCommand></LuaCommand>
+										</UpdateFunctionTurnBased>
+										<UpdateFunctionSecondBased>
+											<LuaCommand></LuaCommand>
+										</UpdateFunctionSecondBased>
+										<ToolTipHelper>
+											<ToolTipEnabledFlag>true</ToolTipEnabledFlag>
+											<ControlTargetVisibility>true</ControlTargetVisibility>
+											<ToolTipUpdateFunction>
+												<LuaCommand></LuaCommand>
+											</ToolTipUpdateFunction>
+											<RawString></RawString>
+											<StringTableKey></StringTableKey>
+											<TargetWidget01></TargetWidget01>
+											<TargetWidget02></TargetWidget02>
+											<TargetWidget03></TargetWidget03>
+											<TargetWidget04></TargetWidget04>
+											<TargetWidget05></TargetWidget05>
+										</ToolTipHelper>
+										<Group>ProfilePreferredColor</Group>
+										<MotherID>/InGame/Profile/NewProfile/PreferredColorRadios/Blue</MotherID>
+										<Name>BlueCheckBox</Name>
+										<FullScreenBackground>false</FullScreenBackground>
+										<AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
+										<BackgroundMaterial>
+											<Texture>Buttons.png</Texture>
+											<TextureCoordinatesMinU>448.</TextureCoordinatesMinU>
+											<TextureCoordinatesMinV>704.</TextureCoordinatesMinV>
+											<TextureCoordinatesMxU>488.</TextureCoordinatesMxU>
+											<TextureCoordinatesMxV>744.</TextureCoordinatesMxV>
+											<TextureFixedSizeX>0.</TextureFixedSizeX>
+											<TextureFixedSizeY>0.</TextureFixedSizeY>
+											<Color>
+												<Red>255</Red>
+												<Green>255</Green>
+												<Blue>255</Blue>
+												<Alpha>255</Alpha>
+											</Color>
+										</BackgroundMaterial>
+										<ActionFunction>
+											<LuaCommand>g_MainMenuProfile:OnPreferredColorSelectionChange(1)</LuaCommand>
+										</ActionFunction>
+										<GenerateMaterialsFromNormal>false</GenerateMaterialsFromNormal>
+										<ShortCutKey></ShortCutKey>
+										<ShortCutKeyStringTableKey></ShortCutKeyStringTableKey>
+										<AllowRightMouseButton>false</AllowRightMouseButton>
+										<AllowDoubleClick>false</AllowDoubleClick>
+										<Disabled>false</Disabled>
+										<Highlighted>false</Highlighted>
+										<MaterialBaseNormal classname="EGUIX::CMaterial">
+											<Texture></Texture>
+											<TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
+											<TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
+											<TextureCoordinatesMxU>1.</TextureCoordinatesMxU>
+											<TextureCoordinatesMxV>1.</TextureCoordinatesMxV>
+											<TextureFixedSizeX>0.</TextureFixedSizeX>
+											<TextureFixedSizeY>0.</TextureFixedSizeY>
+											<Color>
+												<Red>255</Red>
+												<Green>255</Green>
+												<Blue>255</Blue>
+												<Alpha>0</Alpha>
+											</Color>
+										</MaterialBaseNormal>
+										<MaterialDisabled classname="EGUIX::CMaterial">
+											<Texture></Texture>
+											<TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
+											<TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
+											<TextureCoordinatesMxU>1.</TextureCoordinatesMxU>
+											<TextureCoordinatesMxV>1.</TextureCoordinatesMxV>
+											<TextureFixedSizeX>0.</TextureFixedSizeX>
+											<TextureFixedSizeY>0.</TextureFixedSizeY>
+											<Color>
+												<Red>255</Red>
+												<Green>255</Green>
+												<Blue>255</Blue>
+												<Alpha>0</Alpha>
+											</Color>
+										</MaterialDisabled>
+										<MaterialHighlight classname="EGUIX::CMaterial">
+											<Texture></Texture>
+											<TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
+											<TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
+											<TextureCoordinatesMxU>1.</TextureCoordinatesMxU>
+											<TextureCoordinatesMxV>1.</TextureCoordinatesMxV>
+											<TextureFixedSizeX>0.</TextureFixedSizeX>
+											<TextureFixedSizeY>0.</TextureFixedSizeY>
+											<Color>
+												<Red>255</Red>
+												<Green>255</Green>
+												<Blue>255</Blue>
+												<Alpha>0</Alpha>
+											</Color>
+										</MaterialHighlight>
+										<MaterialMouseOver classname="EGUIX::CMaterial">
+											<Texture>Buttons.png</Texture>
+											<TextureCoordinatesMinU>448.</TextureCoordinatesMinU>
+											<TextureCoordinatesMinV>768.</TextureCoordinatesMinV>
+											<TextureCoordinatesMxU>488.</TextureCoordinatesMxU>
+											<TextureCoordinatesMxV>808.</TextureCoordinatesMxV>
+											<TextureFixedSizeX>0.</TextureFixedSizeX>
+											<TextureFixedSizeY>0.</TextureFixedSizeY>
+											<Color>
+												<Red>255</Red>
+												<Green>255</Green>
+												<Blue>255</Blue>
+												<Alpha>255</Alpha>
+											</Color>
+										</MaterialMouseOver>
+										<MaterialPressed classname="EGUIX::CMaterial">
+											<Texture></Texture>
+											<TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
+											<TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
+											<TextureCoordinatesMxU>1.</TextureCoordinatesMxU>
+											<TextureCoordinatesMxV>1.</TextureCoordinatesMxV>
+											<TextureFixedSizeX>0.</TextureFixedSizeX>
+											<TextureFixedSizeY>0.</TextureFixedSizeY>
+											<Color>
+												<Red>255</Red>
+												<Green>255</Green>
+												<Blue>255</Blue>
+												<Alpha>0</Alpha>
+											</Color>
+										</MaterialPressed>
+										<Checked>true</Checked>
+										<HandleState>true</HandleState>
+										<CheckedOverlay>
+											<Texture>iconsbig.png</Texture>
+											<TextureCoordinatesMinU>640.</TextureCoordinatesMinU>
+											<TextureCoordinatesMinV>576.</TextureCoordinatesMinV>
+											<TextureCoordinatesMxU>680.</TextureCoordinatesMxU>
+											<TextureCoordinatesMxV>616.</TextureCoordinatesMxV>
+											<TextureFixedSizeX>0.</TextureFixedSizeX>
+											<TextureFixedSizeY>0.</TextureFixedSizeY>
+											<Color>
+												<Red>255</Red>
+												<Green>255</Green>
+												<Blue>255</Blue>
+												<Alpha>255</Alpha>
+											</Color>
+										</CheckedOverlay>
+									</Widget>
+								</WidgetList>
+							</SubWidgets>
+						</Widget>
+						<Widget classname="EGUIX::CContainerWidget">
+							<IsShown>true</IsShown>
+							<UpdateManualFlag>false</UpdateManualFlag>
+							<EventHandling>true</EventHandling>
+							<ZPriority>100.</ZPriority>
+							<ForceToHandleMouseEventsFlag>false</ForceToHandleMouseEventsFlag>
+							<ForceToHandleKeyboardEventsFlag>false</ForceToHandleKeyboardEventsFlag>
+							<PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
+							<TabIndex>0</TabIndex>
+							<Rectangle>
+								<X>200.</X>
+								<Y>0.</Y>
+								<W>259.</W>
+								<H>75.</H>
+								<KeepAspectRatio>true</KeepAspectRatio>
+								<CirclePointTest>false</CirclePointTest>
+								<FixedTextureSetSize>false</FixedTextureSetSize>
+								<AlignmentX>0</AlignmentX>
+								<AlignmentY>0</AlignmentY>
+								<AnchorX>0</AnchorX>
+								<AnchorY>0</AnchorY>
+							</Rectangle>
+							<OnPushToStack>
+								<LuaCommand></LuaCommand>
+							</OnPushToStack>
+							<OnMouseOver>
+								<LuaCommand></LuaCommand>
+							</OnMouseOver>
+							<OnMouseOut>
+								<LuaCommand></LuaCommand>
+							</OnMouseOut>
+							<OnRightClick>
+								<LuaCommand></LuaCommand>
+							</OnRightClick>
+							<OnLeftClick>
+								<LuaCommand></LuaCommand>
+							</OnLeftClick>
+							<OnKeyPress>
+								<LuaCommand></LuaCommand>
+							</OnKeyPress>
+							<OnFocus>
+								<LuaCommand></LuaCommand>
+							</OnFocus>
+							<OnBlur>
+								<LuaCommand></LuaCommand>
+							</OnBlur>
+							<UpdateFunction>
+								<LuaCommand></LuaCommand>
+							</UpdateFunction>
+							<UpdateFunctionTurnBased>
+								<LuaCommand></LuaCommand>
+							</UpdateFunctionTurnBased>
+							<UpdateFunctionSecondBased>
+								<LuaCommand></LuaCommand>
+							</UpdateFunctionSecondBased>
+							<ToolTipHelper>
+								<ToolTipEnabledFlag>true</ToolTipEnabledFlag>
+								<ControlTargetVisibility>true</ControlTargetVisibility>
+								<ToolTipUpdateFunction>
+									<LuaCommand></LuaCommand>
+								</ToolTipUpdateFunction>
+								<RawString></RawString>
+								<StringTableKey></StringTableKey>
+								<TargetWidget01></TargetWidget01>
+								<TargetWidget02></TargetWidget02>
+								<TargetWidget03></TargetWidget03>
+								<TargetWidget04></TargetWidget04>
+								<TargetWidget05></TargetWidget05>
+							</ToolTipHelper>
+							<Group></Group>
+							<MotherID>/InGame/Profile/NewProfile/PreferredColorRadios</MotherID>
+							<Name>Yellow</Name>
+							<SubWidgets>
+								<WidgetList>
+									<Widget classname="EGUIX::CStaticTextWidget">
+										<IsShown>true</IsShown>
+										<UpdateManualFlag>false</UpdateManualFlag>
+										<EventHandling>true</EventHandling>
+										<ZPriority>100.</ZPriority>
+										<ForceToHandleMouseEventsFlag>false</ForceToHandleMouseEventsFlag>
+										<ForceToHandleKeyboardEventsFlag>false</ForceToHandleKeyboardEventsFlag>
+										<PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
+										<TabIndex>1</TabIndex>
+										<Rectangle>
+											<X>50.</X>
+											<Y>25.</Y>
+											<W>209.</W>
+											<H>30.</H>
+											<KeepAspectRatio>true</KeepAspectRatio>
+											<CirclePointTest>false</CirclePointTest>
+											<FixedTextureSetSize>false</FixedTextureSetSize>
+											<AlignmentX>0</AlignmentX>
+											<AlignmentY>0</AlignmentY>
+											<AnchorX>0</AnchorX>
+											<AnchorY>0</AnchorY>
+										</Rectangle>
+										<OnPushToStack>
+											<LuaCommand></LuaCommand>
+										</OnPushToStack>
+										<OnMouseOver>
+											<LuaCommand></LuaCommand>
+										</OnMouseOver>
+										<OnMouseOut>
+											<LuaCommand></LuaCommand>
+										</OnMouseOut>
+										<OnRightClick>
+											<LuaCommand></LuaCommand>
+										</OnRightClick>
+										<OnLeftClick>
+											<LuaCommand></LuaCommand>
+										</OnLeftClick>
+										<OnKeyPress>
+											<LuaCommand></LuaCommand>
+										</OnKeyPress>
+										<OnFocus>
+											<LuaCommand></LuaCommand>
+										</OnFocus>
+										<OnBlur>
+											<LuaCommand></LuaCommand>
+										</OnBlur>
+										<UpdateFunction>
+											<LuaCommand></LuaCommand>
+										</UpdateFunction>
+										<UpdateFunctionTurnBased>
+											<LuaCommand></LuaCommand>
+										</UpdateFunctionTurnBased>
+										<UpdateFunctionSecondBased>
+											<LuaCommand></LuaCommand>
+										</UpdateFunctionSecondBased>
+										<ToolTipHelper>
+											<ToolTipEnabledFlag>true</ToolTipEnabledFlag>
+											<ControlTargetVisibility>true</ControlTargetVisibility>
+											<ToolTipUpdateFunction>
+												<LuaCommand></LuaCommand>
+											</ToolTipUpdateFunction>
+											<RawString></RawString>
+											<StringTableKey></StringTableKey>
+											<TargetWidget01></TargetWidget01>
+											<TargetWidget02></TargetWidget02>
+											<TargetWidget03></TargetWidget03>
+											<TargetWidget04></TargetWidget04>
+											<TargetWidget05></TargetWidget05>
+										</ToolTipHelper>
+										<Group></Group>
+										<MotherID>/InGame/Profile/NewProfile/PreferredColorRadios/Yellow</MotherID>
+										<Name>YellowText</Name>
+										<FullScreenBackground>false</FullScreenBackground>
+										<AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
+										<BackgroundMaterial>
+											<Texture></Texture>
+											<TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
+											<TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
+											<TextureCoordinatesMxU>1.</TextureCoordinatesMxU>
+											<TextureCoordinatesMxV>1.</TextureCoordinatesMxV>
+											<TextureFixedSizeX>0.</TextureFixedSizeX>
+											<TextureFixedSizeY>0.</TextureFixedSizeY>
+											<Color>
+												<Red>255</Red>
+												<Green>255</Green>
+												<Blue>255</Blue>
+												<Alpha>0</Alpha>
+											</Color>
+										</BackgroundMaterial>
+										<LineDistanceFactor>0.</LineDistanceFactor>
+										<LinkedSlider></LinkedSlider>
+										<StringFrameDistance>0.</StringFrameDistance>
+										<RawString>Please choose your gender :</RawString>
+										<StringTableKey>UI_Texts/MainMenuColorYellow</StringTableKey>
+										<ClipTextAtWidgetBounds>false</ClipTextAtWidgetBounds>
+										<ForceMultiLine>true</ForceMultiLine>
+										<AllowScriptCommands>true</AllowScriptCommands>
+										<FontColor>
+											<Red>51</Red>
+											<Green>51</Green>
+											<Blue>120</Blue>
+											<Alpha>255</Alpha>
+										</FontColor>
+										<FontName>menu\fonts\humanistika12.xml</FontName>
+									</Widget>
+									<Widget classname="EGUIX::CCheckBoxWidget">
+										<IsShown>true</IsShown>
+										<UpdateManualFlag>false</UpdateManualFlag>
+										<EventHandling>true</EventHandling>
+										<ZPriority>100.</ZPriority>
+										<ForceToHandleMouseEventsFlag>true</ForceToHandleMouseEventsFlag>
+										<ForceToHandleKeyboardEventsFlag>false</ForceToHandleKeyboardEventsFlag>
+										<PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
+										<TabIndex>0</TabIndex>
+										<Rectangle>
+											<X>0.</X>
+											<Y>19.</Y>
+											<W>40.</W>
+											<H>40.</H>
+											<KeepAspectRatio>true</KeepAspectRatio>
+											<CirclePointTest>false</CirclePointTest>
+											<FixedTextureSetSize>false</FixedTextureSetSize>
+											<AlignmentX>0</AlignmentX>
+											<AlignmentY>0</AlignmentY>
+											<AnchorX>0</AnchorX>
+											<AnchorY>0</AnchorY>
+										</Rectangle>
+										<OnPushToStack>
+											<LuaCommand></LuaCommand>
+										</OnPushToStack>
+										<OnMouseOver>
+											<LuaCommand></LuaCommand>
+										</OnMouseOver>
+										<OnMouseOut>
+											<LuaCommand></LuaCommand>
+										</OnMouseOut>
+										<OnRightClick>
+											<LuaCommand></LuaCommand>
+										</OnRightClick>
+										<OnLeftClick>
+											<LuaCommand></LuaCommand>
+										</OnLeftClick>
+										<OnKeyPress>
+											<LuaCommand></LuaCommand>
+										</OnKeyPress>
+										<OnFocus>
+											<LuaCommand></LuaCommand>
+										</OnFocus>
+										<OnBlur>
+											<LuaCommand></LuaCommand>
+										</OnBlur>
+										<UpdateFunction>
+											<LuaCommand></LuaCommand>
+										</UpdateFunction>
+										<UpdateFunctionTurnBased>
+											<LuaCommand></LuaCommand>
+										</UpdateFunctionTurnBased>
+										<UpdateFunctionSecondBased>
+											<LuaCommand></LuaCommand>
+										</UpdateFunctionSecondBased>
+										<ToolTipHelper>
+											<ToolTipEnabledFlag>true</ToolTipEnabledFlag>
+											<ControlTargetVisibility>true</ControlTargetVisibility>
+											<ToolTipUpdateFunction>
+												<LuaCommand></LuaCommand>
+											</ToolTipUpdateFunction>
+											<RawString></RawString>
+											<StringTableKey></StringTableKey>
+											<TargetWidget01></TargetWidget01>
+											<TargetWidget02></TargetWidget02>
+											<TargetWidget03></TargetWidget03>
+											<TargetWidget04></TargetWidget04>
+											<TargetWidget05></TargetWidget05>
+										</ToolTipHelper>
+										<Group>ProfilePreferredColor</Group>
+										<MotherID>/InGame/Profile/NewProfile/PreferredColorRadios/Yellow</MotherID>
+										<Name>YellowCheckBox</Name>
+										<FullScreenBackground>false</FullScreenBackground>
+										<AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
+										<BackgroundMaterial>
+											<Texture>Buttons.png</Texture>
+											<TextureCoordinatesMinU>448.</TextureCoordinatesMinU>
+											<TextureCoordinatesMinV>704.</TextureCoordinatesMinV>
+											<TextureCoordinatesMxU>488.</TextureCoordinatesMxU>
+											<TextureCoordinatesMxV>744.</TextureCoordinatesMxV>
+											<TextureFixedSizeX>0.</TextureFixedSizeX>
+											<TextureFixedSizeY>0.</TextureFixedSizeY>
+											<Color>
+												<Red>255</Red>
+												<Green>255</Green>
+												<Blue>255</Blue>
+												<Alpha>255</Alpha>
+											</Color>
+										</BackgroundMaterial>
+										<ActionFunction>
+											<LuaCommand>g_MainMenuProfile:OnPreferredColorSelectionChange(18)</LuaCommand>
+										</ActionFunction>
+										<GenerateMaterialsFromNormal>false</GenerateMaterialsFromNormal>
+										<ShortCutKey></ShortCutKey>
+										<ShortCutKeyStringTableKey></ShortCutKeyStringTableKey>
+										<AllowRightMouseButton>false</AllowRightMouseButton>
+										<AllowDoubleClick>false</AllowDoubleClick>
+										<Disabled>false</Disabled>
+										<Highlighted>false</Highlighted>
+										<MaterialBaseNormal classname="EGUIX::CMaterial">
+											<Texture></Texture>
+											<TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
+											<TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
+											<TextureCoordinatesMxU>1.</TextureCoordinatesMxU>
+											<TextureCoordinatesMxV>1.</TextureCoordinatesMxV>
+											<TextureFixedSizeX>0.</TextureFixedSizeX>
+											<TextureFixedSizeY>0.</TextureFixedSizeY>
+											<Color>
+												<Red>255</Red>
+												<Green>255</Green>
+												<Blue>255</Blue>
+												<Alpha>0</Alpha>
+											</Color>
+										</MaterialBaseNormal>
+										<MaterialDisabled classname="EGUIX::CMaterial">
+											<Texture></Texture>
+											<TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
+											<TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
+											<TextureCoordinatesMxU>1.</TextureCoordinatesMxU>
+											<TextureCoordinatesMxV>1.</TextureCoordinatesMxV>
+											<TextureFixedSizeX>0.</TextureFixedSizeX>
+											<TextureFixedSizeY>0.</TextureFixedSizeY>
+											<Color>
+												<Red>255</Red>
+												<Green>255</Green>
+												<Blue>255</Blue>
+												<Alpha>0</Alpha>
+											</Color>
+										</MaterialDisabled>
+										<MaterialHighlight classname="EGUIX::CMaterial">
+											<Texture></Texture>
+											<TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
+											<TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
+											<TextureCoordinatesMxU>1.</TextureCoordinatesMxU>
+											<TextureCoordinatesMxV>1.</TextureCoordinatesMxV>
+											<TextureFixedSizeX>0.</TextureFixedSizeX>
+											<TextureFixedSizeY>0.</TextureFixedSizeY>
+											<Color>
+												<Red>255</Red>
+												<Green>255</Green>
+												<Blue>255</Blue>
+												<Alpha>0</Alpha>
+											</Color>
+										</MaterialHighlight>
+										<MaterialMouseOver classname="EGUIX::CMaterial">
+											<Texture>Buttons.png</Texture>
+											<TextureCoordinatesMinU>448.</TextureCoordinatesMinU>
+											<TextureCoordinatesMinV>768.</TextureCoordinatesMinV>
+											<TextureCoordinatesMxU>488.</TextureCoordinatesMxU>
+											<TextureCoordinatesMxV>808.</TextureCoordinatesMxV>
+											<TextureFixedSizeX>0.</TextureFixedSizeX>
+											<TextureFixedSizeY>0.</TextureFixedSizeY>
+											<Color>
+												<Red>255</Red>
+												<Green>255</Green>
+												<Blue>255</Blue>
+												<Alpha>255</Alpha>
+											</Color>
+										</MaterialMouseOver>
+										<MaterialPressed classname="EGUIX::CMaterial">
+											<Texture></Texture>
+											<TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
+											<TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
+											<TextureCoordinatesMxU>1.</TextureCoordinatesMxU>
+											<TextureCoordinatesMxV>1.</TextureCoordinatesMxV>
+											<TextureFixedSizeX>0.</TextureFixedSizeX>
+											<TextureFixedSizeY>0.</TextureFixedSizeY>
+											<Color>
+												<Red>255</Red>
+												<Green>255</Green>
+												<Blue>255</Blue>
+												<Alpha>0</Alpha>
+											</Color>
+										</MaterialPressed>
+										<Checked>false</Checked>
+										<HandleState>true</HandleState>
+										<CheckedOverlay>
+											<Texture>iconsbig.png</Texture>
+											<TextureCoordinatesMinU>640.</TextureCoordinatesMinU>
+											<TextureCoordinatesMinV>576.</TextureCoordinatesMinV>
+											<TextureCoordinatesMxU>680.</TextureCoordinatesMxU>
+											<TextureCoordinatesMxV>616.</TextureCoordinatesMxV>
+											<TextureFixedSizeX>0.</TextureFixedSizeX>
+											<TextureFixedSizeY>0.</TextureFixedSizeY>
+											<Color>
+												<Red>255</Red>
+												<Green>255</Green>
+												<Blue>255</Blue>
+												<Alpha>255</Alpha>
+											</Color>
+										</CheckedOverlay>
+									</Widget>
+								</WidgetList>
+							</SubWidgets>
+						</Widget>
+					</WidgetList>
+				</SubWidgets>
+			</Widget>
+		<Widget classname="EGUIX::CContainerWidget">
           <IsShown>true</IsShown>
           <UpdateManualFlag>false</UpdateManualFlag>
           <EventHandling>true</EventHandling>
@@ -15620,8 +17270,8 @@
           <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
           <TabIndex>0</TabIndex>
           <Rectangle>
-           <X>-244.</X>
-           <Y>287.</Y>
+           <X>20.</X>
+           <Y>195.</Y>
            <W>430.</W>
            <H>73.</H>
            <KeepAspectRatio>true</KeepAspectRatio>
@@ -15878,7 +17528,7 @@
           <TabIndex>0</TabIndex>
           <Rectangle>
            <X>-7.</X>
-           <Y>60.</Y>
+           <Y>10.</Y>
            <W>630.</W>
            <H>900.</H>
            <KeepAspectRatio>true</KeepAspectRatio>
@@ -15951,8 +17601,8 @@
              <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
              <TabIndex>0</TabIndex>
              <Rectangle>
-              <X>0.</X>
-              <Y>185.</Y>
+              <X>-10.</X>
+              <Y>195.</Y>
               <W>630.</W>
               <H>60.</H>
               <KeepAspectRatio>true</KeepAspectRatio>
@@ -16056,8 +17706,8 @@
              <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
              <TabIndex>0</TabIndex>
              <Rectangle>
-              <X>0.</X>
-              <Y>410.</Y>
+              <X>-10.</X>
+              <Y>295.</Y>
               <W>630.</W>
               <H>54.</H>
               <KeepAspectRatio>true</KeepAspectRatio>
@@ -16161,8 +17811,8 @@
              <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
              <TabIndex>0</TabIndex>
              <Rectangle>
-              <X>0.</X>
-              <Y>295.</Y>
+              <X>-10.</X>
+              <Y>245.</Y>
               <W>630.</W>
               <H>60.</H>
               <KeepAspectRatio>true</KeepAspectRatio>
@@ -16256,6 +17906,216 @@
              </FontColor>
              <FontName>menu\fonts\humanistika16.xml</FontName>
             </Widget>
+			   <Widget classname="EGUIX::CStaticTextWidget">
+				   <IsShown>true</IsShown>
+				   <UpdateManualFlag>false</UpdateManualFlag>
+				   <EventHandling>true</EventHandling>
+				   <ZPriority>100.</ZPriority>
+				   <ForceToHandleMouseEventsFlag>false</ForceToHandleMouseEventsFlag>
+				   <ForceToHandleKeyboardEventsFlag>false</ForceToHandleKeyboardEventsFlag>
+				   <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
+				   <TabIndex>0</TabIndex>
+				   <Rectangle>
+					   <X>0.</X>
+					   <Y>370.</Y>
+					   <W>630.</W>
+					   <H>60.</H>
+					   <KeepAspectRatio>true</KeepAspectRatio>
+					   <CirclePointTest>false</CirclePointTest>
+					   <FixedTextureSetSize>false</FixedTextureSetSize>
+					   <AlignmentX>0</AlignmentX>
+					   <AlignmentY>0</AlignmentY>
+					   <AnchorX>0</AnchorX>
+					   <AnchorY>0</AnchorY>
+				   </Rectangle>
+				   <OnPushToStack>
+					   <LuaCommand></LuaCommand>
+				   </OnPushToStack>
+				   <OnMouseOver>
+					   <LuaCommand></LuaCommand>
+				   </OnMouseOver>
+				   <OnMouseOut>
+					   <LuaCommand></LuaCommand>
+				   </OnMouseOut>
+				   <OnRightClick>
+					   <LuaCommand></LuaCommand>
+				   </OnRightClick>
+				   <OnLeftClick>
+					   <LuaCommand></LuaCommand>
+				   </OnLeftClick>
+				   <OnKeyPress>
+					   <LuaCommand></LuaCommand>
+				   </OnKeyPress>
+				   <OnFocus>
+					   <LuaCommand></LuaCommand>
+				   </OnFocus>
+				   <OnBlur>
+					   <LuaCommand></LuaCommand>
+				   </OnBlur>
+				   <UpdateFunction>
+					   <LuaCommand></LuaCommand>
+				   </UpdateFunction>
+				   <UpdateFunctionTurnBased>
+					   <LuaCommand></LuaCommand>
+				   </UpdateFunctionTurnBased>
+				   <UpdateFunctionSecondBased>
+					   <LuaCommand></LuaCommand>
+				   </UpdateFunctionSecondBased>
+				   <ToolTipHelper>
+					   <ToolTipEnabledFlag>true</ToolTipEnabledFlag>
+					   <ControlTargetVisibility>true</ControlTargetVisibility>
+					   <ToolTipUpdateFunction>
+						   <LuaCommand></LuaCommand>
+					   </ToolTipUpdateFunction>
+					   <RawString></RawString>
+					   <StringTableKey></StringTableKey>
+					   <TargetWidget01></TargetWidget01>
+					   <TargetWidget02></TargetWidget02>
+					   <TargetWidget03></TargetWidget03>
+					   <TargetWidget04></TargetWidget04>
+					   <TargetWidget05></TargetWidget05>
+				   </ToolTipHelper>
+				   <Group></Group>
+				   <MotherID>/InGame/Profile/NewProfile/BGText</MotherID>
+				   <Name>ChooseCoAColorSchemeText</Name>
+				   <FullScreenBackground>false</FullScreenBackground>
+				   <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
+				   <BackgroundMaterial>
+					   <Texture></Texture>
+					   <TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
+					   <TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
+					   <TextureCoordinatesMxU>1.</TextureCoordinatesMxU>
+					   <TextureCoordinatesMxV>1.</TextureCoordinatesMxV>
+					   <TextureFixedSizeX>0.</TextureFixedSizeX>
+					   <TextureFixedSizeY>0.</TextureFixedSizeY>
+					   <Color>
+						   <Red>255</Red>
+						   <Green>255</Green>
+						   <Blue>255</Blue>
+						   <Alpha>0</Alpha>
+					   </Color>
+				   </BackgroundMaterial>
+				   <LineDistanceFactor>0.</LineDistanceFactor>
+				   <LinkedSlider></LinkedSlider>
+				   <StringFrameDistance>0.</StringFrameDistance>
+				   <RawString>Please choose your color scheme :</RawString>
+				   <StringTableKey>UI_Texts/MainMenuSelectCoAColorScheme_colon</StringTableKey>
+				   <ClipTextAtWidgetBounds>false</ClipTextAtWidgetBounds>
+				   <ForceMultiLine>true</ForceMultiLine>
+				   <AllowScriptCommands>true</AllowScriptCommands>
+				   <FontColor>
+					   <Red>51</Red>
+					   <Green>51</Green>
+					   <Blue>120</Blue>
+					   <Alpha>255</Alpha>
+				   </FontColor>
+				   <FontName>menu\fonts\humanistika14.xml</FontName>
+			   </Widget>
+			   <Widget classname="EGUIX::CStaticTextWidget">
+				   <IsShown>true</IsShown>
+				   <UpdateManualFlag>false</UpdateManualFlag>
+				   <EventHandling>true</EventHandling>
+				   <ZPriority>100.</ZPriority>
+				   <ForceToHandleMouseEventsFlag>false</ForceToHandleMouseEventsFlag>
+				   <ForceToHandleKeyboardEventsFlag>false</ForceToHandleKeyboardEventsFlag>
+				   <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
+				   <TabIndex>0</TabIndex>
+				   <Rectangle>
+					   <X>-10.</X>
+					   <Y>570.</Y>
+					   <W>630.</W>
+					   <H>60.</H>
+					   <KeepAspectRatio>true</KeepAspectRatio>
+					   <CirclePointTest>false</CirclePointTest>
+					   <FixedTextureSetSize>false</FixedTextureSetSize>
+					   <AlignmentX>0</AlignmentX>
+					   <AlignmentY>0</AlignmentY>
+					   <AnchorX>0</AnchorX>
+					   <AnchorY>0</AnchorY>
+				   </Rectangle>
+				   <OnPushToStack>
+					   <LuaCommand></LuaCommand>
+				   </OnPushToStack>
+				   <OnMouseOver>
+					   <LuaCommand></LuaCommand>
+				   </OnMouseOver>
+				   <OnMouseOut>
+					   <LuaCommand></LuaCommand>
+				   </OnMouseOut>
+				   <OnRightClick>
+					   <LuaCommand></LuaCommand>
+				   </OnRightClick>
+				   <OnLeftClick>
+					   <LuaCommand></LuaCommand>
+				   </OnLeftClick>
+				   <OnKeyPress>
+					   <LuaCommand></LuaCommand>
+				   </OnKeyPress>
+				   <OnFocus>
+					   <LuaCommand></LuaCommand>
+				   </OnFocus>
+				   <OnBlur>
+					   <LuaCommand></LuaCommand>
+				   </OnBlur>
+				   <UpdateFunction>
+					   <LuaCommand></LuaCommand>
+				   </UpdateFunction>
+				   <UpdateFunctionTurnBased>
+					   <LuaCommand></LuaCommand>
+				   </UpdateFunctionTurnBased>
+				   <UpdateFunctionSecondBased>
+					   <LuaCommand></LuaCommand>
+				   </UpdateFunctionSecondBased>
+				   <ToolTipHelper>
+					   <ToolTipEnabledFlag>true</ToolTipEnabledFlag>
+					   <ControlTargetVisibility>true</ControlTargetVisibility>
+					   <ToolTipUpdateFunction>
+						   <LuaCommand></LuaCommand>
+					   </ToolTipUpdateFunction>
+					   <RawString></RawString>
+					   <StringTableKey></StringTableKey>
+					   <TargetWidget01></TargetWidget01>
+					   <TargetWidget02></TargetWidget02>
+					   <TargetWidget03></TargetWidget03>
+					   <TargetWidget04></TargetWidget04>
+					   <TargetWidget05></TargetWidget05>
+				   </ToolTipHelper>
+				   <Group></Group>
+				   <MotherID>/InGame/Profile/NewProfile/BGText</MotherID>
+				   <Name>ChoosePreferredColorText</Name>
+				   <FullScreenBackground>false</FullScreenBackground>
+				   <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
+				   <BackgroundMaterial>
+					   <Texture></Texture>
+					   <TextureCoordinatesMinU>0.</TextureCoordinatesMinU>
+					   <TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
+					   <TextureCoordinatesMxU>1.</TextureCoordinatesMxU>
+					   <TextureCoordinatesMxV>1.</TextureCoordinatesMxV>
+					   <TextureFixedSizeX>0.</TextureFixedSizeX>
+					   <TextureFixedSizeY>0.</TextureFixedSizeY>
+					   <Color>
+						   <Red>255</Red>
+						   <Green>255</Green>
+						   <Blue>255</Blue>
+						   <Alpha>0</Alpha>
+					   </Color>
+				   </BackgroundMaterial>
+				   <LineDistanceFactor>0.</LineDistanceFactor>
+				   <LinkedSlider></LinkedSlider>
+				   <StringFrameDistance>0.</StringFrameDistance>
+				   <RawString>Please choose your preferred color :</RawString>
+				   <StringTableKey>UI_Texts/MainMenuSelectPreferredColor_colon</StringTableKey>
+				   <ClipTextAtWidgetBounds>false</ClipTextAtWidgetBounds>
+				   <ForceMultiLine>true</ForceMultiLine>
+				   <AllowScriptCommands>true</AllowScriptCommands>
+				   <FontColor>
+					   <Red>51</Red>
+					   <Green>51</Green>
+					   <Blue>120</Blue>
+					   <Alpha>255</Alpha>
+				   </FontColor>
+				   <FontName>menu\fonts\humanistika16.xml</FontName>
+			   </Widget>
            </WidgetList>
           </SubWidgets>
          </Widget>
@@ -16270,7 +18130,7 @@
           <TabIndex>0</TabIndex>
           <Rectangle>
            <X>-725.</X>
-           <Y>103.</Y>
+           <Y>53.</Y>
            <W>710.</W>
            <H>878.</H>
            <KeepAspectRatio>true</KeepAspectRatio>
@@ -16419,7 +18279,7 @@
                 <Rectangle>
                  <X>202.</X>
                  <Y>68.</Y>
-                 <W>290.</W>
+                 <W>390.</W>
                  <H>13.</H>
                  <KeepAspectRatio>true</KeepAspectRatio>
                  <CirclePointTest>false</CirclePointTest>
@@ -16507,9 +18367,9 @@
                 <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
                 <TabIndex>0</TabIndex>
                 <Rectangle>
-                 <X>182.</X>
+                 <X>202.</X>
                  <Y>702.</Y>
-                 <W>290.</W>
+                 <W>390.</W>
                  <H>13.</H>
                  <KeepAspectRatio>true</KeepAspectRatio>
                  <CirclePointTest>false</CirclePointTest>
@@ -16687,7 +18547,7 @@
                 <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
                 <TabIndex>0</TabIndex>
                 <Rectangle>
-                 <X>613.</X>
+                 <X>713.</X>
                  <Y>77.</Y>
                  <W>30.</W>
                  <H>36.</H>
@@ -16777,7 +18637,7 @@
                 <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
                 <TabIndex>0</TabIndex>
                 <Rectangle>
-                 <X>615.</X>
+                 <X>715.</X>
                  <Y>672.</Y>
                  <W>30.</W>
                  <H>36.</H>
@@ -17124,7 +18984,7 @@
                 <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
                 <TabIndex>0</TabIndex>
                 <Rectangle>
-                 <X>504.</X>
+                 <X>604.</X>
                  <Y>641.</Y>
                  <W>150.</W>
                  <H>76.</H>
@@ -17304,7 +19164,7 @@
                 <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
                 <TabIndex>0</TabIndex>
                 <Rectangle>
-                 <X>509.</X>
+                 <X>609.</X>
                  <Y>71.</Y>
                  <W>150.</W>
                  <H>76.</H>
@@ -17396,7 +19256,7 @@
                 <Rectangle>
                  <X>166.</X>
                  <Y>100.</Y>
-                 <W>347.</W>
+                 <W>447.</W>
                  <H>16.</H>
                  <KeepAspectRatio>true</KeepAspectRatio>
                  <CirclePointTest>false</CirclePointTest>
@@ -17486,7 +19346,7 @@
                 <Rectangle>
                  <X>179.</X>
                  <Y>682.</Y>
-                 <W>342.</W>
+                 <W>442.</W>
                  <H>16.</H>
                  <KeepAspectRatio>true</KeepAspectRatio>
                  <CirclePointTest>false</CirclePointTest>
@@ -17664,7 +19524,7 @@
                 <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
                 <TabIndex>0</TabIndex>
                 <Rectangle>
-                 <X>608.</X>
+                 <X>708.</X>
                  <Y>137.</Y>
                  <W>17.</W>
                  <H>505.</H>
@@ -18011,7 +19871,7 @@
                 <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
                 <TabIndex>0</TabIndex>
                 <Rectangle>
-                 <X>500.</X>
+                 <X>600.</X>
                  <Y>0.</Y>
                  <W>150.</W>
                  <H>150.</H>
@@ -18191,7 +20051,7 @@
                 <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
                 <TabIndex>0</TabIndex>
                 <Rectangle>
-                 <X>521.</X>
+                 <X>621.</X>
                  <Y>538.</Y>
                  <W>150.</W>
                  <H>150.</H>
@@ -18286,7 +20146,7 @@
              <Rectangle>
               <X>26.</X>
               <Y>61.</Y>
-              <W>650.</W>
+              <W>750.</W>
               <H>805.</H>
               <KeepAspectRatio>true</KeepAspectRatio>
               <CirclePointTest>false</CirclePointTest>
@@ -18360,7 +20220,7 @@
                 <Rectangle>
                  <X>0.</X>
                  <Y>0.</Y>
-                 <W>630.</W>
+                 <W>730.</W>
                  <H>170.</H>
                  <KeepAspectRatio>true</KeepAspectRatio>
                  <CirclePointTest>false</CirclePointTest>
@@ -18434,7 +20294,7 @@
                    <Rectangle>
                     <X>15.</X>
                     <Y>0.</Y>
-                    <W>300.</W>
+                    <W>400.</W>
                     <H>100.</H>
                     <KeepAspectRatio>true</KeepAspectRatio>
                     <CirclePointTest>false</CirclePointTest>
@@ -18524,7 +20384,7 @@
                    <Rectangle>
                     <X>275.</X>
                     <Y>0.</Y>
-                    <W>300.</W>
+                    <W>400.</W>
                     <H>100.</H>
                     <KeepAspectRatio>true</KeepAspectRatio>
                     <CirclePointTest>false</CirclePointTest>
@@ -18707,7 +20567,7 @@
                 <Rectangle>
                  <X>0.</X>
                  <Y>573.</Y>
-                 <W>630.</W>
+                 <W>730.</W>
                  <H>110.</H>
                  <KeepAspectRatio>true</KeepAspectRatio>
                  <CirclePointTest>false</CirclePointTest>
@@ -18781,7 +20641,7 @@
                    <Rectangle>
                     <X>15.</X>
                     <Y>0.</Y>
-                    <W>290.</W>
+                    <W>390.</W>
                     <H>100.</H>
                     <KeepAspectRatio>true</KeepAspectRatio>
                     <CirclePointTest>false</CirclePointTest>
@@ -18871,7 +20731,7 @@
                    <Rectangle>
                     <X>294.</X>
                     <Y>0.</Y>
-                    <W>290.</W>
+                    <W>390.</W>
                     <H>100.</H>
                     <KeepAspectRatio>true</KeepAspectRatio>
                     <CirclePointTest>false</CirclePointTest>
@@ -19399,7 +21259,7 @@
                 <PassOnMouseEventsFlag>false</PassOnMouseEventsFlag>
                 <TabIndex>0</TabIndex>
                 <Rectangle>
-                 <X>540.</X>
+                 <X>640.</X>
                  <Y>0.</Y>
                  <W>90.</W>
                  <H>722.</H>
@@ -20278,7 +22138,7 @@
              <Rectangle>
               <X>30.</X>
               <Y>70.</Y>
-              <W>630.</W>
+              <W>730.</W>
               <H>725.</H>
               <KeepAspectRatio>true</KeepAspectRatio>
               <CirclePointTest>false</CirclePointTest>
@@ -20352,7 +22212,7 @@
                 <Rectangle>
                  <X>0.</X>
                  <Y>7.</Y>
-                 <W>620.</W>
+                 <W>720.</W>
                  <H>300.</H>
                  <KeepAspectRatio>true</KeepAspectRatio>
                  <CirclePointTest>false</CirclePointTest>
@@ -20426,7 +22286,7 @@
                    <Rectangle>
                     <X>10.</X>
                     <Y>0.</Y>
-                    <W>300.</W>
+                    <W>400.</W>
                     <H>300.</H>
                     <KeepAspectRatio>true</KeepAspectRatio>
                     <CirclePointTest>false</CirclePointTest>
@@ -20516,7 +22376,7 @@
                    <Rectangle>
                     <X>300.</X>
                     <Y>0.</Y>
-                    <W>300.</W>
+                    <W>400.</W>
                     <H>300.</H>
                     <KeepAspectRatio>true</KeepAspectRatio>
                     <CirclePointTest>false</CirclePointTest>
@@ -20609,7 +22469,7 @@
                 <Rectangle>
                  <X>0.</X>
                  <Y>264.</Y>
-                 <W>610.</W>
+                 <W>710.</W>
                  <H>300.</H>
                  <KeepAspectRatio>true</KeepAspectRatio>
                  <CirclePointTest>false</CirclePointTest>
@@ -20683,7 +22543,7 @@
                    <Rectangle>
                     <X>10.</X>
                     <Y>0.</Y>
-                    <W>300.</W>
+                    <W>400.</W>
                     <H>300.</H>
                     <KeepAspectRatio>true</KeepAspectRatio>
                     <CirclePointTest>false</CirclePointTest>
@@ -20773,7 +22633,7 @@
                    <Rectangle>
                     <X>300.</X>
                     <Y>0.</Y>
-                    <W>300.</W>
+                    <W>400.</W>
                     <H>300.</H>
                     <KeepAspectRatio>true</KeepAspectRatio>
                     <CirclePointTest>false</CirclePointTest>
@@ -20866,7 +22726,7 @@
                 <Rectangle>
                  <X>0.</X>
                  <Y>526.</Y>
-                 <W>620.</W>
+                 <W>720.</W>
                  <H>115.</H>
                  <KeepAspectRatio>true</KeepAspectRatio>
                  <CirclePointTest>false</CirclePointTest>
@@ -20940,7 +22800,7 @@
                    <Rectangle>
                     <X>10.</X>
                     <Y>0.</Y>
-                    <W>300.</W>
+                    <W>400.</W>
                     <H>115.</H>
                     <KeepAspectRatio>true</KeepAspectRatio>
                     <CirclePointTest>false</CirclePointTest>
@@ -21030,7 +22890,7 @@
                    <Rectangle>
                     <X>300.</X>
                     <Y>0.</Y>
-                    <W>300.</W>
+                    <W>400.</W>
                     <H>115.</H>
                     <KeepAspectRatio>true</KeepAspectRatio>
                     <CirclePointTest>false</CirclePointTest>

@@ -13,9 +13,9 @@
         <PlayerSectorType>PlayerSectorTypeMilitary</PlayerSectorType>
         <MilMetaFormationMemberType>MilMetaFormationMemberTypeMelee</MilMetaFormationMemberType>
         <CostsCanBeModified>true</CostsCanBeModified>
-        <MaxHealth>115</MaxHealth>
+        <MaxHealth>120</MaxHealth>
         <HealingSeconds>10</HealingSeconds>
-        <HealingPoints>19</HealingPoints>
+        <HealingPoints>20</HealingPoints>
 
         <NeedsPlayer>true</NeedsPlayer>
         <ForceNoPlayer>false</ForceNoPlayer>
@@ -75,7 +75,7 @@
                 <Class>EGL::CMilitarySoldierMovementBehavior</Class>
                 <StraightenPath>true</StraightenPath>
                 <EvasionPriority>140</EvasionPriority>
-                <Speed>490</Speed>
+                <Speed>480</Speed>
                 <RotationSpeed>500</RotationSpeed>
                 <MoveTaskList>TL_MILITARY_WALK</MoveTaskList>
                 <MoveIdleAnim>Military\U_MilitarySword_Stand</MoveIdleAnim>
@@ -115,6 +115,59 @@
                 <AmmunitionLimit>1</AmmunitionLimit>
 
                 <TargetCategoryList>
+					<!-- Slightly less damage against cavalry to make spear units more useful -->
+					<TargetCategory>
+						<!-- don't remove  the empty tags, otherwise the data isn't shown correctly in the XML balancer! -->
+						<EntityCategoryList>
+							<EntityCategory>Cavalry</EntityCategory>
+							<EntityCategory/>
+							<EntityCategory/>
+							<EntityCategory/>
+							<EntityCategory/>
+							<EntityCategory/>
+						</EntityCategoryList>
+
+						<AttackModeList>
+							<AttackMode>
+								<BattleTL>TL_BATTLE_MELEE</BattleTL>
+								<!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
+								<ApplyDamageModifiers>true</ApplyDamageModifiers>
+
+								<MinRange>0</MinRange>
+								<MaxRange>150</MaxRange>
+								<MaxHeightDeltaToTarget>100</MaxHeightDeltaToTarget>
+								<CanAttackOverWalls>false</CanAttackOverWalls>
+								<CooldownThousandths>3000</CooldownThousandths>
+								<Damage>
+									<DiceCount>0</DiceCount>
+									<FaceCount>0</FaceCount>
+									<BaseValue>15</BaseValue>
+								</Damage>
+							</AttackMode>
+
+							<!-- ranged combat  (those empty tags are needed to show all unit xmls correctly in the XML balancer  -->
+							<AttackMode>
+								<BattleTL/>
+								<ApplyDamageModifiers>true</ApplyDamageModifiers>
+								<MinRange/>
+								<MaxRange/>
+								<MaxHeightDeltaToTarget/>
+								<CanAttackOverWalls>false</CanAttackOverWalls>
+								<CooldownThousandths/>
+								<ProjectileEffect/>
+								<ProjectileOffsetHeight/>
+								<ProjectileOffsetFront/>
+								<Damage>
+									<DiceCount/>
+									<FaceCount/>
+									<BaseValue/>
+								</Damage>
+								<NoMinRangeWhenNotOnGround>false</NoMinRangeWhenNotOnGround>
+							</AttackMode>
+
+						</AttackModeList>
+					</TargetCategory>
+					
                     <!-- Plain attack -->
                     <TargetCategory>
                         <!-- don't remove  the empty tags, otherwise the data isn't shown correctly in the XML balancer! -->

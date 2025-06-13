@@ -59,6 +59,7 @@ function GameCallback_GUI_SelectionChanged(_Source)
 
             XGUIEng.ShowWidget("/InGame/Root/Normal/BuildingButtons",1)
             XGUIEng.ShowAllSubWidgets("/InGame/Root/Normal/BuildingButtons",1)
+            XGUIEng.ShowWidget("/InGame/Root/Normal/BuildingButtons/BuyBattallion",0)
             XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/Selection/BuildingButtonsPositionUpdater",1)
 
             if g_OnGameStartPresentationMode == true then return end -- RETURN BECAUSE WE DO NOT WANT TO SHOW DETAILS IN PRESENTATION
@@ -117,6 +118,8 @@ function GameCallback_GUI_SelectionChanged(_Source)
                     or EntityType == Entities.B_BarracksArchers_Redprince
                     or EntityType == Entities.B_Barracks_Khana
                     or EntityType == Entities.B_BarracksArchers_Khana
+                    or EntityType == Entities.B_BarracksSpearmen
+                    or EntityType == Entities.B_BarracksCavalry
                     --[[or EntityType == Entities.B_NPC_Barracks_ME
                     or EntityType == Entities.B_NPC_Barracks_NE
                     or EntityType == Entities.B_NPC_Barracks_SE
@@ -124,6 +127,24 @@ function GameCallback_GUI_SelectionChanged(_Source)
                     or EntityType == Entities.B_NPC_Barracks_AS--]] then
                         XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/Selection/Business/City/Money", 0)
                         XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/Selection/Needs/Prosperity", 0)
+                        XGUIEng.ShowWidget("/InGame/Root/Normal/BuildingButtons/Barracks", 1)
+                        XGUIEng.ShowAllSubWidgets("/InGame/Root/Normal/BuildingButtons/Barracks",0)
+                        if EntityType == Entities.B_BarracksSpearmen then
+                            XGUIEng.ShowWidget("/InGame/Root/Normal/BuildingButtons/Barracks/BarracksSpear", 1)
+                            XGUIEng.ShowAllSubWidgets("/InGame/Root/Normal/BuildingButtons/Barracks/BarracksSpear",1)
+                        elseif EntityType == Entities.B_Barracks or EntityType == Entities.B_Barracks_RedPrince or EntityType == Entities.B_Barracks_Khana then
+                            XGUIEng.ShowWidget("/InGame/Root/Normal/BuildingButtons/Barracks/BarracksSword", 1)
+                            XGUIEng.ShowAllSubWidgets("/InGame/Root/Normal/BuildingButtons/Barracks/BarracksSword",1)
+                            XGUIEng.ShowWidget("/InGame/Root/Normal/BuildingButtons/Barracks/BarracksSword/BuyCavalry", 0)
+                        elseif EntityType == Entities.B_BarracksArchers or EntityType == Entities.B_BarracksArchers_Redprince or EntityType == Entities.B_BarracksArchers_Khana then
+                            XGUIEng.ShowWidget("/InGame/Root/Normal/BuildingButtons/Barracks/BarracksBow", 1)
+                            XGUIEng.ShowAllSubWidgets("/InGame/Root/Normal/BuildingButtons/Barracks/BarracksBow",1)
+                        elseif EntityType == Entities.B_BarracksCavalry then
+                            XGUIEng.ShowWidget("/InGame/Root/Normal/BuildingButtons/Barracks/BarracksCavalry", 1)
+                            XGUIEng.ShowAllSubWidgets("/InGame/Root/Normal/BuildingButtons/Barracks/BarracksCavalry",1)
+                        end
+                    else
+                        XGUIEng.ShowWidget("/InGame/Root/Normal/BuildingButtons/Barracks", 0)
                     end
 
                     local AnchorNeedsForBigX, AnchorNeedsForBigY = XGUIEng.GetWidgetLocalPosition("/InGame/Root/Normal/AlignBottomRight/Selection/AnchorNeedsForBig")
@@ -152,6 +173,12 @@ function GameCallback_GUI_SelectionChanged(_Source)
 
                 local AnchorInfoForSmallX, AnchorInfoForSmallY = XGUIEng.GetWidgetLocalPosition("/InGame/Root/Normal/AlignBottomRight/Selection/AnchorInfoForSmall")
                 XGUIEng.SetWidgetLocalPosition("/InGame/Root/Normal/AlignBottomRight/Selection/Info", AnchorInfoForSmallX, AnchorInfoForSmallY)
+                
+                XGUIEng.ShowWidget("/InGame/Root/Normal/BuildingButtons/Barracks", 1)
+                XGUIEng.ShowAllSubWidgets("/InGame/Root/Normal/BuildingButtons/Barracks",0)
+                XGUIEng.ShowWidget("/InGame/Root/Normal/BuildingButtons/Barracks/BarracksCastle", 1)
+                XGUIEng.ShowAllSubWidgets("/InGame/Root/Normal/BuildingButtons/Barracks/BarracksCastle",1)
+
             elseif Logic.GetStoreHouse(PlayerID) == EntityID then
                 XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/Selection/BGBig",1)
                 XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/Selection/Storehouse",1)
@@ -165,7 +192,7 @@ function GameCallback_GUI_SelectionChanged(_Source)
 
                 local AnchorInfoForBigX, AnchorInfoForBigY = XGUIEng.GetWidgetLocalPosition("/InGame/Root/Normal/AlignBottomRight/Selection/AnchorInfoForBig")
                 XGUIEng.SetWidgetLocalPosition("/InGame/Root/Normal/AlignBottomRight/Selection/Info", AnchorInfoForBigX, AnchorInfoForBigY)
-            elseif Logic.GetCathedral(PlayerID) == EntityID or EntityType == Entities.B_Beautification_Cathedral then
+            elseif Logic.GetCathedral(PlayerID) == EntityID then
                 XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/Selection/BGSmall",1)
                 XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/Selection/Cathedral",1)
                 XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/Building",1)
@@ -177,6 +204,14 @@ function GameCallback_GUI_SelectionChanged(_Source)
                 XGUIEng.ShowWidget("/InGame/Root/Normal/Selected_Tradepost",1)
                 XGUIEng.ShowAllSubWidgets("/InGame/Root/Normal/Selected_Tradepost/Trades", 1)
                 GUI_Tradepost.TradepostSelected()
+            elseif EntityType == Entities.B_Beautification_Cathedral then
+                XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/Selection/BGSmall",1)
+                XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/Selection/Beautification_Cathedral",1)
+                XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/Building",1)
+                XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/Building/JumpToWorker",0)
+
+                local AnchorInfoForSmallX, AnchorInfoForSmallY = XGUIEng.GetWidgetLocalPosition("/InGame/Root/Normal/AlignBottomRight/Selection/AnchorInfoForSmall")
+                XGUIEng.SetWidgetLocalPosition("/InGame/Root/Normal/AlignBottomRight/Selection/Info", AnchorInfoForSmallX, AnchorInfoForSmallY)
             else
                 XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/Selection/Info",0)
             end
@@ -195,8 +230,7 @@ function GameCallback_GUI_SelectionChanged(_Source)
 
             --show ClaimTerritory only for the first knight, not for the additional ones in map 15
             if Logic.GetKnightID(PlayerID) == EntityID then
-                if Tutorial == nil
-                or Tutorial ~= nil and Tutorial.IsClaimButtonShown ~= false then
+                if Tutorial == nil or Tutorial ~= nil and Tutorial.IsClaimButtonShown ~= false then
                     XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/Knight/ClaimTerritory",1)
                 end
             else
@@ -205,7 +239,7 @@ function GameCallback_GUI_SelectionChanged(_Source)
 
             if EntityType == Entities.U_NPC_Castellan_ME or EntityType == Entities.U_NPC_Castellan_NE
                 or EntityType == Entities.U_NPC_Castellan_NA or EntityType == Entities.U_NPC_Castellan_SE
-                or EntityType == Entities.U_NPC_Castellan_AS then
+                or EntityType == Entities.U_NPC_Castellan_AS or EntityType == Entities.U_MilitaryCavalry then
                 XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/Knight/StartAbility",0)
             else
                 XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/Knight/StartAbility",1)
@@ -216,6 +250,26 @@ function GameCallback_GUI_SelectionChanged(_Source)
             GUI_Military.StrengthUpdate()
 
             GUI_MultiSelection.CreateMultiSelection(_Source)
+            
+        elseif EntityType == Entities.U_MilitaryCavalry then
+
+            --SoundToPlay = "ui\\military_select"
+
+            XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/Selection",1)
+            XGUIEng.ShowAllSubWidgets("/InGame/Root/Normal/AlignBottomRight/Selection",0)
+            XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/Selection/BGMilitary",1)
+
+            XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons",1)
+            XGUIEng.ShowAllSubWidgets("/InGame/Root/Normal/AlignBottomRight/DialogButtons",0)
+            XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/Military",1)
+            XGUIEng.ShowAllSubWidgets("/InGame/Root/Normal/AlignBottomRight/DialogButtons/Military",1)
+            XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/Military/Refill",0)
+            GUI_Military.StrengthUpdate()
+
+            GUI_MultiSelection.CreateMultiSelection(_Source)
+            
+            XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/SuspendUnit",1)
+            XGUIEng.ShowAllSubWidgets("/InGame/Root/Normal/AlignBottomRight/DialogButtons/SuspendUnit",1)
 
         elseif EntityType == Entities.U_Thief then
 
@@ -230,10 +284,10 @@ function GameCallback_GUI_SelectionChanged(_Source)
 
             GUI_MultiSelection.CreateMultiSelection(_Source)
             
-            XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/SuspendUnit",1)
-            XGUIEng.ShowAllSubWidgets("/InGame/Root/Normal/AlignBottomRight/DialogButtons/SuspendUnit",1)
+            --XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/SuspendUnit",1)
+            --XGUIEng.ShowAllSubWidgets("/InGame/Root/Normal/AlignBottomRight/DialogButtons/SuspendUnit",1)
             
-        elseif EntityType == Entities.U_Bear or EntityType == Entities.U_BlackBear or EntityType == Entities.U_PolarBear
+        elseif EntityType == Entities.U_Helbardier or EntityType == Entities.U_Bear or EntityType == Entities.U_BlackBear or EntityType == Entities.U_PolarBear
             or EntityType == Entities.U_Wolf_Grey or EntityType == Entities.U_Wolf_White or EntityType == Entities.U_Wolf_Black or EntityType == Entities.U_Wolf_Brown
             or EntityType == Entities.U_Lion_Male or EntityType == Entities.U_Lion_Female or EntityType == Entities.U_Tiger or EntityType == Entities.U_Tiger_White
             or EntityType == Entities.U_Cat1 or EntityType == Entities.U_Cat2 or EntityType == Entities.U_Cat3 or EntityType == Entities.U_Cat4
@@ -250,26 +304,6 @@ function GameCallback_GUI_SelectionChanged(_Source)
             XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/Military/StandGround",1)
             XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/Military/Attack",1)
             
-            GUI_MultiSelection.CreateMultiSelection(_Source)
-            
-            XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/SuspendUnit",1)
-            XGUIEng.ShowAllSubWidgets("/InGame/Root/Normal/AlignBottomRight/DialogButtons/SuspendUnit",1)
-            
-        elseif EntityType == Entities.U_Helbardier then
-
-            --SoundToPlay = "ui\\military_select"
-
-            XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/Selection",1)
-            XGUIEng.ShowAllSubWidgets("/InGame/Root/Normal/AlignBottomRight/Selection",0)
-            XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/Selection/BGMilitary",1)
-
-            XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons",1)
-            XGUIEng.ShowAllSubWidgets("/InGame/Root/Normal/AlignBottomRight/DialogButtons",0)
-            XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/Military",1)
-            XGUIEng.ShowAllSubWidgets("/InGame/Root/Normal/AlignBottomRight/DialogButtons/Military",0)
-            XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/Military/StandGround",1)
-            XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/Military/Attack",1)
-
             GUI_MultiSelection.CreateMultiSelection(_Source)
             
             XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/SuspendUnit",1)
@@ -295,7 +329,8 @@ function GameCallback_GUI_SelectionChanged(_Source)
         elseif (EntityType == Entities.U_CatapultCart
         or EntityType == Entities.U_SiegeTowerCart
         or EntityType == Entities.U_BatteringRamCart
-        or EntityType == Entities.U_TrebuchetCart) then
+        or EntityType == Entities.U_TrebuchetCart
+        or EntityType == Entities.U_CannonCart) then
 
             --SoundToPlay = "ui\\siege_select"
 
@@ -353,7 +388,8 @@ function GameCallback_GUI_SelectionChanged(_Source)
             if (EntityType == Entities.U_MilitaryCatapult
             or EntityType == Entities.U_MilitarySiegeTower
             or EntityType == Entities.U_MilitaryBatteringRam
-            or EntityType == Entities.U_MilitaryTrebuchet) then
+            or EntityType == Entities.U_MilitaryTrebuchet
+            or EntityType == Entities.U_MilitaryCannon) then
                 XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/DialogButtons/SiegeEngine",1)
             end
 
@@ -501,6 +537,14 @@ function GameCallback_GUI_SelectionChanged(_Source)
 
                     local AnchorBusinessAndSettlerForBigX, AnchorBusinessAndSettlerForBigY = XGUIEng.GetWidgetLocalPosition("/InGame/Root/Normal/AlignBottomRight/Selection/AnchorBusinessAndSettlerForBig")
                     XGUIEng.SetWidgetLocalPosition("/InGame/Root/Normal/AlignBottomRight/Selection/Settler", AnchorBusinessAndSettlerForBigX, AnchorBusinessAndSettlerForBigY)
+                    
+                    --Hide prosperity for these settlers
+                    if EntityType == Entities.U_Armourer
+                    or EntityType == Entities.U_BowArmourer
+                    or EntityType == Entities.U_SiegeEngineBuilder
+                    or EntityType == Entities.U_SpearArmourer then
+                        XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/Selection/Needs/Prosperity", 0)
+                    end
                 end
             else
                 XGUIEng.ShowWidget("/InGame/Root/Normal/AlignBottomRight/Selection/BGSmall",1)

@@ -596,6 +596,8 @@ do
         
         OldGameCallback_Feedback_OnBuildingConstructionComplete(_PlayerID, _BuildingID)
     
+        GameCallback_GUI_SelectionChanged()
+
     end
     
 end    

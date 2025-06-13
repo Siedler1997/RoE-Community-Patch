@@ -90,7 +90,8 @@ function DebugKeyBindings_Init()
     -- Screen shot
     -----------------------------------------------------------------------------------------------
 
-    -- Input.KeyBindDown(Keys.F12, "Game.SaveScreenShot()", 31)
+    Input.KeyBindDown(Keys.Print, "Game.SaveScreenShot()", 2)
+    Input.KeyBindDown(Keys.Snapshot, "Game.SaveScreenShot()", 2)
 
     -- snapshot key event is received only if key is released
     -- Input.KeyBindUp(Keys.Snapshot, "Game.SaveScreenShot()", 31)
@@ -214,21 +215,26 @@ function DebugKeyBindings_Init()
     Input.KeyBindDown(Keys.ModifierControl + Keys.ModifierShift + Keys.F9,       "KeyBindings_ToggleDebugOutput()", 2, true)
 
     --Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad5, "KeyBindings_CreateBattalionOnMousePositionForActiveGUIPlayer(Entities.U_MilitarySword_RedPrince)", 2, true)
-    Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad5, "KeyBindings_CreateBattalionOnMousePositionForActiveGUIPlayer(Entities.U_Cat1)", 2, true)
-    -- Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad4, "KeyBindings_CreateBattalionOnMousePositionForActiveGUIPlayer(Entities.U_MilitaryBow_RedPrince)", 2, true)
-    Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad4, "KeyBindings_CreateBattalionOnMousePositionForActiveGUIPlayer(Entities.U_Dog1)", 2, true)
-    Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad6, "KeyBindings_CreateEntityAtMousePositionForActiveGUIPlayer(Entities.U_CatapultCart)", 2, true)
-    Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad7, "KeyBindings_CreateEntityAtMousePositionForActiveGUIPlayer(Entities.U_BatteringRamCart)", 2, true)
+    Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad4, "KeyBindings_CreateBattalionOnMousePositionForActiveGUIPlayer(Entities.U_MilitaryBow)", 2, true)
+    Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad5, "KeyBindings_CreateBattalionOnMousePositionForActiveGUIPlayer(Entities.U_MilitarySpear)", 2, true)
+    Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad6, "KeyBindings_CreateEntityAtMousePositionForActiveGUIPlayer(Entities.U_AmmunitionCart)", 2, true)
+    Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad7, "KeyBindings_CreateEntityAtMousePositionForActiveGUIPlayer(Entities.U_CannonCart)", 2, true)
     --Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad8, "KeyBindings_CreateEntityAtMousePositionForActiveGUIPlayer(Entities.U_SiegeTowerCart)", 2, true)
-    --Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad8, "KeyBindings_ToggleRights()", 2, true)
+    Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad8, "KeyBindings_ToggleRights()", 2, true)
     --Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad8, "KeyBindings_TestFunc()", 2, true)
-    --Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad9, "KeyBindings_CreateEntityAtMousePositionForActiveGUIPlayer(Entities.B_Beautification_Cathedral)", 2, true)
-    --Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad9, "KeyBindings_CreateEntityAtMousePositionForActiveGUIPlayer(Entities.B_NPC_Spicetrader)", 2, true)
+    --Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad8, "GUI_Construction.BuildWallClicked(UpgradeCategories.FenceSegment)", 2, true)
+    --Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad9, "GUI_Construction.BuildWallClicked(UpgradeCategories.WallSegment_NPC_Asia)", 2, true)
+    --Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad9, "GUI_Construction.BuildClicked(UpgradeCategories.Beautification_Standarte)", 2, true)
+    Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad9, "KeyBindings_CreateEntityAtMousePositionForActiveGUIPlayer(Entities.U_Dragon)", 2, true)
     --Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad9, "KeyBindings_CreateEntityAtMousePositionForActiveGUIPlayer(Entities.B_Beautification_Dragon)", 2, true)
     --Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad9, "KeyBindings_CreateEntityAtMousePositionForActiveGUIPlayer(Entities.U_Dragon)", 2, true)
-    Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad8, "KeyBindings_CreateEntityAtMousePositionForActiveGUIPlayer(Entities.A_AS_Tiger_White)", 2, true)
-    Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad9, "KeyBindings_CreateEntityAtMousePositionForActiveGUIPlayer(Entities.U_Tiger_White)", 2, true)
     
+    
+    -----------------------------------------------------------------------------------------------
+    -- Change building skin
+    -----------------------------------------------------------------------------------------------
+
+    Input.KeyBindDown(Keys.C, "GUI_Construction.SwitchBuildingCategory()", 2)
 
     -----------------------------------------------------------------------------------------------
     -- Camera debug

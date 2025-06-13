@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AnimProperties>
+ <AnimationSoundProperties>
+ 
+ 
+  <Element>
+   <AnimationID>U_NPC_Geologist_Die</AnimationID>
+   <Property>
+    <SoundEventMap>
+     <Element>
+      <SoundID>Units\army_die</SoundID>
+      <Time>248</Time>
+     </Element>
+    </SoundEventMap>
+   </Property>
+  </Element>
+  
+ 
+  <Element>
+   <AnimationID>U_NPC_Geologist_Examine_End</AnimationID>
+   <Property>
+    <SoundEventMap>
+     <Element>
+      <SoundID>Misc\settler_yipieh</SoundID>
+      <Time>0</Time>
+     </Element>
+    </SoundEventMap>
+   </Property>
+  </Element>
+
+	 <Element>
+		 <AnimationID>v_cannon_shoot</AnimationID>
+		 <Property>
+			 <SoundEventMap>
+				 <Element>
+					 <SoundID>Buildings\arm_cannon_shoot</SoundID>
+					 <Time>60</Time>
+				 </Element>
+			 </SoundEventMap>
+		 </Property>
+	 </Element>
+ </AnimationSoundProperties>
+</AnimProperties>

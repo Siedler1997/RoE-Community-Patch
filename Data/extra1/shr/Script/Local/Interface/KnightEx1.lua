@@ -127,6 +127,129 @@ do
     end
 end
 
+do
+    function GUI_Knight.UpdateNewNeedsAndRights()
+
+        if TechnologiesNotShownForKnightTitle == nil then
+            TechnologiesNotShownForKnightTitle = {}
+            TechnologiesNotShownForKnightTitle[Technologies.R_Nutrition] = true
+            TechnologiesNotShownForKnightTitle[Technologies.R_Clothes] = true
+            TechnologiesNotShownForKnightTitle[Technologies.R_Hygiene] = true
+            TechnologiesNotShownForKnightTitle[Technologies.R_Entertainment] = true
+            TechnologiesNotShownForKnightTitle[Technologies.R_Wealth] = true
+            TechnologiesNotShownForKnightTitle[Technologies.R_Prosperity] = true
+            TechnologiesNotShownForKnightTitle[Technologies.R_Military] = true
+            TechnologiesNotShownForKnightTitle[Technologies.R_Victory] = true
+            TechnologiesNotShownForKnightTitle[Technologies.R_SpearMaker] = true
+            TechnologiesNotShownForKnightTitle[Technologies.R_SwordSmith] = true
+            TechnologiesNotShownForKnightTitle[Technologies.R_BowMaker] = true
+            
+            TechnologiesNotShownForKnightTitle[Technologies.R_Beautification_Signpost] = true
+            TechnologiesNotShownForKnightTitle[Technologies.R_Beautification_WoodBench] = true
+            TechnologiesNotShownForKnightTitle[Technologies.R_SpecialEdition_Pavilion] = true
+            TechnologiesNotShownForKnightTitle[Technologies.R_Beautification_Military] = true
+            TechnologiesNotShownForKnightTitle[Technologies.R_Beautification_PrisonCage] = true
+            TechnologiesNotShownForKnightTitle[Technologies.R_Beautification_ExecutionerPlace] = true
+            TechnologiesNotShownForKnightTitle[Technologies.R_Beautification_Flowerpot_Round] = true
+            TechnologiesNotShownForKnightTitle[Technologies.R_SpecialEdition_StatueFamily] = true
+            TechnologiesNotShownForKnightTitle[Technologies.R_Beautification_BrothersInArms] = true
+            TechnologiesNotShownForKnightTitle[Technologies.R_Beautification_StoneBench] = true
+            TechnologiesNotShownForKnightTitle[Technologies.R_Beautification_Brazier] = true
+            TechnologiesNotShownForKnightTitle[Technologies.R_SpecialEdition_Column] = true
+            TechnologiesNotShownForKnightTitle[Technologies.R_Beautification_Shrine] = true
+            TechnologiesNotShownForKnightTitle[Technologies.R_Beautification_Lantern] = true
+            TechnologiesNotShownForKnightTitle[Technologies.R_Beautification_Vase] = true
+            TechnologiesNotShownForKnightTitle[Technologies.R_Beautification_Pavilion] = true
+            TechnologiesNotShownForKnightTitle[Technologies.R_Beautification_Knight] = true
+            TechnologiesNotShownForKnightTitle[Technologies.R_SpecialEdition_StatueDario] = true
+            TechnologiesNotShownForKnightTitle[Technologies.R_Beautification_Sundial] = true
+            TechnologiesNotShownForKnightTitle[Technologies.R_Beautification_VictoryColumn] = true
+            TechnologiesNotShownForKnightTitle[Technologies.R_Beautification_TriumphalArch] = true
+        end
+
+
+        local RewardBaseWidgetName = "/InGame/Root/Normal/AlignBottomRight/KnightTitleMenu/NewRights/RightsIcon"
+        local NewNeedBaseWidgetName = "/InGame/Root/Normal/AlignBottomRight/KnightTitleMenu/NewRights/NeedsIcon"
+
+        local PlayerID = GUI.GetPlayerID()
+        local CurrentTitle = Logic.GetKnightTitle(PlayerID)
+
+        local NextTitle = CurrentTitle + 1
+
+
+        GUI_Knight.NextRightsForTitle = {}
+
+        local AmountOfRights  = 0
+
+        local TechnologyTypeTable = NeedsAndRightsByKnightTitle[NextTitle][4]
+
+        if TechnologyTypeTable ~= nil then
+
+            for i=1, #TechnologyTypeTable do
+
+                local TechnologyType = TechnologyTypeTable[i]
+
+                if      TechnologiesNotShownForKnightTitle[TechnologyType] ~= true
+                    and ( Logic.TechnologyGetState(PlayerID, TechnologyType) ~= TechnologyStates.Locked
+                    or EnableRights ~= true ) then
+
+                    local ButtonIndex = AmountOfRights + 1
+                    GUI_Knight.NextRightsForTitle[ButtonIndex] = TechnologyType
+
+                    AmountOfRights = AmountOfRights + 1
+                end
+
+            end
+        end
+
+
+        GUI_Knight.NextNeedsForTitle ={}
+
+        local AmountOfNeeds = 0
+
+        local NeedsTable = NeedsAndRightsByKnightTitle[NextTitle][2]
+
+        if NeedsTable ~= nil then
+            for i=1, #NeedsTable do
+
+                local Need = NeedsTable[i]
+
+                local ButtonIndex = AmountOfNeeds + 1
+                GUI_Knight.NextNeedsForTitle[ButtonIndex] = Need
+
+                AmountOfNeeds = AmountOfNeeds + 1
+
+            end
+        end
+
+
+        for i=1, #GUI_Knight.NextRightsForTitle do
+            local TechnologyType =  GUI_Knight.NextRightsForTitle[i]
+            local Button = RewardBaseWidgetName .. i
+            XGUIEng.ShowWidget(Button,1)
+            SetIcon(Button, g_TexturePositions.Technologies[TechnologyType])
+        end
+
+        for i=#GUI_Knight.NextRightsForTitle+1, 8 do
+            local Button = RewardBaseWidgetName .. i
+            XGUIEng.ShowWidget(Button,0)
+        end
+
+        for i=1, #GUI_Knight.NextNeedsForTitle do
+            local Need =  GUI_Knight.NextNeedsForTitle[i]
+            local Button = NewNeedBaseWidgetName .. i
+            XGUIEng.ShowWidget(Button,1)
+            SetIcon(Button, g_TexturePositions.Needs[Need])
+        end
+
+        for i=#GUI_Knight.NextNeedsForTitle+1, 3 do
+            local Button = NewNeedBaseWidgetName .. i
+            XGUIEng.ShowWidget(Button,0)
+        end
+
+    end
+end
+
 function GUI_Knight.StartAbilityClicked(_Ability)
 
     local PlayerID = GUI.GetPlayerID()

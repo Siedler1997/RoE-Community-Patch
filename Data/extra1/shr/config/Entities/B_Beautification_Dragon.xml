@@ -2,7 +2,7 @@
 <root>
 	<Display classname="ED::CBuildingProps">
 		<Class>ED::CDisplayBuilding</Class>
-		<Model>Doodads\D_X_Beautification_Dragon</Model>
+		<Model>Buildings\D_X_Beautification_Dragon</Model>
 		<FireNodeCount>15</FireNodeCount>
 	</Display>
 
@@ -26,24 +26,24 @@
 		<BlockingAreas>
 			<BlockingArea>
 				<Blocked1>
-					<X>-300</X>
-					<Y>300</Y>
+					<X>-250</X>
+					<Y>250</Y>
 				</Blocked1>
 				<Blocked2>
-					<X>300</X>
-					<Y>-300</Y>
+					<X>250</X>
+					<Y>-250</Y>
 				</Blocked2>
 			</BlockingArea>
 		</BlockingAreas>
 		<BuildBlockingAreas>
 			<BuildBlockingArea>
 				<Blocked1>
-					<X>-300</X>
-					<Y>300</Y>
+					<X>-250</X>
+					<Y>250</Y>
 				</Blocked1>
 				<Blocked2>
-					<X>300</X>
-					<Y>-300</Y>
+					<X>250</X>
+					<Y>-250</Y>
 				</Blocked2>
 			</BuildBlockingArea>
 		</BuildBlockingAreas>
@@ -83,8 +83,8 @@
 		</Display>
 	</Behavior>
 	<MapEditor>
-		<TreePosition>SpecialEdition</TreePosition>
-		<ShowInTree>false</ShowInTree>
+		<TreePosition>Buildings\Beautyfication</TreePosition>
+		<ShowInTree>true</ShowInTree>
 		<Clime>Generic</Clime>
 		<Scalable>false</Scalable>
 		<TemplateResistant>true</TemplateResistant>

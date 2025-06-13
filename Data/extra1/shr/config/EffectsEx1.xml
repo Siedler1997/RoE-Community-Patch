@@ -39,6 +39,64 @@
         </Display>
     </Effect>
 		
+		<!-- CP effects -->
+      <!--  This effect is played when a cannon ball hits a stone wall-->
+      <Effect id="FXBombWallImpact">
+        <Logic classname="EGL::CEffectProps">
+          <Class>EGL::CEffect</Class>
+          <Duration>3.2</Duration>
+          <SoundID>Impact\impact_bomb_stone</SoundID>
+          <SoundVolume>100</SoundVolume>
+          <SoundLooped>false</SoundLooped>
+        </Logic>
+        <Display classname="ED::CHAnimEffectProps">
+          <Class>ED::CHAnimEffect</Class>
+          <Model>Effects\XF_ExplosionPilgrim</Model>
+          <Anim>XF_ExplosionPilgrim</Anim>
+        </Display>
+      </Effect>
+      <!--  This effect is played when a cannon ball hits a palisade wall-->
+      <Effect id="FXBombPalisadeImpact">
+        <Logic classname="EGL::CEffectProps">
+          <Class>EGL::CEffect</Class>
+          <Duration>3.2</Duration>
+          <SoundID>Impact\impact_bomb_wood</SoundID>
+          <SoundVolume>100</SoundVolume>
+          <SoundLooped>false</SoundLooped>
+        </Logic>
+        <Display classname="ED::CHAnimEffectProps">
+          <Class>ED::CHAnimEffect</Class>
+          <Model>Effects\XF_ExplosionPilgrim</Model>
+          <Anim>XF_ExplosionPilgrim</Anim>
+        </Display>
+      </Effect>
+      <!--  This effect is played when a cannon ball hits something else-->
+      <Effect id="FXBombImpact">
+        <Logic classname="EGL::CEffectProps">
+          <Class>EGL::CEffect</Class>
+          <Duration>3.2</Duration>
+          <SoundID>Impact\impact_bomb</SoundID>
+          <SoundVolume>100</SoundVolume>
+          <SoundLooped>false</SoundLooped>
+        </Logic>
+        <Display classname="ED::CHAnimEffectProps">
+          <Class>ED::CHAnimEffect</Class>
+          <Model>Effects\XF_ExplosionPilgrim</Model>
+          <Anim>XF_ExplosionPilgrim</Anim>
+        </Display>
+      </Effect>
+      
+		<Effect id="FXCannonSmoke">
+			<Logic classname="EGL::CEffectProps">
+				<Class>EGL::CEffect</Class>
+				<Duration>5.0</Duration>
+			</Logic>
+			<Display classname="ED::CEffectParticleSystemProps">
+				<Class>ED::CEffectParticleSystem</Class>
+				<Model>Effects\XF_CannonFire</Model>
+			</Display>
+		</Effect>
+		
 		<Effect id="FXBomb">
 			<Logic classname="EGL::CArrowEffectProps">
 				<Class>EGL::CArrowEffect</Class>
@@ -53,7 +111,7 @@
 			</Logic>
 			<Display classname="ED::CFlyingEffectProps">
 				<Class>ED::CFlyingEffect</Class>
-				<Model>Effects\XD_Hero2Bomb</Model>
+				<Model>Effects\XF_Hero2Bomb</Model>
 			</Display>
 		</Effect>
 		<Effect id="E_Ox_Fire">
@@ -61,16 +119,16 @@
 				<Class>EGL::CArrowEffect</Class>
 				<Global>false</Global>
 				<Duration>0</Duration>
-				<Speed>3000.0</Speed>
+				<Speed>4000.0</Speed>
 				<GravityFactor>1800.0f</GravityFactor>
 				<HeightOffsetStart>60.0</HeightOffsetStart>
 				<HeightOffsetTarget>60.0</HeightOffsetTarget>
 				<SoundProjectileType>Catapult</SoundProjectileType>
-				<ImpactEffectID>E_Shockwave03</ImpactEffectID>
+				<ImpactEffectID>FXBombImpact</ImpactEffectID>
 			</Logic>
 			<Display classname="ED::CFlyingEffectProps">
 				<Class>ED::CFlyingEffect</Class>
-				<Model>Effects\XD_Hero2Bomb</Model>
+				<Model>Effects\XF_Hero2Bomb</Model>
 			</Display>
 		</Effect>
 		<Effect id="E_Ox_Fire_Palisade">
@@ -78,16 +136,16 @@
 				<Class>EGL::CArrowEffect</Class>
 				<Global>false</Global>
 				<Duration>0</Duration>
-				<Speed>3000.0</Speed>
+				<Speed>4000.0</Speed>
 				<GravityFactor>1800.0f</GravityFactor>
 				<HeightOffsetStart>60.0</HeightOffsetStart>
 				<HeightOffsetTarget>60.0</HeightOffsetTarget>
 				<SoundProjectileType>Catapult</SoundProjectileType>
-				<ImpactEffectID>FXPalisadeImpact</ImpactEffectID>
+				<ImpactEffectID>FXBombPalisadeImpact</ImpactEffectID>
 			</Logic>
 			<Display classname="ED::CFlyingEffectProps">
 				<Class>ED::CFlyingEffect</Class>
-				<Model>Effects\XD_Hero2Bomb</Model>
+				<Model>Effects\XF_Hero2Bomb</Model>
 			</Display>
 		</Effect>
 		<Effect id="E_Ox_Fire_Wall">
@@ -95,16 +153,16 @@
 				<Class>EGL::CArrowEffect</Class>
 				<Global>false</Global>
 				<Duration>0</Duration>
-				<Speed>3000.0</Speed>
+				<Speed>4000.0</Speed>
 				<GravityFactor>1800.0f</GravityFactor>
 				<HeightOffsetStart>60.0</HeightOffsetStart>
 				<HeightOffsetTarget>60.0</HeightOffsetTarget>
 				<SoundProjectileType>Catapult</SoundProjectileType>
-				<ImpactEffectID>FXWallImpact</ImpactEffectID>
+				<ImpactEffectID>FXBombWallImpact</ImpactEffectID>
 			</Logic>
 			<Display classname="ED::CFlyingEffectProps">
 				<Class>ED::CFlyingEffect</Class>
-				<Model>Effects\XD_Hero2Bomb</Model>
+				<Model>Effects\XF_Hero2Bomb</Model>
 			</Display>
 		</Effect>
 		<Effect id="E_Ox_Fire_Fly">
@@ -112,7 +170,7 @@
 				<Class>EGL::CArrowEffect</Class>
 				<Global>false</Global>
 				<Duration>0</Duration>
-				<Speed>3000.0</Speed>
+				<Speed>4000.0</Speed>
 				<GravityFactor>1800.0f</GravityFactor>
 				<HeightOffsetStart>60.0</HeightOffsetStart>
 				<HeightOffsetTarget>1300.0</HeightOffsetTarget>
@@ -121,7 +179,78 @@
 			</Logic>
 			<Display classname="ED::CFlyingEffectProps">
 				<Class>ED::CFlyingEffect</Class>
-				<Model>Effects\XD_Hero2Bomb</Model>
+				<Model>Effects\XF_Hero2Bomb</Model>
+			</Display>
+		</Effect>
+		
+		<Effect id="E_Cannon_Fire">
+			<Logic classname="EGL::CSplashEffectProps">
+				<Class>EGL::CSplashEffect</Class>
+				<Global>false</Global>
+				<Duration>0</Duration>
+				<Speed>4000.0</Speed>
+				<GravityFactor>200.0f</GravityFactor>
+				<HeightOffsetStart>100.0</HeightOffsetStart>
+				<HeightOffsetTarget>250.0</HeightOffsetTarget>
+				<SoundProjectileType>Catapult</SoundProjectileType>
+				<ImpactEffectID>FXBombImpact</ImpactEffectID>
+			</Logic>
+			<Display classname="ED::CFlyingEffectProps">
+				<Class>ED::CFlyingEffect</Class>
+				<Model>Effects\XF_CannonBall</Model>
+			</Display>
+		</Effect>
+		<Effect id="E_Cannon_Fire_Palisade">
+			<Logic classname="EGL::CSplashEffectProps">
+				<Class>EGL::CSplashEffect</Class>
+				<Global>false</Global>
+				<Duration>0</Duration>
+				<Speed>4000.0</Speed>
+				<GravityFactor>200.0f</GravityFactor>
+				<HeightOffsetStart>100.0</HeightOffsetStart>
+				<HeightOffsetTarget>250.0</HeightOffsetTarget>
+				<ImpactEffectID>FXBombPalisadeImpact</ImpactEffectID>
+				<AlignImpactWithTarget>true</AlignImpactWithTarget>
+				<SoundProjectileType>Catapult</SoundProjectileType>
+			</Logic>
+			<Display classname="ED::CFlyingEffectProps">
+				<Class>ED::CFlyingEffect</Class>
+				<Model>Effects\XF_CannonBall</Model>
+			</Display>
+		</Effect>
+		<Effect id="E_Cannon_Fire_Wall">
+			<Logic classname="EGL::CSplashEffectProps">
+				<Class>EGL::CSplashEffect</Class>
+				<Global>false</Global>
+				<Duration>0</Duration>
+				<Speed>4000.0</Speed>
+				<GravityFactor>200.0f</GravityFactor>
+				<HeightOffsetStart>100.0</HeightOffsetStart>
+				<HeightOffsetTarget>250.0</HeightOffsetTarget>
+				<ImpactEffectID>FXBombWallImpact</ImpactEffectID>
+				<AlignImpactWithTarget>true</AlignImpactWithTarget>
+				<SoundProjectileType>Catapult</SoundProjectileType>
+			</Logic>
+			<Display classname="ED::CFlyingEffectProps">
+				<Class>ED::CFlyingEffect</Class>
+				<Model>Effects\XF_CannonBall</Model>
+			</Display>
+		</Effect>
+		<Effect id="E_Cannon_Fire_Fly">
+			<Logic classname="EGL::CArrowEffectProps">
+				<Class>EGL::CArrowEffect</Class>
+				<Global>false</Global>
+				<Duration>0</Duration>
+				<Speed>4000.0</Speed>
+				<GravityFactor>200.0f</GravityFactor>
+				<HeightOffsetStart>100.0</HeightOffsetStart>
+				<HeightOffsetTarget>1300.0</HeightOffsetTarget>
+				<SoundProjectileType>Catapult</SoundProjectileType>
+				<ImpactEffectID>E_Shockwave04</ImpactEffectID>
+			</Logic>
+			<Display classname="ED::CFlyingEffectProps">
+				<Class>ED::CFlyingEffect</Class>
+				<Model>Effects\XF_CannonBall</Model>
 			</Display>
 		</Effect>
     </Effects>

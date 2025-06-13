@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+
+	<Display classname="ED::CEntityProps">
+		<Class>ED::CDisplaySettler</Class>
+		<Model>Units\Military\U_MilitaryCavalry</Model>
+		<DrawPlayerColor>true</DrawPlayerColor>
+		<!--<LodDistance>3000</LodDistance>-->
+	</Display>
+
+	<Logic classname="EGL::CSettlerProps">
+		<Class>EGL::CSettler</Class>
+		<AccessCategory>AccessCategoryAttackableSettler</AccessCategory>
+		<PlayerSectorType>PlayerSectorTypeMilitary</PlayerSectorType>
+		<MilMetaFormationMemberType>MilMetaFormationMemberTypeMelee</MilMetaFormationMemberType>
+		<CostsCanBeModified>false</CostsCanBeModified>
+		<MaxHealth>900</MaxHealth>
+		<HealingSeconds>10</HealingSeconds>
+		<HealingPoints>40</HealingPoints>
+
+		<NeedsPlayer>true</NeedsPlayer>
+		<ForceNoPlayer>false</ForceNoPlayer>
+		<Exploration>30</Exploration>
+		<IdleTaskList>TL_MILITARY_DEFEND</IdleTaskList>
+		<CanDrown>true</CanDrown>
+		<IsSelectable>true</IsSelectable>
+		<BlockRadius>250</BlockRadius>
+
+		<Cost>
+			<GoodAmount>
+				<!-- if the gold costs are changed, the refill costs have to be adjusted as well in "B_Barracks.xml"
+               Refilling should cost the same per unit than buying batallions!  -->
+				<GoodType>G_Gold</GoodType>
+				<Amount>90</Amount>
+			</GoodAmount>
+			<GoodAmount>
+				<GoodType>G_Sword</GoodType>
+				<Amount>1</Amount>
+			</GoodAmount>
+		</Cost>
+
+		<EntityCategories>
+			<EntityCategory>Military</EntityCategory>
+			<EntityCategory>AttackableSettler</EntityCategory>
+			<EntityCategory>Melee</EntityCategory>
+			<EntityCategory>Cavalry</EntityCategory>
+		</EntityCategories>
+		<Familiar>
+			<With>SheepPasture</With>
+			<With>CattlePasture</With>
+		</Familiar>
+		<SoundImpactType>Metal</SoundImpactType>
+		<SoundProjectileType>Sword</SoundProjectileType>
+	</Logic>
+
+	<Behaviors>
+
+		<!-- ANIMATION -->
+		<Behavior>
+			<Logic classname="EGL::CAnimationBehaviorExProps">
+				<Class>EGL::CBehaviorAnimationEx</Class>
+				<DefaultAnimation>Military\U_MilitaryCavalry_Idle1</DefaultAnimation>
+				<AnimSet>SET_MILITARYCAVALRY</AnimSet>
+			</Logic>
+
+			<Display classname="ED::CBehaviorProps">
+				<Class>ED::CDisplayBehaviorAnimation</Class>
+			</Display>
+		</Behavior>
+
+		<!-- MOVEMENT -->
+		<Behavior>
+			<Logic classname="EGL::CMilitaryMovementBehaviorProps">
+				<Class>EGL::CMilitaryMovementBehavior</Class>
+				<StraightenPath>true</StraightenPath>
+				<EvasionPriority>140</EvasionPriority>
+				<Speed>800</Speed>
+                <SmoothingRadius>1000</SmoothingRadius>
+				<RotationSpeed>400</RotationSpeed>
+				<MoveTaskList>TL_KNIGHT_WALK</MoveTaskList>
+				<MoveIdleAnim>Military\U_MilitaryCavalry_Idle1</MoveIdleAnim>
+			</Logic>
+			<Display classname="ED::CBehaviorProps">
+				<Class>ED::CDisplayBehaviorMovement</Class>
+			</Display>
+		</Behavior>
+
+		<Behavior>
+			<Logic classname="EGL::CGuardableBehaviorProps">
+				<Class>EGL::CGuardableBehavior</Class>
+				<GuardRadius>300</GuardRadius>
+				<GuardApproachPos>
+					<X>-300</X>
+					<Y>0</Y>
+				</GuardApproachPos>
+			</Logic>
+		</Behavior>
+		
+		<!-- SOLDIER -->
+		<Behavior>
+			<Logic classname="EGL::CFightBehaviorProps">
+				<Class>EGL::CFightBehavior</Class>
+				<DefendRange>2700</DefendRange>
+				<AttackMoveRange>2700</AttackMoveRange>
+				<BattleFreedomRange>300</BattleFreedomRange>
+
+				<!-- NewHealth = CurrentHealth - (Damage * RaiseShieldFactor / 100) -->
+				<RaiseShieldFactor>60</RaiseShieldFactor>
+
+				<DefendTL>TL_MILITARY_DEFEND</DefendTL>
+				<IdleTaskList>TL_MILITARY_IDLE</IdleTaskList>
+				<MoveTaskList>TL_KNIGHT_WALK</MoveTaskList>
+				<AttackRunTaskList>TL_KNIGHT_WALK</AttackRunTaskList>
+				<StandToArmsTaskList>TL_MILITARY_STAND_TO_ARMS</StandToArmsTaskList>
+				<RaiseShieldTaskList>TL_MILITARY_RAISE_SHIELD</RaiseShieldTaskList>
+				<RaiseShieldRunTaskList>TL_KNIGHT_WALK</RaiseShieldRunTaskList>
+
+				<DefaultFormation>DoubleColumn</DefaultFormation>
+				<StandFormation>DoubleColumn</StandFormation>
+				<StationaryDefendFormation>StationaryDefend</StationaryDefendFormation>
+				<StandToAttentionFormation>DoubleColumn</StandToAttentionFormation>
+				<WalkFormation>DoubleColumn</WalkFormation>
+				<AttackFormation>DoubleRow</AttackFormation>
+
+				<AmmunitionType>G_TorchAmmunition</AmmunitionType>
+				<AmmunitionLimit>1</AmmunitionLimit>
+
+				<TargetCategoryList>
+					<!-- Plain attack -->
+					<TargetCategory>
+						<!-- don't remove  the empty tags, otherwise the data isn't shown correctly in the XML balancer! -->
+						<EntityCategoryList>
+							<EntityCategory>Hero</EntityCategory>
+							<EntityCategory>Leader</EntityCategory>
+							<EntityCategory>AttackableSettler</EntityCategory>
+							<EntityCategory>Thief</EntityCategory>
+							<EntityCategory/>
+							<EntityCategory/>
+						</EntityCategoryList>
+
+						<AttackModeList>
+							<AttackMode>
+								<BattleTL>TL_BATTLE_MELEE</BattleTL>
+								<!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
+								<ApplyDamageModifiers>true</ApplyDamageModifiers>
+
+								<MinRange>0</MinRange>
+								<MaxRange>150</MaxRange>
+								<MaxHeightDeltaToTarget>100</MaxHeightDeltaToTarget>
+								<CanAttackOverWalls>false</CanAttackOverWalls>
+								<CooldownThousandths>2000</CooldownThousandths>
+								<Damage>
+									<DiceCount>0</DiceCount>
+									<FaceCount>0</FaceCount>
+									<BaseValue>25</BaseValue>
+								</Damage>
+							</AttackMode>
+
+							<!-- ranged combat  (those empty tags are needed to show all unit xmls correctly in the XML balancer  -->
+							<AttackMode>
+								<BattleTL/>
+								<ApplyDamageModifiers>true</ApplyDamageModifiers>
+								<MinRange/>
+								<MaxRange/>
+								<MaxHeightDeltaToTarget/>
+								<CanAttackOverWalls>false</CanAttackOverWalls>
+								<CooldownThousandths/>
+								<ProjectileEffect/>
+								<ProjectileOffsetHeight/>
+								<ProjectileOffsetFront/>
+								<Damage>
+									<DiceCount/>
+									<FaceCount/>
+									<BaseValue/>
+								</Damage>
+								<NoMinRangeWhenNotOnGround>false</NoMinRangeWhenNotOnGround>
+							</AttackMode>
+
+						</AttackModeList>
+					</TargetCategory>
+
+					<!-- Torching buildings -->
+					<TargetCategory>
+						<DisableAutoAttack>true</DisableAutoAttack>
+
+						<!-- don't remove  the empty tags, otherwise the data isn't shown correctly in the XML balancer! -->
+						<EntityCategoryList>
+							<EntityCategory/>
+							<EntityCategory/>
+							<EntityCategory/>
+							<EntityCategory>AttackableBuilding</EntityCategory>
+							<EntityCategory>PalisadeSegment</EntityCategory>
+							<EntityCategory>SpecialBuilding</EntityCategory>
+						</EntityCategoryList>
+
+						<AttackModeList>
+							<AttackMode>
+								<BattleTL>TL_BATTLE_MELEE</BattleTL>
+								<!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
+								<ApplyDamageModifiers>false</ApplyDamageModifiers>
+
+								<MinRange>0</MinRange>
+								<MaxRange>800</MaxRange>
+								<ProjectileEffect>FXBomb</ProjectileEffect>
+								<MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
+								<CanAttackOverWalls>false</CanAttackOverWalls>
+								<CooldownThousandths>5000</CooldownThousandths>
+								<Damage>
+									<DiceCount>0</DiceCount>
+									<FaceCount>0</FaceCount>
+									<BaseValue>15</BaseValue>
+								</Damage>
+								<BuildingFireSize>10</BuildingFireSize>
+								<ConsumeAmmunition>true</ConsumeAmmunition>
+							</AttackMode>
+						</AttackModeList>
+					</TargetCategory>
+
+					<!-- Capturing / attacking  merchants and siege engines -->
+					<TargetCategory>
+						<DisableAutoAttack>true</DisableAutoAttack>
+						<!-- don't remove  the empty tags, otherwise the data isn't shown correctly in the XML balancer! -->
+						<EntityCategoryList>
+							<EntityCategory/>
+							<EntityCategory/>
+							<EntityCategory/>
+							<EntityCategory/>
+							<EntityCategory>AttackableMerchant</EntityCategory>
+							<EntityCategory>HeavyWeapon</EntityCategory>
+						</EntityCategoryList>
+
+						<AttackModeList>
+							<AttackMode>
+								<BattleTL>TL_BATTLE_MELEE</BattleTL>
+								<!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
+								<ApplyDamageModifiers>true</ApplyDamageModifiers>
+
+								<MinRange>0</MinRange>
+								<MaxRange>150</MaxRange>
+								<MaxHeightDeltaToTarget>100</MaxHeightDeltaToTarget>
+								<CanAttackOverWalls>false</CanAttackOverWalls>
+								<CooldownThousandths>2000</CooldownThousandths>
+								<Damage>
+									<DiceCount>0</DiceCount>
+									<FaceCount>0</FaceCount>
+									<BaseValue>25</BaseValue>
+								</Damage>
+							</AttackMode>
+						</AttackModeList>
+					</TargetCategory>
+
+					<!-- This category is only used to disable auto-attack for carnivores  -->
+					<TargetCategory>
+						<DisableAutoAttack>true</DisableAutoAttack>
+						<!-- don't remove  the empty tags, otherwise the data isn't shown correctly in the XML balancer! -->
+						<EntityCategoryList>
+							<EntityCategory/>
+							<EntityCategory/>
+							<EntityCategory/>
+							<EntityCategory/>
+							<EntityCategory/>
+							<EntityCategory>AttackableAnimal</EntityCategory>
+						</EntityCategoryList>
+						<AttackModeList>
+							<AttackMode>
+								<BattleTL>TL_BATTLE_MELEE</BattleTL>
+								<!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
+								<ApplyDamageModifiers>true</ApplyDamageModifiers>
+
+								<MinRange>0</MinRange>
+								<MaxRange>150</MaxRange>
+								<MaxHeightDeltaToTarget>100</MaxHeightDeltaToTarget>
+								<CanAttackOverWalls>false</CanAttackOverWalls>
+								<CooldownThousandths>2000</CooldownThousandths>
+								<Damage>
+									<DiceCount>0</DiceCount>
+									<FaceCount>0</FaceCount>
+									<BaseValue>25</BaseValue>
+								</Damage>
+							</AttackMode>
+
+							<!-- ranged combat -->
+							<AttackMode>
+								<BattleTL/>
+								<ApplyDamageModifiers>true</ApplyDamageModifiers>
+								<MinRange/>
+								<MaxRange/>
+								<MaxHeightDeltaToTarget/>
+								<CanAttackOverWalls>false</CanAttackOverWalls>
+								<CooldownThousandths/>
+								<ProjectileEffect/>
+								<ProjectileOffsetHeight/>
+								<ProjectileOffsetFront/>
+								<Damage>
+									<DiceCount/>
+									<FaceCount/>
+									<BaseValue/>
+								</Damage>
+								<NoMinRangeWhenNotOnGround>false</NoMinRangeWhenNotOnGround>
+							</AttackMode>
+
+						</AttackModeList>
+					</TargetCategory>
+				</TargetCategoryList>
+
+			</Logic>
+		</Behavior>
+
+		<!-- DEATH -->
+		<Behavior>
+			<Logic classname="EGL::CBehaviorPropsDying">
+				<Class>EGL::CBehaviorDying</Class>
+				<DyingTaskList>TL_DIE</DyingTaskList>
+			</Logic>
+		</Behavior>
+
+		<!-- PARTICULES -->
+		<Behavior>
+			<Logic classname="EGL::CBehaviorProps">
+				<Class>EGL::CParticleEffectAttachmentBehavior</Class>
+			</Logic>
+			<Display classname="ED::CBehaviorProps">
+				<Class>ED::CParticleEffectAttachmentBehavior</Class>
+			</Display>
+		</Behavior>
+	</Behaviors>
+
+	<MapEditor>
+		<TreePosition>Units\Military\Melee Weapons</TreePosition>
+		<ShowInTree>false</ShowInTree>
+		<Clime>Generic</Clime>
+		<Scalable>false</Scalable>
+	</MapEditor>
+
+</root>

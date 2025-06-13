@@ -23,6 +23,7 @@
 		<EntityCategories>
 			<EntityCategory>Military</EntityCategory>
 			<EntityCategory>Hero</EntityCategory>
+			<EntityCategory>Cavalry</EntityCategory>
 			<EntityCategory>GC_Entertainment_Supplier</EntityCategory>
 		</EntityCategories>
 		<AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
@@ -40,6 +41,8 @@
 		</Familiar>
 		<SoundImpactType>Leather</SoundImpactType>
 		<SoundProjectileType>Axe</SoundProjectileType>
+
+		<ShowInMiniMap>0.75</ShowInMiniMap>
 	</Logic>
 	<Behaviors>
 

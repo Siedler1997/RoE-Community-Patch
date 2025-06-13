@@ -11,9 +11,9 @@
         <AccessCategory>AccessCategorySoldier</AccessCategory>
         <PlayerSectorType>PlayerSectorTypeMilitary</PlayerSectorType>
         <MilMetaFormationMemberType>MilMetaFormationMemberTypeRanged</MilMetaFormationMemberType>
-        <MaxHealth>80</MaxHealth>
+        <MaxHealth>90</MaxHealth>
         <HealingSeconds>10</HealingSeconds>
-        <HealingPoints>13</HealingPoints>
+        <HealingPoints>15</HealingPoints>
 
         <CostsCanBeModified>true</CostsCanBeModified>
         <NeedsPlayer>true</NeedsPlayer>
@@ -74,7 +74,7 @@
                 <Class>EGL::CMilitarySoldierMovementBehavior</Class>
                 <StraightenPath>true</StraightenPath>
                 <EvasionPriority>140</EvasionPriority>
-                <Speed>500</Speed>
+                <Speed>480</Speed>
                 <RotationSpeed>500</RotationSpeed>
                 <MoveTaskList>TL_MILITARY_WALK</MoveTaskList>
                 <MoveIdleAnim>Military\U_MilitaryBow_Stand</MoveIdleAnim>
@@ -154,7 +154,7 @@
                                 <Damage>
                                     <DiceCount>0</DiceCount>
                                     <FaceCount>0</FaceCount>
-                                    <BaseValue>22</BaseValue>
+                                    <BaseValue>20</BaseValue>
                                 </Damage>
 
                                 <!--        HeightDamageModifierSlope : 0.0833333 = 0.5 / 6 (meter wall height)
@@ -289,7 +289,7 @@
                                 <Damage>
                                     <DiceCount>0</DiceCount>
                                     <FaceCount>0</FaceCount>
-                                    <BaseValue>22</BaseValue>
+                                    <BaseValue>20</BaseValue>
                                 </Damage>
 
                                 <!--        HeightDamageModifierSlope : 0.0833333 = 0.5 / 6 (meter wall height)
@@ -335,7 +335,7 @@
 								<Damage>
 									<DiceCount>0</DiceCount>
 									<FaceCount>0</FaceCount>
-									<BaseValue>22</BaseValue>
+									<BaseValue>20</BaseValue>
 								</Damage>
 
 								<HeightDamageModifierMin>0.5</HeightDamageModifierMin>

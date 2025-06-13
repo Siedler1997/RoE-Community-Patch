@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+	<Display classname="ED::CBuildingProps">
+    <Class>ED::CDisplayBuilding</Class>
+    <Banner>Default</Banner>
+    <Model>Buildings\B_NPC_ShipsStorehouse</Model>
+    <Model2>Buildings\B_NPC_ShipsStorehouse_Light</Model2>
+    <FireNodeCount>15</FireNodeCount>
+  </Display>
+
+    <Logic classname="EGL::CStoreHouseProperties">
+        <Class>EGL::CStoreHouse</Class>
+        <ConstructionCost>
+            <Wood>0</Wood>
+            <Stone>0</Stone>
+        </ConstructionCost>
+        <CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim>
+        <FlattenOnBuild>true</FlattenOnBuild>
+        <IsHeightLocking>true</IsHeightLocking>
+        <AccessCategory>AccessCategoryBuilding</AccessCategory>
+        <NeedsPlayer>true</NeedsPlayer>
+        <ForceNoPlayer>false</ForceNoPlayer>
+        <MaxHealth>400</MaxHealth>
+
+        <PlacementAcquiresTerritoryOwnership>false</PlacementAcquiresTerritoryOwnership>
+
+        <KegEffectFactor>0.1</KegEffectFactor>
+        <EntityCategories>
+            <EntityCategory>Storehouse</EntityCategory>
+            <EntityCategory>G_Grain_Supplier</EntityCategory>
+            <EntityCategory>G_Milk_Supplier</EntityCategory>
+            <EntityCategory>G_Stone_Supplier</EntityCategory>
+            <EntityCategory>G_Honeycomb_Supplier</EntityCategory>
+            <EntityCategory>G_Wood_Supplier</EntityCategory>
+            <EntityCategory>G_Wool_Supplier</EntityCategory>
+            <EntityCategory>G_Iron_Supplier</EntityCategory>
+            <EntityCategory>G_Herb_Supplier</EntityCategory>
+            <EntityCategory>G_Carcass_Supplier</EntityCategory>
+            <EntityCategory>G_RawFish_Supplier</EntityCategory>
+
+            <EntityCategory>AttackableBuilding</EntityCategory>
+        </EntityCategories>
+    <RepairBuildingTL>TL_WORKER_REPAIR</RepairBuildingTL>
+    <Exploration>0</Exploration>
+    <LeavePos>
+      <X>300</X>
+      <Y>-700</Y>
+    </LeavePos>
+    <ApproachPos>
+      <X>300</X>
+      <Y>-700</Y>
+    </ApproachPos>
+    <ApproachR>0</ApproachR>
+    <DoorPos>
+      <X>300</X>
+      <Y>-200</Y>
+    </DoorPos>
+    <BlockingAreas>
+      <BlockingArea>
+        <Blocked1>
+            <X>-900</X>
+            <Y>400</Y>
+        </Blocked1>
+        <Blocked2>
+            <X>800</X>
+            <Y>-600</Y>
+        </Blocked2>
+    </BlockingArea>
+</BlockingAreas>
+    <BuildBlockingAreas>
+      <BuildBlockingArea>
+        <Blocked1>
+            <X>-900</X>
+            <Y>400</Y>
+        </Blocked1>
+        <Blocked2>
+            <X>800</X>
+            <Y>-750</Y>
+        </Blocked2>
+    </BuildBlockingArea>
+</BuildBlockingAreas>
+
+    <MaxFloorFireSize>30</MaxFloorFireSize>
+    <OnScreenIcon>MinimapHarbour</OnScreenIcon>
+		<ShowInMiniMap>0.75</ShowInMiniMap>
+    <!-- Must be a subfolder of graphics\\textures -->
+
+    <OutStockCapacities>
+      <OutStockCapacity>9000</OutStockCapacity>
+</OutStockCapacities>
+<SoundImpactType>Stone_Wood</SoundImpactType>
+
+        </Logic>
+
+        <Behaviors>
+            <Behavior>
+                <Logic classname="EGL::CLimitedAttachmentBehaviorProperties">
+                    <Class>EGL::CLimitedAttachmentBehavior</Class>
+                    <Attachment>
+                        <Type>ATTACHMENT_DEFENDER_BUILDING</Type>
+                        <Limit>200</Limit>
+                    </Attachment>
+                </Logic>
+            </Behavior>
+
+            <Behavior>
+                <Logic classname="EGL::CStockBehaviorProps">
+                    <Class>EGL::CStockInOutBehavior</Class>
+                    <MaxAmountOnStock>100</MaxAmountOnStock>
+                    <GoodTypes>
+                        <GoodType>G_Gold</GoodType>
+                        <GoodType>G_Wood</GoodType>
+                        <GoodType>G_Stone</GoodType>
+                        <GoodType>G_Grain</GoodType>
+                        <GoodType>G_Milk</GoodType>
+                        <GoodType>G_Herb</GoodType>
+                        <GoodType>G_Wool</GoodType>
+                        <GoodType>G_Honeycomb</GoodType>
+                        <GoodType>G_Iron</GoodType>
+                        <GoodType>G_RawFish</GoodType>
+                        <GoodType>G_Carcass</GoodType>
+                        <GoodType>G_Gems</GoodType>
+                        <GoodType>G_Olibanum</GoodType>
+                        <GoodType>G_MusicalInstrument</GoodType>
+                    </GoodTypes>
+                </Logic>
+            </Behavior>
+
+            <Behavior>
+                <Logic classname="EGL::CBehaviorProps">
+                    <Class>EGL::CBuildingGoodTrader</Class>
+                </Logic>
+            </Behavior>
+            <Behavior>
+                <Logic classname="EGL::CBehaviorProps">
+                    <Class>EGL::CBuildingEntertainerBehavior</Class>
+                </Logic>
+            </Behavior>
+
+
+            <Behavior>
+                <Logic classname="EGL::CBehaviorProps">
+        			<Class>EGL::CBuildingMercenaryBehavior</Class>
+        		</Logic>
+    	    </Behavior>
+
+            <Behavior>
+                <Logic classname="EGL::CDiscoveredInFogOfWarBehaviorProperties">
+                    <Class>EGL::CDiscoveredInFogOfWarBehavior</Class>
+                </Logic>
+            </Behavior>
+
+            <Behavior>
+                <Logic classname="EGL::CBuildingMerchantBehaviorProps">
+                    <Class>EGL::CBuildingMerchantBehavior</Class>
+                    <!-- <MaximumSlotCount>4</MaximumSlotCount> -->
+                    <ActivationDistance>2100</ActivationDistance>
+                    <TraderEntityType>U_NPC_Villager01_SE</TraderEntityType>
+                    <IsEmptyStringKey>MerchantStates/Empty</IsEmptyStringKey>
+                    <IsUnderUseStringKey>MerchantStates/UnderUse</IsUnderUseStringKey>
+                    <MoveNearStringKey>MerchantStates/MoveNear</MoveNearStringKey>
+                    <IsNearStringKey>MerchantStates/IsNearMercenary</IsNearStringKey>
+                </Logic>
+            </Behavior>
+
+        </Behaviors>
+        <MapEditor>
+            <TreePosition>Buildings\Harbour</TreePosition>
+            <ShowInTree>true</ShowInTree>
+            <Clime>generic</Clime>
+            <Scalable>false</Scalable>
+            <TemplateResistant>true</TemplateResistant>
+        </MapEditor>
+
+</root>

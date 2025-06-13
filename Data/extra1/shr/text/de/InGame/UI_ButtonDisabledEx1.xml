@@ -7,4 +7,5 @@
 	<string id="AbilityTorchKhana" MD5Hash="BC8F11D0BA6BB183DD38ECD849F72BBC" mod="20070815185048" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Keine Soldaten ohne Fackeln in der Nähe]]></string>
 	<string id="AbilityTributePraphat" MD5Hash="F99B2471F14214AF2BF3FCE0B0DA2F93" mod="20071205122923" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Kein fremdes Lagerhaus und keine fremde Burg in der Nähe.]]></string>
 	<string id="InteractiveObjectGeologist" MD5Hash="CE924F7FD4BD87A01F76258CF6E6A3A3" mod="20070829104330" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Kann in dieser Mission noch nicht verwendet werden.]]></string>
+	<string id="EntityLimitReached" MD5Hash="3A4DDE7FEB9B80366265083A4005D5F6" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Das Limit für diese Einheit wurde erreicht!]]></string>
 </root>

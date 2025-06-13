@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AnimSet>
+    <Categories>
+        <Category classname="EGL::CAnimCategory">
+            <Name>Walk</Name>
+            <Animation>Military\U_MilitaryCavalry_Run</Animation>
+        </Category>
+        <Category classname="EGL::CAnimCategory">
+            <Name>Run</Name>
+            <Animation>Military\U_MilitaryCavalry_Run</Animation>
+        </Category>
+        <Category classname="EGL::CAnimCategory">
+            <Name>AttackRun</Name>
+            <Animation>Military\U_MilitaryCavalry_Run</Animation>
+        </Category>
+        <Category classname="EGL::CAnimCategory">
+            <Name>Stand</Name>
+            <Animation>Military\U_MilitaryCavalry_Idle1</Animation>
+        </Category>
+		<!-- Does not exist! -->
+        <Category classname="EGL::CAnimCategory">
+            <Name>Cheer</Name>
+            <Animation>Military\U_MilitaryCavalry_Idle1</Animation>
+        </Category>
+		<!-- Does not exist! -->
+        <Category classname="EGL::CAnimCategory">
+            <Name>Jubilate</Name>
+            <Animation>Military\U_MilitaryCavalry_Idle1</Animation>
+        </Category>
+		<!-- Does not exist! -->
+        <Category classname="EGL::CAnimCategory">
+            <Name>Dead</Name>
+            <Animation>Military\U_MilitaryCavalry_Idle1</Animation>
+        </Category>
+
+
+		<!--********************************** RAISESHIELD **********************************-->
+        <Category classname="EGL::CAnimCategory">
+            <Name>RaiseShield</Name>
+            <Animation>Military\U_MilitaryCavalry_Idle1</Animation>
+        </Category>
+        <Category classname="EGL::CAnimCategory">
+            <Name>RaiseShieldRun</Name>
+            <Animation>Military\U_MilitaryCavalry_Walk</Animation>
+        </Category>
+		<!--********************************** STANDTOARMS **********************************-->
+		<!-- Does not exist! -->
+        <Category classname="EGL::CAnimCategory">
+            <Name>StandToArms</Name>
+            <Animation>Military\U_MilitaryCavalry_Idle3</Animation>
+        </Category>
+		<!-- Does not exist! -->
+        <Category classname="EGL::CAnimCategory">
+            <Name>JumpToArms</Name>
+            <Animation>Military\U_MilitaryCavalry_Idle3</Animation>
+        </Category>
+        
+		<!--********************************** STANDTOARMSIDLE **********************************-->
+		<Category classname="EGL::CAnimCategory">
+            <Name>StandToArmsIdle</Name>
+    	    <RandomAnims>
+    		    <RandomAnim>
+    			    <Animation>Military\U_MilitaryCavalry_Idle3</Animation>
+    			    <Rank>1</Rank>
+    		    </RandomAnim>
+    	    </RandomAnims>
+        </Category>
+
+		<!--********************************** IDLE **********************************-->
+        <Category classname="EGL::CAnimCategory">
+            <Name>Idle</Name>
+    	    <RandomAnims>
+    		    <RandomAnim>
+    			    <Animation>Military\U_MilitaryCavalry_Idle1</Animation>
+    			    <Rank>20</Rank>
+    		    </RandomAnim>
+    		    <RandomAnim>
+    			    <Animation>Military\U_MilitaryCavalry_Idle2</Animation>
+    			    <Rank>1</Rank>
+    		    </RandomAnim>
+    		    <RandomAnim>
+    			    <Animation>Military\U_MilitaryCavalry_Idle3</Animation>
+    			    <Rank>1</Rank>
+    		    </RandomAnim>
+				<RandomAnim>
+					<Animation>Military\U_MilitaryCavalry_Idle4</Animation>
+					<Rank>1</Rank>
+				</RandomAnim>
+				<RandomAnim>
+					<Animation>Military\U_MilitaryCavalry_Idle5</Animation>
+					<Rank>1</Rank>
+				</RandomAnim>
+				<RandomAnim>
+					<Animation>Military\U_MilitaryCavalry_Idle6</Animation>
+					<Rank>1</Rank>
+				</RandomAnim>
+    	    </RandomAnims>
+        </Category>
+		
+		<!--********************************** HEIST **********************************-->
+		<Category classname="EGL::CAnimCategory">
+			<Name>HeistRunFat</Name>
+			<Animation>Military\U_MilitaryBandit_Melee_SE_HeistFRun</Animation>
+		</Category>
+
+		<Category classname="EGL::CAnimCategory">
+			<Name>HeistRunSexy</Name>
+			<Animation>Military\U_MilitaryBandit_Melee_SE_HeistSRun</Animation>
+		</Category>
+
+		<!--********************************** ATTACK **********************************-->
+        <Category classname="EGL::CAnimCategory">
+            <Name>Attack</Name>
+    	    <RandomAnims>
+    		    <RandomAnim>
+    			    <Animation>Military\U_MilitaryCavalry_Fight</Animation>
+    			    <Rank>1</Rank>
+    		    </RandomAnim>
+    		    <RandomAnim>
+    			    <Animation>Military\U_MilitaryCavalry_Fight2</Animation>
+    			    <Rank>2</Rank>
+    		    </RandomAnim>
+    		    <RandomAnim>
+    			    <Animation>Military\U_MilitaryCavalry_Fight3</Animation>
+    			    <Rank>3</Rank>
+    		    </RandomAnim>
+    	    </RandomAnims>
+        </Category>
+
+		<!--********************************** DIE **********************************-->		
+        <Category classname="EGL::CAnimCategory">
+            <Name>Die</Name>
+    	    <RandomAnims>
+    		    <RandomAnim>
+    			    <Animation>Military\U_MilitaryCavalry_Die</Animation>
+    			    <Rank>1</Rank>
+    		    </RandomAnim>
+    	    </RandomAnims>
+        </Category>
+		<!--********************************** BATTLEIDLE **********************************-->
+        <Category classname="EGL::CAnimCategory">
+            <Name>BattleIdle</Name>
+    	    <RandomAnims>
+    		    <RandomAnim>
+    			    <Animation>Military\U_MilitaryCavalry_BattleIdle</Animation>
+    			    <Rank>1</Rank>
+    		    </RandomAnim>
+    	    </RandomAnims>
+        </Category>
+        
+</Categories>
+</AnimSet>

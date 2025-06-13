@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
     <Display classname="ED::CReplaceUpgradeBuildingProps">
         <Class>ED::CReplaceUpgradeBuilding</Class>
-        <Model>Buildings/B_WallGateTurret_NE</Model>
+        <Model>Buildings/B_WatchTower_NE</Model>
         <Anims/>
         <ConstructionSite>Buildings/B_WallTurret_BuildingSite_NE</ConstructionSite>
     </Display>
@@ -17,8 +17,8 @@
         <ForceNoPlayer>false</ForceNoPlayer>
         <Worker>U_WallConstructionWorker</Worker> <!-- construction only -->
         <MaxWorkers>0</MaxWorkers>                <!-- construction only -->
-        <MaxHealth>800</MaxHealth>
-        <Exploration>45</Exploration>
+        <MaxHealth>600</MaxHealth>
+        <Exploration>40</Exploration>
 		<SoundImpactType>Stone</SoundImpactType>
         <CanBeKnockedDown>true</CanBeKnockedDown>
         <FlattenOnBuild>true</FlattenOnBuild>
@@ -29,13 +29,13 @@
 		<Cost>
 			<GoodAmount>
 				<GoodType>G_Stone</GoodType>
-				<Amount>12</Amount>
+				<Amount>8</Amount>
 			</GoodAmount>
 		</Cost>
 
 		<ApproachPos>
 			<X>0</X>
-			<Y>400</Y>
+			<Y>-450</Y>
 		</ApproachPos>
 		<ApproachR>0</ApproachR>
 		<DoorPos>
@@ -45,24 +45,24 @@
 		<BlockingAreas>
 			<BlockingArea>
 				<Blocked1>
-					<X>-200</X>
-					<Y>-200</Y>
+					<X>-250</X>
+					<Y>-250</Y>
 				</Blocked1>
 				<Blocked2>
-					<X>200</X>
-					<Y>200</Y>
+					<X>250</X>
+					<Y>250</Y>
 				</Blocked2>
 			</BlockingArea>
 		</BlockingAreas>
 		<BuildBlockingAreas>
 			<BuildBlockingArea>
 				<Blocked1>
-					<X>-300</X>
-					<Y>-300</Y>
+					<X>-350</X>
+					<Y>-350</Y>
 				</Blocked1>
 				<Blocked2>
-					<X>300</X>
-					<Y>300</Y>
+					<X>350</X>
+					<Y>350</Y>
 				</Blocked2>
 			</BuildBlockingArea>
 		</BuildBlockingAreas>

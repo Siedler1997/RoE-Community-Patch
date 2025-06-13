@@ -24,10 +24,12 @@ function InitMultiselection()
         Entities.U_MilitaryBandit_Ranged_SE,
         Entities.U_MilitaryBandit_Ranged_AS,
         Entities.U_MilitaryCatapult,
+        Entities.U_MilitaryCannon,
         Entities.U_MilitarySiegeTower,
         Entities.U_MilitaryBatteringRam,
         Entities.U_MilitaryTrebuchet,
         Entities.U_CatapultCart,
+        Entities.U_CannonCart,
         Entities.U_SiegeTowerCart,
         Entities.U_BatteringRamCart,
         Entities.U_TrebuchetCart,
@@ -322,14 +324,21 @@ function GUI_MultiSelection.IconUpdate()
             or EntityType == Entities.U_MilitaryBallista
             or EntityType == Entities.U_TrebuchetCart
             or EntityType == Entities.U_Trebuchet
+            or EntityType == Entities.U_CannonCart
             or Logic.GetNumSoldiersAttachedToWarMachine(EntityID) > 0) then
                 SetIcon(CurrentWidgetID, g_TexturePositions.Entities[EntityType])
             
             else
                 local uPos = g_TexturePositions.Entities[EntityType][1]
                 local vPos = g_TexturePositions.Entities[EntityType][2]
+                local file = 0
+
+                --Set file (if set, otherwise default)
+                if #g_TexturePositions.Entities[EntityType] >= 3 then
+                    file = g_TexturePositions.Entities[EntityType][3]
+                end
                 
-                SetIcon(CurrentWidgetID, {uPos + 1, vPos})
+                SetIcon(CurrentWidgetID, {uPos + 1, vPos, file})
             end
         else
             SetIcon(CurrentWidgetID, g_TexturePositions.Entities[EntityType])
@@ -381,7 +390,8 @@ function GUI_MultiSelection.IconMouseOver()
     if (EntityType == Entities.U_MilitaryCatapult
     or EntityType == Entities.U_MilitarySiegeTower
     or EntityType == Entities.U_MilitaryBatteringRam
-    or EntityType == Entities.U_MilitaryTrebuchet)
+    or EntityType == Entities.U_MilitaryTrebuchet
+    or EntityType == Entities.U_MilitaryCannon)
     and Logic.GetNumSoldiersAttachedToWarMachine(EntityID) == 0 then
         TooltipTextKey = TooltipTextKey .. "_NoSoldiersAttached"
     end

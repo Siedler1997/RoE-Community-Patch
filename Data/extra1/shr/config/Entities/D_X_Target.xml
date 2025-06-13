@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<Display classname="ED::CEntityProps">
+		<Class>ED::CDisplayStaticEntity</Class>
+		<Model>Doodads\D_X_Target</Model>
+	</Display>
+	<Logic classname="EGL::CEntityProps">
+		<Class>EGL::CEntity</Class>
+  		<AccessCategory>AccessCategoryStatic</AccessCategory> 
+		<DoNotExecute>True</DoNotExecute>
+		<CanDrown>false</CanDrown>
+        <BlockingAreas>
+            <BlockingArea>
+                <Blocked1>
+                    <X>-100</X>
+                    <Y>100</Y>
+                </Blocked1>
+                <Blocked2>
+                    <X>100</X>
+                    <Y>-100</Y>
+                </Blocked2>
+            </BlockingArea>
+        </BlockingAreas>
+        <RemovableBlocking>true</RemovableBlocking>
+        <DeleteWhenBuiltOn>true</DeleteWhenBuiltOn>
+	</Logic>
+	<MapEditor>
+		<TreePosition>Doodads\BattleField</TreePosition>
+		<ShowInTree>true</ShowInTree>
+		<Clime>Generic</Clime>
+		<Scalable>false</Scalable>
+		<TemplateResistant>true</TemplateResistant>
+	</MapEditor>
+</root>

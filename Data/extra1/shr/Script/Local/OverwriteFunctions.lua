@@ -64,6 +64,7 @@ function InitLocalOverwrite()
         g_MilitaryFeedback.Soldiers[Entities.U_MilitarySword_RedPrince]		= "H_NPC_Mercenary_SE"
         g_MilitaryFeedback.Soldiers[Entities.U_MilitarySpear]				= "H_NPC_Mercenary_NE"
         g_MilitaryFeedback.Soldiers[Entities.U_Helbardier]				    = "H_NPC_Mercenary_NE"
+        g_MilitaryFeedback.Soldiers[Entities.U_MilitaryCavalry]				= "Military_Bow"
         g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Melee_AS]		= "H_NPC_Mercenary_NA"
         g_MilitaryFeedback.Soldiers[Entities.U_MilitaryBandit_Ranged_AS]	= "H_NPC_Mercenary_NA"
         g_MilitaryFeedback.Soldiers[Entities.U_MilitarySword_Khana]		= "H_NPC_Mercenary_ME"
@@ -154,8 +155,8 @@ function InitLocalOverwrite()
             
             -- Goods
             g_TexturePositions.Goods[Goods.G_Regalia] =  {16, 4}
-            g_TexturePositions.Goods[Goods.G_PoorSpear] =  {16, 12}
-            g_TexturePositions.Goods[Goods.G_Spear] =  {1, 16}
+            g_TexturePositions.Goods[Goods.G_PoorSpear] =  {2, 1, 2}
+            g_TexturePositions.Goods[Goods.G_Spear] =  {2, 2, 2}
             g_TexturePositions.Goods[Goods.G_Gems] =  {1, 1, 1}
             g_TexturePositions.Goods[Goods.G_Olibanum] =  {1, 2, 1}
             g_TexturePositions.Goods[Goods.G_MusicalInstrument] =  {1, 3, 1}
@@ -166,6 +167,10 @@ function InitLocalOverwrite()
             g_TexturePositions.Entities[Entities.B_Cistern] = {1, 16}
             g_TexturePositions.Entities[Entities.B_KhanaTemple] = {1, 7, 1}
             g_TexturePositions.Entities[Entities.B_NPC_StoreHouse_AS] = {3, 13}
+            g_TexturePositions.Entities[Entities.B_Outpost_AS] = {12, 3}
+            g_TexturePositions.Entities[Entities.B_SpearMaker] =  g_TexturePositions.Goods[Goods.G_PoorSpear]
+            g_TexturePositions.Entities[Entities.B_BarracksSpearmen] =  g_TexturePositions.Goods[Goods.G_Spear]
+            g_TexturePositions.Entities[Entities.B_BarracksCavalry] =  {2, 3, 2}
             
             g_TexturePositions.Entities[Entities.U_Geologist] = {8, 1, 1}
             g_TexturePositions.Entities[Entities.U_KnightSaraya] = {5, 4, 1}
@@ -196,10 +201,10 @@ function InitLocalOverwrite()
             g_TexturePositions.Entities[Entities.B_Beautification_Vase]             = {5, 2, 1}
             g_TexturePositions.Entities[Entities.B_Beautification_VictoryColumn]    = {1, 6, 1}
 
-            g_TexturePositions.Entities[Entities.U_TrebuchetCart] = {9, 4}
-            g_TexturePositions.Entities[Entities.U_MilitaryTrebuchet] = {9, 1}
-            g_TexturePositions.Entities[Entities.U_MilitarySword_RedPrince] = {9, 1, 1}
-            g_TexturePositions.Entities[Entities.U_MilitaryBow_RedPrince] = {9, 2, 1}
+            g_TexturePositions.Entities[Entities.U_TrebuchetCart] = {3, 3, 2}
+            g_TexturePositions.Entities[Entities.U_MilitaryTrebuchet] = {3, 1, 2}
+            g_TexturePositions.Entities[Entities.U_MilitarySword_RedPrince] = {1, 1, 2}
+            g_TexturePositions.Entities[Entities.U_MilitaryBow_RedPrince] = {1, 2, 2}
             g_TexturePositions.Entities[Entities.U_Bear]    = {13, 8}
             g_TexturePositions.Entities[Entities.U_BlackBear]    = {13, 8}
             g_TexturePositions.Entities[Entities.U_PolarBear]    = {13, 8}
@@ -229,8 +234,11 @@ function InitLocalOverwrite()
             g_TexturePositions.Entities[Entities.B_WatchTower_SE]    = {7, 6}
             g_TexturePositions.Entities[Entities.B_WatchTower_NA]    = {7, 6}
             g_TexturePositions.Entities[Entities.B_WatchTower_AS]    = {7, 6}
-            g_TexturePositions.Entities[Entities.U_MilitarySpear] = {9, 1, 1}
-            g_TexturePositions.Entities[Entities.U_Helbardier] = {9, 1, 1}
+            g_TexturePositions.Entities[Entities.U_MilitarySpear] = {1, 4, 2}
+            g_TexturePositions.Entities[Entities.U_Helbardier] = {2, 2, 2}
+            g_TexturePositions.Entities[Entities.U_MilitaryCavalry] = {1, 5, 2}
+            g_TexturePositions.Entities[Entities.U_CannonCart] = {3, 2, 2}
+            g_TexturePositions.Entities[Entities.U_MilitaryCannon] = {3, 1, 2}
             g_TexturePositions.Entities[Entities.U_MagicOx] = {7, 3}
             g_TexturePositions.Entities[Entities.U_Dragon] = {7, 3}
             
@@ -240,18 +248,24 @@ function InitLocalOverwrite()
             -- Technologies
             g_TexturePositions.Technologies[Technologies.R_Cistern]                         = {1, 16}
             
+            g_TexturePositions.Technologies[Technologies.R_WatchTower]                      = {7, 6}
+            g_TexturePositions.Technologies[Technologies.R_Plaza]                           = {5, 14}
+            g_TexturePositions.Technologies[Technologies.R_SpecialEdition2]                 = {16, 4}
             g_TexturePositions.Technologies[Technologies.R_Beautification_Brazier]          = {4, 1, 1}
             g_TexturePositions.Technologies[Technologies.R_Beautification_Flowerpot_Round]  = {1, 16}
-            g_TexturePositions.Technologies[Technologies.R_Beautification_Flowerpot_Square] = {1, 16}
+            --g_TexturePositions.Technologies[Technologies.R_Beautification_Flowerpot_Square] = {1, 16}
             g_TexturePositions.Technologies[Technologies.R_Beautification_Lantern]          = {1, 16}
-            g_TexturePositions.Technologies[Technologies.R_Beautification_Pillar]           = {4, 2, 1}
+            --g_TexturePositions.Technologies[Technologies.R_Beautification_Pillar]           = {4, 2, 1}
             g_TexturePositions.Technologies[Technologies.R_Beautification_Shrine]           = {4, 3, 1}
             g_TexturePositions.Technologies[Technologies.R_Beautification_StoneBench]       = {4, 4, 1}
             g_TexturePositions.Technologies[Technologies.R_Beautification_Sundial]          = {5, 1, 1}
             g_TexturePositions.Technologies[Technologies.R_Beautification_TriumphalArch]    = {1, 5, 1}
             g_TexturePositions.Technologies[Technologies.R_Beautification_Vase]             = {5, 2, 1}
-            g_TexturePositions.Technologies[Technologies.R_Beautification_Waystone]         = {1, 16}
             g_TexturePositions.Technologies[Technologies.R_Beautification_VictoryColumn]    = {1, 6, 1}
+            g_TexturePositions.Technologies[Technologies.R_SpearMaker]    = {2, 1, 2}
+            g_TexturePositions.Technologies[Technologies.R_BarracksSpearmen]    = {2, 2, 2}
+            g_TexturePositions.Technologies[Technologies.R_BarracksCavalry]    = {2, 3, 2}
+            g_TexturePositions.Technologies[Technologies.R_Cannon] = g_TexturePositions.Entities[Entities.U_MilitaryCannon]
             
             
             
@@ -314,7 +328,9 @@ function MilitaryFeedback_GetSpeaker(_EntityID)
      or type == Entities.U_BatteringRamCart
      or type == Entities.U_AmmunitionCart
      or type == Entities.U_MilitaryTrebuchet
-     or type == Entities.U_TrebuchetCart then
+     or type == Entities.U_TrebuchetCart
+     or type == Entities.U_MilitaryCannon
+     or type == Entities.U_CannonCart then
 	
 		local leader = Logic.GetGuardianEntityID(_EntityID)
 		
@@ -329,7 +345,7 @@ function MilitaryFeedback_GetSpeaker(_EntityID)
 	
 		return g_MilitaryFeedback.Knights[type]
 
-	elseif type == Entities.U_Helbardier then
+	elseif type == Entities.U_Helbardier or type == Entities.U_MilitaryCavalry  then
 	
 		return g_MilitaryFeedback.Soldiers[type]
 
@@ -624,75 +640,83 @@ function SetIcon(_Widget, _Coordinates, _OptionalIconSize )
     else
         XGUIEng.SetMaterialAlpha(_Widget, WidgetState, 255)
         
-        if _Coordinates[3] == nil
-        or _Coordinates[3] == 0 then
-		        if _OptionalIconSize == nil
-		        or _OptionalIconSize == 64 then
-		            IconSize = 64
-		            XGUIEng.SetMaterialTexture(_Widget, WidgetState, "IconsBig.png")
-		        elseif _OptionalIconSize == 44 then
-		            IconSize = 44
-		            XGUIEng.SetMaterialTexture(_Widget, WidgetState, "Icons.png")
-		        elseif _OptionalIconSize == 128 then
-		            IconSize = 128
+        if _Coordinates[3] == nil or _Coordinates[3] == 0 then
+		    if _OptionalIconSize == nil or _OptionalIconSize == 64 then
+		        IconSize = 64
+		        XGUIEng.SetMaterialTexture(_Widget, WidgetState, "IconsBig.png")
+		    elseif _OptionalIconSize == 44 then
+		        IconSize = 44
+		        XGUIEng.SetMaterialTexture(_Widget, WidgetState, "Icons.png")
+		    elseif _OptionalIconSize == 128 then
+		        IconSize = 128
 		            
-                    -- For salt & dye we need a bit of a hack...
-                    if  _Coordinates[1] == 5 and _Coordinates[2] == 10 then -- salt
-                        XGUIEng.SetMaterialTexture(_Widget, WidgetState, "IconsBig2.png")
-                        UVOverride = true
-                        u0 = 128
-                        v0 = 256 
-                        u1 = u0 + IconSize
-                        v1 = v0 + IconSize
-                    elseif _Coordinates[1] == 5 and _Coordinates[2] == 11 then -- dye
-                        XGUIEng.SetMaterialTexture(_Widget, WidgetState, "IconsBig2.png")
-                        UVOverride = true
-                        u0 = 256
-                        v0 = 256 
-                        u1 = u0 + IconSize
-                        v1 = v0 + IconSize                                                 
-                    else 
-                        XGUIEng.SetMaterialTexture(_Widget, WidgetState, "IconsVeryBig.png")
-                    end
-		        end
-		    else
-		        if _OptionalIconSize == nil
-		        or _OptionalIconSize == 64 then
-		            IconSize = 64
-		            XGUIEng.SetMaterialTexture(_Widget, WidgetState, "IconsBig2.png")
-		        elseif _OptionalIconSize == 44 then
-		            IconSize = 44
-		            XGUIEng.SetMaterialTexture(_Widget, WidgetState, "Icons2.png")
-		        elseif _OptionalIconSize == 128 then
-                    IconSize = 128
-                    
-                    -- For muscical instruments, gems & olibanum we need a bit of a hack...
-                    if  _Coordinates[1] == 1 and _Coordinates[2] == 1 then -- gems
-                        XGUIEng.SetMaterialTexture(_Widget, WidgetState, "IconsBig2.png")
-                        UVOverride = true
-                        u0 = 128
-                        v0 = 384 
-                        u1 = u0 + IconSize
-                        v1 = v0 + IconSize
-                    elseif  _Coordinates[1] == 1 and _Coordinates[2] == 2 then -- olibanum
-                        XGUIEng.SetMaterialTexture(_Widget, WidgetState, "IconsBig2.png")
-                        UVOverride = true
-                        u0 = 256
-                        v0 = 384 
-                        u1 = u0 + IconSize
-                        v1 = v0 + IconSize
-                    elseif  _Coordinates[1] == 1 and _Coordinates[2] == 3 then -- musicalinst
-                        XGUIEng.SetMaterialTexture(_Widget, WidgetState, "IconsBig2.png")
-                        UVOverride = true
-                        u0 = 384
-                        v0 = 384 
-                        u1 = u0 + IconSize
-                        v1 = v0 + IconSize
-                    else 
-                        XGUIEng.SetMaterialTexture(_Widget, WidgetState, "IconsVeryBig.png")
-                    end
-		        end
+                -- For salt & dye we need a bit of a hack...
+                if  _Coordinates[1] == 5 and _Coordinates[2] == 10 then -- salt
+                    XGUIEng.SetMaterialTexture(_Widget, WidgetState, "IconsBig2.png")
+                    UVOverride = true
+                    u0 = 128
+                    v0 = 256 
+                    u1 = u0 + IconSize
+                    v1 = v0 + IconSize
+                elseif _Coordinates[1] == 5 and _Coordinates[2] == 11 then -- dye
+                    XGUIEng.SetMaterialTexture(_Widget, WidgetState, "IconsBig2.png")
+                    UVOverride = true
+                    u0 = 256
+                    v0 = 256 
+                    u1 = u0 + IconSize
+                    v1 = v0 + IconSize                                                 
+                else 
+                    XGUIEng.SetMaterialTexture(_Widget, WidgetState, "IconsVeryBig.png")
+                end
 		    end
+		elseif _Coordinates[3] == 1 then
+		    if _OptionalIconSize == nil or _OptionalIconSize == 64 then
+		        IconSize = 64
+		        XGUIEng.SetMaterialTexture(_Widget, WidgetState, "IconsBig2.png")
+		    elseif _OptionalIconSize == 44 then
+		        IconSize = 44
+		        XGUIEng.SetMaterialTexture(_Widget, WidgetState, "Icons2.png")
+		    elseif _OptionalIconSize == 128 then
+                IconSize = 128
+                    
+                -- For muscical instruments, gems & olibanum we need a bit of a hack...
+                if  _Coordinates[1] == 1 and _Coordinates[2] == 1 then -- gems
+                    XGUIEng.SetMaterialTexture(_Widget, WidgetState, "IconsBig2.png")
+                    UVOverride = true
+                    u0 = 128
+                    v0 = 384 
+                    u1 = u0 + IconSize
+                    v1 = v0 + IconSize
+                elseif  _Coordinates[1] == 1 and _Coordinates[2] == 2 then -- olibanum
+                    XGUIEng.SetMaterialTexture(_Widget, WidgetState, "IconsBig2.png")
+                    UVOverride = true
+                    u0 = 256
+                    v0 = 384 
+                    u1 = u0 + IconSize
+                    v1 = v0 + IconSize
+                elseif  _Coordinates[1] == 1 and _Coordinates[2] == 3 then -- musicalinst
+                    XGUIEng.SetMaterialTexture(_Widget, WidgetState, "IconsBig2.png")
+                    UVOverride = true
+                    u0 = 384
+                    v0 = 384 
+                    u1 = u0 + IconSize
+                    v1 = v0 + IconSize
+                else 
+                    XGUIEng.SetMaterialTexture(_Widget, WidgetState, "IconsVeryBig.png")
+                end
+		    end
+        else
+		    if _OptionalIconSize == nil or _OptionalIconSize == 64 then
+		        IconSize = 64
+		        XGUIEng.SetMaterialTexture(_Widget, WidgetState, "IconsBig3.png")
+		    elseif _OptionalIconSize == 44 then
+		        IconSize = 44
+		        XGUIEng.SetMaterialTexture(_Widget, WidgetState, "Icons3.png")
+		    elseif _OptionalIconSize == 128 then
+                IconSize = 128
+                XGUIEng.SetMaterialTexture(_Widget, WidgetState, "IconsVeryBig2.png")
+            end
+		end
             
             
         if not UVOverride then

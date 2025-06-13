@@ -587,8 +587,8 @@ function GUI_Trade.UpdateCityGoods()
         {Goods.G_Clothes,    GetAmountOfGoodsForTrading(PlayerID, Goods.G_Clothes   ) },
         {Goods.G_Leather,    GetAmountOfGoodsForTrading(PlayerID, Goods.G_Leather   ) },
         {Goods.G_Medicine,   GetAmountOfGoodsForTrading(PlayerID, Goods.G_Medicine  ) },
-        {Goods.G_PoorBow,    GetAmountOfGoodsForTrading(PlayerID, Goods.G_PoorBow   ) },
-        {Goods.G_PoorSword,  GetAmountOfGoodsForTrading(PlayerID, Goods.G_PoorSword ) },
+        --{Goods.G_PoorBow,    GetAmountOfGoodsForTrading(PlayerID, Goods.G_PoorBow   ) },
+        --{Goods.G_PoorSword,  GetAmountOfGoodsForTrading(PlayerID, Goods.G_PoorSword ) },
         {Goods.G_Sausage,    GetAmountOfGoodsForTrading(PlayerID, Goods.G_Sausage   ) },
         {Goods.G_SmokedFish, GetAmountOfGoodsForTrading(PlayerID, Goods.G_SmokedFish) },
         {Goods.G_Soap,       GetAmountOfGoodsForTrading(PlayerID, Goods.G_Soap      ) },
@@ -601,6 +601,33 @@ function GUI_Trade.UpdateCityGoods()
     end
 end
 
+-- These city goods have another container path so they have their own update function too
+function GUI_Trade.UpdateInMultiGoods()
+    --GUI.AddNote( "UpdateInMultiGoods" )
+    local PlayerID = GUI.GetPlayerID()
+    local CastleID = Logic.GetHeadquarters(PlayerID)
+    local StorehouseID = Logic.GetStoreHouse(PlayerID)
+
+    if StorehouseID == 0 or CastleID == 0 then
+        return
+    end
+
+    local GoodsContainerPath = "/InGame/Root/Normal/AlignBottomRight/Selection/Storehouse/InMulti/Goods"
+
+    local GoodAmountsList =
+    {
+        {Goods.G_PoorBow,    GetAmountOfGoodsForTrading(PlayerID, Goods.G_PoorBow   ) },
+        {Goods.G_PoorSword,  GetAmountOfGoodsForTrading(PlayerID, Goods.G_PoorSword ) },
+        {Goods.G_PoorSpear,  GetAmountOfGoodsForTrading(PlayerID, Goods.G_PoorSpear ) },
+        {Goods.G_SiegeEnginePart,  GetAmountOfGoodsForTrading(PlayerID, Goods.G_SiegeEnginePart ) },
+    }
+
+    for i = 1, #GoodAmountsList do
+        local GoodName = Logic.GetGoodTypeName(GoodAmountsList[i][1])
+        local GoodAmountWidget = GoodsContainerPath .. "/" .. GoodName .. "/Amount"
+        XGUIEng.SetText(GoodAmountWidget, "{center}" .. GoodAmountsList[i][2])
+    end
+end
 
 function GUI_Trade.UpdatePlayers()
     local PlayerID = GUI.GetPlayerID()

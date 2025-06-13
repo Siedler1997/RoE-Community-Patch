@@ -2465,6 +2465,13 @@
         </Model>   
 		
 		<!-- CP -->
+
+		<Model id="Doodads\D_X_SpecialEdition_BuildingPlot">
+			<Effect>SimpleObjectMultiply</Effect>
+			<OcclusionCaster>False</OcclusionCaster>
+			<CastShadow>True</CastShadow>
+			<UseAlphaBlending>False</UseAlphaBlending>
+		</Model>
 		
 		<Model id="Units\Military\U_MilitarySpear">
 			<SelectionRadius>100</SelectionRadius>
@@ -2472,6 +2479,24 @@
 			<SelectionTexture>Selection_Soldier</SelectionTexture>
 			<OcclusionReceiver>True</OcclusionReceiver>
 			<DefaultAnimID>Military\U_MilitaryPoleArm_Run</DefaultAnimID>
+		</Model>
+
+		<Model id="Vehicles\V_Cannon">
+			<SelectionRadius>200</SelectionRadius>
+			<Effect>SimpleObjectPlayerColor</Effect>
+			<SelectionTexture>Selection_siegemachine</SelectionTexture>
+			<OcclusionReceiver>True</OcclusionReceiver>
+			<AlignToTerrain>true</AlignToTerrain>
+			<AlwaysUpright>false</AlwaysUpright>
+			<DefaultAnimID>V_Cannon_Idle</DefaultAnimID>
+		</Model>
+
+		<Model id="Units\Military\U_MilitaryCavalry">
+			<SelectionRadius>100</SelectionRadius>
+			<!--<Effect>SettlerRimPlayerColorSpecular</Effect>-->
+			<SelectionTexture>Selection_Soldier</SelectionTexture>
+			<OcclusionReceiver>True</OcclusionReceiver>
+			<DefaultAnimID>Military\U_MilitaryCavalry_Run</DefaultAnimID>
 		</Model>
 
 		<Model id="Units\U_Helbardier">
@@ -2482,7 +2507,7 @@
 			<DefaultAnimID>U_Helbardier_Run</DefaultAnimID>
 		</Model>
 
-		<Model id="Doodads\D_X_Beautification_Dragon">
+		<Model id="Buildings\D_X_Beautification_Dragon">
 			<CastShadow>True</CastShadow>
 			<ShareShadowRaster>True</ShareShadowRaster>
 			<!--<UseAlphaBlending>True</UseAlphaBlending>-->
@@ -2515,7 +2540,102 @@
 			<CloseUpModeCulling>True</CloseUpModeCulling>
 		</Model>
 
+		<Model id="Buildings\B_BarracksSpearmen_Roof_1">
+			<Effect>Roof</Effect>
+			<OcclusionCaster>True</OcclusionCaster>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+		<Model id="Buildings\B_BarracksSpearmen_Roof_2">
+			<Effect>Roof</Effect>
+			<OcclusionCaster>True</OcclusionCaster>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+		<Model id="Buildings\B_BarracksSpearmen_Roof_3">
+			<Effect>Roof</Effect>
+			<OcclusionCaster>True</OcclusionCaster>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+		<Model id="Buildings\B_BarracksCavalry_Roof_1">
+			<Effect>Roof</Effect>
+			<OcclusionCaster>True</OcclusionCaster>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+		<Model id="Buildings\B_BarracksCavalry_Roof_2">
+			<Effect>Roof</Effect>
+			<OcclusionCaster>True</OcclusionCaster>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
+		<Model id="Buildings\B_BarracksCavalry_Roof_3">
+			<Effect>Roof</Effect>
+			<OcclusionCaster>True</OcclusionCaster>
+			<CloseUpModeCulling>True</CloseUpModeCulling>
+		</Model>
 
+		<Model id="Doodads\D_X_Beautification_BrothersInArms">
+			<CastShadow>True</CastShadow>
+			<ShareShadowRaster>True</ShareShadowRaster>
+			<UseAlphaBlending>False</UseAlphaBlending>
+			<UseSurfaceHeight>True</UseSurfaceHeight>
+			<Effect>SimpleObjectMultiply</Effect>
+		</Model>
+
+		<Model id="Doodads\D_X_Battlefield_Hotcoal_1">
+			<CastShadow>True</CastShadow>
+			<ShareShadowRaster>True</ShareShadowRaster>
+			<UseAlphaBlending>False</UseAlphaBlending>
+			<UseSurfaceHeight>True</UseSurfaceHeight>
+			<Effect>SimpleObjectMultiply</Effect>
+		</Model>
+		<Model id="Doodads\D_X_Battlefield_Hotcoal_2">
+			<CastShadow>True</CastShadow>
+			<ShareShadowRaster>True</ShareShadowRaster>
+			<UseAlphaBlending>False</UseAlphaBlending>
+			<UseSurfaceHeight>True</UseSurfaceHeight>
+			<Effect>SimpleObjectMultiply</Effect>
+		</Model>
+		<Model id="Doodads\D_X_Battlefield_Hotcoal_3">
+			<CastShadow>True</CastShadow>
+			<ShareShadowRaster>True</ShareShadowRaster>
+			<UseAlphaBlending>False</UseAlphaBlending>
+			<UseSurfaceHeight>True</UseSurfaceHeight>
+			<Effect>SimpleObjectMultiply</Effect>
+		</Model>
+
+		<Model id="Buildings\B_Plaza_ME">
+			<Effect>SimpleObjectMultiply</Effect>
+			<SelectionTexture>Selection_Building</SelectionTexture>
+			<ShareShadowRaster>True</ShareShadowRaster>
+			<CastShadow>True</CastShadow>
+			<UseAlphaBlending>True</UseAlphaBlending>
+		</Model>
+		<Model id="Buildings\B_Plaza_NE">
+			<Effect>SimpleObjectMultiply</Effect>
+			<SelectionTexture>Selection_Building</SelectionTexture>
+			<ShareShadowRaster>True</ShareShadowRaster>
+			<CastShadow>True</CastShadow>
+			<UseAlphaBlending>True</UseAlphaBlending>
+		</Model>
+		<Model id="Buildings\B_Plaza_SE">
+			<Effect>SimpleObjectMultiply</Effect>
+			<SelectionTexture>Selection_Building</SelectionTexture>
+			<ShareShadowRaster>True</ShareShadowRaster>
+			<CastShadow>True</CastShadow>
+			<UseAlphaBlending>True</UseAlphaBlending>
+		</Model>
+		<Model id="Buildings\B_Plaza_NA">
+			<Effect>SimpleObjectMultiply</Effect>
+			<SelectionTexture>Selection_Building</SelectionTexture>
+			<ShareShadowRaster>True</ShareShadowRaster>
+			<CastShadow>True</CastShadow>
+			<UseAlphaBlending>True</UseAlphaBlending>
+		</Model>
+		<Model id="Buildings\B_Plaza_AS">
+			<Effect>SimpleObjectMultiply</Effect>
+			<SelectionTexture>Selection_Building</SelectionTexture>
+			<ShareShadowRaster>True</ShareShadowRaster>
+			<CastShadow>True</CastShadow>
+			<UseAlphaBlending>True</UseAlphaBlending>
+		</Model>
 
 		<Model id="Buildings\B_Spicetrader_Buildingsite_1">
 			<Effect>SimpleObjectMultiply</Effect>

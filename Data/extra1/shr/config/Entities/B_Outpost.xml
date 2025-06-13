@@ -135,6 +135,9 @@
         </ConstructionInfo>
         <Exploration>0</Exploration>
         <SoundImpactType>Stone</SoundImpactType>
+
+		<OnScreenIcon>MinimapOutpost</OnScreenIcon>
+		<ShowInMiniMap>0.75</ShowInMiniMap>
     </Logic>
     <Behaviors>
 

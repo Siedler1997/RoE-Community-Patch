@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <Category>TC_DUMMY</Category>
+  <Tasks>
+    <Task classname="EGL::CTaskArgsAnimation">
+      <TaskType>TASK_SET_ANIM</TaskType>
+      <Category>Idle</Category>
+    </Task>
+    <Task classname="EGL::CTaskArgs">
+      <TaskType>TASK_PASS_CONTROL_TO_FIGHT_BEHAVIOR</TaskType>
+    </Task>
+    <!-- Loading -->
+    <Task classname="EGL::CTaskArgsAnimation">
+      <TaskType>TASK_SET_ANIM</TaskType>
+      <Category>Shoot</Category>
+    </Task>
+    <Task classname="EGL::CTaskArgs">
+      <TaskType>TASK_PASS_CONTROL_TO_FIGHT_BEHAVIOR</TaskType>
+    </Task>
+	  <Task classname="EGL::CTaskArgsParticleEffectIndexAndType">
+		  <TaskType>TASK_SPAWN_PARTICLE_EFFECT</TaskType>
+		  <ExecuteOnAbort>false</ExecuteOnAbort>
+		  <EffectIndex>1</EffectIndex>
+		  <EffectType>FXCannonSmoke</EffectType>
+	  </Task>
+    <!-- Fire -->
+    <Task classname="EGL::CTaskArgsThousandths">
+      <TaskType>TASK_COOLDOWN_AWARE_WAIT_FOR_ANIM</TaskType>
+      <Thousandths>1000</Thousandths>
+    </Task>
+	  
+  </Tasks>
+</root>
