@@ -391,6 +391,23 @@ end
 function GUI_BuildingButtons.BuyBattalionClicked2(_unitType)
     local PlayerID  = GUI.GetPlayerID()
     local BarrackID = GUI.GetSelectedEntity()
+    local BarrackEntityType = Logic.GetEntityType(BarrackID)
+    local KnightType = Logic.GetEntityType(Logic.GetKnightID(GUI.GetPlayerID()))
+
+    if (KnightType == Entities.U_KnightSabatta or KnightType == Entities.U_KnightRedPrince 
+        or BarrackEntityType == Entities.B_Barracks_RedPrince or BarrackEntityType == Entities.B_BarracksArchers_Redprince) and XGUIEng.IsModifierPressed(Keys.ModifierControl) == false then
+        if _unitType == Entities.U_MilitarySword then
+            _unitType = Entities.U_MilitarySword_RedPrince
+        elseif _unitType == Entities.U_MilitaryBow then
+            _unitType = Entities.U_MilitaryBow_RedPrince
+        end
+    elseif (KnightType == Entities.U_KnightKhana or BarrackEntityType == Entities.B_Barracks_Khana or BarrackEntityType == Entities.B_BarracksArchers_Khana) and XGUIEng.IsModifierPressed(Keys.ModifierControl) == false then
+        if _unitType == Entities.U_MilitarySword then
+            _unitType = Entities.U_MilitarySword_Khana
+        elseif _unitType == Entities.U_MilitaryBow then
+            _unitType = Entities.U_MilitaryBow_Khana
+        end
+    end
 
     if GUI_BuildingButtons.GetLimitReached(_unitType) and EnableRights == true then
         Message(XGUIEng.GetStringTableText("Feedback_TextLines/TextLine_EntityLimitReached"))
@@ -479,6 +496,27 @@ function GUI_BuildingButtons.BuyBattalionUpdate2(_unitType, _barrackType, _techn
     if Logic.IsConstructionComplete(BarrackID) == 0 then
         XGUIEng.ShowWidget(CurrentWidgetID,0)
     else
+        local KnightType = Logic.GetEntityType(Logic.GetKnightID(GUI.GetPlayerID()))
+
+        if (KnightType == Entities.U_KnightSabatta or KnightType == Entities.U_KnightRedPrince 
+            or BarrackEntityType == Entities.B_Barracks_RedPrince or BarrackEntityType == Entities.B_BarracksArchers_Redprince) then
+            if _unitType == Entities.U_MilitarySword then
+                SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitarySword_RedPrince])
+            elseif _unitType == Entities.U_MilitaryBow then
+                SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitaryBow_RedPrince])
+            else
+                SetIcon(CurrentWidgetID, g_TexturePositions.Entities[_unitType])
+            end
+        elseif (KnightType == Entities.U_KnightKhana or BarrackEntityType == Entities.B_Barracks_Khana or BarrackEntityType == Entities.B_BarracksArchers_Khana) and then
+            if _unitType == Entities.U_MilitarySword then
+                SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitarySword_Khana])
+            elseif _unitType == Entities.U_MilitaryBow then
+                SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitaryBow_Khana])
+            else
+                SetIcon(CurrentWidgetID, g_TexturePositions.Entities[_unitType])
+            end
+        end
+
         if _barrackType == BarrackEntityType or Logic.IsEntityInCategory(BarrackID, EntityCategories.Headquarters) == 1 then
             XGUIEng.ShowWidget(CurrentWidgetID,1)
         else
