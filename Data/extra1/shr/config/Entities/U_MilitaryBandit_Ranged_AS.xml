@@ -11,9 +11,9 @@
         <AccessCategory>AccessCategorySoldier</AccessCategory>
         <PlayerSectorType>PlayerSectorTypeMilitary</PlayerSectorType>
         <MilMetaFormationMemberType>MilMetaFormationMemberTypeRanged</MilMetaFormationMemberType>
-        <MaxHealth>85</MaxHealth>
+        <MaxHealth>90</MaxHealth>
         <HealingSeconds>10</HealingSeconds>
-        <HealingPoints>14</HealingPoints>
+        <HealingPoints>15</HealingPoints>
 
         <CostsCanBeModified>true</CostsCanBeModified>
         <NeedsPlayer>true</NeedsPlayer>
@@ -31,6 +31,10 @@
 				<GoodType>G_Gold</GoodType>
 				<Amount>15</Amount>
 			</GoodAmount>
+      <GoodAmount>
+        <GoodType>G_Bow</GoodType>
+        <Amount>1</Amount>
+      </GoodAmount>
 		</Cost>
 
         <EntityCategories>
@@ -101,7 +105,7 @@
                 <StationaryDefendFormation>StationaryDefend</StationaryDefendFormation>
 
                 <AmmunitionType>G_TorchAmmunition</AmmunitionType>
-                <AmmunitionLimit>2</AmmunitionLimit>
+                <AmmunitionLimit>1</AmmunitionLimit>
 
                 <TargetCategoryList>
 

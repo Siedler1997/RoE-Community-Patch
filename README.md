@@ -82,10 +82,8 @@ Folgende Änderungen wurden vorgenommen:
 		- Können in Kasernen wieder aufgefüllt werden
 		- Haben ein eigenes Audio-Feedback
 		- Haben etwas andere Statuswerte ggü. konventionellen Einheiten
-			- Weniger Lebenspunkte (-5)
 			- Höhere Bewegungsgeschwindigkeit (480 < 500)
 			- Höherer Schaden gegen Gebäude (5 -> 10)
-			- Eine Fackel mehr (1 -> 2)
 		- Fixes
 			- Südeuropäische Banditen-Schwertkämpfer greifen nicht mehr automatisch Gebäude an
 			- Asiatische Banditen haben keine Overhead-Namen mehr
@@ -106,7 +104,7 @@ Folgende Änderungen wurden vorgenommen:
 				- Weniger Lebenspunkte (90 < 120)
 				- Weniger Schaden (15 < 20)
 					- Ausnahme: Dreifacher Schaden gegen Ritter (45)
-				- Weniger Angriffscooldown (2,5 Sek. < 3 Sek.)
+				- Höherer Angriffscooldown (2,5 Sek. < 3 Sek.)
 				- Höhere Reichweite (2,5sm > 1,5sm)
 		- Kavaliere
 			- Inspiriert von den berittenen Schwertkämpfern in DEdK
@@ -125,7 +123,7 @@ Folgende Änderungen wurden vorgenommen:
 			- Funktioniert ähnlich wie ein Katapult
 				- Weniger Lebenspunkte (150 < 250)
 				- Höhere Maximalreichweite (30sm > 24sm)
-				- Höherer Schaden (75 > 50)
+				- Höherer Schaden (80 > 50)
 				- Geringere Feuerrate (7,5 Sek. > 5 Sek.)
 			- Verfügbar mit dem Titel 'Erzherzog'
 		- Hellebardiere
@@ -151,7 +149,7 @@ Folgende Änderungen wurden vorgenommen:
 			- Kann sich in aufgebauter Form nicht fortbewegen
 			- Muss nicht von Soldaten bedient werden
 			- Zurzeit noch nicht baubar, vllt. mit Titel "Erzherzog"?
-		- Geister-Ochse in Anlehnung an Ubis Raketen Ochsen ;)
+		- Geister-Ochse in Anlehnung an Ubi's Raketen Ochsen ;)
 	- "Alte" Trebuchets
 		- Richtiges Selektionsmenü
 		- Eigener Tooltip-String
@@ -163,7 +161,6 @@ Folgende Änderungen wurden vorgenommen:
 	- Mauerkatapulte abgeschwächt
 		- Kosten mehr Eisen (5 -> 10)
 		- Kosten mehr Gold (200 -> 300)
-		- Schaden reduziert (50 -> 40)
 		- Mindestreichweite erhöht (10sm -> 12sm)
 		- Sind auf maximal 12 Stück gleichzeitig pro Spieler limitiert
 	- Diebe

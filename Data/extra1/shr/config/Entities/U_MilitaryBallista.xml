@@ -118,7 +118,7 @@
                                 <Damage>
                                     <DiceCount>0</DiceCount>
                                     <FaceCount>0</FaceCount>
-                                    <BaseValue>40</BaseValue>
+                                    <BaseValue>50</BaseValue>
                                 </Damage>
                                 <BuildingFireSize>20</BuildingFireSize>
                                 <DamageRadiusList>
@@ -148,7 +148,7 @@
                                 <BattleTL>TL_BATTLE_CATAPULT</BattleTL>
                                 <!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
                                 <ApplyDamageModifiers>false</ApplyDamageModifiers>
-                                <MinRange>1000</MinRange>
+                                <MinRange>1200</MinRange>
                                 <!-- The max range is chosen to allow defending against catapults. It must be adapted if the segment max length is changed -->
                                 <MaxRange>2675</MaxRange>
                                 <ProjectileEffect>E_Catapult_Fire_Palisade</ProjectileEffect>
@@ -159,7 +159,7 @@
                                 <Damage>
                                     <DiceCount>0</DiceCount>
                                     <FaceCount>0</FaceCount>
-                                    <BaseValue>40</BaseValue>
+                                    <BaseValue>50</BaseValue>
                                 </Damage>
                                 <BuildingFireSize>20</BuildingFireSize>
                                 <DamageRadiusList>
@@ -189,7 +189,7 @@
                                 <BattleTL>TL_BATTLE_CATAPULT</BattleTL>
                                 <!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
                                 <ApplyDamageModifiers>false</ApplyDamageModifiers>
-                                <MinRange>1000</MinRange>
+                                <MinRange>1200</MinRange>
                                 <!-- The max range is chosen to allow defending against catapults. It must be adapted if the segment max length is changed -->
                                 <MaxRange>2675</MaxRange>
                                 <ProjectileEffect>E_Catapult_Fire</ProjectileEffect>
@@ -200,7 +200,7 @@
                                 <Damage>
                                     <DiceCount>0</DiceCount>
                                     <FaceCount>0</FaceCount>
-                                    <BaseValue>40</BaseValue>
+                                    <BaseValue>50</BaseValue>
                                 </Damage>
                                 <BuildingFireSize>20</BuildingFireSize>
                                 <DamageRadiusList>
@@ -230,7 +230,7 @@
 							   <BattleTL>TL_BATTLE_CATAPULT</BattleTL>
 							   <!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
 							   <ApplyDamageModifiers>false</ApplyDamageModifiers>
-							   <MinRange>1000</MinRange>
+							   <MinRange>1200</MinRange>
 							   <!-- The max range is chosen to allow defending against catapults. It must be adapted if the segment max length is changed -->
 							   <MaxRange>2675</MaxRange>
 							   <ProjectileEffect>E_Catapult_Fire_Fly</ProjectileEffect>
@@ -241,7 +241,7 @@
 							   <Damage>
 								   <DiceCount>0</DiceCount>
 								   <FaceCount>0</FaceCount>
-								   <BaseValue>80</BaseValue>
+								   <BaseValue>100</BaseValue>
 							   </Damage>
 						   </AttackMode>
 					   </AttackModeList>
@@ -264,7 +264,7 @@
 							   <BattleTL>TL_BATTLE_CATAPULT</BattleTL>
 							   <!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
 							   <ApplyDamageModifiers>false</ApplyDamageModifiers>
-							   <MinRange>1000</MinRange>
+							   <MinRange>1200</MinRange>
 							   <!-- The max range is chosen to allow defending against catapults. It must be adapted if the segment max length is changed -->
 							   <MaxRange>2675</MaxRange>
 							   <ProjectileEffect>E_Catapult_Fire</ProjectileEffect>
@@ -275,7 +275,7 @@
 							   <Damage>
 								   <DiceCount>0</DiceCount>
 								   <FaceCount>0</FaceCount>
-								   <BaseValue>40</BaseValue>
+								   <BaseValue>50</BaseValue>
 							   </Damage>
 							   <BuildingFireSize>20</BuildingFireSize>
 							   <DamageRadiusList>
@@ -313,7 +313,7 @@
                                 <BattleTL>TL_BATTLE_CATAPULT</BattleTL>
                                 <!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
                                 <ApplyDamageModifiers>false</ApplyDamageModifiers>
-                                <MinRange>1000</MinRange>
+                                <MinRange>1200</MinRange>
                                 <!-- The max range is chosen to allow defending against catapults. It must be adapted if the segment max length is changed -->
                                 <MaxRange>2675</MaxRange>
                                 <ProjectileEffect>E_Catapult_Fire</ProjectileEffect>
@@ -324,7 +324,7 @@
                                 <Damage>
                                     <DiceCount>0</DiceCount>
                                     <FaceCount>0</FaceCount>
-                                    <BaseValue>40</BaseValue>
+                                    <BaseValue>50</BaseValue>
                                 </Damage>
                                 <BuildingFireSize>20</BuildingFireSize>
                                 <DamageRadiusList>
