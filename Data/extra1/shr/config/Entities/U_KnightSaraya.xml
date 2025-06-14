@@ -135,7 +135,7 @@
         <Behavior>
             <Logic classname="EGL::CHeroBehaviorProps" version="2">
                 <Class>EGL::CHeroBehavior</Class>
-                <TradePostParameter>.25</TradePostParameter>
+                <TradePostParameter>.5</TradePostParameter>
             </Logic>
         </Behavior>
         <Behavior>
