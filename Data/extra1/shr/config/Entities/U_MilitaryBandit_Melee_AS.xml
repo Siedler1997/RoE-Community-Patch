@@ -11,9 +11,9 @@
         <AccessCategory>AccessCategorySoldier</AccessCategory>
         <PlayerSectorType>PlayerSectorTypeMilitary</PlayerSectorType>
         <MilMetaFormationMemberType>MilMetaFormationMemberTypeMelee</MilMetaFormationMemberType>
-        <MaxHealth>115</MaxHealth>
+        <MaxHealth>120</MaxHealth>
         <HealingSeconds>10</HealingSeconds>
-        <HealingPoints>19</HealingPoints>
+        <HealingPoints>20</HealingPoints>
 
         <NeedsPlayer>true</NeedsPlayer>
         <ForceNoPlayer>false</ForceNoPlayer>
@@ -30,6 +30,10 @@
 				<GoodType>G_Gold</GoodType>
 				<Amount>15</Amount>
 			</GoodAmount>
+      <GoodAmount>
+        <GoodType>G_Sword</GoodType>
+        <Amount>1</Amount>
+      </GoodAmount>
 		</Cost>
 
         <EntityCategories>
@@ -105,7 +109,7 @@
                 <AttackFormation>DoubleRow</AttackFormation>
 
                 <AmmunitionType>G_TorchAmmunition</AmmunitionType>
-                <AmmunitionLimit>2</AmmunitionLimit>
+                <AmmunitionLimit>1</AmmunitionLimit>
 
                 <TargetCategoryList>
 					<!-- Slightly less damage against cavalry to make spear units more useful -->

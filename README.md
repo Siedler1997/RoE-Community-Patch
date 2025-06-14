@@ -82,10 +82,8 @@ Folgende Änderungen wurden vorgenommen:
 		- Können in Kasernen wieder aufgefüllt werden
 		- Haben ein eigenes Audio-Feedback
 		- Haben etwas andere Statuswerte ggü. konventionellen Einheiten
-			- Weniger Lebenspunkte (-5)
 			- Höhere Bewegungsgeschwindigkeit (480 < 500)
 			- Höherer Schaden gegen Gebäude (5 -> 10)
-			- Eine Fackel mehr (1 -> 2)
 		- Fixes
 			- Südeuropäische Banditen-Schwertkämpfer greifen nicht mehr automatisch Gebäude an
 			- Asiatische Banditen haben keine Overhead-Namen mehr
@@ -106,7 +104,7 @@ Folgende Änderungen wurden vorgenommen:
 				- Weniger Lebenspunkte (90 < 120)
 				- Weniger Schaden (15 < 20)
 					- Ausnahme: Dreifacher Schaden gegen Ritter (45)
-				- Weniger Angriffscooldown (2,5 Sek. < 3 Sek.)
+				- Höherer Angriffscooldown (2,5 Sek. < 3 Sek.)
 				- Höhere Reichweite (2,5sm > 1,5sm)
 		- Kavaliere
 			- Inspiriert von den berittenen Schwertkämpfern in DEdK
