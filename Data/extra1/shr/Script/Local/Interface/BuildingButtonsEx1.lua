@@ -507,7 +507,7 @@ function GUI_BuildingButtons.BuyBattalionUpdate2(_unitType, _barrackType, _techn
             else
                 SetIcon(CurrentWidgetID, g_TexturePositions.Entities[_unitType])
             end
-        elseif (KnightType == Entities.U_KnightKhana or BarrackEntityType == Entities.B_Barracks_Khana or BarrackEntityType == Entities.B_BarracksArchers_Khana) and then
+        elseif (KnightType == Entities.U_KnightKhana or BarrackEntityType == Entities.B_Barracks_Khana or BarrackEntityType == Entities.B_BarracksArchers_Khana) then
             if _unitType == Entities.U_MilitarySword then
                 SetIcon(CurrentWidgetID, g_TexturePositions.Entities[Entities.U_MilitarySword_Khana])
             elseif _unitType == Entities.U_MilitaryBow then
