@@ -231,6 +231,10 @@ Folgende Änderungen wurden vorgenommen:
 			- Zeigen die Ausbaustufe "1/1" an
 		- Hauptspiel-Marktplätze haben ein Mouseover
 	- Bienenstöcke haben weniger Lebenspunkte (10 -> 5)
+	- Kuh- und Schafweiden
+		- Kosten mehr Holz (3 -> 5)
+		- haben mehr HP (5 -> 10)
+		- Kuhweiden sind etwas dunkler und damit optisch von Schafweiden unterscheidbar
 	- Handelsposten-Baubutton hat einen etwas verständlicheren Tooltip
 	- Kasernen und Belagerungswaffenschmieden werden nicht mehr als potentielle reiche Stadtgebäude aufgelistet
 	- Arbeiter in Kasernen holen ihre Waffen nun einzeln

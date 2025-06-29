@@ -2466,6 +2466,12 @@
 		
 		<!-- CP -->
 
+    <Model id="Buildings\B_Pasture_2">
+      <Effect>SimpleObjectMultiply</Effect>
+      <OcclusionCaster>True</OcclusionCaster>
+      <CloseUpModeCulling>True</CloseUpModeCulling>
+    </Model>
+      
 		<Model id="Doodads\D_X_SpecialEdition_BuildingPlot">
 			<Effect>SimpleObjectMultiply</Effect>
 			<OcclusionCaster>False</OcclusionCaster>
