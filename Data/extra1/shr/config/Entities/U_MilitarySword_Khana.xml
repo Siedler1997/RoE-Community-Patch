@@ -111,7 +111,7 @@
                 <AmmunitionLimit>1</AmmunitionLimit>
 
                 <TargetCategoryList>
-					<!-- Slightly less damage against cavalry to make spear units more useful -->
+					<!-- less damage against cavalry to make spear units more useful -->
 					<TargetCategory>
 						<!-- don't remove  the empty tags, otherwise the data isn't shown correctly in the XML balancer! -->
 						<EntityCategoryList>
@@ -137,7 +137,7 @@
 								<Damage>
 									<DiceCount>0</DiceCount>
 									<FaceCount>0</FaceCount>
-									<BaseValue>15</BaseValue>
+									<BaseValue>10</BaseValue>
 								</Damage>
 							</AttackMode>
 

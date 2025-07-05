@@ -13,9 +13,9 @@
 		<PlayerSectorType>PlayerSectorTypeMilitary</PlayerSectorType>
 		<MilMetaFormationMemberType>MilMetaFormationMemberTypeMelee</MilMetaFormationMemberType>
 		<CostsCanBeModified>false</CostsCanBeModified>
-		<MaxHealth>900</MaxHealth>
+		<MaxHealth>500</MaxHealth>
 		<HealingSeconds>10</HealingSeconds>
-		<HealingPoints>40</HealingPoints>
+		<HealingPoints>25</HealingPoints>
 
 		<NeedsPlayer>true</NeedsPlayer>
 		<ForceNoPlayer>false</ForceNoPlayer>
@@ -30,7 +30,7 @@
 				<!-- if the gold costs are changed, the refill costs have to be adjusted as well in "B_Barracks.xml"
                Refilling should cost the same per unit than buying batallions!  -->
 				<GoodType>G_Gold</GoodType>
-				<Amount>90</Amount>
+				<Amount>180</Amount>
 			</GoodAmount>
 			<GoodAmount>
 				<GoodType>G_Sword</GoodType>
@@ -179,41 +179,41 @@
 					</TargetCategory>
 
 					<!-- Torching buildings -->
-					<TargetCategory>
-						<DisableAutoAttack>true</DisableAutoAttack>
+          <TargetCategory>
+            <DisableAutoAttack>true</DisableAutoAttack>
 
-						<!-- don't remove  the empty tags, otherwise the data isn't shown correctly in the XML balancer! -->
-						<EntityCategoryList>
-							<EntityCategory/>
-							<EntityCategory/>
-							<EntityCategory/>
-							<EntityCategory>AttackableBuilding</EntityCategory>
-							<EntityCategory>PalisadeSegment</EntityCategory>
-							<EntityCategory>SpecialBuilding</EntityCategory>
-						</EntityCategoryList>
+            <!-- don't remove  the empty tags, otherwise the data isn't shown correctly in the XML balancer! -->
+            <EntityCategoryList>
+              <EntityCategory/>
+              <EntityCategory/>
+              <EntityCategory/>
+              <EntityCategory>AttackableBuilding</EntityCategory>
+              <EntityCategory>PalisadeSegment</EntityCategory>
+              <EntityCategory>SpecialBuilding</EntityCategory>
+            </EntityCategoryList>
 
-						<AttackModeList>
-							<AttackMode>
-								<BattleTL>TL_BATTLE_MELEE</BattleTL>
-								<!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
-								<ApplyDamageModifiers>false</ApplyDamageModifiers>
+            <AttackModeList>
+              <AttackMode>
+                <BattleTL>TL_BATTLE_MELEE</BattleTL>
+                <!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
+                <ApplyDamageModifiers>false</ApplyDamageModifiers>
 
-								<MinRange>0</MinRange>
-								<MaxRange>800</MaxRange>
-								<ProjectileEffect>FXBomb</ProjectileEffect>
-								<MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
-								<CanAttackOverWalls>false</CanAttackOverWalls>
-								<CooldownThousandths>5000</CooldownThousandths>
-								<Damage>
-									<DiceCount>0</DiceCount>
-									<FaceCount>0</FaceCount>
-									<BaseValue>15</BaseValue>
-								</Damage>
-								<BuildingFireSize>10</BuildingFireSize>
-								<ConsumeAmmunition>true</ConsumeAmmunition>
-							</AttackMode>
-						</AttackModeList>
-					</TargetCategory>
+                <MinRange>0</MinRange>
+                <MaxRange>800</MaxRange>
+                <ProjectileEffect>FXTorch</ProjectileEffect>
+                <MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
+                <CanAttackOverWalls>false</CanAttackOverWalls>
+                <CooldownThousandths>2000</CooldownThousandths>
+                <Damage>
+                  <DiceCount>0</DiceCount>
+                  <FaceCount>0</FaceCount>
+                  <BaseValue>5</BaseValue>
+                </Damage>
+                <BuildingFireSize>10</BuildingFireSize>
+                <ConsumeAmmunition>true</ConsumeAmmunition>
+              </AttackMode>
+            </AttackModeList>
+          </TargetCategory>
 
 					<!-- Capturing / attacking  merchants and siege engines -->
 					<TargetCategory>
