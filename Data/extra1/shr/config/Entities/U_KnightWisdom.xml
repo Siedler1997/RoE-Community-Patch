@@ -134,7 +134,7 @@
         <Behavior>
             <Logic classname="EGL::CHeroBehaviorProps">
                 <Class>EGL::CHeroBehavior</Class>
-	       <UpgradeParameter>0.8</UpgradeParameter>
+	       <UpgradeParameter>0.9</UpgradeParameter>
 	   </Logic>
         </Behavior>
 

@@ -11,7 +11,7 @@
         <AccessCategory>AccessCategoryAttackableSettler</AccessCategory>
         <PlayerSectorType>PlayerSectorTypeMilitary</PlayerSectorType>
         <MilMetaFormationMemberType>MilMetaFormationMemberTypeMelee</MilMetaFormationMemberType>
-        <MaxHealth>1100</MaxHealth> <!-- 1000 -->
+        <MaxHealth>1000</MaxHealth>
         <HealingSeconds>10</HealingSeconds>
         <HealingPoints>50</HealingPoints>
 

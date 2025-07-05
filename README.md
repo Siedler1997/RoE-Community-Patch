@@ -26,9 +26,10 @@ Folgende Änderungen wurden vorgenommen:
 - Ritter
 	- Haben nun je 3 "Fackeln", um Gebäude angreifen zu können
 	- "Alte" Ritter überarbeitet
-		- Allandra
+		- Alandra
+			- Aktive Fähigkeit: Gewährt zusätzlich den neuen "Vielfältige Medizin"-Bonus
+				- Für Mapper: Der neue Buff heißt "Buff_MedicineDiversity"
 			- Passive Fähigkeiten: Bonusgold für Predigten erhöht (20% -> 40%)
-			- Bonus: Lebenspunkte leicht erhöht (1.000 -> 1.100)
 		- Elias
 			- Aktive Fähigkeit: Gewährt zusätzlich den "Vielfältige Nahrung"-Bonus
 			- Passive Fähigkeiten: Handelsbonus erhöht (20% -> 40%)
@@ -36,13 +37,10 @@ Folgende Änderungen wurden vorgenommen:
 			- Aktive Fähigkeit (Konversion)
 				- Cooldown leicht erhöht (7:30 Min. -> 8:00 Min.)
 				- Kann nicht benutzt werden, wenn Soldatenlimit schon erreicht
-		- Marcus
-			- Bonus: Lebenspunkte leicht erhöht (1.000 -> 1.100)
+			- Passive Fähigkeit: Rabatt auf Ausbau von Gebäuden verringert (20% -> 10%)
 		- Thordal
 			- Aktive Fähigkeit: Gewährt zusätzlich den "Vielfältige Unterhaltung"-Bonus
-			- Boni: Angriffskraft erhöht (25 -> 50) und Rekrutierung von Wikingern in Kasernen
-		- Kestral
-			- Bonus: Rekrutierung von Banditen in Kasernen (Art hängt von Klimazone ab)
+			- Boni: Angriffskraft leicht erhöht (25 -> 30)
 		- Saraya
 			- Aktive Fähigkeit: Mindest-Warenmenge erhöht (5 -> 9)
 			- Passive Fähigkeit: Handelsposten noch billiger (50% -> 25%)
@@ -65,7 +63,7 @@ Folgende Änderungen wurden vorgenommen:
 			- Bonus: Rekrutierung von Signatureinheiten in Kasernen
 		- Praphat
 			- Aktive Fähigkeit: Versorgung von Einwohnern mit Kleidung und gewährt "Vielfältige Kleidung"-Bonus (analog Elias/Thordal)
-			- Passive Fähigkeit: Billigerer Ausbau von Gebäuden (wie Hakim)
+			- Passive Fähigkeit: Billigerer Ausbau von Gebäuden (wie Hakim, aber mit den alten 20%)
 		- Kastellane 
 			- Können theoretisch als Ritter genutzt werden
 			- Haben keine besonderen Fähigkeiten
@@ -231,6 +229,10 @@ Folgende Änderungen wurden vorgenommen:
 			- Zeigen die Ausbaustufe "1/1" an
 		- Hauptspiel-Marktplätze haben ein Mouseover
 	- Bienenstöcke haben weniger Lebenspunkte (10 -> 5)
+	- Kuh- und Schafweiden
+		- Kosten mehr Holz (3 -> 5)
+		- haben mehr HP (5 -> 10)
+		- Kuhweiden sind etwas dunkler und damit optisch von Schafweiden unterscheidbar
 	- Handelsposten-Baubutton hat einen etwas verständlicheren Tooltip
 	- Kasernen und Belagerungswaffenschmieden werden nicht mehr als potentielle reiche Stadtgebäude aufgelistet
 	- Arbeiter in Kasernen holen ihre Waffen nun einzeln

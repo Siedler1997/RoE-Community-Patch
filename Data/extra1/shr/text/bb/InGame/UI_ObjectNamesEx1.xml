@@ -51,6 +51,7 @@
 <string id="I_X_TigerCave" MD5Hash="26949CAB65D39580FD19AC66029891CB" mod="20080225145201" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Tigercave ]]></string>
 <string id="I_X_Holy_Cow" MD5Hash="" mod="20080228143620" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Holy Cow]]></string>
 
+  <string id="Buff_MedicineDiversity" MD5Hash="21DD5D8B40B9465756B5D1C7BF9C90BB" mod="20070826155203" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Medicine Diversity]]></string>
 	<string id="AbilityPlagueRedPrince" MD5Hash="" mod="20070615092816" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Red Prince's Tribute]]></string>
 	<!--<string id="AbilityPlagueRedPrince" MD5Hash="" mod="20070615092816" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Red Prince's Plague]]></string>-->
 	<string id="ErectTrebuchet" MD5Hash="71FD008E955D82637A6A67362AEAA055" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Erect Trebuchet]]></string>
