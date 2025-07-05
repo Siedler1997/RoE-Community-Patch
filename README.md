@@ -2,7 +2,6 @@
 Dieser inoffizielle Patch nimmt einige Optimierungen an der History Edition vom Spiel 'Die Siedler - Aufstieg eines Königreichs' vor und fügt neuen Content hinzu.
 
 
-
 ## Installation
 Mit folgenden Schritten lässt sich der Patch installieren:
 1. Lege eine Sicherheitskopie von `extra1` unter dem Namen `extra1_orig` an.
