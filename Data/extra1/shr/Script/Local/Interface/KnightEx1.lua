@@ -279,6 +279,8 @@ function GUI_Knight.StartAbilityClicked(_Ability)
             elseif Logic.GetEntityType(KnightID) == Entities.U_KnightPraphat then
                 GUI.AddBuff(Buffs.Buff_ClothesDiversity)
             end
+        elseif Ability == Abilities.AbilityHeal then
+            GUI.AddBuff(Buffs.Buff_MedicineDiversity)
         elseif Ability == Abilities.Buff_EntertainmentDiversity then
             GUI.AddBuff(Buffs.Buff_EntertainmentDiversity)
         end
