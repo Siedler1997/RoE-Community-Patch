@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<root>
+    <Buffs>
+
+        <Buff id="Buff_Gems">
+            <BuffCategory>BC_LuxuryGems</BuffCategory>
+            <DurationInSeconds>9999</DurationInSeconds>
+            <CityReputationModifier>.1</CityReputationModifier>
+        </Buff>
+        <Buff id="Buff_Olibanum">
+            <BuffCategory>BC_LuxuryOlibanum</BuffCategory>
+            <DurationInSeconds>9999</DurationInSeconds>
+            <CityReputationModifier>.1</CityReputationModifier>
+        </Buff>
+        <Buff id="Buff_MusicalInstrument">
+            <BuffCategory>BC_LuxuryMusicalInstrument</BuffCategory>
+            <DurationInSeconds>9999</DurationInSeconds>
+            <CityReputationModifier>.1</CityReputationModifier>
+        </Buff>
+
+      <Buff id="Buff_MedicineDiversity">
+        <BuffCategory>BC_MedicineDiversity</BuffCategory>
+        <DurationInSeconds>75</DurationInSeconds>
+        <CityReputationModifier>.1</CityReputationModifier>
+      </Buff>
+
+    </Buffs>
+
+</root>

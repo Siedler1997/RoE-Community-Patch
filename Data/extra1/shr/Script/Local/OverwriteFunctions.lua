@@ -41,6 +41,7 @@ function InitLocalOverwrite()
         g_Buffs.Widgets[Buffs.Buff_Gems or -1]          = "/InGame/Root/Normal/AlignTopLeft/TopBar/Buffs/Buff_Gems" --Luxory/Buff_Gems"
         g_Buffs.Widgets[Buffs.Buff_Olibanum or -1]          = "/InGame/Root/Normal/AlignTopLeft/TopBar/Buffs/Buff_Olibanum" --Luxory/Buff_Olibanum"
         g_Buffs.Widgets[Buffs.Buff_MusicalInstrument or -1] = "/InGame/Root/Normal/AlignTopLeft/TopBar/Buffs/Buff_MusicalInstrument" --Luxory/Buff_MusicalInstrument"
+        g_Buffs.Widgets[Buffs.Buff_MedicineDiversity or -1] = "/InGame/Root/Normal/AlignTopLeft/TopBar/Buffs/Buff_MedicineDiversity"
         
     end
 
