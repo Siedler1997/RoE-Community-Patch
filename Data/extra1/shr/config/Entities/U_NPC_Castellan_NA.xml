@@ -128,7 +128,7 @@
                 <IdleWhileDefended>false</IdleWhileDefended>
 
 				<AmmunitionType>G_TorchAmmunition</AmmunitionType>
-				<AmmunitionLimit>3</AmmunitionLimit>
+				<AmmunitionLimit>1</AmmunitionLimit>
                 <TargetCategoryList>
 
                     <TargetCategory>
@@ -186,14 +186,29 @@
 								<MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
 								<CanAttackOverWalls>false</CanAttackOverWalls>
 								<CooldownThousandths>6000</CooldownThousandths>
+								<ConsumeAmmunition>true</ConsumeAmmunition>
 								<Damage>
 									<DiceCount>0</DiceCount>
 									<FaceCount>0</FaceCount>
-									<BaseValue>15</BaseValue>
+									<BaseValue>20</BaseValue>
 								</Damage>
-								<BuildingFireSize>10</BuildingFireSize>
+                <BuildingFireSize>15</BuildingFireSize>
 
-								<ConsumeAmmunition>true</ConsumeAmmunition>
+                <DamageRadiusList>
+                  <!-- Must be sorted from inner to outer. -->
+                  <DamageRadius>
+                    <Radius>100</Radius>
+                    <Percentage>100</Percentage>
+                  </DamageRadius>
+                  <DamageRadius>
+                    <Radius>200</Radius>
+                    <Percentage> 50</Percentage>
+                  </DamageRadius>
+                  <DamageRadius>
+                    <Radius>300</Radius>
+                    <Percentage> 25</Percentage>
+                  </DamageRadius>
+                </DamageRadiusList>
 							</AttackMode>
 						</AttackModeList>
 					</TargetCategory>

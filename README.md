@@ -23,7 +23,7 @@ Mit folgenden Schritten lässt sich der Patch deinstallieren:
 ## Features
 Folgende Änderungen wurden vorgenommen:
 - Ritter
-	- Haben nun je 3 "Fackeln", um Gebäude angreifen zu können
+	- Haben nun je eine "Fackel", um Gebäude angreifen zu können
 	- "Alte" Ritter überarbeitet
 		- Alandra
 			- Aktive Fähigkeit: Gewährt zusätzlich den neuen "Vielfältige Medizin"-Bonus
@@ -107,14 +107,14 @@ Folgende Änderungen wurden vorgenommen:
 			- Inspiriert von den berittenen Schwertkämpfern in DEdK
 			- Rekrutierung 
 				- In Reitereien
-				- Benötigt 90 Gold + 1 Schwert pro Soldat
+				- Benötigt 180 Gold + 1 Schwert pro Soldat
 			- Nur einzeln unterwegs
 				- Für Mapper: Ist technisch gesehen KEIN Battalion, sondern eine einzelne Entity
 			- Haben keine besonderen Fähigkeiten
 			- Statuswerte ähnlich, aber idR. etwas schlechter als bei Rittern
-				- Weniger Lebenspunkte (900 < 1.000)
-				- Schwächere Lebensregeneration pro 10sec (40 < 50)
-				- Weniger Fackeln/Bomben (1 < 3)
+				- Weniger Lebenspunkte (500 < 1.000)
+				- Schwächere Lebensregeneration pro 10sec (25 < 50)
+				- Haben nur normale Fackeln
 				- Höherer Angriffscooldown (2 Sek. < 2,5 Sek.)
 		- Kanone
 			- Funktioniert ähnlich wie ein Katapult
