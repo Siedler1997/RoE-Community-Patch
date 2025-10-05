@@ -48,9 +48,10 @@ function HouseMenuSetIconsPart(_Part, _HighlightBool)
 
     local HouseMenuButtons = {XGUIEng.ListSubWidgets(_Part)}
     local WidgetName
-    local Buildings = {Logic.GetBuildingsByPlayer(GUI.GetPlayerID())}
+    local player = GUI.GetPlayerID()
+    local Buildings = {Logic.GetBuildingsByPlayer(player)}
     local i
-
+    
     for i = 1, #HouseMenuButtons do
         WidgetName = XGUIEng.GetWidgetNameByID(HouseMenuButtons[i])
 
@@ -69,14 +70,18 @@ function HouseMenuSetIconsPart(_Part, _HighlightBool)
             if EntityName == ClimateWidgetName then
                 Count = Count + 1
             end
+            if (ClimateWidgetName == "B_Barracks" and (EntityType == Entities.B_Barracks_RedPrince or EntityType == Entities.B_Barracks_Khana))
+                or (ClimateWidgetName == "B_BarracksArchers" and (EntityType == Entities.B_BarracksArchers_Redprince or EntityType == Entities.B_BarracksArchers_Khana)) then
+                Count = Count + 1
+            end
         end
-
+        
         if Count == 0 then
             XGUIEng.DisableButton(Button, 1)
         else
             XGUIEng.DisableButton(Button, 0)
         end
-
+        
         local Amount = _Part .. "/" .. WidgetName .. "/Amount"
 
         XGUIEng.SetText(Amount, "{center}" .. Count)
@@ -92,8 +97,7 @@ function HouseMenuSetIconsPart(_Part, _HighlightBool)
 
     HouseMenu.Counter = HouseMenu.Counter + 1
 
-    if _HighlightBool == true
-    or math.mod(HouseMenu.Counter, 20) == 0 then
+    if _HighlightBool == true or math.mod(HouseMenu.Counter, 20) == 0 then
 
         for j = 1, #HouseMenuButtons do
             local WidgetNameHighlighted = XGUIEng.GetWidgetNameByID(HouseMenuButtons[j])
@@ -202,7 +206,7 @@ function HouseMenuGetNextBuildingID(WidgetName)
         HouseMenu.Widget.CurrentBuilding = WidgetName
         HouseMenu.Widget.CurrentBuildingNumber = 0
     end
-
+    
     local FoundNumber = 0
     local HigherBuildingFound = false
 
@@ -210,7 +214,9 @@ function HouseMenuGetNextBuildingID(WidgetName)
         local EntityType = Logic.GetEntityType(Buildings[i])
         local EntityName = Logic.GetEntityTypeName(EntityType)
 
-        if EntityName == WidgetName then
+        if EntityName == WidgetName
+            or (WidgetName == "B_Barracks" and (EntityType == Entities.B_Barracks_RedPrince or EntityType == Entities.B_Barracks_Khana))
+            or (WidgetName == "B_BarracksArchers" and (EntityType == Entities.B_BarracksArchers_Redprince or EntityType == Entities.B_BarracksArchers_Khana)) then
             FoundNumber = i
 
             if FoundNumber > HouseMenu.Widget.CurrentBuildingNumber then
@@ -252,8 +258,10 @@ function HouseMenuCountBuildings(WidgetName)
 
     for i = 1, #Buildings do
         local EntityType = Logic.GetEntityType(Buildings[i])
-    local EntityName = Logic.GetEntityTypeName(EntityType)
-        if EntityName == WidgetName then
+        local EntityName = Logic.GetEntityTypeName(EntityType)
+        if EntityName == WidgetName 
+            or (WidgetName == "B_Barracks" and (EntityType == Entities.B_Barracks_RedPrince or EntityType == Entities.B_Barracks_Khana))
+            or (WidgetName == "B_BarracksArchers" and (EntityType == Entities.B_BarracksArchers_Redprince or EntityType == Entities.B_BarracksArchers_Khana)) then
             FoundNumber = FoundNumber + 1
         end
     end
