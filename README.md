@@ -183,7 +183,6 @@ Folgende Änderungen wurden vorgenommen:
 			- Eigenes Icon auf der Minimap
 			- Menü etwas umsortiert
 				- Militärische Güter (z.B. Schwerter) liegen nun unter dem 3. Tab "Burg und Militär"
-					- Belagerungsmaschinenbauteile sind hier nun ebenfalls verkaufbar
 				- Luxusgüter unter dem 3. Tab sind nun korrekt angeordnet
 		- Marktplatz: Generische Ritter-Statue bei Khana, Praphat und Kastellanen
 		- Handelsposten: Audio nach Errichtung eines Handelspostens gekürzt, um überschneidung mit 1. Lieferung zu vermeiden
