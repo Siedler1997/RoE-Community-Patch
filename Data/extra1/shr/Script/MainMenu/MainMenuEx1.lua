@@ -52,10 +52,15 @@ function g_MainMenu.ShowIntroVideos()
 		Framework.PlayVideo("videos\\Start01", -1, false, true)
 	    Mouse.CursorHide()
 		Framework.PlayVideo("videos\\ubisoft", -1, false, true)
+	    Mouse.CursorHide()
+		Framework.PlayVideo("videos\\bluebyte", -1, true, true)
+	    Mouse.CursorHide()
+		Framework.PlayVideo("videos\\ubipresents", -1, false, false)
+	    Mouse.CursorHide()
+		Framework.PlayVideo("videos\\c00_intro", -1, true, false)
 		Sound.MusicResume()
 	    Mouse.CursorShow()
 	end
-
 end
 
 function g_MainMenu.UpdateBackground()
