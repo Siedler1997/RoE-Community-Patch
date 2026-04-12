@@ -64,8 +64,12 @@ function g_CoatOfArm.UpdatePattern( _IsSmall, _OptionalPattern, _OptionalGender,
 
     g_CoatOfArm.CurrentPatternIndex = Pattern
     
-    if Profile.GetInteger("Profile", "CoAColorScheme", 0) == 1 then
-        colorScheme = 1
+    if _OptionalColorScheme == nil then
+        if Profile.GetInteger("Profile", "CoAColorScheme", 0) == 1 then
+            colorScheme = 1
+        end
+    else
+        colorScheme = _OptionalColorScheme
     end
 
     if _OptionalPlayerColor ~= nil then
@@ -74,43 +78,48 @@ function g_CoatOfArm.UpdatePattern( _IsSmall, _OptionalPattern, _OptionalGender,
         playerColor = Profile.GetInteger("Profile", "PreferredPlayerColor", 1)
     end
             
+    local texture = "coa"
+    local x = 0
+    local y = 0
+    local length = 0
+    local height = 0
     if _IsSmall then
-        local x, y, length, height = unpack(g_CoatOfArm.Coords.Small)
+        texture = texture .. "_small"
+        x, y, length, height = unpack(g_CoatOfArm.Coords.Small)
         x = x + g_CoatOfArm.CurrentPatternIndex * 64
         length = length + g_CoatOfArm.CurrentPatternIndex * 64
-        if g_CoatOfArm.CurrentGender == 1 then
-            x = x + 2048
-            length = length + 2048
-        end
-        if _OptionalColorScheme ~= nil then
-            x = x + 1024 * _OptionalColorScheme
-            length = length + 1024 * _OptionalColorScheme
+        if colorScheme == 0 then
+            texture = texture .. "_light"
         else
-            x = x + 1024 * colorScheme
-            length = length + 1024 * colorScheme
+            texture = texture .. "_dark"
+        end
+        if g_CoatOfArm.CurrentGender == 1 then
+            texture = texture .. "_f"
+        else
+            texture = texture .. "_m"
         end
         y = y + (playerColor-1) * 88
         height = y + 88
-        XGUIEng.SetMaterialUV(Widget, 0, x, y, length, height)
     else
-        local x, y, length, height = unpack(g_CoatOfArm.Coords.Big)
+        texture = texture .. "_big"
+        x, y, length, height = unpack(g_CoatOfArm.Coords.Big)
         x = x + g_CoatOfArm.CurrentPatternIndex * 128
         length = length + g_CoatOfArm.CurrentPatternIndex * 128
-        if g_CoatOfArm.CurrentGender == 1 then
-            x = x + 4096
-            length = length + 4096
-        end
-        if _OptionalColorScheme ~= nil then
-            x = x + 2048 * _OptionalColorScheme
-            length = length + 2048 * _OptionalColorScheme
+        if colorScheme == 0 then
+            texture = texture .. "_light"
         else
-            x = x + 2048 * colorScheme
-            length = length + 2048 * colorScheme
+            texture = texture .. "_dark"
+        end
+        if g_CoatOfArm.CurrentGender == 1 then
+            texture = texture .. "_f"
+        else
+            texture = texture .. "_m"
         end
         y = y + (playerColor-1) * 176
         height = y + 176
-        XGUIEng.SetMaterialUV(Widget, 0, x, y, length, height)
     end
+    XGUIEng.SetMaterialTexture(Widget, 0, texture .. ".png")
+    XGUIEng.SetMaterialUV(Widget, 0, x, y, length, height)
 end
 -----------------------------------------------------------------------------------------------------
 function g_CoatOfArm.UpdatePatternByPlayerColor(_IsSmall)
