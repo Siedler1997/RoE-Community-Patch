@@ -476,7 +476,7 @@
           <FullScreenBackground>false</FullScreenBackground>
           <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
           <BackgroundMaterial>
-           <Texture>CoA_Small.png</Texture>
+           <Texture>coa_small.png</Texture>
            <TextureCoordinatesMinU>1280.</TextureCoordinatesMinU>
            <TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
            <TextureCoordinatesMxU>1408.</TextureCoordinatesMxU>
@@ -733,7 +733,7 @@
           <FullScreenBackground>false</FullScreenBackground>
           <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
           <BackgroundMaterial>
-           <Texture>CoA_Small.png</Texture>
+           <Texture>coa_small.png</Texture>
            <TextureCoordinatesMinU>1280.</TextureCoordinatesMinU>
            <TextureCoordinatesMinV>0.</TextureCoordinatesMinV>
            <TextureCoordinatesMxU>1408.</TextureCoordinatesMxU>
