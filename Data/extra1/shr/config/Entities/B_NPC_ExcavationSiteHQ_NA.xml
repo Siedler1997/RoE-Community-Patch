@@ -112,16 +112,19 @@
                 <Class>EGL::CStockInOutBehavior</Class>
                 <MaxAmountOnStock>100</MaxAmountOnStock>
                 <GoodTypes>
-                    <GoodType>G_Carcass</GoodType>
-                    <GoodType>G_RawFish</GoodType>
-                    <GoodType>G_Grain</GoodType>
-                    <GoodType>G_Milk</GoodType>
-                    <GoodType>G_Honeycomb</GoodType>
+                    <GoodType>G_Gold</GoodType>
                     <GoodType>G_Wood</GoodType>
                     <GoodType>G_Stone</GoodType>
-                    <GoodType>G_Iron</GoodType>
-                    <GoodType>G_Wool</GoodType>
+                    <GoodType>G_Grain</GoodType>
+                    <GoodType>G_Milk</GoodType>
                     <GoodType>G_Herb</GoodType>
+                    <GoodType>G_Wool</GoodType>
+                    <GoodType>G_Honeycomb</GoodType>
+                    <GoodType>G_Iron</GoodType>
+                    <GoodType>G_RawFish</GoodType>
+                    <GoodType>G_Carcass</GoodType>
+                    <GoodType>G_Salt</GoodType>
+                    <GoodType>G_Dye</GoodType>
                     <GoodType>G_Gems</GoodType>
                     <GoodType>G_Olibanum</GoodType>
                     <GoodType>G_MusicalInstrument</GoodType>

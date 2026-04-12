@@ -139,6 +139,8 @@
                         <GoodType>G_Iron</GoodType>
                         <GoodType>G_RawFish</GoodType>
                         <GoodType>G_Carcass</GoodType>
+                        <GoodType>G_Salt</GoodType>
+                        <GoodType>G_Dye</GoodType>
                         <GoodType>G_Gems</GoodType>
                         <GoodType>G_Olibanum</GoodType>
                         <GoodType>G_MusicalInstrument</GoodType>
