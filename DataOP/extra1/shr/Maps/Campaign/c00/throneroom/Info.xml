@@ -17,7 +17,9 @@
  <GUID>
   <GUID>7d31a69c-2b1f-4545-9988-4e91b9019603</GUID>
  </GUID>
- <Keys> </Keys>
+ <Keys>
+  <Key>1</Key>
+ </Keys>
  <StartPositions> </StartPositions>
  <ValidPlayerColors> </ValidPlayerColors>
  <ValidKnightNames> </ValidKnightNames>

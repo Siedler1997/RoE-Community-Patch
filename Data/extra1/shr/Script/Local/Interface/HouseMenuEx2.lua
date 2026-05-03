@@ -8,125 +8,103 @@ function InitOverwriteHouseMenuEx2()
     do
         function HouseMenuSetIconsPart(_Part, _HighlightBool)
 
-            local HouseMenuButtons = {XGUIEng.ListSubWidgets(_Part)}
-            local WidgetName
-            local player = GUI.GetPlayerID()
-            local Buildings = {Logic.GetBuildingsByPlayer(player)}
-            local i
-    
-            for i = 1, #HouseMenuButtons do
-                WidgetName = XGUIEng.GetWidgetNameByID(HouseMenuButtons[i])
+            local playerID = GUI.GetPlayerID();
+            local houseMenuButtons = {XGUIEng.ListSubWidgets(_Part)};
+            local buildings = {Logic.GetBuildingsByPlayer(playerID)};
 
-                local WidgetPosEntry = Entities[WidgetName]
-                local Button = _Part .. "/" .. WidgetName .. "/Button"
+            for i = 1, #houseMenuButtons do
+                local widgetName = XGUIEng.GetWidgetNameByID(houseMenuButtons[i]);
+                local trimedWidgetName = string.gsub(widgetName, "_%w%w?%w?$", "");
+                local button = _Part .. "/" .. widgetName .. "/Button";
+                SetIcon(button, g_TexturePositions.Entities[Entities[widgetName]]);
 
-                SetIcon(Button, g_TexturePositions.Entities[WidgetPosEntry])
-
-                local Count = 0
-
-                for i = 1, #Buildings do
-                    local EntityType = Logic.GetEntityType(Buildings[i])
-                    local EntityName = Logic.GetEntityTypeName(EntityType)
-                    local ClimateWidgetName = GetClimateEntityName(WidgetName)
-
-                    if EntityName == ClimateWidgetName then
-                        Count = Count + 1
+                local count = 0;
+                for j = 1, #buildings do
+                    local entityType = Logic.GetEntityType(buildings[j]);
+                    local entityName = Logic.GetEntityTypeName(entityType);
+                    local trimedEntityName = string.gsub(entityName, "_%w%w?%w?$", "");
+                    if trimedWidgetName == trimedEntityName then
+                        count = count + 1;
                     end
-                    if (ClimateWidgetName == "B_Barracks" and (EntityType == Entities.B_Barracks_RedPrince or EntityType == Entities.B_Barracks_Khana))
-                        or (ClimateWidgetName == "B_BarracksArchers" and (EntityType == Entities.B_BarracksArchers_Redprince or EntityType == Entities.B_BarracksArchers_Khana)) then
+                    if (trimedWidgetName == "B_Barracks" and (entityType == Entities.B_Barracks_RedPrince or entityType == Entities.B_Barracks_Khana))
+                        or (trimedWidgetName == "B_BarracksArchers" and (entityType == Entities.B_BarracksArchers_Redprince or entityType == Entities.B_BarracksArchers_Khana)) then
                         Count = Count + 1
                     end
                 end
-        
-                if Count == 0 then
-                    XGUIEng.DisableButton(Button, 1)
-                else
-                    XGUIEng.DisableButton(Button, 0)
-                end
-        
-                local Amount = _Part .. "/" .. WidgetName .. "/Amount"
 
-                XGUIEng.SetText(Amount, "{center}" .. Count)
+                XGUIEng.DisableButton(button, (count == 0 and 1) or 0);
+                XGUIEng.SetText(_Part .. "/" .. widgetName .. "/Amount", "{center}" .. count);
+                UpdateStopOverlay(_Part .. "/" .. widgetName .. "/Stop", widgetName, count);
 
-                local StopWidget = _Part .. "/" .. WidgetName .. "/Stop"
-                UpdateStopOverlay(StopWidget, WidgetName, Count)
-
-                -- display overlay icon of current building
-                if WidgetName == HouseMenu.Widget.CurrentBuilding then
-                    UpdateStopOverlay(HouseMenu.Widget.CurrentStop, HouseMenu.Widget.CurrentBuilding, Count)
+                if widgetName == HouseMenu.Widget.CurrentBuilding then
+                    UpdateStopOverlay(
+                        HouseMenu.Widget.CurrentStop,
+                        HouseMenu.Widget.CurrentBuilding,
+                        count
+                    );
                 end
             end
 
-            HouseMenu.Counter = HouseMenu.Counter + 1
-
-            if _HighlightBool == true or math.mod(HouseMenu.Counter, 20) == 0 then
-
-                for j = 1, #HouseMenuButtons do
-                    local WidgetNameHighlighted = XGUIEng.GetWidgetNameByID(HouseMenuButtons[j])
-
-                    local ButtonHighlighted = _Part .. "/" .. WidgetNameHighlighted .. "/Button"
-
-                    WidgetNameHighlighted = GetClimateEntityName(WidgetNameHighlighted)
-
-                    if WidgetNameHighlighted == HouseMenu.Widget.CurrentBuilding then
-                        XGUIEng.HighLightButton(ButtonHighlighted, 1)
-                    else
-                        XGUIEng.HighLightButton(ButtonHighlighted, 0)
-                    end
+            HouseMenu.Counter = HouseMenu.Counter + 1;
+            if _HighlightBool or HouseMenu.Counter % 20 == 0 then
+                for j = 1, #houseMenuButtons do
+                    local building = HouseMenu.Widget.CurrentBuilding;
+                    local highligtedName = XGUIEng.GetWidgetNameByID(houseMenuButtons[j]);
+                    local button = _Part .. "/" .. highligtedName .. "/Button";
+                    highligtedName = GetClimateEntityName(highligtedName);
+                    local highlightFlag = (highligtedName == building and 1) or 0;
+                    XGUIEng.HighLightButton(button, highlightFlag);
                 end
             end
+
         end
     end
 
     do
         function HouseMenuGetNextBuildingID(WidgetName)
+        
+            local playerID = GUI.GetPlayerID();
+            local buildingsList = {Logic.GetBuildingsByPlayer(playerID)};
 
-            WidgetName = GetClimateEntityName(WidgetName)
-
-            local Buildings = { Logic.GetBuildingsByPlayer(GUI.GetPlayerID()) }
-            local i
-
+            WidgetName = GetClimateEntityName(WidgetName);
+            local TrimedWidgetName = string.gsub(WidgetName, "_%w%w?%w?$", "");
             if HouseMenu.Widget.CurrentBuilding ~= WidgetName then
-                HouseMenu.Widget.CurrentBuilding = WidgetName
-                HouseMenu.Widget.CurrentBuildingNumber = 0
+                HouseMenu.Widget.CurrentBuilding = WidgetName;
+                HouseMenu.Widget.CurrentBuildingNumber = 0;
             end
-    
-            local FoundNumber = 0
-            local HigherBuildingFound = false
 
-            for i = 1, #Buildings do
-                local EntityType = Logic.GetEntityType(Buildings[i])
-                local EntityName = Logic.GetEntityTypeName(EntityType)
-
-                if EntityName == WidgetName
-                    or (WidgetName == "B_Barracks" and (EntityType == Entities.B_Barracks_RedPrince or EntityType == Entities.B_Barracks_Khana))
-                    or (WidgetName == "B_BarracksArchers" and (EntityType == Entities.B_BarracksArchers_Redprince or EntityType == Entities.B_BarracksArchers_Khana)) then
-                    FoundNumber = i
-
-                    if FoundNumber > HouseMenu.Widget.CurrentBuildingNumber then
-                        HouseMenu.Widget.CurrentBuildingNumber = FoundNumber
-                        HigherBuildingFound = true
-                        break
+            local foundNumber = 0;
+            local higherBuildingFound = false;
+            for i = 1, #buildingsList do
+                local entityType = Logic.GetEntityType(buildingsList[i]);
+                local entityName = Logic.GetEntityTypeName(entityType);
+                local trimedEntityName = string.gsub(entityName, "_%w%w?%w?$", "");
+                if trimedEntityName == TrimedWidgetName 
+                    or (TrimedWidgetName == "B_Barracks" and (entityType == Entities.B_Barracks_RedPrince or entityType == Entities.B_Barracks_Khana))
+                    or (TrimedWidgetName == "B_BarracksArchers" and (entityType == Entities.B_BarracksArchers_Redprince or entityType == Entities.B_BarracksArchers_Khana)) then
+                    foundNumber = i;
+                    if foundNumber > HouseMenu.Widget.CurrentBuildingNumber then
+                        HouseMenu.Widget.CurrentBuildingNumber = foundNumber;
+                        higherBuildingFound = true;
+                        break;
                     end
                 end
             end
 
-            if FoundNumber == 0 then
-                return nil
+            if foundNumber == 0 then
+                return nil;
             end
-
-            if not HigherBuildingFound then
-                for i = 1, #Buildings do
-                    local EntityType = Logic.GetEntityType(Buildings[i])
-                    local EntityName = Logic.GetEntityTypeName(EntityType)
-                    if EntityName == WidgetName then
-                        HouseMenu.Widget.CurrentBuildingNumber = i
-                        break
+            if not higherBuildingFound then
+                for i = 1, #buildingsList do
+                    local entityType = Logic.GetEntityType(buildingsList[i]);
+                    local entityName = Logic.GetEntityTypeName(entityType);
+                    if entityName == WidgetName then
+                        HouseMenu.Widget.CurrentBuildingNumber = i;
+                        break;
                     end
                 end
             end
-
-            return Buildings[HouseMenu.Widget.CurrentBuildingNumber]
+            return buildingsList[HouseMenu.Widget.CurrentBuildingNumber];
 
         end
     end
@@ -161,10 +139,7 @@ function InitOverwriteHouseMenuEx2()
             local CurrentWidgetID = XGUIEng.GetCurrentWidgetID()
 
             if HouseMenu.Widget.CurrentBuilding == nil
-            or HouseMenu.Widget.CurrentBuilding == "B_Castle_AS"
-            or HouseMenu.Widget.CurrentBuilding == "B_Outpost_AS"
-            or HouseMenu.Widget.CurrentBuilding == "B_TradePost"
-            or HouseMenu.Widget.CurrentBuilding == "B_Cathedral_Big" then
+            or HouseMenu.Widget.CurrentBuilding == "B_TradePost" then
                 XGUIEng.DisableButton(CurrentWidgetID, 1)
                 return
             else
@@ -179,10 +154,7 @@ function InitOverwriteHouseMenuEx2()
             local CurrentWidgetID = XGUIEng.GetCurrentWidgetID()
 
             if HouseMenu.Widget.CurrentBuilding == nil
-            or HouseMenu.Widget.CurrentBuilding == "B_Castle_AS"
-            or HouseMenu.Widget.CurrentBuilding == "B_Outpost_AS"
             or HouseMenu.Widget.CurrentBuilding == "B_TradePost"
-            or HouseMenu.Widget.CurrentBuilding == "B_Cathedral_Big"
             or HouseMenu.Widget.CurrentBuilding == "B_BarracksSpearmen" 
             or HouseMenu.Widget.CurrentBuilding == "B_BarracksCavalry" then
                 XGUIEng.DisableButton(CurrentWidgetID, 1)

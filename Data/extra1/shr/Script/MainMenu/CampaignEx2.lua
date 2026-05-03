@@ -1,4 +1,9 @@
--- Add base campaign again after ex1 completely overwrites Campaign.lua
+--
+-- Unused because of unmodded Campaign.lua always sets Framework.SetCampaignName("c01") on map start
+--
+
+
+-- Add base campaign again after ex1 completly overwrites Campaign.lua
 Framework.AddCampaignMap("c00_m01_Vestholm")
 Framework.AddCampaignMap("c00_m02_Challia")
 Framework.AddCampaignMap("c00_m03_Gallos")

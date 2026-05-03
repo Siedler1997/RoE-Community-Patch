@@ -37,6 +37,7 @@ do
         InitSharedOverwrite()
         
         -- CP
+
         Script.Load( "Script\\MainMenu\\MainMenuEx2.lua" )
         Script.Load( "Script\\Local\\OverwriteFunctionsEx2.lua" )
         Script.Load( "Script\\Local\\Camera\\CameraAnimationEx2.lua" )
@@ -53,7 +54,7 @@ do
         Script.Load( "Script\\Local\\Interface\\InitInterfaceEx2.lua" )
         Script.Load( "Script\\Local\\Interface\\InteractionEx2.lua" )
         Script.Load( "Script\\Local\\Interface\\KnightEx2.lua" )
-        Script.Load( "Script\\Local\\Interface\\LoadScreenEx2.lua" )
+        --Script.Load( "Script\\Local\\Interface\\LoadScreenEx2.lua" )
         Script.Load( "Script\\Local\\Interface\\MilitaryEx2.lua" )
         Script.Load( "Script\\Local\\Interface\\MissionStatisticEx2.lua" )
         Script.Load( "Script\\Local\\Interface\\MultiselectionEx2.lua" )
@@ -65,6 +66,7 @@ do
         Script.Load( "Script\\Local\\MainMapScript\\LocalMainMapScriptEx2.lua" )
         Script.Load( "Script\\Local\\ScriptSystems\\LocalMusicSystemEx2.lua" )
         Script.Load( "Script\\Local\\ScriptSystems\\LocalVictoryConditionEx2.lua" )
+
         InitLocalOverwriteEx2()
         InitOverwriteBuffsEx2()
         InitOverwriteCloseUpViewEx2()
@@ -80,11 +82,11 @@ do
         InitOverwriteHouseMenuEx2()
         InitOverwriteInteractionEx2()
         InitOverwriteKnightEx2()
-        InitOverwriteConstructionEx2()
+        --InitOverwriteLoadScreenEx2()
         InitOverwriteMilitaryEx2()
         InitOverwriteGUI_MissionStatisticEx2()
         InitOverwriteMultiselectionEx2()
-        InitOverwriteConstructionEx2()
+        InitOverwriteSelectionEx2()
         InitOverwriteToolTipEx2()
         InitOverwriteTradeEx2()
         InitOverwriteKeyBindingsEx2()

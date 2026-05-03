@@ -1,3 +1,7 @@
+--
+-- Unused because campaign maps don't load when overwritten like that. We must use the original file...
+--
+
 
 function GetLoadScreen(_remappedKnightId, _tex)
     local filename
@@ -18,7 +22,7 @@ end
 -- Overwrites for LoadScreen
 -----------------------------------------------------------------------------------------
 
-function InitOverwriteConstructionEx2()
+function InitOverwriteLoadScreenEx2()
 
     do
         function InitLoadScreen(Throneroom, MapType, MapName, Campaign, KnightID)

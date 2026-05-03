@@ -186,7 +186,7 @@ function GUI_Construction.SwitchBuildingCategory()
     if g_Construction.CurrentPlacementType ~= nil then
         --local AmountOfTypes, FirstBuildingType = Logic.GetBuildingTypesInUpgradeCategory(g_LastPlacedParam)
         --GUI.AddNote("PlacementType: ".. g_Construction.CurrentPlacementType)
-        if g_LastPlacedCategory >= 0 and GUI_Construction.BuildingsWithSkins[g_LastPlacedCategory] ~= nil then
+        if g_LastPlacedCategory ~= nil and g_LastPlacedCategory >= 0 and GUI_Construction.BuildingsWithSkins[g_LastPlacedCategory] ~= nil then
             --GUI.AddNote("DEBUG: " .. table.getn(GUI_Construction.BuildingsWithSkins[g_LastPlacedCategory]) .. " buildings.")
             --GUI.AddNote("DEBUG: Index of item: " .. indexOf(GUI_Construction.BuildingsWithSkins[g_LastPlacedCategory], g_LastPlacedParam) .. ".")
             local itemIndex = GetIndexOfItem(GUI_Construction.BuildingsWithSkins[g_LastPlacedCategory], g_LastPlacedParam)

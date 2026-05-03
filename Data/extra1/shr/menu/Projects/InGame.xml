@@ -42838,7 +42838,7 @@
 											   <LuaCommand></LuaCommand>
 										   </OnBlur>
 										   <UpdateFunction>
-											   <LuaCommand>GUI_BuildingButtons.BuyBattalionUpdate2(Entities.U_MilitarySpear, Entities.B_BarracksSpearmen, Technologies.R_BarracksSpearmen)</LuaCommand>
+											   <LuaCommand>GUI_BuildingButtons.BuyBattalionUpdate(Entities.U_MilitarySpear, Entities.B_BarracksSpearmen, Technologies.R_BarracksSpearmen)</LuaCommand>
 										   </UpdateFunction>
 										   <UpdateFunctionTurnBased>
 											   <LuaCommand></LuaCommand>
@@ -42850,7 +42850,7 @@
 											   <ToolTipEnabledFlag>true</ToolTipEnabledFlag>
 											   <ControlTargetVisibility>true</ControlTargetVisibility>
 											   <ToolTipUpdateFunction>
-												   <LuaCommand>GUI_BuildingButtons.BuyBattalionMouseOver2(Entities.U_MilitarySpear, Technologies.R_BarracksSpearmen)</LuaCommand>
+												   <LuaCommand>GUI_BuildingButtons.BuyBattalionMouseOver(Entities.U_MilitarySpear, Technologies.R_BarracksSpearmen)</LuaCommand>
 											   </ToolTipUpdateFunction>
 											   <RawString></RawString>
 											   <StringTableKey></StringTableKey>
@@ -42881,7 +42881,7 @@
 											   </Color>
 										   </BackgroundMaterial>
 										   <ActionFunction>
-											   <LuaCommand>GUI_BuildingButtons.BuyBattalionClicked2(Entities.U_MilitarySpear)</LuaCommand>
+											   <LuaCommand>GUI_BuildingButtons.BuyBattalionClicked(Entities.U_MilitarySpear)</LuaCommand>
 										   </ActionFunction>
 										   <GenerateMaterialsFromNormal>false</GenerateMaterialsFromNormal>
 										   <ShortCutKey></ShortCutKey>
@@ -43117,7 +43117,7 @@
 											   <LuaCommand></LuaCommand>
 										   </OnBlur>
 										   <UpdateFunction>
-											   <LuaCommand>GUI_BuildingButtons.BuyBattalionUpdate2(Entities.U_MilitarySword, Entities.B_Barracks, Technologies.R_Barracks)</LuaCommand>
+											   <LuaCommand>GUI_BuildingButtons.BuyBattalionUpdate(Entities.U_MilitarySword, Entities.B_Barracks, Technologies.R_Barracks)</LuaCommand>
 										   </UpdateFunction>
 										   <UpdateFunctionTurnBased>
 											   <LuaCommand></LuaCommand>
@@ -43129,7 +43129,7 @@
 											   <ToolTipEnabledFlag>true</ToolTipEnabledFlag>
 											   <ControlTargetVisibility>true</ControlTargetVisibility>
 											   <ToolTipUpdateFunction>
-												   <LuaCommand>GUI_BuildingButtons.BuyBattalionMouseOver2(Entities.U_MilitarySword, Technologies.R_Barracks)</LuaCommand>
+												   <LuaCommand>GUI_BuildingButtons.BuyBattalionMouseOver(Entities.U_MilitarySword, Technologies.R_Barracks)</LuaCommand>
 											   </ToolTipUpdateFunction>
 											   <RawString></RawString>
 											   <StringTableKey></StringTableKey>
@@ -43160,7 +43160,7 @@
 											   </Color>
 										   </BackgroundMaterial>
 										   <ActionFunction>
-											   <LuaCommand>GUI_BuildingButtons.BuyBattalionClicked2(Entities.U_MilitarySword)</LuaCommand>
+											   <LuaCommand>GUI_BuildingButtons.BuyBattalionClicked(Entities.U_MilitarySword)</LuaCommand>
 										   </ActionFunction>
 										   <GenerateMaterialsFromNormal>false</GenerateMaterialsFromNormal>
 										   <ShortCutKey></ShortCutKey>
@@ -43396,7 +43396,7 @@
 											   <LuaCommand></LuaCommand>
 										   </OnBlur>
 										   <UpdateFunction>
-											   <LuaCommand>GUI_BuildingButtons.BuyBattalionUpdate2(Entities.U_MilitaryBow, Entities.B_BarracksArchers, Technologies.R_BarracksArchers)</LuaCommand>
+											   <LuaCommand>GUI_BuildingButtons.BuyBattalionUpdate(Entities.U_MilitaryBow, Entities.B_BarracksArchers, Technologies.R_BarracksArchers)</LuaCommand>
 										   </UpdateFunction>
 										   <UpdateFunctionTurnBased>
 											   <LuaCommand></LuaCommand>
@@ -43408,7 +43408,7 @@
 											   <ToolTipEnabledFlag>true</ToolTipEnabledFlag>
 											   <ControlTargetVisibility>true</ControlTargetVisibility>
 											   <ToolTipUpdateFunction>
-												   <LuaCommand>GUI_BuildingButtons.BuyBattalionMouseOver2(Entities.U_MilitaryBow, Technologies.R_BarracksArchers)</LuaCommand>
+												   <LuaCommand>GUI_BuildingButtons.BuyBattalionMouseOver(Entities.U_MilitaryBow, Technologies.R_BarracksArchers)</LuaCommand>
 											   </ToolTipUpdateFunction>
 											   <RawString></RawString>
 											   <StringTableKey></StringTableKey>
@@ -43439,7 +43439,7 @@
 											   </Color>
 										   </BackgroundMaterial>
 										   <ActionFunction>
-											   <LuaCommand>GUI_BuildingButtons.BuyBattalionClicked2(Entities.U_MilitaryBow)</LuaCommand>
+											   <LuaCommand>GUI_BuildingButtons.BuyBattalionClicked(Entities.U_MilitaryBow)</LuaCommand>
 										   </ActionFunction>
 										   <GenerateMaterialsFromNormal>false</GenerateMaterialsFromNormal>
 										   <ShortCutKey></ShortCutKey>
@@ -43675,7 +43675,7 @@
 											   <LuaCommand></LuaCommand>
 										   </OnBlur>
 										   <UpdateFunction>
-											   <LuaCommand>GUI_BuildingButtons.BuyBattalionUpdate2(Entities.U_MilitaryCavalry, Entities.B_BarracksCavalry, Technologies.R_BarracksCavalry)</LuaCommand>
+											   <LuaCommand>GUI_BuildingButtons.BuyBattalionUpdate(Entities.U_MilitaryCavalry, Entities.B_BarracksCavalry, Technologies.R_BarracksCavalry)</LuaCommand>
 										   </UpdateFunction>
 										   <UpdateFunctionTurnBased>
 											   <LuaCommand></LuaCommand>
@@ -43687,7 +43687,7 @@
 											   <ToolTipEnabledFlag>true</ToolTipEnabledFlag>
 											   <ControlTargetVisibility>true</ControlTargetVisibility>
 											   <ToolTipUpdateFunction>
-												   <LuaCommand>GUI_BuildingButtons.BuyBattalionMouseOver2(Entities.U_MilitaryCavalry, Technologies.R_BarracksCavalry)</LuaCommand>
+												   <LuaCommand>GUI_BuildingButtons.BuyBattalionMouseOver(Entities.U_MilitaryCavalry, Technologies.R_BarracksCavalry)</LuaCommand>
 											   </ToolTipUpdateFunction>
 											   <RawString></RawString>
 											   <StringTableKey></StringTableKey>
@@ -43718,7 +43718,7 @@
 											   </Color>
 										   </BackgroundMaterial>
 										   <ActionFunction>
-											   <LuaCommand>GUI_BuildingButtons.BuyBattalionClicked2(Entities.U_MilitaryCavalry)</LuaCommand>
+											   <LuaCommand>GUI_BuildingButtons.BuyBattalionClicked(Entities.U_MilitaryCavalry)</LuaCommand>
 										   </ActionFunction>
 										   <GenerateMaterialsFromNormal>false</GenerateMaterialsFromNormal>
 										   <ShortCutKey></ShortCutKey>
@@ -43954,7 +43954,7 @@
 											   <LuaCommand></LuaCommand>
 										   </OnBlur>
 										   <UpdateFunction>
-											   <LuaCommand>GUI_BuildingButtons.BuyBattalionUpdate2(Entities.U_Thief, Entities.B_Castle_ME, Technologies.R_Thieves)</LuaCommand>
+											   <LuaCommand>GUI_BuildingButtons.BuyBattalionUpdate(Entities.U_Thief, Entities.B_Castle_ME, Technologies.R_Thieves)</LuaCommand>
 										   </UpdateFunction>
 										   <UpdateFunctionTurnBased>
 											   <LuaCommand></LuaCommand>
@@ -43966,7 +43966,7 @@
 											   <ToolTipEnabledFlag>true</ToolTipEnabledFlag>
 											   <ControlTargetVisibility>true</ControlTargetVisibility>
 											   <ToolTipUpdateFunction>
-												   <LuaCommand>GUI_BuildingButtons.BuyBattalionMouseOver2(Entities.U_Thief, Technologies.R_Thieves)</LuaCommand>
+												   <LuaCommand>GUI_BuildingButtons.BuyBattalionMouseOver(Entities.U_Thief, Technologies.R_Thieves)</LuaCommand>
 											   </ToolTipUpdateFunction>
 											   <RawString></RawString>
 											   <StringTableKey></StringTableKey>
@@ -43997,7 +43997,7 @@
 											   </Color>
 										   </BackgroundMaterial>
 										   <ActionFunction>
-											   <LuaCommand>GUI_BuildingButtons.BuyBattalionClicked2(Entities.U_Thief)</LuaCommand>
+											   <LuaCommand>GUI_BuildingButtons.BuyBattalionClicked(Entities.U_Thief)</LuaCommand>
 										   </ActionFunction>
 										   <GenerateMaterialsFromNormal>false</GenerateMaterialsFromNormal>
 										   <ShortCutKey></ShortCutKey>

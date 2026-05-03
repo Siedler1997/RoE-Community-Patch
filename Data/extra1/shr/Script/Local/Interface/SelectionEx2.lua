@@ -2,7 +2,7 @@
 -- Overwrites for Selection
 -----------------------------------------------------------------
 
-function InitOverwriteConstructionEx2()
+function InitOverwriteSelectionEx2()
 
     do
         function GameCallback_GUI_SelectionChanged(_Source)
