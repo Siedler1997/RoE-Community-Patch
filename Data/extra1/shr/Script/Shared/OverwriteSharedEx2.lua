@@ -1,4 +1,6 @@
 
+g_CPVersion = "CP 0.1";
+
 -- Return the first index with the given value (or nil if not found).
 -- Source: https://stackoverflow.com/a/69651531
 function GetIndexOfItem(array, value)

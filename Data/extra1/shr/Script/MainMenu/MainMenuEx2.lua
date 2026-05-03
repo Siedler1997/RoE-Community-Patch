@@ -1,4 +1,6 @@
 
+g_CPVersion = "CP 0.1";
+
 --Script.Load("Script\\MainMenu\\CampaignEx2.lua" )
 Script.Load("Script\\MainMenu\\CampaignMapEx2.lua" )
 Script.Load("Script\\MainMenu\\CampaignMenuEx2.lua" )
