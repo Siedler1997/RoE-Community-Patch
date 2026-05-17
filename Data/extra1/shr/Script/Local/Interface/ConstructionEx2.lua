@@ -277,7 +277,7 @@ function InitOverwriteConstructionEx2()
             if GetIndexOfItem(GUI_Construction.TestSettlerLimitExceptions, _BuildingType) ~= nil then
                 return true
             else
-                OldGUI_Construction_TestSettlerLimit(_BuildingType)
+                return OldGUI_Construction_TestSettlerLimit(_BuildingType)
             end
         end
     end
