@@ -58,7 +58,7 @@ Folgende Änderungen wurden vorgenommen:
 				- Wer sie nutzen will, kann sie womöglich reaktivieren
 		- Khana
 			- Aktive Fähigkeit: Versorgung von Soldaten mit Fackeln (wie Marcus)
-			- Passive Fähigkeit: Mehr Gold von Predigten (wie Allandra)
+			- Passive Fähigkeit: Mehr Gold von Predigten (wie Alandra)
 			- Bonus: Rekrutierung von Signatureinheiten in Kasernen
 		- Praphat
 			- Aktive Fähigkeit: Versorgung von Einwohnern mit Kleidung und gewährt "Vielfältige Kleidung"-Bonus (analog Elias/Thordal)
@@ -256,8 +256,6 @@ Folgende Änderungen wurden vorgenommen:
 			- Wenn dadurch keine ausgewählt ist wird Mapvorschau geleert und Starten-Button deaktiviert
 		- Im AddOn auch alle Hauptspiel-Karten auswählbar
 - Diverses
-	- Automatisches Schnellspeichern deaktiviert
-		- Für Mapper: Quicksave wurde über neue Funktion umgeleitet: KeyBindings_SaveGame_Neu()
 	- Teardown-Sound von Palisaden/Mauern etwas leiser
 	- Marcus wird nicht mehr als generischer Ritter gesetzt
 	- Ungenutztes Audio-Feedback von Rittern, Soldaten und Dieben wird nun verwendet
@@ -302,9 +300,6 @@ Folgende Änderungen wurden vorgenommen:
 - Kampagnen
 	- Hauptspiel-Kampagne auch im AddOn spielbar
 	- Bugs gefixt
-		- Verfrühte Meldungen von KI-Mitspielern (M05: Drengir, M09: Husran)
-		- Verstärkung für den Spieler spawnt jetzt (M15: Vestholm)
-		- KI verliert am Anfang der Mission keine Territorien mehr (M09: Husran)
 		- Unnütze Randterritorien in benachbarte eingegliedert (M14: Gueranna)
 	- KI-Spielerfarben
 		- Mehr Varianz bei Spielerfarben
