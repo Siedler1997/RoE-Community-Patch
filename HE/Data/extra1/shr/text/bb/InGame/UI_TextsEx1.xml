@@ -24,4 +24,6 @@
 	<string id="MainMenuSelectPreferredColor_colon" MD5Hash="31DDC99E3CB405AF520AF608570D190A" mod="20070809133010" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Your player color:]]></string>
 	<string id="MainMenuColorBlue" MD5Hash="31DDC99E3CB405AF520AF608570D190A" mod="20070809133010" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Blue]]></string>
 	<string id="MainMenuColorYellow" MD5Hash="31DDC99E3CB405AF520AF608570D190A" mod="20070809133010" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Yellow]]></string>
+	<string id="MainMenuSelectTraitor_colon" MD5Hash="31DDC99E3CB405AF520AF608570D190A" mod="20070809133010" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Traitor:]]></string>
+	<string id="MainMenuDefaultTraitor" MD5Hash="31DDC99E3CB405AF520AF608570D190A" mod="20070809133010" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Default]]></string>
 </root>

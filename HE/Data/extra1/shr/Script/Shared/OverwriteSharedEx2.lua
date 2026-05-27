@@ -12,6 +12,68 @@ function GetIndexOfItem(array, value)
     return nil
 end
 
+--Lighter version of base CalculateTraitorAndPoints from local script
+function CalculateTraitor()
+
+    --get Title and prestige points of each knight and take the knight with the lowest as traitor
+    -- save traitor in GBD
+
+    --I do not like this, but I have no other idea how to get this data:
+    local BaseKnightTypes = {"U_KnightChivalry",
+                        "U_KnightHealing",
+                        "U_KnightSong",
+                        "U_KnightTrading",
+                        "U_KnightPlunder",
+                        "U_KnightWisdom"
+                    }
+
+    local BaseCampaignMaps = {"c00_m01_Vestholm",
+                            "c00_m02_Challia",
+                            "c00_m03_Gallos",
+                            "c00_m04_Narfang",
+                            "c00_m05_Drengir",
+                            "c00_m06_Rekkyr",
+                            "c00_m07_Geth",
+                            "c00_m08_Seydiir",
+                            "c00_m09_Husran",
+                            "c00_m10_Juahar",
+                            "c00_m11_Tios",
+                            "c00_m12_Sahir"
+                            --Ignore these. Only the missions up to here are important for calculation
+                            --[[
+                            "c00_m13_Montecito",
+                            "c00_m14_Gueranna",
+                            "c00_m15_Vestholm",
+                            "c00_m16_Rossotorres"
+                            --]] 
+                        }
+
+    local Traitor
+    local LowestTitle = 1000
+    
+    for i=1, #BaseKnightTypes do
+        local KnightTypeName = BaseKnightTypes[i]
+        local SumOfTitle = 0  
+
+        --get the sum titles and prestigepoints of knight in all maps
+        for j=1,#BaseCampaignMaps do
+            local MapName = string.lower(BaseCampaignMaps[j])
+			if Profile.PrestigeAndTitleExist(KnightTypeName, MapName) then
+				local PointsInMap, Title = Profile.GetPrestigeAndTitle(KnightTypeName, MapName)
+                SumOfTitle = SumOfTitle + Title
+		    end
+        end
+
+        if SumOfTitle < LowestTitle then
+            Traitor = KnightTypeName
+            LowestTitle = SumOfTitle
+        end
+    end
+    
+    return Traitor
+    
+end
+
 -----------------------------------------------------------------------------------------
 -- Generic shared overwrites
 -----------------------------------------------------------------------------------------

@@ -308,5 +308,6 @@ Folgende Änderungen wurden vorgenommen:
 		- Hat einen eigenen Soundtrack
 		- Tür wird von Hellebardieren bewacht
 	- Diverses
-		- M09: Husran: KI aggressiver und mit eigener Eisenmine
-		- AM05: Idukun: durch etwas mehr Startkapital etwas einfacher
+		- c00_M09: Husran: KI aggressiver und mit eigener Eisenmine
+		- c01_M05: Idukun: durch etwas mehr Startkapital etwas einfacher
+		- Verräter kann im Spielerprofil eingestellt, nachdem die Hauptspiel-Kampagne abgeschlossen wurde

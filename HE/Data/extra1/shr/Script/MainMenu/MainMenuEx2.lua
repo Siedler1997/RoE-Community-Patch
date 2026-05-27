@@ -11,6 +11,7 @@ Script.Load("Script\\MainMenu\\ProfileEx2.lua" )
 Script.Load("Script\\MainMenu\\SingleplayerMenuEx2.lua" )
 Script.Load("Script\\MainMenu\\Multiplayer\\AspectGameConfigEx2.lua" )
 Script.Load("Script\\MainMenu\\Multiplayer\\CreateGamePageEx2.lua" )
+Script.Load("Script\\Shared\\OverwriteSharedEx2.lua" )
 Script.Load("Script\\Shared\\ScriptSystems\\SharedMultiplayerEx2.lua" )
 
 function g_MainMenu.ShowIntroVideos()
