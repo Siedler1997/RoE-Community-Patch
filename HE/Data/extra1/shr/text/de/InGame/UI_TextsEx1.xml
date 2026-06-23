@@ -36,4 +36,6 @@
 	<string id="MainMenuSelectPreferredColor_colon" MD5Hash="31DDC99E3CB405AF520AF608570D190A" mod="20070809133010" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Eure Spielerfarbe:]]></string>
 	<string id="MainMenuColorBlue" MD5Hash="31DDC99E3CB405AF520AF608570D190A" mod="20070809133010" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Blau]]></string>
 	<string id="MainMenuColorYellow" MD5Hash="31DDC99E3CB405AF520AF608570D190A" mod="20070809133010" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Gelb]]></string>
+	<string id="MainMenuSelectTraitor_colon" MD5Hash="31DDC99E3CB405AF520AF608570D190A" mod="20070809133010" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Verräter:]]></string>
+	<string id="MainMenuDefaultTraitor" MD5Hash="31DDC99E3CB405AF520AF608570D190A" mod="20070809133010" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Standard]]></string>
 </root>

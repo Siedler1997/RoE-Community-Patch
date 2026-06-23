@@ -1,12 +1,24 @@
 
+g_MainMenuProfile.TraitorListWidget = "/InGame/Profile/NewProfile/ContainerSelection/TraitorComboBoxContainer/ListBox"
+
 g_MainMenuProfile.IndexOfCurrentSelectedCoAColorScheme = 0  -- 0..1
 g_MainMenuProfile.IndexOfCurrentPreferredColor = 1          -- 1..18
 
 g_MainMenuProfile.TempCoAColorScheme = 0    		        -- 0..1
 g_MainMenuProfile.TempPreferredColor = 1    		        -- 1..18
+g_MainMenuProfile.TempTraitor = 0
 g_MainMenuProfile.BottomCleared = 0
 g_MainMenuProfile.ExitCancelVisibile = 0
 g_MainMenuProfile.CreateAcceptVisibile = 0
+g_MainMenuProfile.TraitorList = {
+    "0",
+    "U_KnightChivalry",
+    "U_KnightHealing",
+    "U_KnightSong",
+    "U_KnightTrading",
+    "U_KnightPlunder",
+    "U_KnightWisdom"
+}
 
 ---------------------------------------------------------------------------------------------------
 function g_MainMenuProfile:OnChangeProfile()
@@ -21,6 +33,17 @@ function g_MainMenuProfile:OnChangeProfile()
     XGUIEng.ShowWidget(g_ProfileWidget.List, 0)
     XGUIEng.ShowWidget(g_ProfileWidget.Right, 0)
     XGUIEng.ShowWidget(g_ProfileWidget.New, 1)
+
+    --Hide traitor option if player hasn't finished last base campaign mission yet
+    if Profile.GetString("c00_m16_rossotorres", "MaxPoints") == "" then
+        XGUIEng.ShowWidget("/InGame/Profile/NewProfile/BGText/ChooseTraitorText", 0)
+        XGUIEng.ShowWidget("/InGame/Profile/NewProfile/ContainerSelection/TraitorComboBoxMain", 0)
+        XGUIEng.ShowWidget("/InGame/Profile/NewProfile/ContainerSelection/TraitorComboBoxContainer", 0)
+    else
+        XGUIEng.ShowWidget("/InGame/Profile/NewProfile/BGText/ChooseTraitorText", 1)
+        XGUIEng.ShowWidget("/InGame/Profile/NewProfile/ContainerSelection/TraitorComboBoxMain", 1)
+        XGUIEng.ShowWidget("/InGame/Profile/NewProfile/ContainerSelection/TraitorComboBoxContainer", 1)
+    end
 
     --self:DisplayBottomButtons2(g_ProfileWidget.Bottom .. "/Cancel", g_ProfileWidget.Bottom .. "/AcceptChanges")
     self:DisplayBottomButtons2(g_ProfileWidget.Bottom .. "/Cancel")
@@ -44,6 +67,15 @@ function g_MainMenuProfile:OnChangeProfile()
 	--self:ChoseCoAColorScheme(coAColorScheme)
 	self:DisplayCoAColorScheme(coAColorScheme)
     g_MainMenuProfile:DisplayPreferredColor(Profile.GetInteger("Profile", "PreferredPlayerColor", 1))
+
+    g_MainMenuProfile:FillTraitorComboBox()
+
+    local isCustomTraitor = Profile.GetInteger("Profile", "CustomTraitor")
+    local currentTraitor = Profile.GetTraitor()
+    if isCustomTraitor == 1 and currentTraitor ~= nil then
+	    local TraitorComboBoxID = XGUIEng.GetWidgetID(g_MainMenuProfile.TraitorListWidget)
+	    XGUIEng.ListBoxSetSelectedIndexByText(TraitorComboBoxID, XGUIEng.GetStringTableText("Names/" .. currentTraitor))
+    end
 
 	Profile.SelectProfile(CurrentProfile)
 
@@ -158,6 +190,7 @@ function g_MainMenuProfile:OnAcceptChanges()
     
     self:ChoseCoAColorScheme(self.TempCoAColorScheme)
     self:ChosePreferredColor(self.TempPreferredColor)
+    self:ChoseTraitor(self.TempTraitor)
 
     --Arms
     self:ChosePattern(self.TempPattern)
@@ -204,7 +237,7 @@ function g_MainMenuProfile:DisplayBottomButtons(_Button1, _Button2)
     
 end
 
--- Eine Abwandlung der Funktion, nur für Create/Edit Profile
+-- Eine Abwandlung der Funktion, nur fï¿½r Create/Edit Profile
 function g_MainMenuProfile:DisplayBottomButtons2(_Button1, _Button2)
     if self.BottomCleared == 0 then
         self.BottomCleared = 1
@@ -419,5 +452,45 @@ end
 function g_MainMenuProfile:ChosePreferredColor(_PreferredColor)
 
     Profile.SetInteger("Profile", "PreferredPlayerColor", _PreferredColor)
+
+end
+---------------------------------------------------------------------------------------------------
+function g_MainMenuProfile:ChoseTraitor(_traitor)
+
+    if _traitor == "0" then
+        Profile.SetInteger("Profile", "CustomTraitor", 0)
+        Profile.SetTraitor(CalculateTraitor())
+    else
+        Profile.SetInteger("Profile", "CustomTraitor", 1)
+        Profile.SetTraitor(self.TempTraitor)
+    end
+
+end
+----------------------------------------------------------------------------------------------------
+function g_MainMenuProfile:FillTraitorComboBox()
+
+    local TraitorComboBoxID = XGUIEng.GetWidgetID(g_MainMenuProfile.TraitorListWidget)
+    
+    XGUIEng.ListBoxPopAll(TraitorComboBoxID)
+
+    --That one is static
+    XGUIEng.ListBoxPushItem(TraitorComboBoxID, XGUIEng.GetStringTableText("UI_Texts/MainMenuDefaultTraitor"))
+    
+    --Add knights to traitor list (except default)
+    for i=2,(#g_MainMenuProfile.TraitorList) do
+		XGUIEng.ListBoxPushItem(TraitorComboBoxID, XGUIEng.GetStringTableText("Names/" .. g_MainMenuProfile.TraitorList[i]))
+    end
+    
+    XGUIEng.ListBoxSetSelectedIndex(TraitorComboBoxID, 0)
+
+end
+----------------------------------------------------------------------------------------------------
+function g_MainMenuProfile:OnTraitorListBoxSelectionChange()
+
+	local TraitorComboBoxID = XGUIEng.GetWidgetID(g_MainMenuProfile.TraitorListWidget)
+	local TraitorIndex = XGUIEng.ListBoxGetSelectedIndex(TraitorComboBoxID)
+
+    self.HasChanged = true
+    self.TempTraitor = g_MainMenuProfile.TraitorList[TraitorIndex+1]
 
 end
