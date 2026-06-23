@@ -1,5 +1,5 @@
 # Unofficial RoE Content Patch
-Dieser inoffizielle Patch nimmt einige Optimierungen an der History Edition vom Spiel 'Die Siedler - Aufstieg eines Königreichs' vor und fügt neuen Content hinzu.
+Dieser inoffizielle Content-Patch nimmt einige Optimierungen am Spiel 'Die Siedler - Aufstieg eines Königreichs' vor und fügt neuen Content hinzu.
 
 
 ## Installation
