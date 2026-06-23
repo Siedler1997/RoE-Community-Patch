@@ -1,0 +1,2295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <Goods>
+        <Good id="G_None">
+            <Logic classname="EGL::CGoodProps"></Logic>
+            <Display classname="ED::CDisplayGoodProps"></Display>
+        </Good>
+
+        <!-- this good is a hack to buy cattle at a merchant-->
+        <Good id="G_Sheep">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Animal</GoodCategory>
+                <Value>0.1</Value>
+                <Worth>1</Worth>
+                <StandCarryAnimationCategory>StandCarrySack</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarrySack</WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Goods\G_Grain</Model>
+            </Display>
+        </Good>
+
+        <!-- this good is a hack to buy cattle at a merchant-->
+        <Good id="G_Cow">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Animal</GoodCategory>
+                <Value>0.1</Value>
+                <Worth>1</Worth>
+                <StandCarryAnimationCategory>StandCarrySack</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarrySack</WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Goods\G_Grain</Model>
+            </Display>
+        </Good>
+        
+        
+         <!-- this good is used in a specifiy mission-->
+        <Good id="G_Regalia">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Resource</GoodCategory>
+                <Value>0.1</Value>
+                <Worth>1</Worth>
+                <StandCarryAnimationCategory>StandCarrySack</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarrySack</WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Goods\G_Grain</Model>
+            </Display>
+        </Good>
+
+<!--
+  Resources
+-->
+
+		<Good id="G_Dye">
+			<Logic classname="EGL::CGoodProps">
+				<GoodCategory>GC_Resource</GoodCategory>
+				<Value>0.1</Value>
+				<Worth>0</Worth>
+				<StandCarryAnimationCategory>StandCarrySack</StandCarryAnimationCategory>
+				<WalkCarryAnimationCategory>WalkCarrySack</WalkCarryAnimationCategory>
+			</Logic>
+			<Display classname="ED::CDisplayGoodProps">
+				<Model>Goods\G_Grain</Model>
+			</Display>
+		</Good>
+
+		<Good id="G_Salt">
+			<Logic classname="EGL::CGoodProps">
+				<GoodCategory>GC_Resource</GoodCategory>
+				<Value>0.1</Value>
+				<Worth>0</Worth>
+				<StandCarryAnimationCategory>StandCarryBucket</StandCarryAnimationCategory>
+				<WalkCarryAnimationCategory>WalkCarryBucket</WalkCarryAnimationCategory>
+			</Logic>
+			<Display classname="ED::CDisplayGoodProps">
+				<Model>Goods\G_Milk</Model>
+			</Display>
+		</Good>
+
+		<Good id="G_Grain">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Resource</GoodCategory>
+                <Value>0.1</Value>
+                <Worth>0</Worth>
+                <StandCarryAnimationCategory>StandCarrySack</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarrySack</WalkCarryAnimationCategory>
+			</Logic>
+			<Display classname="ED::CDisplayGoodProps">
+                <Model>Goods\G_Grain</Model>
+            </Display>
+        </Good>
+
+        <Good id="G_Milk">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Resource</GoodCategory>
+                <Value>0.1</Value>
+                <Worth>0</Worth>
+				<StandCarryAnimationCategory>StandCarryBucket</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarryBucket</WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Goods\G_Milk</Model>
+            </Display>
+        </Good>
+
+        <Good id="G_Carcass"><!-- hepp -->
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Resource</GoodCategory>
+                <Value>0.1</Value>
+                <Worth>0</Worth>
+				<StandCarryAnimationCategory>StandCarryGood</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarryGood</WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Goods\G_Carcass</Model>
+            </Display>
+        </Good>
+
+        <Good id="G_RawFish">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Resource</GoodCategory>
+                <Value>0.1</Value>
+	       <Worth>0</Worth>
+                <StandCarryAnimationCategory>StandCarryGood</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarryGood</WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Goods\G_RawFish</Model>
+            </Display>
+        </Good>
+
+        <Good id="G_Herb">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Resource</GoodCategory>
+                <Value>0.1</Value>
+                <Worth>0</Worth>
+                <StandCarryAnimationCategory>StandCarrySack</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarrySack</WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Goods\G_Herb</Model>
+            </Display>
+        </Good>
+
+        <Good id="G_Wood">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Resource</GoodCategory>
+                <Value>1.0</Value>
+                <Worth>0</Worth>
+                <StandCarryAnimationCategory>StandCarrySack</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarrySack</WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Goods\G_Wood</Model>
+            </Display>
+        </Good>
+
+        <Good id="G_Stone">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Resource</GoodCategory>
+                <Value>1.0</Value>
+                <Worth>0</Worth>
+                <StandCarryAnimationCategory>StandCarrySack</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarrySack</WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Goods\G_Stone</Model>
+            </Display>
+        </Good>
+
+       <Good id="G_Iron">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Resource</GoodCategory>
+                <Value>1.0</Value>
+                <Worth>0</Worth>
+                <StandCarryAnimationCategory>StandCarrySack</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarrySack</WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Goods\G_Iron</Model>
+            </Display>
+        </Good>
+
+        <Good id="G_Honeycomb">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Resource</GoodCategory>
+                <Value>1.0</Value>
+                <Worth>0</Worth>
+				<StandCarryAnimationCategory>StandCarryChest</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarryChest</WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Goods\G_Honey</Model>
+            </Display>
+        </Good>
+
+        <Good id="G_Wool">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Resource</GoodCategory>
+                <Value>1.0</Value>
+                <Worth>0</Worth>
+                <StandCarryAnimationCategory>StandCarrySack</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarrySack</WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Goods\G_Wool</Model>
+            </Display>
+        </Good>
+
+
+<!--
+  Food
+-->
+        <Good id="G_Bread">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Food</GoodCategory>
+                <Value>0.8</Value>
+                <Worth>10</Worth>
+                <StandCarryAnimationCategory>StandCarryGood</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarryGood</WalkCarryAnimationCategory>
+                <RequiredResources>
+                    <Resource>
+                        <GoodAmount>
+                            <GoodType>G_Grain</GoodType>
+                            <Amount>1</Amount>
+                        </GoodAmount>
+                        <ProviderCategory>G_Grain_Supplier</ProviderCategory>
+                    </Resource>
+                </RequiredResources>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Goods\G_Bread</Model>
+            </Display>
+        </Good>
+
+       <Good id="G_Cheese">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Food</GoodCategory>
+                <Value>0.8</Value>
+                <Worth>10</Worth>
+                <StandCarryAnimationCategory>StandCarryGood</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarryGood</WalkCarryAnimationCategory>
+                <RequiredResources>
+                    <Resource>
+                        <GoodAmount>
+                            <GoodType>G_Milk</GoodType>
+                            <Amount>1</Amount>
+                        </GoodAmount>
+                        <ProviderCategory>G_Milk_Supplier</ProviderCategory>
+                    </Resource>
+                </RequiredResources>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Goods\G_Cheese</Model>
+            </Display>
+        </Good>
+
+        <Good id="G_Sausage">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Food</GoodCategory>
+                <Value>0.8</Value>
+                <Worth>10</Worth>
+                <StandCarryAnimationCategory>StandCarryGood</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarryGood</WalkCarryAnimationCategory>
+                <RequiredResources>
+                    <Resource>
+                        <GoodAmount>
+                            <GoodType>G_Carcass</GoodType>
+                            <Amount>1</Amount>
+                        </GoodAmount>
+                        <ProviderCategory>G_Carcass_Supplier</ProviderCategory>
+                    </Resource>
+                </RequiredResources>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Goods\G_Sausage</Model>
+            </Display>
+        </Good>
+
+        <Good id="G_SmokedFish">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Food</GoodCategory>
+                <Value>0.8</Value>
+                <Worth>10</Worth>
+                <StandCarryAnimationCategory>StandCarryChest</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarryChest</WalkCarryAnimationCategory>
+                <RequiredResources>
+                    <Resource>
+                        <GoodAmount>
+                            <GoodType>G_RawFish</GoodType>
+                            <Amount>1</Amount>
+                        </GoodAmount>
+                        <ProviderCategory>G_RawFish_Supplier</ProviderCategory>
+                    </Resource>
+                </RequiredResources>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Goods\G_SmokedFish</Model>
+            </Display>
+        </Good>
+        
+        <Good id="G_FoodLordTrading">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Food</GoodCategory>
+                <Value>1</Value>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps"></Display>
+        </Good>
+
+
+<!--
+  Clothes (clothes)
+-->
+    <Good id="G_Clothes">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Clothes</GoodCategory>
+                <Value>0.8</Value>
+                <Worth>10</Worth>
+                <StandCarryAnimationCategory>StandCarryChest</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarryChest</WalkCarryAnimationCategory>
+                <RequiredResources>
+                    <Resource>
+                        <GoodAmount>
+                            <GoodType>G_Wool</GoodType>
+                            <Amount>1</Amount>
+                        </GoodAmount>
+                        <ProviderCategory>G_Wool_Supplier</ProviderCategory>
+                    </Resource>
+                </RequiredResources>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Goods\G_Clothes</Model>
+            </Display>
+        </Good>
+
+    <Good id="G_Leather">
+        <Logic classname="EGL::CGoodProps">
+            <GoodCategory>GC_Clothes</GoodCategory>
+            <Value>0.8</Value>
+            <Worth>10</Worth>
+                <StandCarryAnimationCategory>StandCarryChest</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarryChest</WalkCarryAnimationCategory>
+            <RequiredResources>
+                <Resource>
+                    <GoodAmount>
+                        <GoodType>G_Carcass</GoodType>
+                        <Amount>1</Amount>
+                    </GoodAmount>
+                    <ProviderCategory>G_Carcass_Supplier</ProviderCategory>
+                </Resource>
+            </RequiredResources>
+        </Logic>
+        <Display classname="ED::CDisplayGoodProps">
+            <Model>Goods\G_Leather</Model>
+        </Display>
+    </Good>
+
+
+<!--
+  Hygiene (cleanliness)
+-->
+        <Good id="G_Water">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Water</GoodCategory>
+                <Value>0.2</Value>
+                <StandCarryAnimationCategory>StandCarryBucket</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarryBucket</WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Goods\G_Water</Model>
+            </Display>
+        </Good>
+
+        <Good id="G_Soap">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Hygiene</GoodCategory>
+                <Value>0.8</Value>
+                <Worth>10</Worth>
+                <StandCarryAnimationCategory>StandCarryGood</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarryGood</WalkCarryAnimationCategory>
+                <RequiredResources>
+                    <Resource>
+                        <GoodAmount>
+                            <GoodType>G_Carcass</GoodType>
+                            <Amount>1</Amount>
+                        </GoodAmount>
+                        <ProviderCategory>G_Carcass_Supplier</ProviderCategory>
+                    </Resource>
+                </RequiredResources>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Goods\G_Soap</Model>
+            </Display>
+        </Good>
+
+         <Good id="G_Broom">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Hygiene</GoodCategory>
+                <Value>0.8</Value>
+                <Worth>10</Worth>
+                <StandCarryAnimationCategory>StandCarryBucket</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarryBucket</WalkCarryAnimationCategory>
+                <RequiredResources>
+                    <Resource>
+                        <GoodAmount>
+                            <GoodType>G_Wood</GoodType>
+                            <Amount>1</Amount>
+                        </GoodAmount>
+                        <ProviderCategory>G_Wood_Supplier</ProviderCategory>
+                    </Resource>
+                </RequiredResources>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <!--ToDo: Change this into a good-->
+                <Model>Goods\G_Broom</Model>
+            </Display>
+        </Good>
+
+
+<!--
+  Medicine
+-->
+        <Good id="G_Medicine">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Medicine</GoodCategory>
+                <Value>0.8</Value>
+                <Worth>10</Worth>
+                <StandCarryAnimationCategory>StandCarrySack</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarrySack</WalkCarryAnimationCategory>
+                <RequiredResources>
+                    <Resource>
+                        <GoodAmount>
+                            <GoodType>G_Herb</GoodType>
+                            <Amount>1</Amount>
+                        </GoodAmount>
+                        <ProviderCategory>G_Herb_Supplier</ProviderCategory>
+                    </Resource>
+                </RequiredResources>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Goods\G_Medicine</Model>
+            </Display>
+        </Good>
+
+        <Good id="G_MedicinLadyHealing">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Medicine</GoodCategory>
+                <Value>1</Value>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps"></Display>
+        </Good>
+
+
+<!--
+  Entertainment
+-->
+<!-- currently G_Beer is called "Mead" in the game and is made out of honey
+        "G_Mead" must be added as an additional good if we decide to add different beverages for each climate zone  -->
+         <Good id="G_Beer">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Entertainment</GoodCategory>
+                <Value>0.8</Value>
+                <Worth>10</Worth>
+                <StandCarryAnimationCategory>StandCarrySack</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarrySack</WalkCarryAnimationCategory>
+                <RequiredResources>
+                    <Resource>
+                        <GoodAmount>
+                            <GoodType>G_Honeycomb</GoodType>
+                            <Amount>1</Amount>
+                        </GoodAmount>
+                        <ProviderCategory>G_Honeycomb_Supplier</ProviderCategory>
+                    </Resource>
+                </RequiredResources>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Goods\G_MeadTavern01</Model>
+            </Display>
+        </Good>
+
+       <Good id="G_EntBaths">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Entertainment</GoodCategory>
+                <Value>0.8</Value>
+                <Worth>10</Worth>
+                <StandCarryAnimationCategory>StandCarrySack</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarrySack</WalkCarryAnimationCategory>
+                <RequiredResources>
+                    <Resource>
+                        <GoodAmount>
+                            <GoodType>G_Water</GoodType>
+                            <Amount>1</Amount>
+                        </GoodAmount>
+                        <ProviderCategory>G_Water_Supplier</ProviderCategory>
+                    </Resource>
+                </RequiredResources>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps"></Display>
+        </Good>
+
+       <Good id="G_EntTheatre">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Entertainment</GoodCategory>
+                <Value>0.8</Value>
+                <Worth>10</Worth><!-- Must be in sync with G_PlayMaterial, b/c theatres get their earnings from G_PlayMaterial good, not this good! -->
+                 <StandCarryAnimationCategory>StandCarrySack</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarrySack</WalkCarryAnimationCategory>
+               <RequiredResources>
+                    <!--Resource>
+                        <GoodAmount>
+                            <GoodType>G_Wood</GoodType>
+                            <Amount>1</Amount>
+                        </GoodAmount>
+                        <ProviderCategory>G_Wood_Supplier</ProviderCategory>
+                    </Resource-->
+                    <Resource>
+                         <GoodAmount>
+                            <GoodType>G_Wool</GoodType>
+                            <Amount>1</Amount>
+                        </GoodAmount>
+                        <ProviderCategory>G_Wool_Supplier</ProviderCategory>
+                    </Resource>
+                </RequiredResources>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps"></Display>
+        </Good>
+
+        <Good id="G_PlayMaterial">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>0</GoodCategory>
+                <Value>0.8</Value>
+                <Worth>10</Worth><!-- Must be in sync with G_EntTheatre, b/c theatres get their earnings from this good, not G_EntTheatre! -->
+                 <StandCarryAnimationCategory>StandCarrySack</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarrySack</WalkCarryAnimationCategory>
+               <RequiredResources>
+                    <Resource>
+                         <GoodAmount>
+                            <GoodType>G_Wool</GoodType>
+                            <Amount>1</Amount>
+                        </GoodAmount>
+                        <ProviderCategory>G_Wool_Supplier</ProviderCategory>
+                    </Resource>
+                </RequiredResources>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps"></Display>
+        </Good>
+
+       <Good id="G_EntertainmentBard">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Entertainment</GoodCategory>
+                <Value>1</Value>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps"></Display>
+        </Good>
+
+       <Good id="G_EntertainmentCathedral">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Entertainment</GoodCategory>
+        <!-- must be less efficient than produced or bought entertainment goods. Therefore set to 0,4 (attention threshold) -->
+                <Value>0.4</Value>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps"></Display>
+        </Good>
+
+<!--
+  Wealth Goods
+-->
+        <Good id="G_Ornament">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Luxury</GoodCategory>
+                <Value>0.25</Value>
+                <Worth>10</Worth>
+                <WealthSlot>3</WealthSlot>
+                <StandCarryAnimationCategory>StandCarryChest</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarryChest</WalkCarryAnimationCategory>
+                <RequiredResources>
+                    <Resource>
+                        <GoodAmount>
+                            <GoodType>G_Iron</GoodType>
+                            <Amount>1</Amount>
+                        </GoodAmount>
+                        <ProviderCategory>G_Iron_Supplier</ProviderCategory>
+                    </Resource>
+                </RequiredResources>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+        <!-- ToDo: replace good  -->
+                <Model>Goods\G_OrnamentBlacksmith_01</Model>
+            </Display>
+        </Good>
+
+        <Good id="G_Sign">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Luxury</GoodCategory>
+                <Value>0.25</Value>
+                <Worth>10</Worth>
+                <WealthSlot>2</WealthSlot>
+                <StandCarryAnimationCategory>StandCarryChest</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarryChest</WalkCarryAnimationCategory>
+                <RequiredResources>
+                    <Resource>
+                        <GoodAmount>
+                            <GoodType>G_Wood</GoodType>
+                            <Amount>1</Amount>
+                        </GoodAmount>
+                        <ProviderCategory>G_Wood_Supplier</ProviderCategory>
+                    </Resource>
+                </RequiredResources>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+        <!-- ToDo: replace good  -->
+                <Model>Goods\G_SignCarpenter01</Model>
+            </Display>
+        </Good>
+
+        <Good id="G_Banner">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Luxury</GoodCategory>
+                <Value>0.25</Value>
+                <Worth>10</Worth>
+                <WealthSlot>1</WealthSlot>
+                <StandCarryAnimationCategory>StandCarrySack</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarrySack</WalkCarryAnimationCategory>
+                <RequiredResources>
+                    <Resource>
+                        <GoodAmount>
+                            <GoodType>G_Wool</GoodType>
+                            <Amount>1</Amount>
+                        </GoodAmount>
+                        <ProviderCategory>G_Wool_Supplier</ProviderCategory>
+                    </Resource>
+                </RequiredResources>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+
+        <!-- ToDo: replace good with rolled banner carried on shoulder -->
+                <Model>Goods\G_Banner</Model>
+            </Display>
+        </Good>
+
+        <Good id="G_Candle">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Luxury</GoodCategory>
+                <Value>0.25</Value>
+                <Worth>10</Worth>
+                <WealthSlot>4</WealthSlot>
+                <StandCarryAnimationCategory>StandCarryChest</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarryChest</WalkCarryAnimationCategory>
+                <RequiredResources>
+                    <Resource>
+                        <GoodAmount>
+                            <GoodType>G_Honeycomb</GoodType>
+                            <Amount>1</Amount>
+                        </GoodAmount>
+                        <ProviderCategory>G_Honeycomb_Supplier</ProviderCategory>
+                    </Resource>
+                </RequiredResources>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+        <!-- ToDo: replace good  -->
+                <Model>Goods\G_CandleCandlemaker01</Model>
+            </Display>
+        </Good>
+
+<!--
+  Gold
+-->
+        <Good id="G_Gold">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Gold</GoodCategory>
+                <Value>1.0</Value>
+                <StandCarryAnimationCategory>StandCarryGood</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarryGood</WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Goods\G_Gold</Model>
+            </Display>
+        </Good>
+
+<!--
+  Military
+-->
+        <Good id="G_Sword">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Weapon</GoodCategory>
+                <Value>0.2</Value>
+                <Worth>10</Worth>
+                <StandCarryAnimationCategory>StandCarryBucket</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarryBucket</WalkCarryAnimationCategory>
+                <RequiredResources>
+                    <Resource>
+                        <GoodAmount>
+                            <GoodType>G_PoorSword</GoodType>
+                            <Amount>1</Amount>
+                        </GoodAmount>
+                        <ProviderCategory>G_Sword_Supplier</ProviderCategory>
+                    </Resource>
+                </RequiredResources>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Goods\G_Sword</Model>
+            </Display>
+        </Good>
+
+        <Good id="G_PoorSword">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Weapon</GoodCategory>
+                <Value>0.2</Value>
+                <Worth>10</Worth>
+                <StandCarryAnimationCategory>StandCarryBucket</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarryBucket</WalkCarryAnimationCategory>
+                <RequiredResources>
+                    <Resource>
+                        <GoodAmount>
+                            <GoodType>G_Iron</GoodType>
+                            <Amount>1</Amount>
+                        </GoodAmount>
+                        <ProviderCategory>G_Iron_Supplier</ProviderCategory>
+                    </Resource>
+                </RequiredResources>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Goods\G_Sword</Model>
+            </Display>
+        </Good>
+
+        <Good id="G_Bow">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Weapon</GoodCategory>
+                <Value>0.2</Value>
+                <Worth>10</Worth>
+                <StandCarryAnimationCategory>StandCarryGood</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarryGood</WalkCarryAnimationCategory>
+                <RequiredResources>
+                    <Resource>
+                        <GoodAmount>
+                            <GoodType>G_PoorBow</GoodType>
+                            <Amount>1</Amount>
+                        </GoodAmount>
+                        <ProviderCategory>G_Bow_Supplier</ProviderCategory>
+                    </Resource>
+                </RequiredResources>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Goods\G_Bow</Model>
+            </Display>
+        </Good>
+
+        <Good id="G_PoorBow">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Weapon</GoodCategory>
+                <Value>0.2</Value>
+                <Worth>10</Worth>
+                <StandCarryAnimationCategory>StandCarryGood</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarryGood</WalkCarryAnimationCategory>
+                <RequiredResources>
+                    <Resource>
+                        <GoodAmount>
+                            <GoodType>G_Iron</GoodType>
+                            <Amount>1</Amount>
+                        </GoodAmount>
+                        <ProviderCategory>G_Iron_Supplier</ProviderCategory>
+                    </Resource>
+                </RequiredResources>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Goods\G_BowBowMaker01</Model>
+            </Display>
+        </Good>
+
+         <Good id="G_SiegeEnginePart">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Weapon</GoodCategory>
+                <Value>0.2</Value>
+                <Worth>10</Worth>
+                <StandCarryAnimationCategory>StandCarrySack</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarrySack</WalkCarryAnimationCategory>
+                <RequiredResources>
+                    <Resource>
+                         <GoodAmount>
+                            <GoodType>G_Iron</GoodType>
+                            <Amount>1</Amount>
+                        </GoodAmount>
+                        <ProviderCategory>G_Iron_Supplier</ProviderCategory>
+                    </Resource>
+                </RequiredResources>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Goods\G_SwordSwordSmith01</Model>
+            </Display>
+        </Good>
+
+         <Good id="G_CatapultAmmunition">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Ammunition</GoodCategory>
+                <Value>0.2</Value>
+                <Worth>10</Worth>
+                <StandCarryAnimationCategory>StandCarrySack</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarrySack</WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Goods\G_Stone</Model>
+            </Display>
+        </Good>
+
+         <Good id="G_TorchAmmunition">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Ammunition</GoodCategory>
+                <Value>0.2</Value>
+                <Worth>10</Worth>
+                <StandCarryAnimationCategory>StandCarrySack</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarrySack</WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Goods\G_Stone</Model>
+            </Display>
+        </Good>
+        
+        <Good id="G_BombAmmunition">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Ammunition</GoodCategory>
+                <Value>0.2</Value>
+                <Worth>10</Worth>
+                <StandCarryAnimationCategory>StandCarrySack</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarrySack</WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Goods\G_Stone</Model>
+            </Display>
+        </Good>
+        
+        
+
+         <Good id="G_Information">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Document</GoodCategory>
+                <Value>0.2</Value>
+                <Worth>10</Worth>
+                <StandCarryAnimationCategory>StandCarrySack</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarrySack</WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Goods\G_Stone</Model>
+            </Display>
+        </Good>
+
+<!--
+  Tools
+-->
+
+<!--
+  ******************* Weaver *******************
+-->
+      <Good id="T_Weaver_Drapery">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Weaver_Drapery</Model>
+            </Display>
+        </Good>
+        
+
+       <Good id="T_Weaver_EmptyThreadRoll">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Weaver_EmptyThreadRoll</Model>
+            </Display>
+        </Good>
+        
+
+       <Good id="T_Weaver_FinishedGarment">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Weaver_FinishedGarment</Model>
+            </Display>
+        </Good>
+        
+
+       <Good id="T_Weaver_FlyShuttle">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Weaver_FlyShuttle</Model>
+            </Display>
+        </Good>
+        
+
+       <Good id="T_Weaver_FullThreadRoll">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Weaver_FullThreadRoll</Model>
+            </Display>
+        </Good>
+        
+
+       <Good id="T_Weaver_Needle">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Weaver_Needle</Model>
+            </Display>
+        </Good>
+
+       <Good id="T_Weaver_RawGarment">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Weaver_RawGarment</Model>
+            </Display>
+        </Good>
+
+<!--
+  ******************* CandleMaker *******************
+-->
+       <Good id="T_CandleMaker_Candle01">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_CandleMaker_Candle01</Model>
+            </Display>
+        </Good>
+        
+
+       <Good id="T_CandleMaker_Candle02">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_CandleMaker_Candle02</Model>
+            </Display>
+        </Good>
+        
+
+       <Good id="T_CandleMaker_Candle03">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_CandleMaker_Candle03</Model>
+            </Display>
+        </Good>
+        
+
+       <Good id="T_CandleMaker_Candle04">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_CandleMaker_Candle04</Model>
+            </Display>
+        </Good>
+        
+
+       <Good id="T_CandleMaker_Waxblock">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_CandleMaker_Waxblock</Model>
+            </Display>
+        </Good>
+        
+
+       <Good id="T_CandleMaker_Wick">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_CandleMaker_Wick</Model>
+            </Display>
+        </Good>
+<!--
+  ******************* Bannermaker *******************
+-->
+
+
+
+       <Good id="T_BannerMaker_BannerRaw">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BannerMaker_BannerRaw</Model>
+            </Display>
+        </Good>
+       <Good id="T_BannerMaker_Needle">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BannerMaker_Needle</Model>
+            </Display>
+        </Good>
+
+<!--
+  ******************* Baths *******************
+-->
+       <Good id="T_BathsWorker_StirringStaff">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BathsWorker_StirringStaff</Model>
+            </Display>
+        </Good>
+        
+       <Good id="T_BathsWorker_FullTray">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BathsWorker_FullTray</Model>
+            </Display>
+        </Good>
+        
+       <Good id="T_BathsWorker_FullBucket">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BathsWorker_FullBucket</Model>
+            </Display>
+        </Good>
+        
+       <Good id="T_BathsWorker_FruitParing">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BathsWorker_FruitParing</Model>
+            </Display>
+        </Good>
+       <Good id="T_BathsWorker_Beaker01">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BathsWorker_Beaker01</Model>
+            </Display>
+        </Good>
+        
+       <Good id="T_BathsWorker_Beaker02">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BathsWorker_Beaker02</Model>
+            </Display>
+        </Good>
+        
+       <Good id="T_BathsWorker_Carafe">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BathsWorker_Carafe</Model>
+            </Display>
+        </Good>
+        
+       <Good id="T_BathsWorker_EmptyBucket">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BathsWorker_EmptyBucket</Model>
+            </Display>
+        </Good>
+        
+       <Good id="T_BathsWorker_EmptyTray">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BathsWorker_EmptyTray</Model>
+            </Display>
+        </Good>
+
+
+
+<!--
+  ******************* Tanner *******************
+-->
+       <Good id="T_Tanner_FinishedLeather">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Tanner_FinishedLeather</Model>
+            </Display>
+        </Good>
+
+       <Good id="T_Tanner_FinishedSkin">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Tanner_FinishedSkin</Model>
+            </Display>
+        </Good>
+        
+       <Good id="T_Tanner_RawLeather">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Tanner_RawLeather</Model>
+            </Display>
+        </Good>
+       <Good id="T_Tanner_RawSkin">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Tanner_RawSkin</Model>
+            </Display>
+        </Good>
+       <Good id="T_Tanner_Scraper">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Tanner_Scraper</Model>
+            </Display>
+        </Good>
+       <Good id="T_Tanner_Stamper">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Tanner_Stamper</Model>
+            </Display>
+        </Good>                
+        
+<!--
+  ******************* Blacksmith *******************
+-->
+       <Good id="T_BlackSmith_Retainer">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BlackSmith_Retainer</Model>
+            </Display>
+        </Good>
+       <Good id="T_BlackSmith_RawRooster">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BlackSmith_RawRooster</Model>
+            </Display>
+        </Good>
+        
+
+       <Good id="T_BlackSmith_RawMetal">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BlackSmith_RawMetal</Model>
+            </Display>
+        </Good>
+       <Good id="T_BlackSmith_Hammer">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BlackSmith_Hammer</Model>
+            </Display>
+        </Good>
+       <Good id="T_BlackSmith_GlowingForceps">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BlackSmith_GlowingForceps</Model>
+            </Display>
+        </Good>
+       <Good id="T_BlackSmith_Forceps">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BlackSmith_Forceps</Model>
+            </Display>
+        </Good>
+       <Good id="T_BlackSmith_FinishedMetal">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BlackSmith_FinishedMetal</Model>
+            </Display>
+        </Good>
+       <Good id="T_BlackSmith_FinishedRetainer">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BlackSmith_FinishedRetainer</Model>
+            </Display>
+        </Good>
+       <Good id="T_BlackSmith_FinishedRooster">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BlackSmith_FinishedRooster</Model>
+            </Display>
+        </Good>
+<!--
+  ******************* Carpenter *******************
+-->
+       <Good id="T_Carpenter_RawWood">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Carpenter_RawWood</Model>
+            </Display>
+        </Good>
+       <Good id="T_Carpenter_Chisel">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Carpenter_Chisel</Model>
+            </Display>
+        </Good>
+       <Good id="T_Carpenter_FinishedPlank1">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Carpenter_FinishedPlank1</Model>
+            </Display>
+        </Good>
+       <Good id="T_Carpenter_FinishedPlank2">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Carpenter_FinishedPlank2</Model>
+            </Display>
+        </Good>
+       <Good id="T_Carpenter_FinishedWood">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Carpenter_FinishedWood</Model>
+            </Display>
+        </Good>
+       <Good id="T_Carpenter_RawPlank">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Carpenter_RawPlank</Model>
+            </Display>
+        </Good>
+       <Good id="T_Carpenter_RawWood">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Carpenter_RawWood</Model>
+            </Display>
+        </Good>
+
+<!--
+  ******************* Soapmaker *******************
+-->
+       <Good id="T_SoapMaker_SoapCutter">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_SoapMaker_SoapCutter</Model>
+            </Display>
+        </Good>
+
+       <Good id="T_SoapMaker_SoapBox">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_SoapMaker_SoapBox</Model>
+            </Display>
+        </Good>
+        
+       <Good id="T_SoapMaker_Soap">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_SoapMaker_Soap</Model>
+            </Display>
+        </Good>
+        
+       <Good id="T_SoapMaker_FullBox">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_SoapMaker_FullBox</Model>
+            </Display>
+        </Good>
+        
+       <Good id="T_SoapMaker_EmptyBox">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_SoapMaker_EmptyBox</Model>
+            </Display>
+        </Good>        
+        
+
+<!--
+  ******************* BroomMaker *******************
+-->
+        <Good id="T_BroomMaker_Broom">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BroomMaker_Broom</Model>
+            </Display>
+        </Good>
+
+        <Good id="T_BroomMaker_FinishedStraw">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BroomMaker_FinishedStraw</Model>
+            </Display>
+        </Good>
+        
+        <Good id="T_BroomMaker_RawStraw">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BroomMaker_RawStraw</Model>
+            </Display>
+        </Good>
+
+        <Good id="T_BroomMaker_Stick">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BroomMaker_Stick</Model>
+            </Display>
+        </Good>
+
+<!--
+  ******************* Theatre *******************
+-->
+        <Good id="T_Actor1_Skull">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Actor1_Skull</Model>
+            </Display>
+        </Good>
+
+        <Good id="T_Actor1_Shovel">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Actor1_Shovel</Model>
+            </Display>
+        </Good>
+
+        <Good id="T_Actor1_Chest01">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Actor1_Chest01</Model>
+            </Display>
+        </Good>
+
+        <Good id="T_Actor2_Chest02">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Actor2_Chest02</Model>
+            </Display>
+        </Good>
+
+        <Good id="T_Actor1_SwordSmall">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Actor1_SwordSmall</Model>
+            </Display>
+        </Good>
+
+        <Good id="T_Actor2_SwordLarge">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Actor2_SwordLarge</Model>
+            </Display>
+        </Good>
+
+        <Good id="T_Actor3_Handkerchief">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Actor3_Handkerchief</Model>
+            </Display>
+        </Good>        
+
+<!--
+  ******************* Tavern *******************
+-->
+        <Good id="T_BarKeeper_Bottle01">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BarKeeper_Bottle01</Model>
+            </Display>
+        </Good>
+        <Good id="T_BarKeeper_HoneyPot">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BarKeeper_HoneyPot</Model>
+            </Display>
+        </Good>
+        <Good id="T_BarKeeper_FullHoneyPot">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BarKeeper_FullHoneyPot</Model>
+            </Display>
+        </Good>
+        <Good id="T_BarKeeper_Salver">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BarKeeper_Salver</Model>
+            </Display>
+        </Good>
+        <Good id="T_BarKeeper_Spoon">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BarKeeper_Spoon</Model>
+            </Display>
+        </Good>
+        <Good id="T_BarKeeper_WipingCloth">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BarKeeper_WipingCloth</Model>
+            </Display>
+        </Good>
+<!--
+  ******************* Pharmacist *******************
+-->
+        <Good id="T_Pharmacist_Bottle01">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Pharmacist_Bottle01</Model>
+            </Display>
+        </Good>
+        <Good id="T_Pharmacist_Bottle02">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Pharmacist_Bottle02</Model>
+            </Display>
+        </Good>
+        <Good id="T_Pharmacist_Bottle03">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Pharmacist_Bottle03</Model>
+            </Display>
+        </Good>
+        <Good id="T_Pharmacist_HerbSack">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Pharmacist_HerbSack</Model>
+            </Display>
+        </Good>
+        <Good id="T_Pharmacist_Spoon">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Pharmacist_Spoon</Model>
+            </Display>
+        </Good>
+
+<!--
+  ******************* Bakery *******************
+-->
+        <Good id="T_Dough">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Dough01</Model>
+            </Display>
+        </Good>
+        <Good id="T_Breadshovel_Empty">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Breadshovel01</Model>
+            </Display>
+        </Good>
+        <Good id="T_Breadshovel_Dough">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Breadshovel02</Model>
+            </Display>
+        </Good>
+        <Good id="T_Breadshovel_Bread">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Breadshovel03</Model>
+            </Display>
+        </Good>
+        
+<!--
+  ******************* SiegeEngineWorkshop *******************
+-->
+        <Good id="T_SiegeChest">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_SiegeChest01</Model>
+            </Display>
+        </Good>
+        <Good id="T_SiegeFinishedMetal">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_SiegeFinishedMetal01</Model>
+            </Display>
+        </Good>
+        <Good id="T_SiegeFinishedWheel">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_SiegeFinishedWheel01</Model>
+            </Display>
+        </Good>
+        <Good id="T_SiegeRawMetal">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_SiegeRawMetal01</Model>
+            </Display>
+        </Good>
+        <Good id="T_SiegeRawWheel">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_SiegeRawWheel01</Model>
+            </Display>
+        </Good>
+        <Good id="T_SiegeSpoke">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_SiegeSpoke01</Model>
+            </Display>
+        </Good>
+<!--
+  ******************* Bowmaker *******************
+-->
+
+
+        <Good id="T_BowMaker_Bow_Finished01">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BowMaker_Bow_Finished01</Model>
+            </Display>
+        </Good>
+
+        <Good id="T_BowMaker_Bow_Finished02">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BowMaker_Bow_Finished02</Model>
+            </Display>
+        </Good>
+
+        <Good id="T_BowMaker_Bow_Raw">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BowMaker_Bow_Raw</Model>
+            </Display>
+        </Good>
+
+        <Good id="T_BowMaker_Spool_Finished">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BowMaker_Spool_Finished</Model>
+            </Display>
+        </Good>
+
+        <Good id="T_BowMaker_Spool_Raw">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BowMaker_Spool_Raw</Model>
+            </Display>
+        </Good>
+
+        <Good id="T_BowMaker_Chisel">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Chisel01</Model>
+            </Display>
+        </Good>
+        
+<!--
+  ******************* Hygiene *******************
+-->
+        <Good id="T_Cushion01">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Cushion01</Model>
+            </Display>
+        </Good>
+
+        <Good id="T_Cushion02">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Cushion02</Model>
+            </Display>
+        </Good>
+
+
+
+
+
+
+
+<!--
+  ******************* SwordMaker *******************
+-->
+        <Good id="T_Sword">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Sword01</Model>
+            </Display>
+        </Good>
+        
+        <Good id="T_GrindStone">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_GrindStone</Model>
+            </Display>
+        </Good>
+
+
+
+
+
+        <Good id="T_Beer">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Beer01</Model>
+            </Display>
+        </Good>
+        <Good id="T_Bow">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Bow01</Model>
+            </Display>
+        </Good>
+        <Good id="T_Hammer">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Hammer01</Model>
+            </Display>
+        </Good>
+        <Good id="T_Hammer_Small">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Hammer02</Model>
+            </Display>
+        </Good>
+        <Good id="T_Chopper">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Chopper01</Model>
+            </Display>
+        </Good>
+        <Good id="T_Pickaxe">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Pickaxe01</Model>
+            </Display>
+        </Good>
+        <Good id="T_Scissors">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Scissors01</Model>
+            </Display>
+        </Good>
+        <Good id="T_Scythe">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Scythe01</Model>
+            </Display>
+        </Good>
+        <Good id="T_Sickle">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Sickle01</Model>
+            </Display>
+        </Good>
+        <Good id="T_Knife">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Knife01</Model>
+            </Display>
+        </Good>
+        <Good id="T_HuntersKnife">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Knife02</Model>
+            </Display>
+        </Good>
+        <Good id="T_MedicineBottle">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Medicine</Model>
+            </Display>
+        </Good>
+        <Good id="T_Smokepipe">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Smokepipe01</Model>
+            </Display>
+        </Good>
+        <Good id="T_Stool">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Stool01</Model>
+            </Display>
+        </Good>
+        <Good id="T_Axe">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Axe01</Model>
+            </Display>
+        </Good>
+        <Good id="T_Scythe">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Scythe01</Model>
+            </Display>
+        </Good>
+        <Good id="T_Spoon">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Spoon01</Model>
+            </Display>
+        </Good>
+
+
+        <Good id="T_Broom">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Broom01</Model>
+            </Display>
+        </Good>
+         <Good id="T_BowNet">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_BowNet01</Model>
+            </Display>
+        </Good>
+        <Good id="T_Hook">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Hook01</Model>
+            </Display>
+        </Good>
+
+        <Good id="T_MilkBucket">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_MilkBucket</Model>
+            </Display>
+        </Good>
+        <Good id="T_MilkBucket_Empty">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_MilkBucket_Empty</Model>
+            </Display>
+        </Good>
+        <Good id="T_Whip">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Whip01</Model>
+            </Display>
+        </Good>
+        <Good id="T_Bucket">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Waterbucket</Model>
+            </Display>
+        </Good>
+        
+        <Good id="T_Sausage">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <Value>0.1</Value>
+                <Worth>2</Worth>
+                <StandCarryAnimationCategory>StandCarryChest</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarryChest</WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Sausage01</Model>
+            </Display>
+        </Good>
+
+
+        <Good id="T_Priest_Chest">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Priest_Chest</Model>
+            </Display>
+        </Good>
+        
+<!--
+  Dummys needed for animations on Buildings
+-->
+        <Good id="T_DummyRawFish">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_DummyRawFish</Model>
+            </Display>
+        </Good>
+
+        <Good id="T_DummyRawMeat">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <Value>0.1</Value>
+                <Worth>2</Worth>
+                <StandCarryAnimationCategory>StandCarryChest</StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory>WalkCarryChest</WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_DummyRawMeat</Model>
+            </Display>
+        </Good>
+
+
+
+        <!-- Symbolic item used for worker bringing home a wealth good-->
+        <Good id="T_Chest">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Chest01</Model>
+            </Display>
+        </Good>
+
+        <!-- Dummy goods for patching -->
+        <Good id="G_Dummy00">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Chest01</Model>
+            </Display>
+        </Good>
+
+        <Good id="G_Dummy01">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Chest01</Model>
+            </Display>
+        </Good>
+
+        <Good id="G_Dummy02">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Chest01</Model>
+            </Display>
+        </Good>
+
+        <Good id="G_Dummy03">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Chest01</Model>
+            </Display>
+        </Good>
+
+        <Good id="G_Dummy04">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Chest01</Model>
+            </Display>
+        </Good>
+
+        <Good id="G_Dummy05">
+            <Logic classname="EGL::CGoodProps">
+                <GoodCategory>GC_Tools</GoodCategory>
+                <StandCarryAnimationCategory></StandCarryAnimationCategory>
+                <WalkCarryAnimationCategory></WalkCarryAnimationCategory>
+            </Logic>
+            <Display classname="ED::CDisplayGoodProps">
+                <Model>Tools\T_Chest01</Model>
+            </Display>
+        </Good>
+
+    </Goods>
+</root>

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+ <Script>local EntityID =    Logic.CreateEntity(Entities.B_SpearMaker,3500,2000,0); 
+                             Logic.AddGoodToStock(EntityID, Goods.G_Iron, 10, true); 
+                             Logic.CreateEntity(Entities.U_SpearMaker,1500,1500,0);
+  </Script>
+ <Category>TC_DUMMY</Category>
+ <Tasks>
+  <Task classname="EGL::CTaskArgsTaskListID">
+   <TaskType>TASK_ENTER_WORKPLACE_IF_NECESSARY</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <TaskList>TL_PROCESSOR_ENTER_WORKPLACE_TO_WORK</TaskList>
+  </Task>
+  <Task classname="EGL::CTaskArgsTaskListID">
+   <TaskType>TASK_IDLE_IF_NOTHING_TO_DO</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <TaskList>TL_WORKER_IDLE</TaskList>
+  </Task>
+  <Task classname="EGL::CTaskArgs">
+   <TaskType>TASK_PUSH_PRODUCE_ON_TASK_HISTORY</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+  </Task>
+  <Task classname="EGL::CTaskArgsTaskLogEntry">
+   <TaskType>TASK_START_LOGGING</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <LoggerTaskType>LogTypeWork</LoggerTaskType>
+  </Task>
+  <Task classname="EGL::CTaskArgs">
+   <TaskType>TASK_REMOVE_NEEDED_GOODS_FROM_INSTOCK</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+  </Task>
+  <Task classname="EGL::CTaskArgs">
+   <TaskType>TASK_RESET_TASK_LIST_TIMER</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>-102.87548828125</X>
+    <Y>-185.3651123046875</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPutResourceIntoHand">
+   <TaskType>TASK_TAKE_RESOURCE_FROM_NOTHING_INTO_HAND</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Hand>left</Hand>
+   <SaveCurrentGood>false</SaveCurrentGood>
+   <GoodAmount>
+    <GoodType>T_BroomMaker_RawStraw</GoodType>
+    <Amount>0</Amount>
+   </GoodAmount>
+  </Task>
+  <Task classname="EGL::CTaskArgsAnimation">
+   <TaskType>TASK_SET_ANIM</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <AnimID>fat\u_broommaker_rawstraw_walk</AnimID>
+   <Category></Category>
+   <PlayBackwards>false</PlayBackwards>
+   <Loop>true</Loop>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>-101.876708984375</X>
+    <Y>-165.746337890625</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>-120.6025390625</X>
+    <Y>249.28466796875</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>-121.04443359375</X>
+    <Y>266.29150390625</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>-126.48583984375</X>
+    <Y>291.49267578125</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>-136.455078125</X>
+    <Y>306.5029296875</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>-149.546875</X>
+    <Y>319.33349609375</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>-164.517578125</X>
+    <Y>328.</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>-180.</X>
+    <Y>328.</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsSubAnim">
+   <TaskType>TASK_SET_ANIM_AT_WORKPLACE</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <AnimID>b_broommaker_yard_1a_600</AnimID>
+   <Category></Category>
+   <PlayBackwards>false</PlayBackwards>
+   <Loop>true</Loop>
+   <SubAnimIdx>0</SubAnimIdx>
+  </Task>
+  <Task classname="EGL::CTaskArgsAnimation">
+   <TaskType>TASK_SET_ANIM</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <AnimID>fat\u_broommaker_strawcutter_start</AnimID>
+   <Category></Category>
+   <PlayBackwards>false</PlayBackwards>
+   <Loop>true</Loop>
+  </Task>
+  <Task classname="EGL::CTaskArgsThousandths">
+   <TaskType>TASK_WAIT_FOR_ANIM</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Thousandths>930</Thousandths>
+  </Task>
+  <Task classname="EGL::CTaskArgsAnimation">
+   <TaskType>TASK_SET_ANIM</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <AnimID>fat\u_broommaker_strawcutter</AnimID>
+   <Category></Category>
+   <PlayBackwards>false</PlayBackwards>
+   <Loop>true</Loop>
+  </Task>
+  <Task classname="EGL::CTaskArgsSubAnim">
+   <TaskType>TASK_SET_ANIM_AT_WORKPLACE</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <AnimID>b_broommaker_yard_1b_600</AnimID>
+   <Category></Category>
+   <PlayBackwards>false</PlayBackwards>
+   <Loop>true</Loop>
+   <SubAnimIdx>0</SubAnimIdx>
+  </Task>
+  <Task classname="EGL::CTaskArgsStateWorkWaitUntil">
+   <TaskType>TASK_WORK_WAIT_UNTIL</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Effect1_EffectNumber>0</Effect1_EffectNumber>
+   <Effect1_Time>0</Effect1_Time>
+   <Effect1_Duration>0</Effect1_Duration>
+   <Effect2_EffectNumber>0</Effect2_EffectNumber>
+   <Effect2_Time>0</Effect2_Time>
+   <Effect2_Duration>0</Effect2_Duration>
+   <Effect3_EffectNumber>0</Effect3_EffectNumber>
+   <Effect3_Time>0</Effect3_Time>
+   <Effect3_Duration>0</Effect3_Duration>
+   <Effect4_EffectNumber>0</Effect4_EffectNumber>
+   <Effect4_Time>0</Effect4_Time>
+   <Effect4_Duration>0</Effect4_Duration>
+   <Sound1_ID></Sound1_ID>
+   <Sound1_Time>0</Sound1_Time>
+   <Sound1_Volume>127</Sound1_Volume>
+   <Sound2_ID></Sound2_ID>
+   <Sound2_Time>0</Sound2_Time>
+   <Sound2_Volume>127</Sound2_Volume>
+   <EffectToSpawn1></EffectToSpawn1>
+   <EffectToSpawn1_EffectNumber>0</EffectToSpawn1_EffectNumber>
+   <EffectToSpawn1_Time>0</EffectToSpawn1_Time>
+   <EffectToSpawn1_Duration>0</EffectToSpawn1_Duration>
+   <EffectToSpawn2></EffectToSpawn2>
+   <EffectToSpawn2_EffectNumber>0</EffectToSpawn2_EffectNumber>
+   <EffectToSpawn2_Time>0</EffectToSpawn2_Time>
+   <EffectToSpawn2_Duration>0</EffectToSpawn2_Duration>
+  </Task>
+  <Task classname="EGL::CTaskArgs">
+   <TaskType>TASK_WORK_AFFECT_NEED_HYGIENE</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+  </Task>
+  <Task classname="EGL::CTaskArgs">
+   <TaskType>TASK_WORK_AFFECT_NEED_NUTRITION</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+  </Task>
+  <Task classname="EGL::CTaskArgs">
+   <TaskType>TASK_WORK_AFFECT_NEED_ENTERTAINMENT</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+  </Task>
+  <Task classname="EGL::CTaskArgs">
+   <TaskType>TASK_WORK_AFFECT_NEED_MEDICINE</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+  </Task>
+  <Task classname="EGL::CTaskArgs">
+   <TaskType>TASK_WORK_AFFECT_NEED_CLOTHING</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+  </Task>
+  <Task classname="EGL::CTaskArgsPutResourceIntoHand">
+   <TaskType>TASK_TAKE_RESOURCE_FROM_NOTHING_INTO_HAND</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Hand>left</Hand>
+   <SaveCurrentGood>false</SaveCurrentGood>
+   <GoodAmount>
+    <GoodType>T_BroomMaker_FinishedStraw</GoodType>
+    <Amount>0</Amount>
+   </GoodAmount>
+  </Task>
+  <Task classname="EGL::CTaskArgsSubAnim">
+   <TaskType>TASK_SET_ANIM_AT_WORKPLACE</TaskType>
+   <ExecuteOnAbort>true</ExecuteOnAbort>
+   <AnimID>b_broommaker_yard_1c_600</AnimID>
+   <Category></Category>
+   <PlayBackwards>false</PlayBackwards>
+   <Loop>false</Loop>
+   <SubAnimIdx>0</SubAnimIdx>
+  </Task>
+  <Task classname="EGL::CTaskArgsAnimation">
+   <TaskType>TASK_SET_ANIM</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <AnimID>fat\u_broommaker_strawcutter_end</AnimID>
+   <Category></Category>
+   <PlayBackwards>false</PlayBackwards>
+   <Loop>true</Loop>
+  </Task>
+  <Task classname="EGL::CTaskArgsThousandths">
+   <TaskType>TASK_WAIT_FOR_ANIM</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Thousandths>900</Thousandths>
+  </Task>
+  <Task classname="EGL::CTaskArgsAnimation">
+   <TaskType>TASK_SET_ANIM</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <AnimID>fat\u_broommaker_finishedstraw_walk</AnimID>
+   <Category></Category>
+   <PlayBackwards>false</PlayBackwards>
+   <Loop>true</Loop>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>-149.93359375</X>
+    <Y>319.343017578125</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>-136.44580078125</X>
+    <Y>306.63720703125</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>-126.123779296875</X>
+    <Y>290.97705078125</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>-120.99560546875</X>
+    <Y>265.6787109375</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>-120.8212890625</X>
+    <Y>249.917724609375</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>-112.47021484375</X>
+    <Y>65.576904296875</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPutResourceIntoHand">
+   <TaskType>TASK_TAKE_RESOURCE_FROM_NOTHING_INTO_HAND</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Hand>left</Hand>
+   <SaveCurrentGood>false</SaveCurrentGood>
+   <GoodAmount>
+    <GoodType></GoodType>
+    <Amount>0</Amount>
+   </GoodAmount>
+  </Task>
+  <Task classname="EGL::CTaskArgs">
+   <TaskType>TASK_ADD_PRODUCED_GOOD_TO_OUTSTOCK</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+  </Task>
+  <Task classname="EGL::CTaskArgsSelectCarryingHand">
+   <TaskType>TASK_DROP_RESOURCE</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Hand>right</Hand>
+   <SaveCurrentGood>false</SaveCurrentGood>
+  </Task>
+  <Task classname="EGL::CTaskArgsAnimation">
+   <TaskType>TASK_SET_ANIM</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <AnimID>fat\u_fat_normal_walk</AnimID>
+   <Category></Category>
+   <PlayBackwards>false</PlayBackwards>
+   <Loop>true</Loop>
+  </Task>
+  <Task classname="EGL::CTaskArgs">
+   <TaskType>TASK_LEAVE_BUILDING</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+  </Task>
+  <Task classname="EGL::CTaskArgsTaskListID">
+   <TaskType>TASK_SET_TASK_LIST</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <TaskList>TL_PROCESSOR_FRAMEWORK</TaskList>
+  </Task>
+ </Tasks>
+</root>

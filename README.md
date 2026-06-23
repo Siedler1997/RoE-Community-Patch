@@ -1,24 +1,34 @@
-# Unofficial RoE Communitypatch
-Dieser inoffizielle Patch behebt diverse Bugs der History Edition vom Spiel 'Die Siedler - Aufstieg eines Königreichs' und fügt neue Features hinzu.
-
+# Unofficial RoE Content Patch
+Dieser inoffizielle Content-Patch nimmt einige Optimierungen am Spiel 'Die Siedler - Aufstieg eines Königreichs' vor und fügt neuen Content hinzu.
 
 
 ## Installation
 Mit folgenden Schritten lässt sich der Patch installieren:
-1. Sicherungskopie vom AeK-Ordner anlegen und z.B. "thesettlers6_Orig" nennen
+1. Lege eine Sicherheitskopie von `extra1` unter dem Namen `extra1_orig` an.
+Extra1 findest du unter The `Settlers - Rise of an Empire - History Edition\Data`. Du kannst die Kopie nennen, wie du willst.
 2. Projekt über Code -> Download ZIP herunterladen
-3. Projektordner in den Ornder OHNE "_Orig-Zusatz" entpacken und die Frage nach Überschreiben von X Dateien bestätigen
+3. Kopiere den `Data` Ordner in der Zip nach `Settlers - Rise of an Empire - History Edition` und bestätige das Überschreiben.
+4. Ändere die Starteinstellungen in Steam bzw. Uplay, sodass das Programm mit `-EXTRA1` als Parameter ausgeführt wird.
 3. Zocken
 
+
+## Deinstallation
+Mit folgenden Schritten lässt sich der Patch deinstallieren:
+1. Lösche `Settlers - Rise of an Empire - History Edition\Data\extra1`.
+2. Benenne die Sicherheitskopie von `extra1_orig` in `extra1` um.
+3. Entferne `-EXTRA1` aus den Startoptionen von Steam bzw. Uplay.
+4. Vanilla zocken
 
 
 ## Features
 Folgende Änderungen wurden vorgenommen:
 - Ritter
+	- Haben nun je eine "Fackel", um Gebäude angreifen zu können
 	- "Alte" Ritter überarbeitet
-		- Allandra
+		- Alandra
+			- Aktive Fähigkeit: Gewährt zusätzlich den neuen "Vielfältige Medizin"-Bonus
+				- Für Mapper: Der neue Buff heißt "Buff_MedicineDiversity"
 			- Passive Fähigkeiten: Bonusgold für Predigten erhöht (20% -> 40%)
-			- Bonus: Lebenspunkte leicht erhöht (1.000 -> 1.100)
 		- Elias
 			- Aktive Fähigkeit: Gewährt zusätzlich den "Vielfältige Nahrung"-Bonus
 			- Passive Fähigkeiten: Handelsbonus erhöht (20% -> 40%)
@@ -26,13 +36,10 @@ Folgende Änderungen wurden vorgenommen:
 			- Aktive Fähigkeit (Konversion)
 				- Cooldown leicht erhöht (7:30 Min. -> 8:00 Min.)
 				- Kann nicht benutzt werden, wenn Soldatenlimit schon erreicht
-		- Marcus
-			- Bonus: Lebenspunkte leicht erhöht (1.000 -> 1.100)
+			- Passive Fähigkeit: Rabatt auf Ausbau von Gebäuden verringert (20% -> 10%)
 		- Thordal
 			- Aktive Fähigkeit: Gewährt zusätzlich den "Vielfältige Unterhaltung"-Bonus
-			- Boni: Angriffskraft erhöht (25 -> 50) und Rekrutierung von Wikingern in Kasernen
-		- Kestral
-			- Bonus: Rekrutierung von Banditen in Kasernen (Art hängt von Klimazone ab)
+			- Boni: Angriffskraft leicht erhöht (25 -> 30)
 		- Saraya
 			- Aktive Fähigkeit: Mindest-Warenmenge erhöht (5 -> 9)
 			- Passive Fähigkeit: Handelsposten noch billiger (50% -> 25%)
@@ -42,7 +49,7 @@ Folgende Änderungen wurden vorgenommen:
 			- Passive Fähigkeit: Bessere Handelskonditionen (wie Elias)
 			- Bonus: Rekrutierung von Signatureinheiten in Kasernen
 		- Der Rote Prinz
-			- Aktive Fähigkeit: Tribut (im Hauptspiel nur Gold, im AddOn wie Saraya)
+			- Aktive Fähigkeit: Tribut (wie Saraya)
 			- Passive Fähigkeit: Höhere Steuern (wie Kestral)
 			- Bonus: Rekrutierung von Signatureinheiten in Kasernen
 			- Für Mapper: 
@@ -51,16 +58,19 @@ Folgende Änderungen wurden vorgenommen:
 				- Wer sie nutzen will, kann sie womöglich reaktivieren
 		- Khana
 			- Aktive Fähigkeit: Versorgung von Soldaten mit Fackeln (wie Marcus)
-			- Passive Fähigkeit: Mehr Gold von Predigten (wie Allandra)
+			- Passive Fähigkeit: Mehr Gold von Predigten (wie Alandra)
 			- Bonus: Rekrutierung von Signatureinheiten in Kasernen
 		- Praphat
 			- Aktive Fähigkeit: Versorgung von Einwohnern mit Kleidung und gewährt "Vielfältige Kleidung"-Bonus (analog Elias/Thordal)
-			- Passive Fähigkeit: Billigerer Ausbau von Gebäuden (wie Hakim)
+			- Passive Fähigkeit: Billigerer Ausbau von Gebäuden (wie Hakim, aber mit den alten 20%)
 		- Kastellane 
 			- Können theoretisch als Ritter genutzt werden
 			- Haben keine besonderen Fähigkeiten
-		- Varianz an Ladebildschirm-Bildern
+		- Alle "neuen" Ritte haben (provisorische) Ladebildschirm-Bilder
 - Militär
+	- Einheiten können mittels Entlassen-Button ... entlassen werden
+	- Schwertkämpfer allgemein
+		- Verursachen weniger Schaden an berittenen Einheiten (Ritter und Kavaliere)
 	- Bogenschützen allgemein
 		- Fernkampf-Schaden deutlich reduziert (30 -> 20)
 		- Maximale Fernkampf-Reichweite leicht erhöht (24sm -> 25sm)
@@ -68,9 +78,9 @@ Folgende Änderungen wurden vorgenommen:
 	- Banditen 
 		- Können in Kasernen wieder aufgefüllt werden
 		- Haben ein eigenes Audio-Feedback
-		- Können effektiver Gebäude anzünden
-			- Schaden pro Fackel verdoppelt (5 -> 10)
-			- Jeder Bandit trägt eine Fackel mehr (1 -> 2)
+		- Haben etwas andere Statuswerte ggü. konventionellen Einheiten
+			- Höhere Bewegungsgeschwindigkeit (480 < 500)
+			- Höherer Schaden gegen Gebäude (5 -> 10)
 		- Fixes
 			- Südeuropäische Banditen-Schwertkämpfer greifen nicht mehr automatisch Gebäude an
 			- Asiatische Banditen haben keine Overhead-Namen mehr
@@ -81,56 +91,159 @@ Folgende Änderungen wurden vorgenommen:
 		- RP-Einheiten haben eine eigene Button-Textur
 		- Khana-Einheiten haben keine Overhead-Namen mehr
 	- "Neue" Einheiten
-		- Hellebardiere
-			- Inspiriert von den Hellebardieren in DEdK
+		- Lanzenträger
+			- Inspiriert von den Streitlanzenträgern in DEdK
+			- Rekrutierung
+				- In Lanzenträgerkasernen
+				- Benötigt 15 Gold + 1 Lanze pro Soldat
 			- Statuswerte (im Vergleich zu Schwertkämpfern)
-				- Höhere Lebenspunkte (150 > 120)
-				- Weniger Schaden (15 < 20)
-				- Etwas höhere Reichweite (2sm > 1,5sm)
 				- Langsamere Bewegungsgeschwindigkeit (420 < 480)
-			- Zurzeit noch in Entwicklung
-		- Raubtiere als kontrollierbare Militäreinheiten verfügbar
-			- Konkret: Bären (3 Arten), Löwen (2 Arten), Wölfe (4 Arten), Tiger
+				- Weniger Lebenspunkte (90 < 120)
+				- Weniger Schaden (15 < 20)
+					- Ausnahme: Doppelter Schaden gegen Reiter (30)
+				- Höherer Angriffscooldown (2,5 Sek. < 3 Sek.)
+				- Höhere Reichweite (2,5sm > 1,5sm)
+		- Kavaliere
+			- Inspiriert von den berittenen Schwertkämpfern in DEdK
+			- Rekrutierung 
+				- In Reitereien
+				- Benötigt 180 Gold + 1 Schwert pro Soldat
+			- Nur einzeln unterwegs
+				- Für Mapper: Ist technisch gesehen KEIN Battalion, sondern eine einzelne Entity
+			- Haben keine besonderen Fähigkeiten
+			- Statuswerte ähnlich, aber idR. etwas schlechter als bei Rittern
+				- Weniger Lebenspunkte (500 < 1.000)
+				- Schwächere Lebensregeneration pro 10sec (25 < 50)
+				- Haben nur normale Fackeln
+				- Geringerer Angriffscooldown (2 Sek. < 2,5 Sek.)
+		- Kanone
+			- Funktioniert ähnlich wie ein Katapult
+				- Weniger Lebenspunkte (150 < 250)
+				- Höhere Maximalreichweite (30sm > 24sm)
+				- Höherer Schaden (80 > 50)
+				- Geringere Feuerrate (7,5 Sek. > 5 Sek.)
+			- Verfügbar mit dem Titel 'Erzherzog'
+		- Hellebardiere
+			- Basieren auf den Hellebardieren in DEdK
+			- Haben noch etwas bessere Stats als Streitlanzenträger
+			- Sind Einzelgänger
+			- NICHT rekrutierbar, aber kontrollierbar
+				- Für Mapper: Gut nutzbar als NPCs bzw. Dekoration
+		- Raubtiere 
+			- Sind als kontrollierbare Militäreinheiten verfügbar
+				- Bären (3), Löwen (2), Wölfe (4), Tiger (2), Hunde (3), Katzen (3)
+			- Neue Tiere 
+				- Weißer Tiger
+					- Zäher und stärker als normale Tiger
+					- Sind für die Klimazone AS vorgesehen, könnten aber auch in NE vorkommen ;)
 		- Trebuchet
 			- Funktioniert ähnlich wie ein Katapult
 				- Höhere Maximalreichweite (32sm > 24sm)
 				- Höhere Mindestreichweite (18sm > 10sm)
 				- Höherer Schaden (100 > 50)
-				- Geringere Feuerrate (7.5 Sek. > 5 Sek.)
+				- Geringere Feuerrate (8 Sek. > 5 Sek.)
 				- Braucht länger zum Auf- und Abbau (8 Sek. > 5 Sek.)
 			- Kann sich in aufgebauter Form nicht fortbewegen
+			- Muss nicht von Soldaten bedient werden
 			- Zurzeit noch nicht baubar, vllt. mit Titel "Erzherzog"?
+		- Geister-Ochse in Anlehnung an Ubi's Raketen Ochsen ;)
+	- "Alte" Trebuchets
+		- Richtiges Selektionsmenü
+		- Eigener Tooltip-String
+		- Mit Munition belieferbar
+		- Diverse Anpassungen auf Basis des "neuen" Trebuchets
 	- Rammen können keine Mauern mehr angreifen
 	- (Turm-)Katapulte und Trebuchets können Militäreinheiten aktiv angreifen
+	- Overhead und SelectionMenu vom Gefängniskarren den anderen Karren angeglichen
 	- Mauerkatapulte abgeschwächt
 		- Kosten mehr Eisen (5 -> 10)
 		- Kosten mehr Gold (200 -> 300)
-		- Schaden reduziert (50 -> 40)
 		- Mindestreichweite erhöht (10sm -> 12sm)
 		- Sind auf maximal 12 Stück gleichzeitig pro Spieler limitiert
 	- Diebe
 		- Sind auf maximal 6 Stück gleichzeitig pro Spieler limitiert
 - Gebäude
-	- Kirche
-		- Mehr Siedler pro Predigt möglich
-		- Einwohnerlimit pro Ausbaustufe erhöht
-		- Eigenes Icon auf der Minimap
-	- Burg
-		- Soldatenlimit pro Ausbaustufe erhöht
-		- Eigenes Icon auf der Minimap
-	- Lagerhaus
-		- Lagerkapazität der 3. und 4. Ausbaustufe erhöht
-		- Eigenes Icon auf der Minimap
+	- Spezialgebäude
+		- Allgemein
+			- Ausbau triggert nicht mehr Hakims/Praphats Info bzgl. Rabatt auf Ausbaukosten
+				- Grund: Die Fähigkeit wirkt sich nicht auf den Ausbau jener Gebäude aus
+			- Ausbaubutton erscheint nicht mehr bei Errichtung
+				- Normalerweise nur relevant beim Bau der neuen Kathedrale
+		- Kirche
+			- Mehr Siedler pro Predigt möglich
+			- Einwohnerlimit pro Ausbaustufe erhöht
+			- Eigenes Icon auf der Minimap
+		- Burg
+			- Soldatenlimit pro Ausbaustufe erhöht
+			- Eigenes Icon auf der Minimap
+			- Spielerwappen wird nicht mehr auf dem Banner am Eingang abgebildet
+				- Technisch leider zwecks Konsistenz zwischen alten und neuen Wappen notwendig
+		- Lagerhaus
+			- Lagerkapazität der 3. und 4. Ausbaustufe erhöht
+			- Eigenes Icon auf der Minimap
+			- Menü etwas umsortiert
+				- Militärische Güter (z.B. Schwerter) liegen nun unter dem 3. Tab "Burg und Militär"
+				- Luxusgüter unter dem 3. Tab sind nun korrekt angeordnet
+		- Marktplatz: Generische Ritter-Statue bei Khana, Praphat und Kastellanen
+		- Handelsposten: Audio nach Errichtung eines Handelspostens gekürzt, um überschneidung mit 1. Lieferung zu vermeiden
 	- "Neue" Gebäude
-		- Wachturm
-			- Kostet 11 Steine
-			- Kann mit einem Turmkatapult ausgerüstet wwerden
 		- Aussichtsturm
-			- Kostet 12 Steine
+			- Kostet 8 Steine
 			- Besitzt eine hohe Sichtweite
+			- Modell ist von Klimazone abhängig
 			- Sieht einfach schick aus :)
-	- Ziergebäude der Special Edition im Hauptspiel verfügbar
+			- Für Mapper: Es gibt auch einen "Wachturm"
+				- Kostet ebenfalls 8 Steine, hat aber weniger Sichtweite
+				- Kann mit einem Turmkatapult ausgerüstet werden
+				- Nicht baubar, aber grundsätzlich funktionsfähig
+		- Plaza
+			- Basiert auf Marktplätzen
+				- Jede Klimazone nutzt das Dorf-Modell der jeweiligen Klimazone 
+				- Ist von einer Straße umgeben
+				- Bietet weder Feste, noch Platz für Karren
+			- Stellt bis zu 50 Wasser zu verfügung
+				- ...aber nicht ab Bau. Der Brunnen muss sich erst füllen!
+				- Kann NICHT von Geologen aufgefüllt werden
+				- Wasser regeneriert sich realtiv schnell von selbst, besonders bei Regen
+		- Kleine Mauer
+			- benötigt Steine zum Bau
+			- Modell ist von Klimazone abhängig
+				- NPC Kloster-Mauern
+				- gilt auch für Asia, wofür es in Vanilla keine eigenen Modelle gab
+			- funktioniert ähnlich wie normale Mauern, aber mit ein paar Einschränkungen
+				- Es gibt weder Tore, noch "Abschlussstücke" für Klippen o.ä.
+				- kann von Soldaten mit Fackeln angegriffen werden, brennt aber nicht
+			- Hat eher ästetischen als praktischen Nutzen
+		- AS-Zelte mit entsprechenden Workern
+		- Gebäude für neue Militäreinheiten
+			- Lanzenmacher
+			- Lanzenträgerkaserne
+			- Reiterei
+	- NPC-Gebäude
+		- RP-/Khana-Kasernen
+			- Funktionieren unter Spieler-Kontrolle wie normale Kasernen auch
+			- Ermöglichen, unabhängig vom Ritter, Rekrutierung von RP- bzw. Khana-Einheiten
+		- Alle NPC-Gebäude mit Menü
+			- Sollten nun einen Namens-String haben
+			- Zeigen die Ausbaustufe "1/1" an
+		- Hauptspiel-Marktplätze haben ein Mouseover
 	- Bienenstöcke haben weniger Lebenspunkte (10 -> 5)
+	- Kuh- und Schafweiden
+		- Kosten mehr Holz (3 -> 5)
+		- haben mehr HP (5 -> 10)
+		- Kuhweiden sind etwas dunkler und damit optisch von Schafweiden unterscheidbar
+	- Handelsposten-Baubutton hat einen etwas verständlicheren Tooltip
+	- Kasernen und Belagerungswaffenschmieden werden nicht mehr als potentielle reiche Stadtgebäude aufgelistet
+	- Arbeiter in Kasernen holen ihre Waffen nun einzeln
+	- Ziergebäude
+		- Rebalanced (weniger HP, z.T. höhere Bauzeit und späteres Freischalten)
+		- Werden nicht mehr im Titelmenü als freischaltbar angezeigt
+		- Viele neue Ziergebäude
+			- Basieren auf Lost Content, Doodads sowie DEdK
+			- Alle Ziergebäude sind auf 2 Baumenüs aufgeteilt
+			- Varianten können mit "C" durchgewechselt werden
+				- Auch ein paar Vanilla-Ziergebäude wurden auf diese Art zusammengefasst
+			- Insgesamt 24 Bauoptionen + etliche Varianten!
 - Hauptmenü
 	- AddOn nutzt weitgehend Hauptspiel-Hintergrund und Soundtrack
 	- Hintergrund ist tageszeitabhängig
@@ -143,154 +256,59 @@ Folgende Änderungen wurden vorgenommen:
 			- Wenn dadurch keine ausgewählt ist wird Mapvorschau geleert und Starten-Button deaktiviert
 		- Im AddOn auch alle Hauptspiel-Karten auswählbar
 - Diverses
+	- Teardown-Sound von Palisaden/Mauern etwas leiser
 	- Marcus wird nicht mehr als generischer Ritter gesetzt
 	- Ungenutztes Audio-Feedback von Rittern, Soldaten und Dieben wird nun verwendet
 	- Eisbären nutzen ihre richtige Sterbeanimation
 	- Maximale bzw. Standard-Kapazität von Stein- und Eisenminen etwas erhöht (250 -> 300)
-	- Geologeneinsätze kosten deutlich mehr Gold (250 -> 500)
+	- Geologeneinsätze 
+		- Kosten deutlich mehr Gold (250 -> 500)
+		- Haben einen verständlicheren Tooltip sowie einen eigenen Disabled-Tooltip
+		- Für Mapper: Können mit den neuen Technologien 'R_RefillStoneMine', 'R_RefillIronMine' und 'R_RefillCistern' verboten werden
 	- Steuern
 		- Maximale Anzahl an Steuereintreibern erhöht (6 -> 8)
 	- Bei Minimap-Benachrichtigung wird der auslösende Spieler erst entfernt, um Verwirrung zu vermeiden
 	- Neun "neue" Spielerfarben
-	- Wappen
-		- Textur ist im Beförderungs-Fenster nun richtig zentriert
-		- Neue, von Stronghold 2 und Stronghold Legends inspirierte Wappen
-	- Alternative Spielerfarbe: Gelb
-		- Ist in den Optionen (de-)aktivierbar
-		- Wirkt sich auch auf das gewählte Wappen aus
-		- Hat keinen Einfluss auf den Multiplayer
+	- Produktionsmenü gefixt/erweitert
+		- Asiatische Burgen/Außenposten
+			- Haben die richtigen Icons
+			- Können nicht mehr stillgelegt werden bzw. Waren reservieren
+		- Springen zur Kirche funktioniert nun
+		- Handelsposten werden ebenfalls hier angezeigt
 	- Profil-Menü
 		- Buttons haben nun alle einen Hover-Effekt
 		- Speichern der Profileinstellungen funktioniert nun zuverlässig
+		- Neue Wappen hinzugefügt
+			- Textur ist im Beförderungs-Fenster nun richtig zentriert
+			- Neue, von Stronghold 2 und Legends inspirierte Wappen
+		- Option für alternative Spielerfarbe: Gelb
+			- Wirkt sich auf das gewählte Wappen und ALLE Maps aus
+			- Hat keinen Einfluss auf den Multiplayer
 	- Kampfmusik nach Klimazonen getrennt (als verschiedene Playlists)
+	- Baumenü
+		- BeautificationMenu verschönert
+		- Tooltips leicht verbreitert
 	- Unterschiedliche Festival-Musik, je nachdem, ob der Anlass eine Heldenbeförderung oder ein normales Fest ist
 	- Niederlagen-Kamerarotation deutlich verlangsamt
 	- Sieg und Niederlage haben jeweils eine Art "Jingle"
-	- Spielerfarben auf der Minimap sind nun (meistens) korrekt
+	- Krankheiten treten nun schon ab 101 Siedlern auf, nicht erst ab 151
+	- Minimap
+		- Spielerfarben auf der Minimap sind nun (meistens) korrekt
+		- Alle Icons um 25% verkleinert
+		- Außenposten, Handelsposten und Khanas Tempel werden ebenfalls angezeigt
+    - NPC Charaktere können nicht mehr Spieler 0 angehören
 - Kampagnen
+	- Hauptspiel-Kampagne auch im AddOn spielbar
 	- Bugs gefixt
-		- Verfrühte Meldungen von KI-Mitspielern (M05: Drengir, M09: Husran)
-		- Verstärkung für den Spieler spawnt jetzt (M15: Vestholm)
+		- Unnütze Randterritorien in benachbarte eingegliedert (M14: Gueranna)
 	- KI-Spielerfarben
 		- Mehr Varianz bei Spielerfarben
 		- Konsistentere Spielerfarben im AddOn
-	- Thronsaal hat einen eigenen Soundtrack
+	- Thronsaal 
+		- Hat einen eigenen Soundtrack
+		- Tür wird von Hellebardieren bewacht
 	- Diverses
-		- M09: Husran: KI aggressiver
-		- AM05: Idukun: durch etwas mehr Startkapital etwas einfacher
-
-
-
-## (Mögliche) ToDos
-- Speerkämpfer
-	- Icon
-	- Audio-Feedback
-	- Rekrutierung
-		- Eigener Warenkreislauf?
-			- Gebäude
-			- Waren
-		- ODER: Der Nahkämpferkaserne hinzufügen
-			- Neuer Button für die Kaserne
-			- "Schwertkämpfer***"-Strings zu "Nahkämpfer***" abändern
-	- Spielerfarbe abbilden (PU_SoldierPoleArm4_masks.dds)
-- Außenposten/Aussichtsturm/Wachturm
-	- ME-Aussichtsturm: Schwarze Seite
-	- Aussichtstürme: Alarm?
-	- Eigene Button-Texturen für Aussichtsturm und Wachturm
-		- Wachturm: QuestInformation.Tower (mit Katapult), ...?
-		- Aussichtsturm: PB_Tower1, Alarm, ...?
-	- Generischer Außenposten, inkl. Katapult und Soldatenbemannung
-- Spielerfarben
-	- Minimap-Territorium-Farben weichen nach Neustart z.T. ab 
-		- z.B. Dorf-Dunkelgrün -> Stadt-Grün
-		- Beispiel: Der kalte Strom (Dorf)
-		- Ist ein Vanilla-Bug!
-	- KIs bekommen im MP die Spielerfarben ab Gelb (ValidPlayerColors property der Map vllt.?)
-- Neue Wappen 
-	- auf Ingame-Flaggen (statt Platzhalter) abbilden
-- Hidun-Turnier: Neue Zelte und andere Siedler
-	- Texturen für DEdK-Zelte gibt es schon
-- Default custom maps
-	- MP-Maps als Freibau-SP-Maps neu hinzufügen
-		- Ggf. nicht alle Maps, nur die "schönsten"
-		- Missionsziel ändern
-		- Konkurrenten entfernen
-		- Diplomatie setzen
-	- Hauptspiel-Kampagne im AddOn
-		- Zwischenmenü zur Auswahl der Kampagne
-		- Slot für Community-Kampagnen
-- Wikinger: Kontrollierter Ehefrauen-Raub
-- RPG-Sicht zum rumlaufen ("Heist")
-- Nutzbare (Tier-)Seuche, inkl. Musik
-	- Ruhige, aber bedrohliche Playlist
-	- Erst ab x% Betroffene, da sonst zu oft getriggert
-- TTS
-	- Ggf. Platzhalter
-	- Notizen
-		- Um +8db verstärken
-		- ggf. Anfang und Ende kürzen
-		- ggf. Geschwindigkeit -25%
-		- Zu mp3 konvertieren
-	- Stimmen
-		- RedPrince-Units: Klaus Bauer
-	- Ko-fi für GameTTS (als Schankedön)
-- Nachrichten-Stau
-- MP-Koop-Fixes
-- AddOn-Kampagne-Loadscreens: Richtige Spielerfarben (per Bildbearbeitung)
-- Baubares Trebuchet
-	- Eigenes Karren-Modell
-	- Eigene Icon-Texturen
-	- Es dreht sich nicht richtig
-	- Begleitende Sodaten bewegen sich nach einem Move nicht mehr korrekt
-- Zahme Tiere: MilitaryFeedback global statt lokal
-- Sturm
-	- soll mal funktionieren
-	- Abwandlung: Schneesturm
-	- Eigene Playlist
-- Verbesserte/Glaubwürdigere KI (in der Kampagne)
-	- Allgemein: Konsequentere Nutzung von RP-/Khana-Einheiten sowie ggf. Söldner
-	- Narfang: Sabatta aggressiv, wenn ein Außenposten erobert/zerstört wird
-	- Husran: Eisenmine für Sabatta statt Eisen "frei Haus"
-	- M15: Vestholm: Sturm
-	- Idukun: Blizzard
-	- Speziell in den "Last-Stand"-Missionen
-	- Aktive KI-Ritter mit Fähigkeiten
-	- Nutzlose Rand-Territorien weg
-- Entlassen-Button
-- Söldner-Trupps
-	- Konvertierbar
-	- Korrekte Fackelanzeige (auch im Base game)
-- Max. Zoom leicht erhöhen
-	- Winkel muss nach 0.5 anders kalkuliert werden
-- "Neue" Ritter 
-	- Khana und Praphat
-		- Sprüche als Strings weiter anpassen
-		- Audio-Feedback (TTS)
-	- Kastellane: 
-		- Sprüche als Strings
-		- Audio-Feedback (TTS)
-	- Bei Basegame-Rittern AddOn-Comments ergänzen (TTS)
-	- RP: Seuchen-Fähigkeit umsetzen, falls GUI.SendScriptCommand irgendwann wieder laufen sollte
-- Audio-Feedback für Ochsen
-- Rebalancing
-	- Neue (sinnvollere) Aufstiegsbedingungen
-		- ggf. mit Indikator, um nur für neue Maps und angepasste zu gelten
-		- wegen zu hohem Aufwand (Kompatibiliät mit alten Maps) erstmal Low Priority
-	- Maximale Anzahl Steuereintreiber erhöhen (ggf. nur, wenn neue Einheiten verfügbar)
-	- Soldatenlimit anheben (ggf. nur, wenn neue Einheiten verfügbar)
-	- Rebalancing insb. für MP
-	- Zwischenproduktionen einführen
-		- Low Priority, da extrem viel Arbeit...
-- Spielbare Dörfer?
-- Ungenutzte Gebäude
-	- Juwelier
-	- Supermarkt?
-- Fremder Content
-	- Reiter
-	- DEdK-Soundtrack
-- Auf 4k-Auflösung kann nicht mehr per BorderScroll nach rechts gecrolled werden
-- Biom-spezifisches Retexturing für Kerngebäude
-	- Das oder neue Modelle
-- Cheats am Ende komplett deaktivieren
-- ReadMe auf Englisch
-- Als bba gepackte Version für das Original
+		- c00_M09 Husran: KI aggressiver und mit eigener Eisenmine
+		- c00_M11 Tios: Unerreichbares Territorium mit Ruine ist nun erreichbar
+		- c01_M05 Idukun: durch etwas mehr Startkapital etwas einfacher
+		- Verräter kann im Spielerprofil eingestellt, nachdem die Hauptspiel-Kampagne abgeschlossen wurde

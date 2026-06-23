@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Technologies>
+
+    <Technology id="R_Cistern"></Technology>
+    <Technology id="R_Beautification_Brazier"></Technology>
+    <Technology id="R_Beautification_Flowerpot_Round"></Technology>
+    <Technology id="R_Beautification_Flowerpot_Square"></Technology>
+    <Technology id="R_Beautification_Lantern"></Technology>
+    <Technology id="R_Beautification_Pillar"></Technology>
+    <Technology id="R_Beautification_Shrine"></Technology>
+    <Technology id="R_Beautification_StoneBench"></Technology>
+    <Technology id="R_Beautification_Sundial"></Technology>
+    <Technology id="R_Beautification_Vase"></Technology>
+    <Technology id="R_Beautification_Waystone"></Technology>
+    <Technology id="R_Beautification_TriumphalArch"></Technology>
+    <Technology id="R_Beautification_VictoryColumn"></Technology>
+	<Technology id="R_RefillStoneMine"></Technology>
+	<Technology id="R_RefillIronMine"></Technology>
+	<Technology id="R_RefillCistern"></Technology>
+	<Technology id="R_TradePost"></Technology>
+	<Technology id="R_SpearMaker"></Technology>
+	<Technology id="R_BarracksSpearmen"></Technology>
+	<Technology id="R_BarracksCavalry"></Technology>
+	<Technology id="R_Cannon"></Technology>
+	<Technology id="R_SpecialEdition2"></Technology>
+	<Technology id="R_Fence"></Technology>
+	<Technology id="R_NPC_Cloister_Wall"></Technology>
+	<Technology id="R_Plaza"></Technology>
+  <Technology id="R_WatchTower"></Technology>
+	
+	<Technology id="R_Beautification_Misc"></Technology>
+	<Technology id="R_Beautification_Cart"></Technology>
+	<Technology id="R_Beautification_Graveyard"></Technology>
+	
+	<Technology id="R_Beautification_Signpost"></Technology>
+	<Technology id="R_Beautification_WoodBench"></Technology>
+	<!-- R_SpecialEdition_Pavilion -->
+	
+	<Technology id="R_Beautification_Military"></Technology>
+	<Technology id="R_Beautification_PrisonCage"></Technology>
+	<Technology id="R_Beautification_ExecutionerPlace"></Technology>
+	
+	<!-- R_SpecialEdition_StatueProduction -->
+	<Technology id="R_Beautification_BrothersInArms"></Technology>
+	
+	<!-- R_SpecialEdition_Column -->
+	
+	<Technology id="R_Beautification_Knight"></Technology>
+	<Technology id="R_Beautification_Pavilion"></Technology>
+	<Technology id="R_Beautification_StatueDario"></Technology>
+	
+	<!-- ToDo: Still needed? -->
+	<!--<Technology id="R_Beautification_Cathedral"></Technology>
+	<Technology id="R_Beautification_Dragon"></Technology>-->
+
+</Technologies>
