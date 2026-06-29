@@ -80,8 +80,8 @@
       </Display>
     </Behavior>
     <MapEditor>
-        <TreePosition>SpecialEdition</TreePosition>
-        <ShowInTree>false</ShowInTree>
+        <TreePosition>Buildings\Beautyfication</TreePosition>
+        <ShowInTree>True</ShowInTree>
         <Clime>Generic</Clime>
         <Scalable>false</Scalable>
         <TemplateResistant>true</TemplateResistant>
