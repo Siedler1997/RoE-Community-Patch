@@ -24,8 +24,7 @@ function OnBribeCityQuestDone(_Quest)
     end
     
     RestartBribeCityQuestTime[_Quest.ReceivingPlayer][_Quest.SendingPlayer] = 60 * 20
-                        
-    
+       
 end
 
 function GenerateBribeCityQuestSP(_CityPlayerID, _HumanPlayerID, _GoldAmmount)
@@ -55,7 +54,6 @@ function RestartBribeCityQuestAfterSomeMinutes()
                 GenerateBribeCityQuestSP(CityPlayerID, HumanPlayerID)
                 
                 RestartBribeCityQuestTime[HumanPlayerID][CityPlayerID] = nil
-                
                 
             end
                 

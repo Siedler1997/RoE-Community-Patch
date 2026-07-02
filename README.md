@@ -296,25 +296,31 @@ Folgende Änderungen wurden vorgenommen:
 		- Spielerfarben auf der Minimap sind nun (meistens) korrekt
 		- Alle Icons um 25% verkleinert
 		- Außenposten, Handelsposten und Khanas Tempel werden ebenfalls angezeigt
-    - NPC Charaktere können nicht mehr Spieler 0 angehören
-	- Comfort hinzugefügt, mit der KI-Städte regelmäßig Tribut verlangen können - ähnlich wie Banditen
-		- Aufruf: 'GenerateBribeCityQuestSP(_CityPlayerID, _HumanPlayerID, _GoldAmmount)'
-		- Städte sind standardmäßig feindlich
-		- Alle 20 Minuten verlangen sie innerhalb von 10 Minuten Gold
-			- Goldbetrag kann vom Mapper bestimmt werden. Standard sind 1000 Gold
-		- Nach erfolgter Zahlung stehen sie als Handelspartner zur Verfügung
-- Kampagnen
-	- Hauptspiel-Kampagne auch im AddOn spielbar
-	- Bugs gefixt
-		- Unnütze Randterritorien in benachbarte eingegliedert (M14: Gueranna)
-	- KI-Spielerfarben
-		- Mehr Varianz bei Spielerfarben
-		- Konsistentere Spielerfarben im AddOn
-	- Thronsaal 
-		- Hat einen eigenen Soundtrack
-		- Tür wird von Hellebardieren bewacht
-	- Diverses
-		- c00_M09 Husran: KI aggressiver und mit eigener Eisenmine
-		- c00_M11 Tios: Unerreichbares Territorium mit Ruine ist nun erreichbar
-		- c01_M05 Idukun: durch etwas mehr Startkapital etwas einfacher
-		- Verräter kann im Spielerprofil eingestellt, nachdem die Hauptspiel-Kampagne abgeschlossen wurde
+	- Für Mapper
+    	- NPC Charaktere können nicht mehr Spieler 0 angehören
+		- Comfort hinzugefügt, mit der KI-Städte regelmäßig Tribut verlangen können - ähnlich wie Banditen
+			- Aufruf: 'GenerateBribeCityQuestSP(_CityPlayerID, _HumanPlayerID, _GoldAmmount)'
+			- Städte sind standardmäßig feindlich
+			- Alle 20 Minuten verlangen sie innerhalb von 10 Minuten Gold
+				- Goldbetrag kann vom Mapper bestimmt werden. Standard sind 1000 Gold
+			- Nach erfolgter Zahlung stehen sie als Handelspartner zur Verfügung
+			- Beispiel in 'SE_ReturnToRossotorres'
+		- Alternative Spielerfarbe blockiert manuelles Setzen einer anderen Spielerfarbe für Player 1
+			- Kann durch überschreiben der Funktion 'PlayerChangePlayerColor2(_newColor)' im global Script korrigiert werden
+			- Beispiel in 'SE_ReturnToRossotorres'
+- Maps
+	- Kampagnen
+		- Hauptspiel-Kampagne auch im AddOn spielbar
+		- Bugs gefixt
+			- Unnütze Randterritorien in benachbarte eingegliedert (M14: Gueranna)
+		- KI-Spielerfarben
+			- Mehr Varianz bei Spielerfarben
+			- Konsistentere Spielerfarben im AddOn
+		- Thronsaal 
+			- Hat einen eigenen Soundtrack
+			- Tür wird von Hellebardieren bewacht
+		- Diverses
+			- c00_M09 Husran: KI aggressiver und mit eigener Eisenmine
+			- c00_M11 Tios: Unerreichbares Territorium mit Ruine ist nun erreichbar
+			- c01_M05 Idukun: durch etwas mehr Startkapital etwas einfacher
+			- Verräter kann im Spielerprofil eingestellt, nachdem die Hauptspiel-Kampagne abgeschlossen wurde
