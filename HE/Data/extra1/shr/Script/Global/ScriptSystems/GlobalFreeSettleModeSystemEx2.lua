@@ -1,13 +1,4 @@
 
-function CityIsBribalble(_CityPlayerID)
-
-    if ListOfBribalbleCities == nil then
-        ListOfBribalbleCities = {}
-    end
-
-    ListOfBribalbleCities[_CityPlayerID] = true
-end
-
 function OnBribeCityQuestDone(_Quest)
 
     if _Quest.Result == QuestResult.Success then
@@ -32,13 +23,13 @@ function OnBribeCityQuestDone(_Quest)
         RestartBribeCityQuestTime[_Quest.ReceivingPlayer] = {}
     end
     
-    RestartBribeCityQuestTime[_Quest.ReceivingPlayer][_Quest.SendingPlayer] = 60 * 10
+    RestartBribeCityQuestTime[_Quest.ReceivingPlayer][_Quest.SendingPlayer] = 60 * 20
                         
     
 end
 
 function GenerateBribeCityQuestSP(_CityPlayerID, _HumanPlayerID, _GoldAmmount)
-    local goldCosts = 500
+    local goldCosts = 1000
     if _GoldAmmount ~= nil then
         goldCosts = _GoldAmmount
     end
@@ -46,7 +37,7 @@ function GenerateBribeCityQuestSP(_CityPlayerID, _HumanPlayerID, _GoldAmmount)
    QuestTemplate:New("Quest_Deliver_GC_Gold_Tribute", _CityPlayerID, _HumanPlayerID, 
                     { { Objective.Deliver, Goods.G_Gold, goldCosts } },
                     { { Triggers.PlayerDiscovered, _CityPlayerID } },
-                    60 * 5,  
+                    60 * 10,  
                     nil, nil, OnBribeCityQuestDone, nil, true, false)
                    
 end

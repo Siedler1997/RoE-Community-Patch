@@ -300,8 +300,8 @@ Folgende Änderungen wurden vorgenommen:
 	- Comfort hinzugefügt, mit der KI-Städte regelmäßig Tribut verlangen können - ähnlich wie Banditen
 		- Aufruf: 'GenerateBribeCityQuestSP(_CityPlayerID, _HumanPlayerID, _GoldAmmount)'
 		- Städte sind standardmäßig feindlich
-		- Alle 10 Minuten verlangen sie innerhalb von 5 Minuten Gold
-			- Goldbetrag kann vom Mapper bestimmt werden. Standard sind 500 Gold
+		- Alle 20 Minuten verlangen sie innerhalb von 10 Minuten Gold
+			- Goldbetrag kann vom Mapper bestimmt werden. Standard sind 1000 Gold
 		- Nach erfolgter Zahlung stehen sie als Handelspartner zur Verfügung
 - Kampagnen
 	- Hauptspiel-Kampagne auch im AddOn spielbar
