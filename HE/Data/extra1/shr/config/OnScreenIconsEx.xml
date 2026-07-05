@@ -194,27 +194,27 @@
 	
 	<Icon classname="GGUI::COnScreenIconProps">
 		<IconName>Icon64PoorSpear</IconName>
-		<TextureName>IconsBig.png</TextureName>
+		<TextureName>IconsBig3.png</TextureName>
 		<U>0</U>
 		<V>0</V>
 		<U2>1</U2>
 		<V2>1</V2>
 		<Size>64</Size>
-		<Row>11</Row>
-		<Col>13</Col>
+		<Row>0</Row>
+		<Col>1</Col>
 	</Icon>
 	
 	<Icon classname="GGUI::COnScreenIconProps">
 		<IconName>IconPoorSpear</IconName>
 		<!-- reserved, do not delete -->
-		<TextureName>Icons.png</TextureName>
+		<TextureName>Icons3.png</TextureName>
 		<U>0</U>
 		<V>0</V>
 		<U2>1</U2>
 		<V2>1</V2>
 		<Size>44</Size>
-		<Row>11</Row>
-		<Col>13</Col>
+		<Row>0</Row>
+		<Col>1</Col>
 	</Icon>
 
 	<Icon classname="GGUI::COnScreenIconProps">
@@ -232,27 +232,27 @@
 	
 	<Icon classname="GGUI::COnScreenIconProps">
 		<IconName>Icon64Spearman</IconName>
-		<TextureName>IconsBig.png</TextureName>
+		<TextureName>IconsBig3.png</TextureName>
 		<U>0</U>
 		<V>0</V>
 		<U2>1</U2>
 		<V2>1</V2>
 		<Size>44</Size>
-		<Row>9</Row>
-		<Col>7</Col>
+		<Row>2</Row>
+		<Col>0</Col>
 	</Icon>
 	
 	<Icon classname="GGUI::COnScreenIconProps">
 		<IconName>IconSpear</IconName>
 		<!-- reserved, do not delete -->
-		<TextureName>Icons.png</TextureName>
+		<TextureName>Icons3.png</TextureName>
 		<U>0</U>
 		<V>0</V>
 		<U2>1</U2>
 		<V2>1</V2>
 		<Size>44</Size>
-		<Row>15</Row>
-		<Col>0</Col>
+		<Row>1</Row>
+		<Col>1</Col>
 	</Icon>
 	
 	<Icon classname="GGUI::COnScreenIconProps">
