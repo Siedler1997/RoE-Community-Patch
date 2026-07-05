@@ -10,8 +10,8 @@ GameCallback_LoadScriptFiles = function()
 
     Script.Load( "Script\\Shared\\ScriptSystems\\SharedConstantsEx1.lua" )
     
+    Script.Load( "Script\\Global\\ScriptSystems\\GlobalQuestSystemEx1.lua" )
     Script.Load( "Script\\Global\\ScriptSystems\\GlobalGameCallBacksEx1.lua" )
-    Script.Load( "Script\\Global\\ScriptSystems\\GlobalEndStatisticSystemEx1.lua" )
 
     -- load overwrite functions
     Script.Load("Script\\Global\\OverwriteFunctions.lua" )
