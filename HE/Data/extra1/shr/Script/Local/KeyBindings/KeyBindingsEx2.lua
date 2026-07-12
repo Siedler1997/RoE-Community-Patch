@@ -27,6 +27,8 @@ function InitOverwriteKeyBindingsEx2()
             Input.KeyBindDown(Keys.C, "GUI_Construction.SwitchBuildingCategory()", 2)
 
             OldDebugKeyBindings_Init()
+            
+            Input.KeyBindDown(Keys.ModifierControl + Keys.NumPad8, "KeyBindings_ToggleRights()", 2, true)
         end
     end
 
