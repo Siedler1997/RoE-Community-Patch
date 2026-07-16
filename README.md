@@ -286,7 +286,7 @@ Folgende Änderungen wurden vorgenommen:
 			- Hat keinen Einfluss auf den Multiplayer
 	- Kampfmusik nach Klimazonen getrennt (als verschiedene Playlists)
 	- Baumenü
-		- Kategorien für Kleidung, Renigungsgüter und Unterhaltung in einer zusammengefasst
+		- Kategorien für Kleidung, Reinigungsgüter und Unterhaltung in einer zusammengefasst
 		- BeautificationMenu 
 			- verschönert
 			- In 2 seperate Menüs aufgeteilt
