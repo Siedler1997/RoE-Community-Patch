@@ -286,7 +286,10 @@ Folgende Änderungen wurden vorgenommen:
 			- Hat keinen Einfluss auf den Multiplayer
 	- Kampfmusik nach Klimazonen getrennt (als verschiedene Playlists)
 	- Baumenü
-		- BeautificationMenu verschönert
+		- Kategorien für Kleidung, Reinigungsgüter und Unterhaltung in einer zusammengefasst
+		- BeautificationMenu 
+			- verschönert
+			- In 2 seperate Menüs aufgeteilt
 		- Tooltips leicht verbreitert
 	- Unterschiedliche Festival-Musik, je nachdem, ob der Anlass eine Heldenbeförderung oder ein normales Fest ist
 	- Niederlagen-Kamerarotation deutlich verlangsamt

@@ -198,6 +198,7 @@
   <string id="Fence" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Fence]]></string>
   <string id="NPCWall" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Small Wall]]></string>
   <string id="Plaza" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Plaza]]></string>
+  <string id="CombinedNeeds" MD5Hash="" mod="20060111155519" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Consumer Goods Buildings]]></string>
   <string id="SpecialEdition" MD5Hash="B0D825F7927224A2CFAD065141097E65" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Beautifications I]]></string>
   <string id="SpecialEdition2" MD5Hash="B0D825F7927224A2CFAD065141097E65" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Beautifications II]]></string>
   <string id="B_Beautification_Graveyard" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Graveyard]]></string>
