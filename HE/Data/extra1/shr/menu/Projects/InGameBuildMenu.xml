@@ -7964,7 +7964,7 @@
                           <ToolTipEnabledFlag>true</ToolTipEnabledFlag>
                           <ControlTargetVisibility>true</ControlTargetVisibility>
                           <ToolTipUpdateFunction>
-                           <LuaCommand>GUI_Tooltip.TooltipBuild(false,nil,Technologies.R_Theater)</LuaCommand>
+                           <LuaCommand>GUI_Tooltip.TooltipBuild(true,nil,Technologies.R_Theater)</LuaCommand>
                           </ToolTipUpdateFunction>
                           <RawString></RawString>
                           <StringTableKey></StringTableKey>
@@ -8166,7 +8166,7 @@
                           <ToolTipEnabledFlag>true</ToolTipEnabledFlag>
                           <ControlTargetVisibility>true</ControlTargetVisibility>
                           <ToolTipUpdateFunction>
-                           <LuaCommand>GUI_Tooltip.TooltipBuild(false,nil,Technologies.R_Baths)</LuaCommand>
+                           <LuaCommand>GUI_Tooltip.TooltipBuild(true,nil,Technologies.R_Baths)</LuaCommand>
                           </ToolTipUpdateFunction>
                           <RawString></RawString>
                           <StringTableKey></StringTableKey>
@@ -8368,7 +8368,7 @@
                           <ToolTipEnabledFlag>true</ToolTipEnabledFlag>
                           <ControlTargetVisibility>true</ControlTargetVisibility>
                           <ToolTipUpdateFunction>
-                           <LuaCommand>GUI_Tooltip.TooltipBuild(false,nil,Technologies.R_Tavern)</LuaCommand>
+                           <LuaCommand>GUI_Tooltip.TooltipBuild(true,nil,Technologies.R_Tavern)</LuaCommand>
                           </ToolTipUpdateFunction>
                           <RawString></RawString>
                           <StringTableKey></StringTableKey>
