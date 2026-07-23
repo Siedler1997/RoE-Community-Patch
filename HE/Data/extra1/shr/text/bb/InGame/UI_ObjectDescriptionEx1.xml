@@ -34,6 +34,7 @@
 <string id="Buff_MusicalInstrument" MD5Hash="" mod="20080227091721" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- increased City Reputation due to entertainment diversity]]></string>
 <string id="Buff_Olibanum" MD5Hash="" mod="20080227091556" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- increased City Reputation due to increased cleanliness and faith]]></string>
 
+	<string id="CombinedNeeds" MD5Hash="B0D825F7927224A2CFAD065141097E65" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- these Buildings produce clothing and products for cleanliness and entertainment]]></string>
   <string id="Buff_MedicineDiversity" MD5Hash="B57B76E1BE0CBDE579EC0391C8B3B3B8" mod="20080227091808" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- increased City Reputation due to good medical care]]></string>
 	<string id="AbilityFood" MD5Hash="" mod="20070819154547" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- provide hungry Settlers nearby with Food{cr}- increased City Reputation due to diversity of available Food]]></string>
 	<string id="AbilityBard" MD5Hash="" mod="20070819154355" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- sing to entertain nearby Settlers{cr}- increased City Reputation due to diversity of available Entertainment]]></string>
