@@ -32,4 +32,14 @@ function InitOverwriteKeyBindingsEx2()
         end
     end
 
+    do
+        local OldKeyBindings_ToggleRights = KeyBindings_ToggleRights
+        function KeyBindings_ToggleRights()
+            OldKeyBindings_ToggleRights()
+
+            --Refresh selection UI
+            GameCallback_GUI_SelectionChanged()
+        end
+    end
+
 end
