@@ -35,6 +35,7 @@ GameCallback_LoadScriptFiles = function()
     InitOverwriteMultiplayerEx2()
     InitOverwriteGlobalEndStatisticSystemEx2()
     InitOverwriteGlobalFreeSettleModeSystemEx2()
+    InitOverwriteFreeSettleModeEx2()
     InitOverwriteGlobalMerchantSystemEx2()
     InitOverwriteGlobalQuestSystemEx2()
 

@@ -53,6 +53,7 @@
   <string id="B_Plaza" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Plaza]]></string>
 
   <string id="Buff_MedicineDiversity" MD5Hash="21DD5D8B40B9465756B5D1C7BF9C90BB" mod="20070826155203" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Vielfältige Medizin]]></string>
+	<string id="CombinedNeeds" MD5Hash="B0D825F7927224A2CFAD065141097E65" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Bedarfsgüterproduzenten]]></string>
 	<string id="SpecialEdition" MD5Hash="B0D825F7927224A2CFAD065141097E65" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Verschönerungen I]]></string>
 	<string id="SpecialEdition2" MD5Hash="B0D825F7927224A2CFAD065141097E65" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Verschönerungen II]]></string>
 	<string id="B_Beautification_Graveyard" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Friedhof]]></string>
@@ -74,7 +75,7 @@
 	<string id="B_Beautification_PrisonCage" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Gefängniskäfig]]></string>
 	<string id="B_Beautification_Cart1" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Karren]]></string>
 	<string id="B_Beautification_Cathedral" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Kathedrale]]></string>
-	<string id="UpgradeBeutification" MD5Hash="104E0CECDAC89EF2F2DBEF8F5415E987" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Kathedralenbau fortsetzen]]></string>
+	<string id="UpgradeMonument" MD5Hash="104E0CECDAC89EF2F2DBEF8F5415E987" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Kathedralenbau fortsetzen]]></string>
 	<string id="Fence" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Zaun]]></string>
 	<string id="NPCWall" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Kleine Mauer]]></string>
 	<string id="Plaza" MD5Hash="52E4B41AB71876A5FC752D9F7624AD5D" mod="20080212130525" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Plaza]]></string>

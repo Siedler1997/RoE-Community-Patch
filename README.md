@@ -219,6 +219,10 @@ Folgende Änderungen wurden vorgenommen:
 			- Lanzenmacher
 			- Lanzenträgerkaserne
 			- Reiterei
+		- Monument: Kathedrale
+			- Wird über mehrere Stufen erbaut
+			- sehr teuer!
+			- führt in 'Freies Siedeln" Maps zum Sieg (statt 'Erzherzog werden')
 	- NPC-Gebäude
 		- RP-/Khana-Kasernen
 			- Funktionieren unter Spieler-Kontrolle wie normale Kasernen auch
@@ -286,7 +290,10 @@ Folgende Änderungen wurden vorgenommen:
 			- Hat keinen Einfluss auf den Multiplayer
 	- Kampfmusik nach Klimazonen getrennt (als verschiedene Playlists)
 	- Baumenü
-		- BeautificationMenu verschönert
+		- Kategorien für Kleidung, Reinigungsgüter und Unterhaltung in einer zusammengefasst
+		- BeautificationMenu 
+			- verschönert
+			- In 2 seperate Menüs aufgeteilt
 		- Tooltips leicht verbreitert
 	- Unterschiedliche Festival-Musik, je nachdem, ob der Anlass eine Heldenbeförderung oder ein normales Fest ist
 	- Niederlagen-Kamerarotation deutlich verlangsamt
@@ -308,6 +315,7 @@ Folgende Änderungen wurden vorgenommen:
 		- Alternative Spielerfarbe blockiert manuelles Setzen einer anderen Spielerfarbe für Player 1
 			- Kann durch überschreiben der Funktion 'PlayerChangePlayerColor2(_newColor)' im global Script korrigiert werden
 			- Beispiel in 'SE_ReturnToRossotorres'
+    - NPC Charaktere können nicht mehr Spieler 0 angehören
 - Maps
 	- Kampagnen
 		- Hauptspiel-Kampagne auch im AddOn spielbar
@@ -324,3 +332,6 @@ Folgende Änderungen wurden vorgenommen:
 			- c00_M11 Tios: Unerreichbares Territorium mit Ruine ist nun erreichbar
 			- c01_M05 Idukun: durch etwas mehr Startkapital etwas einfacher
 			- Verräter kann im Spielerprofil eingestellt, nachdem die Hauptspiel-Kampagne abgeschlossen wurde
+			- Verräter kann im Spielerprofil eingestellt, nachdem die Hauptspiel-Kampagne abgeschlossen wurde
+	- SP
+		- Siegbedingung 'Erzherzog werden' durch 'Kathedrale bauen' ersetzt
