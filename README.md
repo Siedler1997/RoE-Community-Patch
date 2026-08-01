@@ -23,14 +23,14 @@ Mit folgenden Schritten lässt sich der Patch deinstallieren:
 ## Features
 Folgende Änderungen wurden vorgenommen:
 - Ritter
-	- Haben nun je eine "Fackel", um Gebäude angreifen zu können
-	- "Alte" Ritter überarbeitet
+	- Haben nun je eine 'Fackel', um Gebäude angreifen zu können
+	- 'Alte' Ritter überarbeitet
 		- Alandra
-			- Aktive Fähigkeit: Gewährt zusätzlich den neuen "Vielfältige Medizin"-Bonus
-				- Für Mapper: Der neue Buff heißt "Buff_MedicineDiversity"
+			- Aktive Fähigkeit: Gewährt zusätzlich den neuen 'Vielfältige Medizin'-Bonus
+				- Für Mapper: Der neue Buff heißt 'Buff_MedicineDiversity'
 			- Passive Fähigkeiten: Bonusgold für Predigten erhöht (20% -> 40%)
 		- Elias
-			- Aktive Fähigkeit: Gewährt zusätzlich den "Vielfältige Nahrung"-Bonus
+			- Aktive Fähigkeit: Gewährt zusätzlich den 'Vielfältige Nahrung'-Bonus
 			- Passive Fähigkeiten: Handelsbonus erhöht (20% -> 40%)
 		- Hakim
 			- Aktive Fähigkeit (Konversion)
@@ -38,12 +38,12 @@ Folgende Änderungen wurden vorgenommen:
 				- Kann nicht benutzt werden, wenn Soldatenlimit schon erreicht
 			- Passive Fähigkeit: Rabatt auf Ausbau von Gebäuden verringert (20% -> 10%)
 		- Thordal
-			- Aktive Fähigkeit: Gewährt zusätzlich den "Vielfältige Unterhaltung"-Bonus
+			- Aktive Fähigkeit: Gewährt zusätzlich den 'Vielfältige Unterhaltung'-Bonus
 			- Boni: Angriffskraft leicht erhöht (25 -> 30)
 		- Saraya
 			- Aktive Fähigkeit: Mindest-Warenmenge erhöht (5 -> 9)
 			- Passive Fähigkeit: Handelsposten noch billiger (50% -> 25%)
-	- "Neue" Ritter implementiert
+	- 'Neue' Ritter implementiert
 		- Crimson Sabatt
 			- Aktive Fähigkeit: Konversion (wie Hakim)
 			- Passive Fähigkeit: Bessere Handelskonditionen (wie Elias)
@@ -53,7 +53,7 @@ Folgende Änderungen wurden vorgenommen:
 			- Passive Fähigkeit: Höhere Steuern (wie Kestral)
 			- Bonus: Rekrutierung von Signatureinheiten in Kasernen
 			- Für Mapper: 
-				- Es gibt auskommentierte Codeschnippsel für eine "richtige" Seuchen-Fähigkeit
+				- Es gibt auskommentierte Codeschnippsel für eine 'richtige' Seuchen-Fähigkeit
 				- Wird zurzeit nicht verwendet, da im Mehrspieler nicht nutzbar
 				- Wer sie nutzen will, kann sie womöglich reaktivieren
 		- Khana
@@ -61,12 +61,12 @@ Folgende Änderungen wurden vorgenommen:
 			- Passive Fähigkeit: Mehr Gold von Predigten (wie Alandra)
 			- Bonus: Rekrutierung von Signatureinheiten in Kasernen
 		- Praphat
-			- Aktive Fähigkeit: Versorgung von Einwohnern mit Kleidung und gewährt "Vielfältige Kleidung"-Bonus (analog Elias/Thordal)
+			- Aktive Fähigkeit: Versorgung von Einwohnern mit Kleidung und gewährt 'Vielfältige Kleidung'-Bonus (analog Elias/Thordal)
 			- Passive Fähigkeit: Billigerer Ausbau von Gebäuden (wie Hakim, aber mit den alten 20%)
 		- Kastellane 
 			- Können theoretisch als Ritter genutzt werden
 			- Haben keine besonderen Fähigkeiten
-		- Alle "neuen" Ritte haben (provisorische) Ladebildschirm-Bilder
+		- Alle 'neuen' Ritte haben (provisorische) Ladebildschirm-Bilder
 - Militär
 	- Einheiten können mittels Entlassen-Button ... entlassen werden
 	- Schwertkämpfer allgemein
@@ -90,7 +90,7 @@ Folgende Änderungen wurden vorgenommen:
 			- Zurzeit noch das von Banditen...
 		- RP-Einheiten haben eine eigene Button-Textur
 		- Khana-Einheiten haben keine Overhead-Namen mehr
-	- "Neue" Einheiten
+	- 'Neue' Einheiten
 		- Lanzenträger
 			- Inspiriert von den Streitlanzenträgern in DEdK
 			- Rekrutierung
@@ -145,13 +145,13 @@ Folgende Änderungen wurden vorgenommen:
 				- Braucht länger zum Auf- und Abbau (8 Sek. > 5 Sek.)
 			- Kann sich in aufgebauter Form nicht fortbewegen
 			- Muss nicht von Soldaten bedient werden
-			- Zurzeit noch nicht baubar, vllt. mit Titel "Erzherzog"?
+			- Zurzeit noch nicht baubar, vllt. mit Titel 'Erzherzog'?
 		- Geister-Ochse in Anlehnung an Ubi's Raketen Ochsen ;)
-	- "Alte" Trebuchets
+	- 'Alte' Trebuchets
 		- Richtiges Selektionsmenü
 		- Eigener Tooltip-String
 		- Mit Munition belieferbar
-		- Diverse Anpassungen auf Basis des "neuen" Trebuchets
+		- Diverse Anpassungen auf Basis des 'neuen' Trebuchets
 	- Rammen können keine Mauern mehr angreifen
 	- (Turm-)Katapulte und Trebuchets können Militäreinheiten aktiv angreifen
 	- Overhead und SelectionMenu vom Gefängniskarren den anderen Karren angeglichen
@@ -182,17 +182,17 @@ Folgende Änderungen wurden vorgenommen:
 			- Lagerkapazität der 3. und 4. Ausbaustufe erhöht
 			- Eigenes Icon auf der Minimap
 			- Menü etwas umsortiert
-				- Militärische Güter (z.B. Schwerter) liegen nun unter dem 3. Tab "Burg und Militär"
+				- Militärische Güter (z.B. Schwerter) liegen nun unter dem 3. Tab 'Burg und Militär'
 				- Luxusgüter unter dem 3. Tab sind nun korrekt angeordnet
 		- Marktplatz: Generische Ritter-Statue bei Khana, Praphat und Kastellanen
 		- Handelsposten: Audio nach Errichtung eines Handelspostens gekürzt, um überschneidung mit 1. Lieferung zu vermeiden
-	- "Neue" Gebäude
+	- 'Neue' Gebäude
 		- Aussichtsturm
 			- Kostet 8 Steine
 			- Besitzt eine hohe Sichtweite
 			- Modell ist von Klimazone abhängig
 			- Sieht einfach schick aus :)
-			- Für Mapper: Es gibt auch einen "Wachturm"
+			- Für Mapper: Es gibt auch einen 'Wachturm'
 				- Kostet ebenfalls 8 Steine, hat aber weniger Sichtweite
 				- Kann mit einem Turmkatapult ausgerüstet werden
 				- Nicht baubar, aber grundsätzlich funktionsfähig
@@ -211,7 +211,7 @@ Folgende Änderungen wurden vorgenommen:
 				- NPC Kloster-Mauern
 				- gilt auch für Asia, wofür es in Vanilla keine eigenen Modelle gab
 			- funktioniert ähnlich wie normale Mauern, aber mit ein paar Einschränkungen
-				- Es gibt weder Tore, noch "Abschlussstücke" für Klippen o.ä.
+				- Es gibt weder Tore, noch 'Abschlussstücke' für Klippen o.ä.
 				- kann von Soldaten mit Fackeln angegriffen werden, brennt aber nicht
 			- Hat eher ästetischen als praktischen Nutzen
 		- AS-Zelte mit entsprechenden Workern
@@ -222,14 +222,14 @@ Folgende Änderungen wurden vorgenommen:
 		- Monument: Kathedrale
 			- Wird über mehrere Stufen erbaut
 			- sehr teuer!
-			- führt in 'Freies Siedeln" Maps zum Sieg (statt 'Erzherzog werden')
+			- führt in 'Freies Siedeln' Maps zum Sieg (statt 'Erzherzog werden')
 	- NPC-Gebäude
 		- RP-/Khana-Kasernen
 			- Funktionieren unter Spieler-Kontrolle wie normale Kasernen auch
 			- Ermöglichen, unabhängig vom Ritter, Rekrutierung von RP- bzw. Khana-Einheiten
 		- Alle NPC-Gebäude mit Menü
 			- Sollten nun einen Namens-String haben
-			- Zeigen die Ausbaustufe "1/1" an
+			- Zeigen die Ausbaustufe '1/1' an
 		- Hauptspiel-Marktplätze haben ein Mouseover
 	- Bienenstöcke haben weniger Lebenspunkte (10 -> 5)
 	- Kuh- und Schafweiden
@@ -245,7 +245,7 @@ Folgende Änderungen wurden vorgenommen:
 		- Viele neue Ziergebäude
 			- Basieren auf Lost Content, Doodads sowie DEdK
 			- Alle Ziergebäude sind auf 2 Baumenüs aufgeteilt
-			- Varianten können mit "C" durchgewechselt werden
+			- Varianten können mit 'C' durchgewechselt werden
 				- Auch ein paar Vanilla-Ziergebäude wurden auf diese Art zusammengefasst
 			- Insgesamt 24 Bauoptionen + etliche Varianten!
 - Hauptmenü
@@ -272,7 +272,7 @@ Folgende Änderungen wurden vorgenommen:
 	- Steuern
 		- Maximale Anzahl an Steuereintreibern erhöht (6 -> 8)
 	- Bei Minimap-Benachrichtigung wird der auslösende Spieler erst entfernt, um Verwirrung zu vermeiden
-	- Neun "neue" Spielerfarben
+	- Neun 'neue' Spielerfarben
 	- Produktionsmenü gefixt/erweitert
 		- Asiatische Burgen/Außenposten
 			- Haben die richtigen Icons
@@ -297,7 +297,7 @@ Folgende Änderungen wurden vorgenommen:
 		- Tooltips leicht verbreitert
 	- Unterschiedliche Festival-Musik, je nachdem, ob der Anlass eine Heldenbeförderung oder ein normales Fest ist
 	- Niederlagen-Kamerarotation deutlich verlangsamt
-	- Sieg und Niederlage haben jeweils eine Art "Jingle"
+	- Sieg und Niederlage haben jeweils eine Art 'Jingle'
 	- Krankheiten treten nun schon ab 101 Siedlern auf, nicht erst ab 151
 	- Minimap
 		- Spielerfarben auf der Minimap sind nun (meistens) korrekt
@@ -331,7 +331,6 @@ Folgende Änderungen wurden vorgenommen:
 			- c00_M09 Husran: KI aggressiver und mit eigener Eisenmine
 			- c00_M11 Tios: Unerreichbares Territorium mit Ruine ist nun erreichbar
 			- c01_M05 Idukun: durch etwas mehr Startkapital etwas einfacher
-			- Verräter kann im Spielerprofil eingestellt, nachdem die Hauptspiel-Kampagne abgeschlossen wurde
 			- Verräter kann im Spielerprofil eingestellt, nachdem die Hauptspiel-Kampagne abgeschlossen wurde
 	- SP
 		- Siegbedingung 'Erzherzog werden' durch 'Kathedrale bauen' ersetzt
