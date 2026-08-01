@@ -89,11 +89,11 @@
         <Cost>
 			<GoodAmount>
 				<GoodType>G_Wood</GoodType>
-				<Amount>20</Amount>
+				<Amount>50</Amount>
 			</GoodAmount>
 			<GoodAmount>
 				<GoodType>G_Gold</GoodType>
-				<Amount>2000</Amount>
+				<Amount>500</Amount>
 			</GoodAmount>
         </Cost>
 
@@ -101,18 +101,7 @@
             <UpgradeCost>
                 <GoodAmount>
                     <GoodType>G_Wood</GoodType>
-                    <Amount>30</Amount>
-                </GoodAmount>
-                <GoodAmount>
-                    <GoodType>G_Gold</GoodType>
-                    <Amount>500</Amount>
-                </GoodAmount>
-            </UpgradeCost>
-
-           <UpgradeCost>
-                <GoodAmount>
-                    <GoodType>G_Stone</GoodType>
-                    <Amount>40</Amount>
+                    <Amount>100</Amount>
                 </GoodAmount>
                 <GoodAmount>
                     <GoodType>G_Gold</GoodType>
@@ -120,10 +109,10 @@
                 </GoodAmount>
             </UpgradeCost>
 
-            <UpgradeCost>
+           <UpgradeCost>
                 <GoodAmount>
                     <GoodType>G_Stone</GoodType>
-                    <Amount>50</Amount>
+                    <Amount>100</Amount>
                 </GoodAmount>
                 <GoodAmount>
                     <GoodType>G_Gold</GoodType>
@@ -133,12 +122,23 @@
 
             <UpgradeCost>
                 <GoodAmount>
-                    <GoodType>G_Iron</GoodType>
-                    <Amount>30</Amount>
+                    <GoodType>G_Stone</GoodType>
+                    <Amount>150</Amount>
                 </GoodAmount>
                 <GoodAmount>
                     <GoodType>G_Gold</GoodType>
                     <Amount>2000</Amount>
+                </GoodAmount>
+            </UpgradeCost>
+
+            <UpgradeCost>
+                <GoodAmount>
+                    <GoodType>G_Iron</GoodType>
+                    <Amount>150</Amount>
+                </GoodAmount>
+                <GoodAmount>
+                    <GoodType>G_Gold</GoodType>
+                    <Amount>2500</Amount>
                 </GoodAmount>
             </UpgradeCost>
         </UpgradeCosts>
@@ -149,7 +149,7 @@
             <Seconds>60</Seconds>
 	        <Seconds>120</Seconds>
 	        <Seconds>180</Seconds>
-            <Seconds>300</Seconds>
+            <Seconds>240</Seconds>
 	    </SecondsToUpgradeByLevel>
 
 		<MaxSettlersForUpgradeByLevel>

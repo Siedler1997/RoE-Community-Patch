@@ -219,6 +219,10 @@ Folgende Änderungen wurden vorgenommen:
 			- Lanzenmacher
 			- Lanzenträgerkaserne
 			- Reiterei
+		- Monument: Kathedrale
+			- Wird über mehrere Stufen erbaut
+			- sehr teuer!
+			- führt in 'Freies Siedeln" Maps zum Sieg (statt 'Erzherzog werden')
 	- NPC-Gebäude
 		- RP-/Khana-Kasernen
 			- Funktionieren unter Spieler-Kontrolle wie normale Kasernen auch
@@ -300,18 +304,21 @@ Folgende Änderungen wurden vorgenommen:
 		- Alle Icons um 25% verkleinert
 		- Außenposten, Handelsposten und Khanas Tempel werden ebenfalls angezeigt
     - NPC Charaktere können nicht mehr Spieler 0 angehören
-- Kampagnen
-	- Hauptspiel-Kampagne auch im AddOn spielbar
-	- Bugs gefixt
-		- Unnütze Randterritorien in benachbarte eingegliedert (M14: Gueranna)
-	- KI-Spielerfarben
-		- Mehr Varianz bei Spielerfarben
-		- Konsistentere Spielerfarben im AddOn
-	- Thronsaal 
-		- Hat einen eigenen Soundtrack
-		- Tür wird von Hellebardieren bewacht
-	- Diverses
-		- c00_M09 Husran: KI aggressiver und mit eigener Eisenmine
-		- c00_M11 Tios: Unerreichbares Territorium mit Ruine ist nun erreichbar
-		- c01_M05 Idukun: durch etwas mehr Startkapital etwas einfacher
-		- Verräter kann im Spielerprofil eingestellt, nachdem die Hauptspiel-Kampagne abgeschlossen wurde
+- Maps
+	- Kampagnen
+		- Hauptspiel-Kampagne auch im AddOn spielbar
+		- Bugs gefixt
+			- Unnütze Randterritorien in benachbarte eingegliedert (M14: Gueranna)
+		- KI-Spielerfarben
+			- Mehr Varianz bei Spielerfarben
+			- Konsistentere Spielerfarben im AddOn
+		- Thronsaal 
+			- Hat einen eigenen Soundtrack
+			- Tür wird von Hellebardieren bewacht
+		- Diverses
+			- c00_M09 Husran: KI aggressiver und mit eigener Eisenmine
+			- c00_M11 Tios: Unerreichbares Territorium mit Ruine ist nun erreichbar
+			- c01_M05 Idukun: durch etwas mehr Startkapital etwas einfacher
+			- Verräter kann im Spielerprofil eingestellt, nachdem die Hauptspiel-Kampagne abgeschlossen wurde
+	- SP
+		- Siegbedingung 'Erzherzog werden' durch 'Kathedrale bauen' ersetzt

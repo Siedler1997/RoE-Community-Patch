@@ -1,7 +1,7 @@
 
 GUI_BuildingButtons.EntitiesWithLimit = {
     [Entities.U_Thief]              = 6,
-    [Entities.U_MilitaryBallista]   = 12,
+    [Entities.U_MilitaryBallista]   = 12
 }
 
 function GUI_BuildingButtons.GetLimitReached(_entityType, _secondEntityType)
@@ -54,6 +54,44 @@ end
 -----------------------------------------------------------------------------------------
 
 function InitOverwriteBuildingButtonsEx2()
+
+    do
+        function GUI_BuildingButtons.GetUpgradeCosts()
+            local EntityID = GUI.GetSelectedEntity()
+            local Costs
+
+            -- upgrade strands removed
+            local UpgradePart = 0
+
+            local GoldCost = Logic.GetBuildingUpgradeCostByGoodType(EntityID , Goods.G_Gold, UpgradePart)
+            local StoneCost = Logic.GetBuildingUpgradeCostByGoodType(EntityID , Goods.G_Stone, UpgradePart)
+            local WoodCost = Logic.GetBuildingUpgradeCostByGoodType(EntityID , Goods.G_Wood, UpgradePart)
+            local IronCost = Logic.GetBuildingUpgradeCostByGoodType(EntityID , Goods.G_Iron, UpgradePart)
+
+            --if Logic.IsEntityInCategory(EntityID,EntityCategories.OuterRimBuilding) == 1 or Logic.IsEntityInCategory(EntityID,EntityCategories.CityBuilding) == 1 then
+            --
+            --    local PlayerID = GUI.GetPlayerID()
+            --
+            --    local parameter = Logic.GetKnightUpgradeAbilityModifier(PlayerID)
+            --
+            --    if parameter > 0 then
+            --
+            --        GoldCost = Round(GoldCost * parameter)
+            --        StoneCost = Round(StoneCost * parameter)
+            --        WoodCost = Round(WoodCost * parameter)
+            --
+            --    end
+            --
+            --end
+
+            Costs = {Goods.G_Gold, GoldCost,
+                    Goods.G_Stone, StoneCost,
+                    Goods.G_Wood, WoodCost,
+                    Goods.G_Iron, IronCost}
+
+            return Costs
+        end
+    end
 
     do
         function GUI_BuildingButtons.UpgradeSpecialBuildingUpdate()
@@ -190,7 +228,7 @@ function InitOverwriteBuildingButtonsEx2()
                     TechnologyType = TechnologyNeededForUpgrade[EntityCategories.Headquarters][UpgradeLevel]
 
                 elseif EntityType == Entities.B_Beautification_Cathedral then
-                    TooltipTextKey = "UpgradeBeutification"
+                    TooltipTextKey = "UpgradeMonument"
 
                     if Logic.GetNumberOfEmployedWorkers(PlayerID) < 2 then
                         TooltipTextKeyDisabled = "UpgradeCathedralNoSettler"
@@ -501,7 +539,7 @@ function InitOverwriteBuildingButtonsEx2()
             if XGUIEng.IsButtonDisabled(CurrentWidgetID) == 1 and _unitType == Entities.U_Thief then
                 if GUI_BuildingButtons.GetLimitReached(Entities.U_Thief) then
                     --GUI.AddNote("Entity limit reached")
-                    TooltipStringDisabled = "EntityLimitReached"
+                    TooltipStringDisabled = "UnitLimitReached"
                     TechnologyType = nil
                 else
                     --GUI.AddNote("Technology locked")
