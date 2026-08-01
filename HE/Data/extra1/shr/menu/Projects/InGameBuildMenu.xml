@@ -2261,7 +2261,7 @@
                    <PulseMouseoverMinAlpha>0.25</PulseMouseoverMinAlpha>
                    <ShowHighlightedAsPressed>true</ShowHighlightedAsPressed>
                   </Widget>
-<!--					 <Widget classname="EGUIX::CGfxButtonWidget">
+					 <Widget classname="EGUIX::CGfxButtonWidget">
 						 <IsShown>false</IsShown>
 						 <UpdateManualFlag>false</UpdateManualFlag>
 						 <EventHandling>true</EventHandling>
@@ -2314,17 +2314,17 @@
 							 <LuaCommand></LuaCommand>
 						 </UpdateFunctionTurnBased>
 						 <UpdateFunctionSecondBased>
-							 <LuaCommand></LuaCommand>
+                <LuaCommand>GUI_Construction.BuildWonderUpdate()</LuaCommand>
 						 </UpdateFunctionSecondBased>
 						 <ToolTipHelper>
 							 <ToolTipEnabledFlag>true</ToolTipEnabledFlag>
 							 <ControlTargetVisibility>true</ControlTargetVisibility>
 							 <ToolTipUpdateFunction>
-                     <LuaCommand>GUI_Tooltip.TooltipBuild(false,true,Technologies.R_Cistern)</LuaCommand>
+                  <LuaCommand>GUI_Tooltip.TooltipBuild(false,true,Technologies.R_Beautification_Cathedral)</LuaCommand>
 							 </ToolTipUpdateFunction>
 							 <RawString></RawString>
 							 <StringTableKey></StringTableKey>
-							 <TargetWidget01>/InGame/Root/Normal/TooltipNormal</TargetWidget01>
+							 <TargetWidget01>/InGame/Root/Normal/AlignBottomRight/BuildMenu/TooltipBuild</TargetWidget01>
 							 <TargetWidget02></TargetWidget02>
 							 <TargetWidget03></TargetWidget03>
 							 <TargetWidget04></TargetWidget04>
@@ -2332,7 +2332,7 @@
 						 </ToolTipHelper>
 						 <Group>MenuButtons</Group>
 						 <MotherID>/InGame/Root/Normal/AlignBottomRight/BuildMenu/Categories</MotherID>
-                   <Name>Cathedral</Name>
+                <Name>B_Beautification_Cathedral</Name>
 						 <FullScreenBackground>false</FullScreenBackground>
 						 <AlwaysUseLinearSampling>false</AlwaysUseLinearSampling>
 						 <BackgroundMaterial>
@@ -2351,7 +2351,7 @@
 							 </Color>
 						 </BackgroundMaterial>
 						 <ActionFunction>
-                    <LuaCommand>GUI_Construction.BuildClicked(UpgradeCategories.Beautification_Shrine)</LuaCommand>
+                    <LuaCommand>GUI_Construction.BuildClicked(UpgradeCategories.Beautification_Cathedral)</LuaCommand>
 						 </ActionFunction>
 						 <GenerateMaterialsFromNormal>false</GenerateMaterialsFromNormal>
 						 <ShortCutKey></ShortCutKey>
@@ -2462,7 +2462,7 @@
 						 <PulseMouseoverDuration>0.</PulseMouseoverDuration>
 						 <PulseMouseoverMinAlpha>0.25</PulseMouseoverMinAlpha>
 						 <ShowHighlightedAsPressed>true</ShowHighlightedAsPressed>
-					 </Widget>-->
+					 </Widget>
 				 </WidgetList>
                 </SubWidgets>
                </Widget>

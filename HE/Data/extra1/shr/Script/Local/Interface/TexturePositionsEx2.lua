@@ -62,6 +62,7 @@ function InitOverwriteTexturePositionsEx2()
             g_TexturePositions.Entities[Entities.B_WatchTower_SE]    = {7, 6}
             g_TexturePositions.Entities[Entities.B_WatchTower_NA]    = {7, 6}
             g_TexturePositions.Entities[Entities.B_WatchTower_AS]    = {7, 6}
+            g_TexturePositions.Entities[Entities.B_Beautification_Cathedral] = {7, 3, 1}
             g_TexturePositions.Entities[Entities.U_MilitarySpear] = {1, 4, 2}
             g_TexturePositions.Entities[Entities.U_Helbardier] = {2, 2, 2}
             g_TexturePositions.Entities[Entities.U_MilitaryCavalry] = {1, 5, 2}
@@ -78,6 +79,7 @@ function InitOverwriteTexturePositionsEx2()
             g_TexturePositions.Technologies[Technologies.R_BarracksSpearmen]    = {2, 2, 2}
             g_TexturePositions.Technologies[Technologies.R_BarracksCavalry]    = {2, 3, 2}
             g_TexturePositions.Technologies[Technologies.R_Cannon] = g_TexturePositions.Entities[Entities.U_MilitaryCannon]
+            g_TexturePositions.Technologies[Technologies.R_Beautification_Cathedral] = {7, 3, 1}
 
         end
     end

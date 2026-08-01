@@ -15,30 +15,70 @@ function InitOverwriteToolTipEx2()
         end
     end
 
+--[[
+    do
+        function GUI_Tooltip.TooltipTechnology(_TechnologyType, _OptionalTextKeyName, _OptionalDisabledTextKeyName, _OptionalCosts)
+            
+            local TooltipContainerPath = "/InGame/Root/Normal/TooltipTechnology"
+            local TooltipContainer = XGUIEng.GetWidgetID(TooltipContainerPath)
+            local TooltipNameWidget = XGUIEng.GetWidgetID(TooltipContainerPath .. "/FadeIn/Name")
+            local TooltipDescriptionWidget = XGUIEng.GetWidgetID(TooltipContainerPath .. "/FadeIn/Text")
+            local TooltipBGWidget = XGUIEng.GetWidgetID(TooltipContainerPath .. "/FadeIn/BG")
+            local TooltipFadeInContainer = XGUIEng.GetWidgetID(TooltipContainerPath .. "/FadeIn")
+            local TooltipCostsContainer = XGUIEng.GetWidgetID(TooltipContainerPath .. "/Costs")
+            
+            local PositionWidget = XGUIEng.GetCurrentWidgetID()
+            
+            local DisabledTextKeyName = GUI_Tooltip.GetDisabledKeyForTechnologyType(_TechnologyType)
+            
+            if DisabledTextKeyName == nil then
+                DisabledTextKeyName = _OptionalDisabledTextKeyName
+            end
+
+            GUI_Tooltip.SetNameAndDescription(TooltipNameWidget, TooltipDescriptionWidget, _OptionalTextKeyName, DisabledTextKeyName, _OptionalMissionTextFileBoolean)
+            GUI_Tooltip.ResizeBG(TooltipBGWidget, TooltipDescriptionWidget)
+            GUI_Tooltip.SetCosts(TooltipCostsContainer, _Costs, _GoodsInSettlementBoolean)
+            
+            local TooltipContainerSizeWidgets = {TooltipContainer, TooltipCostsContainer, TooltipBGWidget}
+            GUI_Tooltip.SetPosition(TooltipContainer, TooltipContainerSizeWidgets, PositionWidget)
+            GUI_Tooltip.OrderTooltip(TooltipContainerSizeWidgets, TooltipFadeInContainer, TooltipCostsContainer, PositionWidget, TooltipBGWidget)
+
+            GUI_Tooltip.FadeInTooltip(TooltipFadeInContainer)
+        end
+    end
+--]]
+
     do
         function GUI_Tooltip.GetDisabledKeyForTechnologyType(_TechnologyType)
-    
-            local NeededTitle = KnightTitleNeededForTechnology[_TechnologyType]
-    
-            if NeededTitle == nil then
-                return
-            end
-    
-            local PlayerID = GUI.GetPlayerID()
-            local KnightID = Logic.GetKnightID(PlayerID)
-            local KnightType = Logic.GetEntityType(KnightID)
-            local CurrentTitle = Logic.GetKnightTitle(PlayerID)
-    
-            if CurrentTitle < NeededTitle then
-                local DisabledTextKeyName
-                local TitleName = GetNameOfKeyInTable(KnightTitles, NeededTitle)
-                local KnightGender = KnightGender[KnightType]
-                if KnightGender == nil then
-                    KnightGender = "male"
+
+            if _TechnologyType == Technologies.R_Beautification_Cathedral then
+                local PlayerID  = GUI.GetPlayerID()
+                if Logic.GetNumberOfEntitiesOfTypeOfPlayer(PlayerID, Entities.B_R_Beautification_Cathedral) then
+                    return "BuildingLimitReached"
                 end
-                DisabledTextKeyName = "Title_" .. TitleName .."_" .. KnightGender .. "_needed"    
+            else
+                local NeededTitle = KnightTitleNeededForTechnology[_TechnologyType]
         
-                return DisabledTextKeyName
+                if NeededTitle == nil then
+                    return
+                end
+        
+                local PlayerID = GUI.GetPlayerID()
+                local KnightID = Logic.GetKnightID(PlayerID)
+                local KnightType = Logic.GetEntityType(KnightID)
+                local CurrentTitle = Logic.GetKnightTitle(PlayerID)
+        
+                if CurrentTitle < NeededTitle then
+                    local DisabledTextKeyName
+                    local TitleName = GetNameOfKeyInTable(KnightTitles, NeededTitle)
+                    local KnightGender = KnightGender[KnightType]
+                    if KnightGender == nil then
+                        KnightGender = "male"
+                    end
+                    DisabledTextKeyName = "Title_" .. TitleName .."_" .. KnightGender .. "_needed"    
+            
+                    return DisabledTextKeyName
+                end
             end
         end
     end
@@ -94,7 +134,7 @@ function InitOverwriteToolTipEx2()
             local BuildingType
             local SkinAmmount
             local ChangeType
-    
+
             if WidgetName == "B_WallGate" or WidgetName == "B_GuardTower" or WidgetName == "B_WatchTower" or WidgetName == "B_Plaza" then
                 BuildingType = GetEntityTypeForClimatezone(WidgetName)
             else
@@ -152,9 +192,14 @@ function InitOverwriteToolTipEx2()
 
             GUI_Tooltip.SetCosts(TooltipCostsContainer, Costs)
     
+            --Fixes location as that button has one layer less here
+            if WidgetName == "B_Beautification_Cathedral" then
+                PositionWidget = CurrentWidgetID
+            end
+
             local TooltipContainerSizeWidgets = {TooltipContainer}
             GUI_Tooltip.SetPosition(TooltipContainer, TooltipContainerSizeWidgets, PositionWidget, _OptionalPositionTooltipAboveBoolean)
-    
+
             GUI_Tooltip.FadeInTooltip()
         end
     end
