@@ -335,3 +335,9 @@ Folgende Änderungen wurden vorgenommen:
 			- Verräter kann im Spielerprofil eingestellt, nachdem die Hauptspiel-Kampagne abgeschlossen wurde
 	- SP
 		- Siegbedingung 'Erzherzog werden' durch 'Kathedrale bauen' ersetzt
+		- SP
+			- Einige MP-Maps wurden für SP optimiert und sind dort problemlos spielbar
+				- ToDo: aktuell noch nicht so sehr, aber ich arbeite dran :D
+			- Neue Map 'Rückkher nach Rossotorres'
+		- MP
+			- Alle Maps aus Hauptspiel und AddOn stehen zur Verfügung
