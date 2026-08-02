@@ -32,7 +32,6 @@ jobs:
         uses: canastro/copy-file-action@master
         with:
           # Source file
-          source: "HE/Data/extra1/shr/text/de/InGame/."
+          source: "dev/a.txt"
           # Target file
-          target: "OG/extra1/bba/lngdecfg1.bba.unpacked/"
-          flags: '-r'
+          target: "test-a.txt"
