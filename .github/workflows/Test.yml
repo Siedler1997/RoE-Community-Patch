@@ -32,6 +32,7 @@ jobs:
         uses: canastro/copy-file-action@master
         with:
           # Source file
-          source: "HE/Data/extra1/shr/text/de/InGame/NamesEx1.xml"
+          source: "HE/Data/extra1/shr/text/de/InGame/."
           # Target file
-          target: "OG/extra1/bba/lngdecfg1.bba.unpacked/NamesEx1.xml"
+          target: "OG/extra1/bba/lngdecfg1.bba.unpacked/"
+          flags: '-r'
