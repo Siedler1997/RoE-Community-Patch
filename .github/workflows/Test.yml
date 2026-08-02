@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Copy
 
 # Controls when the workflow will run
 on:
@@ -15,23 +15,12 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@master
-
-      # Runs a single command using the runners shell
-      - name: Copy Directory
-      # You may pin to the exact commit or the version.
-      # uses: MadaraUchiha/copy-action@7ddff6fc153a2ea2cd0fb88ed9750544c051e399
+      - uses: actions/checkout@v4
+      - name: copy file
         uses: canastro/copy-file-action@master
         with:
-          # Source file
           source: "dev/a.txt"
-          # Target file
           target: "test-a.txt"
