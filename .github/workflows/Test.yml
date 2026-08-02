@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Copy
+name: Copy files
 
 # Controls when the workflow will run
 on:
@@ -20,7 +20,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: copy file
-        uses: canastro/copy-file-action@master
+        uses: nearform-actions/github-action-copy-files@v1
         with:
-          source: "dev/a.txt"
-          target: "test-a.txt"
+          source: ".dev/**"
+          destination: "./dev-test/"
+          options: |
+            {
+              "overwrite": true
+            }
