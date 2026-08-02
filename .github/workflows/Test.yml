@@ -20,12 +20,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: copy file
-        uses: nearform-actions/github-action-copy-files@master
+        uses: canastro/copy-file-action@master
         with:
-          source: "./dev/**"
-          destination: "./dev-test"
-          options: |
-            {
-              "overwrite": true,
-              "flat": true
-            }
+          source: "dev/a.txt"
+          target: "dev-test/a.txt"
+#        uses: nearform-actions/github-action-copy-files@master
+#        with:
+#          source: "./dev/**"
+#          destination: "./dev-test"
+#          options: |
+#            {
+#              "overwrite": true,
+#              "flat": true
+#            }
