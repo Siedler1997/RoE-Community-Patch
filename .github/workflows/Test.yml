@@ -22,7 +22,7 @@ jobs:
       - name: copy file
         uses: nearform-actions/github-action-copy-files@master
         with:
-          source: ".dev/**"
+          source: "./dev/**"
           destination: "./dev-test/"
           options: |
             {
