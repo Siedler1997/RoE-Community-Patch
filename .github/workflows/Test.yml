@@ -23,8 +23,9 @@ jobs:
         uses: nearform-actions/github-action-copy-files@master
         with:
           source: "./dev/**"
-          destination: "./dev-test/"
+          destination: "./dev-test"
           options: |
             {
-              "overwrite": true
+              "overwrite": true,
+              "flat": true
             }
