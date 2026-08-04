@@ -1,0 +1,66 @@
+name: Copy Directories by Mapping
+
+# Controls when the workflow will run
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  copy-folders:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Copy Directories Based on Mapping
+        run: |
+          MAP_FILE="exe/mapping.txt"
+
+          # Prüfen, ob die Mapping-Datei existiert
+          if [ ! -f "$MAP_FILE" ]; then
+            echo "Fehler: Mapping-Datei $MAP_FILE wurde nicht gefunden!"
+            exit 1
+          fi
+
+          echo "Starte Kopierprozess..."
+
+          # Zeile für Zeile auslesen (IFS=' ' trennt bei Leerzeichen)
+          while IFS=' ' read -r src_dir dest_name || [ -n "$src_dir" ]; do
+            
+            # Leere Zeilen, reine Whitespaces oder Kommentare (#) überspringen
+            [[ -z "$src_dir" || "$src_dir" =~ ^[[:space:]]*$ || "$src_dir" =~ ^# ]] && continue
+
+            SRC_PATH="HE/$src_dir"
+            DEST_PATH="OG/${dest_name}.unpacked"
+
+            # Prüfen, ob der Quellordner existiert
+            if [ -d "$SRC_PATH" ]; then
+              # Prüfen, ob der Zielordner existiert
+              if [ -d "$DEST_PATH" ]; then
+                echo "Kopiere Inhalt von $SRC_PATH nach $DEST_PATH..."
+                # Kopiert den gesamten Inhalt des Verzeichnisses
+                cp -r "$SRC_PATH/." "$DEST_PATH/"
+              else
+                echo "Warnung: Zielordner $DEST_PATH existiert nicht. Überspringe."
+              fi
+            else
+              echo "Warnung: Quellordner $SRC_PATH existiert nicht. Überspringe."
+            fi
+
+          done < "$MAP_FILE"
+          
+          echo "Kopierprozess beendet."
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@://github.com"
+          git add OG/
+          
+          # Nur committen, wenn tatsächliche Änderungen in OG vorliegen
+          if ! git diff --staged --quiet; then
+            git commit -m "Automatisches Kopieren von HE nach OG via Mapping"
+            git push
+          else
+            echo "Keine Änderungen zum Committen vorhanden."
+          fi
