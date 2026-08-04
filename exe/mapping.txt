@@ -1,2 +1,2 @@
 # Quellordner_in_HE Zielordner_in_OG_ohne_Endung
-Data\extra1\shr\text\de extra1\bba\lngdecfg1.bba.unpacked\text\de
+Data/extra1/shr/text/de extra1/bba/lngdecfg1.bba.unpacked/text/de
