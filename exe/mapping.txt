@@ -1,8 +1,7 @@
 # Quellordner_in_HE Zielordner_in_OG
 Data/extra1/shr/text/bb lngbbcfg1.bba.unpacked/text/bb
-Data/extra1/shr/text/cs lngcscfg1.bba.unpacked/text/cs
 Data/extra1/shr/text/de lngdecfg1.bba.unpacked/text/de
 Data/extra1/shr/text/en lngencfg1.bba.unpacked/text/en
-Data/extra1/shr/text/pl lngplcfg1.bba.unpacked/text/pl
-Data/extra1/shr/text/ru lngrucfg1.bba.unpacked/text/ru
+Data/extra1/shr/config shrgcfge11.bba.unpacked/config
+Data/extra1/shr/script shrgcfge11.bba.unpacked/script
 Data/extra1/shr/menu shrlmnu1.bba.unpacked/menu
