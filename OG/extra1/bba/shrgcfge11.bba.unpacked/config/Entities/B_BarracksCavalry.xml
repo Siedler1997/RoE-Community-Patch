@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<root>
+	<Display classname="ED::CCityBuildingProps">
+		<Class>ED::CCityBuilding</Class>
+		<Model>Buildings\B_BarracksSwordsmen_Floor_1</Model>
+		<Banner>Default</Banner>
+		<Decal>Buildings\B_BarracksSwordsmen_Decal</Decal>
+		<Yard_1>Buildings\B_BarracksSwordsmen_Yard_1</Yard_1>
+		<Yard_2>Buildings\B_BarracksSwordsmen_Yard_2</Yard_2>
+		<Yard_3>Buildings\B_BarracksSwordsmen_Yard_3</Yard_3>
+		<Roof_1>Buildings\B_BarracksCavalry_Roof_1</Roof_1>
+		<Roof_2>Buildings\B_BarracksCavalry_Roof_2</Roof_2>
+		<Roof_3>Buildings\B_BarracksCavalry_Roof_3</Roof_3>
+		<Roof_Destroyed>Buildings\B_BarracksSwordsmen_Rubble</Roof_Destroyed>
+		<Upgrade_Site>Buildings\B_BarracksSwordsmen_BuildingSite</Upgrade_Site>
+		<Floor_1>Buildings\B_BarracksSwordsmen_Floor_1</Floor_1>
+		<Floor_2>Buildings\B_BarracksSwordsmen_Floor_2</Floor_2>
+		<Floor_3>Buildings\B_BarracksSwordsmen_Floor_3</Floor_3>
+		<Gable_1>Buildings\B_BarracksSwordsmen_Gable_1</Gable_1>
+		<Gable_2>Buildings\B_BarracksSwordsmen_Gable_2</Gable_2>
+		<Gable_3>Buildings\B_BarracksSwordsmen_Gable_3</Gable_3>
+		<Luxury_1>
+			<Upgrade_1>Buildings\B_BarracksSwordsmen_W_Bannermaker_1</Upgrade_1>
+			<Animation_1>B_BarracksSwordsmen_W_Bannermaker_1</Animation_1>
+			<Upgrade_2>Buildings\B_BarracksSwordsmen_W_Bannermaker_2</Upgrade_2>
+			<Animation_2>B_BarracksSwordsmen_W_Bannermaker_2</Animation_2>
+			<Upgrade_3>Buildings\B_BarracksSwordsmen_W_Bannermaker_3</Upgrade_3>
+		</Luxury_1>
+		<Luxury_2>
+			<Upgrade_1>Buildings\B_BarracksSwordsmen_W_Carpenter_1</Upgrade_1>
+			<Upgrade_2>Buildings\B_BarracksSwordsmen_W_Carpenter_2</Upgrade_2>
+			<Upgrade_3>Buildings\B_BarracksSwordsmen_W_Carpenter_3</Upgrade_3>
+		</Luxury_2>
+		<Luxury_3>
+			<Upgrade_1>Buildings\B_BarracksSwordsmen_W_Blacksmith_1</Upgrade_1>
+			<Upgrade_2>Buildings\B_BarracksSwordsmen_W_Blacksmith_2</Upgrade_2>
+			<Upgrade_3>Buildings\B_BarracksSwordsmen_W_Blacksmith_3</Upgrade_3>
+		</Luxury_3>
+		<Luxury_4>
+			<Upgrade_1>Buildings\B_BarracksSwordsmen_W_Candlemaker_1</Upgrade_1>
+			<Upgrade_2>Buildings\B_BarracksSwordsmen_W_Candlemaker_2</Upgrade_2>
+			<Upgrade_3>Buildings\B_BarracksSwordsmen_W_Candlemaker_3</Upgrade_3>
+		</Luxury_4>
+		<LightFloor_1>Buildings\B_BarracksSwordsmen_Floor_1_Light</LightFloor_1>
+		<LightFloor_2>Buildings\B_BarracksSwordsmen_Floor_2_Light</LightFloor_2>
+		<LightFloor_3>Buildings\B_BarracksSwordsmen_Floor_3_Light</LightFloor_3>
+		<FireCountFloor_1>14</FireCountFloor_1>
+		<FireCountFloor_2>10</FireCountFloor_2>
+		<FireCountFloor_3>10</FireCountFloor_3>
+		<FireCountRoof>10</FireCountRoof>
+		<Anim/>
+	</Display>
+
+	<Logic classname="EGL::CBarracksBuildingProps">
+		<Class>EGL::CBarracksBuilding</Class>
+
+		<!-- NEED related tags -->
+
+		<CriticalThresholdSatisfaction>0.2</CriticalThresholdSatisfaction>
+
+		<InitialNutritionState>0.8</InitialNutritionState>
+		<AttentionThresholdNutrition>0.51</AttentionThresholdNutrition>
+		<CriticalThresholdNutrition>0.31</CriticalThresholdNutrition>
+
+		<InitialClothingState>0.6</InitialClothingState>
+		<AttentionThresholdClothing>0.51</AttentionThresholdClothing>
+		<CriticalThresholdClothing>0.31</CriticalThresholdClothing>
+
+		<InitialHygieneState>0.6</InitialHygieneState>
+		<AttentionThresholdHygiene>0.51</AttentionThresholdHygiene>
+		<CriticalThresholdHygiene>0.31</CriticalThresholdHygiene>
+		<HygieneCriticalSwarmEffect>FX_Flys</HygieneCriticalSwarmEffect>
+		<HygieneCriticalSmokeEffect>E_SickBuilding</HygieneCriticalSmokeEffect>
+		<IllnessProbabilityModifier>1.0</IllnessProbabilityModifier>
+
+		<InitialEntertainmentState>0.6</InitialEntertainmentState>
+		<AttentionThresholdEntertainment>0.51</AttentionThresholdEntertainment>
+		<CriticalThresholdEntertainment>0.31</CriticalThresholdEntertainment>
+
+		<InitialSecurityState>0</InitialSecurityState>
+		<AttentionThresholdSecurity>0</AttentionThresholdSecurity>
+		<CriticalThresholdSecurity>0</CriticalThresholdSecurity>
+
+		<InitialWealthState>0</InitialWealthState>
+		<AttentionThresholdWealth>0</AttentionThresholdWealth>
+		<CriticalThresholdWealth>-1</CriticalThresholdWealth>
+
+		<RubbleDoodad>B_Rubble_12x12</RubbleDoodad>
+
+		<Cost>
+			<GoodAmount>
+				<GoodType>G_Wood</GoodType>
+				<Amount>8</Amount>
+			</GoodAmount>
+		</Cost>
+
+		<UpgradeCosts>
+			<UpgradeCost>
+				<GoodAmount>
+					<GoodType>G_Wood</GoodType>
+					<Amount>10</Amount>
+				</GoodAmount>
+			</UpgradeCost>
+			<UpgradeCost>
+				<GoodAmount>
+					<GoodType>G_Wood</GoodType>
+					<Amount>12</Amount>
+				</GoodAmount>
+			</UpgradeCost>
+		</UpgradeCosts>
+
+		<ProducedGood>
+			<GoodType>G_Sword</GoodType>
+			<Amount>1</Amount>
+		</ProducedGood>
+
+		<BattalionSize>1</BattalionSize>
+
+		<!-- chance to get a spouse at the festival (0-1). 0 means that the workers don't go to the festival at all -->
+		<SpouseProbabilityFactor>0.3</SpouseProbabilityFactor>
+
+		<OutStockCapacities>
+			<OutStockCapacity>9</OutStockCapacity>
+			<OutStockCapacity>12</OutStockCapacity>
+			<OutStockCapacity>18</OutStockCapacity>
+		</OutStockCapacities>
+
+		<MaxNumberOfUpgrades>2</MaxNumberOfUpgrades>
+		<SecondsToUpgrade>18</SecondsToUpgrade>
+
+		<MinFloorFireSize>0</MinFloorFireSize>
+		<MaxFloorFireSize>15</MaxFloorFireSize>
+		<MaxHealth>200</MaxHealth>
+
+		<CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim>
+
+		<IsHeightLocking>true</IsHeightLocking>
+		<FlattenOnBuild>true</FlattenOnBuild>
+		<MayRemoveEntities>true</MayRemoveEntities>
+		<AccessCategory>AccessCategoryBuilding</AccessCategory>
+		<NeedsPlayer>true</NeedsPlayer>
+		<ForceNoPlayer>false</ForceNoPlayer>
+		<CanBeKnockedDown>true</CanBeKnockedDown>
+		<Worker>U_Armourer</Worker>
+		<MaxWorkers>3</MaxWorkers>
+
+
+		<WorkTaskLists>
+			<WorkTaskList>TL_PROCESSOR_WORK</WorkTaskList>
+			<WorkTaskList>TL_PROCESSOR_WORK</WorkTaskList>
+			<WorkTaskList>TL_PROCESSOR_WORK</WorkTaskList>
+		</WorkTaskLists>
+		<SpouseWorkTaskLists>
+			<SpouseWorkTaskList>TL_SPOUSE_WORK</SpouseWorkTaskList>
+			<SpouseWorkTaskList>TL_SPOUSE_WORK</SpouseWorkTaskList>
+			<SpouseWorkTaskList>TL_SPOUSE_WORK</SpouseWorkTaskList>
+		</SpouseWorkTaskLists>
+		<RepairBuildingTL>TL_WORKER_REPAIR</RepairBuildingTL>
+		<Exploration>0</Exploration>
+		<EntityCategories>
+			<EntityCategory>GC_Weapon_Supplier</EntityCategory>
+			<EntityCategory>CityBuilding</EntityCategory>
+			<EntityCategory>AttackableBuilding</EntityCategory>
+		</EntityCategories>
+
+		<ApproachPos>
+			<X>300</X>
+			<Y>-700</Y>
+		</ApproachPos>
+		<ApproachR>0</ApproachR>
+		<DoorPos>
+			<X>300</X>
+			<Y>-100</Y>
+		</DoorPos>
+
+		<IdlePos>
+			<X>100</X>
+			<Y>-700</Y>
+		</IdlePos>
+
+		<ProducedUnitTypeList>
+			<ProducedUnitType>U_MilitaryCavalry</ProducedUnitType>
+		</ProducedUnitTypeList>
+
+		<ProduceBattalion>true</ProduceBattalion>
+
+		<DefaultRallyPoint>
+			<X>0</X>
+			<Y>-1000</Y>
+		</DefaultRallyPoint>
+
+		<BlockingAreas>
+			<BlockingArea>
+				<Blocked1>
+					<X>-600</X>
+					<Y>500</Y>
+				</Blocked1>
+				<Blocked2>
+					<X>500</X>
+					<Y>-600</Y>
+				</Blocked2>
+			</BlockingArea>
+		</BlockingAreas>
+		<BuildBlockingAreas>
+			<BuildBlockingArea>
+				<Blocked1>
+					<X>-600</X>
+					<Y>500</Y>
+				</Blocked1>
+				<Blocked2>
+					<X>500</X>
+					<Y>-750</Y>
+				</Blocked2>
+			</BuildBlockingArea>
+		</BuildBlockingAreas>
+		<ConstructionInfo>
+			<Time>18</Time>
+
+			<BuilderSlots>
+				<BuilderSlot>
+					<Position>
+						<X>-500</X>
+						<Y>-750</Y>
+					</Position>
+					<Orientation>0</Orientation>
+				</BuilderSlot>
+			</BuilderSlots>
+			<ConstructionSite>B_BuildingPlot_12x12</ConstructionSite>
+		</ConstructionInfo>
+
+		<SoundImpactType>Stone</SoundImpactType>
+
+	</Logic>
+	<Behaviors>
+		<Behavior>
+			<Logic classname="EGL::CBehaviorProps">
+				<Class>EGL::CBehaviorMultiSubAnims</Class>
+			</Logic>
+			<Display classname="ED::CBehaviorProps">
+				<Class>ED::CDisplayBehaviorBuildingAnimation</Class>
+			</Display>
+		</Behavior>
+
+		<Behavior>
+			<Logic classname="EGL::CBuildingSpouseAnimsProps">
+				<Class>EGL::CBuildingSpouseAnimsBehavior</Class>
+				<BuildingAnimSet>SET_BUILDING</BuildingAnimSet>
+				<NodesUpgrade0>
+				</NodesUpgrade0>
+
+				<NodesUpgrade1>
+					<Node>605</Node>
+				</NodesUpgrade1>
+
+				<NodesUpgrade2>
+					<Node>605</Node>
+				</NodesUpgrade2>
+			</Logic>
+			<Display classname="ED::CBehaviorProps">
+				<Class>ED::CBuildingBehaviorSpouseAnim</Class>
+			</Display>
+		</Behavior>
+
+		<Behavior>
+			<Logic classname="EGL::CStockBehaviorProps">
+				<Class>EGL::CStockOutBehavior</Class>
+				<MaxAmountOnStock>18</MaxAmountOnStock>
+				<GoodTypes>
+					<GoodType>G_Sword</GoodType>
+				</GoodTypes>
+			</Logic>
+			<Display classname="ED::COutStockBehaviorProps">
+				<Class>ED::COutStockBehavior</Class>
+				<MaxOutStockDisplayed>3</MaxOutStockDisplayed>
+				<StockModel>Goods\G_BattalionBarracksSwordsmen01</StockModel>
+			</Display>
+		</Behavior>
+
+		<Behavior>
+			<Logic classname="EGL::CStockBehaviorProps">
+				<Class>EGL::CStockInBehavior</Class>
+				<MaxAmountOnStock>9</MaxAmountOnStock>
+				<GoodTypes>
+					<GoodType>G_PoorSword</GoodType>
+				</GoodTypes>
+			</Logic>
+		</Behavior>
+
+		<Behavior>
+			<Logic classname="EGL::CMilitaryBarracksBehaviorProps">
+				<Class>EGL::CMilitaryBarracksBehavior</Class>
+				<EnableAutoProduction>false</EnableAutoProduction>
+				<EnableAutoProductionWhenFull>false</EnableAutoProductionWhenFull>
+				<StartAutoProduction>false</StartAutoProduction>
+			</Logic>
+			<Display classname="ED::CRallyPointBehaviorProps">
+				<Class>ED::CRallyPointBehavior</Class>
+				<RallyPointModel>Doodads\D_X_Flag</RallyPointModel>
+			</Display>
+		</Behavior>
+
+		<Behavior>
+			<Logic classname="EGL::CAmmunitionFillerBehaviorProps">
+				<Class>EGL::CAmmunitionFillerBehavior</Class>
+				<TargetCategory>Military</TargetCategory>
+				<AmmunitionType>G_TorchAmmunition</AmmunitionType>
+				<CooldownTurns>2000</CooldownTurns>
+				<RefillingRange>2000</RefillingRange>
+			</Logic>
+		</Behavior>
+		<Behavior>
+			<Logic classname="EGL::CBehaviorProps">
+				<Class>EGL::CSlotBuildingWealth</Class>
+			</Logic>
+			<Display classname="ED::CBehaviorProps">
+				<Class>ED::CWealthBehavior</Class>
+			</Display>
+		</Behavior>
+
+		<Behavior>
+			<Logic classname="EGL::CRespawnResourceEntityBehaviorProps">
+				<Class>EGL::CRespawnResourceEntityBehavior</Class>
+				<SpawnBattalion>false</SpawnBattalion>
+				<MaxCapacity>2</MaxCapacity>
+				<MinSpawn>0</MinSpawn>
+				<MaxSpawn>0</MaxSpawn>
+				<MaxSpawnCapacity>1</MaxSpawnCapacity>
+				<SpawnRange>800</SpawnRange>
+				<MinScale>1</MinScale>
+				<MaxScale>1</MaxScale>
+				<SpawnTypes>
+					<SpawnType>A_X_Dog</SpawnType>
+				</SpawnTypes>
+				<RemovedSpawnedOnDeletion>true</RemovedSpawnedOnDeletion>
+			</Logic>
+		</Behavior>
+
+	</Behaviors>
+
+	<MapEditor>
+		<TreePosition>Buildings\City</TreePosition>
+		<ShowInTree>true</ShowInTree>
+		<Clime>Generic</Clime>
+		<Scalable>false</Scalable>
+		<TemplateResistant>true</TemplateResistant>
+	</MapEditor>
+</root>

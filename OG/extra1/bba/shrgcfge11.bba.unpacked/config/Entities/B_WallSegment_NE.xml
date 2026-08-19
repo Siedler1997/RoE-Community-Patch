@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+    <Display classname="ED::CWallProps">
+        <Class>ED::CWall</Class>
+
+        <Model>Buildings/B_WallSegment_NE_00</Model>
+        <ConstructionSite>Buildings/B_WallSegment_BuildingSite_NE_00</ConstructionSite>
+        <ModelWidth>400</ModelWidth>
+
+        <Model2>Buildings/B_WallSegment_NE_01</Model2>
+        <ConstructionSite2>Buildings/B_WallSegment_BuildingSite_NE_01</ConstructionSite2>
+        <ModelWidth2>800</ModelWidth2>
+
+        <Model3>Buildings/B_WallSegment_NE_02</Model3>
+        <ConstructionSite3>Buildings/B_WallSegment_BuildingSite_NE_02</ConstructionSite3>
+        <Model3Width>1200</Model3Width>
+
+        <Model4>Buildings/B_WallSegment_NE_03</Model4>
+        <ConstructionSite4>Buildings/B_WallSegment_BuildingSite_NE_03</ConstructionSite4>
+        <Model4Width>1600</Model4Width>
+
+        <Model5>Buildings/B_WallSegment_NE_04</Model5>
+        <ConstructionSite5>Buildings/B_WallSegment_BuildingSite_NE_04</ConstructionSite5>
+        <Model5Width>2000</Model5Width>
+
+        <Model6>Buildings/B_WallSegment_NE_05</Model6>
+        <ConstructionSite6>Buildings/B_WallSegment_BuildingSite_NE_05</ConstructionSite6>
+        <Model6Width>2400</Model6Width>
+
+        <Model7>Buildings/B_WallSegment_NE_06</Model7>
+        <ConstructionSite7>Buildings/B_WallSegment_BuildingSite_NE_06</ConstructionSite7>
+        <Model7Width>2800</Model7Width>
+
+        <DoorModel>Buildings/B_WallDoor_NE</DoorModel>
+
+        <Banner>Default</Banner>
+        <Anims/>
+        <FireNodeCount>30</FireNodeCount>
+    </Display>
+
+    <Logic classname="EGL::CWallSegmentProps">
+        <Class>EGL::CWallSegment</Class>
+        <AccessCategory>AccessCategoryBuilding</AccessCategory>
+        <MapFileDontSave>true</MapFileDontSave>
+        <EntityCategories>
+            <EntityCategory>Wall</EntityCategory>
+            <EntityCategory>CityWallSegment</EntityCategory>
+        </EntityCategories>
+        <NeedsPlayer>true</NeedsPlayer>
+        <ForceNoPlayer>false</ForceNoPlayer>
+        <Worker>U_WallConstructionWorker</Worker> <!-- construction only -->
+        <MaxWorkers>0</MaxWorkers>                <!-- construction only -->
+        <MaxHealth>600</MaxHealth>
+
+        <Exploration>0</Exploration>
+        <TurretType>B_WallTurret_NE</TurretType>
+        <AcceptableTurretTypes>
+            <TurretType>B_WallGateTurret_NE</TurretType>
+        </AcceptableTurretTypes>
+        <CanBeKnockedDown>true</CanBeKnockedDown>
+        <CanTakeFireDamage>false</CanTakeFireDamage>
+        <FlattenOnBuild>false</FlattenOnBuild>
+	<MayRemoveEntities>true</MayRemoveEntities>
+        <IsHeightLocking>true</IsHeightLocking>
+        <CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim>
+        <MaxHeightDelta>300</MaxHeightDelta>
+        <!-- Note: if you change the maximal length for wall segments you
+        should also change the max attack range of ballista defending it -->
+        <MaxLength>2800</MaxLength>
+        <MinMountableLength>1000</MinMountableLength>
+        <WallHeight>600</WallHeight>
+        <IsMountable>true</IsMountable>
+        <SoldierSlotCount>6</SoldierSlotCount>
+        <DamagedModelID>Buildings/B_WallSegment_Decal</DamagedModelID>
+        <CollapseEffectID>E_WallCollapse</CollapseEffectID>
+        <CollapseTime>1.5</CollapseTime>
+        <AlarmRepairBuildingTL>TL_WORKER_REPAIR_ALARM</AlarmRepairBuildingTL>
+        <AlarmRepairMaterial>G_Stone</AlarmRepairMaterial>
+        <AlarmRepairProvider>G_Stone_Supplier</AlarmRepairProvider>
+        <MaxFloorFireSize>0</MaxFloorFireSize>
+        <Cost>
+            <GoodAmount>
+                <GoodType>G_Stone</GoodType>
+                <Amount>2</Amount>
+            </GoodAmount>
+        </Cost>
+
+    <ApproachPos>
+        <X>220</X>
+        <Y>-500</Y>
+    </ApproachPos>
+    <ApproachR>0</ApproachR>
+    <DoorPos>
+        <X>220</X>
+        <Y>-50</Y>
+    </DoorPos>
+    <BlockingAreas>
+        <BlockingArea>
+            <Blocked1>
+                <X>-300</X>
+                <Y>200</Y>
+            </Blocked1>
+            <Blocked2>
+                <X>300</X>
+                <Y>-200</Y>
+            </Blocked2>
+        </BlockingArea>
+    </BlockingAreas>
+    <BuildBlockingAreas>
+        <BuildBlockingArea>
+            <Blocked1>
+                <X>-300</X>
+                <Y>200</Y>
+            </Blocked1>
+            <Blocked2>
+                <X>300</X>
+                <Y>-200</Y>
+            </Blocked2>
+        </BuildBlockingArea>
+    </BuildBlockingAreas>
+
+    <ConstructionInfo>
+        <Time>18</Time>
+
+        <BuilderSlots>
+            <BuilderSlot>
+                <Position>
+                    <X>100</X>
+                    <Y>-200</Y>
+                </Position>
+                <Orientation>0</Orientation>
+            </BuilderSlot>
+        </BuilderSlots>
+        <ConstructionSite>B_BuildingPlot_Wall</ConstructionSite>
+    </ConstructionInfo>
+
+    <SoundImpactType>Stone</SoundImpactType>
+
+</Logic>
+<Behaviors>
+</Behaviors>
+
+<MapEditor>
+    <TreePosition>buildings\camps</TreePosition>
+    <ShowInTree>false</ShowInTree>
+        <Clime>NorthEurope</Clime>
+    <Scalable>false</Scalable>
+    <TemplateResistant>true</TemplateResistant>
+</MapEditor>
+</root>
