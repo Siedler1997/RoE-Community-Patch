@@ -3,5 +3,5 @@ Data/extra1/shr/text/bb lngbbcfg1.bba.unpacked/text/bb
 Data/extra1/shr/text/de lngdecfg1.bba.unpacked/text/de
 Data/extra1/shr/text/en lngencfg1.bba.unpacked/text/en
 Data/extra1/shr/config shrgcfge11.bba.unpacked/config
-Data/extra1/shr/script shrgcfge11.bba.unpacked/script
+Data/extra1/shr/Script shrgcfge11.bba.unpacked/script
 Data/extra1/shr/menu shrlmnu1.bba.unpacked/menu
