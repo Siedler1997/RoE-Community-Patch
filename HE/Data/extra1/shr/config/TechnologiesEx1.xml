@@ -50,7 +50,7 @@
 	<Technology id="R_Beautification_StatueDario"></Technology>
 	
 	<!-- ToDo: Still needed? -->
-	<!--<Technology id="R_Beautification_Cathedral"></Technology>
-	<Technology id="R_Beautification_Dragon"></Technology>-->
+	<Technology id="R_Beautification_Cathedral"></Technology>
+	<!--<Technology id="R_Beautification_Dragon"></Technology>-->
 
 </Technologies>

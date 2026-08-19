@@ -209,9 +209,6 @@ function InitSharedOverwriteEx2()
             table.insert(
                 NeedsAndRightsByKnightTitle[KnightTitles.Archduke][TechnologiesTableIndex],
                 Technologies.R_Beautification_SteamMachine)
-            table.insert(
-                NeedsAndRightsByKnightTitle[KnightTitles.Archduke][TechnologiesTableIndex],
-                Technologies.R_Beautification_Cathedral)
 --]]
 
             table.insert(
@@ -241,6 +238,11 @@ function InitSharedOverwriteEx2()
             table.insert(
                 NeedsAndRightsByKnightTitle[KnightTitles.Archduke][TechnologiesTableIndex],
                 Technologies.R_Cannon)
+                
+            --Great Cathedral
+            table.insert(
+                NeedsAndRightsByKnightTitle[KnightTitles.Archduke][TechnologiesTableIndex],
+                Technologies.R_Beautification_Cathedral)
                 
              CreateTechnologyKnightTitleTable()
             

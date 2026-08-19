@@ -263,6 +263,28 @@ function GUI_Construction.BuildTowerClicked(_entityType)
     GUI_Construction.BuildClicked(UCat)
 end
 
+--Set visibility and position of cathedral build button and size of BG
+function GUI_Construction.BuildWonderUpdate()
+    local PlayerID = GUI.GetPlayerID()
+    local bgWidget = "/InGame/Root/Normal/AlignBottomRight/BuildMenu/BG_SE"
+    local cathedralWidget = "/InGame/Root/Normal/AlignBottomRight/BuildMenu/Categories/B_Beautification_Cathedral"
+    if Logic.TechnologyGetState(PlayerID, Technologies.R_Beautification_Cathedral) == TechnologyStates.Researched or EnableRights ~= true then
+        XGUIEng.ShowWidget(cathedralWidget, 1)
+        XGUIEng.SetWidgetLocalPosition(bgWidget, 748, 85)
+        XGUIEng.SetWidgetSize(bgWidget,52, 695)
+
+        if Logic.GetNumberOfEntitiesOfTypeOfPlayer(PlayerID, Entities.B_Beautification_Cathedral) == 0 then
+            XGUIEng.DisableButton(cathedralWidget, 0)
+        else
+            XGUIEng.DisableButton(cathedralWidget, 1)
+        end
+    else
+        XGUIEng.ShowWidget(cathedralWidget, 0)
+        XGUIEng.SetWidgetLocalPosition(bgWidget, 748, 145)
+        XGUIEng.SetWidgetSize(bgWidget,52, 635)
+    end
+end
+
 -----------------------------------------------------------------------------------------
 -- Overwrites for Construction
 -----------------------------------------------------------------------------------------
@@ -335,4 +357,15 @@ function InitOverwriteConstructionEx2()
             end
         end
     end
+
+    do
+        local OldGUI_Construction_BuildUpdate = GUI_Construction.BuildUpdate
+        function GUI_Construction.BuildUpdate(_TechnologyType, _BuildingsMenuBool)
+            OldGUI_Construction_BuildUpdate(_TechnologyType, _BuildingsMenuBool)
+
+            --Update cathedral button too
+            GUI_Construction.BuildWonderUpdate()
+        end
+    end
+
 end
