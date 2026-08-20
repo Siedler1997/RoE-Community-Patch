@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<!-- CP -->
+	<AnimSet>SET_MILITARYSPEAR</AnimSet>
+	<AnimSet>SET_MILITARYCAVALRY</AnimSet>
+	<AnimSet>SET_HELBARDIER</AnimSet>
+	<AnimSet>SET_DRAGON</AnimSet>
+	<AnimSet>SET_MAGICOX</AnimSet>
+	<AnimSet>SET_MILITARYCANNON</AnimSet>
+  <AnimSet>SET_CAT</AnimSet>
+  <AnimSet>SET_DOG</AnimSet>
+</root>

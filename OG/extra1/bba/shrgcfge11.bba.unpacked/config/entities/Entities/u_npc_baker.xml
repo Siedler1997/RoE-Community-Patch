@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+    <Display classname="ED::CEntityProps">
+		<Class>ED::CDisplaySettler</Class>
+		<Model>Units\Thin\U_Baker</Model>
+	</Display>
+	<Logic classname="EGL::CSettlerProps">
+		<Class>EGL::CSettler</Class>
+		<AccessCategory>AccessCategorySettler</AccessCategory>
+        <PlayerSectorType>PlayerSectorTypeCivil</PlayerSectorType>
+		<MaxHealth> 200 </MaxHealth>
+		<NeedsPlayer>false</NeedsPlayer>
+		<ForceNoPlayer>false</ForceNoPlayer>
+		<EntityCategories>
+			<EntityCategory>Worker</EntityCategory>
+		</EntityCategories>
+		<AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
+		<Exploration>0</Exploration>
+		<IdleTaskList>TL_NPC_IDLE</IdleTaskList>
+        <Familiar>
+            <With>SheepPasture</With>
+            <With>CattlePasture</With>
+        </Familiar>
+	</Logic>
+
+     <Behaviors>
+        <Behavior>
+            <Logic classname="EGL::CAnimationBehaviorExProps">
+                <Class>EGL::CBehaviorAnimationEx</Class>
+					
+                
+                <AnimSet>SET_THIN_WORKER</AnimSet>
+            </Logic>
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CDisplayBehaviorAnimation</Class>
+            </Display>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorDefaultMovementProps">
+                <Class>EGL::CSettlerMovement</Class>
+<!-- SensorRadius: Radius around the unit for checking if evaison is needed (default 250)
+        SensorShift: Offset to move sensor radius in movement direction. 1.0 moves the radius completely in front of the settler (default 0.3)
+        AvoidFactor: Strength of evasion (default 3.0)
+ -->
+                <SensorRadius>250</SensorRadius>
+                <SensorShift>0.3</SensorShift>
+                <AvoidFactor>3.0</AvoidFactor>
+    		    <EvasionPriority>100</EvasionPriority>
+                <Speed>270</Speed>
+                <RotationSpeed>30</RotationSpeed>
+                <MoveTaskList>TL_NPC_RUN</MoveTaskList>
+                <MoveIdleAnim>Thin\U_Thin_Alarmed_Run</MoveIdleAnim>
+            </Logic>
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CDisplayBehaviorMovement</Class>
+            </Display>
+        </Behavior>
+
+        <Behavior>
+          <!-- this is required so the serf can be told to move around -->
+          <Logic classname="EGL::CBehaviorProps">
+            <Class>EGL::CBehaviorWalkCommand</Class>
+          </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorPropsDying">
+                <Class>EGL::CBehaviorDying</Class>
+                <DyingTaskList>TL_DIE</DyingTaskList>
+            </Logic>
+        </Behavior>
+
+ 
+        <Behavior>
+            <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::CParticleEffectAttachmentBehavior</Class>
+            </Logic>
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CParticleEffectAttachmentBehavior</Class>
+            </Display>
+        </Behavior>
+
+	</Behaviors>
+	<MapEditor>
+		<TreePosition>Units\NPCs</TreePosition>
+		<ShowInTree>false</ShowInTree>
+		<Clime>Generic</Clime>
+		<Scalable>false</Scalable>
+	</MapEditor>
+</root>

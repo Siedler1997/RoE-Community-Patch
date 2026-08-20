@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <TaskList>TL_GEOLOGIST_FRAMEWORK</TaskList>
+    <TaskList>TL_GEOLOGIST_LEAVE_STORE_HOUSE</TaskList>
+    <TaskList>TL_GEOLOGIST_WORK</TaskList>
+    <TaskList>TL_GEOLOGIST_REFILL_STONE_MINE</TaskList>
+    <TaskList>TL_GEOLOGIST_REFILL_IRON_MINE</TaskList>
+    <TaskList>TL_DIGGER_IDLE</TaskList>
+	
+	<TaskList>TL_SPEARMAKER_WORK01</TaskList>
+	<TaskList>TL_SPEARMAKER_WORK02</TaskList>
+	<TaskList>TL_SPEARMAKER_WORK03</TaskList>
+
+	<TaskList>TL_BATTLE_CANNON</TaskList>
+	<TaskList>TL_DIE_ANIMAL</TaskList>
+</root>

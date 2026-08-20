@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PlayList>
+
+	<!-- combat opener -->
+
+	<PlayListEntry>
+		<FileName>music\S6_23_combat_opener3.mp3</FileName>
+		<Type>loop</Type>
+		<Chance>10</Chance>
+	</PlayListEntry>
+
+	<!-- combat loops -->
+
+	<PlayListEntry>
+		<FileName>music\S6_27_combat_north_africa_big.mp3</FileName>
+		<Type>loop</Type>
+		<Chance>10</Chance>
+	</PlayListEntry>
+
+	<PlayListEntry>
+		<FileName>music\S6_27_combat_north_africa_big.mp3</FileName>
+		<Type>loop</Type>
+		<Chance>10</Chance>
+	</PlayListEntry>
+
+	<PlayListEntry>
+		<FileName>music\S6_65_combat_north_africa_small.mp3</FileName>
+		<Type>loop</Type>
+		<Chance>10</Chance>
+	</PlayListEntry>
+
+	<PlayListEntry>
+		<FileName>music\S6_65_combat_north_africa_small.mp3</FileName>
+		<Type>loop</Type>
+		<Chance>10</Chance>
+	</PlayListEntry>
+
+</PlayList>

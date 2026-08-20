@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+    <Display classname="ED::CEntityProps">
+        <Class>ED::CDisplaySettler</Class>
+        <Model>Vehicles\V_Cannon_Collapse</Model>
+        <DrawPlayerColor>true</DrawPlayerColor>
+    </Display>
+
+     <Logic classname="EGL::CSettlerProps">
+        <Class>EGL::CBigSettler</Class>
+        <AccessCategory>AccessCategoryAttackableSettler</AccessCategory>
+        <PlayerSectorType>PlayerSectorTypeMilitary</PlayerSectorType>
+        <MilMetaFormationMemberType>MilMetaFormationMemberTypeEngine</MilMetaFormationMemberType>
+        <MaxHealth>110</MaxHealth>
+        <NeedsPlayer>true</NeedsPlayer>
+        <ForceNoPlayer>false</ForceNoPlayer>
+        <EntityCategories>
+        </EntityCategories>
+        <AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
+        <Exploration>0</Exploration>
+        <IdleTaskList>TL_MILITARY_HEAVYWEAPON_COLLAPSE</IdleTaskList>
+        <CanDrown>true</CanDrown>
+        <IsSelectable>false</IsSelectable>
+        <BlockSize>3</BlockSize>
+        <SoundImpactType>Wood</SoundImpactType>
+    </Logic>
+
+    <Behaviors>
+        <Behavior>
+            <Logic classname="EGL::CAnimationBehaviorExProps">
+                <Class>EGL::CBehaviorAnimationEx</Class>
+                <AnimSet>SET_MILITARYCANNON</AnimSet>
+            </Logic>
+
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CDisplayBehaviorAnimation</Class>
+            </Display>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorPropsDying">
+                <Class>EGL::CBehaviorDying</Class>
+                <DyingTaskList>TL_DIE</DyingTaskList>
+            </Logic>
+        </Behavior>
+    </Behaviors>
+</root>

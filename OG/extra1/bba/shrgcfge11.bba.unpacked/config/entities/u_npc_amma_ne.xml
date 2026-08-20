@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+    <Display classname="ED::CEntityProps">
+        <Class>ED::CDisplaySettler</Class>
+        <Model>Units\Misc_Unit\U_NPC_Amma_NE</Model>	    
+    </Display>
+    <Logic classname="EGL::CSettlerProps">
+        <Class>EGL::CSettler</Class>
+        <AccessCategory>AccessCategorySettler</AccessCategory>
+        <PlayerSectorType>PlayerSectorTypeCivil</PlayerSectorType>
+        <MaxHealth>60</MaxHealth>
+        <NeedsPlayer>true</NeedsPlayer>
+        <ForceNoPlayer>false</ForceNoPlayer>
+        <EntityCategories>
+			<EntityCategory>Worker</EntityCategory>
+            <EntityCategory>Spouse</EntityCategory>
+        </EntityCategories>
+        <AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
+        <Exploration>0</Exploration>
+        <IdleTaskList>TL_AMMA_IDLE</IdleTaskList>
+        <IsSelectable>false</IsSelectable>
+    </Logic>
+    <Behaviors>
+        <Behavior>
+            <Logic classname="EGL::CAnimationBehaviorExProps">
+                <Class>EGL::CBehaviorAnimationEx</Class>
+
+                <AnimSet>SET_SPOUSE_FAT</AnimSet>
+            </Logic>
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CDisplayBehaviorAnimation</Class>
+            </Display>
+        </Behavior>
+        <Behavior>
+            <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::CBehaviorWalkCommand</Class>
+            </Logic>
+        </Behavior>
+        <Behavior>
+            <Logic classname="EGL::CBehaviorDefaultMovementProps">
+                <Class>EGL::CSettlerMovement</Class>
+
+        <!-- SensorRadius: Radius around the unit for checking if evaison is needed (default 250)
+        SensorShift: Offset to move sensor radius in movement direction. 1.0 moves the radius completely in front of the settler (default 0.3)
+        AvoidFactor: Strength of evasion (default 3.0)
+ -->
+                <SensorRadius>200</SensorRadius>
+                <SensorShift>0.8</SensorShift>
+                <AvoidFactor>1.5</AvoidFactor>
+    	       <EvasionPriority>100</EvasionPriority>
+
+                <Speed>270</Speed>
+                <SpeedFactorRoad>1.5</SpeedFactorRoad>
+                <RotationSpeed>30</RotationSpeed>
+                <MoveTaskList>TL_NPC_WALK</MoveTaskList>
+                <MoveIdleAnim/>
+            </Logic>
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CDisplayBehaviorMovement</Class>
+            </Display>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::CParticleEffectAttachmentBehavior</Class>
+            </Logic>
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CParticleEffectAttachmentBehavior</Class>
+            </Display>
+        </Behavior>
+
+    <!-- Strictly speaking, the spouses should not require the task logger,
+            but if they didn't have it, they'd need special task lists for a
+            few things that avoid TASK_START_LOGGING.  The easiest solution is
+            to give them this behavior.  Buildings still will not give back
+            spouses statistics, since they use the worker attachment for that.
+              If spouses having this behavior becomes a performance or memory
+            issue we'll have to change it.
+        -->
+        <Behavior>
+            <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::CTaskTimeLogger</Class>
+            </Logic>
+        </Behavior>
+    </Behaviors>
+    <MapEditor>
+        <TreePosition>Units\NPCs</TreePosition>
+        <ShowInTree>true</ShowInTree>
+        <Clime>generic</Clime>
+        <Scalable>false</Scalable>
+    </MapEditor>
+</root>

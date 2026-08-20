@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+
+    <Display classname="ED::CReplaceUpgradeBuildingProps">
+
+        <Class>ED::CReplaceUpgradeBuilding</Class>
+
+        <Decal>Buildings\B_Outpost_NE_Decal</Decal>
+        <Model>Buildings\B_Outpost_NA_01</Model>
+ 	<Destroyed>Buildings\B_Outpost_NA_Rubble_01</Destroyed>
+        <UpgradeSite>Buildings\B_Outpost_NA_Buildingsite_01</UpgradeSite>
+        <LightModel>Buildings\B_Outpost_NA_Light_01</LightModel>
+
+        <Upgrade_1>Buildings\B_Outpost_NA_02</Upgrade_1>
+ 	<Destroyed_1>Buildings\B_Outpost_NA_Rubble_02</Destroyed_1>
+        <UpgradeSite_1>Buildings\B_Outpost_NA_Buildingsite_02</UpgradeSite_1>
+        <LightModel_1>Buildings\B_Outpost_NA_Light_02</LightModel_1>
+
+        <BannersPerUpgrade>
+            <Banner classname="ED::CBannerProps">
+                <Model>Buildings\B_Outpost_NA_Banner_01</Model>
+                <AnimationNoWind>B_Outpost_NA_Banner_01</AnimationNoWind>
+                <AnimationNormalWind>B_Outpost_NA_Banner_01</AnimationNormalWind>
+                <AnimationStrongWind>B_Outpost_NA_Banner_01</AnimationStrongWind>
+            </Banner>
+
+            <Banner classname="ED::CBannerProps">
+                <Model>Buildings\B_Outpost_NA_Banner_02</Model>
+                <AnimationNoWind>B_Outpost_NA_Banner_02</AnimationNoWind>
+                <AnimationNormalWind>B_Outpost_NA_Banner_02</AnimationNormalWind>
+                <AnimationStrongWind>B_Outpost_NA_Banner_02</AnimationStrongWind>
+            </Banner>
+
+        </BannersPerUpgrade>
+        <ShowDestroyedModelAt>0.8</ShowDestroyedModelAt>
+        <FireNodeCount>30</FireNodeCount>
+    </Display>
+
+    <Logic classname="EGL::CUpgradableBuildingProps">
+    <Class>EGL::CUpgradableBuilding</Class>
+
+        <Cost>
+            <GoodAmount>
+                <GoodType>G_Wood</GoodType>
+                <Amount>10</Amount>
+            </GoodAmount>
+
+        </Cost>
+
+        <UpgradeCosts>
+            <UpgradeCost>
+                <GoodAmount>
+                    <GoodType>G_Stone</GoodType>
+                    <Amount>10</Amount>
+                </GoodAmount>
+
+                <GoodAmount>
+                    <GoodType>G_Gold</GoodType>
+                    <Amount>100</Amount>
+                </GoodAmount>
+            </UpgradeCost>
+        </UpgradeCosts>
+
+        <MaxNumberOfUpgrades>1</MaxNumberOfUpgrades>
+        <SecondsToUpgrade>18</SecondsToUpgrade>
+        <DowngradeOnDamage>false</DowngradeOnDamage>
+
+        <MinFloorFireSize>0</MinFloorFireSize>
+        <MaxFloorFireSize>0</MaxFloorFireSize>
+        <MaxHealth>400</MaxHealth>
+
+        <OutStockCapacities/>
+
+        <PlacementAcquiresTerritoryOwnership>true</PlacementAcquiresTerritoryOwnership>
+        <CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim>
+        <FlattenOnBuild>true</FlattenOnBuild>
+        <IsHeightLocking>true</IsHeightLocking>
+        <MayRemoveEntities>true</MayRemoveEntities>
+        <AccessCategory>AccessCategoryBuilding</AccessCategory>
+        <NeedsPlayer>true</NeedsPlayer>
+        <ForceNoPlayer>false</ForceNoPlayer>
+        <CanBeKnockedDown>true</CanBeKnockedDown>
+        <Worker>U_OutpostConstructionWorker</Worker> <!-- Construction only -->
+        <MaxWorkers>0</MaxWorkers>                   <!-- Construction only -->
+        <OutpostRepairMechanics>true</OutpostRepairMechanics>
+
+        <EntityCategories>
+            <EntityCategory>Outpost</EntityCategory>
+            <EntityCategory>AttackableBuilding</EntityCategory>
+
+        </EntityCategories>
+        <RepairBuildingTL>TL_WORKER_REPAIR</RepairBuildingTL>
+
+        <ApproachPos>
+            <X>-300</X>
+            <Y>-500</Y>
+        </ApproachPos>
+        <ApproachR>0</ApproachR>
+        <DoorPos>
+            <X>-200</X>
+            <Y>-100</Y>
+        </DoorPos>
+        <BlockingAreas>
+            <BlockingArea>
+            <Blocked1>
+              <X>-500</X>
+              <Y>400</Y>
+            </Blocked1>
+            <Blocked2>
+              <X>500</X>
+              <Y>-400</Y>
+            </Blocked2>
+          </BlockingArea>
+
+        </BlockingAreas>
+        <BuildBlockingAreas>
+            <BuildBlockingArea>
+                <Blocked1>
+                    <X>-500</X>
+                    <Y>400</Y>
+                </Blocked1>
+                <Blocked2>
+                    <X>500</X>
+                    <Y>-550</Y>
+                </Blocked2>
+            </BuildBlockingArea>
+        </BuildBlockingAreas>
+        <ConstructionInfo>
+            <Time>18</Time>
+
+            <BuilderSlots>
+                <BuilderSlot>
+                    <Position>
+                        <X>-500</X>
+                        <Y>-750</Y>
+                    </Position>
+                    <Orientation>0</Orientation>
+                </BuilderSlot>
+            </BuilderSlots>
+            <TaskListConstruction>TL_CONSTRUCT_BUILDING</TaskListConstruction>
+            <ConstructionSite>B_BuildingPlot_8x8</ConstructionSite>
+        </ConstructionInfo>
+        <Exploration>0</Exploration>
+        <SoundImpactType>Stone</SoundImpactType>
+
+		<OnScreenIcon>MinimapOutpost</OnScreenIcon>
+		<ShowInMiniMap>0.75</ShowInMiniMap>
+    </Logic>
+
+    <Behaviors>
+        <Behavior>
+            <Logic classname="EGL::CMountableBehaviorProps">
+                <Class>EGL::CMountableBehavior</Class>
+                <DoorBreaksAtPercentHealth>80</DoorBreaksAtPercentHealth>
+                <HeightOffset>370</HeightOffset>
+                <RelativeMountDoorPos>
+                    <X>-100</X>
+                    <Y>-100</Y>
+                </RelativeMountDoorPos>
+                <RelativeMountLeavePos>
+                    <X>0</X>
+                    <Y>0</Y>
+                </RelativeMountLeavePos>
+                <Slots>
+                    <Slot>
+                        <Priority>0</Priority>
+                        <Orientation>0</Orientation>
+                        <RelativePos>
+                            <X>100</X>
+                            <Y>300</Y>
+                        </RelativePos>
+                    </Slot>
+                    <Slot>
+                        <Priority>0</Priority>
+                        <Orientation>0</Orientation>
+                        <RelativePos>
+                            <X>300</X>
+                            <Y>-100</Y>
+                        </RelativePos>
+                    </Slot>
+                    <Slot>
+                        <Priority>0</Priority>
+                        <Orientation>0</Orientation>
+                        <RelativePos>
+                            <X>200</X>
+                            <Y>300</Y>
+                        </RelativePos>
+                    </Slot>
+                    <Slot>
+                        <Priority>0</Priority>
+                        <Orientation>0</Orientation>
+                        <RelativePos>
+                            <X>100</X>
+                            <Y>-100</Y>
+                        </RelativePos>
+                    </Slot>
+                    <Slot>
+                        <Priority>0</Priority>
+                        <Orientation>0</Orientation>
+                        <RelativePos>
+                            <X>0</X>
+                            <Y>0</Y>
+                        </RelativePos>
+                    </Slot>
+                    <Slot>
+                        <Priority>0</Priority>
+                        <Orientation>0</Orientation>
+                        <RelativePos>
+                            <X>300</X>
+                            <Y>200</Y>
+                        </RelativePos>
+                    </Slot>
+                </Slots>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CAmmunitionFillerBehaviorProps">
+                <Class>EGL::CAmmunitionFillerBehavior</Class>
+                <TargetCategory>Military</TargetCategory>
+                <AmmunitionType>G_TorchAmmunition</AmmunitionType>
+                <CooldownTurns>2000</CooldownTurns>
+                <RefillingRange>2000</RefillingRange>
+            </Logic>
+        </Behavior>
+
+    </Behaviors>
+
+    <MapEditor>
+        <TreePosition>Buildings\City</TreePosition>
+        <ShowInTree>true</ShowInTree>
+        <Clime>NorthAfrica</Clime>
+        <Scalable>false</Scalable>
+        <TemplateResistant>true</TemplateResistant>
+    </MapEditor>
+</root>

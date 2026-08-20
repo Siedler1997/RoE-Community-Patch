@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+
+    <BuffCategory>BC_LuxuryGems</BuffCategory>
+    <BuffCategory>BC_LuxuryOlibanum</BuffCategory>
+    <BuffCategory>BC_LuxuryMusicalInstrument</BuffCategory>
+    <BuffCategory>BC_MedicineDiversity</BuffCategory>
+    
+</root>

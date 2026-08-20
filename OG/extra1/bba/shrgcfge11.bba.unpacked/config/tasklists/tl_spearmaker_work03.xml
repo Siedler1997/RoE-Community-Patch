@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+ <Script>local EntityID = Logic.CreateEntity(Entities.B_SpearMaker,3500,2000,0); 
+          Logic.SetUpgradableBuildingState(EntityID, 2, 0);
+          Logic.AddGoodToStock(EntityID, Goods.G_Iron, 10, true); 
+          Logic.CreateEntity(Entities.U_SpearMaker,1500,1500,0);
+          Logic.CreateEntity(Entities.U_SpearMaker,1500,1500,0);
+          Logic.CreateEntity(Entities.U_SpearMaker,1500,1500,0);
+ </Script>
+ <Category>TC_DUMMY</Category>
+ <Tasks>
+  <Task classname="EGL::CTaskArgsTaskListID">
+   <TaskType>TASK_ENTER_WORKPLACE_IF_NECESSARY</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <TaskList>TL_PROCESSOR_ENTER_WORKPLACE_TO_WORK</TaskList>
+  </Task>
+  <Task classname="EGL::CTaskArgsTaskListID">
+   <TaskType>TASK_IDLE_IF_NOTHING_TO_DO</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <TaskList>TL_WORKER_IDLE</TaskList>
+  </Task>
+  <Task classname="EGL::CTaskArgs">
+   <TaskType>TASK_PUSH_PRODUCE_ON_TASK_HISTORY</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+  </Task>
+  <Task classname="EGL::CTaskArgsTaskLogEntry">
+   <TaskType>TASK_START_LOGGING</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <LoggerTaskType>LogTypeWork</LoggerTaskType>
+  </Task>
+  <Task classname="EGL::CTaskArgs">
+   <TaskType>TASK_REMOVE_NEEDED_GOODS_FROM_INSTOCK</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+  </Task>
+  <Task classname="EGL::CTaskArgs">
+   <TaskType>TASK_RESET_TASK_LIST_TIMER</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+  </Task>
+  <Task classname="EGL::CTaskArgsAnimation">
+   <TaskType>TASK_SET_ANIM</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <AnimID></AnimID>
+   <Category></Category>
+   <PlayBackwards>false</PlayBackwards>
+   <Loop>true</Loop>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>-97.8740234375</X>
+    <Y>-175.7081298828125</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>-91.5419921875</X>
+    <Y>-159.2071533203125</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>-85.7373046875</X>
+    <Y>-144.9066162109375</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>-77.28857421875</X>
+    <Y>-132.3919677734375</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>-66.2529296875</X>
+    <Y>-119.8143310546875</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>-55.388671875</X>
+    <Y>-111.1649169921875</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>-43.36181640625</X>
+    <Y>-103.6571044921875</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>-29.46337890625</X>
+    <Y>-97.0855712890625</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>-14.2021484375</X>
+    <Y>-91.8228759765625</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>1.9775390625</X>
+    <Y>-86.4012451171875</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>14.8681640625</X>
+    <Y>-81.7869873046875</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>27.56884765625</X>
+    <Y>-78.0262451171875</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>42.71728515625</X>
+    <Y>-74.3394775390625</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>56.94677734375</X>
+    <Y>-74.5172119140625</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>68.5068359375</X>
+    <Y>-75.7110595703125</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>79.36328125</X>
+    <Y>-78.0836181640625</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>93.05126953125</X>
+    <Y>-81.3760986328125</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>110.07080078125</X>
+    <Y>-85.1654052734375</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>173.487060546875</X>
+    <Y>-95.677734375</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>186.019775390625</X>
+    <Y>-98.49365234375</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>197.211669921875</X>
+    <Y>-109.46923828125</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>202.334228515625</X>
+    <Y>-122.600830078125</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>204.871826171875</X>
+    <Y>-137.87548828125</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>206.409423828125</X>
+    <Y>-151.085205078125</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>207.385498046875</X>
+    <Y>-169.36767578125</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>209.908935546875</X>
+    <Y>-182.042724609375</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>210.441650390625</X>
+    <Y>-196.365234375</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsAnimation">
+   <TaskType>TASK_SET_ANIM</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <AnimID>fat\u_fat_normal_sell</AnimID>
+   <Category></Category>
+   <PlayBackwards>false</PlayBackwards>
+   <Loop>true</Loop>
+  </Task>
+  <Task classname="EGL::CTaskArgsStateWorkWaitUntil">
+   <TaskType>TASK_WORK_WAIT_UNTIL</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Effect1_EffectNumber>0</Effect1_EffectNumber>
+   <Effect1_Time>0</Effect1_Time>
+   <Effect1_Duration>0</Effect1_Duration>
+   <Effect2_EffectNumber>0</Effect2_EffectNumber>
+   <Effect2_Time>0</Effect2_Time>
+   <Effect2_Duration>0</Effect2_Duration>
+   <Effect3_EffectNumber>0</Effect3_EffectNumber>
+   <Effect3_Time>0</Effect3_Time>
+   <Effect3_Duration>0</Effect3_Duration>
+   <Effect4_EffectNumber>0</Effect4_EffectNumber>
+   <Effect4_Time>0</Effect4_Time>
+   <Effect4_Duration>0</Effect4_Duration>
+   <Sound1_ID></Sound1_ID>
+   <Sound1_Time>0</Sound1_Time>
+   <Sound1_Volume>127</Sound1_Volume>
+   <Sound2_ID></Sound2_ID>
+   <Sound2_Time>0</Sound2_Time>
+   <Sound2_Volume>127</Sound2_Volume>
+   <EffectToSpawn1></EffectToSpawn1>
+   <EffectToSpawn1_EffectNumber>0</EffectToSpawn1_EffectNumber>
+   <EffectToSpawn1_Time>0</EffectToSpawn1_Time>
+   <EffectToSpawn1_Duration>0</EffectToSpawn1_Duration>
+   <EffectToSpawn2></EffectToSpawn2>
+   <EffectToSpawn2_EffectNumber>0</EffectToSpawn2_EffectNumber>
+   <EffectToSpawn2_Time>0</EffectToSpawn2_Time>
+   <EffectToSpawn2_Duration>0</EffectToSpawn2_Duration>
+  </Task>
+  <Task classname="EGL::CTaskArgs">
+   <TaskType>TASK_WORK_AFFECT_NEED_HYGIENE</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+  </Task>
+  <Task classname="EGL::CTaskArgs">
+   <TaskType>TASK_WORK_AFFECT_NEED_NUTRITION</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+  </Task>
+  <Task classname="EGL::CTaskArgs">
+   <TaskType>TASK_WORK_AFFECT_NEED_ENTERTAINMENT</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+  </Task>
+  <Task classname="EGL::CTaskArgs">
+   <TaskType>TASK_WORK_AFFECT_NEED_MEDICINE</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+  </Task>
+  <Task classname="EGL::CTaskArgs">
+   <TaskType>TASK_WORK_AFFECT_NEED_CLOTHING</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+  </Task>
+  <Task classname="EGL::CTaskArgsAnimation">
+   <TaskType>TASK_SET_ANIM</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <AnimID>fat\u_fat_normal_walk</AnimID>
+   <Category></Category>
+   <PlayBackwards>false</PlayBackwards>
+   <Loop>true</Loop>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>191.92822265625</X>
+    <Y>-185.7783203125</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>168.374755859375</X>
+    <Y>-138.863525390625</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>148.497802734375</X>
+    <Y>-112.19580078125</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>130.48291015625</X>
+    <Y>-97.178466796875</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>79.60302734375</X>
+    <Y>-78.3851318359375</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>42.0869140625</X>
+    <Y>-74.1143798828125</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>2.45263671875</X>
+    <Y>-86.4041748046875</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>-43.283203125</X>
+    <Y>-103.2938232421875</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>-66.75390625</X>
+    <Y>-119.8382568359375</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>-76.98291015625</X>
+    <Y>-131.6134033203125</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgsPosition">
+   <TaskType>TASK_GO_TO_POS</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Position>
+    <X>-97.73095703125</X>
+    <Y>-175.8385009765625</Y>
+   </Position>
+  </Task>
+  <Task classname="EGL::CTaskArgs">
+   <TaskType>TASK_ADD_PRODUCED_GOOD_TO_OUTSTOCK</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+  </Task>
+  <Task classname="EGL::CTaskArgsSelectCarryingHand">
+   <TaskType>TASK_DROP_RESOURCE</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <Hand>right</Hand>
+   <SaveCurrentGood>false</SaveCurrentGood>
+  </Task>
+  <Task classname="EGL::CTaskArgs">
+   <TaskType>TASK_LEAVE_BUILDING</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+  </Task>
+  <Task classname="EGL::CTaskArgsTaskListID">
+   <TaskType>TASK_SET_TASK_LIST</TaskType>
+   <ExecuteOnAbort>false</ExecuteOnAbort>
+   <TaskList>TL_PROCESSOR_FRAMEWORK</TaskList>
+  </Task>
+ </Tasks>
+</root>

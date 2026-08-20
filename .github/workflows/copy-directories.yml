@@ -43,6 +43,13 @@ jobs:
                 echo "Kopiere Inhalt von $SRC_PATH nach $DEST_PATH..."
                 # Kopiert den gesamten Inhalt des Verzeichnisses
                 cp -r "$SRC_PATH/." "$DEST_PATH/"
+                find "$DEST_PATH" -depth -name '*' | while read -r file; do
+                  dir=$(dirname "$file")
+                  base=$(basename "$file" | tr '[:upper:]' '[:lower:]')
+                  if [ "$file" != "$dir/$base" ]; then
+                    mv -v "$file" "$dir/$base"
+                  fi
+                done
               else
                 echo "Warnung: Zielordner $DEST_PATH existiert nicht. Überspringe."
               fi

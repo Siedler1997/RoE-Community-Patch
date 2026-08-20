@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+<string id="MapName" MD5Hash="" mod="20070612165831" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="Name of the campaign map"><![CDATA[Montecito]]></string>
+<string id="MapDescription" MD5Hash="" mod="20070809100104" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[The Castellan of Montecito wishes to rebel against the Red Prince. We must strengthen Montecito's economy and raise an army to defend the city. We must also help the villages to defend themselves.]]></string>
+<string id="PlayerName_TorantesForest" MD5Hash="" mod="20070723042237" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="Name of player faction. These can be referred to in the quest texts (Quest_...)"><![CDATA[Village of San Torrano]]></string>
+<string id="PlayerName_Caspuena" MD5Hash="" mod="20070720155716" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="Name of player faction. These can be referred to in the quest texts (Quest_...)"><![CDATA[Village of Caspuena]]></string>
+<string id="PlayerName_CabezaQuarry" MD5Hash="" mod="20070717141518" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="Name of player faction. These can be referred to in the quest texts (Quest_...)"><![CDATA[Village of Seradillo]]></string>
+<string id="PlayerName_Bandits" MD5Hash="" mod="20070612165532" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="Name of player faction. These can be referred to in the quest texts (Quest_...)"><![CDATA[Bandits]]></string>
+<string id="Territory_fishermansbay" MD5Hash="" mod="20070723042621" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Fisherman Bay]]></string>
+<string id="Territory_SanTorranoquarry" MD5Hash="" mod="20070723042436" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[San Torrano Quarry]]></string>
+<string id="Territory_Montecitocrossroads" MD5Hash="" mod="20070723042515" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Montecito Crossroads]]></string>
+<string id="Territory_SanTorrano" MD5Hash="" mod="20070717141554" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cloister of San Torrano]]></string>
+<string id="Territory_alvesnarrow" MD5Hash="" mod="20070723042705" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Alves Narrows]]></string>
+<string id="Territory_westernlakeside" MD5Hash="" mod="20070723042403" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Western Lakeside]]></string>
+<string id="Territory_easternlakeside" MD5Hash="" mod="20070723042535" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Eastern Lakeside]]></string>
+<string id="Territory_Caspuenamines" MD5Hash="" mod="20070723042711" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Caspuena Mines]]></string>
+<string id="Territory_Caspuena" MD5Hash="" mod="20070720155741" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Caspuena]]></string>
+<string id="Territory_craggedhills" MD5Hash="" mod="20070723042638" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Cragged Hills]]></string>
+<string id="Territory_Montecitolake" MD5Hash="" mod="20070723042506" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Lake Montecito]]></string>
+<string id="Territory_Montecito" MD5Hash="" mod="20070723042521" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[City of Montecito]]></string>
+<string id="Territory_harborbay" MD5Hash="" mod="20070809100126" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Harbour Bay]]></string>
+<string id="Territory_Montecitofields" MD5Hash="" mod="20070723042511" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Montecito Fields]]></string>
+<string id="Territory_clambeach" MD5Hash="" mod="20070723042656" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Clam Beach]]></string>
+<string id="Territory_Seradilloroads" MD5Hash="" mod="20070723041948" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Seradillo Roads]]></string>
+<string id="Territory_Seradillowillows" MD5Hash="" mod="20070723041939" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Seradillo Willows]]></string>
+<string id="Territory_Seradillo" MD5Hash="" mod="20070720155815" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Seradillo]]></string>
+<string id="Territory_unavowedglade" MD5Hash="" mod="20070723042422" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Unavowed Glade]]></string>
+<string id="Territory_mellowmeadows" MD5Hash="" mod="20070723042529" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Mellow Meadows]]></string>
+<string id="Territory_Seradilloforest" MD5Hash="" mod="20070723042053" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Seradillo Forest]]></string>
+<string id="Territory_Caspuenacannyon" MD5Hash="" mod="20070723042723" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Caspuena Canyon]]></string>
+<string id="Territory_wesernlakesideborder" MD5Hash="" mod="20070723042414" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Western Lakeside Border]]></string>
+<string id="Territory_easternlakesideborder" MD5Hash="" mod="20070723042552" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Eastern Lakeside Border]]></string>
+<string id="Territory_dovepointborder" MD5Hash="" mod="20070723042652" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dovepoint Border]]></string>
+<string id="Territory_Caspuenacannyonborder" MD5Hash="" mod="20070723042718" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Caspuena Canyon Border]]></string>
+<string id="Territory_NewSeradilloforest" MD5Hash="" mod="20070723042448" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Seradillo Forest Border]]></string>
+<string id="Territory_Seradilloroadsborder" MD5Hash="" mod="20070723042048" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Seradillo Roads Border]]></string>
+<string id="Territory_dovepoint" MD5Hash="" mod="20070717135220" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dovepoint]]></string>
+<string id="Territory_lakeside" MD5Hash="" mod="20070827154826" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Lakeside]]></string>
+<string id="MissionTimerTooltipDescription" MD5Hash="" mod="20070830092245" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- time that the city of Montecito must survive]]></string>
+<string id="MissionTimerTooltipName" MD5Hash="" mod="20070830092129" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Time left]]></string>
+	<string id="PlayerName_RedPrince" MD5Hash="57F853D7257A6B69061FD9CAA0519EF4" mod="20070823115312" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Red Prince]]></string>
+</root>
