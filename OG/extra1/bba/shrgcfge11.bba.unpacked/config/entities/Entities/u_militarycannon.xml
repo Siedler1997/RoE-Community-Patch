@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+    <Display classname="ED::CEntityProps">
+        <Class>ED::CDisplaySettler</Class>
+        <Model>Vehicles\V_Cannon</Model>
+        <DrawPlayerColor>true</DrawPlayerColor>
+    </Display>
+
+    <Logic classname="EGL::CSettlerProps">
+        <Class>EGL::CBigSettler</Class>
+        <AccessCategory>AccessCategoryAttackableSettler</AccessCategory>
+        <PlayerSectorType>PlayerSectorTypeMilitary</PlayerSectorType>
+        <MilMetaFormationMemberType>MilMetaFormationMemberTypeCart</MilMetaFormationMemberType>
+        <MaxHealth>150</MaxHealth>
+        <HealingSeconds/>
+        <HealingPoints>0</HealingPoints>
+
+        <NeedsPlayer>true</NeedsPlayer>
+        <ForceNoPlayer>false</ForceNoPlayer>
+        <EntityCategories>
+            <EntityCategory>Military</EntityCategory>
+            <EntityCategory>HeavyWeapon</EntityCategory>
+        </EntityCategories>
+        <AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
+        <Exploration>0</Exploration>
+        <IdleTaskList>TL_MILITARY_DEFEND</IdleTaskList>
+        <CanDrown>true</CanDrown>
+        <IsSelectable>true</IsSelectable>
+
+        <BlockSize>1</BlockSize>
+
+        <Familiar>
+            <With>SheepPasture</With>
+            <With>CattlePasture</With>
+        </Familiar>
+        <AttackPoints>
+            <AttackPoint>
+                <X>-300</X> <Y>0</Y>
+            </AttackPoint>
+            <AttackPoint>
+                <X>+300</X> <Y>0</Y>
+            </AttackPoint>
+            <AttackPoint>
+                <X>0</X> <Y>-300</Y>
+            </AttackPoint>
+            <AttackPoint>
+                <X>0</X> <Y>+300</Y>
+            </AttackPoint>
+        </AttackPoints>
+        <SoundImpactType>Wood</SoundImpactType>
+        <SoundProjectileType>Stone</SoundProjectileType>
+
+        <OnScreenIcon>MinimapCatapult</OnScreenIcon>
+		<ShowInMiniMap>0.75</ShowInMiniMap>
+    </Logic>
+
+    <Behaviors>
+        <Behavior>
+            <Logic classname="EGL::CMilitaryMovementBehaviorProps">
+                <Class>EGL::CMilitaryBigUnitMovementBehavior</Class>
+                <StraightenPath>true</StraightenPath>
+                <EvasionPriority>140</EvasionPriority>
+                <Speed>300</Speed>
+                <SmoothingRadius>1000</SmoothingRadius>
+                <RotationSpeed>200</RotationSpeed>
+                <MoveTaskList>TL_MILITARY_WALK</MoveTaskList>
+                <MoveIdleAnim>V_Cannon_Idle</MoveIdleAnim>
+            </Logic>
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CDisplayBehaviorMovement</Class>
+            </Display>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CAnimationBehaviorExProps">
+                <Class>EGL::CBehaviorAnimationEx</Class>
+                <AnimSet>SET_MILITARYCANNON</AnimSet>
+            </Logic>
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CDisplayBehaviorAnimation</Class>
+            </Display>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::CParticleEffectAttachmentBehavior</Class>
+            </Logic>
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CParticleEffectAttachmentBehavior</Class>
+            </Display>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CAttachableWarMachineBehaviorProps">
+                <Class>EGL::CAttachableWarMachineBehavior</Class>
+                <GuardFormationID>GuardingMechant</GuardFormationID>
+				<GuardApproachPos>
+					<X>-200</X>
+					<Y>0</Y>
+				</GuardApproachPos>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CCapturableBehaviorProps">
+                <Class>EGL::CCapturableBehavior</Class>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CFightBehaviorProps">
+                <Class>EGL::CFightBehavior</Class>
+                <DefendTL>TL_MILITARY_DEFEND</DefendTL>
+                <MoveTaskList>TL_KNIGHT_WALK</MoveTaskList>
+                <DefendRange>2700</DefendRange>
+                <AttackMoveRange>2700</AttackMoveRange>
+                <OperatingSoldierCount>1</OperatingSoldierCount>
+                <IdleWhileDefended>false</IdleWhileDefended>
+
+                <AmmunitionType>G_CatapultAmmunition</AmmunitionType>
+                <AmmunitionLimit>10</AmmunitionLimit>
+
+                <CartEntityType>U_CannonCart</CartEntityType>
+                <ConstructionDelay>5000</ConstructionDelay>
+
+                <TargetCategoryList>
+
+                    <!-- Walls -->
+                    <TargetCategory>
+                        <DisableAutoAttack>true</DisableAutoAttack>
+                        <IgnoreGuards>true</IgnoreGuards>
+                        <EntityCategoryList>
+                            <EntityCategory>CityWallGate</EntityCategory>
+                            <EntityCategory>CityWallSegment</EntityCategory>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                        </EntityCategoryList>
+                        <AttackModeList>
+                            <AttackMode>
+                                <BattleTL>TL_BATTLE_CANNON</BattleTL>
+                                <!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
+                                <ApplyDamageModifiers>false</ApplyDamageModifiers>
+
+                                <AttackAnim>V_Cannon_Shoot</AttackAnim>
+                                <MinRange>1000</MinRange>
+                                <MaxRange>3000</MaxRange>
+                                <ProjectileEffect>E_Cannon_Fire_Wall</ProjectileEffect>
+                                <MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
+                                <CanAttackOverWalls>true</CanAttackOverWalls>
+                                <CooldownThousandths>7500</CooldownThousandths>
+                                <ConsumeAmmunition>true</ConsumeAmmunition>
+                                <Damage>
+                                    <DiceCount>0</DiceCount>
+                                    <FaceCount>0</FaceCount>
+                                    <BaseValue>80</BaseValue>
+                                </Damage>
+                                <BuildingFireSize>20</BuildingFireSize>
+                                <DamageRadiusList>
+                                    <!-- Must be sorted from inner to outer. -->
+                                    <DamageRadius> <Radius>250</Radius> <Percentage>100</Percentage> </DamageRadius>
+                                    <DamageRadius> <Radius>500</Radius> <Percentage> 50</Percentage> </DamageRadius>
+                                    <DamageRadius> <Radius>750</Radius> <Percentage> 25</Percentage> </DamageRadius>
+                                </DamageRadiusList>
+                            </AttackMode>
+                        </AttackModeList>
+                    </TargetCategory>
+
+                    <!-- Palisades -->
+                    <TargetCategory>
+                        <DisableAutoAttack>true</DisableAutoAttack>
+                        <IgnoreGuards>true</IgnoreGuards>
+                        <EntityCategoryList>
+                            <EntityCategory>PalisadeSegment</EntityCategory>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                            <EntityCategory/>
+                        </EntityCategoryList>
+                        <AttackModeList>
+                            <AttackMode>
+                                <BattleTL>TL_BATTLE_CANNON</BattleTL>
+                                <!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
+                                <ApplyDamageModifiers>false</ApplyDamageModifiers>
+
+                                <AttackAnim>V_Cannon_Shoot</AttackAnim>
+                                <MinRange>1000</MinRange>
+                                <MaxRange>3000</MaxRange>
+                                <ProjectileEffect>E_Cannon_Fire_Palisade</ProjectileEffect>
+                                <MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
+                                <CanAttackOverWalls>true</CanAttackOverWalls>
+                                <CooldownThousandths>7500</CooldownThousandths>
+                                <ConsumeAmmunition>true</ConsumeAmmunition>
+                                <Damage>
+                                    <DiceCount>0</DiceCount>
+                                    <FaceCount>0</FaceCount>
+                                    <BaseValue>80</BaseValue>
+                                </Damage>
+                                <BuildingFireSize>20</BuildingFireSize>
+                                <DamageRadiusList>
+                                    <!-- Must be sorted from inner to outer. -->
+                                    <DamageRadius> <Radius>250</Radius> <Percentage>100</Percentage> </DamageRadius>
+                                    <DamageRadius> <Radius>500</Radius> <Percentage> 50</Percentage> </DamageRadius>
+                                    <DamageRadius> <Radius>750</Radius> <Percentage> 25</Percentage> </DamageRadius>
+                                </DamageRadiusList>
+                            </AttackMode>
+                        </AttackModeList>
+                    </TargetCategory>
+
+					<!-- Dragon -->
+					<TargetCategory>
+						<EntityCategoryList>
+							<EntityCategory>Dragon</EntityCategory>
+							<EntityCategory/>
+							<EntityCategory/>
+							<EntityCategory/>
+							<EntityCategory/>
+							<EntityCategory/>
+						</EntityCategoryList>
+
+						<AttackModeList>
+							<AttackMode>
+								<BattleTL>TL_BATTLE_CANNON</BattleTL>
+								<!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
+								<ApplyDamageModifiers>false</ApplyDamageModifiers>
+
+								<AttackAnim>V_Cannon_Shoot</AttackAnim>
+								<MinRange>1000</MinRange>
+								<MaxRange>3000</MaxRange>
+								<ProjectileEffect>E_Cannon_Fire_Fly</ProjectileEffect>
+								<MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
+								<CanAttackOverWalls>true</CanAttackOverWalls>
+								<CooldownThousandths>75000</CooldownThousandths>
+								<ConsumeAmmunition>true</ConsumeAmmunition>
+								<Damage>
+									<DiceCount>0</DiceCount>
+									<FaceCount>0</FaceCount>
+									<BaseValue>150</BaseValue>
+								</Damage>
+							</AttackMode>
+						</AttackModeList>
+					</TargetCategory>
+
+                    <!-- And the rest ... -->
+                    <TargetCategory>
+                        <DisableAutoAttack>true</DisableAutoAttack>
+                        <IgnoreGuards>true</IgnoreGuards>
+                        <EntityCategoryList>
+                            <EntityCategory>AttackableBuilding</EntityCategory>
+                            <EntityCategory>HeavyWeapon</EntityCategory>
+                            <EntityCategory>Trebuchet</EntityCategory>
+							<EntityCategory>Military</EntityCategory>
+							<EntityCategory>Leader</EntityCategory>
+                            <EntityCategory/>
+                        </EntityCategoryList>
+                        <AttackModeList>
+                            <AttackMode>
+                                <BattleTL>TL_BATTLE_CANNON</BattleTL>
+                                <!-- if ApplyDamageModifiers is false, the damage isn't modified by City Reputation and TerritoryBonus -->
+                                <ApplyDamageModifiers>false</ApplyDamageModifiers>
+
+                                <AttackAnim>V_Cannon_Shoot</AttackAnim>
+                                <MinRange>1000</MinRange>
+                                <MaxRange>3000</MaxRange>
+                                <ProjectileEffect>E_Cannon_Fire</ProjectileEffect>
+                                <MaxHeightDeltaToTarget>2000</MaxHeightDeltaToTarget>
+                                <CanAttackOverWalls>true</CanAttackOverWalls>
+                                <CooldownThousandths>7500</CooldownThousandths>
+                                <ConsumeAmmunition>true</ConsumeAmmunition>
+                                <Damage>
+                                    <DiceCount>0</DiceCount>
+                                    <FaceCount>0</FaceCount>
+                                    <BaseValue>80</BaseValue>
+                                </Damage>
+                                <BuildingFireSize>20</BuildingFireSize>
+                                <DamageRadiusList>
+                                    <!-- Must be sorted from inner to outer. -->
+                                    <DamageRadius> <Radius>250</Radius> <Percentage>100</Percentage> </DamageRadius>
+                                    <DamageRadius> <Radius>500</Radius> <Percentage> 50</Percentage> </DamageRadius>
+                                    <DamageRadius> <Radius>750</Radius> <Percentage> 25</Percentage> </DamageRadius>
+                                </DamageRadiusList>
+                            </AttackMode>
+                        </AttackModeList>
+                    </TargetCategory>
+                </TargetCategoryList>
+            </Logic>
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CSiegeCartBehavior</Class>
+            </Display>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorPropsDying">
+                <Class>EGL::CBehaviorDying</Class>
+                <DyingTaskList>TL_DIE_CANNON</DyingTaskList>
+                <DeadEntity>U_MilitaryCannon_Collapse</DeadEntity>
+            </Logic>
+        </Behavior>
+    </Behaviors>
+
+    <MapEditor>
+        <TreePosition>Units\Military\Heavy Weapons</TreePosition>
+        <ShowInTree>false</ShowInTree>
+        <Clime>Generic</Clime>
+        <Scalable>false</Scalable>
+    </MapEditor>
+</root>

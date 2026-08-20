@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+
+    <Display classname="ED::CEntityProps">
+        <Class>ED::CDisplaySettler</Class>
+        <Model>Units\Misc_Unit\U_Thief</Model>
+        <DrawPlayerColor>True</DrawPlayerColor>
+    </Display>
+
+    <Logic classname="EGL::CThiefProps">
+        <Class>EGL::CThief</Class>
+        <AccessCategory>AccessCategoryAttackableSettler</AccessCategory>
+        <PlayerSectorType>PlayerSectorTypeThief</PlayerSectorType>
+        <MaxHealth>60</MaxHealth>
+        <HealingSeconds>10</HealingSeconds>
+        <HealingPoints>15</HealingPoints>
+
+        <NeedsPlayer>true</NeedsPlayer>
+        <ForceNoPlayer>false</ForceNoPlayer>
+        <AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
+        <Exploration>30</Exploration>
+        <IdleTaskList>TL_THIEF_IDLE</IdleTaskList>
+        <DoesntAlert>
+            <EntityType>BeeHive</EntityType>
+        </DoesntAlert>
+        <Familiar>
+            <With>SheepPasture</With>
+            <With>CattlePasture</With>
+        </Familiar>
+
+        <EntityCategories>
+            <EntityCategory>Military</EntityCategory>
+            <EntityCategory>Thief</EntityCategory>
+        </EntityCategories>
+
+        <IsSelectable>true</IsSelectable>
+
+        <Cost>
+            <GoodAmount>
+                <GoodType>G_Gold</GoodType>
+                <Amount>120</Amount>
+            </GoodAmount>
+        </Cost>
+
+        <HiddenModel>Units\Thin\U_Grainfarmer</HiddenModel>
+        <DetectedModel>Units\Misc_Unit\U_Thief</DetectedModel>
+        <SoundImpactType>Leather</SoundImpactType>
+
+		<ShowInMiniMap>0.75</ShowInMiniMap>
+    </Logic>
+
+    <Behaviors>
+
+        <!-- ANIMATION -->
+        <Behavior>
+            <Logic classname="EGL::CAnimationBehaviorExProps">
+                <Class>EGL::CBehaviorAnimationEx</Class>
+
+                <DefaultAnimation>Thin\U_Thin_Normal_Stand</DefaultAnimation>
+                <AnimSet>SET_THIN_WORKER</AnimSet>
+            </Logic>
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CDisplayBehaviorAnimation</Class>
+            </Display>
+        </Behavior>
+
+        <!-- MOVEMENT -->
+        <Behavior>
+            <Logic classname="EGL::CMilitaryMovementBehaviorProps">
+                <Class>EGL::CMilitaryMovementBehavior</Class>
+                <Speed>450</Speed>
+                <RotationSpeed>300</RotationSpeed>
+                <!--<MoveTaskList>TL_MILITARY_WALK</MoveTaskList>
+                <MoveIdleAnim>Thin\U_Thin_Normal_Stand</MoveIdleAnim>-->
+            </Logic>
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CDisplayBehaviorMovement</Class>
+            </Display>
+        </Behavior>
+
+        <!-- THIEF -->
+        <Behavior>
+            <Logic classname="EGL::CThiefBehaviorProps">
+                <Class>EGL::CThiefBehavior</Class>
+                <DefendTL>TL_MILITARY_DEFEND</DefendTL>
+                <MoveTaskList>TL_MILITARY_WALK</MoveTaskList>
+
+                <DefendRange>0</DefendRange>
+                <AttackMoveRange>0</AttackMoveRange>
+
+                <MaxGoldAmount>400</MaxGoldAmount>
+                <DetectionRange>2000</DetectionRange>
+
+                <DetectionCategoryList>
+                    <EntityCategory>Leader</EntityCategory>
+                    <EntityCategory>Hero</EntityCategory>
+                </DetectionCategoryList>
+
+                <TargetCategoryList/>
+            </Logic>
+        </Behavior>
+
+        <!-- DYING -->
+        <Behavior>
+            <Logic classname="EGL::CBehaviorPropsDying">
+                <Class>EGL::CBehaviorDying</Class>
+                <DyingTaskList>TL_DIE</DyingTaskList>
+            </Logic>
+        </Behavior>
+
+        <!-- PARTICULES -->
+        <Behavior>
+            <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::CParticleEffectAttachmentBehavior</Class>
+            </Logic>
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CParticleEffectAttachmentBehavior</Class>
+            </Display>
+        </Behavior>
+
+    </Behaviors>
+
+</root>
