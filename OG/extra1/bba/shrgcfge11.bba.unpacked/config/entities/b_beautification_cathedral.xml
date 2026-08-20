@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+    <Display classname="ED::CReplaceUpgradeBuildingProps">
+
+        <Class>ED::CReplaceUpgradeBuilding</Class>
+		<Decal>Buildings\B_Castle_ME_Decal</Decal>
+
+        <Model>Buildings\B_Cathedral_Big00</Model>
+
+        <Upgrade_1>Buildings\B_Cathedral_Big01</Upgrade_1>
+        <UpgradeSite_1>Buildings\B_Cathedral_Big01_Buildingsite</UpgradeSite_1>
+        <LightModel_1>Buildings\B_Cathedral_Big01_Light</LightModel_1>
+
+        <Upgrade_2>Buildings\B_Cathedral_Big02</Upgrade_2>
+        <UpgradeSite_2>Buildings\B_Cathedral_Big02_Buildingsite</UpgradeSite_2>
+        <LightModel_2>Buildings\B_Cathedral_Big02_Light</LightModel_2>
+
+        <Upgrade_3>Buildings\B_Cathedral_Big03</Upgrade_3>
+        <UpgradeSite_3>Buildings\B_Cathedral_Big03_Buildingsite</UpgradeSite_3>
+        <LightModel_3>Buildings\B_Cathedral_Big03_Light</LightModel_3>
+
+        <Upgrade_4>Buildings\B_Cathedral_Big04</Upgrade_4>
+        <UpgradeSite_4>Buildings\B_Cathedral_Big04_Buildingsite</UpgradeSite_4>
+        <LightModel_4>Buildings\B_Cathedral_Big04_Light</LightModel_4>
+        <SnowFactor>0.5</SnowFactor>
+
+
+        <BannersPerUpgrade>
+            <Banner classname="ED::CBannerProps">
+                <Model/>
+                <AnimationNoWind/>
+                <AnimationNormalWind/>
+                <AnimationStrongWind/>
+            </Banner>
+
+            <Banner classname="ED::CBannerProps">
+                <Model/>
+                <AnimationNoWind/>
+                <AnimationNormalWind/>
+                <AnimationStrongWind/>
+            </Banner>
+
+            <Banner classname="ED::CBannerProps">
+                <Model/>
+                <AnimationNoWind/>
+                <AnimationNormalWind/>
+                <AnimationStrongWind/>
+            </Banner>
+
+            <Banner classname="ED::CBannerProps">
+                <Model/>
+                <AnimationNoWind/>
+                <AnimationNormalWind/>
+                <AnimationStrongWind/>
+            </Banner>
+
+            <Banner classname="ED::CBannerProps">
+                <Model/>
+                <AnimationNoWind/>
+                <AnimationNormalWind/>
+                <AnimationStrongWind/>
+            </Banner>
+        </BannersPerUpgrade>
+
+        <FireNodeCount>35</FireNodeCount>
+        <ShowDestroyedModelAt>0.25</ShowDestroyedModelAt>
+
+    </Display>
+
+    <Logic classname="EGL::CCathedralProps">
+        <Class>EGL::CCathedral</Class>
+
+<!-- NEED related tags -->
+        <InitialNutritionState>0.61</InitialNutritionState>
+        <AttentionThresholdNutrition>0.21</AttentionThresholdNutrition>
+        <CriticalThresholdNutrition>0</CriticalThresholdNutrition>
+
+        <InitialHygieneState>0.61</InitialHygieneState>
+        <AttentionThresholdHygiene>0.21</AttentionThresholdHygiene>
+        <CriticalThresholdHygiene>0</CriticalThresholdHygiene>
+
+        <InitialEntertainmentState>0.61</InitialEntertainmentState>
+        <AttentionThresholdEntertainment>0.21</AttentionThresholdEntertainment>
+        <CriticalThresholdEntertainment>-1</CriticalThresholdEntertainment>
+
+        <InitialWealthState>0</InitialWealthState>
+        <AttentionThresholdWealth>1</AttentionThresholdWealth>
+        <CriticalThresholdWealth>-1</CriticalThresholdWealth>
+
+        <Cost>
+			<GoodAmount>
+				<GoodType>G_Wood</GoodType>
+				<Amount>50</Amount>
+			</GoodAmount>
+			<GoodAmount>
+				<GoodType>G_Gold</GoodType>
+				<Amount>500</Amount>
+			</GoodAmount>
+        </Cost>
+
+       <UpgradeCosts>
+            <UpgradeCost>
+                <GoodAmount>
+                    <GoodType>G_Wood</GoodType>
+                    <Amount>100</Amount>
+                </GoodAmount>
+                <GoodAmount>
+                    <GoodType>G_Gold</GoodType>
+                    <Amount>1000</Amount>
+                </GoodAmount>
+            </UpgradeCost>
+
+           <UpgradeCost>
+                <GoodAmount>
+                    <GoodType>G_Stone</GoodType>
+                    <Amount>100</Amount>
+                </GoodAmount>
+                <GoodAmount>
+                    <GoodType>G_Gold</GoodType>
+                    <Amount>1500</Amount>
+                </GoodAmount>
+            </UpgradeCost>
+
+            <UpgradeCost>
+                <GoodAmount>
+                    <GoodType>G_Stone</GoodType>
+                    <Amount>150</Amount>
+                </GoodAmount>
+                <GoodAmount>
+                    <GoodType>G_Gold</GoodType>
+                    <Amount>2000</Amount>
+                </GoodAmount>
+            </UpgradeCost>
+
+            <UpgradeCost>
+                <GoodAmount>
+                    <GoodType>G_Iron</GoodType>
+                    <Amount>150</Amount>
+                </GoodAmount>
+                <GoodAmount>
+                    <GoodType>G_Gold</GoodType>
+                    <Amount>2500</Amount>
+                </GoodAmount>
+            </UpgradeCost>
+        </UpgradeCosts>
+        <MaxNumberOfUpgrades>4</MaxNumberOfUpgrades>
+        <SecondsToUpgrade>60</SecondsToUpgrade>
+
+        <SecondsToUpgradeByLevel>
+            <Seconds>60</Seconds>
+	        <Seconds>120</Seconds>
+	        <Seconds>180</Seconds>
+            <Seconds>240</Seconds>
+	    </SecondsToUpgradeByLevel>
+
+		<MaxSettlersForUpgradeByLevel>
+			<MaxSettlers>5</MaxSettlers>
+			<MaxSettlers>10</MaxSettlers>
+			<MaxSettlers>20</MaxSettlers>
+			<MaxSettlers>30</MaxSettlers>
+		</MaxSettlersForUpgradeByLevel>
+		
+        <MaxHealth>10000</MaxHealth>
+
+        <MinFloorFireSize>0</MinFloorFireSize>
+        <MaxFloorFireSize>30</MaxFloorFireSize>
+
+        <CanBeBuildOnOuterRim>false</CanBeBuildOnOuterRim>
+        <CanLeaveImmediately>true</CanLeaveImmediately>
+        <FlattenOnBuild>true</FlattenOnBuild>
+	    <IsHeightLocking>true</IsHeightLocking>
+	    <MayRemoveEntities>true</MayRemoveEntities>
+        <AccessCategory>AccessCategoryBuilding</AccessCategory>
+        <NeedsPlayer>true</NeedsPlayer>
+        <ForceNoPlayer>false</ForceNoPlayer>
+        <CanBeKnockedDown>false</CanBeKnockedDown>
+
+        <AlarmRepairBuildingTL>TL_WORKER_REPAIR_ALARM</AlarmRepairBuildingTL>
+        <AlarmRepairMaterial>G_Stone</AlarmRepairMaterial>
+        <AlarmRepairProvider>G_Stone_Supplier</AlarmRepairProvider>
+
+		<SermonSettlerLimits>
+			<SermonSettlerLimit>10</SermonSettlerLimit>
+			<SermonSettlerLimit>15</SermonSettlerLimit>
+			<SermonSettlerLimit>30</SermonSettlerLimit>
+			<SermonSettlerLimit>60</SermonSettlerLimit>
+		</SermonSettlerLimits>
+		
+		<MaxHitpoints>
+			<MaxHitpoint>5000</MaxHitpoint>
+			<MaxHitpoint>6000</MaxHitpoint>
+			<MaxHitpoint>7000</MaxHitpoint>
+			<MaxHitpoint>8000</MaxHitpoint>
+			<MaxHitpoint>10000</MaxHitpoint>
+		</MaxHitpoints>
+
+		<PrestigePointsForUpgrade>
+			<PrestigePoints>100</PrestigePoints>
+			<PrestigePoints>200</PrestigePoints>
+			<PrestigePoints>300</PrestigePoints>
+			<PrestigePoints>1000</PrestigePoints>
+		</PrestigePointsForUpgrade>
+
+        <Worker>U_WallConstructionWorker</Worker>
+        <MaxWorkers>0</MaxWorkers>
+
+		<FireDuringSermonTL>TL_CATHEDRAL_ON_FIRE_DURING_SERMON</FireDuringSermonTL>
+        <RepairBuildingTL>TL_WORKER_REPAIR</RepairBuildingTL>
+
+        <Loot><Type>InfoCathedral</Type></Loot>
+
+		<OutStockCapacities>
+			<OutStockCapacity>10</OutStockCapacity>
+		</OutStockCapacities>
+
+        <Exploration>0</Exploration>
+
+        <EntityCategories>
+            <EntityCategory>AttackableBuilding</EntityCategory>
+            <EntityCategory>SpecialBuilding</EntityCategory>
+        </EntityCategories>
+
+        <ApproachPos>
+            <X>0</X>
+            <Y>-1500</Y>
+        </ApproachPos>
+        <ApproachR>0</ApproachR>
+        <DoorPos>
+            <X>0</X>
+            <Y>-700</Y>
+        </DoorPos>
+
+        <IdlePos>
+            <X>400</X>
+            <Y>-1500</Y>
+        </IdlePos>
+
+        <BlockingAreas>
+            <BlockingArea>
+                <Blocked1>
+                    <X>-1200</X>
+                    <Y>1400</Y>
+                </Blocked1>
+                <Blocked2>
+                    <X>1200</X>
+                    <Y>-1400</Y>
+                </Blocked2>
+            </BlockingArea>
+        </BlockingAreas>
+
+        <BuildBlockingAreas>
+            <BuildBlockingArea>
+                <Blocked1>
+                    <X>-1200</X>
+                    <Y>1400</Y>
+                </Blocked1>
+                <Blocked2>
+                    <X>1200</X>
+                    <Y>-1550</Y>
+                </Blocked2>
+            </BuildBlockingArea>
+        </BuildBlockingAreas>
+
+        <ConstructionInfo>
+            <Time>60</Time>
+            <BuilderSlots>
+                <BuilderSlot>
+                    <Position>
+                        <X>-500</X>
+                        <Y>-750</Y>
+                    </Position>
+                    <Orientation>0</Orientation>
+                </BuilderSlot>
+            </BuilderSlots>
+            <ConstructionSite>B_BuildingPlot_12x12</ConstructionSite>
+        </ConstructionInfo>
+        
+        <SoundImpactType>Stone</SoundImpactType>
+
+		<OnScreenIcon>MinimapBeautificationCathedral</OnScreenIcon>
+		<ShowInMiniMap>0.75</ShowInMiniMap>
+    </Logic>
+
+    <Behaviors>
+        <Behavior>
+            <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::CBehaviorMultiSubAnims</Class>
+            </Logic>
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CDisplayBehaviorBuildingAnimation</Class>
+            </Display>
+        </Behavior>
+    </Behaviors>
+
+   <MapEditor>
+        <TreePosition>Buildings\Beautyfication</TreePosition>
+        <ShowInTree>true</ShowInTree>
+        <Clime>Generic</Clime>
+        <Scalable>false</Scalable>
+        <TemplateResistant>true</TemplateResistant>
+    </MapEditor>
+</root>

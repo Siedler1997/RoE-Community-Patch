@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<SoundID>Misc\animal_tiger_attack</SoundID>
+	<SoundID>Misc\animal_tiger_die</SoundID>
+	<SoundID>Misc\animal_tiger_idle</SoundID>
+	<SoundID>Misc\building_trap_fill</SoundID>
+	<SoundID>Misc\building_trap</SoundID>
+	<SoundID>Misc\settler_geologist_iron</SoundID>
+	<SoundID>Misc\settler_geologist_stone</SoundID>
+	<SoundID>Misc\settler_yipieh</SoundID>
+	<SoundID>Misc\earthquake</SoundID>
+	
+	<SoundID>Impact\impact_dragon</SoundID>
+	<SoundID>Buildings\arm_cannon_shoot</SoundID>
+</root>
