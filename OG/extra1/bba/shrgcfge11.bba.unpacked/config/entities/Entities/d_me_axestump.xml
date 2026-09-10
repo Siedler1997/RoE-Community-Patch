@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<Display classname="ED::CEntityProps">
+		<Class>ED::CDisplayStaticEntity</Class>
+		<Model>Doodads\D_ME_AxeStump</Model>
+	</Display>
+	<Logic classname="EGL::CEntityProps">
+		<Class>EGL::CEntity</Class>
+  		<AccessCategory>AccessCategoryStatic</AccessCategory> 
+		<DoNotExecute>True</DoNotExecute>
+		<CanDrown>false</CanDrown>
+	</Logic>
+	<MapEditor>
+		<TreePosition>Doodads\Campsites</TreePosition>
+		<ShowInTree>true</ShowInTree>
+		<Clime>Generic</Clime>
+		<Scalable>false</Scalable>
+	</MapEditor>
+</root>

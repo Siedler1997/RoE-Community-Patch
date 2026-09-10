@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+    <Display classname="ED::CDisplaySettlerWithSlaveProps">
+        <Class>ED::CDisplaySettlerWithSlave</Class>
+            <Model>Units\Fat\U_Barracks_ArchersWorker</Model>
+            <SlaveAlwaysVisible>false</SlaveAlwaysVisible>
+	    <LodDistance>3000</LodDistance>
+	</Display>
+
+	<Logic classname="EGL::CSettlerProps">
+        <Class>EGL::CSettler</Class>
+        <AccessCategory>AccessCategorySettler</AccessCategory>
+        <PlayerSectorType>PlayerSectorTypeCivil</PlayerSectorType>
+        <MaxHealth>60</MaxHealth>
+        <NeedsPlayer>true</NeedsPlayer>
+        <ForceNoPlayer>false</ForceNoPlayer>
+        <EntityCategories>
+            <EntityCategory>Worker</EntityCategory>
+        </EntityCategories>
+        <AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
+        <Exploration>0</Exploration>
+        <IdleTaskList/>
+        <Familiar>
+            <With>SheepPasture</With>
+            <With>CattlePasture</With>
+        </Familiar>
+	</Logic>
+
+    <Behaviors>
+        <Behavior>
+            <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::CWaitForStorageCapacityBehavior</Class>
+            </Logic>
+        </Behavior>
+        <Behavior>
+            <Logic classname="EGL::CAnimationBehaviorExProps">
+                <Class>EGL::CBehaviorAnimationEx</Class>
+
+                    <AnimSet>SET_FAT_WORKER</AnimSet>
+                <ExtraAnimSets>
+                    <ExtraAnimSet>
+                        <Model>Units\Fat\U_Barracks_ArchersWorker_Handcart_Master</Model>
+                        <AnimSet>SET_FAT_WORKER_HANDCART</AnimSet>
+                    </ExtraAnimSet>
+                </ExtraAnimSets>
+            </Logic>
+
+           <Display classname="ED::CAnimationBehaviorSlaveProps">
+                <Class>ED::CAnimationBehaviorSlave</Class>
+                <SlaveAnimation>
+                    <Mapping>
+                        <Master>Fat\U_Fat_HandCart_Stand</Master>
+                        <Slave>Misc_Unit\U_HandCart_Stand</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>Fat\U_Fat_HandCart_Walk</Master>
+                        <Slave>Misc_Unit\U_HandCart_Walk</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>Fat\U_Fat_HandCart_Walk2</Master>
+                        <Slave>Misc_Unit\U_HandCart_Walk</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>Fat\U_Fat_HandCart_Walk3</Master>
+                        <Slave>Misc_Unit\U_HandCart_Walk</Slave>
+                    </Mapping>
+                    <Mapping>
+                        <Master>Fat\U_Fat_HandCart_Walk4</Master>
+                        <Slave>Misc_Unit\U_HandCart_Walk</Slave>
+                    </Mapping>
+                </SlaveAnimation>
+            </Display>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorDefaultMovementProps">
+                <Class>EGL::CSettlerMovement</Class>
+
+<!-- SensorRadius: Radius around the unit for checking if evaison is needed (default 250)
+        SensorShift: Offset to move sensor radius in movement direction. 1.0 moves the radius completely in front of the settler (default 0.3)
+        AvoidFactor: Strength of evasion (default 3.0)
+ -->
+                <SensorRadius>200</SensorRadius>
+                <SensorShift>0.8</SensorShift>
+                <AvoidFactor>1.5</AvoidFactor>
+       	        <EvasionPriority>100</EvasionPriority>
+
+                    <Speed>270</Speed>
+                <SpeedFactorRoad>1.4</SpeedFactorRoad>
+                    <RotationSpeed>30</RotationSpeed>
+                    <MoveTaskList/>
+                    <MoveIdleAnim/>
+            </Logic>
+
+            <Display classname="ED::CMovementBehaviorSlaveCartProps">
+                <Class>ED::CMovementBehaviorSlaveCart</Class>
+                <MovementToRotationSets>
+                    <Set>
+                        <MasterModel>Units\Fat\U_Barracks_ArchersWorker_HandCart_Master</MasterModel>
+                        <AngleLock>70</AngleLock>
+                        <LowRotationAngle>10</LowRotationAngle>
+                        <MovementToRotationFactor>0.5</MovementToRotationFactor>
+                        <MovementToLowRotationFactor>0.3</MovementToLowRotationFactor>
+                    </Set>
+                </MovementToRotationSets>
+            </Display>
+    	</Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::CBehaviorWalkCommand</Class>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CProcessorBehaviorProps">
+                <Class>EGL::CProcessorBehavior</Class>
+                <WorkBuilding>B_BarracksSpearmen</WorkBuilding>
+                <FrameworkTaskList>TL_PROCESSOR_FRAMEWORK</FrameworkTaskList>
+                <FetchGoodTL>TL_PROCESSOR_FETCH_RESOURCE</FetchGoodTL>
+		        <FetchGoodFromKeepTL>TL_PROCESSOR_FETCH_RESOURCE_FROM_KEEP</FetchGoodFromKeepTL>
+		        <WorkWaitTime>1000</WorkWaitTime>
+                <DeliverResourcesToWorkplaceTL>TL_PROCESSOR_DELIVER_RESOURCE_TO_WORKPLACE</DeliverResourcesToWorkplaceTL>
+            </Logic>
+
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CCarryBehavior</Class>
+            </Display>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CWorkerVariableCartBehaviorProps">
+                <Class>EGL::CWorkerVariableCartBehavior</Class>
+                <CartsProps>
+                    <CartProps>
+
+<!-- no building -->
+                        <PrimaryModel>Units\Fat\U_Barracks_ArchersWorker_HandCart_Master</PrimaryModel>
+                        <UsesSlaveClump>true</UsesSlaveClump>
+                        <SlaveModel>Units\Misc_Unit\U_BuildingConstructionCart</SlaveModel>
+                        <Speed>260</Speed>
+                        <SpeedFactorRoad>1.7</SpeedFactorRoad>
+                        <EvasionPriority>120</EvasionPriority>
+                    </CartProps>
+                 </CartsProps>
+            </Logic>
+        </Behavior>
+
+           <Behavior>
+            <Logic classname="EGL::CWorkerNeedsBehaviorProps">
+                <Class>EGL::CWorkerNeedsBehavior</Class>
+                </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CSettlerNeedBehaviorProps">
+                <Class>EGL::CSettlerNeedNutrition</Class>
+                <InitialValue>0.8</InitialValue>
+                <DisappointmentAnimation>Fat\U_Fat_Normal_Disappointed</DisappointmentAnimation>
+                <NeedTaskList>TL_WORKER_NUTRITION</NeedTaskList>
+                <AttentionGoodCategory>GC_Food</AttentionGoodCategory>
+                <CriticalGoodCategory>GC_Food</CriticalGoodCategory>
+                <AttentionProviderCategory>GC_Food_Supplier</AttentionProviderCategory>
+                <CriticalProviderCategory>GC_Food_Supplier</CriticalProviderCategory>
+                <AttentionFulfillingMilliSeconds>1000</AttentionFulfillingMilliSeconds>
+                <CriticalFulfillingMilliSeconds>1000</CriticalFulfillingMilliSeconds>
+                <MaxTimesDisappointed>2</MaxTimesDisappointed>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CSettlerNeedBehaviorProps">
+                <Class>EGL::CSettlerNeedClothing</Class>
+                <InitialValue>0.8</InitialValue>
+                <DisappointmentAnimation>Fat\U_Fat_Normal_Disappointed</DisappointmentAnimation>
+                <NeedTaskList>TL_WORKER_CLOTHING</NeedTaskList>
+                <AttentionGoodCategory>GC_Clothes</AttentionGoodCategory>
+                <CriticalGoodCategory>GC_Clothes</CriticalGoodCategory>
+                <AttentionProviderCategory>GC_Clothes_Supplier</AttentionProviderCategory>
+                <CriticalProviderCategory>GC_Clothes_Supplier</CriticalProviderCategory>
+                <AttentionFulfillingMilliSeconds>1000</AttentionFulfillingMilliSeconds>
+                <CriticalFulfillingMilliSeconds>1000</CriticalFulfillingMilliSeconds>
+                <MaxTimesDisappointed>2</MaxTimesDisappointed>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CSettlerNeedBehaviorProps">
+                <Class>EGL::CSettlerNeedHygiene</Class>
+                <InitialValue>0.6</InitialValue>
+                <DisappointmentAnimation>Fat\U_Fat_Normal_Disappointed</DisappointmentAnimation>
+                <NeedTaskList>TL_WORKER_HYGIENE</NeedTaskList>
+                <CriticalTaskList/>
+                <AttentionGoodCategory>GC_Hygiene</AttentionGoodCategory>
+                <AttentionFallbackGoodCategory/>
+                <CriticalGoodCategory/>
+                <AttentionProviderCategory>GC_Hygiene_Supplier</AttentionProviderCategory>
+                <CriticalProviderCategory/>
+                <AttentionFulfillingMilliSeconds>1000</AttentionFulfillingMilliSeconds>
+                <CriticalFulfillingMilliSeconds>1000</CriticalFulfillingMilliSeconds>
+                <MaxTimesDisappointed>2</MaxTimesDisappointed>
+            </Logic>
+        </Behavior>
+
+         <Behavior>
+            <Logic classname="EGL::CSettlerNeedBehaviorProps">
+                <Class>EGL::CSettlerNeedMedicine</Class>
+                <InitialValue>0.6</InitialValue>
+                <DisappointmentAnimation>Fat\U_Fat_Normal_Disappointed</DisappointmentAnimation>
+                <NeedTaskList>TL_WORKER_MEDICINE</NeedTaskList>
+                <AttentionGoodCategory>GC_Medicine</AttentionGoodCategory>
+                <CriticalGoodCategory/>
+                <AttentionProviderCategory>GC_Medicine_Supplier</AttentionProviderCategory>
+                <CriticalProviderCategory/>
+                <AttentionFulfillingMilliSeconds>5000</AttentionFulfillingMilliSeconds>
+                <CriticalFulfillingMilliSeconds>5000</CriticalFulfillingMilliSeconds>
+                <MaxTimesDisappointed>2</MaxTimesDisappointed>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CSettlerNeedBehaviorProps">
+                <Class>EGL::CSettlerNeedEntertainment</Class>
+                <InitialValue>0.4</InitialValue>
+                <DisappointmentAnimation>Fat\U_Fat_Normal_Disappointed</DisappointmentAnimation>
+                <NeedTaskList>TL_WORKER_ENTERTAINMENT</NeedTaskList>
+                <AttentionGoodCategory>GC_Entertainment</AttentionGoodCategory>
+                <CriticalGoodCategory/>
+                <AttentionProviderCategory>GC_Entertainment_Supplier</AttentionProviderCategory>
+                <CriticalProviderCategory/>
+                <AttentionFulfillingMilliSeconds>6000</AttentionFulfillingMilliSeconds>
+                <CriticalFulfillingMilliSeconds>6000</CriticalFulfillingMilliSeconds>
+                <MaxTimesDisappointed>2</MaxTimesDisappointed>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::CTaskHistory</Class>
+            </Logic>
+        </Behavior>
+
+    	<Behavior>
+    		  <Logic classname="EGL::CBehaviorPropsDying">
+    			  <Class>EGL::CBehaviorDying</Class>
+    			  <DyingTaskList>TL_DIE</DyingTaskList>
+    		</Logic>
+    	</Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CWorkerFleeBehaviorProps">
+                <Class>EGL::CWorkerFleeBehavior</Class>
+                <FlightTaskList>TL_WORKER_FLEE</FlightTaskList>
+                <FlightSpeedModifierSeconds>5</FlightSpeedModifierSeconds>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::CTaskTimeLogger</Class>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::CParticleEffectAttachmentBehavior</Class>
+            </Logic>
+
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CParticleEffectAttachmentBehavior</Class>
+            </Display>
+        </Behavior>
+   </Behaviors>
+
+	<MapEditor>
+		  <TreePosition>Units\Workers</TreePosition>
+		  <ShowInTree>false</ShowInTree>
+		  <Clime>Generic</Clime>
+		  <Scalable>false</Scalable>
+	</MapEditor>
+
+</root>

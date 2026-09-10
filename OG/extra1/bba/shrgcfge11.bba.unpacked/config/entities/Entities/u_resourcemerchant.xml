@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+
+    <Display classname="ED::CDisplaySettlerWithSlaveProps">
+        <Class>ED::CDisplaySettlerWithSlave</Class>
+        <Model>Units\Misc_Unit\U_Donkey_Resource_Master</Model>
+        <Model2>Units\Misc_Unit\U_Trader_ME_Resource_Cart</Model2>
+        <Model3>Units\Misc_Unit\U_Trader_ME_Resource</Model3>
+        <SlaveAlwaysVisible>true</SlaveAlwaysVisible>
+
+        <!--DisableCarryResources>
+            <Model>Units\Strong\U_Woodcutter_Backpack</Model>
+        </DisableCarryResources-->
+    </Display>
+
+    <Logic classname="EGL::CSettlerProps">
+        <Class>EGL::CSettler</Class>
+        <AccessCategory>AccessCategoryAttackableSettler</AccessCategory>
+        <PlayerSectorType>PlayerSectorTypeThief</PlayerSectorType>
+        <MilMetaFormationMemberType>MilMetaFormationMemberTypeCart</MilMetaFormationMemberType>
+        <MaxHealth>60</MaxHealth>
+        <NeedsPlayer>true</NeedsPlayer>
+        <ForceNoPlayer>false</ForceNoPlayer>
+        <EntityCategories>
+            <!--EntityCategory>Worker</EntityCategory-->
+            <EntityCategory>AttackableMerchant</EntityCategory>
+        </EntityCategories>
+        <AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
+        <Exploration>4</Exploration>
+        <IdleTaskList/>
+
+        <OnScreenIcon>MinimapCart</OnScreenIcon>
+		<ShowInMiniMap>0.75</ShowInMiniMap>
+        <IsSelectable>true</IsSelectable>
+
+        <Familiar>
+            <With>SheepPasture</With>
+            <With>CattlePasture</With>
+        </Familiar>
+    </Logic>
+
+    <Behaviors>
+        <Behavior>
+            <Logic classname="EGL::CAnimationBehaviorExProps">
+                <Class>EGL::CBehaviorAnimationEx</Class>
+                <AnimSet>SET_MARKETER</AnimSet>
+                <!--ExtraAnimSets>
+                    <ExtraAnimSet>
+                        <Model>Units\Misc_Unit\U_Donkey_Master</Model>
+                        <AnimSet>SET_MARKETER</AnimSet>
+                    </ExtraAnimSet>
+                </ExtraAnimSets-->
+            </Logic>
+            <Display classname="ED::CAnimationBehaviorSlaveProps">
+                <Class>ED::CAnimationBehaviorSlave</Class>
+                <SlaveAnimation>
+                    <Mapping>
+                        <Master>Misc_Unit\U_Donkey_Stand</Master>
+                        <Slave>Misc_Unit\U_Trader_ME_Resource_Cart_Stand</Slave>
+                        <Slave2>Misc_Unit\U_Trader_ME_Resource_Stand</Slave2>
+                    </Mapping>
+                    <Mapping>
+                        <Master>Misc_Unit\U_Donkey_Walk</Master>
+                        <Slave>Misc_Unit\U_Trader_ME_Resource_Cart_Walk</Slave>
+                        <Slave2>Misc_Unit\U_Trader_ME_Resource_Walk</Slave2>
+                    </Mapping>
+                    <Mapping>
+                        <Master>Misc_Unit\U_Donkey_Walk2</Master>
+                        <Slave>Misc_Unit\U_Trader_ME_Resource_Cart_Walk</Slave>
+                        <Slave2>Misc_Unit\U_Trader_ME_Resource_Walk2</Slave2>
+                    </Mapping>
+                    <Mapping>
+                        <Master>Misc_Unit\U_Donkey_Walk3</Master>
+                        <Slave>Misc_Unit\U_Trader_ME_Resource_Cart_Walk</Slave>
+                        <Slave2>Misc_Unit\U_Trader_ME_Resource_Walk</Slave2>
+                    </Mapping>
+                    <Mapping>
+                        <Master>Misc_Unit\U_Donkey_Walk4</Master>
+                        <Slave>Misc_Unit\U_Trader_ME_Resource_Cart_Walk</Slave>
+                        <Slave2>Misc_Unit\U_Trader_ME_Resource_Walk2</Slave2>
+                    </Mapping>
+                </SlaveAnimation>
+            </Display>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorDefaultMovementProps">
+                <Class>EGL::CSettlerMovement</Class>
+                <Speed>400</Speed>
+                <SpeedFactorRoad>1.9</SpeedFactorRoad>
+                <RotationSpeed>30</RotationSpeed>
+                <MoveTaskList/>
+                <MoveIdleAnim/>
+                <StraightenPath>true</StraightenPath>
+            </Logic>
+
+            <Display classname="ED::CMovementBehaviorSlaveCartProps">
+                <Class>ED::CMovementBehaviorSlaveCart</Class>
+                <MovementToRotationSets>
+                    <Set>
+                        <MasterModel>Units\Misc_Unit\U_Donkey_Resource_Master</MasterModel>
+                        <AngleLock>60</AngleLock>
+                        <LowRotationAngle>10</LowRotationAngle>
+                        <MovementToRotationFactor>0.3</MovementToRotationFactor>
+                        <MovementToLowRotationFactor>0.2</MovementToLowRotationFactor>
+                    </Set>
+                </MovementToRotationSets>
+            </Display>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CResourceMerchantBehaviorProps">
+                <Class>EGL::CResourceMerchantBehavior</Class>
+                <TaskList>TL_RESOURCE_MERCHANT</TaskList>
+                <DefendedTaskList>TL_MERCHANT_DEFENDED</DefendedTaskList>
+                <DeliverToBanditsTaskList>TL_RESOURCE_MERCHANT_VANISH_IN_STOREHOUSE</DeliverToBanditsTaskList>
+                <DeliverToObjectTaskList>TL_RESOURCE_MERCHANT_DELIVER_TO_OBJECT</DeliverToObjectTaskList>
+                <FetchFromObjectTaskList>TL_RESOURCE_MERCHANT_FETCH_FROM_OBJECT</FetchFromObjectTaskList>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CGuardableBehaviorProps">
+                <Class>EGL::CGuardableBehavior</Class>
+                <GuardFormationID>GuardingMechant</GuardFormationID>
+                <GuardApproachPos><X>-200</X><Y>0</Y></GuardApproachPos>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CCapturableBehaviorProps">
+                <Class>EGL::CCapturableBehavior</Class>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::CTaskHistory</Class>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::CWaitForStorageCapacityBehavior</Class>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorPropsDying">
+                <Class>EGL::CBehaviorDying</Class>
+                <DyingTaskList>TL_DIE</DyingTaskList>
+            </Logic>
+        </Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CBehaviorProps">
+                <Class>EGL::CParticleEffectAttachmentBehavior</Class>
+            </Logic>
+            <Display classname="ED::CBehaviorProps">
+                <Class>ED::CParticleEffectAttachmentBehavior</Class>
+            </Display>
+        </Behavior>
+    </Behaviors>
+
+</root>

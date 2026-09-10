@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Months>
+    <Month>
+     <!-- January -->
+        <Season>Winter</Season> <!-- required -->
+        <Temperature>-7</Temperature> <!-- required -->
+        <PrecipitationProbability>0</PrecipitationProbability> <!-- required -->
+        <PrecipitationSnow>true</PrecipitationSnow> <!-- default false -->
+        <WaterFreeze>true</WaterFreeze> <!-- default false -->
+        <WaterRegenerationFactor>1.0</WaterRegenerationFactor> <!-- default 1.0 -->
+        <PrecipitationHeaviness>1.0</PrecipitationHeaviness> <!-- default 1.0 -->
+        <GoodTypesNotGrowing>
+        </GoodTypesNotGrowing>
+    </Month>
+    <Month>
+     <!-- February -->
+        <Season>Winter</Season>
+        <Temperature>-3</Temperature>
+        <PrecipitationProbability>0</PrecipitationProbability>
+        <PrecipitationSnow>true</PrecipitationSnow> <!-- default false -->
+        <WaterFreeze>true</WaterFreeze> <!-- default false -->
+        <WaterRegenerationFactor>1.0</WaterRegenerationFactor> <!-- default 1.0 -->
+        <PrecipitationHeaviness>1.0</PrecipitationHeaviness> <!-- default 1.0 -->
+        <GoodTypesNotGrowing>
+        </GoodTypesNotGrowing>
+    </Month>
+    <Month>
+     <!-- March -->
+        <Season>Spring</Season>
+        <Temperature>3</Temperature>
+        <PrecipitationProbability>0</PrecipitationProbability>
+        <PrecipitationSnow>false</PrecipitationSnow> <!-- default false -->
+        <WaterFreeze>false</WaterFreeze> <!-- default false -->
+        <WaterRegenerationFactor>1.0</WaterRegenerationFactor> <!-- default 1.0 -->
+        <PrecipitationHeaviness>1.0</PrecipitationHeaviness> <!-- default 1.0 -->
+        <GoodTypesNotGrowing>
+        </GoodTypesNotGrowing>
+    </Month>
+    <Month>
+     <!-- April -->
+        <Season>Spring</Season>
+        <Temperature>8</Temperature>
+        <PrecipitationProbability>0.0</PrecipitationProbability>
+        <PrecipitationSnow>false</PrecipitationSnow> <!-- default false -->
+        <WaterFreeze>false</WaterFreeze> <!-- default false -->
+        <WaterRegenerationFactor>1.0</WaterRegenerationFactor> <!-- default 1.0 -->
+        <PrecipitationHeaviness>1.0</PrecipitationHeaviness> <!-- default 1.0 -->
+        <GoodTypesNotGrowing>
+        </GoodTypesNotGrowing>
+    </Month>
+    <Month>
+     <!-- May -->
+        <Season>Spring</Season>
+        <Temperature>11</Temperature>
+        <PrecipitationProbability>0</PrecipitationProbability>
+        <PrecipitationSnow>false</PrecipitationSnow> <!-- default false -->
+        <WaterFreeze>false</WaterFreeze> <!-- default false -->
+        <WaterRegenerationFactor>1.0</WaterRegenerationFactor> <!-- default 1.0 -->
+        <PrecipitationHeaviness>1.0</PrecipitationHeaviness> <!-- default 1.0 -->
+        <GoodTypesNotGrowing>
+        </GoodTypesNotGrowing>
+    </Month>
+    <Month>
+     <!-- June -->
+        <Season>Summer</Season>
+        <Temperature>17</Temperature>
+        <PrecipitationProbability>0.0</PrecipitationProbability>
+        <PrecipitationSnow>false</PrecipitationSnow> <!-- default false -->
+        <WaterFreeze>false</WaterFreeze> <!-- default false -->
+        <WaterRegenerationFactor>1.0</WaterRegenerationFactor> <!-- default 1.0 -->
+        <PrecipitationHeaviness>1.0</PrecipitationHeaviness> <!-- default 1.0 -->
+        <GoodTypesNotGrowing>
+        </GoodTypesNotGrowing>
+    </Month>
+    <Month>
+     <!-- July -->
+        <Season>Summer</Season>
+        <Temperature>22</Temperature>
+        <PrecipitationProbability>0.0</PrecipitationProbability>
+        <PrecipitationSnow>false</PrecipitationSnow> <!-- default false -->
+        <WaterFreeze>false</WaterFreeze> <!-- default false -->
+        <WaterRegenerationFactor>1.0</WaterRegenerationFactor> <!-- default 1.0 -->
+        <PrecipitationHeaviness>1.0</PrecipitationHeaviness> <!-- default 1.0 -->
+        <GoodTypesNotGrowing>
+        </GoodTypesNotGrowing>
+    </Month>
+    <Month>
+     <!-- August -->
+        <Season>Summer</Season>
+        <Temperature>18</Temperature>
+        <PrecipitationProbability>0</PrecipitationProbability>
+        <PrecipitationSnow>false</PrecipitationSnow> <!-- default false -->
+        <WaterFreeze>false</WaterFreeze> <!-- default false -->
+        <WaterRegenerationFactor>1.0</WaterRegenerationFactor> <!-- default 1.0 -->
+        <PrecipitationHeaviness>1.0</PrecipitationHeaviness> <!-- default 1.0 -->
+        <GoodTypesNotGrowing>
+        </GoodTypesNotGrowing>
+    </Month>
+    <Month>
+     <!-- September -->
+        <Season>Fall</Season>
+        <Temperature>14</Temperature>
+        <PrecipitationProbability>0.0</PrecipitationProbability>
+        <PrecipitationSnow>false</PrecipitationSnow> <!-- default false -->
+        <WaterFreeze>false</WaterFreeze> <!-- default false -->
+        <WaterRegenerationFactor>1.0</WaterRegenerationFactor> <!-- default 1.0 -->
+        <PrecipitationHeaviness>1.0</PrecipitationHeaviness> <!-- default 1.0 -->
+        <GoodTypesNotGrowing>
+        </GoodTypesNotGrowing>
+    </Month>
+    <Month>
+     <!-- October -->
+        <Season>Fall</Season>
+        <Temperature>10</Temperature>
+        <PrecipitationProbability>0</PrecipitationProbability>
+        <PrecipitationSnow>false</PrecipitationSnow> <!-- default false -->
+        <WaterFreeze>false</WaterFreeze> <!-- default false -->
+        <WaterRegenerationFactor>1.0</WaterRegenerationFactor> <!-- default 1.0 -->
+        <PrecipitationHeaviness>1.0</PrecipitationHeaviness> <!-- default 1.0 -->
+        <GoodTypesNotGrowing>
+        </GoodTypesNotGrowing>
+    </Month>
+    <Month>
+     <!-- November -->
+        <Season>Fall</Season>
+        <Temperature>5</Temperature>
+        <PrecipitationProbability>0.0</PrecipitationProbability>
+        <PrecipitationSnow>false</PrecipitationSnow> <!-- default false -->
+        <WaterFreeze>false</WaterFreeze> <!-- default false -->
+        <WaterRegenerationFactor>1.0</WaterRegenerationFactor> <!-- default 1.0 -->
+        <PrecipitationHeaviness>1.0</PrecipitationHeaviness> <!-- default 1.0 -->
+        <GoodTypesNotGrowing>
+        </GoodTypesNotGrowing>
+    </Month>
+    <Month>
+     <!-- December -->
+        <Season>Winter</Season>
+        <Temperature>-2</Temperature>
+        <PrecipitationProbability>0</PrecipitationProbability>
+        <PrecipitationSnow>true</PrecipitationSnow> <!-- default false -->
+        <WaterFreeze>true</WaterFreeze> <!-- default false -->
+        <WaterRegenerationFactor>1.0</WaterRegenerationFactor> <!-- default 1.0 -->
+        <PrecipitationHeaviness>1.0</PrecipitationHeaviness> <!-- default 1.0 -->
+        <GoodTypesNotGrowing>
+        </GoodTypesNotGrowing>
+    </Month>
+</Months>
