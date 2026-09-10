@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+<string id="MapName" MD5Hash="" mod="20070612165849" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="Name of the campaign map"><![CDATA[Rossotorres]]></string>
+<string id="MapDescription" MD5Hash="" mod="20070809103414" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[The Red Prince has retreated to Rossotorres. The capital of his empire is a heavily guarded fortress. Let's strike the final blow and oust the Red Prince from his throne! ]]></string>
+<string id="PlayerName_Rossotorres" MD5Hash="" mod="20070717152110" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="Name of player faction. These can be referred to in the quest texts (Quest_...)"><![CDATA[Red Prince]]></string>
+<string id="PlayerName_Harbor" MD5Hash="" mod="20070809103521" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="Name of player faction. These can be referred to in the quest texts (Quest_...)"><![CDATA[Lazlopol Harbour]]></string>
+<string id="PlayerName_GranCastilla" MD5Hash="" mod="20070717143413" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="Name of player faction. These can be referred to in the quest texts (Quest_...)"><![CDATA[City of Gran Castilla]]></string>
+<string id="PlayerName_Monasterio" MD5Hash="" mod="20070723052107" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="Name of player faction. These can be referred to in the quest texts (Quest_...)"><![CDATA[Monasterio de la Manchora]]></string>
+<string id="PlayerName_Bandits1" MD5Hash="" mod="20070717143401" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="Name of player faction. These can be referred to in the quest texts (Quest_...)"><![CDATA[Bandits]]></string>
+<string id="PlayerName_Bandits2" MD5Hash="" mod="20070717143405" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="Name of player faction. These can be referred to in the quest texts (Quest_...)"><![CDATA[Bandits]]></string>
+<string id="PlayerName_Bandits3" MD5Hash="" mod="20070717143408" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="Name of player faction. These can be referred to in the quest texts (Quest_...)"><![CDATA[Bandits]]></string>
+<string id="Territory_CampoNarrilos" MD5Hash="" mod="" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Campo Narrilos]]></string>
+<string id="Territory_LazlopolHarbor" MD5Hash="" mod="20070717143517" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Lazlopol Junction]]></string>
+<string id="Territory_ElMonasteriodelaMancha" MD5Hash="" mod="20070723052022" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments="JJG - Man of La Mancha was a Broadway hit."><![CDATA[Monasterio de la Manchora]]></string>
+<string id="Territory_SouthGarrison" MD5Hash="" mod="" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[South Garrison]]></string>
+<string id="Territory_CampoAlta" MD5Hash="" mod="" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Campo Alta]]></string>
+<string id="Territory_SierraNavarro" MD5Hash="" mod="" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Sierra Navarro]]></string>
+<string id="Territory_SierraBarrado" MD5Hash="" mod="" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Sierra Barrado]]></string>
+<string id="Territory_RioCavado" MD5Hash="" mod="" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Rio Cavado]]></string>
+<string id="Territory_SierraCumbre" MD5Hash="" mod="" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Sierra Cumbre]]></string>
+<string id="Territory_EasternGarrison" MD5Hash="" mod="" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Eastern Garrison]]></string>
+<string id="Territory_RioValdemata" MD5Hash="" mod="" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Rio Valdemata]]></string>
+<string id="Territory_GranCastilla" MD5Hash="" mod="20070717143509" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Gran Castilla Plains]]></string>
+<string id="Territory_WesternGarrison" MD5Hash="" mod="" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Western Garrison]]></string>
+<string id="Territory_Monterubio" MD5Hash="" mod="" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Monterubio]]></string>
+<string id="Territory_SierraGranada" MD5Hash="" mod="" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Sierra Granada]]></string>
+<string id="Territory_RascalCanyon" MD5Hash="" mod="" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Rascal Canyon]]></string>
+<string id="Territory_GargantillaCanyon" MD5Hash="" mod="" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Gargantilla Canyon]]></string>
+<string id="Territory_SierradelaVega" MD5Hash="" mod="" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Sierra de la Vega]]></string>
+<string id="Territory_TorremengaPlateau" MD5Hash="" mod="" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Torremenga Plateau]]></string>
+<string id="Territory_TorregazPlateau" MD5Hash="" mod="" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Torregaz Plateau]]></string>
+<string id="Territory_TorrecillaPlateau" MD5Hash="" mod="" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Torrecilla Plateau]]></string>
+<string id="Territory_RossotorresCitadel" MD5Hash="" mod="20070717143554" WorkInProgress="true" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Rossotorres Plateau]]></string>
+<string id="Quest_DefeatRossotorres" MD5Hash="" mod="20070830101244" WorkInProgress="false" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Defeat the City of Rossotorres to capture the Red Prince!]]></string>
+<string id="Quest_FortifyCity" MD5Hash="" mod="20070830101336" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Build a Wall to fortify our City.]]></string>
+<string id="Quest_SendThiefToRossotorresCastle" MD5Hash="" mod="20070830122721" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Send a Thief to the Red Prince's Castle to find out when he will launch his next attacks.]]></string>
+<string id="MissionTimerTooltipDescription" MD5Hash="" mod="20070830123458" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[- time left until the Red Prince launches his next attack]]></string>
+<string id="MissionTimerTooltipName" MD5Hash="" mod="20070830123334" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Time left]]></string>
+</root>

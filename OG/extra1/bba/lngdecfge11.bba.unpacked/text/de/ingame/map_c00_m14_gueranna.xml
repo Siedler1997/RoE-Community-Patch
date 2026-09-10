@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+<string id="MapDescription" MD5Hash="E55B8A50E2D6F16FF1AD078FD8283735" mod="20070809100158" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Gueranna ist die Heimat von Crimson Sabatt. Ihre Rote Zitadelle ist gut geschützt, der einzige Zugang ist eine große Brücke. Wir werden die Zitadelle belagern und ihrer Schreckensherrschaft ein Ende setzen.]]></string>
+<string id="MapName" MD5Hash="CA580E34051FB7CA9CF1992E664A79AC" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Gueranna]]></string>
+<string id="PlayerName_Bandits" MD5Hash="07BB41AEF9DF7D18CBCCBD619DCA1700" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Banditen]]></string>
+<string id="PlayerName_CrimsonCitadel" MD5Hash="3012803A74A8A59512987A0879A5FE93" mod="20070823115324" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Crimson Sabatt]]></string>
+<string id="PlayerName_GranLorcha" MD5Hash="57F853D7257A6B69061FD9CAA0519EF4" mod="20070823115331" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dorf Gran Lorcha]]></string>
+<string id="PlayerName_SanRamos" MD5Hash="E525F7E7C57BD2F18E1DE11F6B365CF1" mod="20070823115335" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dorf San Ramos]]></string>
+<string id="PlayerName_SantaCotillas" MD5Hash="3EF6976CE0DEE5239C527FE65BDED3CC" mod="20070823115340" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Kloster Santa Cotillas]]></string>
+<string id="PlayerName_Tortuera" MD5Hash="A75B4FB7EA34C10FC87DB6913D9A503D" mod="20070823115349" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dorf Tortuera]]></string>
+<string id="Quest_FortifyCity" MD5Hash="CF11F50210F08CF125612C421716BED8" mod="20070901154731" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Wir sollten unsere Siedlung befestigen, indem wir einen Mauerring darum errichten. ]]></string>
+<string id="Quest_FortifySantaCotillas" MD5Hash="C466BD76B39E64EDA46BFDA1021137CD" mod="20070831190422" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Schickt zwei Bataillone Soldaten auf unseren Marktplatz. Mit ihnen werden wir unser Kloster verteidigen!]]></string>
+<string id="Quest_FreeGranLorcha" MD5Hash="EBFBF61A34DF7A32210A10AACF44676D" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Schlagt Crimson Sabatt Truppen in Gran Lorcha!]]></string>
+<string id="Quest_FreeSanRamos" MD5Hash="F67F728CE9C56063835BC1266D22104D" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Schlagt Crimson Sabatt Truppen in San Ramos!]]></string>
+<string id="Quest_FreeSantaCotillas" MD5Hash="7BFEA914C995E1A210A10085A5116F7B" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Schlagt Crimson Sabatt Truppen in Santa Cotillas!]]></string>
+<string id="Quest_StealConstructionPlans" MD5Hash="AF1A6F553DFA5D295A3DD39565DBA0DE" mod="20070809100256" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Setzt einen Dieb ein, um die Konstruktionspläne für das Trebuchet aus dem Militärlager von Rojo del Brujas zu entwenden.]]></string>
+<string id="Quest_SupportSantaCotillas" MD5Hash="06298D9AB7C7BB5291124C6027CCCEC9" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Setzt einen Dieb ein, um den Kardinal aus dem Gefängnis von Tortuera zu befreien!]]></string>
+<string id="Territory_ArizaCrux" MD5Hash="6D74D90B3BEE270F72146819FA57EAB0" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Ariza Crux]]></string>
+<string id="Territory_CrimsonCitadel" MD5Hash="3012803A74A8A59512987A0879A5FE93" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Crimson Citadel]]></string>
+<string id="Territory_DosAguasCanyon" MD5Hash="1FF8BE59BF4BEFF108DCCE4A2CB8D4E0" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Dos Aguas Canyon]]></string>
+<string id="Territory_ElCuervoJunction" MD5Hash="14CF9F3DF0F1E5D8D32678BCA80B5F0C" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[El Cuervo Junction]]></string>
+<string id="Territory_GranLorcha" MD5Hash="2301AF85779BEAFD8D464C7C1103C96A" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Gran Lorcha Mountains]]></string>
+<string id="Territory_LugardelCid" MD5Hash="BD7B8348AF5C834991F586BF31157CAA" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Valley of Lugar del Cid]]></string>
+<string id="Territory_PuertaSanguinea" MD5Hash="E5B85D8D9E35DBDCF069954761DB2DCF" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Puerta Sanguinea]]></string>
+<string id="Territory_RascodelCap" MD5Hash="43A2E1ABF115C543460D712A769652C0" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Rasco del Cap]]></string>
+<string id="Territory_RioCarada" MD5Hash="C291960D37464567A517DBD82C46FF2E" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Rio Carada]]></string>
+<string id="Territory_RioRubinio" MD5Hash="D9C00C8BBFCE89CA3B4AFBCFC0BCB8AF" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Rio Rubinio]]></string>
+<string id="Territory_RioSuela" MD5Hash="B74A9F6F5D9B776DB6E62142FD03F68C" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Rio Suela]]></string>
+<string id="Territory_Royodebrujas" MD5Hash="C2EA5E9943D85E53756F5DDF1184CF1D" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Rojo del Brujas Coast]]></string>
+<string id="Territory_SanRamos" MD5Hash="DC9D899E52C62FB5BD63FF84D3C40E52" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[San Ramos Heights]]></string>
+<string id="Territory_SantaCotilla" MD5Hash="B017E0C40A399EF5396978BB5103D6D0" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Santa Cotilla Hills]]></string>
+<string id="Territory_SierradelaAriza" MD5Hash="242FC5684ECA141875C0A842F55C7649" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Sierra de la Ariza]]></string>
+<string id="Territory_SierradelaCarada" MD5Hash="3A1A7386FD0A7CDDEA1BF6667F9347A2" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Sierra de la Carada]]></string>
+<string id="Territory_SierradelaCrux" MD5Hash="54A8C0852406A22720C6DA65DFDB7E9F" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Sierra de la Crux]]></string>
+<string id="Territory_Tortuera" MD5Hash="80F1DE91201F8A2F4D81758CF6F8C86C" mod="" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Tortuera Ascent]]></string>
+<string id="Quest_Reputation" MD5Hash="F18B2C371E5759789C7A2C03E3E91BEC" mod="20070902130347" WorkInProgress="" CharacterGroup="" LipSync="" ThroneRoom="" Comments=""><![CDATA[Wir müssen das Vertrauen der Dörfer gewinnen, indem unsere Stadt einen guten Ruf erreicht.]]></string>
+</root>
