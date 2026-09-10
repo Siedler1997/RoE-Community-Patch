@@ -31,7 +31,7 @@ jobs:
             [[ -z "$src_dir" || "$src_dir" =~ ^[[:space:]]*$ || "$src_dir" =~ ^# ]] && continue
 
             SRC_PATH="HE/$src_dir"
-            DEST_PATH="OG/${dest_name}.unpacked"
+            DEST_PATH="OG/${dest_name}"
 
             if [ -d "$SRC_PATH" ]; then
               if [ -d "$DEST_PATH" ]; then
