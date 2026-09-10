@@ -1,12 +1,12 @@
 # Quellordner_in_HE Zielordner_in_OG
 Data/extra1/shr/text/bb lngbbcfge11.bba.unpacked/text/bb
-Data/extra1/lng/de/Voices lngdesnde11.bba.unpacked/voices
-Data/extra1/lng/en/Voices lngensnde11.bba.unpacked/voices
-Data/extra1/shr/text/de lngdecfge11.bba.unpacked/text/de
-Data/extra1/shr/text/en lngencfge11.bba.unpacked/text/en
-Data/extra1/shr/config shrgcfge11.bba.unpacked/config
-Data/extra1/shr/Script shrgcfge11.bba.unpacked/script
-Data/extra1/shr/graphics shrlgfxe11.bba.unpacked/graphics
-Data/extra1/shr/menu shrlmnue11.bba.unpacked/menu
-Data/extra1/shr/sounds shrlsnde11.bba.unpacked/sounds
-DataOP/extra1/shr/Maps shrgmape11.bba.unpacked/maps
+#Data/extra1/lng/de/Voices lngdesnde11.bba.unpacked/voices
+#Data/extra1/lng/en/Voices lngensnde11.bba.unpacked/voices
+#Data/extra1/shr/text/de lngdecfge11.bba.unpacked/text/de
+#Data/extra1/shr/text/en lngencfge11.bba.unpacked/text/en
+#Data/extra1/shr/config shrgcfge11.bba.unpacked/config
+#Data/extra1/shr/Script shrgcfge11.bba.unpacked/script
+#Data/extra1/shr/graphics shrlgfxe11.bba.unpacked/graphics
+#Data/extra1/shr/menu shrlmnue11.bba.unpacked/menu
+#Data/extra1/shr/sounds shrlsnde11.bba.unpacked/sounds
+#DataOP/extra1/shr/Maps shrgmape11.bba.unpacked/maps
