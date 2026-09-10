@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+	<Display classname="ED::CEntityProps">
+		<Class>ED::CDisplaySettler</Class>
+		<Model>Animals\A_AS_Tiger_White</Model>
+	</Display>
+
+	<Logic classname="EGL::CAnimalProps">
+		<Class>EGL::CAnimal</Class>
+		<AccessCategory>AccessCategoryCarnivore</AccessCategory>
+		<DefaultTaskList>TL_FLOCKING_ANIMAL_IDLE</DefaultTaskList>
+		<TerritoryRadius>1000</TerritoryRadius>
+		<WanderRangeMin>0</WanderRangeMin>
+		<WanderRangeMax>0</WanderRangeMax>
+		<NeedsPlayer>false</NeedsPlayer>
+		<MaxHealth>600</MaxHealth>
+		<ShyRange>600</ShyRange>
+		<FleeTaskList>TL_FLOCKING_ANIMAL_FLEE</FleeTaskList>
+        <FleeSpeedModifier>3.7</FleeSpeedModifier>
+		<IsOnPredefinedPath>false</IsOnPredefinedPath>
+        <IsAttackable>true</IsAttackable>
+        <AdjustWalkAnimSpeed>true</AdjustWalkAnimSpeed>
+
+        <EntityCategories>
+            <!-- Military code requires an entity category to enable attack! -->
+            <EntityCategory>AttackableAnimal</EntityCategory>
+        </EntityCategories>
+        <SoundImpactType>Leather</SoundImpactType>
+
+	</Logic>
+
+	<Behaviors>
+		<Behavior>
+			<Logic classname="EGL::CAnimationBehaviorExProps">
+				<Class>EGL::CBehaviorAnimationEx</Class>
+				<AnimSet>SET_NA_LION_MALE</AnimSet>
+			</Logic>
+			<Display classname="ED::CBehaviorProps">
+				<Class>ED::CDisplayBehaviorAnimation</Class>
+			</Display>
+		</Behavior>
+        <Behavior>
+            <Logic classname="EGL::CBehaviorPropsDying">
+                <Class>EGL::CBehaviorDying</Class>
+                <DyingTaskList>TL_DIE</DyingTaskList>
+            </Logic>
+        </Behavior>
+		<Behavior>
+			<Logic classname="EGL::CBehaviorDefaultMovementProps">
+				<Class>EGL::CAnimalMovementBehavior</Class>
+
+				<Speed>160</Speed>
+				<RotationSpeed>40</RotationSpeed>
+			</Logic>
+			<Display classname="ED::CBehaviorProps">
+				<Class>ED::CDisplayBehaviorMovement</Class>
+			</Display>
+		</Behavior>
+
+        <Behavior>
+            <Logic classname="EGL::CFlockingBehaviorProps">
+                <Class>EGL::CFlockingBehavior</Class>
+                <Mates>
+					<EntityType>A_AS_Tiger</EntityType>
+                    <EntityType>A_AS_Tiger_White</EntityType>
+					<EntityType>U_Tiger</EntityType>
+					<EntityType>U_Tiger_White</EntityType>
+                </Mates>
+                <SpeedToAnimationMap>
+                    <Mapping>
+                        <RequiredSpeed>0</RequiredSpeed>
+                        <Category>Walk</Category>
+                    </Mapping>
+                    <Mapping>
+                        <RequiredSpeed>400</RequiredSpeed>
+                        <Category>Run</Category>
+                    </Mapping>
+                </SpeedToAnimationMap>
+                <Limit>5</Limit>
+                <SeparationDistance>600</SeparationDistance>
+                <PerceptionRange>1400</PerceptionRange>
+                <MaxMoveDistance>800</MaxMoveDistance>
+                <CenterWeight>0.5</CenterWeight>
+                <TargetWeight>0.6</TargetWeight>
+                <CruisingWeight>0.1</CruisingWeight>
+                <EnemyWeight>0.7</EnemyWeight>
+                <PointOfInterestWeight>0.2</PointOfInterestWeight>
+                <HuntSpeedModifier>3.7</HuntSpeedModifier>
+            </Logic>
+        </Behavior>
+
+         <Behavior>
+            <Logic classname="EGL::CFightBehaviorProps">
+                <Class>EGL::CFightBehavior</Class>
+                <DefendTL>TL_MILITARY_DEFEND</DefendTL>
+                <MoveTaskList>TL_PREDATOR_RUN</MoveTaskList>
+                <AttackRunTaskList>TL_PREDATOR_RUN</AttackRunTaskList>
+                <DefendRange>1800</DefendRange>
+                <AttackMoveRange>1800</AttackMoveRange>
+                <IdleWhileDefended>false</IdleWhileDefended>
+                <TargetCategoryList>
+                    <TargetCategory>
+                        <EntityCategoryList>
+                            <EntityCategory>Hero</EntityCategory>
+                            <EntityCategory>Leader</EntityCategory>
+                            <EntityCategory>AttackableSettler</EntityCategory>
+                             <EntityCategory>Thief</EntityCategory>
+                       </EntityCategoryList>
+                        <AttackModeList>
+                            <AttackMode>
+                                <BattleTL>TL_BATTLE_MELEE</BattleTL>
+                                <AttackAnim>A_NA_Lion_Male_Attack1</AttackAnim>
+                                <MinRange>0</MinRange>
+                                <MaxRange>300</MaxRange>
+                                <MaxHeightDeltaToTarget>100</MaxHeightDeltaToTarget>
+                                <CanAttackOverWalls>false</CanAttackOverWalls>
+                                <CooldownThousandths>2000</CooldownThousandths>
+                                <Damage>
+                                    <DiceCount>0</DiceCount>
+                                    <FaceCount>0</FaceCount>
+                                    <BaseValue>50</BaseValue>
+                                </Damage>
+                            </AttackMode>
+                        </AttackModeList>
+                    </TargetCategory>
+                </TargetCategoryList>
+            </Logic>
+        </Behavior>
+
+		<Behavior>
+			<Logic classname="EGL::CBehaviorProps">
+				<Class>EGL::CParticleEffectAttachmentBehavior</Class>
+			</Logic>
+			<Display classname="ED::CBehaviorProps">
+				<Class>ED::CParticleEffectAttachmentBehavior</Class>
+			</Display>
+		</Behavior>
+	</Behaviors>
+
+	<MapEditor>
+		<TreePosition>Animals\Aggressive</TreePosition>
+		<ShowInTree>true</ShowInTree>
+		<Clime>Asia</Clime>
+		<Scalable>false</Scalable>
+		<TemplateResistant>true</TemplateResistant>
+	</MapEditor>
+</root>

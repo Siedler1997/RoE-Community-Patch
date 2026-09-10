@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?><root>
+	<Display classname="ED::CEntityProps">
+		  <Class>ED::CDisplayStaticEntity</Class>
+		  <Model>Doodads\D_ME_Rock07</Model>
+		  <Model2>XS_ResPredators</Model2>
+		  <HasMapEditorModel>true</HasMapEditorModel>
+	</Display>
+	<Logic classname="EGL::CEntityProps">
+		<Class>EGL::CEntity</Class>
+		<AccessCategory>AccessCategoryResourceSpawnPoint</AccessCategory>
+		<Visible>false</Visible>
+		<DoNotExecute>false</DoNotExecute> <!-- must execute! -->
+		<DeleteWhenBuiltOn>false</DeleteWhenBuiltOn>
+		<Exploration>0</Exploration>
+		<NeedsPlayer>false</NeedsPlayer>
+		<ForceNoPlayer>true</ForceNoPlayer>
+    		<!-- could have player in theory to spawn player entities -->
+	</Logic>
+
+    <Behaviors>
+        <Behavior>
+            <Logic classname="EGL::CRespawnResourceEntityBehaviorProps">
+                <Class>EGL::CRespawnResourceEntityBehavior</Class>
+        <!-- maximum -->
+                <MaxCapacity>2</MaxCapacity>
+        <!-- per second spawn when 0 left (When all lions are killed, the first new one is spawned after 33,3 minutes) -->
+                <MinSpawn>0</MinSpawn>
+        <!-- see MaxSpawn comment -->
+                <MaxSpawnCapacity>1</MaxSpawnCapacity>
+        <!-- spawn between MaxSpawnCapacity and MaxCapacity (when the first lion is spawned, an additional one will be spawned each 3,3 minutes) -->
+                <MaxSpawn>0</MaxSpawn>
+        <!-- radius in which to spawn -->
+                <SpawnRange>800</SpawnRange>
+        <!-- You can leave out scales, will be assumed 1... -->
+                <MinScale>1</MinScale>
+         <!-- ...but these allow more variety. -->
+               <MaxScale>1</MaxScale>
+          <!-- types of entities to spawn, chosen equiprobably -->
+                <SpawnTypes>
+                    <SpawnType>A_AS_Tiger_White</SpawnType>
+                </SpawnTypes>
+            </Logic>
+        </Behavior>
+
+        <!--Behavior>
+             <Logic classname="EGL::CDiscoveredInFogOfWarBehaviorProperties">
+                <Class>EGL::CDiscoveredInFogOfWarBehavior</Class>
+                <DiscoverRadius>600.0</DiscoverRadius>
+            </Logic>
+        </Behavior-->
+	<Behavior>
+		<Logic classname="EGL::CCarnivoreTerritoryBehaviorProps">
+			<Class>EGL::CCarnivoreTerritoryBehavior</Class>
+
+            <DefaultTerritorySize>6399.0</DefaultTerritorySize>
+
+                         <!-- PrimaryHuntableValue is subtracted from the current hunger value when preying on a huntable animal
+                                At the same time it's the value of each primary huntable animal when evaluating the territory. -->
+			<PrimaryHuntableValue>300</PrimaryHuntableValue>
+			<PrimaryHuntableCategory>HuntableMeat</PrimaryHuntableCategory>
+
+                         <!-- SecondaryHuntableValue can be used to make the secondary huntables less attractive when evaluating the territory. -->
+			<SecondaryHuntableValue>300</SecondaryHuntableValue>
+			<SecondaryHuntableCategory1>SheepPasture</SecondaryHuntableCategory1>
+			<SecondaryHuntableCategory2>CattlePasture</SecondaryHuntableCategory2>
+
+                         <!-- FoodProviderValue is the value of each food building in the carnivore territory when evaluating the territory. -->
+			<FoodProviderValue>300</FoodProviderValue>
+			<FoodProviderCategory>GC_Food_Supplier</FoodProviderCategory>
+
+                         <!-- When carnivores plunder FoodGoods at a building, the FoodGoodValue is subtracted from the current hunger value for each good in the OutStock.  -->
+			<FoodGoodValue>50</FoodGoodValue>
+			<FoodGoodCategory>GC_Food</FoodGoodCategory>
+
+                         <!-- if the value of all PrimaryHuntables, SecondaryHuntables and FoodProviders in a carnivore territory is lower than the RequiredFoodAmount,
+                                the carnivores move to another carnivore territory if there's one that has the RequiredFoodAmount. -->
+			<RequiredFoodAmount>300</RequiredFoodAmount>
+
+                         <!-- Increase of Hunger value per second. The Hunger value isn't increased when carnivores are fleeing, fighting or eating. -->
+			<HungerPerSecond>1</HungerPerSecond>
+
+                         <!-- If the HungerThresholdForHunt  of a pack of carnivores is reached, they start hunting a PrimaryHuntable or SecondaryHuntable. -->
+			<HungerThresholdForHunt>300</HungerThresholdForHunt>
+
+                         <!-- AggressiveHunt means that OutStocks are plundered if nothing else with a higher food value is available.
+                                The HungerThresholdForAggressiveHunt is also the maximum Hunger value.  -->
+			<HungerThresholdForAggressiveHunt>300</HungerThresholdForAggressiveHunt>
+
+                         <!-- If the Hunger value is lower than HungerThresholdForHuntStop after hunting, the pack stops hunting. -->
+			<HungerThresholdForHuntStop>5</HungerThresholdForHuntStop>
+
+                         <!-- Don't change these values! The hunting may fail if the values are smaller than 250.-->
+			<TakeDownPreyDistance>250</TakeDownPreyDistance> <!-- in cm -->
+			<StealOutStockDistance>250</StealOutStockDistance> <!-- in cm -->
+			<IdleTaskList>TL_FLOCKING_ANIMAL_IDLE</IdleTaskList>
+			<HuntTaskList>TL_LION_HUNT</HuntTaskList>
+			<FeedTaskList>TL_LION_FEED</FeedTaskList>
+			<TakeDownPreyTaskList>TL_LION_TAKE_DOWN_PREY</TakeDownPreyTaskList>
+			<StealOutStockTaskList>TL_LION_STEAL_OUT_STOCK</StealOutStockTaskList>
+		</Logic>
+	</Behavior>
+    </Behaviors>
+
+	<MapEditor>
+		  <TreePosition>Animals\Aggressive</TreePosition>
+		  <ShowInTree>true</ShowInTree>
+		  <Clime>Generic</Clime>
+		  <Scalable>false</Scalable>
+		  <TemplateResistant>true</TemplateResistant>
+	</MapEditor>
+
+</root>

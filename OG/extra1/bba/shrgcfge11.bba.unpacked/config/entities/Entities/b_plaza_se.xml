@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<root>
+  <Display classname="ED::CReplaceUpgradeBuildingProps">
+    <Class>ED::CWell</Class>
+    <Model>Buildings\B_NPC_Marketplace_SE</Model>
+    <OnScreenOffset>100</OnScreenOffset>
+
+    <BannersPerUpgrade>
+      <Banner classname="ED::CBannerProps">
+        <Model></Model>
+        <AnimationNoWind></AnimationNoWind>
+        <AnimationNormalWind></AnimationNormalWind>
+        <AnimationStrongWind></AnimationStrongWind>
+      </Banner>
+
+      <Banner classname="ED::CBannerProps">
+        <Model></Model>
+        <AnimationNoWind></AnimationNoWind>
+        <AnimationNormalWind></AnimationNormalWind>
+        <AnimationStrongWind></AnimationStrongWind>
+      </Banner>
+
+      <Banner classname="ED::CBannerProps">
+        <Model></Model>
+        <AnimationNoWind></AnimationNoWind>
+        <AnimationNormalWind></AnimationNormalWind>
+        <AnimationStrongWind></AnimationStrongWind>
+      </Banner>
+
+      <Banner classname="ED::CBannerProps">
+        <Model></Model>
+        <AnimationNoWind></AnimationNoWind>
+        <AnimationNormalWind></AnimationNormalWind>
+        <AnimationStrongWind></AnimationStrongWind>
+      </Banner>
+    </BannersPerUpgrade>
+  </Display>
+
+  <Logic classname="EGL::CMarketplaceProps">
+    <Class>EGL::CMarketplace</Class>
+
+    <Cost>
+      <GoodAmount>
+        <GoodType>G_Stone</GoodType>
+        <Amount>10</Amount>
+      </GoodAmount>
+    </Cost>
+
+    <ProducedGood>
+      <GoodType>G_Water</GoodType>
+      <Amount>0</Amount>
+    </ProducedGood>
+    <OutStockCapacities>
+      <OutStockCapacity>50</OutStockCapacity>
+    </OutStockCapacities>
+
+    <MaxNumberOfUpgrades>0</MaxNumberOfUpgrades>
+    <SecondsToUpgrade>0</SecondsToUpgrade>
+
+    <CanBeBuildOnOuterRim>true</CanBeBuildOnOuterRim>
+    <!-- Hack: City Buildings can buold everywhere -->
+    <FlattenOnBuild>true</FlattenOnBuild>
+    <IsHeightLocking>true</IsHeightLocking>
+    <MayRemoveEntities>true</MayRemoveEntities>
+    <AccessCategory>AccessCategoryBuilding</AccessCategory>
+    <NeedsPlayer>true</NeedsPlayer>
+    <ForceNoPlayer>false</ForceNoPlayer>
+    <CanBeKnockedDown>true</CanBeKnockedDown>
+    <Worker>U_WallConstructionWorker</Worker>
+    <!-- Construction only -->
+    <MaxWorkers>0</MaxWorkers>
+    <!-- Construction only -->
+    <MaxHealth>10</MaxHealth>
+    <SlotType>B_Marketslot</SlotType>
+    <SlotPlacementRadius>500</SlotPlacementRadius>
+
+    <WellApproachDistances>
+      <WellApproachDistance>175</WellApproachDistance>
+    </WellApproachDistances>
+    <CanLeaveImmediately>true</CanLeaveImmediately>
+    <EntityCategories>
+      <EntityCategory>AttackableBuilding</EntityCategory>
+      <EntityCategory>G_Water_Supplier</EntityCategory>
+    </EntityCategories>
+    <RepairBuildingTL>TL_WORKER_REPAIR</RepairBuildingTL>
+
+    <ApproachPos>
+      <X>0</X>
+      <Y>0</Y>
+    </ApproachPos>
+    <ApproachR>400</ApproachR>
+    <DoorPos>
+      <X>0</X>
+      <Y>0</Y>
+    </DoorPos>
+    <BlockingAreas>
+      <BlockingArea>
+        <Blocked1>
+          <X>200</X>
+          <Y>200</Y>
+        </Blocked1>
+        <Blocked2>
+          <X>-200</X>
+          <Y>-200</Y>
+        </Blocked2>
+      </BlockingArea>
+    </BlockingAreas>
+    <BuildBlockingAreas>
+      <BuildBlockingArea>
+        <Blocked1>
+          <X>-300</X>
+          <Y>500</Y>
+        </Blocked1>
+        <Blocked2>
+          <X>300</X>
+          <Y>-500</Y>
+        </Blocked2>
+      </BuildBlockingArea>
+      <BuildBlockingArea>
+        <Blocked1>
+          <X>-500</X>
+          <Y>300</Y>
+        </Blocked1>
+        <Blocked2>
+          <X>500</X>
+          <Y>-300</Y>
+        </Blocked2>
+      </BuildBlockingArea>
+    </BuildBlockingAreas>
+    <ConstructionInfo>
+      <Time>20</Time>
+      <TaskListConstruction>TL_CONSTRUCT_BUILDING</TaskListConstruction>
+      <ConstructionSite>B_BuildingPlot_8x8</ConstructionSite>
+    </ConstructionInfo>
+    <Exploration>0</Exploration>
+    <NoAutoRepair>true</NoAutoRepair>
+    <SoundImpactType>Stone_Wood</SoundImpactType>
+
+    <RoadPoints>
+      <RoadPoint>
+        <X>-200</X>
+        <Y>700</Y>
+      </RoadPoint>
+      <RoadPoint>
+        <X>200</X>
+        <Y>700</Y>
+      </RoadPoint>
+      <RoadPoint>
+        <X>700</X>
+        <Y>200</Y>
+      </RoadPoint>
+      <RoadPoint>
+        <X>700</X>
+        <Y>-200</Y>
+      </RoadPoint>
+      <RoadPoint>
+        <X>200</X>
+        <Y>-700</Y>
+      </RoadPoint>
+      <RoadPoint>
+        <X>-200</X>
+        <Y>-700</Y>
+      </RoadPoint>
+      <RoadPoint>
+        <X>-700</X>
+        <Y>-200</Y>
+      </RoadPoint>
+      <RoadPoint>
+        <X>-700</X>
+        <Y>200</Y>
+      </RoadPoint>
+    </RoadPoints>
+  </Logic>
+  <Behaviors>
+    <Behavior>
+      <Logic classname="EGL::CWellBehaviorProps">
+        <Class>EGL::CWellBehavior</Class>
+        <WaterRefillRatePerSecond>0.2</WaterRefillRatePerSecond>
+        <AddRateRain>0.5</AddRateRain>
+        <WaterType>G_Water</WaterType>
+        <WarnIfWaterLow>true</WarnIfWaterLow>
+      </Logic>
+      <Display classname="ED::CBehaviorProps">
+        <Class>ED::CWellBehavior</Class>
+      </Display>
+    </Behavior>
+    <Behavior>
+      <Logic classname="EGL::CStockBehaviorProps">
+        <Class>EGL::CStockOutBehavior</Class>
+        <MaxAmountOnStock>50</MaxAmountOnStock>
+        <GoodTypes>
+          <GoodType>G_Water</GoodType>
+        </GoodTypes>
+      </Logic>
+    </Behavior>
+  </Behaviors>
+	<MapEditor>
+		<TreePosition>Buildings\camps</TreePosition>
+		<ShowInTree>true</ShowInTree>
+		<Clime>SouthEurope</Clime>
+		<Scalable>false</Scalable>
+		<TemplateResistant>true</TemplateResistant>
+	</MapEditor>
+</root>
