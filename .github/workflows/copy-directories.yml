@@ -33,7 +33,7 @@ jobs:
             # Leere Zeilen, reine Whitespaces oder Kommentare (#) überspringen
             [[ -z "$src_dir" || "$src_dir" =~ ^[[:space:]]*$ || "$src_dir" =~ ^# ]] && continue
 
-            SRC_PATH="HE/$src_dir"
+            SRC_PATH="HE/$src_dir" 
             DEST_PATH="OG/extra1/bba/${dest_name}"
 
             # Prüfen, ob der Quellordner existiert
