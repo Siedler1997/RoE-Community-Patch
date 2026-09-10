@@ -15,41 +15,47 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-      - name: Copy Directories Based on Mapping
+      - name: Copy Directories based on mapping and Lowercase Content
         run: |
           MAP_FILE="exe/mapping.txt"
 
-          # Prüfen, ob die Mapping-Datei existiert
           if [ ! -f "$MAP_FILE" ]; then
             echo "Fehler: Mapping-Datei $MAP_FILE wurde nicht gefunden!"
             exit 1
           fi
 
-          echo "Starte Kopierprozess..."
+          echo "Starte Kopier- und Konvertierungsprozess..."
 
-          # Zeile für Zeile auslesen (IFS=' ' trennt bei Leerzeichen)
           while IFS=' ' read -r src_dir dest_name || [ -n "$src_dir" ]; do
             
-            # Leere Zeilen, reine Whitespaces oder Kommentare (#) überspringen
             [[ -z "$src_dir" || "$src_dir" =~ ^[[:space:]]*$ || "$src_dir" =~ ^# ]] && continue
 
-            SRC_PATH="HE/$src_dir" 
+            SRC_PATH="HE/$src_dir"
             DEST_PATH="OG/extra1/bba/${dest_name}"
 
-            # Prüfen, ob der Quellordner existiert
             if [ -d "$SRC_PATH" ]; then
-              # Prüfen, ob der Zielordner existiert
               if [ -d "$DEST_PATH" ]; then
-                echo "Kopiere Inhalt von $SRC_PATH nach $DEST_PATH..."
-                # Kopiert den gesamten Inhalt des Verzeichnisses
+                echo "Bereinige alten Inhalt in $DEST_PATH..."
+                # Löscht alten Inhalt im Zielordner, um Case-Konflikte bei Folgeläufen zu vermeiden
+                rm -rf "${DEST_PATH:?}"/*
+
+                echo "Kopiere $SRC_PATH nach $DEST_PATH..."
                 cp -r "$SRC_PATH/." "$DEST_PATH/"
-                find "$DEST_PATH" -depth -name '*' | while read -r file; do
-                  dir=$(dirname "$file")
-                  base=$(basename "$file" | tr '[:upper:]' '[:lower:]')
-                  if [ "$file" != "$dir/$base" ]; then
-                    mv -v "$file" "$dir/$base"
+
+                echo "Konvertiere Inhalt von $DEST_PATH zu Lowercase..."
+                # '-depth' sorgt dafür, dass Dateien vor ihren Elternordnern umbenannt werden
+                find "$DEST_PATH" -depth -mindepth 1 | while read -r item; do
+                  dir=$(dirname "$item")
+                  base=$(basename "$item")
+                  
+                  lowercase_base=$(echo "$base" | tr '[:upper:]' '[:lower:]')
+                  
+                  if [ "$base" != "$lowercase_base" ]; then
+                    # Falls durch Git-Reste die Lowercase-Variante schon existiert, erzwingen wir das Überschreiben
+                    mv -f "$item" "$dir/$lowercase_base"
                   fi
                 done
+
               else
                 echo "Warnung: Zielordner $DEST_PATH existiert nicht. Überspringe."
               fi
